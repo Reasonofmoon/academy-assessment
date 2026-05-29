@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────────────────
+   기본 화면 스타일
+   ───────────────────────────────────────────────────────── */
+:root {
+  --primary: #08231b;
+  --accent: #c9a94d;
+}
+
+body {
+  background-color: #f5f5f4; /* 차분한 사무용 배경 */
+  color: #1c1917;
+}
+
+/* ─────────────────────────────────────────────────────────
+   인쇄(A4) 최적화 — window.print() / Ctrl+P → PDF 저장 대응
+   ───────────────────────────────────────────────────────── */
+@page {
+  size: A4;
+  margin: 16mm;
+}
+
+@media print {
+  /* 1) 배경/색상 강제 인쇄 (막대그래프, 약점 강조 색이 사라지지 않게) */
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 2) 화면 전용 UI 숨기기 — .no-print 클래스가 붙은 요소는 인쇄 안 함 */
+  .no-print {
+    display: none !important;
+  }
+
+  /* 3) 인쇄 시 배경 흰색으로 (잉크 절약 + 가독성) */
+  body {
+    background-color: #ffffff;
+  }
+
+  /* 4) 리포트 영역은 페이지 안에서 깨지지 않도록 */
+  .print-area {
+    width: 100%;
+  }
+
+  /* 카드/블록이 페이지 경계에서 잘리지 않게 */
+  .avoid-break {
+    break-inside: avoid;
+  }
+}
