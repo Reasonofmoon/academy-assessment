@@ -9,7 +9,7 @@
 //  - 실험용 "-exp" 모델은 수시로 종료되어 404를 유발하므로 사용하지 않는다.
 //  - 환경변수 GEMINI_MODEL 로 코드 수정 없이 모델을 교체할 수 있다.
 //    (예: Vercel 환경변수에 GEMINI_MODEL=gemini-2.5-flash 추가)
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
 // 사용자 친화 에러 메시지를 담는 커스텀 에러.
