@@ -104,4 +104,4 @@ academy-assessment/
 - **Next.js 14** (App Router) · **TypeScript** (strict)
 - **TailwindCSS** · **Pretendard** (한글 폰트)
 - **Zod** (런타임 데이터 검증)
-- **Google Gemini API** (`gemini-2.0-flash-exp`)
+- **Google Gemini API** (`gemini-2.0-flash`, 환경변수 `GEMINI_MODEL`로 교체 가능)

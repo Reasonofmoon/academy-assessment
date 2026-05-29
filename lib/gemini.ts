@@ -4,8 +4,12 @@
 //      절대 클라이언트 컴포넌트에서 import 하지 말 것 — API 키 노출 위험!
 // ───────────────────────────────────────────────────────────
 
-// 사용 모델 (빠르고 저렴한 flash 계열)
-const GEMINI_MODEL = "gemini-2.0-flash-exp";
+// 사용 모델 (빠르고 저렴한 flash 계열, GA 안정 버전)
+//  - 기본값은 안정 출시된 "gemini-2.0-flash".
+//  - 실험용 "-exp" 모델은 수시로 종료되어 404를 유발하므로 사용하지 않는다.
+//  - 환경변수 GEMINI_MODEL 로 코드 수정 없이 모델을 교체할 수 있다.
+//    (예: Vercel 환경변수에 GEMINI_MODEL=gemini-2.5-flash 추가)
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
 const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
 // 사용자 친화 에러 메시지를 담는 커스텀 에러.
@@ -71,6 +75,13 @@ export async function callGemini(prompt: string): Promise<string> {
       throw new GeminiError(
         "API 키가 유효하지 않습니다. .env.local의 GEMINI_API_KEY 값을 다시 확인하세요.",
         response.status
+      );
+    }
+    if (response.status === 404) {
+      // 보통 모델 이름이 잘못됐거나 더 이상 제공되지 않을 때 발생.
+      throw new GeminiError(
+        `AI 모델(${GEMINI_MODEL})을 찾을 수 없습니다. lib/gemini.ts의 모델 이름 또는 환경변수 GEMINI_MODEL을 확인하세요.`,
+        404
       );
     }
     throw new GeminiError(
