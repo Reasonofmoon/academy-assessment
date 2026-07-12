@@ -165,6 +165,40 @@ export default function PassagesAdminPage() {
     }
   }
 
+  async function movePassage(id: string, direction: "up" | "down") {
+    const idx = passages.findIndex((p) => p.id === id);
+    if (idx < 0) return;
+    const j = direction === "up" ? idx - 1 : idx + 1;
+    if (j < 0 || j >= passages.length) return;
+
+    const next = [...passages];
+    [next[idx], next[j]] = [next[j], next[idx]];
+    setPassages(next);
+
+    setBusy(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/passages/manage", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "reorder",
+          level,
+          orderedIds: next.map((p) => p.id),
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? "순서 저장 실패");
+      setPassages(data.passages ?? next);
+      setMsg("지문 순서를 저장했습니다.");
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "오류");
+      await load(); // revert from server
+    } finally {
+      setBusy(false);
+    }
+  }
+
   function startEdit(p: Passage) {
     setEditingId(p.id);
     setDraft({
@@ -429,23 +463,30 @@ export default function PassagesAdminPage() {
         </div>
       </section>
 
-      {/* List */}
+      {/* List + reorder */}
       <section>
-        <h2 className="mb-3 font-bold text-primary">
+        <h2 className="mb-1 font-bold text-primary">
           L{level} 지정 지문 ({passages.length})
         </h2>
+        <p className="mb-3 text-xs text-stone-500">
+          ↑↓ 버튼으로 출제 우선순서를 바꿉니다. 위에서부터 기본 세션 지문으로
+          사용됩니다.
+        </p>
         {loading ? (
           <p className="text-sm text-stone-500">불러오는 중…</p>
         ) : passages.length === 0 ? (
           <p className="text-sm text-stone-500">지문이 없습니다. 위에서 추가하세요.</p>
         ) : (
           <ul className="space-y-3">
-            {passages.map((p) => (
+            {passages.map((p, idx) => (
               <li
                 key={p.id}
                 className="rounded-lg border border-stone-200 bg-white p-4 text-sm shadow-sm"
               >
                 <div className="mb-1 flex flex-wrap items-center gap-2">
+                  <span className="rounded bg-indigo-100 px-1.5 font-mono text-xs text-indigo-900">
+                    #{idx + 1}
+                  </span>
                   <span className="font-semibold">{p.title}</span>
                   <span className="font-mono text-xs text-stone-500">{p.id}</span>
                   <span className="rounded bg-stone-100 px-1.5 text-xs">
@@ -456,7 +497,25 @@ export default function PassagesAdminPage() {
                   {p.text.slice(0, 240)}
                   {p.text.length > 240 ? "…" : ""}
                 </p>
-                <div className="flex gap-2">
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    type="button"
+                    disabled={busy || idx === 0}
+                    className="rounded border border-stone-300 px-2 py-1 text-xs disabled:opacity-30"
+                    onClick={() => void movePassage(p.id, "up")}
+                    title="위로"
+                  >
+                    ↑ 위로
+                  </button>
+                  <button
+                    type="button"
+                    disabled={busy || idx === passages.length - 1}
+                    className="rounded border border-stone-300 px-2 py-1 text-xs disabled:opacity-30"
+                    onClick={() => void movePassage(p.id, "down")}
+                    title="아래로"
+                  >
+                    ↓ 아래로
+                  </button>
                   <button
                     type="button"
                     className="rounded bg-stone-800 px-2 py-1 text-xs text-white"

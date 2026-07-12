@@ -7,6 +7,7 @@ import DomainSelector from "@/components/DomainSelector";
 import QuestionList from "@/components/QuestionList";
 import ResultReport from "@/components/ResultReport";
 import LevelPassagePanel from "@/components/LevelPassagePanel";
+import SlotQaReport, { type SlotQaReportData } from "@/components/SlotQaReport";
 import {
   type StudentInfo,
   type Domain,
@@ -66,6 +67,7 @@ export default function HomePage() {
     passagesUsed?: Array<{ id: string; title: string; targetB: number }>;
     readingMode?: string;
     slotPlan?: Array<{ slot: number; passageId: string; questionType: string }>;
+    slotQa?: SlotQaReportData | null;
   } | null>(null);
 
   // Sync default IRT level when grade changes (unless user already picked reading level)
@@ -138,6 +140,7 @@ export default function HomePage() {
             passageId: string;
             questionType: string;
           }>;
+          slotQa?: SlotQaReportData | null;
         };
       };
       setQuestions(payload.questions);
@@ -365,6 +368,11 @@ export default function HomePage() {
                 <p className="mt-1 font-mono text-[11px] text-amber-900/70">
                   b=[{irtMeta.items.map((i) => i.irt.b.toFixed(2)).join(", ")}]
                 </p>
+              )}
+              {irtMeta.slotQa && (
+                <div className="mt-3">
+                  <SlotQaReport report={irtMeta.slotQa} />
+                </div>
               )}
               <p className="mt-2 text-amber-800/90">
                 {irtMeta.disclaimer ??

@@ -44,6 +44,15 @@ node scripts/import-irt-exemplars.mjs --src path/to/echobridge-web
 
 진단 화면(`/`)에서도 독해 선택 시 **문항 수**와 **questionType 슬롯**을 세션 단위로 덮어쓸 수 있습니다.
 
+### 지문 reorder + 슬롯 QA
+
+| 기능 | 위치 |
+|------|------|
+| 지문 순서 ↑↓ | `/passages` 목록 · `POST /api/passages/manage` action=`reorder` |
+| 슬롯 QA 리포트 | 생성 직후 `irt.slotQa` · `lib/irt/slot-qa.ts` · `SlotQaReport` UI |
+
+QA는 계획 슬롯(유형·지문 id) vs 생성 문항을 대조해 pass/warn/fail 비율과 표 형태로 보여 줍니다.
+
 ## 2. IRT 생성 원리 (프롬프트 + 검증)
 
 3PL:
@@ -169,6 +178,7 @@ node scripts/merge-echobridge-service.mjs --reading-only --dry-run   # dry-run i
 | ✅ | safe append-merge into echobridge curated service |
 | ✅ | level-preset reading passages → IRT item generation |
 | ✅ | passage admin UI + per-level item/slot config |
+| ✅ | passage reorder UI + slot-plan QA report |
 | Next | Supabase 영속화 (서버리스) |
 | Later | 학원 응시 로그 → empirical a,b 재추정 |
 

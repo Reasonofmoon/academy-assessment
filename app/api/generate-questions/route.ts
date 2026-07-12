@@ -144,6 +144,7 @@ export async function POST(request: Request) {
         })),
         readingMode: "preset_passages",
         slotPlan: result.slotPlan,
+        slotQa: result.slotQa,
         disclaimer:
           "생성된 irt a/b/c는 AI prior(휴리스틱)입니다. 실응시 보정 전까지 절대 등급 인증에 사용하지 마세요. 리딩 지문은 레벨 사전 지정 원문을 그대로 사용합니다.",
       };

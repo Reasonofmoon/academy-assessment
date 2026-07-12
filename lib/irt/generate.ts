@@ -23,6 +23,7 @@ import {
   type PresetPassage,
 } from "@/lib/irt/passages";
 import type { ReadingQuestionType } from "@/lib/irt/types";
+import { buildSlotQaReport, type SlotQaReport } from "@/lib/irt/slot-qa";
 import { z } from "zod";
 
 const AiBatchSchema = z.object({
@@ -305,22 +306,25 @@ function attachPresetPassages(
   const byId = new Map(slots.map((s) => [s.passage.id, s.passage]));
   return items.map((item, idx) => {
     const slot = slots[idx];
-    const byField =
-      (item as IrtGeneratedItem & { passageId?: string }).passageId &&
-      byId.get((item as IrtGeneratedItem & { passageId?: string }).passageId!);
+    const rawPid = (item as IrtGeneratedItem & { passageId?: string }).passageId;
+    const byField = rawPid ? byId.get(rawPid) : undefined;
     const passage = byField ?? slot?.passage;
     if (!passage) return item;
+    // Force planned type + passage so bank/export stay aligned with slot plan.
+    // QA still reports if model originally drifted (via notes / warnings).
+    const plannedType =
+      (slot?.questionType as IrtGeneratedItem["questionType"]) ||
+      (item.questionType as IrtGeneratedItem["questionType"]);
     const next: IrtGeneratedItem = {
       ...item,
       domain: "reading",
       passage: passage.text,
-      questionType:
-        (item.questionType as IrtGeneratedItem["questionType"]) ||
-        (slot?.questionType as IrtGeneratedItem["questionType"]),
-      exemplarIds: [...(item.exemplarIds ?? []), passage.id],
+      questionType: plannedType,
+      exemplarIds: [
+        ...new Set([...(item.exemplarIds ?? []), passage.id, slot?.passage.id].filter(Boolean) as string[]),
+      ],
       irtSource: "ai_prior_on_preset_passage",
     };
-    // strip accidental passage paste from stem
     if (next.question.includes(passage.text.slice(0, 40))) {
       next.question = next.question.replace(passage.text, "").trim();
     }
@@ -498,6 +502,7 @@ export async function generateIrtAssessment(opts: {
   exemplarsUsed: Exemplar[];
   passagesUsed: PresetPassage[];
   slotPlan?: Array<{ slot: number; passageId: string; questionType: string }>;
+  slotQa?: SlotQaReport | null;
 }> {
   const level = opts.level ?? GRADE_TO_LEVEL[opts.grade];
   const anchor = getLevelAnchor(level);
@@ -584,6 +589,11 @@ export async function generateIrtAssessment(opts: {
     };
   });
 
+  const passageTexts = Object.fromEntries(
+    passagesUsed.map((p) => [p.id, p.text])
+  );
+  const slotQa = buildSlotQaReport(slotPlan, allItems, { passageTexts });
+
   return {
     level,
     targetTheta: anchor.thetaCenter,
@@ -594,6 +604,7 @@ export async function generateIrtAssessment(opts: {
     exemplarsUsed: exemplarsUsed.slice(0, 12),
     passagesUsed,
     slotPlan,
+    slotQa,
   };
 }
 
