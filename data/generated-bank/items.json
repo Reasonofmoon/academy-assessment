@@ -1,5 +1,64 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-13T00:00:00.000Z",
-  "items": []
+  "updatedAt": "2026-07-12T23:44:09.642Z",
+  "items": [
+    {
+      "id": "seed-export-vocab-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "Choose the correct meaning of \"diligent\".",
+      "options": [
+        "hard-working",
+        "lazy",
+        "angry",
+        "noisy"
+      ],
+      "answer": "0",
+      "explanation": "성실한",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "test",
+      "dimension": "D2_Meaning",
+      "headword": "diligent",
+      "status": "approved",
+      "createdAt": "2026-07-12T23:44:09.642Z",
+      "updatedAt": "2026-07-12T23:44:09.642Z",
+      "reviewedAt": "2026-07-12T23:44:09.642Z",
+      "reviewedBy": "seed"
+    },
+    {
+      "id": "seed-export-reading-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main idea of the passage?",
+      "options": [
+        "A study plan helps",
+        "Sports are hard",
+        "Music is fun",
+        "Food is cheap"
+      ],
+      "answer": "0",
+      "explanation": "요지",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.1,
+        "b": -0.85,
+        "c": 0.2
+      },
+      "irtSource": "test",
+      "questionType": "main_idea",
+      "passage": "Many students find that writing a short study plan each week helps them finish homework on time. A plan also reduces stress because tasks feel smaller and clearer.",
+      "status": "approved",
+      "createdAt": "2026-07-12T23:44:09.642Z",
+      "updatedAt": "2026-07-12T23:44:09.642Z",
+      "reviewedAt": "2026-07-12T23:44:09.642Z",
+      "reviewedBy": "seed"
+    }
+  ]
 }

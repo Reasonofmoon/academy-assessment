@@ -24,3 +24,6 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Generated echobridge export snapshots (recreate via npm run export:echobridge)
+/data/exports/

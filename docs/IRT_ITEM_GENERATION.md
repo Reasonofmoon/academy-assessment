@@ -87,16 +87,41 @@ scripts/import-irt-exemplars.mjs
 
 홈 화면에서 「bank에 저장」→ `/review`에서 승인/격리.
 
-## 6. 로드맵
+## 6. Echobridge service export
+
+승인 문항 → echobridge-web 이 읽는 service JSON.
+
+```bash
+# API (dev server 실행 중)
+curl -X POST http://localhost:3000/api/export/echobridge
+
+# CLI
+npm run export:echobridge
+```
+
+| 산출 | 경로 | 대응 설치 위치 |
+|------|------|----------------|
+| 어휘 | `data/exports/echobridge/<ts>/vocab/level-N.service.json` | `echobridge-web/src/data/curated/` |
+| 독해 | `.../reading/level-N.service.json` | `echobridge-web/src/data/reading/curated/` |
+| 매니페스트 | `EXPORT_MANIFEST.json` | — |
+
+- 문법 영역은 기본 `D5_Usage` vocab item으로 포함.
+- short_answer·지문 없는 reading은 skip 목록에 기록.
+- **기존 service 파일을 통째로 덮어쓰지 말 것** — merge/append 후 audit.
+
+코드: `lib/irt/export-echobridge.ts`, `POST /api/export/echobridge`, `/review` Export 버튼.
+
+## 7. 로드맵
 
 | Phase | 내용 |
 |-------|------|
 | ✅ | 예시은행 + IRT 생성 + 검증 + UI 메타 |
 | ✅ | JSON bank + approve/save API + 검수 UI |
+| ✅ | approved → echobridge service export |
+| Next | merge helper (append into existing service without overwrite) |
 | Next | Supabase 영속화 (서버리스) |
 | Later | 학원 응시 로그 → empirical a,b 재추정 |
-| Later | echobridge CAT 풀로 export |
 
-## 7. 면책
+## 8. 면책
 
 이 파이프라인은 **문항 저작 보조**다. 레벨 인증·고부담 배치는 echobridge 실측 캘리브 이후 체계와 연동해야 한다.

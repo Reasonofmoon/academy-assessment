@@ -69,6 +69,8 @@ export default function ReviewPage() {
   const [error, setError] = useState<string | null>(null);
   const [note, setNote] = useState("");
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [exportMsg, setExportMsg] = useState<string | null>(null);
+  const [exporting, setExporting] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -165,6 +167,37 @@ export default function ReviewPage() {
     }
   }
 
+  async function exportEchobridge() {
+    setExporting(true);
+    setExportMsg(null);
+    setError(null);
+    try {
+      const res = await fetch("/api/export/echobridge", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ includeGrammarAsVocab: true }),
+      });
+      const data = (await res.json()) as {
+        error?: string;
+        approvedCount?: number;
+        outDirRelative?: string;
+        skipped?: unknown[];
+        vocab?: Array<{ level: number; itemCount: number }>;
+        reading?: Array<{ level: number; itemCount: number; passageCount: number }>;
+      };
+      if (!res.ok) throw new Error(data.error ?? "export 실패");
+      const vSum = (data.vocab ?? []).reduce((s, x) => s + x.itemCount, 0);
+      const rSum = (data.reading ?? []).reduce((s, x) => s + x.itemCount, 0);
+      setExportMsg(
+        `Export 완료 · approved ${data.approvedCount} · vocab items ${vSum} · reading items ${rSum} · 경로 ${data.outDirRelative ?? ""}`
+      );
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "export 오류");
+    } finally {
+      setExporting(false);
+    }
+  }
+
   return (
     <main className="mx-auto max-w-5xl px-4 py-8">
       <header className="mb-6 flex flex-wrap items-end justify-between gap-3">
@@ -177,7 +210,7 @@ export default function ReviewPage() {
             생성된 문항을 승인·격리하여 JSON bank에 반영합니다.
           </p>
         </div>
-        <div className="flex gap-2 text-sm">
+        <div className="flex flex-wrap gap-2 text-sm">
           <Link
             href="/"
             className="rounded-md border border-stone-300 px-3 py-1.5 text-stone-700 hover:bg-stone-50"
@@ -191,8 +224,27 @@ export default function ReviewPage() {
           >
             새로고침
           </button>
+          <button
+            type="button"
+            disabled={exporting || (counts.approved ?? 0) === 0}
+            onClick={() => void exportEchobridge()}
+            className="rounded-md bg-indigo-700 px-3 py-1.5 font-medium text-white hover:opacity-90 disabled:opacity-40"
+            title="approved 문항을 echobridge service JSON으로 저장"
+          >
+            {exporting ? "Export 중…" : "echobridge 포맷 Export"}
+          </button>
         </div>
       </header>
+
+      {exportMsg && (
+        <div className="mb-4 rounded-md border border-indigo-200 bg-indigo-50 p-3 text-sm text-indigo-950">
+          {exportMsg}
+          <p className="mt-1 text-xs text-indigo-800/80">
+            산출물: data/exports/echobridge/&lt;timestamp&gt;/vocab|reading/level-N.service.json
+            · 프로덕션 서비스 파일에 덮어쓰지 말고 merge 하세요.
+          </p>
+        </div>
+      )}
 
       {/* counts */}
       <div className="mb-4 grid grid-cols-3 gap-2 sm:grid-cols-3">
