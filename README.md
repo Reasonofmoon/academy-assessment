@@ -112,6 +112,14 @@ academy-assessment/
 npm run import:irt-exemplars
 ```
 
+### 리딩: 레벨별 지정 지문 → IRT 문항
+
+1. 영역에서 **독해** 선택  
+2. **L1–L6** 레벨 선택 → 사전 지정 지문 목록 표시  
+3. 지문 1~3개 체크 후 생성 → AI가 해당 원문 위에서만 문항 작성  
+
+데이터: `data/reading-passages/passages-by-level.json`
+
 ### approved → export → echobridge merge
 
 ```bash

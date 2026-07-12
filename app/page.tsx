@@ -6,6 +6,7 @@ import StudentForm from "@/components/StudentForm";
 import DomainSelector from "@/components/DomainSelector";
 import QuestionList from "@/components/QuestionList";
 import ResultReport from "@/components/ResultReport";
+import LevelPassagePanel from "@/components/LevelPassagePanel";
 import {
   type StudentInfo,
   type Domain,
@@ -13,7 +14,7 @@ import {
   type Answers,
   type Evaluation,
 } from "@/lib/types";
-import type { IrtGeneratedItem } from "@/lib/irt/types";
+import { GRADE_TO_LEVEL, type IrtGeneratedItem } from "@/lib/irt/types";
 
 // ───────────────────────────────────────────────────────────
 // 메인 평가 페이지 (SPA)
@@ -47,6 +48,8 @@ export default function HomePage() {
     teacher: "",
   });
   const [domains, setDomains] = useState<Domain[]>(["vocabulary"]);
+  const [irtLevel, setIrtLevel] = useState<number>(1);
+  const [passageIds, setPassageIds] = useState<string[]>([]);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [answers, setAnswers] = useState<Answers>({});
   const [evaluation, setEvaluation] = useState<Evaluation | null>(null);
@@ -58,7 +61,12 @@ export default function HomePage() {
     bank?: { vocab: number; reading: number; version: string };
     disclaimer?: string;
     items?: IrtGeneratedItem[];
+    passagesUsed?: Array<{ id: string; title: string; targetB: number }>;
+    readingMode?: string;
   } | null>(null);
+
+  // Sync default IRT level when grade changes (unless user already picked reading level)
+  const readingSelected = domains.includes("reading");
 
   // 로딩 / 에러 상태
   const [isGenerating, setIsGenerating] = useState(false);
@@ -78,6 +86,10 @@ export default function HomePage() {
     setError(null);
     setIsGenerating(true);
     try {
+      const levelForRequest = readingSelected
+        ? irtLevel
+        : GRADE_TO_LEVEL[studentInfo.grade];
+
       const res = await fetch("/api/generate-questions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -85,8 +97,15 @@ export default function HomePage() {
           grade: studentInfo.grade,
           domains,
           mode: "irt",
+          level: levelForRequest,
           mcqOnly: true,
           includeIrtMeta: true,
+          ...(readingSelected && passageIds.length > 0
+            ? {
+                passageIds,
+                passagesPerSession: Math.min(3, passageIds.length),
+              }
+            : {}),
         }),
       });
       const data: unknown = await res.json();
@@ -103,6 +122,8 @@ export default function HomePage() {
           bank?: { vocab: number; reading: number; version: string };
           disclaimer?: string;
           items?: IrtGeneratedItem[];
+          passagesUsed?: Array<{ id: string; title: string; targetB: number }>;
+          readingMode?: string;
         };
       };
       setQuestions(payload.questions);
@@ -218,8 +239,37 @@ export default function HomePage() {
       {/* ── setup 단계 ── */}
       {step === "setup" && (
         <div className="space-y-6">
-          <StudentForm value={studentInfo} onChange={setStudentInfo} />
-          <DomainSelector selected={domains} onChange={setDomains} />
+          <StudentForm
+            value={studentInfo}
+            onChange={(info) => {
+              setStudentInfo(info);
+              // grade → default level when reading not customized yet
+              if (!readingSelected) {
+                setIrtLevel(GRADE_TO_LEVEL[info.grade]);
+              }
+            }}
+          />
+          <DomainSelector
+            selected={domains}
+            onChange={(next) => {
+              setDomains(next);
+              if (next.includes("reading") && !domains.includes("reading")) {
+                setIrtLevel(GRADE_TO_LEVEL[studentInfo.grade]);
+                setPassageIds([]);
+              }
+            }}
+          />
+          <LevelPassagePanel
+            visible={readingSelected}
+            grade={studentInfo.grade}
+            level={irtLevel}
+            onLevelChange={(lv) => {
+              setIrtLevel(lv);
+              setPassageIds([]);
+            }}
+            selectedPassageIds={passageIds}
+            onPassageIdsChange={setPassageIds}
+          />
 
           <div className="no-print flex items-center justify-end gap-3">
             {!canGenerate && (
@@ -269,6 +319,16 @@ export default function HomePage() {
                   {irtMeta.bank.reading} (echobridge curated sample)
                 </p>
               )}
+              {irtMeta.readingMode === "preset_passages" &&
+                irtMeta.passagesUsed &&
+                irtMeta.passagesUsed.length > 0 && (
+                  <p className="mt-1 text-indigo-900/90">
+                    고정 지문:{" "}
+                    {irtMeta.passagesUsed
+                      .map((p) => `${p.title} (b=${p.targetB})`)
+                      .join(" · ")}
+                  </p>
+                )}
               {irtMeta.items && irtMeta.items.length > 0 && (
                 <p className="mt-1 font-mono text-[11px] text-amber-900/70">
                   b=[{irtMeta.items.map((i) => i.irt.b.toFixed(2)).join(", ")}]

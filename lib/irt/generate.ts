@@ -15,6 +15,11 @@ import {
   type IrtLevel,
   type VocabDimension,
 } from "@/lib/irt/types";
+import {
+  planReadingItemSlots,
+  selectSessionPassages,
+  type PresetPassage,
+} from "@/lib/irt/passages";
 import { z } from "zod";
 
 const AiBatchSchema = z.object({
@@ -201,6 +206,127 @@ function toGenerated(
 }
 
 /**
+ * Reading: generate IRT items ON TOP OF level-preset passages only.
+ * Passage text is fixed; the model must not invent/rewrite passages.
+ */
+function buildReadingFromPassagesPrompt(args: {
+  grade: Grade;
+  level: IrtLevel;
+  targetTheta: number;
+  cefr: string;
+  slots: Array<{
+    passage: PresetPassage;
+    questionType: string;
+    slot: number;
+  }>;
+  styleExemplars: Exemplar[];
+}): string {
+  const { grade, level, targetTheta, cefr, slots, styleExemplars } = args;
+
+  const passageBlocks = [
+    ...new Map(slots.map((s) => [s.passage.id, s.passage])).values(),
+  ]
+    .map(
+      (p, i) => `### FIXED PASSAGE ${i + 1}
+id: ${p.id}
+title: ${p.title}
+level: L${p.level} | CEFR ${p.cefr} | wordCount ${p.wordCount} | preset targetB=${p.targetB}
+TEXT (copy EXACTLY into each item.passage field for questions on this passage):
+"""
+${p.text}
+"""`
+    )
+    .join("\n\n");
+
+  const slotPlan = slots
+    .map(
+      (s) =>
+        `${s.slot}. id=reading-${s.slot} | passageId=${s.passage.id} | questionType=${s.questionType} | target b≈${targetTheta.toFixed(2)} (passage preset b=${s.passage.targetB})`
+    )
+    .join("\n");
+
+  const styleBlocks = styleExemplars
+    .slice(0, 3)
+    .map((e, i) => exemplarToPromptBlock(e, i))
+    .join("\n\n");
+
+  return `You are an IRT reading-item writer for a Korean English academy.
+
+## HARD CONSTRAINTS (reading)
+1. You MUST write questions ONLY about the FIXED PASSAGES below.
+2. Do NOT invent, rewrite, shorten, or translate the passage text.
+3. For every item, set "passage" to the EXACT full text of the assigned passage (character-for-character).
+4. Set "question" to the stem ONLY (do not paste the passage into "question").
+5. All items: type=multiple_choice, exactly 4 options, answer is index "0"-"3".
+6. Answers must be uniquely determined by the passage; distractors plausible but wrong.
+7. Use the assigned questionType for each slot (main_idea, detail, inference, purpose, attitude).
+8. IRT 3PL: target θ ≈ ${targetTheta.toFixed(2)} (GLEAS L${level}, CEFR ~${cefr}, grade ${grade}).
+   Set irt.b near θ (±0.5); irt.a in 0.8–2.0; irt.c ≈ 0.25.
+9. explanation in Korean (1–2 sentences).
+10. Do NOT copy style exemplars verbatim.
+
+## FIXED PASSAGES
+${passageBlocks}
+
+## ITEM SLOT PLAN (generate EXACTLY these ${slots.length} items)
+${slotPlan}
+
+## Style exemplars (question craft only — ignore their passages)
+${styleBlocks || "(none)"}
+
+## Output JSON ONLY
+{
+  "questions": [
+    {
+      "id": "reading-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "stem only",
+      "options": ["A", "B", "C", "D"],
+      "answer": "0",
+      "explanation": "한국어 해설",
+      "questionType": "main_idea",
+      "passage": "EXACT fixed passage text",
+      "passageId": "preset-L1-P01",
+      "irt": { "a": 1.2, "b": ${targetTheta.toFixed(2)}, "c": 0.25 }
+    }
+  ]
+}`;
+}
+
+/** Force correct passage text onto generated reading items by slot/passageId. */
+function attachPresetPassages(
+  items: IrtGeneratedItem[],
+  slots: Array<{ passage: PresetPassage; questionType: string; slot: number }>
+): IrtGeneratedItem[] {
+  const byId = new Map(slots.map((s) => [s.passage.id, s.passage]));
+  return items.map((item, idx) => {
+    const slot = slots[idx];
+    const byField =
+      (item as IrtGeneratedItem & { passageId?: string }).passageId &&
+      byId.get((item as IrtGeneratedItem & { passageId?: string }).passageId!);
+    const passage = byField ?? slot?.passage;
+    if (!passage) return item;
+    const next: IrtGeneratedItem = {
+      ...item,
+      domain: "reading",
+      passage: passage.text,
+      questionType:
+        (item.questionType as IrtGeneratedItem["questionType"]) ||
+        (slot?.questionType as IrtGeneratedItem["questionType"]),
+      exemplarIds: [...(item.exemplarIds ?? []), passage.id],
+      irtSource: "ai_prior_on_preset_passage",
+    };
+    // strip accidental passage paste from stem
+    if (next.question.includes(passage.text.slice(0, 40))) {
+      next.question = next.question.replace(passage.text, "").trim();
+    }
+    next.validation = validateIrtItem(next);
+    return next;
+  });
+}
+
+/**
  * Generate IRT-principled items for one domain using refined exemplars.
  */
 export async function generateDomainItems(opts: {
@@ -209,13 +335,79 @@ export async function generateDomainItems(opts: {
   domain: Domain;
   count: number;
   mcqOnly?: boolean;
-}): Promise<IrtGeneratedItem[]> {
+  passageIds?: string[];
+  passagesPerSession?: number;
+}): Promise<{ items: IrtGeneratedItem[]; passagesUsed: PresetPassage[] }> {
   const anchor = getLevelAnchor(opts.level);
   const targetTheta = anchor.thetaCenter;
+
+  // ── Reading: preset passages ──
+  if (opts.domain === "reading") {
+    const passages = selectSessionPassages({
+      level: opts.level,
+      count: opts.passagesPerSession ?? 2,
+      passageIds: opts.passageIds,
+    });
+    if (passages.length === 0) {
+      throw new GeminiError(
+        `L${opts.level}에 사전 지정된 리딩 지문이 없습니다. data/reading-passages 를 확인하세요.`,
+        500
+      );
+    }
+    const slots = planReadingItemSlots(passages, opts.count);
+    const styleExemplars = selectExemplars({
+      domain: "reading",
+      level: opts.level,
+      count: 3,
+    });
+    const prompt = buildReadingFromPassagesPrompt({
+      grade: opts.grade,
+      level: opts.level,
+      targetTheta,
+      cefr: anchor.cefr,
+      slots,
+      styleExemplars,
+    });
+
+    const rawText = await callGemini(prompt);
+    const json = parseJson<unknown>(rawText);
+    // allow optional passageId in model output
+    const loose = z.object({
+      questions: z.array(
+        AiBatchSchema.shape.questions.element.extend({
+          passageId: z.string().optional(),
+        })
+      ),
+    });
+    const parsed = loose.safeParse(json);
+    if (!parsed.success) {
+      throw new GeminiError(
+        "AI가 리딩 문항 형식과 다른 응답을 반환했습니다. 다시 시도해 주세요.",
+        502
+      );
+    }
+
+    const exemplarIds = [
+      ...styleExemplars.map((e) => e.id),
+      ...passages.map((p) => p.id),
+    ];
+    let items = parsed.data.questions
+      .filter((q) => q.domain === "reading")
+      .slice(0, opts.count)
+      .map((q) => toGenerated(q, opts.level, targetTheta, exemplarIds));
+
+    items = attachPresetPassages(items, slots);
+    const { valid } = filterValidItems(items);
+    return {
+      items: valid.length > 0 ? valid : items,
+      passagesUsed: passages,
+    };
+  }
+
+  // ── Vocab / grammar (unchanged few-shot path) ──
   const dimensions =
     opts.domain === "vocabulary" ? allocateDimensions(opts.count) : undefined;
 
-  // Gather exemplars — for vocab, pick per planned dimension when possible
   let exemplars: Exemplar[] = [];
   if (opts.domain === "vocabulary" && dimensions) {
     const seen = new Set<string>();
@@ -269,13 +461,11 @@ export async function generateDomainItems(opts: {
     .slice(0, opts.count)
     .map((q) => toGenerated(q, opts.level, targetTheta, exemplarIds));
 
-  // one repair pass for invalid MCQs
-  const { valid, rejected } = filterValidItems(items);
-  if (rejected.length > 0 && valid.length < opts.count) {
-    // keep valid + attempt to keep rejected with warnings only if only warnings-level issues... already filtered by errors
-    // return valid only; caller may retry domain
-  }
-  return valid.length > 0 ? valid : items; // if all fail validation, still return for transparency with validation.ok=false
+  const { valid } = filterValidItems(items);
+  return {
+    items: valid.length > 0 ? valid : items,
+    passagesUsed: [],
+  };
 }
 
 export async function generateIrtAssessment(opts: {
@@ -284,6 +474,8 @@ export async function generateIrtAssessment(opts: {
   level?: IrtLevel;
   countPerDomain?: number;
   mcqOnly?: boolean;
+  passageIds?: string[];
+  passagesPerSession?: number;
 }): Promise<{
   level: IrtLevel;
   targetTheta: number;
@@ -292,6 +484,7 @@ export async function generateIrtAssessment(opts: {
   items: IrtGeneratedItem[];
   questions: Question[];
   exemplarsUsed: Exemplar[];
+  passagesUsed: PresetPassage[];
 }> {
   const level = opts.level ?? GRADE_TO_LEVEL[opts.grade];
   const anchor = getLevelAnchor(level);
@@ -300,36 +493,42 @@ export async function generateIrtAssessment(opts: {
 
   const allItems: IrtGeneratedItem[] = [];
   const exemplarsUsed: Exemplar[] = [];
+  const passagesUsed: PresetPassage[] = [];
   const seenEx = new Set<string>();
+  const seenPass = new Set<string>();
 
   for (const domain of opts.domains) {
-    const items = await generateDomainItems({
+    const { items, passagesUsed: used } = await generateDomainItems({
       grade: opts.grade,
       level,
       domain,
       count,
       mcqOnly,
+      passageIds: opts.passageIds,
+      passagesPerSession: opts.passagesPerSession,
     });
     allItems.push(...items);
+    for (const p of used) {
+      if (!seenPass.has(p.id)) {
+        seenPass.add(p.id);
+        passagesUsed.push(p);
+      }
+    }
     for (const id of items.flatMap((i) => i.exemplarIds ?? [])) {
       if (seenEx.has(id)) continue;
       seenEx.add(id);
     }
   }
 
-  // reload exemplars for response transparency
   for (const domain of opts.domains) {
+    if (domain === "reading") continue;
     for (const e of selectExemplars({ domain, level, count: 2 })) {
-      if (!seenEx.has(e.id)) {
-        // still include few for UI
-      }
       if (!exemplarsUsed.find((x) => x.id === e.id)) {
         exemplarsUsed.push(e);
       }
     }
   }
 
-  // Map to legacy Question shape for existing UI/evaluate flow
   const questions: Question[] = allItems.map((item) => {
     let questionText = item.question;
     if (item.passage?.trim()) {
@@ -354,6 +553,7 @@ export async function generateIrtAssessment(opts: {
     items: allItems,
     questions,
     exemplarsUsed: exemplarsUsed.slice(0, 12),
+    passagesUsed,
   };
 }
 

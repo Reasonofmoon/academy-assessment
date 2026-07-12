@@ -21,6 +21,18 @@ npm run import:irt-exemplars
 node scripts/import-irt-exemplars.mjs --src path/to/echobridge-web
 ```
 
+## 1b. 리딩: 레벨별 사전 지정 지문
+
+| 항목 | 내용 |
+|------|------|
+| 데이터 | `data/reading-passages/passages-by-level.json` (L1–L6 각 5지문) |
+| 로더 | `lib/irt/passages.ts` |
+| API | `GET /api/passages?level=2&full=1` |
+| UI | `LevelPassagePanel` — 레벨 선택 시 지문 체크 (1~3개) |
+| 생성 | reading 도메인은 **고정 지문 원문** 위에서만 문항 생성 (`preset_passages`) |
+
+흐름: 학년/레벨 선택 → 지문 프리셋 로드 → AI는 stem·선지만 생성 → 서버가 `passage` 필드를 원문으로 강제 부착.
+
 ## 2. IRT 생성 원리 (프롬프트 + 검증)
 
 3PL:
@@ -144,6 +156,7 @@ node scripts/merge-echobridge-service.mjs --reading-only --dry-run   # dry-run i
 | ✅ | JSON bank + approve/save API + 검수 UI |
 | ✅ | approved → echobridge service export |
 | ✅ | safe append-merge into echobridge curated service |
+| ✅ | level-preset reading passages → IRT item generation |
 | Next | Supabase 영속화 (서버리스) |
 | Later | 학원 응시 로그 → empirical a,b 재추정 |
 

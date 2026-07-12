@@ -35,6 +35,10 @@ const RequestSchema = z.object({
   countPerDomain: z.number().int().min(1).max(10).optional(),
   mcqOnly: z.boolean().optional(),
   includeIrtMeta: z.boolean().optional(),
+  /** Optional override: which preset reading passages to use */
+  passageIds: z.array(z.string()).optional(),
+  /** How many preset passages to load for the session (default 2) */
+  passagesPerSession: z.number().int().min(1).max(5).optional(),
 });
 
 const GRADE_TO_CEFR: Record<Grade, string> = {
@@ -69,6 +73,8 @@ export async function POST(request: Request) {
       countPerDomain,
       mcqOnly,
       includeIrtMeta = true,
+      passageIds,
+      passagesPerSession,
     } = parsed.data;
 
     if (mode === "legacy") {
@@ -81,6 +87,8 @@ export async function POST(request: Request) {
       level: level as IrtLevel | undefined,
       countPerDomain,
       mcqOnly: mcqOnly ?? true,
+      passageIds,
+      passagesPerSession,
     });
 
     // Always return questions compatible with evaluate + UI
@@ -99,8 +107,19 @@ export async function POST(request: Request) {
         bank: result.bank,
         /** Full items for save-to-bank (includes stem/options for review). */
         items: result.items,
+        /** Level-preset passages used for reading generation */
+        passagesUsed: result.passagesUsed.map((p) => ({
+          id: p.id,
+          title: p.title,
+          level: p.level,
+          cefr: p.cefr,
+          wordCount: p.wordCount,
+          targetB: p.targetB,
+          textPreview: p.text.slice(0, 160) + (p.text.length > 160 ? "…" : ""),
+        })),
+        readingMode: "preset_passages",
         disclaimer:
-          "생성된 irt a/b/c는 AI prior(휴리스틱)입니다. 실응시 보정 전까지 절대 등급 인증에 사용하지 마세요.",
+          "생성된 irt a/b/c는 AI prior(휴리스틱)입니다. 실응시 보정 전까지 절대 등급 인증에 사용하지 마세요. 리딩 지문은 레벨 사전 지정 원문을 그대로 사용합니다.",
       };
     }
 
