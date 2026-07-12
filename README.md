@@ -112,6 +112,18 @@ academy-assessment/
 npm run import:irt-exemplars
 ```
 
+### approved → export → echobridge merge
+
+```bash
+npm run export:echobridge          # data/exports/echobridge/<ts>/
+npm run merge:echobridge           # dry-run (기본)
+npm run merge:echobridge:apply     # append merge + .bak 백업
+```
+
+- overwrite 금지, item/passage/option **id 중복 스킵**
+- 타깃: `../echobridge-web/src/data/curated` · `.../reading/curated`
+- 상세: `docs/IRT_ITEM_GENERATION.md`
+
 ---
 
 ## 🎨 커스터마이징 팁 (원장님용)
