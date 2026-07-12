@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "description": "Per-level reading generation defaults: item count and questionType slot order",
+  "defaults": {
+    "countPerDomain": {
+      "vocabulary": 5,
+      "grammar": 5,
+      "reading": 5
+    },
+    "passagesPerSession": 2,
+    "maxPassagesPerSession": 3
+  },
+  "levels": {
+    "1": {
+      "itemsPerReading": 4,
+      "passagesPerSession": 2,
+      "questionTypeSlots": ["main_idea", "detail", "inference", "detail"]
+    },
+    "2": {
+      "itemsPerReading": 5,
+      "passagesPerSession": 2,
+      "questionTypeSlots": ["main_idea", "detail", "inference", "purpose", "detail"]
+    },
+    "3": {
+      "itemsPerReading": 5,
+      "passagesPerSession": 2,
+      "questionTypeSlots": ["main_idea", "detail", "inference", "purpose", "attitude"]
+    },
+    "4": {
+      "itemsPerReading": 5,
+      "passagesPerSession": 2,
+      "questionTypeSlots": ["main_idea", "inference", "detail", "purpose", "attitude"]
+    },
+    "5": {
+      "itemsPerReading": 5,
+      "passagesPerSession": 2,
+      "questionTypeSlots": ["main_idea", "inference", "detail", "purpose", "attitude"]
+    },
+    "6": {
+      "itemsPerReading": 5,
+      "passagesPerSession": 2,
+      "questionTypeSlots": ["main_idea", "inference", "detail", "purpose", "attitude"]
+    }
+  }
+}

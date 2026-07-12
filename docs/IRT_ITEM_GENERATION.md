@@ -33,6 +33,17 @@ node scripts/import-irt-exemplars.mjs --src path/to/echobridge-web
 
 흐름: 학년/레벨 선택 → 지문 프리셋 로드 → AI는 stem·선지만 생성 → 서버가 `passage` 필드를 원문으로 강제 부착.
 
+### 지문 관리 UI + 슬롯 설정
+
+| 경로 | 역할 |
+|------|------|
+| `/passages` | 레벨별 지문 CRUD (추가/수정/삭제) + questionType 슬롯 편집 |
+| `GET/PUT /api/passages/config` | `generation-config.json` 로드/저장 |
+| `POST /api/passages/manage` | upsert / delete / reorder |
+| `data/reading-passages/generation-config.json` | 레벨별 문항 수·슬롯 기본값 |
+
+진단 화면(`/`)에서도 독해 선택 시 **문항 수**와 **questionType 슬롯**을 세션 단위로 덮어쓸 수 있습니다.
+
 ## 2. IRT 생성 원리 (프롬프트 + 검증)
 
 3PL:
@@ -157,6 +168,7 @@ node scripts/merge-echobridge-service.mjs --reading-only --dry-run   # dry-run i
 | ✅ | approved → echobridge service export |
 | ✅ | safe append-merge into echobridge curated service |
 | ✅ | level-preset reading passages → IRT item generation |
+| ✅ | passage admin UI + per-level item/slot config |
 | Next | Supabase 영속화 (서버리스) |
 | Later | 학원 응시 로그 → empirical a,b 재추정 |
 

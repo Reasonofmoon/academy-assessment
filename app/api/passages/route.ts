@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
+  getLevelGenConfig,
   getPassagesForLevel,
   passageBankMeta,
   selectSessionPassages,
@@ -52,11 +53,14 @@ export async function GET(req: NextRequest) {
       textLength: p.text.length,
     });
 
+    const gen = getLevelGenConfig(level as IrtLevel);
+
     return NextResponse.json({
       level,
       total: all.length,
       passages: all.map(mapP),
       sessionDefault: session.map(mapP),
+      generation: gen,
       policy: {
         doNotRewritePassage: true,
         generateItemsFromPassageOnly: true,

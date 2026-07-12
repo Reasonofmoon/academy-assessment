@@ -217,6 +217,12 @@ export default function ReviewPage() {
           >
             ← 진단 평가
           </Link>
+          <Link
+            href="/passages"
+            className="rounded-md border border-stone-300 px-3 py-1.5 text-stone-700 hover:bg-stone-50"
+          >
+            지문·슬롯 관리
+          </Link>
           <button
             type="button"
             onClick={() => void load()}

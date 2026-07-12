@@ -37,8 +37,29 @@ const RequestSchema = z.object({
   includeIrtMeta: z.boolean().optional(),
   /** Optional override: which preset reading passages to use */
   passageIds: z.array(z.string()).optional(),
-  /** How many preset passages to load for the session (default 2) */
+  /** How many preset passages to load for the session (default from config) */
   passagesPerSession: z.number().int().min(1).max(5).optional(),
+  /** Explicit reading questionType order (length = reading item count) */
+  questionTypeSlots: z
+    .array(
+      z.enum([
+        "main_idea",
+        "detail",
+        "inference",
+        "purpose",
+        "attitude",
+        "vocabulary",
+        "other",
+      ])
+    )
+    .optional(),
+  countsByDomain: z
+    .object({
+      vocabulary: z.number().int().min(1).max(10).optional(),
+      grammar: z.number().int().min(1).max(10).optional(),
+      reading: z.number().int().min(1).max(10).optional(),
+    })
+    .optional(),
 });
 
 const GRADE_TO_CEFR: Record<Grade, string> = {
@@ -75,6 +96,8 @@ export async function POST(request: Request) {
       includeIrtMeta = true,
       passageIds,
       passagesPerSession,
+      questionTypeSlots,
+      countsByDomain,
     } = parsed.data;
 
     if (mode === "legacy") {
@@ -86,9 +109,11 @@ export async function POST(request: Request) {
       domains,
       level: level as IrtLevel | undefined,
       countPerDomain,
+      countsByDomain,
       mcqOnly: mcqOnly ?? true,
       passageIds,
       passagesPerSession,
+      questionTypeSlots,
     });
 
     // Always return questions compatible with evaluate + UI
@@ -118,6 +143,7 @@ export async function POST(request: Request) {
           textPreview: p.text.slice(0, 160) + (p.text.length > 160 ? "…" : ""),
         })),
         readingMode: "preset_passages",
+        slotPlan: result.slotPlan,
         disclaimer:
           "생성된 irt a/b/c는 AI prior(휴리스틱)입니다. 실응시 보정 전까지 절대 등급 인증에 사용하지 마세요. 리딩 지문은 레벨 사전 지정 원문을 그대로 사용합니다.",
       };

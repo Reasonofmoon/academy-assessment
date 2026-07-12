@@ -14,14 +14,23 @@ export interface PassagePreview {
   order?: number;
 }
 
+export interface LevelGenConfig {
+  itemsPerReading: number;
+  passagesPerSession: number;
+  questionTypeSlots: string[];
+}
+
 interface LevelPassagePanelProps {
   grade: Grade;
-  /** Controlled level; if omitted, derived from grade on server */
   level: number;
   onLevelChange: (level: number) => void;
   selectedPassageIds: string[];
   onPassageIdsChange: (ids: string[]) => void;
-  /** Show only when reading domain is active */
+  /** Session overrides */
+  itemsPerReading: number;
+  onItemsPerReadingChange: (n: number) => void;
+  questionTypeSlots: string[];
+  onQuestionTypeSlotsChange: (slots: string[]) => void;
   visible: boolean;
 }
 
@@ -34,18 +43,33 @@ const LEVEL_LABELS: Record<number, string> = {
   6: "L6 유학",
 };
 
+const QTYPES = [
+  "main_idea",
+  "detail",
+  "inference",
+  "purpose",
+  "attitude",
+  "vocabulary",
+  "other",
+];
+
 export default function LevelPassagePanel({
   grade,
   level,
   onLevelChange,
   selectedPassageIds,
   onPassageIdsChange,
+  itemsPerReading,
+  onItemsPerReadingChange,
+  questionTypeSlots,
+  onQuestionTypeSlotsChange,
   visible,
 }: LevelPassagePanelProps) {
   const [passages, setPassages] = useState<PassagePreview[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [showSlots, setShowSlots] = useState(false);
 
   useEffect(() => {
     if (!visible) return;
@@ -60,8 +84,16 @@ export default function LevelPassagePanel({
         if (cancelled) return;
         const list = (data.passages ?? []) as PassagePreview[];
         setPassages(list);
-        // default: first 2 passages
-        if (selectedPassageIds.length === 0 && list.length > 0) {
+        const gen = data.generation as LevelGenConfig | undefined;
+        if (gen) {
+          onItemsPerReadingChange(gen.itemsPerReading);
+          onQuestionTypeSlotsChange(gen.questionTypeSlots ?? []);
+          const n = Math.min(
+            gen.passagesPerSession ?? 2,
+            list.length || 1
+          );
+          onPassageIdsChange(list.slice(0, n).map((p) => p.id));
+        } else if (list.length > 0) {
           onPassageIdsChange(list.slice(0, 2).map((p) => p.id));
         }
       } catch (e) {
@@ -75,40 +107,45 @@ export default function LevelPassagePanel({
     return () => {
       cancelled = true;
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- reload when level changes; don't reset selection mid-edit via selectedPassageIds
-  }, [level, visible, grade]);
-
-  // When level changes, reset selection to first two of new level
-  useEffect(() => {
-    if (!visible || passages.length === 0) return;
-    const stillValid = selectedPassageIds.every((id) =>
-      passages.some((p) => p.id === id)
-    );
-    if (!stillValid) {
-      onPassageIdsChange(passages.slice(0, 2).map((p) => p.id));
-    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [passages]);
+  }, [level, visible, grade]);
 
   if (!visible) return null;
 
   function toggle(id: string) {
     if (selectedPassageIds.includes(id)) {
-      if (selectedPassageIds.length <= 1) return; // keep at least one
+      if (selectedPassageIds.length <= 1) return;
       onPassageIdsChange(selectedPassageIds.filter((x) => x !== id));
     } else {
-      if (selectedPassageIds.length >= 3) return; // max 3
+      if (selectedPassageIds.length >= 3) return;
       onPassageIdsChange([...selectedPassageIds, id]);
     }
   }
 
+  function resizeItems(n: number) {
+    const count = Math.min(10, Math.max(1, n));
+    onItemsPerReadingChange(count);
+    const slots = [...questionTypeSlots];
+    while (slots.length < count) {
+      slots.push(slots[slots.length % Math.max(1, slots.length)] || "detail");
+    }
+    onQuestionTypeSlotsChange(slots.slice(0, count));
+  }
+
   return (
     <section className="rounded-lg border border-indigo-200 bg-indigo-50/40 p-5 shadow-sm">
-      <h2 className="mb-1 text-lg font-bold text-primary">리딩 레벨 · 지정 지문</h2>
+      <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
+        <h2 className="text-lg font-bold text-primary">리딩 레벨 · 지정 지문</h2>
+        <a
+          href="/passages"
+          className="text-xs font-medium text-indigo-800 underline"
+        >
+          지문·슬롯 관리 →
+        </a>
+      </div>
       <p className="mb-3 text-sm text-stone-600">
         레벨을 고르면 <strong>미리 지정된 지문</strong>이 고정됩니다. AI는 이 지문
-        위에서만 IRT 문항(요지·세부·추론 등)을 생성합니다. 지문 원문은 수정하지
-        않습니다.
+        위에서만 IRT 문항을 생성합니다.
       </p>
 
       <div className="mb-4 flex flex-wrap gap-2">
@@ -128,15 +165,65 @@ export default function LevelPassagePanel({
         ))}
       </div>
 
-      <p className="mb-2 text-xs text-stone-500">
-        학년 <span className="font-medium text-stone-700">{grade}</span> · 선택 지문{" "}
-        {selectedPassageIds.length}개 (1~3개)
-      </p>
+      {/* Item count + slots */}
+      <div className="mb-4 rounded-md border border-indigo-100 bg-white/80 p-3 text-sm">
+        <div className="flex flex-wrap items-center gap-3">
+          <label className="flex items-center gap-2">
+            <span className="text-stone-600">문항 수</span>
+            <input
+              type="number"
+              min={1}
+              max={10}
+              className="w-16 rounded border border-stone-300 px-2 py-1"
+              value={itemsPerReading}
+              onChange={(e) => resizeItems(Number(e.target.value) || 1)}
+            />
+          </label>
+          <span className="text-xs text-stone-500">
+            선택 지문 {selectedPassageIds.length}개 · 학년 {grade}
+          </span>
+          <button
+            type="button"
+            className="ml-auto text-xs text-indigo-700 underline"
+            onClick={() => setShowSlots((v) => !v)}
+          >
+            {showSlots ? "슬롯 접기" : "questionType 슬롯 편집"}
+          </button>
+        </div>
+        {showSlots && (
+          <ol className="mt-3 space-y-1.5 border-t border-stone-100 pt-3">
+            {Array.from({ length: itemsPerReading }).map((_, i) => (
+              <li key={i} className="flex items-center gap-2 text-xs">
+                <span className="w-10 font-mono text-stone-400">#{i + 1}</span>
+                <select
+                  className="flex-1 rounded border border-stone-300 px-2 py-1"
+                  value={questionTypeSlots[i] ?? "detail"}
+                  onChange={(e) => {
+                    const next = [...questionTypeSlots];
+                    while (next.length < itemsPerReading) next.push("detail");
+                    next[i] = e.target.value;
+                    onQuestionTypeSlotsChange(next.slice(0, itemsPerReading));
+                  }}
+                >
+                  {QTYPES.map((q) => (
+                    <option key={q} value={q}>
+                      {q}
+                    </option>
+                  ))}
+                </select>
+              </li>
+            ))}
+          </ol>
+        )}
+        {!showSlots && questionTypeSlots.length > 0 && (
+          <p className="mt-2 font-mono text-[11px] text-stone-500">
+            slots: [{questionTypeSlots.slice(0, itemsPerReading).join(", ")}]
+          </p>
+        )}
+      </div>
 
       {loading && <p className="text-sm text-stone-500">지문 불러오는 중…</p>}
-      {error && (
-        <p className="text-sm text-red-600">{error}</p>
-      )}
+      {error && <p className="text-sm text-red-600">{error}</p>}
 
       <ul className="space-y-2">
         {passages.map((p) => {
@@ -146,7 +233,9 @@ export default function LevelPassagePanel({
             <li
               key={p.id}
               className={`rounded-md border bg-white p-3 text-sm ${
-                checked ? "border-indigo-400 ring-1 ring-indigo-200" : "border-stone-200"
+                checked
+                  ? "border-indigo-400 ring-1 ring-indigo-200"
+                  : "border-stone-200"
               }`}
             >
               <div className="flex items-start gap-2">
@@ -158,7 +247,9 @@ export default function LevelPassagePanel({
                 />
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-semibold text-stone-800">{p.title}</span>
+                    <span className="font-semibold text-stone-800">
+                      {p.title}
+                    </span>
                     <span className="rounded bg-stone-100 px-1.5 text-xs">
                       {p.wordCount}w
                     </span>
@@ -166,11 +257,13 @@ export default function LevelPassagePanel({
                       CEFR {p.cefr}
                     </span>
                     <span className="font-mono text-xs text-stone-500">
-                      preset b={p.targetB}
+                      b={p.targetB}
                     </span>
                   </div>
-                  <p className="mt-1 text-xs text-stone-600 whitespace-pre-wrap">
-                    {open ? p.text : p.text.slice(0, 160) + (p.text.length > 160 ? "…" : "")}
+                  <p className="mt-1 whitespace-pre-wrap text-xs text-stone-600">
+                    {open
+                      ? p.text
+                      : p.text.slice(0, 160) + (p.text.length > 160 ? "…" : "")}
                   </p>
                   <button
                     type="button"

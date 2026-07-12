@@ -116,9 +116,12 @@ npm run import:irt-exemplars
 
 1. 영역에서 **독해** 선택  
 2. **L1–L6** 레벨 선택 → 사전 지정 지문 목록 표시  
-3. 지문 1~3개 체크 후 생성 → AI가 해당 원문 위에서만 문항 작성  
+3. 문항 수 / questionType 슬롯 확인·조정  
+4. 지문 1~3개 체크 후 생성 → AI가 해당 원문 위에서만 문항 작성  
 
-데이터: `data/reading-passages/passages-by-level.json`
+- 데이터: `data/reading-passages/passages-by-level.json`  
+- 슬롯 기본값: `data/reading-passages/generation-config.json`  
+- **관리 UI**: http://localhost:3000/passages (지문 CRUD + 레벨별 슬롯)
 
 ### approved → export → echobridge merge
 

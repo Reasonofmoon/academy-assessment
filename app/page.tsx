@@ -50,6 +50,8 @@ export default function HomePage() {
   const [domains, setDomains] = useState<Domain[]>(["vocabulary"]);
   const [irtLevel, setIrtLevel] = useState<number>(1);
   const [passageIds, setPassageIds] = useState<string[]>([]);
+  const [readingItemCount, setReadingItemCount] = useState(5);
+  const [questionTypeSlots, setQuestionTypeSlots] = useState<string[]>([]);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [answers, setAnswers] = useState<Answers>({});
   const [evaluation, setEvaluation] = useState<Evaluation | null>(null);
@@ -63,6 +65,7 @@ export default function HomePage() {
     items?: IrtGeneratedItem[];
     passagesUsed?: Array<{ id: string; title: string; targetB: number }>;
     readingMode?: string;
+    slotPlan?: Array<{ slot: number; passageId: string; questionType: string }>;
   } | null>(null);
 
   // Sync default IRT level when grade changes (unless user already picked reading level)
@@ -100,10 +103,16 @@ export default function HomePage() {
           level: levelForRequest,
           mcqOnly: true,
           includeIrtMeta: true,
-          ...(readingSelected && passageIds.length > 0
+          ...(readingSelected
             ? {
-                passageIds,
-                passagesPerSession: Math.min(3, passageIds.length),
+                countsByDomain: { reading: readingItemCount },
+                questionTypeSlots: questionTypeSlots.slice(0, readingItemCount),
+                ...(passageIds.length > 0
+                  ? {
+                      passageIds,
+                      passagesPerSession: Math.min(3, passageIds.length),
+                    }
+                  : {}),
               }
             : {}),
         }),
@@ -124,6 +133,11 @@ export default function HomePage() {
           items?: IrtGeneratedItem[];
           passagesUsed?: Array<{ id: string; title: string; targetB: number }>;
           readingMode?: string;
+          slotPlan?: Array<{
+            slot: number;
+            passageId: string;
+            questionType: string;
+          }>;
         };
       };
       setQuestions(payload.questions);
@@ -219,12 +233,18 @@ export default function HomePage() {
         <p className="mt-1 text-sm text-stone-500">
           IRT 원리 기반 AI 문항 생성 · 정제 예시은행(echobridge) few-shot
         </p>
-        <p className="mt-2">
+        <p className="mt-2 flex flex-wrap justify-center gap-3 text-sm">
           <Link
             href="/review"
-            className="text-sm font-medium text-primary underline-offset-2 hover:underline"
+            className="font-medium text-primary underline-offset-2 hover:underline"
           >
-            교사 검수 콘솔 →
+            문항 검수
+          </Link>
+          <Link
+            href="/passages"
+            className="font-medium text-indigo-800 underline-offset-2 hover:underline"
+          >
+            지문·슬롯 관리
           </Link>
         </p>
       </header>
@@ -269,6 +289,10 @@ export default function HomePage() {
             }}
             selectedPassageIds={passageIds}
             onPassageIdsChange={setPassageIds}
+            itemsPerReading={readingItemCount}
+            onItemsPerReadingChange={setReadingItemCount}
+            questionTypeSlots={questionTypeSlots}
+            onQuestionTypeSlotsChange={setQuestionTypeSlots}
           />
 
           <div className="no-print flex items-center justify-end gap-3">
@@ -329,6 +353,14 @@ export default function HomePage() {
                       .join(" · ")}
                   </p>
                 )}
+              {irtMeta.slotPlan && irtMeta.slotPlan.length > 0 && (
+                <p className="mt-1 font-mono text-[11px] text-indigo-900/70">
+                  slots:{" "}
+                  {irtMeta.slotPlan
+                    .map((s) => `#${s.slot}:${s.questionType}`)
+                    .join(" · ")}
+                </p>
+              )}
               {irtMeta.items && irtMeta.items.length > 0 && (
                 <p className="mt-1 font-mono text-[11px] text-amber-900/70">
                   b=[{irtMeta.items.map((i) => i.irt.b.toFixed(2)).join(", ")}]

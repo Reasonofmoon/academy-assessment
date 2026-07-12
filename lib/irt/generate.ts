@@ -16,10 +16,13 @@ import {
   type VocabDimension,
 } from "@/lib/irt/types";
 import {
+  getDefaultCountForDomain,
+  getLevelGenConfig,
   planReadingItemSlots,
   selectSessionPassages,
   type PresetPassage,
 } from "@/lib/irt/passages";
+import type { ReadingQuestionType } from "@/lib/irt/types";
 import { z } from "zod";
 
 const AiBatchSchema = z.object({
@@ -337,15 +340,17 @@ export async function generateDomainItems(opts: {
   mcqOnly?: boolean;
   passageIds?: string[];
   passagesPerSession?: number;
+  questionTypeSlots?: ReadingQuestionType[];
 }): Promise<{ items: IrtGeneratedItem[]; passagesUsed: PresetPassage[] }> {
   const anchor = getLevelAnchor(opts.level);
   const targetTheta = anchor.thetaCenter;
+  const levelCfg = getLevelGenConfig(opts.level);
 
   // ── Reading: preset passages ──
   if (opts.domain === "reading") {
     const passages = selectSessionPassages({
       level: opts.level,
-      count: opts.passagesPerSession ?? 2,
+      count: opts.passagesPerSession ?? levelCfg.passagesPerSession ?? 2,
       passageIds: opts.passageIds,
     });
     if (passages.length === 0) {
@@ -354,7 +359,11 @@ export async function generateDomainItems(opts: {
         500
       );
     }
-    const slots = planReadingItemSlots(passages, opts.count);
+    const typeSlots =
+      opts.questionTypeSlots && opts.questionTypeSlots.length > 0
+        ? opts.questionTypeSlots
+        : levelCfg.questionTypeSlots;
+    const slots = planReadingItemSlots(passages, opts.count, typeSlots);
     const styleExemplars = selectExemplars({
       domain: "reading",
       level: opts.level,
@@ -473,9 +482,12 @@ export async function generateIrtAssessment(opts: {
   domains: Domain[];
   level?: IrtLevel;
   countPerDomain?: number;
+  /** Per-domain overrides, e.g. { reading: 4, vocabulary: 5 } */
+  countsByDomain?: Partial<Record<Domain, number>>;
   mcqOnly?: boolean;
   passageIds?: string[];
   passagesPerSession?: number;
+  questionTypeSlots?: ReadingQuestionType[];
 }): Promise<{
   level: IrtLevel;
   targetTheta: number;
@@ -485,19 +497,35 @@ export async function generateIrtAssessment(opts: {
   questions: Question[];
   exemplarsUsed: Exemplar[];
   passagesUsed: PresetPassage[];
+  slotPlan?: Array<{ slot: number; passageId: string; questionType: string }>;
 }> {
   const level = opts.level ?? GRADE_TO_LEVEL[opts.grade];
   const anchor = getLevelAnchor(level);
-  const count = opts.countPerDomain ?? 5;
   const mcqOnly = opts.mcqOnly ?? true;
+  const levelCfg = getLevelGenConfig(level);
 
   const allItems: IrtGeneratedItem[] = [];
   const exemplarsUsed: Exemplar[] = [];
   const passagesUsed: PresetPassage[] = [];
   const seenEx = new Set<string>();
   const seenPass = new Set<string>();
+  let slotPlan:
+    | Array<{ slot: number; passageId: string; questionType: string }>
+    | undefined;
 
   for (const domain of opts.domains) {
+    const count =
+      opts.countsByDomain?.[domain] ??
+      opts.countPerDomain ??
+      getDefaultCountForDomain(domain, level);
+
+    const typeSlots =
+      domain === "reading"
+        ? opts.questionTypeSlots && opts.questionTypeSlots.length > 0
+          ? opts.questionTypeSlots
+          : levelCfg.questionTypeSlots
+        : undefined;
+
     const { items, passagesUsed: used } = await generateDomainItems({
       grade: opts.grade,
       level,
@@ -505,8 +533,19 @@ export async function generateIrtAssessment(opts: {
       count,
       mcqOnly,
       passageIds: opts.passageIds,
-      passagesPerSession: opts.passagesPerSession,
+      passagesPerSession:
+        opts.passagesPerSession ?? levelCfg.passagesPerSession,
+      questionTypeSlots: typeSlots,
     });
+
+    if (domain === "reading" && used.length > 0) {
+      const planned = planReadingItemSlots(used, count, typeSlots);
+      slotPlan = planned.map((s) => ({
+        slot: s.slot,
+        passageId: s.passage.id,
+        questionType: s.questionType,
+      }));
+    }
     allItems.push(...items);
     for (const p of used) {
       if (!seenPass.has(p.id)) {
@@ -554,6 +593,7 @@ export async function generateIrtAssessment(opts: {
     questions,
     exemplarsUsed: exemplarsUsed.slice(0, 12),
     passagesUsed,
+    slotPlan,
   };
 }
 
