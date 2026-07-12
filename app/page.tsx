@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import StudentForm from "@/components/StudentForm";
 import DomainSelector from "@/components/DomainSelector";
 import QuestionList from "@/components/QuestionList";
@@ -12,6 +13,7 @@ import {
   type Answers,
   type Evaluation,
 } from "@/lib/types";
+import type { IrtGeneratedItem } from "@/lib/irt/types";
 
 // ───────────────────────────────────────────────────────────
 // 메인 평가 페이지 (SPA)
@@ -48,10 +50,21 @@ export default function HomePage() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [answers, setAnswers] = useState<Answers>({});
   const [evaluation, setEvaluation] = useState<Evaluation | null>(null);
+  /** IRT generation metadata from refined echobridge exemplars */
+  const [irtMeta, setIrtMeta] = useState<{
+    level: number;
+    targetTheta: number;
+    cefr: string;
+    bank?: { vocab: number; reading: number; version: string };
+    disclaimer?: string;
+    items?: IrtGeneratedItem[];
+  } | null>(null);
 
   // 로딩 / 에러 상태
   const [isGenerating, setIsGenerating] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSavingBank, setIsSavingBank] = useState(false);
+  const [bankSaveMsg, setBankSaveMsg] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   // 문제 생성 가능 조건: 이름·강사명 입력 + 영역 1개 이상
@@ -68,15 +81,33 @@ export default function HomePage() {
       const res = await fetch("/api/generate-questions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ grade: studentInfo.grade, domains }),
+        body: JSON.stringify({
+          grade: studentInfo.grade,
+          domains,
+          mode: "irt",
+          mcqOnly: true,
+          includeIrtMeta: true,
+        }),
       });
       const data: unknown = await res.json();
       if (!res.ok) {
         // 서버가 내려준 사용자 친화 메시지 표시
         throw new Error((data as { error?: string }).error ?? "문제 생성에 실패했습니다.");
       }
-      const { questions: qs } = data as { questions: Question[] };
-      setQuestions(qs);
+      const payload = data as {
+        questions: Question[];
+        irt?: {
+          level: number;
+          targetTheta: number;
+          cefr: string;
+          bank?: { vocab: number; reading: number; version: string };
+          disclaimer?: string;
+          items?: IrtGeneratedItem[];
+        };
+      };
+      setQuestions(payload.questions);
+      setIrtMeta(payload.irt ?? null);
+      setBankSaveMsg(null);
       setAnswers({}); // 답안 초기화
       setStep("answering");
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -117,8 +148,46 @@ export default function HomePage() {
     setQuestions([]);
     setAnswers({});
     setEvaluation(null);
+    setIrtMeta(null);
+    setBankSaveMsg(null);
     setError(null);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // ── 생성 문항 → JSON bank (검수 대기) ──
+  async function handleSaveToBank() {
+    if (!irtMeta?.items?.length) {
+      setError("저장할 IRT 문항 메타가 없습니다. IRT 모드로 다시 생성하세요.");
+      return;
+    }
+    setError(null);
+    setBankSaveMsg(null);
+    setIsSavingBank(true);
+    try {
+      const res = await fetch("/api/items", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          items: irtMeta.items,
+          status: "pending",
+          createdBy: studentInfo.teacher || "teacher",
+          grade: studentInfo.grade,
+        }),
+      });
+      const data = (await res.json()) as {
+        error?: string;
+        saved?: number;
+        batchId?: string;
+      };
+      if (!res.ok) throw new Error(data.error ?? "bank 저장 실패");
+      setBankSaveMsg(
+        `${data.saved}문항을 검수 대기(pending)로 저장했습니다. (${data.batchId})`
+      );
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "저장 실패");
+    } finally {
+      setIsSavingBank(false);
+    }
   }
 
   return (
@@ -126,7 +195,17 @@ export default function HomePage() {
       {/* 상단 타이틀 (인쇄 시 숨김) */}
       <header className="no-print mb-6 text-center">
         <h1 className="text-2xl font-bold text-primary">{ACADEMY_NAME}</h1>
-        <p className="mt-1 text-sm text-stone-500">AI 영어 학력 진단 평가 도구</p>
+        <p className="mt-1 text-sm text-stone-500">
+          IRT 원리 기반 AI 문항 생성 · 정제 예시은행(echobridge) few-shot
+        </p>
+        <p className="mt-2">
+          <Link
+            href="/review"
+            className="text-sm font-medium text-primary underline-offset-2 hover:underline"
+          >
+            교사 검수 콘솔 →
+          </Link>
+        </p>
       </header>
 
       {/* 에러 배너 */}
@@ -154,9 +233,16 @@ export default function HomePage() {
               disabled={!canGenerate || isGenerating}
               className="rounded-md bg-accent px-6 py-2.5 text-sm font-semibold text-primary transition hover:bg-accent-light disabled:cursor-not-allowed disabled:opacity-40"
             >
-              {isGenerating ? "AI가 문제 생성 중..." : "AI 문제 자동 생성"}
+              {isGenerating
+                ? "IRT 문항 생성 중 (예시은행 + AI)..."
+                : "IRT 원리로 AI 문항 생성"}
             </button>
           </div>
+          <p className="no-print text-xs text-stone-500">
+            학년 → GLEAS 레벨·목표 θ 매핑 후, 정제된 서비스 문항 예시를 few-shot으로
+            넣고 3PL(a,b,c) 타깃에 맞게 생성합니다. 생성 모수는 AI prior이며 실측
+            보정 전입니다.
+          </p>
         </div>
       )}
 
@@ -170,6 +256,50 @@ export default function HomePage() {
           >
             ← 정보/영역 다시 설정
           </button>
+
+          {irtMeta && (
+            <div className="no-print rounded-md border border-amber-200 bg-amber-50 p-3 text-xs text-amber-950">
+              <p className="font-semibold">
+                IRT 생성 메타 · L{irtMeta.level} · 목표 θ=
+                {irtMeta.targetTheta.toFixed(2)} · CEFR {irtMeta.cefr}
+              </p>
+              {irtMeta.bank && (
+                <p className="mt-1 text-amber-900/80">
+                  예시은행 v{irtMeta.bank.version}: 어휘 {irtMeta.bank.vocab} · 독해{" "}
+                  {irtMeta.bank.reading} (echobridge curated sample)
+                </p>
+              )}
+              {irtMeta.items && irtMeta.items.length > 0 && (
+                <p className="mt-1 font-mono text-[11px] text-amber-900/70">
+                  b=[{irtMeta.items.map((i) => i.irt.b.toFixed(2)).join(", ")}]
+                </p>
+              )}
+              <p className="mt-2 text-amber-800/90">
+                {irtMeta.disclaimer ??
+                  "a/b/c는 예비 추정값입니다. 절대 등급 인증용 아님."}
+              </p>
+              <div className="mt-3 flex flex-wrap items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => void handleSaveToBank()}
+                  disabled={isSavingBank || !irtMeta.items?.length}
+                  className="rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-white disabled:opacity-40"
+                >
+                  {isSavingBank ? "저장 중…" : "bank에 저장 (검수 대기)"}
+                </button>
+                <Link
+                  href="/review"
+                  className="rounded-md border border-amber-300 bg-white px-3 py-1.5 text-xs font-medium text-amber-950"
+                >
+                  검수 화면 열기
+                </Link>
+              </div>
+              {bankSaveMsg && (
+                <p className="mt-2 text-emerald-800">{bankSaveMsg}</p>
+              )}
+            </div>
+          )}
+
           <QuestionList
             questions={questions}
             answers={answers}

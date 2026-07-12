@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { callGemini, parseJson, GeminiError } from "@/lib/gemini";
+import { GeminiError } from "@/lib/gemini";
 import {
   DOMAINS,
   GRADES,
@@ -9,39 +9,49 @@ import {
   type Domain,
   type Grade,
 } from "@/lib/types";
+import { generateIrtAssessment } from "@/lib/irt/generate";
+import { GRADE_TO_LEVEL, type IrtLevel } from "@/lib/irt/types";
+import { callGemini, parseJson } from "@/lib/gemini";
 
 // ───────────────────────────────────────────────────────────
 // POST /api/generate-questions
-//   요청: { grade: Grade, domains: Domain[] }
-//   응답: { questions: Question[] }  (영역별 5문제씩)
+//   Default mode: IRT-principled generation with refined exemplars
+//   from echobridge-web curated service sample.
 //
-//   서버에서만 실행되므로 여기서 Gemini API 키를 안전하게 사용한다.
+//   Body:
+//     grade, domains
+//     mode?: "irt" | "legacy"   (default "irt")
+//     level?: 1-6
+//     countPerDomain?: 1-10
+//     mcqOnly?: boolean
+//     includeIrtMeta?: boolean
 // ───────────────────────────────────────────────────────────
 
-// 요청 본문 검증 스키마
 const RequestSchema = z.object({
   grade: z.enum(GRADES),
   domains: z.array(z.enum(DOMAINS)).min(1, "최소 1개 영역을 선택하세요."),
+  mode: z.enum(["irt", "legacy"]).optional(),
+  level: z.number().int().min(1).max(6).optional(),
+  countPerDomain: z.number().int().min(1).max(10).optional(),
+  mcqOnly: z.boolean().optional(),
+  includeIrtMeta: z.boolean().optional(),
 });
 
-// 학년 → CEFR 레벨 자동 매핑
-// (초등=A1~A2, 중등=A2~B1, 고등=B1~B2 로 점진 상승)
 const GRADE_TO_CEFR: Record<Grade, string> = {
-  "초3": "A1",
-  "초4": "A1",
-  "초5": "A2",
-  "초6": "A2",
-  "중1": "A2",
-  "중2": "B1",
-  "중3": "B1",
-  "고1": "B1",
-  "고2": "B2",
-  "고3": "B2",
+  초3: "A1",
+  초4: "A1",
+  초5: "A2",
+  초6: "A2",
+  중1: "A2",
+  중2: "B1",
+  중3: "B1",
+  고1: "B1",
+  고2: "B2",
+  고3: "B2",
 };
 
 export async function POST(request: Request) {
   try {
-    // 1) 요청 본문 파싱 & 검증
     const body: unknown = await request.json();
     const parsed = RequestSchema.safeParse(body);
     if (!parsed.success) {
@@ -50,28 +60,56 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
-    const { grade, domains } = parsed.data;
-    const cefr = GRADE_TO_CEFR[grade];
 
-    // 2) 프롬프트 작성 — JSON 형식 강제
-    const prompt = buildPrompt(grade, cefr, domains);
+    const {
+      grade,
+      domains,
+      mode = "irt",
+      level,
+      countPerDomain,
+      mcqOnly,
+      includeIrtMeta = true,
+    } = parsed.data;
 
-    // 3) Gemini 호출 & JSON 파싱
-    const raw = await callGemini(prompt);
-    const json = parseJson<unknown>(raw);
-
-    // 4) 응답 검증 (Zod) — 깨진 데이터 차단
-    const validated = GenerateResponseSchema.safeParse(json);
-    if (!validated.success) {
-      throw new GeminiError("AI가 예상과 다른 형식의 문제를 생성했습니다. 다시 시도해 주세요.", 502);
+    if (mode === "legacy") {
+      return NextResponse.json(await legacyGenerate(grade, domains));
     }
 
-    return NextResponse.json(validated.data);
+    const result = await generateIrtAssessment({
+      grade,
+      domains,
+      level: level as IrtLevel | undefined,
+      countPerDomain,
+      mcqOnly: mcqOnly ?? true,
+    });
+
+    // Always return questions compatible with evaluate + UI
+    const response: Record<string, unknown> = {
+      questions: result.questions,
+    };
+
+    if (includeIrtMeta) {
+      response.irt = {
+        mode: "irt",
+        level: result.level,
+        levelName: `L${result.level}`,
+        targetTheta: result.targetTheta,
+        cefr: result.cefr,
+        gradeToLevel: GRADE_TO_LEVEL[grade],
+        bank: result.bank,
+        /** Full items for save-to-bank (includes stem/options for review). */
+        items: result.items,
+        disclaimer:
+          "생성된 irt a/b/c는 AI prior(휴리스틱)입니다. 실응시 보정 전까지 절대 등급 인증에 사용하지 마세요.",
+      };
+    }
+
+    return NextResponse.json(response);
   } catch (error) {
-    // GeminiError는 사용자 친화 메시지를 그대로 전달
     if (error instanceof GeminiError) {
       return NextResponse.json({ error: error.message }, { status: error.status });
     }
+    console.error("generate-questions", error);
     return NextResponse.json(
       { error: "문제 생성 중 알 수 없는 오류가 발생했습니다." },
       { status: 500 }
@@ -79,13 +117,14 @@ export async function POST(request: Request) {
   }
 }
 
-/** 영역별 5문제 생성을 위한 프롬프트 빌더 */
-function buildPrompt(grade: Grade, cefr: string, domains: Domain[]): string {
+/** Original free-form Gemini generation (no exemplar bank). */
+async function legacyGenerate(grade: Grade, domains: Domain[]) {
+  const cefr = GRADE_TO_CEFR[grade];
   const domainList = domains
     .map((d) => `- ${d} (${DOMAIN_LABELS[d]})`)
     .join("\n");
 
-  return `You are an expert English assessment designer for a Korean English academy.
+  const prompt = `You are an expert English assessment designer for a Korean English academy.
 Create a diagnostic test for a Korean student in grade "${grade}", targeting CEFR level ${cefr}.
 
 Generate EXACTLY 5 questions for EACH of the following domains:
@@ -115,4 +154,15 @@ Respond with ONLY valid JSON in this exact shape (no markdown, no commentary):
     }
   ]
 }`;
+
+  const raw = await callGemini(prompt);
+  const json = parseJson<unknown>(raw);
+  const validated = GenerateResponseSchema.safeParse(json);
+  if (!validated.success) {
+    throw new GeminiError(
+      "AI가 예상과 다른 형식의 문제를 생성했습니다. 다시 시도해 주세요.",
+      502
+    );
+  }
+  return validated.data;
 }

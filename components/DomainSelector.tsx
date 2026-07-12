@@ -33,7 +33,7 @@ export default function DomainSelector({ selected, onChange }: DomainSelectorPro
     <section className="rounded-lg border border-stone-200 bg-white p-5 shadow-sm">
       <h2 className="mb-1 text-lg font-bold text-primary">2. 진단 영역 선택</h2>
       <p className="mb-4 text-sm text-stone-500">
-        1~3개를 동시에 선택할 수 있습니다. (영역당 5문제 출제)
+        1~3개를 동시에 선택할 수 있습니다. (영역당 5문제 · IRT 타깃 난이도 출제)
       </p>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">

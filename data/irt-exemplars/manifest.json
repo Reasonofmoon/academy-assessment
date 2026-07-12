@@ -1,0 +1,391 @@
+{
+  "version": "1.0.0",
+  "sourceRepo": "Reasonofmoon/echobridge-web",
+  "builtAt": "2026-07-13",
+  "purpose": "Few-shot exemplars for IRT-principled AI item generation (not full CAT bank)",
+  "vocabExemplarCount": 216,
+  "readingExemplarCount": 125,
+  "levelAnchors": {
+    "1": {
+      "name": "초등",
+      "thetaCenter": -2.25,
+      "cefr": "A1-A2",
+      "grades": [
+        "초3",
+        "초4",
+        "초5",
+        "초6"
+      ]
+    },
+    "2": {
+      "name": "중학교",
+      "thetaCenter": -0.9,
+      "cefr": "A2-B1",
+      "grades": [
+        "중1",
+        "중2"
+      ]
+    },
+    "3": {
+      "name": "고등학교",
+      "thetaCenter": 0.25,
+      "cefr": "B1-B2",
+      "grades": [
+        "중3",
+        "고1"
+      ]
+    },
+    "4": {
+      "name": "수능어휘",
+      "thetaCenter": 1.15,
+      "cefr": "B1-B2",
+      "grades": [
+        "고2",
+        "고3"
+      ]
+    },
+    "5": {
+      "name": "토플수준",
+      "thetaCenter": 1.9,
+      "cefr": "B2-C1",
+      "grades": []
+    },
+    "6": {
+      "name": "유학수준",
+      "thetaCenter": 2.65,
+      "cefr": "C1-C2",
+      "grades": []
+    }
+  },
+  "vocabStats": {
+    "1": {
+      "D1_Form": {
+        "pool": 93,
+        "exemplars": 6
+      },
+      "D2_Meaning": {
+        "pool": 173,
+        "exemplars": 6
+      },
+      "D3_Context": {
+        "pool": 163,
+        "exemplars": 6
+      },
+      "D4_Network": {
+        "pool": 162,
+        "exemplars": 6
+      },
+      "D5_Usage": {
+        "pool": 99,
+        "exemplars": 6
+      },
+      "D6_Cloze": {
+        "pool": 110,
+        "exemplars": 6
+      }
+    },
+    "2": {
+      "D1_Form": {
+        "pool": 166,
+        "exemplars": 6
+      },
+      "D2_Meaning": {
+        "pool": 170,
+        "exemplars": 6
+      },
+      "D3_Context": {
+        "pool": 181,
+        "exemplars": 6
+      },
+      "D4_Network": {
+        "pool": 179,
+        "exemplars": 6
+      },
+      "D5_Usage": {
+        "pool": 126,
+        "exemplars": 6
+      },
+      "D6_Cloze": {
+        "pool": 178,
+        "exemplars": 6
+      }
+    },
+    "3": {
+      "D1_Form": {
+        "pool": 145,
+        "exemplars": 6
+      },
+      "D2_Meaning": {
+        "pool": 128,
+        "exemplars": 6
+      },
+      "D3_Context": {
+        "pool": 238,
+        "exemplars": 6
+      },
+      "D4_Network": {
+        "pool": 171,
+        "exemplars": 6
+      },
+      "D5_Usage": {
+        "pool": 140,
+        "exemplars": 6
+      },
+      "D6_Cloze": {
+        "pool": 178,
+        "exemplars": 6
+      }
+    },
+    "4": {
+      "D1_Form": {
+        "pool": 250,
+        "exemplars": 6
+      },
+      "D2_Meaning": {
+        "pool": 250,
+        "exemplars": 6
+      },
+      "D3_Context": {
+        "pool": 250,
+        "exemplars": 6
+      },
+      "D4_Network": {
+        "pool": 250,
+        "exemplars": 6
+      },
+      "D5_Usage": {
+        "pool": 250,
+        "exemplars": 6
+      },
+      "D6_Cloze": {
+        "pool": 250,
+        "exemplars": 6
+      }
+    },
+    "5": {
+      "D1_Form": {
+        "pool": 200,
+        "exemplars": 6
+      },
+      "D2_Meaning": {
+        "pool": 200,
+        "exemplars": 6
+      },
+      "D3_Context": {
+        "pool": 200,
+        "exemplars": 6
+      },
+      "D4_Network": {
+        "pool": 200,
+        "exemplars": 6
+      },
+      "D5_Usage": {
+        "pool": 200,
+        "exemplars": 6
+      },
+      "D6_Cloze": {
+        "pool": 200,
+        "exemplars": 6
+      }
+    },
+    "6": {
+      "D1_Form": {
+        "pool": 117,
+        "exemplars": 6
+      },
+      "D2_Meaning": {
+        "pool": 117,
+        "exemplars": 6
+      },
+      "D3_Context": {
+        "pool": 117,
+        "exemplars": 6
+      },
+      "D4_Network": {
+        "pool": 117,
+        "exemplars": 6
+      },
+      "D5_Usage": {
+        "pool": 116,
+        "exemplars": 6
+      },
+      "D6_Cloze": {
+        "pool": 116,
+        "exemplars": 6
+      }
+    }
+  },
+  "readingStats": {
+    "1": {
+      "inference": {
+        "pool": 1,
+        "exemplars": 1
+      },
+      "main_idea": {
+        "pool": 7,
+        "exemplars": 5
+      },
+      "detail": {
+        "pool": 58,
+        "exemplars": 5
+      },
+      "other": {
+        "pool": 1,
+        "exemplars": 1
+      },
+      "vocabulary": {
+        "pool": 121,
+        "exemplars": 3
+      }
+    },
+    "2": {
+      "purpose": {
+        "pool": 2,
+        "exemplars": 2
+      },
+      "main_idea": {
+        "pool": 66,
+        "exemplars": 5
+      },
+      "inference": {
+        "pool": 5,
+        "exemplars": 5
+      },
+      "attitude": {
+        "pool": 4,
+        "exemplars": 4
+      },
+      "detail": {
+        "pool": 39,
+        "exemplars": 5
+      },
+      "vocabulary": {
+        "pool": 145,
+        "exemplars": 3
+      }
+    },
+    "3": {
+      "main_idea": {
+        "pool": 58,
+        "exemplars": 5
+      },
+      "attitude": {
+        "pool": 2,
+        "exemplars": 2
+      },
+      "inference": {
+        "pool": 7,
+        "exemplars": 5
+      },
+      "purpose": {
+        "pool": 3,
+        "exemplars": 3
+      },
+      "detail": {
+        "pool": 44,
+        "exemplars": 5
+      },
+      "vocabulary": {
+        "pool": 183,
+        "exemplars": 3
+      }
+    },
+    "4": {
+      "main_idea": {
+        "pool": 98,
+        "exemplars": 5
+      },
+      "detail": {
+        "pool": 144,
+        "exemplars": 5
+      },
+      "inference": {
+        "pool": 38,
+        "exemplars": 5
+      },
+      "attitude": {
+        "pool": 12,
+        "exemplars": 5
+      },
+      "vocabulary": {
+        "pool": 203,
+        "exemplars": 3
+      },
+      "other": {
+        "pool": 2,
+        "exemplars": 2
+      }
+    },
+    "5": {
+      "detail": {
+        "pool": 79,
+        "exemplars": 5
+      },
+      "main_idea": {
+        "pool": 15,
+        "exemplars": 5
+      },
+      "purpose": {
+        "pool": 2,
+        "exemplars": 2
+      },
+      "attitude": {
+        "pool": 14,
+        "exemplars": 5
+      },
+      "inference": {
+        "pool": 23,
+        "exemplars": 5
+      },
+      "vocabulary": {
+        "pool": 159,
+        "exemplars": 3
+      },
+      "other": {
+        "pool": 1,
+        "exemplars": 1
+      }
+    },
+    "6": {
+      "main_idea": {
+        "pool": 3,
+        "exemplars": 3
+      },
+      "inference": {
+        "pool": 2,
+        "exemplars": 2
+      },
+      "detail": {
+        "pool": 3,
+        "exemplars": 3
+      },
+      "purpose": {
+        "pool": 1,
+        "exemplars": 1
+      },
+      "vocabulary": {
+        "pool": 119,
+        "exemplars": 3
+      }
+    }
+  },
+  "irtPrinciples": {
+    "model": "3PL",
+    "formula": "P(theta)=c+(1-c)/(1+exp(-1.7*a*(theta-b)))",
+    "a_range": [
+      0.5,
+      2.5
+    ],
+    "b_range": [
+      -3.0,
+      3.0
+    ],
+    "c_mcq": 0.25,
+    "notes": [
+      "Target b near examinee theta for max information",
+      "Distractors must be plausible and non-overlapping",
+      "a reflects discrimination; avoid a<0.5",
+      "irtSource remains heuristic until empirical calibration"
+    ]
+  }
+}

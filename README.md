@@ -1,8 +1,17 @@
 # 영어 학력 진단 평가 도구 (Academy Assessment)
 
-한국 영어 학원을 위한 **AI 기반 학생 영어 학력 진단 도구**입니다.
-강사가 학년·영역을 고르면 Gemini AI가 문제를 자동 생성하고, 학생 답안을 자동 채점·피드백한 뒤, 인쇄(PDF) 가능한 리포트를 출력합니다.
-어휘·문법·독해 3개 영역, 학년별 CEFR(A1~B2) 난이도 자동 매칭을 지원합니다.
+한국 영어 학원을 위한 **IRT 원리 기반 AI 문항 생성 + 학력 진단 도구**입니다.
+
+강사가 학년·영역을 고르면:
+
+1. **echobridge-web 정제 서비스 문항**에서 층화 추출한 few-shot 예시를 불러오고  
+2. **3PL IRT 규칙**(목표 θ, a/b/c, 변별 오답)에 맞게 Gemini가 신규 문항을 생성하며  
+3. 학생 답안을 자동 채점·피드백한 뒤 인쇄(PDF) 리포트를 출력합니다.
+
+어휘·문법·독해 3영역, 학년→GLEAS L1–L6·목표 θ 자동 매핑.
+
+> 생성 문항의 a/b/c는 **AI prior(예비 추정)** 입니다. 실응시 보정 전 절대 등급 인증에 사용하지 마세요.  
+> 상세: [`docs/IRT_ITEM_GENERATION.md`](docs/IRT_ITEM_GENERATION.md)
 
 ---
 
@@ -67,22 +76,40 @@ npm run dev
 academy-assessment/
 ├── app/
 │   ├── page.tsx                      # 메인 평가 페이지 (SPA 흐름 제어)
-│   ├── layout.tsx                    # 공통 레이아웃 + Pretendard 폰트
-│   ├── globals.css                   # 전역 스타일 + A4 인쇄 최적화 CSS
+│   ├── layout.tsx
+│   ├── globals.css
 │   └── api/
-│       ├── generate-questions/route.ts   # 문제 생성 (서버)
-│       └── evaluate/route.ts             # 자동 채점·평가 (서버)
+│       ├── generate-questions/       # IRT few-shot 생성 (mode=irt|legacy)
+│       ├── evaluate/                 # 자동 채점·평가
+│       ├── bank/                     # 예시은행 메타
+│       └── items/                    # 생성 문항 bank CRUD
+│   ├── review/page.tsx               # 교사 검수 UI
 ├── components/
-│   ├── StudentForm.tsx               # 학생 정보 입력
-│   ├── DomainSelector.tsx            # 진단 영역 선택
-│   ├── QuestionList.tsx              # 답안 작성 폼
-│   └── ResultReport.tsx              # 인쇄용 결과 리포트
+│   ├── StudentForm.tsx
+│   ├── DomainSelector.tsx
+│   ├── QuestionList.tsx
+│   └── ResultReport.tsx
 ├── lib/
-│   ├── gemini.ts                     # Gemini API 호출 헬퍼 (에러 처리 포함)
-│   └── types.ts                      # 공유 타입 & Zod 검증 스키마
-├── .env.local.example                # 환경변수 템플릿
-├── .gitignore                        # .env.local 제외
+│   ├── gemini.ts
+│   ├── types.ts
+│   └── irt/                          # IRT 생성 엔진
+│       ├── types.ts
+│       ├── bank.ts                   # 정제 예시 로드
+│       ├── generate.ts               # few-shot 프롬프트 + 생성
+│       └── validate.ts               # 결정론 검증
+├── data/irt-exemplars/               # echobridge curated 층화 표본
+├── data/generated-bank/              # AI 생성 문항 + 검수 상태
+├── scripts/import-irt-exemplars.mjs  # 예시은행 재구축
+├── docs/IRT_ITEM_GENERATION.md
+├── .env.local.example
 └── README.md
+```
+
+### 예시은행 갱신 (echobridge 정제 데이터)
+
+```bash
+# 로컬에 ../echobridge-web 클론이 있을 때
+npm run import:irt-exemplars
 ```
 
 ---

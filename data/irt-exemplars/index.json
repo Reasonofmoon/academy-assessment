@@ -1,0 +1,489 @@
+{
+  "vocabByLevelDim": {
+    "L1:D1_Form": [
+      "L1-00121-D1_Form-2",
+      "L1-00275-D1_Form-2",
+      "L1-00609-D1_Form-2",
+      "L1-00603-D1_Form-2",
+      "L1-00754-D1_Form-2",
+      "L1-00246-D1_Form-2"
+    ],
+    "L1:D2_Meaning": [
+      "L1-00752-D2_Meaning-regenerated",
+      "L1-00096-D2_Meaning-regenerated",
+      "L1-00121-D2_Meaning-regenerated",
+      "L1-00087-D2_Meaning-regenerated",
+      "L1-00152-D2_Meaning-regenerated",
+      "L1-00258-D2_Meaning-regenerated"
+    ],
+    "L1:D3_Context": [
+      "L1-00299-D3_Context-3",
+      "L1-00621-D3_Context-3",
+      "L1-00711-D3_Context-3",
+      "L1-00655-D3_Context-3",
+      "L1-00663-D3_Context-3",
+      "L1-00112-D3_Context-3"
+    ],
+    "L1:D4_Network": [
+      "L1-00010-D4_Network-5",
+      "L1-00298-D4_Network-5",
+      "L1-00058-D4_Network-5",
+      "L1-00234-D4_Network-5",
+      "L1-00069-D4_Network-5",
+      "L1-00274-D4_Network-5"
+    ],
+    "L1:D5_Usage": [
+      "L1-00114-D5_Usage-regenerated",
+      "L1-00199-D5_Usage-regenerated",
+      "L1-00157-D5_Usage-regenerated",
+      "L1-00652-D5_Usage-regenerated",
+      "L1-00018-D5_Usage-regenerated",
+      "L1-00029-D5_Usage-regenerated"
+    ],
+    "L1:D6_Cloze": [
+      "L1-00266-D6_Cloze-regenerated",
+      "L1-00094-D6_Cloze-regenerated",
+      "L1-00152-D6_Cloze-regenerated",
+      "L1-00181-D6_Cloze-regenerated",
+      "L1-00733-D6_Cloze-regenerated",
+      "L1-00754-D6_Cloze-regenerated"
+    ],
+    "L2:D1_Form": [
+      "L2-00905-D1_Form-2",
+      "L2-00845-D1_Form-2",
+      "L2-01803-D1_Form-2",
+      "L2-02028-D1_Form-2",
+      "L2-02027-D1_Form-2",
+      "L2-00751-D1_Form-2"
+    ],
+    "L2:D2_Meaning": [
+      "L2-00357-D2_Meaning-regenerated",
+      "L2-01684-D2_Meaning-regenerated",
+      "L2-00798-D2_Meaning-regenerated",
+      "L2-01707-D2_Meaning-regenerated",
+      "L2-01638-D2_Meaning-regenerated",
+      "L2-01989-D2_Meaning-0"
+    ],
+    "L2:D3_Context": [
+      "L2-01650-D3_Context-3",
+      "L2-02045-D3_Context-3",
+      "L2-00936-D3_Context-3",
+      "L2-00952-D3_Context-3",
+      "L2-02044-D3_Context-3",
+      "L2-02030-D3_Context-3"
+    ],
+    "L2:D4_Network": [
+      "L2-00612-D4_Network-5",
+      "L2-01899-D4_Network-5",
+      "L2-01900-D4_Network-5",
+      "L2-01805-D4_Network-5",
+      "L2-01976-D4_Network-5",
+      "L2-00892-D4_Network-5"
+    ],
+    "L2:D5_Usage": [
+      "L2-01714-D5_Usage-regenerated",
+      "L2-01887-D5_Usage-7",
+      "L2-02017-D5_Usage-7",
+      "L2-01707-D5_Usage-regenerated",
+      "L2-00714-D5_Usage-regenerated",
+      "L2-01724-D5_Usage-regenerated"
+    ],
+    "L2:D6_Cloze": [
+      "L2-01864-D6_Cloze-0",
+      "L2-02046-D6_Cloze-0",
+      "L2-00806-D6_Cloze-regenerated",
+      "L2-00937-D6_Cloze-0",
+      "L2-00939-D6_Cloze-0",
+      "L2-00641-D6_Cloze-0"
+    ],
+    "L3:D1_Form": [
+      "L3-04850-D1_Form-2",
+      "L3-05041-D1_Form-2",
+      "L3-04868-D1_Form-2",
+      "L3-02101-D1_Form-2",
+      "L3-02186-D1_Form-2",
+      "L3-04765-D1_Form-2"
+    ],
+    "L3:D2_Meaning": [
+      "L3-02067-D2_Meaning-regenerated",
+      "L3-01763-D2_Meaning-regenerated",
+      "L3-04388-D2_Meaning-regenerated",
+      "L3-02068-D2_Meaning-regenerated",
+      "L3-04386-D2_Meaning-regenerated",
+      "L3-04618-D2_Meaning-regenerated"
+    ],
+    "L3:D3_Context": [
+      "L3-05008-D3_Context-4",
+      "L3-04631-D3_Context-3",
+      "L3-04941-D3_Context-4",
+      "L3-05104-D3_Context-4",
+      "L3-05063-D3_Context-4",
+      "L3-05140-D3_Context-4"
+    ],
+    "L3:D4_Network": [
+      "L3-02570-D4_Network-5",
+      "L3-04557-D4_Network-5",
+      "L3-02482-D4_Network-5",
+      "L3-02566-D4_Network-5",
+      "L3-01988-D4_Network-5",
+      "L3-02382-D4_Network-5"
+    ],
+    "L3:D5_Usage": [
+      "L3-01955-D5_Usage-7",
+      "L3-02300-D5_Usage-regenerated",
+      "L3-02385-D5_Usage-7",
+      "L3-02551-D5_Usage-7",
+      "L3-02332-D5_Usage-regenerated",
+      "L3-04645-D5_Usage-7"
+    ],
+    "L3:D6_Cloze": [
+      "L3-04973-D6_Cloze-0",
+      "L3-04986-D6_Cloze-0",
+      "L3-04817-D6_Cloze-0",
+      "L3-02177-D6_Cloze-regenerated",
+      "L3-04635-D6_Cloze-0",
+      "L3-04895-D6_Cloze-0"
+    ],
+    "L4:D1_Form": [
+      "L4-06275-D1_Form-2",
+      "L4-03650-D1_Form-2",
+      "L4-06624-D1_Form-2",
+      "L4-06643-D1_Form-2",
+      "L4-06257-D1_Form-2",
+      "L4-06483-D1_Form-2"
+    ],
+    "L4:D2_Meaning": [
+      "L4-04801-D2_Meaning-regenerated",
+      "L4-04680-D2_Meaning-regenerated",
+      "L4-04990-D2_Meaning-regenerated",
+      "L4-02546-D2_Meaning-regenerated",
+      "L4-02514-D2_Meaning-regenerated",
+      "L4-02376-D2_Meaning-regenerated"
+    ],
+    "L4:D3_Context": [
+      "L4-06411-D3_Context-3",
+      "L4-03844-D3_Context-3",
+      "L4-03853-D3_Context-3",
+      "L4-06502-D3_Context-3",
+      "L4-05861-D3_Context-3",
+      "L4-04155-D3_Context-3"
+    ],
+    "L4:D4_Network": [
+      "L4-03566-D4_Network-5",
+      "L4-04110-D4_Network-5",
+      "L4-06389-D4_Network-5",
+      "L4-03746-D4_Network-5",
+      "L4-04070-D4_Network-5",
+      "L4-03609-D4_Network-5"
+    ],
+    "L4:D5_Usage": [
+      "L4-03694-D5_Usage-7",
+      "L4-01820-D5_Usage-regenerated",
+      "L4-03767-D5_Usage-7",
+      "L4-02501-D5_Usage-regenerated",
+      "L4-02250-D5_Usage-regenerated",
+      "L4-04906-D5_Usage-regenerated"
+    ],
+    "L4:D6_Cloze": [
+      "L4-03001-D6_Cloze-regenerated",
+      "L4-05095-D6_Cloze-regenerated",
+      "L4-05217-D6_Cloze-regenerated",
+      "L4-02775-D6_Cloze-regenerated",
+      "L4-01738-D6_Cloze-regenerated",
+      "L4-05237-D6_Cloze-regenerated"
+    ],
+    "L5:D1_Form": [
+      "L5-07012-D1_Form-2",
+      "L5-06419-D1_Form-2",
+      "L5-06375-D1_Form-2",
+      "L6-07598-D1_Form-2",
+      "L4-07495-D1_Form-2",
+      "L5-06337-D1_Form-2"
+    ],
+    "L5:D2_Meaning": [
+      "L5-05240-D2_Meaning-regenerated",
+      "L5-06170-D2_Meaning-0",
+      "L5-06422-D2_Meaning-0",
+      "L4-07101-D2_Meaning-regenerated",
+      "L5-05030-D2_Meaning-regenerated",
+      "L4-07092-D2_Meaning-regenerated"
+    ],
+    "L5:D3_Context": [
+      "L4-07187-D3_Context-3",
+      "L5-06914-D3_Context-3",
+      "L5-05967-D3_Context-3",
+      "L5-07023-D3_Context-3",
+      "L5-06374-D3_Context-3",
+      "L4-07567-D3_Context-3"
+    ],
+    "L5:D4_Network": [
+      "L5-06620-D4_Network-5",
+      "L4-07567-D4_Network-5",
+      "L4-07585-D4_Network-5",
+      "L6-07502-D4_Network-5",
+      "L6-07600-D4_Network-5",
+      "L5-06474-D4_Network-5"
+    ],
+    "L5:D5_Usage": [
+      "L5-06824-D5_Usage-7",
+      "L6-07301-D5_Usage-regenerated",
+      "L4-07332-D5_Usage-regenerated",
+      "L6-07326-D5_Usage-regenerated",
+      "L5-06883-D5_Usage-7",
+      "L4-07113-D5_Usage-regenerated"
+    ],
+    "L5:D6_Cloze": [
+      "L6-07260-D6_Cloze-regenerated",
+      "L6-07446-D6_Cloze-regenerated",
+      "L6-07124-D6_Cloze-regenerated",
+      "L5-06588-D6_Cloze-0",
+      "L4-07452-D6_Cloze-regenerated",
+      "L6-07358-D6_Cloze-regenerated"
+    ],
+    "L6:D1_Form": [
+      "L6-08362-D1_Form-2",
+      "L4-08184-D1_Form-2",
+      "L4-08325-D1_Form-2",
+      "L4-08301-D1_Form-2",
+      "L4-08341-D1_Form-2",
+      "L6-08302-D1_Form-2"
+    ],
+    "L6:D2_Meaning": [
+      "L6-07738-D2_Meaning-regenerated",
+      "L4-07857-D2_Meaning-regenerated",
+      "L4-07844-D2_Meaning-regenerated",
+      "L6-07839-D2_Meaning-regenerated",
+      "L6-07729-D2_Meaning-regenerated",
+      "L4-07714-D2_Meaning-regenerated"
+    ],
+    "L6:D3_Context": [
+      "L6-08319-D3_Context-3",
+      "L6-08257-D3_Context-3",
+      "L6-08087-D3_Context-3",
+      "L6-08287-D3_Context-3",
+      "L4-07946-D3_Context-3",
+      "L6-08266-D3_Context-3"
+    ],
+    "L6:D4_Network": [
+      "L6-08299-D4_Network-5",
+      "L4-08107-D4_Network-5",
+      "L4-08162-D4_Network-5",
+      "L6-08124-D4_Network-5",
+      "L6-08177-D4_Network-5",
+      "L6-08118-D4_Network-5"
+    ],
+    "L6:D5_Usage": [
+      "L6-07772-D5_Usage-regenerated",
+      "L4-08271-D5_Usage-7",
+      "L4-07785-D5_Usage-regenerated",
+      "L6-07740-D5_Usage-regenerated",
+      "L6-07793-D5_Usage-regenerated",
+      "L6-07855-D5_Usage-regenerated"
+    ],
+    "L6:D6_Cloze": [
+      "L6-07950-D6_Cloze-regenerated",
+      "L6-07826-D6_Cloze-regenerated",
+      "L4-07965-D6_Cloze-regenerated",
+      "L4-07912-D6_Cloze-regenerated",
+      "L6-07828-D6_Cloze-regenerated",
+      "L6-07953-D6_Cloze-regenerated"
+    ]
+  },
+  "readingByLevelType": {
+    "L1:inference": [
+      "data-final-cnsa-en-22362-q1"
+    ],
+    "L1:main_idea": [
+      "race-middle-65c488436af5-4",
+      "race-middle-fdca9fd41abe-1",
+      "data-final-cnsa-en-25571-q1",
+      "data-final-cnsa-en-22113-q1",
+      "race-middle-3b07b916d364-1"
+    ],
+    "L1:detail": [
+      "race-middle-090a35b5b40a-0",
+      "race-middle-80018562848a-2",
+      "race-middle-65c488436af5-1",
+      "race-middle-f099ea99a91b-2",
+      "race-middle-f3df442b3f18-4"
+    ],
+    "L1:other": [
+      "race-middle-839f4d35b8e6-2"
+    ],
+    "L1:vocabulary": [
+      "pd-7841-179a6faa59-1",
+      "pd-15659-5b75a1b0a7-1",
+      "pd-7841-e36d009c37-1"
+    ],
+    "L2:purpose": [
+      "data-final-cnsa-en-22049-q1",
+      "data-final-cnsa-en-21878-q1"
+    ],
+    "L2:main_idea": [
+      "csat-b360386c01d4-0",
+      "csat-7b4fad2c9f81-0",
+      "data-final-cnsa-en-26280-q1",
+      "csat-3e7a8ac67838-0",
+      "data-final-cnsa-en-21855-q1"
+    ],
+    "L2:inference": [
+      "data-final-cnsa-en-22362-q1",
+      "data-final-cnsa-en-25091-q1",
+      "data-final-cnsa-en-25304-q1",
+      "data-final-cnsa-en-22670-q1",
+      "data-final-cnsa-en-24839-q1"
+    ],
+    "L2:attitude": [
+      "data-final-cnsa-en-21086-q1",
+      "data-final-cnsa-en-21075-q1",
+      "data-final-cnsa-en-23636-q1",
+      "data-final-cnsa-en-23373-q1"
+    ],
+    "L2:detail": [
+      "csat-aa5d3db21bd9-1",
+      "csat-d0f0baea59b9-1",
+      "csat-df51d8b9f4c4-1",
+      "csat-8dd2e236035d-1",
+      "csat-6f5c269c2074-1"
+    ],
+    "L2:vocabulary": [
+      "pd-15659-1e28a3d4a3-0",
+      "pd-11-de83e2c8a5-1",
+      "pd-15659-060f0b1aff-0"
+    ],
+    "L3:main_idea": [
+      "csat-333a802bb121-0",
+      "data-final-cnsa-en-21821-q1",
+      "csat-d4fdb88d1f92-0",
+      "csat-4deec1a98720-0",
+      "data-final-cnsa-en-26034-q1"
+    ],
+    "L3:attitude": [
+      "data-final-cnsa-en-21090-q1",
+      "data-final-cnsa-en-22811-q1"
+    ],
+    "L3:inference": [
+      "data-final-cnsa-en-25565-q1",
+      "data-final-cnsa-en-23610-q1",
+      "data-final-cnsa-en-23067-q1",
+      "data-final-cnsa-en-25358-q1",
+      "data-final-cnsa-en-25093-q1"
+    ],
+    "L3:purpose": [
+      "data-final-cnsa-en-21317-q1",
+      "data-final-cnsa-en-22051-q1",
+      "data-final-cnsa-en-21875-q1"
+    ],
+    "L3:detail": [
+      "csat-4c495cda3bba-1",
+      "csat-4deec1a98720-1",
+      "csat-819110c6ec6a-1",
+      "csat-bf8a5dbfd60f-1",
+      "csat-6c9a27689bd7-1"
+    ],
+    "L3:vocabulary": [
+      "pd-15659-be255ba526-0",
+      "pd-14838-2257ccb542-1",
+      "pd-74-2469c12eff-0"
+    ],
+    "L4:main_idea": [
+      "csat-7556b13392ff-0",
+      "csat-dbadaa916c0b-0",
+      "csat-42f91d4240d1-0",
+      "csat-2373dee36efc-0",
+      "csat-3e61ed1e85bc-0"
+    ],
+    "L4:detail": [
+      "csat-a021c3566a23-1",
+      "race-high-3af184e49936-0",
+      "race-high-5987b1a8a909-2",
+      "race-high-e3cd1ffea5f3-3",
+      "race-high-73ffb7ba1b6b-1"
+    ],
+    "L4:inference": [
+      "race-high-47660c6003e9-3",
+      "race-high-166eeff62257-0",
+      "race-high-e793eb69e868-0",
+      "csat-d4b95d96c8eb-0",
+      "csat-9a591f39cbf2-0"
+    ],
+    "L4:attitude": [
+      "race-high-c6a67f7e9fb3-3",
+      "race-high-88a4e5930d8b-0",
+      "race-high-820ab827f438-2",
+      "race-high-85157343b352-3",
+      "race-high-67f1c5a0e57a-0"
+    ],
+    "L4:vocabulary": [
+      "pd-16751-554597c5b6-0",
+      "pd-16751-9e52fd7493-0",
+      "pd-174-231e3ba49a-1"
+    ],
+    "L4:other": [
+      "race-high-462959481015-1",
+      "race-high-cb481860c1ce-0"
+    ],
+    "L5:detail": [
+      "race-high-3e780e4720eb-2",
+      "race-high-8a02db39ecd7-2",
+      "race-high-fb7ac7149bf4-1",
+      "race-high-386255a58223-0",
+      "race-high-4eb46c0b6384-0"
+    ],
+    "L5:main_idea": [
+      "race-high-32567dcfa705-3",
+      "race-high-9ea328cef064-3",
+      "race-high-f11c3f52e501-0",
+      "race-high-4b8d4857e332-2",
+      "race-high-7ddb69d3e947-3"
+    ],
+    "L5:purpose": [
+      "race-high-32567dcfa705-2",
+      "race-high-4eb46c0b6384-2"
+    ],
+    "L5:attitude": [
+      "race-high-ab260b9989cd-0",
+      "race-high-6874e477c9ab-2",
+      "race-high-2a9e14c83576-0",
+      "race-high-5f54ed6745c7-0",
+      "race-high-aa2c568e0a6d-2"
+    ],
+    "L5:inference": [
+      "race-high-bec875ec3198-1",
+      "race-high-2c7f4a8bee0c-2",
+      "race-high-aa2c568e0a6d-3",
+      "race-high-2a9e14c83576-2",
+      "race-high-231438124780-2"
+    ],
+    "L5:vocabulary": [
+      "pd-45-cb570d65d8-0",
+      "race-high-3e780e4720eb-1",
+      "pd-55-84f0ddcf02-0"
+    ],
+    "L5:other": [
+      "race-high-4ca5e0f4b45e-0"
+    ],
+    "L6:main_idea": [
+      "race-high-76e8461d60c2-0",
+      "race-high-f5af718565df-1",
+      "race-high-f9bb18b0a062-0"
+    ],
+    "L6:inference": [
+      "race-high-76e8461d60c2-1",
+      "race-high-a969ecdf61bc-2"
+    ],
+    "L6:detail": [
+      "race-high-f5af718565df-0",
+      "race-high-f9bb18b0a062-1",
+      "race-high-6cc955f1c445-0"
+    ],
+    "L6:purpose": [
+      "race-high-b762a0c21bba-0"
+    ],
+    "L6:vocabulary": [
+      "pd-84-b464dc2662-0",
+      "pd-84-640e07936d-1",
+      "pd-16751-e927f3128e-1"
+    ]
+  }
+}

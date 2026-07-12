@@ -1,0 +1,4970 @@
+[
+  {
+    "id": "L1-00121-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D1_Form",
+    "headword": "Find",
+    "question": "영어 단어 뜻에 맞는 올바른 철자를 고르시오.\n영문 뜻: To discover or locate something.",
+    "options": [
+      "ffind",
+      "finnd",
+      "find",
+      "finde"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.5,
+      "b": -2.62,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00275-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D1_Form",
+    "headword": "Test",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 시험",
+    "options": [
+      "tust",
+      "test",
+      "teast",
+      "tset"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.5,
+      "b": -2.548,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00609-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D1_Form",
+    "headword": "Should",
+    "question": "영어 뜻에 맞는 올바른 철자를 고르시오.\n영어 뜻: used to give advice or obligation",
+    "options": [
+      "shold",
+      "shoudl",
+      "should",
+      "shuld"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.65,
+      "b": -1.929,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00603-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D1_Form",
+    "headword": "Could",
+    "question": "영어 뜻에 맞는 올바른 철자를 고르시오.\n영어 뜻: used to talk about past ability or possibility",
+    "options": [
+      "Coold",
+      "Culd",
+      "Could",
+      "ceuld"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.65,
+      "b": -1.938,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00754-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D1_Form",
+    "headword": "Return",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 돌아가다",
+    "options": [
+      "retyrn",
+      "return",
+      "retern",
+      "retorn"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.65,
+      "b": -1.839,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00246-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D1_Form",
+    "headword": "Answer",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 대답하다",
+    "options": [
+      "anserr",
+      "answre",
+      "anser",
+      "answer"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.5,
+      "b": -2.566,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00752-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D2_Meaning",
+    "headword": "Deep",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 깊은",
+    "options": [
+      "Shop",
+      "Cat",
+      "Right",
+      "Deep"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1,
+      "b": -1.9,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00096-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D2_Meaning",
+    "headword": "Year",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 년, 해",
+    "options": [
+      "Old",
+      "Help",
+      "Year",
+      "Life"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1,
+      "b": -2.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00121-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D2_Meaning",
+    "headword": "Find",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 찾다, 발견하다",
+    "options": [
+      "Story",
+      "Place",
+      "Talk",
+      "Find"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1,
+      "b": -2.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00087-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D2_Meaning",
+    "headword": "Three",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 셋",
+    "options": [
+      "Love",
+      "Three",
+      "Sure",
+      "Part"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1,
+      "b": -2.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00152-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D2_Meaning",
+    "headword": "Face",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 마주하다",
+    "options": [
+      "Face",
+      "Stop",
+      "Change",
+      "Live"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": -2.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00258-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D2_Meaning",
+    "headword": "Wall",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 벽",
+    "options": [
+      "Middle",
+      "Brown",
+      "Box",
+      "Wall"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1,
+      "b": -2.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00299-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D3_Context",
+    "headword": "Window",
+    "question": "다음 문장에서 window의 뜻으로 가장 알맞은 것은?\nOpen the window to let in some fresh air.",
+    "options": [
+      "신발",
+      "열셋, 13",
+      "문",
+      "창문"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.9,
+      "b": -2.53,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00621-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D3_Context",
+    "headword": "Around",
+    "question": "다음 문장에서 around의 뜻으로 가장 알맞은 것은?\nThe Earth goes around the sun.",
+    "options": [
+      "태양 주변에",
+      "태양으로부터 멀리",
+      "~의 앞에",
+      "태양을 지나서"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": -1.923,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00711-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D3_Context",
+    "headword": "Stand",
+    "question": "다음 문장에서 stand의 뜻으로 가장 알맞은 것은?\nThe vase cannot stand on its own.",
+    "options": [
+      "앉다",
+      "문자하다",
+      "눕다",
+      "서다"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": -1.869,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00655-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D3_Context",
+    "headword": "Hundred",
+    "question": "다음 문장에서 hundred의 뜻으로 가장 알맞은 것은?\nI need to buy a hundred apples for the party.",
+    "options": [
+      "열",
+      "차고",
+      "천",
+      "백"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": -1.902,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00663-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D3_Context",
+    "headword": "Market",
+    "question": "다음 문장에서 market의 뜻으로 가장 알맞은 것은?\nWe bought fresh vegetables at the market.",
+    "options": [
+      "학교",
+      "유지하다",
+      "시장",
+      "공원"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": -1.896,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00112-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D3_Context",
+    "headword": "Five",
+    "question": "다음 문장에서 five의 뜻으로 가장 알맞은 것은?\nShe has five apples in her basket.",
+    "options": [
+      "이",
+      "다섯",
+      "넷",
+      "여섯"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.9,
+      "b": -2.623,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00010-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D4_Network",
+    "headword": "In",
+    "question": "Choose the word closest in meaning to in.",
+    "options": [
+      "inside",
+      "out",
+      "on",
+      "At"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.75,
+      "b": -2.647,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00298-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D4_Network",
+    "headword": "Wear",
+    "question": "Choose the word closest in meaning to wear (clothes).",
+    "options": [
+      "wash",
+      "take off",
+      "put on",
+      "Farrow"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.75,
+      "b": -2.53,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00058-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D4_Network",
+    "headword": "Two",
+    "question": "Choose the word closest in meaning to two.",
+    "options": [
+      "three",
+      "one",
+      "Eye",
+      "pair"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.75,
+      "b": -2.638,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00234-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D4_Network",
+    "headword": "Dog",
+    "question": "Choose the word closest in meaning to dog.",
+    "options": [
+      "puppy",
+      "cat",
+      "bird",
+      "Wagon"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.75,
+      "b": -2.572,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00069-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D4_Network",
+    "headword": "Than",
+    "question": "Choose the word closest in meaning to than.",
+    "options": [
+      "as",
+      "like",
+      "Whereupon",
+      "compared to"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.75,
+      "b": -2.635,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00274-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D4_Network",
+    "headword": "Box",
+    "question": "Choose the word closest in meaning to box (as a verb).",
+    "options": [
+      "Father",
+      "open",
+      "close",
+      "package"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.75,
+      "b": -2.548,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00114-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D5_Usage",
+    "headword": "Great",
+    "question": "Great가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "I want to great today.",
+      "The great is on my desk.",
+      "Please great quietly.",
+      "The food at the party was great."
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00199-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D5_Usage",
+    "headword": "Ask",
+    "question": "Ask가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "I need to ask my mom if I can go to the park.",
+      "The ask is on my desk.",
+      "I have a ask.",
+      "It is very ask."
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00157-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D5_Usage",
+    "headword": "Read",
+    "question": "Read가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "I have a read.",
+      "I like to read books before bed.",
+      "The read is on my desk.",
+      "It is very read."
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00652-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D5_Usage",
+    "headword": "Try",
+    "question": "Try가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "The try is on my desk.",
+      "It is very try.",
+      "You should try to learn a new language.",
+      "I have a try."
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": -1.75,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00018-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D5_Usage",
+    "headword": "Know",
+    "question": "Know가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "It is very know.",
+      "Do you know how to swim?",
+      "I have a know.",
+      "The know is on my desk."
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00029-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D5_Usage",
+    "headword": "Do",
+    "question": "Do가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "I have a do.",
+      "It is very do.",
+      "What do you want to eat for dinner?",
+      "The do is on my desk."
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": -2.1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00266-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D6_Cloze",
+    "headword": "Dark",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe ____ night made it hard to see.",
+    "options": [
+      "Question",
+      "Dark",
+      "Paper",
+      "Wife"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00094-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D6_Cloze",
+    "headword": "Kind",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nHe was ____ to the stray cat, giving it food and water.",
+    "options": [
+      "Think",
+      "Mouth",
+      "Kind",
+      "Thing"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00152-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D6_Cloze",
+    "headword": "Face",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nI washed my ____ with soap.",
+    "options": [
+      "Brown",
+      "Face",
+      "Dog",
+      "Class"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00181-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A1",
+    "dimension": "D6_Cloze",
+    "headword": "Start",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe race will ____ in five minutes.",
+    "options": [
+      "Start",
+      "Brown",
+      "Class",
+      "Right"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": -2.05,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00733-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D6_Cloze",
+    "headword": "Fall",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nBe careful not to ____.",
+    "options": [
+      "Life",
+      "Fall",
+      "Ten",
+      "Six"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -1.7,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L1-00754-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 1,
+    "cefr": "A2",
+    "dimension": "D6_Cloze",
+    "headword": "Return",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nI will ____ tomorrow.",
+    "options": [
+      "Ten",
+      "Six",
+      "Guy",
+      "Return"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": -1.7,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00905-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D1_Form",
+    "headword": "Magic",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 마법",
+    "options": [
+      "majic",
+      "magik",
+      "maagic",
+      "magic"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.65,
+      "b": -1.713,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00845-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D1_Form",
+    "headword": "Honey",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 꿀",
+    "options": [
+      "honny",
+      "honoy",
+      "hunny",
+      "honey"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.65,
+      "b": -1.77,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01803-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D1_Form",
+    "headword": "Advantage",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 이점, 유리함",
+    "options": [
+      "advantage",
+      "advantag",
+      "advantoge",
+      "adventage"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.65,
+      "b": -1.049,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-02028-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D1_Form",
+    "headword": "Guard",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 경비원",
+    "options": [
+      "gard",
+      "gaurd",
+      "guard",
+      "guord"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.8,
+      "b": -0.932,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-02027-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D1_Form",
+    "headword": "Brief",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 짧은",
+    "options": [
+      "briif",
+      "breif",
+      "brief",
+      "bref"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.8,
+      "b": -0.932,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00751-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D1_Form",
+    "headword": "Except",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: ~을 제외하고",
+    "options": [
+      "exept",
+      "एक्सेप्ट",
+      "except",
+      "excpet"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.65,
+      "b": -1.839,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00357-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A1",
+    "dimension": "D2_Meaning",
+    "headword": "Quarter",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 4분의 1; 15분; 25센트 동전; 지역, 구역",
+    "options": [
+      "Quarter",
+      "Regular",
+      "Final",
+      "Continue"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": -1.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01684-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D2_Meaning",
+    "headword": "Force",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 힘, 폭력, 군대",
+    "options": [
+      "Force",
+      "Individual",
+      "Speech",
+      "Terrible"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": -1.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00798-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D2_Meaning",
+    "headword": "Various",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 여러 가지의, 다양한",
+    "options": [
+      "Complete",
+      "Allow",
+      "Wide",
+      "Various"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1,
+      "b": -1.9,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01707-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D2_Meaning",
+    "headword": "Necessary",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 필요한, 필수적인",
+    "options": [
+      "Judge",
+      "Necessary",
+      "Follow",
+      "Gun"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1,
+      "b": -1.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01638-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D2_Meaning",
+    "headword": "Self",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 자신, 자아",
+    "options": [
+      "Trade",
+      "Similar",
+      "Lead",
+      "Self"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1,
+      "b": -1.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01989-D2_Meaning-0",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D2_Meaning",
+    "headword": "Loose",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 헐렁한",
+    "options": [
+      "tight",
+      "Nude",
+      "hard",
+      "loose"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.35,
+      "b": -0.953,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01650-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D3_Context",
+    "headword": "Indeed",
+    "question": "다음 문장에서 Indeed의 뜻으로 가장 알맞은 것은?\nIndeed, it was a very good movie.",
+    "options": [
+      "정말로, 참으로",
+      "아마도",
+      "아니오, 반대로",
+      "반대로"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": -1.154,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-02045-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D3_Context",
+    "headword": "Tin",
+    "question": "다음 문장에서 tin의 뜻으로 가장 알맞은 것은?\nOpen the tin can.",
+    "options": [
+      "엉망, 혼란",
+      "유리",
+      "양철",
+      "플라스틱"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.2,
+      "b": -0.923,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00936-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D3_Context",
+    "headword": "Flight",
+    "question": "다음 문장에서 flight의 뜻으로 가장 알맞은 것은?\nThe flight was delayed due to bad weather.",
+    "options": [
+      "플라밍고",
+      "여행",
+      "비행",
+      "휴가"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": -1.677,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00952-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D3_Context",
+    "headword": "Tie",
+    "question": "다음 문장에서 tie의 뜻으로 가장 알맞은 것은?\nHe wears a tie to work.",
+    "options": [
+      "넥타이",
+      "모자",
+      "던지다",
+      "벨트"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": -1.659,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-02044-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D3_Context",
+    "headword": "Accent",
+    "question": "다음 문장에서 accent의 뜻으로 가장 알맞은 것은?\nShe has a strong French accent.",
+    "options": [
+      "억양",
+      "사고",
+      "행동",
+      "국경, 경계"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.2,
+      "b": -0.923,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-02030-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D3_Context",
+    "headword": "Essay",
+    "question": "다음 문장에서 essay의 뜻으로 가장 알맞은 것은?\nI wrote an essay for my English class.",
+    "options": [
+      "짧은 논문",
+      "신비감, 비법",
+      "긴 편지",
+      "짧은 이야기"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.2,
+      "b": -0.932,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00612-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D4_Network",
+    "headword": "Through",
+    "question": "Choose the word closest in meaning to through.",
+    "options": [
+      "over",
+      "under",
+      "Except",
+      "by means of"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.9,
+      "b": -1.926,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01899-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Develop",
+    "question": "Choose the word closest in meaning to develop.",
+    "options": [
+      "improve",
+      "Scoop",
+      "destroy",
+      "ignore"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.9,
+      "b": -1.007,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01900-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Proud",
+    "question": "Choose the word closest in meaning to proud.",
+    "options": [
+      "humble",
+      "pleased",
+      "Manic",
+      "ashamed"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.9,
+      "b": -1.004,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01805-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Toward",
+    "question": "Choose the word closest in meaning to toward.",
+    "options": [
+      "Via",
+      "away from",
+      "far",
+      "in the direction of"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.9,
+      "b": -1.049,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01976-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Dozen",
+    "question": "Choose the word closest in meaning to dozen.",
+    "options": [
+      "Account",
+      "twelve",
+      "eleven",
+      "thirteen"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -0.962,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00892-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D4_Network",
+    "headword": "Gift",
+    "question": "Choose the word closest in meaning to gift.",
+    "options": [
+      "debt",
+      "present",
+      "Taco",
+      "loss"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.9,
+      "b": -1.725,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01714-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Increase",
+    "question": "Increase가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "It is very increase.",
+      "I have a increase.",
+      "The increase is on my desk.",
+      "The price of the toy will increase next week."
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": -1.15,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01887-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Identity",
+    "question": "He established his identity as a writer.\nWhat does identity mean?",
+    "options": [
+      "the state of being confused",
+      "A fish with pink flesh that...",
+      "the state of being unknown",
+      "who someone is"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.95,
+      "b": -0.965,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-02017-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Grant",
+    "question": "The government gave him a grant to study science.\nWhat does grant mean?",
+    "options": [
+      "a request for money",
+      "money given for a specific purpose",
+      "a reward for good behavior",
+      "To become very angry or excited."
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.95,
+      "b": -0.941,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01707-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Necessary",
+    "question": "Necessary가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "Please necessary quietly.",
+      "Water is necessary for survival.",
+      "I want to necessary today.",
+      "The necessary is on my desk."
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -1.15,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00714-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D5_Usage",
+    "headword": "Rest",
+    "question": "Rest가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "After a long day of playing, the puppy needed some rest.",
+      "It is very rest.",
+      "The rest is on my desk.",
+      "I have a rest."
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": -1.75,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01724-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Charge",
+    "question": "Charge가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "It is very charge.",
+      "The charge is on my desk.",
+      "They charge too much for delivery.",
+      "I have a charge."
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": -1.15,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-01864-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D6_Cloze",
+    "headword": "Mate",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nHe is my ____ from school days",
+    "options": [
+      "Mate",
+      "House",
+      "Mind",
+      "Thing"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.1,
+      "b": -1.019,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-02046-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "B1",
+    "dimension": "D6_Cloze",
+    "headword": "Pure",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThis drink is ____ fruit juice, with no sugar added",
+    "options": [
+      "Pure",
+      "good",
+      "Long",
+      "own"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.25,
+      "b": -0.923,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00806-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D6_Cloze",
+    "headword": "Sign",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nI saw a ____ that said 'No Parking'.",
+    "options": [
+      "Moment",
+      "Sign",
+      "Local",
+      "Firm"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -1.7,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00937-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D6_Cloze",
+    "headword": "Belong",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nWhen you married our Sue, you now ____ to our family, too",
+    "options": [
+      "get",
+      "Belong",
+      "try",
+      "leave"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.1,
+      "b": -1.674,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00939-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D6_Cloze",
+    "headword": "Channel",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nHe dug a ____ in his field so the water could escape",
+    "options": [
+      "Work",
+      "Channel",
+      "thing",
+      "Number"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.1,
+      "b": -1.671,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L2-00641-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 2,
+    "cefr": "A2",
+    "dimension": "D6_Cloze",
+    "headword": "Maybe",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nHe thought that ____ they could go for a walk on the beach after dinner",
+    "options": [
+      "Still",
+      "very",
+      "Maybe",
+      "more"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.1,
+      "b": -1.911,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04850-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Distinguish",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 구별하다",
+    "options": [
+      "distinguise",
+      "distenguish",
+      "distinguish",
+      "distinguiish"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.8,
+      "b": -0.052,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-05041-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Cease",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 중단하다",
+    "options": [
+      "sees",
+      "cease",
+      "ceese",
+      "cesae"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.8,
+      "b": 0.077,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04868-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Bargain",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 싸게 사는 물건, 흥정",
+    "options": [
+      "bargine",
+      "bagain",
+      "bargain",
+      "bargan"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.8,
+      "b": -0.046,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02101-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D1_Form",
+    "headword": "Permanent",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 영구적인",
+    "options": [
+      "peranent",
+      "permanent",
+      "permanant",
+      "permenant"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.8,
+      "b": -0.887,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02186-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D1_Form",
+    "headword": "Extraordinary",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 비범한, 특별한",
+    "options": [
+      "extrraordinary",
+      "extraordenary",
+      "extraodinary",
+      "extraordinary"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.8,
+      "b": -0.833,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04765-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Sigh",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 한숨",
+    "options": [
+      "sighe",
+      "siggh",
+      "siigh",
+      "sigh"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.8,
+      "b": -0.097,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02067-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D2_Meaning",
+    "headword": "Currency",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 통화, 화폐",
+    "options": [
+      "Currency",
+      "Unique",
+      "Emergency",
+      "Theme"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": -0.85,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-01763-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D2_Meaning",
+    "headword": "Congress",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 의회, 국회",
+    "options": [
+      "Congress",
+      "Network",
+      "Entry",
+      "Absent"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": -0.85,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04388-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D2_Meaning",
+    "headword": "Impact",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 영향을 주다",
+    "options": [
+      "Peak",
+      "Philosophy",
+      "Impact",
+      "Minimum"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1,
+      "b": -0.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02068-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D2_Meaning",
+    "headword": "Emergency",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 비상사태",
+    "options": [
+      "Emergency",
+      "Era",
+      "Witness",
+      "Raw"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": -0.85,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04386-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D2_Meaning",
+    "headword": "Parliament",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 의회, 국회",
+    "options": [
+      "Contrast",
+      "Parliament",
+      "Impact",
+      "Silent"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1,
+      "b": -0.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04618-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D2_Meaning",
+    "headword": "Psychology",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 심리학",
+    "options": [
+      "Psychology",
+      "Abuse",
+      "Substance",
+      "Disaster"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": -0.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-05008-D3_Context-4",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Pond",
+    "question": "위의 문장에서 pond의 영문 뜻으로 알맞은 것은?\nThe ducks swam in the pond.",
+    "options": [
+      "a small area of still water",
+      "a large body of flowing water",
+      "An atom or molecule with a ne...",
+      "a large body of saltwater"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.2,
+      "b": 0.056,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04631-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Profile",
+    "question": "다음 문장에서 profile의 뜻으로 가장 알맞은 것은?\nI updated my profile picture on social media.",
+    "options": [
+      "래그타임 (초기 재즈 음악)",
+      "문제점이나 어려움",
+      "이익이나 수익",
+      "개인의 정보나 특징을 간략하게 나타낸 것"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.2,
+      "b": -0.181,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04941-D3_Context-4",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Import",
+    "question": "위의 문장에서 import의 영문 뜻으로 알맞은 것은?\nWe import goods from other countries.",
+    "options": [
+      "to produce goods within a country",
+      "A court or forum of justice.",
+      "to send goods to another country for sale",
+      "to bring goods into a country from abroad for sale"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.2,
+      "b": 0.008,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-05104-D3_Context-4",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Chaos",
+    "question": "위의 문장에서 chaos의 영문 뜻으로 알맞은 것은?\nThe city was in complete chaos after the earthquake.",
+    "options": [
+      "A large bottle for wine or other alcoholic d...",
+      "a state of total confusion and lack of order",
+      "a state of controlled environment",
+      "a state of perfect order and peace"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.2,
+      "b": 0.113,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-05063-D3_Context-4",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Patent",
+    "question": "위의 문장에서 patent의 영문 뜻으로 알맞은 것은?\nThey received a patent for their new technology.",
+    "options": [
+      "a type of food",
+      "a government authority or licence conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention",
+      "A durable twilled fabric of wool, worsted, or synthetic yarn.",
+      "a kind of animal"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.2,
+      "b": 0.092,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-05140-D3_Context-4",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "metropolitan",
+    "question": "위의 문장에서 metropolitan의 영문 뜻으로 알맞은 것은?\nSeoul is a metropolitan city.",
+    "options": [
+      "relating to the countryside",
+      "Relating to or consisting o...",
+      "relating to a large city",
+      "relating to a small village"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.2,
+      "b": 0.146,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02570-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Decrease",
+    "question": "Choose the word closest in meaning to decrease.",
+    "options": [
+      "enlarge",
+      "reduce",
+      "increase",
+      "Service"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -0.584,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04557-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D4_Network",
+    "headword": "Decline",
+    "question": "Choose the word closest in meaning to decline.",
+    "options": [
+      "accept",
+      "increase",
+      "avert",
+      "decrease"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": -0.223,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02482-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Cattle",
+    "question": "Choose the word closest in meaning to cattle.",
+    "options": [
+      "Pod",
+      "cows",
+      "sheep",
+      "chickens"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -0.659,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02566-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Copyright",
+    "question": "Choose the word closest in meaning to copyright.",
+    "options": [
+      "piracy",
+      "freedom",
+      "ownership",
+      "Bog"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": -0.59,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-01988-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Absent",
+    "question": "Choose the word closest in meaning to absent.",
+    "options": [
+      "Plain",
+      "here",
+      "present",
+      "away"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": -0.626,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02382-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Liquid",
+    "question": "Choose the word closest in meaning to liquid.",
+    "options": [
+      "fluid",
+      "solid",
+      "Bunch",
+      "gas"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": -0.725,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-01955-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Candidate",
+    "question": "He is a candidate for mayor.\nWhat does candidate mean?",
+    "options": [
+      "Someone who is running for an office",
+      "Someone who is voting",
+      "A person employed to deliver letters and parcels.",
+      "Someone who is already in office"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.95,
+      "b": -0.977,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02300-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Celebrate",
+    "question": "Celebrate가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "It is very celebrate.",
+      "We will celebrate her birthday with a party.",
+      "I have a celebrate.",
+      "The celebrate is on my desk."
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": -0.75,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02385-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Facility",
+    "question": "The new facility made it easier for everyone to exercise.\nWhat does facility mean?",
+    "options": [
+      "A slender rounded rod with tapered en...",
+      "something that makes an action easier",
+      "something that makes you tired",
+      "something that makes an action harder"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.95,
+      "b": -0.725,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02551-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Colony",
+    "question": "The ants lived in a colony under the ground.\nWhat does colony mean?",
+    "options": [
+      "a single ant living alone",
+      "a group of ants living together",
+      "a plant",
+      "taste organ"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.95,
+      "b": -0.605,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02332-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Mutual",
+    "question": "Mutual가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "Please mutual quietly.",
+      "I want to mutual today.",
+      "The mutual is on my desk.",
+      "They have a mutual respect for each other."
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": -0.75,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04645-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D5_Usage",
+    "headword": "Fate",
+    "question": "Accept your fate.\nWhat does fate mean?",
+    "options": [
+      "An atom or molecule with a net electri...",
+      "something you can control",
+      "something that will happen to somebody",
+      "something you can change easily"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.95,
+      "b": -0.169,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04973-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D6_Cloze",
+    "headword": "Frost",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nOn that cold winter morning, grass everywhere was covered with ____",
+    "options": [
+      "hand",
+      "state",
+      "Week",
+      "Frost"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.25,
+      "b": 0.026,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04986-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D6_Cloze",
+    "headword": "Diverse",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nPeople of every ____ nationalities visit our country throughout the year",
+    "options": [
+      "Diverse",
+      "Old",
+      "Up",
+      "large"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.25,
+      "b": 0.035,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04817-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D6_Cloze",
+    "headword": "Wheat",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe ____ will be gathered and ultimately turned into bread",
+    "options": [
+      "State",
+      "Wheat",
+      "time",
+      "Money"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.25,
+      "b": -0.07,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-02177-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B1",
+    "dimension": "D6_Cloze",
+    "headword": "Reward",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nShe received a ____ for her bravery.",
+    "options": [
+      "Magnificent",
+      "Entry",
+      "Reward",
+      "Interval"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": -0.7,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04635-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D6_Cloze",
+    "headword": "Phase",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe first ____ of the program required participants to take a test",
+    "options": [
+      "Phase",
+      "Kind",
+      "state",
+      "Room"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.25,
+      "b": -0.178,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L3-04895-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 3,
+    "cefr": "B2",
+    "dimension": "D6_Cloze",
+    "headword": "Communist",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe ____ party was the only party in the USSR",
+    "options": [
+      "right",
+      "first",
+      "Communist",
+      "Up"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.25,
+      "b": -0.031,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-06275-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Insolent",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 건방진",
+    "options": [
+      "insolant",
+      "insalent",
+      "insolent",
+      "insollent"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.8,
+      "b": 0.974,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-03650-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D1_Form",
+    "headword": "Opaque",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 불투명한",
+    "options": [
+      "opake",
+      "ipaque",
+      "oppaque",
+      "opaque"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.8,
+      "b": 0.118,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-06624-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Publicize",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 알리다, 홍보하다",
+    "options": [
+      "publiciese",
+      "publicize",
+      "pbulicize",
+      "publisize"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.65,
+      "b": 1.115,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-06643-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Livelihood",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 생계",
+    "options": [
+      "livelihood",
+      "liveihood",
+      "livlihood",
+      "lievlihood"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.65,
+      "b": 1.124,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-06257-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Insidious",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 서서히 퍼지는",
+    "options": [
+      "insidias",
+      "insidoous",
+      "insidious",
+      "insidius"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.8,
+      "b": 0.965,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-06483-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Blueberry",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 블루베리",
+    "options": [
+      "blooberry",
+      "blueberry",
+      "bluebery",
+      "bllueberry"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.65,
+      "b": 1.058,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-04801-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D2_Meaning",
+    "headword": "Sword",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 칼, 검",
+    "options": [
+      "Sword",
+      "Violence",
+      "Hood",
+      "Zip"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-04680-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D2_Meaning",
+    "headword": "Temper",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 성질, 기분",
+    "options": [
+      "Authoritative",
+      "Temper",
+      "Presidency",
+      "Firms"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-04990-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D2_Meaning",
+    "headword": "Couch",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 소파",
+    "options": [
+      "Diamond",
+      "Paranoid",
+      "Syllable",
+      "Couch"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-02546-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D2_Meaning",
+    "headword": "Forum",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 토론회, 공론장",
+    "options": [
+      "Oval",
+      "Forum",
+      "Rhetoric",
+      "Apt"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1,
+      "b": 0.95,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-02514-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D2_Meaning",
+    "headword": "Holocaust",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 홀로코스트, 대학살",
+    "options": [
+      "Holocaust",
+      "Cautious",
+      "Expansion",
+      "Substantive"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": 0.95,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-02376-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D2_Meaning",
+    "headword": "Ballad",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 발라드, 담시",
+    "options": [
+      "Directed",
+      "Zip",
+      "Ballad",
+      "Mist"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1,
+      "b": 0.95,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-06411-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Hone",
+    "question": "다음 문장에서 Hone의 뜻으로 가장 알맞은 것은?\nYou need to hone your skills to succeed.",
+    "options": [
+      "상징하다",
+      "기술을 향상시키다",
+      "기술을 무시하다",
+      "기술을 망치다"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": 1.037,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-03844-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D3_Context",
+    "headword": "Quarry",
+    "question": "다음 문장에서 quarry의 뜻으로 가장 알맞은 것은?\nThe workers blasted rock at the quarry.",
+    "options": [
+      "돌을 캐는 장소",
+      "물고기를 기르는 양어장",
+      "화물, 화물 운송",
+      "곡식을 저장하는 창고"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.2,
+      "b": 0.22,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-03853-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D3_Context",
+    "headword": "Scowl",
+    "question": "다음 문장에서 scowl의 뜻으로 가장 알맞은 것은?\nHe saw the scowl on her face and knew she was angry.",
+    "options": [
+      "밝은 미소",
+      "존경하다",
+      "행복한 표정",
+      "찌푸린 얼굴"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.2,
+      "b": 0.223,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-06502-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Relic",
+    "question": "다음 문장에서 relic의 뜻으로 가장 알맞은 것은?\nThis ancient sword is a relic of a bygone era.",
+    "options": [
+      "구금, 억류",
+      "미래의 기술",
+      "현대의 물건",
+      "과거 시대의 유물"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": 1.07,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-05861-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Inept",
+    "question": "다음 문장에서 inept의 뜻으로 가장 알맞은 것은?\nHe is inept at handling social situations.",
+    "options": [
+      "사회적 상황을 다루는 데 서투른",
+      "사회적 상황을 잘 다루는",
+      "사회적 상황에 관심이 없는",
+      "무표정한, 감정이 없는"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.2,
+      "b": 0.686,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-04155-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D3_Context",
+    "headword": "Fable",
+    "question": "다음 문장에서 fable의 뜻으로 가장 알맞은 것은?\nThe fable teaches a moral lesson about kindness.",
+    "options": [
+      "눈물방울",
+      "역사적인 사건",
+      "교훈을 주는 이야기",
+      "사실에 근거한 이야기"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.2,
+      "b": 0.424,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-03566-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Melodrama",
+    "question": "Choose the word closest in meaning to melodrama.",
+    "options": [
+      "Advantage",
+      "documentary",
+      "tragedy",
+      "comedy"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 0.073,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-04110-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Kerosene",
+    "question": "Choose the word closest in meaning to kerosene.",
+    "options": [
+      "paraffin",
+      "gasoline",
+      "diesel",
+      "Overdose"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 0.394,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-06389-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D4_Network",
+    "headword": "Muse",
+    "question": "Choose the word closest in meaning to muse.",
+    "options": [
+      "ponder",
+      "dismiss",
+      "Host",
+      "ignore"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.9,
+      "b": 1.028,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-03746-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Psyche",
+    "question": "Choose the word closest in meaning to psyche.",
+    "options": [
+      "System",
+      "soul",
+      "mind",
+      "body"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 0.166,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-04070-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Reclaim",
+    "question": "Choose the word closest in meaning to reclaim.",
+    "options": [
+      "Quit",
+      "destroy",
+      "restore",
+      "abandon"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 0.367,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-03609-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D4_Network",
+    "headword": "Tyrant",
+    "question": "Choose the word closest in meaning to tyrant.",
+    "options": [
+      "follower",
+      "democrat",
+      "Circus",
+      "dictator"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": 0.097,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-03694-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Watershed",
+    "question": "The invention of the printing press was a watershed moment in history.\nWhat does watershed mean in this context?",
+    "options": [
+      "a minor event with little impact",
+      "The part that is left after the rest has been taken away, used, or dealt with.",
+      "a turning point that significantly changed things",
+      "a period of heavy rainfall"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.95,
+      "b": 0.142,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-01820-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Interview",
+    "question": "Interview가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "I have a job interview tomorrow.",
+      "I have a interview.",
+      "The interview is on my desk.",
+      "It is very interview."
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-03767-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Senile",
+    "question": "The doctor worried that her patient was becoming senile.\nWhat does senile mean?",
+    "options": [
+      "physically strong and healthy",
+      "Not making or accompanied by any sound; refraining from speech.",
+      "mentally sharp and clear-thinking",
+      "showing a decline in mental ability, often due to old age"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.95,
+      "b": 0.178,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-02501-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Utilise",
+    "question": "Utilise가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "It is very utilise.",
+      "We should utilise resources carefully.",
+      "I have a utilise.",
+      "The utilise is on my desk."
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": 1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-02250-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D5_Usage",
+    "headword": "Thrust",
+    "question": "Thrust가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "He thrust the door open.",
+      "The thrust is on my desk.",
+      "I have a thrust.",
+      "It is very thrust."
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-04906-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D5_Usage",
+    "headword": "Informal",
+    "question": "Informal가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "Please informal quietly.",
+      "The informal is on my desk.",
+      "I want to informal today.",
+      "The meeting was informal, so people wore casual clothes."
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": 1.3,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-03001-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D6_Cloze",
+    "headword": "Bustle",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nI love the ____ of the city.",
+    "options": [
+      "Static",
+      "Turf",
+      "Bustle",
+      "Stark"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 1.05,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-05095-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D6_Cloze",
+    "headword": "Beneficial",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nRegular exercise is ____ to your health.",
+    "options": [
+      "Align",
+      "Sage",
+      "Beneficial",
+      "Tournament"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-05217-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D6_Cloze",
+    "headword": "Rewind",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\n____ the tape to the beginning.",
+    "options": [
+      "Decisive",
+      "Rewind",
+      "Sage",
+      "Axis"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-02775-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D6_Cloze",
+    "headword": "Gleam",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe moonlight made the lake ____.",
+    "options": [
+      "Gleam",
+      "Roommate",
+      "Dynamics",
+      "Abbey"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 1.05,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-01738-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B1",
+    "dimension": "D6_Cloze",
+    "headword": "Independent",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nShe made an ____ decision.",
+    "options": [
+      "Ledger",
+      "Independent",
+      "Beneficiary",
+      "Tenure"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": 1.05,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-05237-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 4,
+    "cefr": "B2",
+    "dimension": "D6_Cloze",
+    "headword": "Wholesale",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nWe buy vegetables at ____ prices.",
+    "options": [
+      "Volcano",
+      "Lance",
+      "Script",
+      "Wholesale"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": 1.35,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-07012-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Sycamore",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 플라타너스",
+    "options": [
+      "sicamore",
+      "yscamore",
+      "sycamore",
+      "sykamore"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.65,
+      "b": 1.25,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06419-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Caustic",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 부식성의, 신랄한",
+    "options": [
+      "caustic",
+      "causic",
+      "caistic",
+      "caustik"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.65,
+      "b": 1.04,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06375-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Decile",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 10분위수 (통계)",
+    "options": [
+      "decyle",
+      "decile",
+      "ducile",
+      "desile"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.65,
+      "b": 1.019,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07598-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D1_Form",
+    "headword": "Ignoble",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 불명예스러운",
+    "options": [
+      "ignobble",
+      "ignobel",
+      "ignoble",
+      "ignooble"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.65,
+      "b": 1.551,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07495-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D1_Form",
+    "headword": "Equivalence",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 동등, 상응",
+    "options": [
+      "Equivalence",
+      "Equivelance",
+      "Equivelence",
+      "eequivalence"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.65,
+      "b": 1.185,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06337-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D1_Form",
+    "headword": "Foundry",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 주물 공장",
+    "options": [
+      "fowndry",
+      "oundry",
+      "foundary",
+      "foundry"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.65,
+      "b": 1.01,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-05240-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D2_Meaning",
+    "headword": "Cowslip",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 앵초",
+    "options": [
+      "Cowslip",
+      "Applaud",
+      "derive",
+      "Riot"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06170-D2_Meaning-0",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D2_Meaning",
+    "headword": "Wehrmacht",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 독일 국방군 (제2차 세계 대전 당시)",
+    "options": [
+      "Workshop",
+      "Ontology",
+      "Wehrmacht",
+      "Welfare"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.35,
+      "b": 0.908,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06422-D2_Meaning-0",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D2_Meaning",
+    "headword": "Dal",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 달 (인도 음식)",
+    "options": [
+      "dal",
+      "dirt",
+      "Feature",
+      "deal"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.2,
+      "b": 1.043,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07101-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D2_Meaning",
+    "headword": "Necessity",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 필요, 필수품",
+    "options": [
+      "neutral",
+      "Necessity",
+      "Panel",
+      "Moderation"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1,
+      "b": 2.05,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-05030-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D2_Meaning",
+    "headword": "Dominion",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 지배권, 통치권",
+    "options": [
+      "Enforce",
+      "Dominion",
+      "Electorate",
+      "Gamma"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1,
+      "b": 1.7,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07092-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D2_Meaning",
+    "headword": "Administration",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 행정, 관리",
+    "options": [
+      "Arise",
+      "Dumb",
+      "Acknowledge",
+      "Administration"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1,
+      "b": 2.05,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07187-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D3_Context",
+    "headword": "Technician",
+    "question": "다음 문장에서 technician의 뜻으로 가장 알맞은 것은?\nThe technician fixed the computer quickly.",
+    "options": [
+      "컴퓨터를 만드는 사람",
+      "무질서, 장애",
+      "컴퓨터를 파는 사람",
+      "컴퓨터를 고치는 사람"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 1.263,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06914-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Plaything",
+    "question": "다음 문장에서 plaything의 뜻으로 가장 알맞은 것은?\nThe child loves his plaything.",
+    "options": [
+      "아이가 싫어하는 것",
+      "아이가 가장 좋아하는 장난감",
+      "덩어리, 질량, 대중",
+      "아이가 잠자는 곳"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": 1.217,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-05967-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Polio",
+    "question": "다음 문장에서 Polio의 뜻으로 가장 알맞은 것은?\nPolio is a disease that can cause paralysis.",
+    "options": [
+      "소아마비",
+      "늑막염",
+      "폐렴",
+      "야단법석, 과대광고"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 1.136,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-07023-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Tussle",
+    "question": "다음 문장에서 tussle의 뜻으로 가장 알맞은 것은?\nThe two boys had a brief tussle over the toy.",
+    "options": [
+      "평화로운 대화",
+      "깊은 우정",
+      "짧은 몸싸움",
+      "침전물, 퇴적물"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 1.253,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06374-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D3_Context",
+    "headword": "Teletext",
+    "question": "다음 문장에서 Teletext의 뜻으로 가장 알맞은 것은?\nThe old TV had a Teletext service.",
+    "options": [
+      "덤불숲, 작은 숲",
+      "최신 스트리밍 서비스",
+      "음성 인식 서비스",
+      "문자 다중 방송 서비스"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": 1.019,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07567-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D3_Context",
+    "headword": "Soar",
+    "question": "다음 문장에서 soar의 뜻으로 가장 알맞은 것은?\nThe eagle can soar high in the sky.",
+    "options": [
+      "높이 날아오르다",
+      "빠르게 헤엄치다",
+      "땅에 떨어지다",
+      "촉진하다, 용이하게 하다"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 1.416,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06620-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D4_Network",
+    "headword": "Dub",
+    "question": "Choose the word closest in meaning to dub (a film).",
+    "options": [
+      "elicit",
+      "translate",
+      "create",
+      "delete"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.9,
+      "b": 1.115,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07567-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D4_Network",
+    "headword": "Soar",
+    "question": "Choose the word closest in meaning to soar.",
+    "options": [
+      "rise",
+      "dive",
+      "Prosper",
+      "fall"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.9,
+      "b": 1.416,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07585-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D4_Network",
+    "headword": "Repetitive",
+    "question": "Choose the word closest in meaning to repetitive.",
+    "options": [
+      "Rational",
+      "recurrent",
+      "original",
+      "unique"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.9,
+      "b": 1.494,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07502-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D4_Network",
+    "headword": "Simultaneous",
+    "question": "Choose the word closest in meaning to Simultaneous.",
+    "options": [
+      "Separate",
+      "Different",
+      "Concurrent",
+      "Reputable"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.9,
+      "b": 1.209,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07600-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D4_Network",
+    "headword": "Accelerate",
+    "question": "Choose the word closest in meaning to accelerate.",
+    "options": [
+      "decelerate",
+      "Instruct",
+      "halt",
+      "speed up"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.9,
+      "b": 1.557,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06474-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D4_Network",
+    "headword": "Wank",
+    "question": "Choose the word closest in meaning to wank.",
+    "options": [
+      "masturbate",
+      "Obstruct",
+      "work",
+      "walk"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.9,
+      "b": 1.055,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06824-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D5_Usage",
+    "headword": "Annals",
+    "question": "The invention was recorded in the annals of science.\nWhat does annals mean?",
+    "options": [
+      "a historical record of events",
+      "a detailed analysis of scientific data",
+      "a collection of scientific instruments",
+      "luck wealth"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.8,
+      "b": 1.187,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07301-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D5_Usage",
+    "headword": "Vertical",
+    "question": "Vertical가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "The vertical is on my desk.",
+      "I want to vertical today.",
+      "The tower has a vertical structure.",
+      "Please vertical quietly."
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 2.1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07332-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D5_Usage",
+    "headword": "Shield",
+    "question": "Shield가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "I have a shield.",
+      "The knight used his shield to protect himself.",
+      "The shield is on my desk.",
+      "It is very shield."
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": 2.1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07326-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D5_Usage",
+    "headword": "Neglect",
+    "question": "Neglect가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "You should not neglect your health.",
+      "It is very neglect.",
+      "I have a neglect.",
+      "The neglect is on my desk."
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 2.1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06883-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D5_Usage",
+    "headword": "Telex",
+    "question": "They sent a telex to confirm the order.\nWhat does telex mean?",
+    "options": [
+      "A feeling or belief that someone has committed an illegal or dishonest act.",
+      "A way to send messages electronically.",
+      "A form of written communication sent via a machine.",
+      "A type of telephone."
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.8,
+      "b": 1.205,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07113-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D5_Usage",
+    "headword": "Bid",
+    "question": "Bid가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "It is very bid.",
+      "He made a bid for the painting at the auction.",
+      "I have a bid.",
+      "The bid is on my desk."
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": 2.1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07260-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D6_Cloze",
+    "headword": "Format",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nWhat is the ____ of the document?",
+    "options": [
+      "Injunction",
+      "Memo",
+      "Format",
+      "tentative"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07446-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D6_Cloze",
+    "headword": "Flee",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThey had to ____ their homes because of the flood.",
+    "options": [
+      "Flee",
+      "Chamberlain",
+      "Nickname",
+      "Exterior"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07124-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D6_Cloze",
+    "headword": "Rational",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nIt was a ____ decision to sell the car.",
+    "options": [
+      "Rational",
+      "Cholera",
+      "levy",
+      "Staircase"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L5-06588-D6_Cloze-0",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "B2",
+    "dimension": "D6_Cloze",
+    "headword": "Cravat",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nWinter is perfect for wearing any type of ____ to keep warm",
+    "options": [
+      "Case",
+      "Course",
+      "Cravat",
+      "Word"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.1,
+      "b": 1.1,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07452-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D6_Cloze",
+    "headword": "Plunge",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nI took a ____ into the cold water.",
+    "options": [
+      "Involuntary",
+      "Geology",
+      "Plunge",
+      "Bribe"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07358-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 5,
+    "cefr": "C1",
+    "dimension": "D6_Cloze",
+    "headword": "Withdraw",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nI need to ____ some money from the bank.",
+    "options": [
+      "Garment",
+      "Sepoy",
+      "Cryptography",
+      "Withdraw"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": 2.15,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08362-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D1_Form",
+    "headword": "Irreconcilable",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 화해할 수 없는",
+    "options": [
+      "Irreconceileble",
+      "irreconcilalbe",
+      "Irreconceilable",
+      "Irreconcilable"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.5,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-08184-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D1_Form",
+    "headword": "Linger",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: (어떤 장소에) 오래 머무르다",
+    "options": [
+      "lingger",
+      "linnger",
+      "langer",
+      "linger"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.5,
+      "b": 2.044,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-08325-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D1_Form",
+    "headword": "Loom",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: (불길하게) 다가오다",
+    "options": [
+      "loom",
+      "loo",
+      "loum",
+      "loome"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.5,
+      "b": 2.566,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-08301-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D1_Form",
+    "headword": "Exclaim",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 외치다 (놀라서 외치는 모습)",
+    "options": [
+      "exclaim",
+      "exclaym",
+      "exclaime",
+      "exclaaim"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.5,
+      "b": 2.464,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-08341-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D1_Form",
+    "headword": "Perceptive",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 통찰력 있는",
+    "options": [
+      "perceptive",
+      "perceiptive",
+      "persceptive",
+      "percaptive"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.5,
+      "b": 2.584,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08302-D1_Form-2",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D1_Form",
+    "headword": "fluctuate",
+    "question": "한글 뜻에 맞는 올바른 철자를 고르시오.\n한글 뜻: 오르내리다 (변동하다)",
+    "options": [
+      "fluctate",
+      "fluctuate",
+      "fluccuate",
+      "fluctuite"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.5,
+      "b": 2.464,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07738-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D2_Meaning",
+    "headword": "Globe",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 지구, 지구본",
+    "options": [
+      "Globe",
+      "Parallel",
+      "Advocate",
+      "legacy"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07857-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D2_Meaning",
+    "headword": "Taxpayer",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 납세자",
+    "options": [
+      "Coup",
+      "Referendum",
+      "Taxpayer",
+      "infinite"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07844-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D2_Meaning",
+    "headword": "Civilian",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 민간인, 일반인",
+    "options": [
+      "Civilian",
+      "Drain",
+      "Spit",
+      "Courteous"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07839-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D2_Meaning",
+    "headword": "Fluid",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 액체",
+    "options": [
+      "unanimous",
+      "Fluid",
+      "Coup",
+      "Referendum"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07729-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D2_Meaning",
+    "headword": "Barn",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 헛간",
+    "options": [
+      "heritage",
+      "Stern",
+      "Contempt",
+      "Barn"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07714-D2_Meaning-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D2_Meaning",
+    "headword": "Alliance",
+    "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 동맹, 연합",
+    "options": [
+      "Alliance",
+      "surplus",
+      "Ethics",
+      "Diagnosis"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1,
+      "b": 2.55,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08319-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D3_Context",
+    "headword": "Aglow",
+    "question": "다음 문장에서 aglow의 뜻으로 가장 알맞은 것은?\nHer face was aglow with happiness.",
+    "options": [
+      "피곤한",
+      "행복으로 불그스름한",
+      "무자비한, 냉혹한",
+      "슬픔으로 가득한"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.9,
+      "b": 2.551,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08257-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D3_Context",
+    "headword": "Executor",
+    "question": "다음 문장에서 Executor의 뜻으로 가장 알맞은 것은?\nHe is the executor of his father's will.",
+    "options": [
+      "유언장을 쓰는 사람",
+      "콩팥, 신장",
+      "유언장을 숨기는 사람",
+      "유언을 집행하는 사람"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.9,
+      "b": 2.275,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08087-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D3_Context",
+    "headword": "Cling",
+    "question": "다음 문장에서 Cling의 뜻으로 가장 알맞은 것은?\nI cling to the hope that things will get better.",
+    "options": [
+      "꽉 붙잡다, 매달리다",
+      "간청하다",
+      "포기하다",
+      "무시하다"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 1.849,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08287-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D3_Context",
+    "headword": "Extrinsic",
+    "question": "다음 문장에서 Extrinsic의 뜻으로 가장 알맞은 것은?\nExtrinsic motivation comes from external rewards, such as money or grades.",
+    "options": [
+      "내적인 동기",
+      "외적인 동기",
+      "실행 가능한, 생존 가능한",
+      "숨겨진 동기"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.9,
+      "b": 2.41,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07946-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D3_Context",
+    "headword": "Orient To",
+    "question": "다음 문장에서 Orient To의 뜻으로 가장 알맞은 것은?\nYou need to orient to the task before you begin.",
+    "options": [
+      "면밀히 조사하다",
+      "과제에 집중하다",
+      "과제를 무시하다",
+      "과제를 포기하다"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.9,
+      "b": 2.515,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08266-D3_Context-3",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D3_Context",
+    "headword": "Cub",
+    "question": "다음 문장에서 cub의 뜻으로 가장 알맞은 것은?\nThe mother bear protected her cub.",
+    "options": [
+      "새끼 곰",
+      "인정, 인식",
+      "어른 곰",
+      "늙은 곰"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.9,
+      "b": 2.317,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08299-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D4_Network",
+    "headword": "precede",
+    "question": "Choose the word closest in meaning to precede.",
+    "options": [
+      "lead",
+      "Mount",
+      "follow",
+      "trail"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 0.75,
+      "b": 2.461,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-08107-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D4_Network",
+    "headword": "Socialism",
+    "question": "Choose the word closest in meaning to socialism.",
+    "options": [
+      "capitalism",
+      "individualism",
+      "collectivism",
+      "Hypocrite"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.9,
+      "b": 1.891,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-08162-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D4_Network",
+    "headword": "Elude",
+    "question": "Choose the word closest in meaning to elude.",
+    "options": [
+      "confront",
+      "evade",
+      "Incorporate",
+      "capture"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 0.75,
+      "b": 2.524,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08124-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D4_Network",
+    "headword": "Portray",
+    "question": "Choose the word closest in meaning to portray.",
+    "options": [
+      "neglect",
+      "ignore",
+      "Blend",
+      "depict"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.9,
+      "b": 1.924,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08177-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D4_Network",
+    "headword": "erode",
+    "question": "Choose the word closest in meaning to erode.",
+    "options": [
+      "build",
+      "protect",
+      "destroy",
+      "Roar"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.75,
+      "b": 2.428,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-08118-D4_Network-5",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D4_Network",
+    "headword": "Procession",
+    "question": "Choose the word closest in meaning to procession.",
+    "options": [
+      "solitude",
+      "Stimulus",
+      "parade",
+      "retreat"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 0.9,
+      "b": 1.912,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07772-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D5_Usage",
+    "headword": "Creep",
+    "question": "Creep가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "I have a creep.",
+      "The creep is on my desk.",
+      "The cat began to creep towards the bird.",
+      "It is very creep."
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-08271-D5_Usage-7",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D5_Usage",
+    "headword": "Arouse",
+    "question": "The comment aroused suspicion among the team members.\nWhat does arouse mean?",
+    "options": [
+      "to live in a particular place",
+      "to calm or soothe",
+      "to ignore or neglect",
+      "to cause or awaken"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 0.65,
+      "b": 2.353,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07785-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D5_Usage",
+    "headword": "Disclose",
+    "question": "Disclose가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "The company had to disclose its financial records.",
+      "The disclose is on my desk.",
+      "It is very disclose.",
+      "I have a disclose."
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07740-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D5_Usage",
+    "headword": "Retain",
+    "question": "Retain가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "The retain is on my desk.",
+      "It is very retain.",
+      "You must retain the receipt in case you need to return the item.",
+      "I have a retain."
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07793-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D5_Usage",
+    "headword": "Thrill",
+    "question": "Thrill가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "The thrill is on my desk.",
+      "I have a thrill.",
+      "The roller coaster ride was a real thrill.",
+      "It is very thrill."
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07855-D5_Usage-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D5_Usage",
+    "headword": "profound",
+    "question": "profound가 자연스럽게 쓰인 문장을 고르시오.",
+    "options": [
+      "The profound is on my desk.",
+      "The speaker's profound words left a lasting impression on the audience.",
+      "Please profound quietly.",
+      "I want to profound today."
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": 2.6,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07950-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D6_Cloze",
+    "headword": "intrinsic",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe ____ value of education is that it makes people better.",
+    "options": [
+      "Clone",
+      "intrinsic",
+      "Advocacy",
+      "Summon"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07826-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D6_Cloze",
+    "headword": "Filter",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nYou can ____ water to make it clean.",
+    "options": [
+      "Abrupt",
+      "Filter",
+      "Eccentric",
+      "Cargo"
+    ],
+    "answerIndex": 1,
+    "irt": {
+      "a": 1.05,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07965-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D6_Cloze",
+    "headword": "Bleak",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe future looked ____ for the company.",
+    "options": [
+      "Bleak",
+      "Shudder",
+      "Bamboo",
+      "Empathy"
+    ],
+    "answerIndex": 0,
+    "irt": {
+      "a": 1.05,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L4-07912-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D6_Cloze",
+    "headword": "Deceased",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe ____ was a beloved member of the community.",
+    "options": [
+      "Strive",
+      "Resent",
+      "Deceased",
+      "Carve"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07828-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D6_Cloze",
+    "headword": "Mighty",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe ____ warrior stood tall and brave.",
+    "options": [
+      "Spade",
+      "Reproach",
+      "Hinder",
+      "Mighty"
+    ],
+    "answerIndex": 3,
+    "irt": {
+      "a": 1.05,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  },
+  {
+    "id": "L6-07953-D6_Cloze-regenerated",
+    "domain": "vocabulary",
+    "level": 6,
+    "cefr": "C2",
+    "dimension": "D6_Cloze",
+    "headword": "intervene",
+    "question": "다음 빈칸에 들어갈 단어로 가장 알맞은 것은?\n\nThe teacher had to ____ when the students started arguing.",
+    "options": [
+      "Hereditary",
+      "Tractor",
+      "intervene",
+      "Sarcastic"
+    ],
+    "answerIndex": 2,
+    "irt": {
+      "a": 1.05,
+      "b": 2.65,
+      "c": 0.25
+    },
+    "irtSource": "heuristic-service",
+    "provenance": "echobridge-web/curated"
+  }
+]
