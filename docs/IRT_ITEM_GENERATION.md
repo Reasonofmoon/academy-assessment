@@ -111,6 +111,31 @@ npm run export:echobridge
 
 코드: `lib/irt/export-echobridge.ts`, `POST /api/export/echobridge`, `/review` Export 버튼.
 
+### Safe append-merge into echobridge-web
+
+```bash
+# 1) 미리보기 (기본 dry-run, 디스크 변경 없음)
+npm run merge:echobridge
+
+# 2) 실제 병합 (수정 전 .bak 백업 생성)
+npm run merge:echobridge:apply
+
+# 옵션
+node scripts/merge-echobridge-service.mjs --export data/exports/echobridge/<ts> --target ../echobridge-web --levels 2,3 --apply
+node scripts/merge-echobridge-service.mjs --vocab-only --apply
+node scripts/merge-echobridge-service.mjs --reading-only --dry-run   # dry-run is default
+```
+
+| 규칙 | 동작 |
+|------|------|
+| overwrite 금지 | export 파일로 타깃 전체를 교체하지 않음 |
+| id 중복 | item / passage / option id 충돌 시 스킵 |
+| 신규 파일 생성 금지 | 타깃 `level-N.service.json` 없으면 스킵 (실수 방지) |
+| 백업 | `--apply` 시 `data/exports/merge-backups/<ts>/` 에 복사 |
+| 리포트 | `data/exports/merge-reports/merge-*.json` |
+
+스크립트: `scripts/merge-echobridge-service.mjs`
+
 ## 7. 로드맵
 
 | Phase | 내용 |
@@ -118,7 +143,7 @@ npm run export:echobridge
 | ✅ | 예시은행 + IRT 생성 + 검증 + UI 메타 |
 | ✅ | JSON bank + approve/save API + 검수 UI |
 | ✅ | approved → echobridge service export |
-| Next | merge helper (append into existing service without overwrite) |
+| ✅ | safe append-merge into echobridge curated service |
 | Next | Supabase 영속화 (서버리스) |
 | Later | 학원 응시 로그 → empirical a,b 재추정 |
 

@@ -10,7 +10,9 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "import:irt-exemplars": "node scripts/import-irt-exemplars.mjs",
-    "export:echobridge": "node scripts/export-echobridge.mjs"
+    "export:echobridge": "node scripts/export-echobridge.mjs",
+    "merge:echobridge": "node scripts/merge-echobridge-service.mjs",
+    "merge:echobridge:apply": "node scripts/merge-echobridge-service.mjs --apply"
   },
   "dependencies": {
     "next": "^14.2.35",

@@ -27,3 +27,5 @@ next-env.d.ts
 
 # Generated echobridge export snapshots (recreate via npm run export:echobridge)
 /data/exports/
+# Keep merge reports optional — ignore all under exports including backups
+# (already covered by /data/exports/)
