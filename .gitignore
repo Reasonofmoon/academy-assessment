@@ -29,3 +29,9 @@ next-env.d.ts
 /data/exports/
 # Keep merge reports optional — ignore all under exports including backups
 # (already covered by /data/exports/)
+
+# IRT sandbox outputs (and optional local CSV / demo)
+/data/irt-sample/out/
+/data/irt-sample/Dicht_Data2.csv
+/data/irt-sample/Dicht_Data2_DEMO.csv
+

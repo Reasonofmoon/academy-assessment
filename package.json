@@ -12,7 +12,9 @@
     "import:irt-exemplars": "node scripts/import-irt-exemplars.mjs",
     "export:echobridge": "node scripts/export-echobridge.mjs",
     "merge:echobridge": "node scripts/merge-echobridge-service.mjs",
-    "merge:echobridge:apply": "node scripts/merge-echobridge-service.mjs --apply"
+    "merge:echobridge:apply": "node scripts/merge-echobridge-service.mjs --apply",
+    "irt:sandbox": "python scripts/irt_sandbox/run_sandbox.py",
+    "irt:sandbox:demo": "python scripts/irt_sandbox/run_sandbox.py --demo"
   },
   "dependencies": {
     "next": "^14.2.35",
