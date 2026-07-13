@@ -291,11 +291,16 @@ npm run apply:empirical:write -- --approve ../academy-assessment/data/irt-sample
 - [x] echobridge `export-cat-responses.ts` / `npm run export:cat-responses`  
 - [x] echobridge `apply-empirical-params.ts` dry-run / `--write` + APPROVE gate  
 
+### Done (CI)
+
+- [x] CI: academy `.github/workflows/irt-sandbox.yml` (`run_live_pipeline.py --fixture`)  
+- [x] CI: echobridge `.github/workflows/cat-irt-smoke.yml` (export SQL + apply dry-run gate)  
+
 ### Next implementation
 
-- [ ] CI job wiring fixture smoke  
 - [ ] Upgrade estimator to MML/EM when pilot N grows  
-- [ ] Staging deploy + re-enable “예비 보정” only after M3
+- [ ] Staging deploy + re-enable “예비 보정” only after M3  
+- [ ] Live Supabase export once `.env.local` + pilot rows exist
 
 ---
 

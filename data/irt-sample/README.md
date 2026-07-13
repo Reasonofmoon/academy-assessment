@@ -47,7 +47,10 @@ npm run irt:sandbox:demo
 npm run irt:from-cat:fixture   # 합성 cat_responses → sparse 2PL → QC(smoke)
 npm run irt:from-cat           # live export → 2PL → QC(pilot)
 npm run irt:qc:smoke           # out-fixture 에 QC만 재실행
+npm run irt:ci                 # CI와 동일 fixture 파이프라인
 ```
+
+CI: `.github/workflows/irt-sandbox.yml` (fixture → 2PL → QC, bank 미기록).
 
 ## Real cat_responses (live)
 

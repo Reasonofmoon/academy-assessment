@@ -1,0 +1,57 @@
+# Fixture smoke: cat_responses → sparse matrix → 2PL → QC (no product bank writes)
+name: irt-sandbox
+
+on:
+  push:
+    paths:
+      - "scripts/irt_sandbox/**"
+      - "data/irt-sample/fixtures/**"
+      - "docs/IRT_CAT_RESPONSES_2PL_PIPELINE.md"
+      - ".github/workflows/irt-sandbox.yml"
+      - "package.json"
+  pull_request:
+    paths:
+      - "scripts/irt_sandbox/**"
+      - "data/irt-sample/fixtures/**"
+      - "docs/IRT_CAT_RESPONSES_2PL_PIPELINE.md"
+      - ".github/workflows/irt-sandbox.yml"
+      - "package.json"
+  workflow_dispatch:
+
+jobs:
+  fixture-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run fixture → 2PL → QC (smoke profile)
+        run: python scripts/irt_sandbox/run_live_pipeline.py --fixture
+
+      - name: Assert QC artifacts exist
+        run: |
+          set -euo pipefail
+          test -f data/irt-sample/out-fixture/response_matrix.json
+          test -f data/irt-sample/out-fixture/item_params_2pl.json
+          test -f data/irt-sample/out-fixture/item_params_qc.json
+          test -f data/irt-sample/out-fixture/QC_REPORT.md
+          test -f data/irt-sample/out-fixture/APPROVE_APPLY.draft.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          qc = json.loads(Path("data/irt-sample/out-fixture/item_params_qc.json").read_text())
+          assert qc.get("product_bank_merge") is False
+          assert qc.get("profile") == "smoke"
+          assert qc.get("n_items", 0) >= 1
+          draft = json.loads(Path("data/irt-sample/out-fixture/APPROVE_APPLY.draft.json").read_text())
+          assert draft.get("approved") is False
+          assert draft.get("product_bank_merge") is False
+          print(f"OK items={qc['n_items']} pass={qc['n_pass']} fail={qc['n_fail']}")
+          PY
+
+      - name: Demo Dicht sandbox path (synthetic, no CSV required)
+        run: python scripts/irt_sandbox/run_sandbox.py --demo
