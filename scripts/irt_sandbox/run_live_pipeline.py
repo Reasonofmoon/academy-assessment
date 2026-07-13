@@ -44,6 +44,13 @@ def main(argv: list[str] | None = None) -> int:
     )
     p.add_argument("--domains", default="", help="optional domain filter")
     p.add_argument("--write-long", action="store_true")
+    p.add_argument(
+        "--qc-profile",
+        default="",
+        help="QC gate profile: pilot | production | smoke "
+        "(default: smoke for --fixture, pilot for live)",
+    )
+    p.add_argument("--skip-qc", action="store_true", help="skip Stage D QC")
     args = p.parse_args(argv)
 
     py = sys.executable
@@ -52,9 +59,11 @@ def main(argv: list[str] | None = None) -> int:
         run([py, str(SCRIPTS / "make_fixture_cat_responses.py")])
         inp = FIXTURE
         out_dir = Path(args.out_dir) if args.out_dir else FIXTURE_OUT
+        qc_profile = args.qc_profile or "smoke"
     else:
         inp = Path(args.inp) if args.inp else DEFAULT_LIVE
         out_dir = Path(args.out_dir) if args.out_dir else DEFAULT_OUT
+        qc_profile = args.qc_profile or "pilot"
         if not inp.exists():
             print(f"ERROR: export not found: {inp}", file=sys.stderr)
             print(
@@ -81,7 +90,18 @@ def main(argv: list[str] | None = None) -> int:
     matrix = out_dir / "response_matrix.json"
     run([py, str(SCRIPTS / "estimate_2pl.py"), str(matrix)])
 
-    print(f"DONE out_dir={out_dir}")
+    if not args.skip_qc:
+        run(
+            [
+                py,
+                str(SCRIPTS / "qc_item_params.py"),
+                str(out_dir),
+                "--profile",
+                qc_profile,
+            ]
+        )
+
+    print(f"DONE out_dir={out_dir} qc_profile={qc_profile if not args.skip_qc else 'skipped'}")
     print("NOTE: product bank not modified. Human APPROVE_APPLY required for promote.")
     return 0
 

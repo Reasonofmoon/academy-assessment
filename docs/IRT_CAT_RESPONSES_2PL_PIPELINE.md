@@ -213,17 +213,28 @@ python scripts/irt_sandbox/estimate_2pl.py data/irt-sample/out-live/response_mat
 
 ### Stage D — QC gates
 
-| Gate | Default (pilot) | Production target (from readiness doc) |
-|------|-----------------|----------------------------------------|
-| min n_obs per item for **b** | 30–50 | ≥ 500 |
-| min n_obs for **a** | 50–100 | ≥ 1000 |
-| a in [0.2, 2.5] | hard clip + flag | same |
-| \|b\| ≤ 3.5 | hard clip + flag | same |
-| p+ in (0.05, 0.95) | flag extremes | review |
-| rpb ≥ 0.15 | flag (v0.5) | quarantine |
-| exposure rate | log only | Sympson–Hetter later |
+Implemented: `scripts/irt_sandbox/qc_item_params.py`
 
-Items failing gates stay **heuristic** in runtime.
+```bash
+python scripts/irt_sandbox/qc_item_params.py --profile pilot data/irt-sample/out-live
+python scripts/irt_sandbox/qc_item_params.py --profile smoke data/irt-sample/out-fixture
+# or via pipeline (fixture defaults to smoke, live to pilot)
+python scripts/irt_sandbox/run_live_pipeline.py --fixture
+```
+
+| Gate | `pilot` | `production` | `smoke` (fixture) |
+|------|---------|--------------|-------------------|
+| min n_obs **b** | 30 | 500 | 8 |
+| min n_obs **a** | 50 | 1000 | 12 |
+| a in [0.2, 2.5] | clip + fail promote | same | same |
+| \|b\| ≤ 3.5 | clip + fail promote | same | same |
+| p+ in (0.05, 0.95) | fail extremes | same | same |
+| rpb ≥ threshold | 0.15 (fail if low) | 0.15 + required | 0.10 |
+| exposure rate | log only | log only | log only |
+
+Outputs (next to matrix): `item_params_qc.json`, `QC_REPORT.md`, `APPROVE_APPLY.draft.json`.
+
+Items failing gates stay **heuristic** in runtime. Draft is **not** auto-applied.
 
 ### Stage E — Human approve & apply
 
@@ -265,11 +276,11 @@ Items failing gates stay **heuristic** in runtime.
 - [x] Shared matrix path into existing `estimate_2pl.py` (writes next to matrix)  
 - [x] Fixture + runner: `make_fixture_cat_responses.py`, `run_live_pipeline.py --fixture`  
 - [x] npm: `irt:from-cat`, `irt:from-cat:fixture`  
+- [x] QC module (`qc_item_params.py`) + `irt:qc` / pipeline Stage D  
 
 ### Next implementation
 
 - [ ] echobridge SQL export script / `npm run export:cat-responses`  
-- [ ] QC module (`qc_item_params.py`) with gates table  
 - [ ] `apply-empirical-params.ts` dry-run/write  
 - [ ] CI job wiring fixture smoke  
 - [ ] Upgrade estimator to MML/EM when pilot N grows  

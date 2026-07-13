@@ -16,7 +16,9 @@
     "irt:sandbox": "python scripts/irt_sandbox/run_sandbox.py",
     "irt:sandbox:demo": "python scripts/irt_sandbox/run_sandbox.py --demo",
     "irt:from-cat": "python scripts/irt_sandbox/run_live_pipeline.py",
-    "irt:from-cat:fixture": "python scripts/irt_sandbox/run_live_pipeline.py --fixture"
+    "irt:from-cat:fixture": "python scripts/irt_sandbox/run_live_pipeline.py --fixture",
+    "irt:qc": "python scripts/irt_sandbox/qc_item_params.py",
+    "irt:qc:smoke": "python scripts/irt_sandbox/qc_item_params.py --profile smoke data/irt-sample/out-fixture"
   },
   "dependencies": {
     "next": "^14.2.35",

@@ -44,8 +44,9 @@ npm:
 ```bash
 npm run irt:sandbox
 npm run irt:sandbox:demo
-npm run irt:from-cat:fixture   # 합성 cat_responses → sparse 2PL 스모크
-npm run irt:from-cat           # data/irt-sample/live/cat_responses.jsonl
+npm run irt:from-cat:fixture   # 합성 cat_responses → sparse 2PL → QC(smoke)
+npm run irt:from-cat           # live export → 2PL → QC(pilot)
+npm run irt:qc:smoke           # out-fixture 에 QC만 재실행
 ```
 
 ## Real cat_responses (live)
@@ -68,7 +69,10 @@ python scripts/irt_sandbox/run_live_pipeline.py
 # 또는 단계별
 python scripts/irt_sandbox/from_cat_responses.py --in data/irt-sample/live/cat_responses.jsonl --out-dir data/irt-sample/out-live --write-long
 python scripts/irt_sandbox/estimate_2pl.py data/irt-sample/out-live/response_matrix.json
+python scripts/irt_sandbox/qc_item_params.py --profile pilot data/irt-sample/out-live
 ```
+
+QC 산출: `item_params_qc.json`, `QC_REPORT.md`, `APPROVE_APPLY.draft.json` (human only → `APPROVE_APPLY.json`).
 
 Export SQL (echobridge `public.cat_responses`):
 
