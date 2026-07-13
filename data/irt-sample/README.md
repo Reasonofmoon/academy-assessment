@@ -59,7 +59,7 @@ CI: `.github/workflows/irt-sandbox.yml` (fixture → 2PL → QC, bank 미기록)
 | 경로 | 역할 |
 |------|------|
 | `fixtures/cat_responses_fixture.jsonl` | 커밋된 합성 로그 (스모크) |
-| `live/cat_responses.jsonl` | Supabase export (gitignore, PII 없이 session_id) |
+| `live/cat_responses.jsonl` | Firestore export (gitignore, PII 없이 session_id) |
 | `out-fixture/` / `out-live/` | 행렬·2PL 산출 (gitignore) |
 
 ```bash
@@ -92,7 +92,7 @@ order by session_id, step;
 ### Export / apply (echobridge-web)
 
 ```bash
-# 1) 응답 로그 export → live/
+# 1) 응답 로그 export → live/  (Firebase Admin env 필요)
 cd ../echobridge-web
 npm run export:cat-responses -- --out ../academy-assessment/data/irt-sample/live/cat_responses.jsonl
 

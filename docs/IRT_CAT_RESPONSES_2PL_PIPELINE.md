@@ -8,7 +8,7 @@
 
 ## 1. Goal
 
-Connect **real CAT session logs** (`echobridge-web` `public.cat_responses`) to the **same matrix → 2PL estimation flow** proven on Dicht sandbox (`academy-assessment` `scripts/irt_sandbox`), so we can:
+Connect **real CAT session logs** (`echobridge-web` Firestore `cat_responses`) to the **same matrix → 2PL estimation flow** proven on Dicht sandbox (`academy-assessment` `scripts/irt_sandbox`), so we can:
 
 1. Re-estimate item `(a, b)` (and later `c` for 3PL) from live data  
 2. Promote `irtSource: "heuristic" → "empirical"` only after QC gates  
@@ -26,8 +26,8 @@ Non-goals (this design phase):
 
 | Piece | Location | Role |
 |-------|----------|------|
-| Response log schema | `echobridge-web/migrations/cat_responses.sql` | One row per administered item |
-| Log writer | `echobridge-web` `POST /api/cat/log` | Session-end batch insert |
+| Response log schema | Firestore `cat_responses` (`src/lib/cat-responses.ts`) | One doc per administered item |
+| Log writer | `echobridge-web` `POST /api/cat/log` | Session-end batch write (Firebase Admin) |
 | Sandbox profile/convert | `academy-assessment/scripts/irt_sandbox/*` | Wide CSV → long → matrix |
 | Sandbox 2PL | `estimate_2pl.py` | Educational joint Newton 2PL |
 | Item banks | echobridge curated + academy generated-bank | Content + current `a,b,c` |
@@ -60,14 +60,14 @@ Non-goals (this design phase):
 [echobridge /api/cat/next]  ── uses current item params (heuristic|empirical)
       │
       ▼
-[echobridge /api/cat/log] ──► Supabase public.cat_responses
+[echobridge /api/cat/log] ──► Firestore cat_responses
                                   │
                     ┌─────────────┴─────────────┐
                     ▼                           ▼
-           export job (batch)            analytics dash (later)
+           export:cat-responses          analytics dash (later)
                     │
                     ▼
-        responses_export.jsonl  (or CSV)
+        responses_export.jsonl
                     │
                     ▼
    academy-assessment scripts/irt_sandbox/
@@ -93,7 +93,7 @@ Non-goals (this design phase):
 
 | Concern | Home repo | Why |
 |---------|-----------|-----|
-| Log collection & RLS | **echobridge-web** | Production traffic, Supabase keys |
+| Log collection | **echobridge-web** | Production traffic, Firebase Admin keys |
 | Calibration offline jobs | **academy-assessment** `scripts/irt_sandbox` (v0) or shared `packages/irt-calibrate` (v1) | Already has matrix/2PL path |
 | Param apply + deploy | **echobridge-web** | Owns runtime item JSON |
 | Content bank (AI items) | academy-assessment generated-bank | Separate from CAT runtime until export/merge |
@@ -178,19 +178,20 @@ Promotion to `irtSource: "empirical"` requires QC pass + human flag file `APPROV
 
 ### Stage A — Collect (echobridge)
 
-1. Ensure Supabase env + `cat_responses` migration applied  
+1. Ensure Firebase Admin env (`FIREBASE_PROJECT_ID` / `CLIENT_EMAIL` / `PRIVATE_KEY`)  
 2. `BETA_PAUSED=false` only for pilot cohort  
-3. Monitor: `count(*)`, distinct `item_id`, distinct `session_id`  
+3. Monitor Firestore `cat_responses` doc count / distinct session_id  
 4. Export (implemented in **echobridge-web**):
 
 ```bash
 # repo: echobridge-web
-npm run export:cat-responses:sql          # SQL for Dashboard
+npm run export:cat-responses:schema
 npm run export:cat-responses -- --since 2026-07-01 --domains vocabulary,reading
 npm run export:cat-responses -- --out ../academy-assessment/data/irt-sample/live/cat_responses.jsonl
 ```
 
-Docs: `echobridge-web/docs/CAT_RESPONSES_EXPORT_AND_EMPIRICAL_APPLY.md`
+Docs: `echobridge-web/docs/CAT_RESPONSES_EXPORT_AND_EMPIRICAL_APPLY.md`  
+**Supabase path retired** — do not use `SUPABASE_*` for CAT telemetry.
 
 ### Stage B — Ingest & matrix (academy irt-sandbox)
 
@@ -270,7 +271,7 @@ npm run apply:empirical:write -- --approve ../academy-assessment/data/irt-sample
 
 - Export only `session_id`, never student name/email in calibration files  
 - `data/irt-sample/live/` gitignored  
-- Supabase service role only on server  
+- Firebase Admin credentials only on server (never `NEXT_PUBLIC_`)  
 - Calibration outputs may include item_ids only (public content ids OK)  
 
 ---
@@ -300,7 +301,7 @@ npm run apply:empirical:write -- --approve ../academy-assessment/data/irt-sample
 
 - [ ] Upgrade estimator to MML/EM when pilot N grows  
 - [ ] Staging deploy + re-enable “예비 보정” only after M3  
-- [ ] Live Supabase export once `.env.local` + pilot rows exist
+- [ ] Live Firestore export once Firebase `.env.local` + pilot rows exist
 
 ---
 
@@ -309,7 +310,7 @@ npm run apply:empirical:write -- --approve ../academy-assessment/data/irt-sample
 | Milestone | Criterion |
 |-----------|-----------|
 | M0 | Adapter accepts fixture JSONL shaped like cat_responses; 2PL runs without bank writes |
-| M1 | ≥ 30 sessions exported from real Supabase; matrix non-empty for ≥ 20 items |
+| M1 | ≥ 30 sessions exported from real Firestore; matrix non-empty for ≥ 20 items |
 | M2 | ≥ 1 domain with ≥ 10 items passing pilot n_obs gates |
 | M3 | Human-approved patch applied to staging bank with `irtSource=empirical` |
 | M4 | Production readiness sample sizes (b≥500) for core placement items |
