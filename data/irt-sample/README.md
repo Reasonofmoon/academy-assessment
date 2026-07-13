@@ -86,6 +86,25 @@ order by session_id, step;
 
 **Bank merge 금지.** 승격은 `APPROVE_APPLY` + human gate 후에만.
 
+### Export / apply (echobridge-web)
+
+```bash
+# 1) 응답 로그 export → live/
+cd ../echobridge-web
+npm run export:cat-responses -- --out ../academy-assessment/data/irt-sample/live/cat_responses.jsonl
+
+# 2) academy에서 캘리브 + QC
+cd ../academy-assessment
+npm run irt:from-cat
+
+# 3) draft 검토 → APPROVE_APPLY.json (approved:true) 후 dry-run / write
+cd ../echobridge-web
+npm run apply:empirical -- --approve ../academy-assessment/data/irt-sample/out-live/APPROVE_APPLY.json
+# npm run apply:empirical:write -- --approve ...   # human only
+```
+
+상세: `echobridge-web/docs/CAT_RESPONSES_EXPORT_AND_EMPIRICAL_APPLY.md`
+
 ## 옵션: empty Student ID
 
 | 플래그 | 동작 |

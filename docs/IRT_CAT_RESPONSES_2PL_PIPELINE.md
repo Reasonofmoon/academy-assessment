@@ -181,17 +181,16 @@ Promotion to `irtSource: "empirical"` requires QC pass + human flag file `APPROV
 1. Ensure Supabase env + `cat_responses` migration applied  
 2. `BETA_PAUSED=false` only for pilot cohort  
 3. Monitor: `count(*)`, distinct `item_id`, distinct `session_id`  
-4. Export job (manual SQL or script):
+4. Export (implemented in **echobridge-web**):
 
-```sql
-copy (
-  select session_id, step, item_id, domain, dimension, passage_id,
-         correct, selected_option_id, response_time_ms, created_at
-  from public.cat_responses
-  where created_at >= '2026-07-01'
-  order by session_id, step
-) to stdout with csv header;
+```bash
+# repo: echobridge-web
+npm run export:cat-responses:sql          # SQL for Dashboard
+npm run export:cat-responses -- --since 2026-07-01 --domains vocabulary,reading
+npm run export:cat-responses -- --out ../academy-assessment/data/irt-sample/live/cat_responses.jsonl
 ```
+
+Docs: `echobridge-web/docs/CAT_RESPONSES_EXPORT_AND_EMPIRICAL_APPLY.md`
 
 ### Stage B — Ingest & matrix (academy irt-sandbox)
 
@@ -238,10 +237,19 @@ Items failing gates stay **heuristic** in runtime. Draft is **not** auto-applied
 
 ### Stage E — Human approve & apply
 
-1. Review `SANDBOX_RESULTS` / QC table  
-2. Write `out-live/APPROVE_APPLY.json` listing item_ids to promote  
-3. echobridge script (future): `apply-empirical-params.ts --patch ... --dry-run` then `--write`  
-4. Bump bank version / deploy; keep audit trail of previous a,b  
+1. Review `QC_REPORT.md` / `item_params_qc.json`  
+2. Copy `APPROVE_APPLY.draft.json` → `APPROVE_APPLY.json`, set `"approved": true`  
+3. echobridge (implemented):
+
+```bash
+# repo: echobridge-web — default dry-run
+npm run apply:empirical -- --approve ../academy-assessment/data/irt-sample/out-live/APPROVE_APPLY.json
+# only after human review
+npm run apply:empirical:write -- --approve ../academy-assessment/data/irt-sample/out-live/APPROVE_APPLY.json
+```
+
+4. Report + backups under `echobridge-web/data/exports/empirical-apply/`  
+5. Bump bank version / deploy; keep git commit of service JSON deltas
 
 ---
 
@@ -278,12 +286,16 @@ Items failing gates stay **heuristic** in runtime. Draft is **not** auto-applied
 - [x] npm: `irt:from-cat`, `irt:from-cat:fixture`  
 - [x] QC module (`qc_item_params.py`) + `irt:qc` / pipeline Stage D  
 
+### Done (export + apply)
+
+- [x] echobridge `export-cat-responses.ts` / `npm run export:cat-responses`  
+- [x] echobridge `apply-empirical-params.ts` dry-run / `--write` + APPROVE gate  
+
 ### Next implementation
 
-- [ ] echobridge SQL export script / `npm run export:cat-responses`  
-- [ ] `apply-empirical-params.ts` dry-run/write  
 - [ ] CI job wiring fixture smoke  
 - [ ] Upgrade estimator to MML/EM when pilot N grows  
+- [ ] Staging deploy + re-enable “예비 보정” only after M3
 
 ---
 
