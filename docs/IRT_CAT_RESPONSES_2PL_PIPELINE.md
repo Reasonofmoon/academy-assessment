@@ -301,7 +301,8 @@ npm run apply:empirical:write -- --approve ../academy-assessment/data/irt-sample
 
 - [ ] Upgrade estimator to MML/EM when pilot N grows  
 - [ ] Staging deploy + re-enable “예비 보정” only after M3  
-- [ ] Live Firestore export once Firebase `.env.local` + pilot rows exist
+- [ ] Real pilot N≥110 collection (see echobridge `docs/PILOT_N_AND_COLLECTION_PLAN.md`)  
+- [ ] Core item pool + n_obs≥30 before any APPROVE write
 
 ---
 
