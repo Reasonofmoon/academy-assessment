@@ -44,7 +44,12 @@ def parse_correct(raw: str) -> bool | None:
         return None
 
 
-def convert(path: Path, profile: dict | None = None) -> dict:
+def convert(
+    path: Path,
+    profile: dict | None = None,
+    *,
+    drop_empty_id: bool = True,
+) -> dict:
     header, body, _delim = load_table(path)
 
     if profile and profile.get("id_column") is not None and profile.get("id_column") in header:
@@ -66,9 +71,20 @@ def convert(path: Path, profile: dict | None = None) -> dict:
     matrix: list[list[int | None]] = []
     person_ids: list[str] = []
     skipped_missing = 0
+    dropped_empty_id_rows = 0
+    dropped_empty_id_row_indices: list[int] = []
 
     for r_i, r in enumerate(body):
-        person = (r[id_idx] if id_idx < len(r) else "") or f"person-{r_i + 1}"
+        raw_id = (r[id_idx] if id_idx < len(r) else "").strip()
+        if not raw_id:
+            if drop_empty_id:
+                dropped_empty_id_rows += 1
+                dropped_empty_id_row_indices.append(r_i)
+                continue
+            person = f"person-{r_i + 1}"
+        else:
+            person = raw_id
+
         person_ids.append(person)
         session_id = f"sandbox-{person}"
         row_vec: list[int | None] = []
@@ -116,9 +132,13 @@ def convert(path: Path, profile: dict | None = None) -> dict:
         "id_column": id_col,
         "id_column_index": id_idx,
         "id_column_reason": id_reason,
+        "drop_empty_id": drop_empty_id,
+        "dropped_empty_id_rows": dropped_empty_id_rows,
+        "dropped_empty_id_row_indices": dropped_empty_id_row_indices[:20],
         "item_ids": short_item_ids,
         "item_columns": [n for n, _ in item_indices],
         "n_persons": len(person_ids),
+        "n_persons_raw": len(body),
         "n_items": len(item_indices),
         "n_long_rows": len(long_rows),
         "skipped_missing_cells": skipped_missing,
@@ -127,7 +147,8 @@ def convert(path: Path, profile: dict | None = None) -> dict:
         "schema_note": (
             "Long rows follow echobridge cat_responses field names where possible. "
             "source_person_id is the raw Student ID. item_id is dicht:Q## (short); "
-            "item_label holds the full stem header. domain is dummy."
+            "item_label holds the full stem header. domain is dummy. "
+            "drop_empty_id=true excludes rows with blank Student ID."
         ),
     }
     return {
@@ -166,19 +187,26 @@ def write_outputs(bundle: dict, out_dir: Path) -> None:
 
 
 def main(argv: list[str]) -> int:
-    path = Path(argv[1]) if len(argv) > 1 else DEFAULT_CSV
+    # Usage:
+    #   convert_to_cat_responses.py [csv_path] [--keep-empty-id]
+    args = [a for a in argv[1:] if not a.startswith("--")]
+    keep_empty = "--keep-empty-id" in argv
+    drop_empty_id = not keep_empty
+
+    path = Path(args[0]) if args else DEFAULT_CSV
     if not path.exists():
         print(f"ERROR: CSV not found: {path}", file=sys.stderr)
         return 1
     # Ensure local imports work when run as script
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     profile = load_profile()
-    bundle = convert(path, profile)
+    bundle = convert(path, profile, drop_empty_id=drop_empty_id)
     write_outputs(bundle, OUT_DIR)
     m = bundle["meta"]
     print(
-        f"long_rows={m['n_long_rows']} persons={m['n_persons']} items={m['n_items']} "
-        f"id_col={m['id_column']!r} reason={m['id_column_reason']} "
+        f"long_rows={m['n_long_rows']} persons={m['n_persons']}/{m['n_persons_raw']} "
+        f"items={m['n_items']} id_col={m['id_column']!r} reason={m['id_column_reason']} "
+        f"drop_empty_id={m['drop_empty_id']} dropped={m['dropped_empty_id_rows']} "
         f"sample_ids={m['sample_person_ids']}"
     )
     print(f"wrote {OUT_DIR / 'cat_responses_long.jsonl'}")

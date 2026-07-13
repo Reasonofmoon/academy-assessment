@@ -57,6 +57,7 @@ def run(cmd: list[str]) -> None:
 
 def main(argv: list[str]) -> int:
     demo = "--demo" in argv
+    keep_empty_id = "--keep-empty-id" in argv
     csv_path = CSV_PATH
 
     if not csv_path.exists():
@@ -83,12 +84,25 @@ def main(argv: list[str]) -> int:
 
     py = sys.executable
     run([py, str(SCRIPTS / "profile_dicht.py"), str(csv_path)])
-    run([py, str(SCRIPTS / "convert_to_cat_responses.py"), str(csv_path)])
+    convert_cmd = [py, str(SCRIPTS / "convert_to_cat_responses.py"), str(csv_path)]
+    if keep_empty_id:
+        convert_cmd.append("--keep-empty-id")
+    run(convert_cmd)
     run([py, str(SCRIPTS / "estimate_2pl.py")])
+    run([py, str(SCRIPTS / "write_summary.py")])
+
+    convert_meta = {}
+    cm_path = OUT / "convert_meta.json"
+    if cm_path.exists():
+        convert_meta = json.loads(cm_path.read_text(encoding="utf-8"))
 
     summary = {
         "csv": str(csv_path),
         "demo": demo or "DEMO" in csv_path.name,
+        "drop_empty_id": not keep_empty_id,
+        "dropped_empty_id_rows": convert_meta.get("dropped_empty_id_rows"),
+        "n_persons": convert_meta.get("n_persons"),
+        "n_items": convert_meta.get("n_items"),
         "out_dir": str(OUT),
         "product_bank_merge": False,
         "outputs": [
@@ -99,11 +113,14 @@ def main(argv: list[str]) -> int:
             "item_params_2pl.json",
             "person_theta.json",
             "estimate_2pl_report.md",
+            "SANDBOX_RESULTS.md",
         ],
     }
     (OUT / "pipeline_summary.json").write_text(
         json.dumps(summary, indent=2), encoding="utf-8"
     )
+    # refresh summary once more with pipeline_summary present
+    run([py, str(SCRIPTS / "write_summary.py")])
     print("\n=== DONE (sandbox only; product bank untouched) ===")
     print(json.dumps(summary, indent=2))
     return 0

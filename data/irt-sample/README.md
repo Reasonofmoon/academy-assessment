@@ -9,38 +9,92 @@
 ## 파일 배치
 
 ```
-data/irt-sample/Dicht_Data2.csv   ← 사용자가 다운로드해 둠
-data/irt-sample/out/              ← 스크립트 산출물 (gitignore 권장)
+data/irt-sample/Dicht_Data2.csv   ← 사용자 배치 (gitignore)
+data/irt-sample/out/              ← 스크립트 산출물 (gitignore)
+```
+
+다운로드 후 자동 배치:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/irt_sandbox/place_dicht_csv.ps1
 ```
 
 ## 실행
 
 ```bash
-# 전체 파이프라인 (프로파일 → long format → 2PL)
+# 전체 파이프라인 (프로파일 → long format → 2PL → 요약)
 python scripts/irt_sandbox/run_sandbox.py
+
+# 빈 Student ID 행을 제외하지 않으려면
+python scripts/irt_sandbox/run_sandbox.py --keep-empty-id
 
 # 단계별
 python scripts/irt_sandbox/profile_dicht.py
-python scripts/irt_sandbox/convert_to_cat_responses.py
+python scripts/irt_sandbox/convert_to_cat_responses.py          # 기본: drop empty ID
+python scripts/irt_sandbox/convert_to_cat_responses.py --keep-empty-id
 python scripts/irt_sandbox/estimate_2pl.py
+python scripts/irt_sandbox/write_summary.py
 
-# CSV 없을 때 합성 데이터로 파이프라인 스모크만
+# CSV 없을 때 합성 데이터 스모크
 python scripts/irt_sandbox/run_sandbox.py --demo
 ```
+
+npm:
+
+```bash
+npm run irt:sandbox
+npm run irt:sandbox:demo
+```
+
+## 옵션: empty Student ID
+
+| 플래그 | 동작 |
+|--------|------|
+| (기본) | `Student ID` 가 빈 행 **제외** (`drop_empty_id=true`) |
+| `--keep-empty-id` | 빈 ID를 `person-{row}` 로 채우고 **포함** |
+
+실데이터(Dicht)에는 빈 ID **1행**이 있어 기본 실행 시 persons **239 → 238**.
 
 ## 산출물
 
 | 파일 | 내용 |
 |------|------|
-| `out/profile_report.json` | 행/열/결측/0-1 비율 |
-| `out/profile_report.md` | 사람이 읽는 요약 |
-| `out/cat_responses_long.jsonl` | echobridge `cat_responses` 유사 long format |
-| `out/response_matrix.npz` 또는 `.json` | 추정용 행렬 메타 |
-| `out/item_params_2pl.json` | 문항 a,b (2PL) — **샌드박스 라벨** |
-| `out/person_theta.json` | 응시자 θ 추정 |
+| `out/profile_report.md` | 행/열/결측/p+ |
+| `out/cat_responses_long.jsonl` | echobridge형 long format |
+| `out/response_matrix.json` | 추정용 행렬 |
+| `out/item_params_2pl.json` | 문항 a,b (샌드박스) |
+| `out/person_theta.json` | 응시자 θ |
+| `out/SANDBOX_RESULTS.md` | **2PL 포함 종합 요약** |
+| `out/estimate_2pl_report.md` | 2PL 짧은 표 |
 
 ## 금지
 
 - `data/generated-bank/` 에 쓰지 않음
 - `data/reading-passages/` / `data/irt-exemplars/` 덮어쓰지 않음
 - echobridge `src/data/curated` merge 하지 않음
+
+## 실데이터 적용 메모
+
+- 행렬: STEM+영어 MCQ **0/1** 점수 (문항 stem 헤더만 있음, 보기 없음)
+- 우리 GLEAS 영어 bank와 **구인 불일치** → 연습용만
+- person 키: **`Student ID`** (빈 첫 열 인덱스 아님)
+
+<!-- SANDBOX_SNAPSHOT_START -->
+## Last run snapshot
+
+_Auto-updated 2026-07-13 11:03 UTC from `out/*`. Full detail: [`out/SANDBOX_RESULTS.md`](out/SANDBOX_RESULTS.md)._
+
+| field | value |
+|-------|------:|
+| persons (convert) | 238 |
+| dropped empty Student ID | 1 |
+| items | 60 |
+| long rows | 14280 |
+| person key | `Student ID` |
+| 2PL a | 0.200 … 2.500 (mean 0.678) |
+| 2PL b | -1.871 … 3.497 (mean 0.823) |
+| theta | -1.506 … 2.841 (mean 0.000) |
+
+**Product bank merge: never.**
+
+<!-- SANDBOX_SNAPSHOT_END -->
