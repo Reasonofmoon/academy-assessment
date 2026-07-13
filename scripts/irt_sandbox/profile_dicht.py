@@ -1,48 +1,25 @@
 """
 Profile Dicht_Data2.csv (or any wide dichotomous matrix).
+Person key prefers "Student ID" over empty/index first column.
 Does NOT touch product banks.
 """
 from __future__ import annotations
 
-import csv
 import json
-import math
 import sys
 from collections import Counter
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _common import (  # noqa: E402
+    load_table,
+    pick_id_column,
+    pick_item_columns,
+)
+
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CSV = ROOT / "data" / "irt-sample" / "Dicht_Data2.csv"
 OUT_DIR = ROOT / "data" / "irt-sample" / "out"
-
-
-def detect_delimiter(sample: str) -> str:
-    try:
-        return csv.Sniffer().sniff(sample, delimiters=",;\t").delimiter
-    except csv.Error:
-        return ","
-
-
-def load_table(path: Path) -> tuple[list[str], list[list[str]], str]:
-    text = path.read_text(encoding="utf-8-sig", errors="replace")
-    delim = detect_delimiter(text[:8000])
-    rows = list(csv.reader(text.splitlines(), delimiter=delim))
-    if not rows:
-        raise ValueError("empty csv")
-    header = [h.strip() for h in rows[0]]
-    body = [[c.strip() for c in r] for r in rows[1:] if any(c.strip() for c in r)]
-    # pad short rows
-    width = len(header)
-    body = [r + [""] * (width - len(r)) if len(r) < width else r[:width] for r in body]
-    return header, body, delim
-
-
-def is_01(vals: list[str]) -> bool:
-    s = {v for v in vals if v != ""}
-    if not s:
-        return False
-    allowed = {"0", "1", "0.0", "1.0", "true", "false", "True", "False"}
-    return s <= allowed
 
 
 def to_float_or_none(v: str) -> float | None:
@@ -59,10 +36,10 @@ def profile(path: Path) -> dict:
     n_rows = len(body)
     n_cols = len(header)
 
-    col_profiles = []
-    item_cols: list[str] = []
-    id_col: str | None = None
+    id_col, id_idx, id_reason = pick_id_column(header, body)
+    item_cols = pick_item_columns(header, body, id_idx)
 
+    col_profiles = []
     for j, name in enumerate(header):
         vals = [r[j] for r in body]
         empty = sum(1 for v in vals if v == "")
@@ -73,18 +50,18 @@ def profile(path: Path) -> dict:
         num_ok = [x for x in nums if x is not None]
         non_num = sum(1 for x in nums if x is None)
 
-        kind = "unknown"
-        lower = name.lower()
-        if j == 0 and ( "id" in lower or "student" in lower or "person" in lower or uniq == n_rows):
-            kind = "id_candidate"
-            id_col = name
-        if is_01(vals):
+        if j == id_idx:
+            kind = "id_person"
+        elif not (name or "").strip() and j != id_idx:
+            kind = "row_index_or_empty"
+        elif name in item_cols:
             kind = "dichotomous_item"
-            item_cols.append(name)
         elif non_num == 0 and num_ok:
             kind = "numeric"
         elif non_num > 0:
             kind = "categorical_or_text"
+        else:
+            kind = "unknown"
 
         stats: dict = {
             "index": j,
@@ -100,28 +77,13 @@ def profile(path: Path) -> dict:
             stats["max"] = max(num_ok)
             stats["mean"] = round(sum(num_ok) / len(num_ok), 6)
             if kind == "dichotomous_item":
-                # p+
                 ones = sum(1 for x in num_ok if x >= 0.5)
                 stats["p_plus"] = round(ones / len(num_ok), 4)
         col_profiles.append(stats)
 
-    # re-detect id if first col not chosen
-    if id_col is None:
-        for c in col_profiles:
-            if c["kind"] != "dichotomous_item" and c["unique_non_empty"] == n_rows:
-                id_col = c["name"]
-                c["kind"] = "id_candidate"
-                break
-        if id_col is None and header:
-            id_col = header[0]
-            col_profiles[0]["kind"] = "id_candidate"
-            if id_col in item_cols:
-                item_cols = [c for c in item_cols if c != id_col]
-
-    # matrix completeness among item cols
     item_idx = [header.index(c) for c in item_cols]
     missing_cells = 0
-    total_cells = n_rows * len(item_idx)
+    total_cells = n_rows * len(item_idx) if item_idx else 0
     row_sums = []
     for r in body:
         s = 0
@@ -136,6 +98,11 @@ def profile(path: Path) -> dict:
                     missing_cells += 1
         row_sums.append(s)
 
+    # person id uniqueness
+    person_vals = [r[id_idx] for r in body]
+    person_nonempty = [v for v in person_vals if v != ""]
+    person_unique = len(set(person_nonempty))
+
     report = {
         "source_file": str(path),
         "file_bytes": path.stat().st_size,
@@ -143,6 +110,10 @@ def profile(path: Path) -> dict:
         "n_rows": n_rows,
         "n_cols": n_cols,
         "id_column": id_col,
+        "id_column_index": id_idx,
+        "id_column_reason": id_reason,
+        "id_unique_count": person_unique,
+        "id_empty_count": sum(1 for v in person_vals if v == ""),
         "n_item_columns": len(item_cols),
         "item_columns": item_cols,
         "missing_item_cells": missing_cells,
@@ -156,6 +127,7 @@ def profile(path: Path) -> dict:
         "product_bank_merge": False,
         "notes": [
             "Sandbox only — do not merge into generated-bank or echobridge curated services.",
+            "Person key prefers columns named like 'Student ID' over empty/index first columns.",
             "Dichotomous columns treated as 0/1 scored responses (not raw option letters).",
         ],
     }
@@ -175,29 +147,45 @@ def write_reports(report: dict, out_dir: Path) -> None:
         f"- delimiter: `{report['delimiter']!r}`",
         f"- rows (persons): **{report['n_rows']}**",
         f"- cols: **{report['n_cols']}**",
-        f"- id column: `{report['id_column']}`",
+        f"- **id column (person key): `{report['id_column']}`** (index {report['id_column_index']}, reason={report['id_column_reason']})",
+        f"- id unique / empty: {report['id_unique_count']} / {report['id_empty_count']}",
         f"- dichotomous item cols: **{report['n_item_columns']}**",
         f"- missing item cells: {report['missing_item_cells']} ({report['missing_item_rate']})",
         f"- total score range: {report['score_sum']}",
         "",
         "## Item columns (p+)",
         "",
-        "| item | empty_rate | p+ |",
-        "|------|----------:|---:|",
+        "| # | item (truncated) | empty_rate | p+ |",
+        "|--:|----------------|----------:|---:|",
     ]
-    for c in report["columns"]:
+    for i, c in enumerate(report["columns"], 1):
         if c["kind"] != "dichotomous_item":
             continue
+        label = c["name"] if len(c["name"]) <= 70 else c["name"][:67] + "..."
         lines.append(
-            f"| {c['name']} | {c['empty_rate']} | {c.get('p_plus', '')} |"
+            f"| {i} | {label} | {c['empty_rate']} | {c.get('p_plus', '')} |"
         )
+    lines.extend(
+        [
+            "",
+            "## Column kinds",
+            "",
+            "| index | name (truncated) | kind |",
+            "|------:|----------------|------|",
+        ]
+    )
+    for c in report["columns"]:
+        nm = c["name"] if c["name"] else "(empty)"
+        if len(nm) > 50:
+            nm = nm[:47] + "..."
+        lines.append(f"| {c['index']} | {nm} | {c['kind']} |")
     lines.extend(
         [
             "",
             "## Applicability (quick)",
             "",
             "- Long-format conversion: **yes** if item cols are 0/1.",
-            "- Product bank merge: **no** (no stems/options).",
+            "- Product bank merge: **no** (no stems/options / wrong domain for GLEAS English).",
             "- 2PL sandbox: **yes** for algorithm check only.",
             "",
         ]
@@ -216,7 +204,10 @@ def main(argv: list[str]) -> int:
         return 1
     report = profile(path)
     write_reports(report, OUT_DIR)
-    print(f"persons={report['n_rows']} items={report['n_item_columns']} id={report['id_column']}")
+    print(
+        f"persons={report['n_rows']} items={report['n_item_columns']} "
+        f"id={report['id_column']!r} reason={report['id_column_reason']}"
+    )
     print(f"wrote {OUT_DIR / 'profile_report.json'}")
     print(f"wrote {OUT_DIR / 'profile_report.md'}")
     return 0

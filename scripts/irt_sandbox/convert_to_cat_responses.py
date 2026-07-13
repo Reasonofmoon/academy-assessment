@@ -1,36 +1,33 @@
 """
 Convert wide dichotomous CSV → long format similar to echobridge cat_responses.
 
+Person key prefers profile id_column / "Student ID" (not empty first col).
 Output is SANDBOX only under data/irt-sample/out/.
 Never writes to data/generated-bank or product paths.
 """
 from __future__ import annotations
 
-import csv
 import json
 import sys
 from pathlib import Path
+
+from _common import (
+    is_01_column,
+    load_table,
+    pick_id_column,
+    pick_item_columns,
+)
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CSV = ROOT / "data" / "irt-sample" / "Dicht_Data2.csv"
 OUT_DIR = ROOT / "data" / "irt-sample" / "out"
 PROFILE = OUT_DIR / "profile_report.json"
 
-# Fields aligned with echobridge migrations/cat_responses.sql (+ sandbox extras)
-# Not all filled — CAT telemetry N/A for fixed-form matrix data.
-
 
 def load_profile() -> dict | None:
     if PROFILE.exists():
         return json.loads(PROFILE.read_text(encoding="utf-8"))
     return None
-
-
-def detect_delimiter(sample: str) -> str:
-    try:
-        return csv.Sniffer().sniff(sample, delimiters=",;\t").delimiter
-    except csv.Error:
-        return ","
 
 
 def parse_correct(raw: str) -> bool | None:
@@ -48,33 +45,22 @@ def parse_correct(raw: str) -> bool | None:
 
 
 def convert(path: Path, profile: dict | None = None) -> dict:
-    text = path.read_text(encoding="utf-8-sig", errors="replace")
-    delim = detect_delimiter(text[:8000])
-    rows = list(csv.reader(text.splitlines(), delimiter=delim))
-    header = [h.strip() for h in rows[0]]
-    body = [r for r in rows[1:] if any(c.strip() for c in r)]
-    width = len(header)
-    body = [
-        ([c.strip() for c in r] + [""] * width)[:width] for r in body
-    ]
+    header, body, _delim = load_table(path)
 
-    if profile:
-        id_col = profile.get("id_column") or header[0]
-        item_cols = profile.get("item_columns") or []
+    if profile and profile.get("id_column") is not None and profile.get("id_column") in header:
+        id_col = profile["id_column"]
+        id_idx = header.index(id_col)
+        id_reason = profile.get("id_column_reason", "from_profile")
+        item_cols = [
+            c for c in (profile.get("item_columns") or []) if c in header and c != id_col
+        ]
+        if not item_cols:
+            item_cols = pick_item_columns(header, body, id_idx)
     else:
-        id_col = header[0]
-        item_cols = []
-        for name in header[1:]:
-            j = header.index(name)
-            vals = [r[j] for r in body]
-            s = {v for v in vals if v}
-            if s and s <= {"0", "1", "0.0", "1.0", "true", "false", "True", "False"}:
-                item_cols.append(name)
+        id_col, id_idx, id_reason = pick_id_column(header, body)
+        item_cols = pick_item_columns(header, body, id_idx)
 
-    if id_col not in header:
-        id_col = header[0]
-    id_idx = header.index(id_col)
-    item_indices = [(name, header.index(name)) for name in item_cols if name in header]
+    item_indices = [(name, header.index(name)) for name in item_cols]
 
     long_rows: list[dict] = []
     matrix: list[list[int | None]] = []
@@ -82,7 +68,7 @@ def convert(path: Path, profile: dict | None = None) -> dict:
     skipped_missing = 0
 
     for r_i, r in enumerate(body):
-        person = r[id_idx] or f"person-{r_i + 1}"
+        person = (r[id_idx] if id_idx < len(r) else "") or f"person-{r_i + 1}"
         person_ids.append(person)
         session_id = f"sandbox-{person}"
         row_vec: list[int | None] = []
@@ -95,12 +81,12 @@ def convert(path: Path, profile: dict | None = None) -> dict:
                 continue
             row_vec.append(1 if corr else 0)
             step += 1
-            # Shape mirrors cat_responses; CAT fields null/default for fixed form.
             long_rows.append(
                 {
                     "session_id": session_id,
                     "step": step,
-                    "item_id": f"dicht:{item_name}",
+                    "item_id": f"dicht:Q{step:02d}",
+                    "item_label": item_name[:200],
                     "domain": "vocabulary",  # dummy — source domain unknown
                     "dimension": None,
                     "passage_id": None,
@@ -109,31 +95,39 @@ def convert(path: Path, profile: dict | None = None) -> dict:
                     "response_time_ms": None,
                     "passage_ms": None,
                     "theta_before": None,
-                    "theta_after": 0.0,  # filled later by 2PL person estimate
+                    "theta_after": 0.0,
                     "se_before": None,
                     "se_after": 1.0,
                     "fisher_info_used": None,
                     "sandbox": True,
                     "source_dataset": "Dicht_Data2",
                     "source_person_id": person,
+                    "source_person_id_column": id_col,
                     "source_item_col": item_name,
                 }
             )
         matrix.append(row_vec)
 
+    # stable short item ids for matrix (Q01..) while keeping labels
+    short_item_ids = [f"dicht:Q{i + 1:02d}" for i in range(len(item_indices))]
+
     meta = {
         "source_file": str(path),
         "id_column": id_col,
-        "item_ids": [f"dicht:{n}" for n, _ in item_indices],
+        "id_column_index": id_idx,
+        "id_column_reason": id_reason,
+        "item_ids": short_item_ids,
         "item_columns": [n for n, _ in item_indices],
         "n_persons": len(person_ids),
         "n_items": len(item_indices),
         "n_long_rows": len(long_rows),
         "skipped_missing_cells": skipped_missing,
+        "sample_person_ids": person_ids[:5],
         "product_bank_merge": False,
         "schema_note": (
             "Long rows follow echobridge cat_responses field names where possible. "
-            "domain is dummy; theta_after placeholder until estimate_2pl.py runs."
+            "source_person_id is the raw Student ID. item_id is dicht:Q## (short); "
+            "item_label holds the full stem header. domain is dummy."
         ),
     }
     return {
@@ -154,14 +148,14 @@ def write_outputs(bundle: dict, out_dir: Path) -> None:
         for row in bundle["long_rows"]:
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
-    # compact matrix for estimator
     (out_dir / "response_matrix.json").write_text(
         json.dumps(
             {
                 "person_ids": bundle["person_ids"],
                 "item_ids": meta["item_ids"],
                 "item_columns": meta["item_columns"],
-                "matrix": bundle["matrix"],  # 0/1/null
+                "id_column": meta["id_column"],
+                "matrix": bundle["matrix"],
                 "sandbox": True,
                 "product_bank_merge": False,
             },
@@ -176,13 +170,16 @@ def main(argv: list[str]) -> int:
     if not path.exists():
         print(f"ERROR: CSV not found: {path}", file=sys.stderr)
         return 1
+    # Ensure local imports work when run as script
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
     profile = load_profile()
     bundle = convert(path, profile)
     write_outputs(bundle, OUT_DIR)
     m = bundle["meta"]
     print(
         f"long_rows={m['n_long_rows']} persons={m['n_persons']} items={m['n_items']} "
-        f"missing_skipped={m['skipped_missing_cells']}"
+        f"id_col={m['id_column']!r} reason={m['id_column_reason']} "
+        f"sample_ids={m['sample_person_ids']}"
     )
     print(f"wrote {OUT_DIR / 'cat_responses_long.jsonl'}")
     print(f"wrote {OUT_DIR / 'response_matrix.json'}")
@@ -191,4 +188,6 @@ def main(argv: list[str]) -> int:
 
 
 if __name__ == "__main__":
+    # Allow `from _common import ...` when run as script
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
     raise SystemExit(main(sys.argv))
