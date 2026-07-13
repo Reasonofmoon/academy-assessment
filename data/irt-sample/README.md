@@ -44,7 +44,43 @@ npm:
 ```bash
 npm run irt:sandbox
 npm run irt:sandbox:demo
+npm run irt:from-cat:fixture   # 합성 cat_responses → sparse 2PL 스모크
+npm run irt:from-cat           # data/irt-sample/live/cat_responses.jsonl
 ```
+
+## Real cat_responses (live)
+
+설계 문서: [`docs/IRT_CAT_RESPONSES_2PL_PIPELINE.md`](../../docs/IRT_CAT_RESPONSES_2PL_PIPELINE.md)
+
+| 경로 | 역할 |
+|------|------|
+| `fixtures/cat_responses_fixture.jsonl` | 커밋된 합성 로그 (스모크) |
+| `live/cat_responses.jsonl` | Supabase export (gitignore, PII 없이 session_id) |
+| `out-fixture/` / `out-live/` | 행렬·2PL 산출 (gitignore) |
+
+```bash
+# 1) 픽스처 스모크 (DB 불필요)
+python scripts/irt_sandbox/run_live_pipeline.py --fixture
+
+# 2) 실로그: Supabase에서 export 후
+#    data/irt-sample/live/cat_responses.jsonl 에 두고
+python scripts/irt_sandbox/run_live_pipeline.py
+# 또는 단계별
+python scripts/irt_sandbox/from_cat_responses.py --in data/irt-sample/live/cat_responses.jsonl --out-dir data/irt-sample/out-live --write-long
+python scripts/irt_sandbox/estimate_2pl.py data/irt-sample/out-live/response_matrix.json
+```
+
+Export SQL (echobridge `public.cat_responses`):
+
+```sql
+select session_id, step, item_id, domain, dimension, passage_id,
+       correct, selected_option_id, response_time_ms, created_at
+from public.cat_responses
+where created_at >= '2026-07-01'
+order by session_id, step;
+```
+
+**Bank merge 금지.** 승격은 `APPROVE_APPLY` + human gate 후에만.
 
 ## 옵션: empty Student ID
 

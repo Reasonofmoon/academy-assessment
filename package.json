@@ -14,7 +14,9 @@
     "merge:echobridge": "node scripts/merge-echobridge-service.mjs",
     "merge:echobridge:apply": "node scripts/merge-echobridge-service.mjs --apply",
     "irt:sandbox": "python scripts/irt_sandbox/run_sandbox.py",
-    "irt:sandbox:demo": "python scripts/irt_sandbox/run_sandbox.py --demo"
+    "irt:sandbox:demo": "python scripts/irt_sandbox/run_sandbox.py --demo",
+    "irt:from-cat": "python scripts/irt_sandbox/run_live_pipeline.py",
+    "irt:from-cat:fixture": "python scripts/irt_sandbox/run_live_pipeline.py --fixture"
   },
   "dependencies": {
     "next": "^14.2.35",

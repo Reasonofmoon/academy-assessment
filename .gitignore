@@ -32,6 +32,10 @@ next-env.d.ts
 
 # IRT sandbox outputs (and optional local CSV / demo)
 /data/irt-sample/out/
+/data/irt-sample/out-live/
+/data/irt-sample/out-fixture/
+/data/irt-sample/live/
 /data/irt-sample/Dicht_Data2.csv
 /data/irt-sample/Dicht_Data2_DEMO.csv
+# fixtures/*.jsonl are committed for CI smoke; live/ is real exports (PII-safe session_id only)
 

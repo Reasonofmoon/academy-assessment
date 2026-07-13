@@ -192,8 +192,15 @@ def main(argv: list[str]) -> int:
     matrix_path = Path(argv[1]) if len(argv) > 1 else MATRIX_PATH
     if not matrix_path.exists():
         print(f"ERROR: matrix not found: {matrix_path}", file=sys.stderr)
-        print("Run convert_to_cat_responses.py first.", file=sys.stderr)
+        print(
+            "Run convert_to_cat_responses.py or from_cat_responses.py first.",
+            file=sys.stderr,
+        )
         return 1
+
+    # Write next to the matrix (Dicht: out/, live: out-live/, fixture smoke: same).
+    out_dir = matrix_path.resolve().parent
+    long_path = out_dir / "cat_responses_long.jsonl"
 
     person_ids, item_ids, matrix = load_matrix(matrix_path)
     a, b, theta = fit_2pl(matrix, n_iter=30)
@@ -225,15 +232,16 @@ def main(argv: list[str]) -> int:
         persons.append(
             {
                 "person_id": pid,
-                "session_id": f"sandbox-{pid}",
+                # person axis is session_id for cat_responses; Dicht uses Student ID
+                "session_id": pid,
                 "theta": round(theta[i], 4),
                 "se": round(se, 4),
                 "sandbox": True,
             }
         )
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    (OUT_DIR / "item_params_2pl.json").write_text(
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "item_params_2pl.json").write_text(
         json.dumps(
             {
                 "model": "2PL",
@@ -241,6 +249,7 @@ def main(argv: list[str]) -> int:
                 "algorithm": "joint_mle_newton_sandbox",
                 "n_persons": len(person_ids),
                 "n_items": len(item_ids),
+                "source_matrix": str(matrix_path),
                 "items": item_params,
                 "product_bank_merge": False,
                 "warning": (
@@ -253,24 +262,26 @@ def main(argv: list[str]) -> int:
         ),
         encoding="utf-8",
     )
-    (OUT_DIR / "person_theta.json").write_text(
+    (out_dir / "person_theta.json").write_text(
         json.dumps({"persons": persons, "sandbox": True}, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
 
     # patch long format theta_after if present
-    if LONG_PATH.exists():
-        theta_by_session = {p["session_id"]: p for p in persons}
+    if long_path.exists():
+        theta_by_person = {p["person_id"]: p for p in persons}
         out_lines = []
-        with LONG_PATH.open(encoding="utf-8") as f:
+        with long_path.open(encoding="utf-8") as f:
             for line in f:
                 row = json.loads(line)
-                info = theta_by_session.get(row.get("session_id"))
+                # long uses session_id as person key for both Dicht-convert and live
+                key = row.get("session_id") or row.get("person_id")
+                info = theta_by_person.get(key)
                 if info:
                     row["theta_after"] = info["theta"]
                     row["se_after"] = info["se"]
                 out_lines.append(json.dumps(row, ensure_ascii=False))
-        LONG_PATH.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
+        long_path.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
 
     # summary md
     bs = sorted(item_params, key=lambda x: x["b"])
@@ -281,6 +292,8 @@ def main(argv: list[str]) -> int:
         f"- items: {len(item_ids)}",
         f"- model: 2PL (D={D})",
         f"- algorithm: joint Newton (sandbox)",
+        f"- matrix: `{matrix_path}`",
+        f"- out_dir: `{out_dir}`",
         "",
         "## b range",
         f"- min b: {bs[0]['item_id']} = {bs[0]['b']}" if bs else "-",
@@ -304,11 +317,11 @@ def main(argv: list[str]) -> int:
             "",
         ]
     )
-    (OUT_DIR / "estimate_2pl_report.md").write_text("\n".join(lines), encoding="utf-8")
+    (out_dir / "estimate_2pl_report.md").write_text("\n".join(lines), encoding="utf-8")
 
     print(f"items={len(item_ids)} persons={len(person_ids)}")
-    print(f"wrote {OUT_DIR / 'item_params_2pl.json'}")
-    print(f"wrote {OUT_DIR / 'person_theta.json'}")
+    print(f"wrote {out_dir / 'item_params_2pl.json'}")
+    print(f"wrote {out_dir / 'person_theta.json'}")
     print("NOTE: product bank not modified.")
     return 0
 
