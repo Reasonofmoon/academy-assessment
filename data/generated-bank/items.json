@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-05T09:15:28.039Z",
+  "updatedAt": "2026-08-05T09:17:39.445Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -1671,12 +1671,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "pending",
+      "status": "approved",
       "createdAt": "2026-08-05T09:15:28.007Z",
-      "updatedAt": "2026-08-05T09:15:28.007Z",
+      "updatedAt": "2026-08-05T09:17:39.445Z",
       "createdBy": "level-test-replace-v2",
       "grade": "중1",
-      "batchId": "replace-v2-extra-1785921327997"
+      "batchId": "replace-v2-extra-1785921327997",
+      "reviewedAt": "2026-08-05T09:17:39.445Z",
+      "reviewedBy": "teacher",
+      "reviewNote": "Stage V2 extras approved by operator"
     },
     {
       "id": "vocabulary-L2-extra-msfvg41p-1",
@@ -1714,12 +1717,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "pending",
+      "status": "approved",
       "createdAt": "2026-08-05T09:15:28.007Z",
-      "updatedAt": "2026-08-05T09:15:28.007Z",
+      "updatedAt": "2026-08-05T09:17:39.445Z",
       "createdBy": "level-test-replace-v2",
       "grade": "중1",
-      "batchId": "replace-v2-extra-1785921327997"
+      "batchId": "replace-v2-extra-1785921327997",
+      "reviewedAt": "2026-08-05T09:17:39.445Z",
+      "reviewedBy": "teacher",
+      "reviewNote": "Stage V2 extras approved by operator"
     }
   ]
 }
