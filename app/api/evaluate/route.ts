@@ -16,6 +16,9 @@ import {
   type Evaluation,
 } from "@/lib/types";
 
+export const runtime = "nodejs";
+export const maxDuration = 60;
+
 // ───────────────────────────────────────────────────────────
 // POST /api/evaluate
 //   요청: { studentInfo, questions, answers }

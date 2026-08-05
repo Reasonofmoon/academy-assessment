@@ -126,6 +126,7 @@ export default function HomePage() {
       }
       const payload = data as {
         questions: Question[];
+        warnings?: string[];
         irt?: {
           level: number;
           targetTheta: number;
@@ -141,13 +142,23 @@ export default function HomePage() {
             questionType: string;
           }>;
           slotQa?: SlotQaReportData | null;
+          domainErrors?: Array<{ domain: string; message: string }>;
         };
       };
+      if (!payload.questions?.length) {
+        throw new Error("생성된 문항이 없습니다. 다시 시도해 주세요.");
+      }
       setQuestions(payload.questions);
       setIrtMeta(payload.irt ?? null);
       setBankSaveMsg(null);
       setAnswers({}); // 답안 초기화
       setStep("answering");
+      // Partial domain failure: still proceed, but surface a non-blocking notice.
+      if (payload.warnings?.length) {
+        setError(
+          `일부 영역 생성에 실패해 나머지 문항만 표시합니다. (${payload.warnings.join(" · ")})`
+        );
+      }
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (e) {
       setError(e instanceof Error ? e.message : "알 수 없는 오류가 발생했습니다.");

@@ -53,6 +53,40 @@ const BodySchema = z.discriminatedUnion("action", [
 ]);
 
 /**
+ * GET /api/passages/manage?level=2
+ * Lightweight list endpoint (avoids 405 when the URL is opened or prefetched).
+ */
+export async function GET(req: NextRequest) {
+  try {
+    const level = Number(req.nextUrl.searchParams.get("level") || "0");
+    if (level >= 1 && level <= 6) {
+      return NextResponse.json({
+        level,
+        passages: getPassagesForLevel(level as IrtLevel),
+        questionTypes: READING_QUESTION_TYPES,
+        usage: {
+          upsert: { action: "upsert", level, passage: { text: "..." } },
+          delete: { action: "delete", level, passageId: "preset-L1-P01" },
+          reorder: { action: "reorder", level, orderedIds: ["id1", "id2"] },
+        },
+      });
+    }
+    return NextResponse.json({
+      ok: true,
+      methods: ["GET", "POST"],
+      hint: "POST with action=upsert|delete|reorder. GET ?level=1..6 to list.",
+      questionTypes: READING_QUESTION_TYPES,
+    });
+  } catch (e) {
+    console.error("GET /api/passages/manage", e);
+    return NextResponse.json(
+      { error: e instanceof Error ? e.message : "조회 실패" },
+      { status: 500 }
+    );
+  }
+}
+
+/**
  * POST /api/passages/manage
  * Teacher CRUD for level-preset passages.
  */

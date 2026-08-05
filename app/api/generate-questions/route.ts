@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { GeminiError } from "@/lib/gemini";
+import { GeminiError, callGemini, parseJson } from "@/lib/gemini";
 import {
   DOMAINS,
   GRADES,
@@ -11,7 +11,11 @@ import {
 } from "@/lib/types";
 import { generateIrtAssessment } from "@/lib/irt/generate";
 import { GRADE_TO_LEVEL, type IrtLevel } from "@/lib/irt/types";
-import { callGemini, parseJson } from "@/lib/gemini";
+
+// Vercel serverless: multi-domain Gemini generation can exceed default 10s.
+// Hobby allows up to 60s when maxDuration is set; Pro can go higher.
+export const runtime = "nodejs";
+export const maxDuration = 60;
 
 // ───────────────────────────────────────────────────────────
 // POST /api/generate-questions
@@ -121,6 +125,12 @@ export async function POST(request: Request) {
       questions: result.questions,
     };
 
+    if (result.domainErrors.length > 0) {
+      response.warnings = result.domainErrors.map(
+        (d) => `${d.domain}: ${d.message}`
+      );
+    }
+
     if (includeIrtMeta) {
       response.irt = {
         mode: "irt",
@@ -145,6 +155,7 @@ export async function POST(request: Request) {
         readingMode: "preset_passages",
         slotPlan: result.slotPlan,
         slotQa: result.slotQa,
+        domainErrors: result.domainErrors,
         disclaimer:
           "생성된 irt a/b/c는 AI prior(휴리스틱)입니다. 실응시 보정 전까지 절대 등급 인증에 사용하지 마세요. 리딩 지문은 레벨 사전 지정 원문을 그대로 사용합니다.",
       };

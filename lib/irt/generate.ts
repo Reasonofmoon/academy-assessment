@@ -34,20 +34,194 @@ const AiBatchSchema = z.object({
       type: z.enum(["multiple_choice", "short_answer"]),
       question: z.string(),
       options: z.array(z.string()),
-      answer: z.string(),
-      explanation: z.string(),
+      // Models sometimes return a numeric index — coerce to string.
+      answer: z.union([z.string(), z.number()]).transform((v) => String(v)),
+      explanation: z.string().default(""),
       dimension: z.string().optional(),
       questionType: z.string().optional(),
       headword: z.string().optional(),
       passage: z.string().optional(),
+      passageId: z.string().optional(),
       irt: z.object({
-        a: z.number(),
-        b: z.number(),
-        c: z.number(),
+        a: z.coerce.number(),
+        b: z.coerce.number(),
+        c: z.coerce.number(),
       }),
     })
   ),
 });
+
+function normalizeDomain(raw: unknown, fallback: Domain): Domain {
+  const s = String(raw ?? "")
+    .trim()
+    .toLowerCase();
+  if (s === "vocabulary" || s === "vocab" || s === "어휘") return "vocabulary";
+  if (s === "grammar" || s === "문법") return "grammar";
+  if (s === "reading" || s === "독해" || s === "read") return "reading";
+  return fallback;
+}
+
+function normalizeOptions(raw: unknown): string[] {
+  if (!Array.isArray(raw)) return [];
+  return raw.map((o) => {
+    if (typeof o === "string") return o;
+    if (o && typeof o === "object") {
+      const obj = o as Record<string, unknown>;
+      if (typeof obj.text === "string") return obj.text;
+      if (typeof obj.label === "string") return obj.label;
+      if (typeof obj.option === "string") return obj.option;
+    }
+    return String(o ?? "");
+  });
+}
+
+function normalizeAnswer(raw: unknown, options: string[]): string {
+  if (typeof raw === "number" && Number.isFinite(raw)) return String(raw);
+  if (typeof raw === "string") {
+    const t = raw.trim();
+    if (/^\d+$/.test(t)) return t;
+    // letter keys A-D
+    const letter = t.toUpperCase().match(/^([A-D])$/);
+    if (letter) return String(letter[1].charCodeAt(0) - 65);
+    const idx = options.findIndex((o) => o.trim() === t);
+    if (idx >= 0) return String(idx);
+    return t;
+  }
+  if (raw && typeof raw === "object") {
+    const obj = raw as Record<string, unknown>;
+    if (typeof obj.index === "number") return String(obj.index);
+  }
+  return "0";
+}
+
+function normalizeIrt(raw: unknown, targetTheta: number): {
+  a: number;
+  b: number;
+  c: number;
+} {
+  const obj =
+    raw && typeof raw === "object" ? (raw as Record<string, unknown>) : {};
+  const a = Number(obj.a ?? obj.discrimination ?? 1.2);
+  const b = Number(obj.b ?? obj.difficulty ?? targetTheta);
+  const c = Number(obj.c ?? obj.guessing ?? 0.25);
+  return {
+    a: Number.isFinite(a) ? a : 1.2,
+    b: Number.isFinite(b) ? b : targetTheta,
+    c: Number.isFinite(c) ? c : 0.25,
+  };
+}
+
+/**
+ * Coerce messy Gemini JSON into AiBatchSchema shape before Zod parse.
+ * Production 502s often come from slightly off shapes (numeric answer, object options).
+ */
+function normalizeAiBatch(
+  json: unknown,
+  domainFallback: Domain,
+  targetTheta: number
+): unknown {
+  if (!json || typeof json !== "object") return json;
+  const root = json as Record<string, unknown>;
+  const list = Array.isArray(root.questions)
+    ? root.questions
+    : Array.isArray(root.items)
+      ? root.items
+      : Array.isArray(json)
+        ? json
+        : null;
+  if (!list) return json;
+
+  return {
+    questions: list.map((raw, i) => {
+      const q =
+        raw && typeof raw === "object"
+          ? (raw as Record<string, unknown>)
+          : {};
+      const options = normalizeOptions(q.options);
+      const domain = normalizeDomain(q.domain, domainFallback);
+      const typeRaw = String(q.type ?? "multiple_choice").toLowerCase();
+      const type =
+        typeRaw.includes("short") || typeRaw === "sa"
+          ? "short_answer"
+          : "multiple_choice";
+      return {
+        id: String(q.id ?? `${domainFallback}-${i + 1}`),
+        domain,
+        type,
+        question: String(q.question ?? q.stem ?? ""),
+        options,
+        answer: normalizeAnswer(
+          q.answer ?? q.answerIndex ?? q.correctIndex,
+          options
+        ),
+        explanation: String(q.explanation ?? q.rationale ?? ""),
+        dimension:
+          typeof q.dimension === "string" ? q.dimension : undefined,
+        questionType:
+          typeof q.questionType === "string"
+            ? q.questionType
+            : typeof q.qtype === "string"
+              ? q.qtype
+              : undefined,
+        headword:
+          typeof q.headword === "string" ? q.headword : undefined,
+        passage:
+          typeof q.passage === "string"
+            ? q.passage
+            : typeof q.passageText === "string"
+              ? q.passageText
+              : undefined,
+        passageId:
+          typeof q.passageId === "string" ? q.passageId : undefined,
+        irt: normalizeIrt(q.irt, targetTheta),
+      };
+    }),
+  };
+}
+
+function parseAiBatch(
+  rawText: string,
+  domainFallback: Domain,
+  targetTheta: number
+): z.infer<typeof AiBatchSchema> {
+  const json = parseJson<unknown>(rawText);
+  const normalized = normalizeAiBatch(json, domainFallback, targetTheta);
+  const parsed = AiBatchSchema.safeParse(normalized);
+  if (!parsed.success) {
+    console.warn(
+      `[generate] schema fail domain=${domainFallback}`,
+      parsed.error.issues.slice(0, 5),
+      typeof normalized === "object"
+        ? JSON.stringify(normalized).slice(0, 400)
+        : normalized
+    );
+    throw new GeminiError(
+      `AI가 ${domainFallback} 문항 형식과 다른 응답을 반환했습니다. 다시 시도해 주세요.`,
+      502
+    );
+  }
+  if (parsed.data.questions.length === 0) {
+    throw new GeminiError(
+      `AI가 ${domainFallback} 문항을 비어 있는 배열로 반환했습니다. 다시 시도해 주세요.`,
+      502
+    );
+  }
+  return parsed.data;
+}
+
+/** Retry domain generation once when model returns unusable JSON shape. */
+async function withDomainRetry<T>(
+  domain: Domain,
+  fn: () => Promise<T>
+): Promise<T> {
+  try {
+    return await fn();
+  } catch (e) {
+    if (!(e instanceof GeminiError) || e.status !== 502) throw e;
+    console.warn(`[generate] domain=${domain} retry after: ${e.message}`);
+    return fn();
+  }
+}
 
 function allocateDimensions(count: number): VocabDimension[] {
   const dims = Object.keys(DIMENSION_TARGETS) as VocabDimension[];
@@ -346,6 +520,19 @@ export async function generateDomainItems(opts: {
   passagesPerSession?: number;
   questionTypeSlots?: ReadingQuestionType[];
 }): Promise<{ items: IrtGeneratedItem[]; passagesUsed: PresetPassage[] }> {
+  return withDomainRetry(opts.domain, () => generateDomainItemsOnce(opts));
+}
+
+async function generateDomainItemsOnce(opts: {
+  grade: Grade;
+  level: IrtLevel;
+  domain: Domain;
+  count: number;
+  mcqOnly?: boolean;
+  passageIds?: string[];
+  passagesPerSession?: number;
+  questionTypeSlots?: ReadingQuestionType[];
+}): Promise<{ items: IrtGeneratedItem[]; passagesUsed: PresetPassage[] }> {
   const anchor = getLevelAnchor(opts.level);
   const targetTheta = anchor.thetaCenter;
   const levelCfg = getLevelGenConfig(opts.level);
@@ -383,31 +570,24 @@ export async function generateDomainItems(opts: {
     });
 
     const rawText = await callGemini(prompt);
-    const json = parseJson<unknown>(rawText);
-    // allow optional passageId in model output
-    const loose = z.object({
-      questions: z.array(
-        AiBatchSchema.shape.questions.element.extend({
-          passageId: z.string().optional(),
-        })
-      ),
-    });
-    const parsed = loose.safeParse(json);
-    if (!parsed.success) {
-      throw new GeminiError(
-        "AI가 리딩 문항 형식과 다른 응답을 반환했습니다. 다시 시도해 주세요.",
-        502
-      );
-    }
+    const parsed = parseAiBatch(rawText, "reading", targetTheta);
 
     const exemplarIds = [
       ...styleExemplars.map((e) => e.id),
       ...passages.map((p) => p.id),
     ];
-    let items = parsed.data.questions
-      .filter((q) => q.domain === "reading")
-      .slice(0, opts.count)
-      .map((q) => toGenerated(q, opts.level, targetTheta, exemplarIds));
+    let items = parsed.questions
+      .filter((q) => q.domain === "reading" || q.domain === "vocabulary")
+      // Prefer reading; if model mislabeled, still keep stems with passage.
+      .map((q) =>
+        toGenerated(
+          { ...q, domain: "reading" },
+          opts.level,
+          targetTheta,
+          exemplarIds
+        )
+      )
+      .slice(0, opts.count);
 
     items = attachPresetPassages(items, slots);
     const { valid } = filterValidItems(items);
@@ -459,20 +639,20 @@ export async function generateDomainItems(opts: {
   });
 
   const rawText = await callGemini(prompt);
-  const json = parseJson<unknown>(rawText);
-  const parsed = AiBatchSchema.safeParse(json);
-  if (!parsed.success) {
-    throw new GeminiError(
-      "AI가 IRT 문항 형식과 다른 응답을 반환했습니다. 다시 시도해 주세요.",
-      502
-    );
-  }
+  const parsed = parseAiBatch(rawText, opts.domain, targetTheta);
 
   const exemplarIds = exemplars.map((e) => e.id);
-  const items = parsed.data.questions
-    .filter((q) => q.domain === opts.domain)
+  // If model mislabels domain, still accept items (force to requested domain).
+  const items = parsed.questions
     .slice(0, opts.count)
-    .map((q) => toGenerated(q, opts.level, targetTheta, exemplarIds));
+    .map((q) =>
+      toGenerated(
+        { ...q, domain: opts.domain },
+        opts.level,
+        targetTheta,
+        exemplarIds
+      )
+    );
 
   const { valid } = filterValidItems(items);
   return {
@@ -503,6 +683,7 @@ export async function generateIrtAssessment(opts: {
   passagesUsed: PresetPassage[];
   slotPlan?: Array<{ slot: number; passageId: string; questionType: string }>;
   slotQa?: SlotQaReport | null;
+  domainErrors: Array<{ domain: Domain; message: string }>;
 }> {
   const level = opts.level ?? GRADE_TO_LEVEL[opts.grade];
   const anchor = getLevelAnchor(level);
@@ -514,6 +695,7 @@ export async function generateIrtAssessment(opts: {
   const passagesUsed: PresetPassage[] = [];
   const seenEx = new Set<string>();
   const seenPass = new Set<string>();
+  const domainErrors: Array<{ domain: Domain; message: string }> = [];
   let slotPlan:
     | Array<{ slot: number; passageId: string; questionType: string }>
     | undefined;
@@ -531,37 +713,59 @@ export async function generateIrtAssessment(opts: {
           : levelCfg.questionTypeSlots
         : undefined;
 
-    const { items, passagesUsed: used } = await generateDomainItems({
-      grade: opts.grade,
-      level,
-      domain,
-      count,
-      mcqOnly,
-      passageIds: opts.passageIds,
-      passagesPerSession:
-        opts.passagesPerSession ?? levelCfg.passagesPerSession,
-      questionTypeSlots: typeSlots,
-    });
+    try {
+      const { items, passagesUsed: used } = await generateDomainItems({
+        grade: opts.grade,
+        level,
+        domain,
+        count,
+        mcqOnly,
+        passageIds: opts.passageIds,
+        passagesPerSession:
+          opts.passagesPerSession ?? levelCfg.passagesPerSession,
+        questionTypeSlots: typeSlots,
+      });
 
-    if (domain === "reading" && used.length > 0) {
-      const planned = planReadingItemSlots(used, count, typeSlots);
-      slotPlan = planned.map((s) => ({
-        slot: s.slot,
-        passageId: s.passage.id,
-        questionType: s.questionType,
-      }));
-    }
-    allItems.push(...items);
-    for (const p of used) {
-      if (!seenPass.has(p.id)) {
-        seenPass.add(p.id);
-        passagesUsed.push(p);
+      if (domain === "reading" && used.length > 0) {
+        const planned = planReadingItemSlots(used, count, typeSlots);
+        slotPlan = planned.map((s) => ({
+          slot: s.slot,
+          passageId: s.passage.id,
+          questionType: s.questionType,
+        }));
       }
+      allItems.push(...items);
+      for (const p of used) {
+        if (!seenPass.has(p.id)) {
+          seenPass.add(p.id);
+          passagesUsed.push(p);
+        }
+      }
+      for (const id of items.flatMap((i) => i.exemplarIds ?? [])) {
+        if (seenEx.has(id)) continue;
+        seenEx.add(id);
+      }
+    } catch (e) {
+      const message =
+        e instanceof GeminiError
+          ? e.message
+          : e instanceof Error
+            ? e.message
+            : "알 수 없는 생성 오류";
+      console.error(`[generate] domain=${domain} failed:`, message);
+      domainErrors.push({ domain, message });
     }
-    for (const id of items.flatMap((i) => i.exemplarIds ?? [])) {
-      if (seenEx.has(id)) continue;
-      seenEx.add(id);
-    }
+  }
+
+  // Only hard-fail when every domain failed (partial success is still useful).
+  if (allItems.length === 0) {
+    const detail =
+      domainErrors.map((d) => `${d.domain}: ${d.message}`).join(" / ") ||
+      "생성된 문항이 없습니다.";
+    throw new GeminiError(
+      `문제 생성에 실패했습니다. ${detail}`,
+      502
+    );
   }
 
   for (const domain of opts.domains) {
@@ -605,6 +809,7 @@ export async function generateIrtAssessment(opts: {
     passagesUsed,
     slotPlan,
     slotQa,
+    domainErrors,
   };
 }
 

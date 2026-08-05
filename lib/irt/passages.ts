@@ -73,6 +73,30 @@ function ensureDir(): void {
   if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
+/** Atomic-ish write that works on Windows (rename cannot overwrite). */
+function writeJsonAtomic(filePath: string, data: unknown): void {
+  ensureDir();
+  const payload = JSON.stringify(data, null, 2) + "\n";
+  const tmp = `${filePath}.${process.pid}.${Date.now()}.tmp`;
+  fs.writeFileSync(tmp, payload, "utf-8");
+  try {
+    fs.renameSync(tmp, filePath);
+  } catch {
+    // Windows: replace destination then rename, or fall back to direct write.
+    try {
+      if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
+      fs.renameSync(tmp, filePath);
+    } catch {
+      fs.writeFileSync(filePath, payload, "utf-8");
+      try {
+        fs.unlinkSync(tmp);
+      } catch {
+        /* ignore */
+      }
+    }
+  }
+}
+
 function loadPassages(): PassageFile {
   if (passageCache) return passageCache;
   if (!fs.existsSync(PASSAGE_FILE)) {
@@ -84,11 +108,8 @@ function loadPassages(): PassageFile {
 }
 
 function savePassages(file: PassageFile): void {
-  ensureDir();
   file.version = file.version || "1.0.0";
-  const tmp = `${PASSAGE_FILE}.tmp`;
-  fs.writeFileSync(tmp, JSON.stringify(file, null, 2) + "\n", "utf-8");
-  fs.renameSync(tmp, PASSAGE_FILE);
+  writeJsonAtomic(PASSAGE_FILE, file);
   passageCache = file;
 }
 
@@ -153,9 +174,7 @@ export function saveGenerationConfig(cfg: GenerationConfig): GenerationConfig {
     lv.questionTypeSlots = lv.questionTypeSlots.slice(0, lv.itemsPerReading);
     cfg.levels[k] = lv;
   }
-  const tmp = `${CONFIG_FILE}.tmp`;
-  fs.writeFileSync(tmp, JSON.stringify(cfg, null, 2) + "\n", "utf-8");
-  fs.renameSync(tmp, CONFIG_FILE);
+  writeJsonAtomic(CONFIG_FILE, cfg);
   configCache = cfg;
   return cfg;
 }

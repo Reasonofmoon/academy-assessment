@@ -46,8 +46,8 @@ export async function GET() {
   });
 }
 
-/** PUT /api/passages/config — update generation slot defaults */
-export async function PUT(req: NextRequest) {
+/** Shared save handler for PUT and POST (POST accepted for clients that cannot PUT). */
+async function saveConfig(req: NextRequest) {
   try {
     const body: unknown = await req.json();
     const parsed = PutSchema.safeParse(body);
@@ -62,7 +62,14 @@ export async function PUT(req: NextRequest) {
     const next: GenerationConfig = {
       ...current,
       defaults: parsed.data.defaults
-        ? { ...current.defaults, ...parsed.data.defaults }
+        ? {
+            ...current.defaults,
+            ...parsed.data.defaults,
+            countPerDomain: {
+              ...current.defaults.countPerDomain,
+              ...(parsed.data.defaults.countPerDomain ?? {}),
+            },
+          }
         : current.defaults,
       levels: { ...current.levels },
     };
@@ -76,10 +83,20 @@ export async function PUT(req: NextRequest) {
     const saved = saveGenerationConfig(next);
     return NextResponse.json({ ok: true, config: saved });
   } catch (e) {
-    console.error("PUT /api/passages/config", e);
+    console.error("save /api/passages/config", e);
     return NextResponse.json(
       { error: e instanceof Error ? e.message : "설정 저장 실패" },
       { status: 500 }
     );
   }
+}
+
+/** PUT /api/passages/config — update generation slot defaults */
+export async function PUT(req: NextRequest) {
+  return saveConfig(req);
+}
+
+/** POST /api/passages/config — alias of PUT (avoids 405 from some clients) */
+export async function POST(req: NextRequest) {
+  return saveConfig(req);
 }

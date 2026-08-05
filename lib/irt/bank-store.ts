@@ -108,9 +108,24 @@ export function loadBank(): BankFile {
 function saveBank(bank: BankFile): void {
   ensureDir();
   bank.updatedAt = new Date().toISOString();
-  const tmp = `${BANK_FILE}.tmp`;
-  fs.writeFileSync(tmp, JSON.stringify(bank, null, 2), "utf-8");
-  fs.renameSync(tmp, BANK_FILE);
+  const payload = JSON.stringify(bank, null, 2);
+  const tmp = `${BANK_FILE}.${process.pid}.${Date.now()}.tmp`;
+  fs.writeFileSync(tmp, payload, "utf-8");
+  try {
+    fs.renameSync(tmp, BANK_FILE);
+  } catch {
+    try {
+      if (fs.existsSync(BANK_FILE)) fs.unlinkSync(BANK_FILE);
+      fs.renameSync(tmp, BANK_FILE);
+    } catch {
+      fs.writeFileSync(BANK_FILE, payload, "utf-8");
+      try {
+        fs.unlinkSync(tmp);
+      } catch {
+        /* ignore */
+      }
+    }
+  }
 }
 
 export interface ListFilter {
