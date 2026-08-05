@@ -5,14 +5,14 @@
 - **Manifest:** HARNESS_MANIFEST.json (harness_version 1.0)
 - **Vector width:** 6 (L1–L6 data slices)
 - **Execution mode:** logical (sequential)
-- **Location:** `harness/level-item-qc/` (alongside `level-test-item-replace`, does not replace it)
+- **Location:** `harness/level-item-qc/`
 - **Last validated:** 2026-08-05 — `validate_harness.py` **PASS**
-- **Last run:** 2026-08-05 — overall **fail** (empty levels L1, L4–L6)
+- **Last run:** 2026-08-05 — overall **pass** (after L1/L4–L6 fill)
 
 ## Broadcast packet
 
 - **goal:** Audit active items per GLEAS level for count + quality; one matrix report
-- **policy:** min_per_domain=3, min_total=9, quarantine excluded (`references/level-qc-policy.md`)
+- **policy:** min_per_domain=3, min_total=9, quarantine excluded
 - **acceptance:** levels 1–6 covered; LEVEL_QC_REPORT.md written
 
 ## Lanes
@@ -21,38 +21,34 @@
 |---|---|---|
 | lane-L1 … lane-L6 | items[level==N] active | count targets + quality codes |
 
-## Masks
+## Last run snapshot (post fill)
 
-schema_valid · constraint_satisfied · provenance_present
+| Level | Verdict | Active | V/G/R | Err |
+|---|---|---:|---|---:|
+| L1 | **pass** | 9 | 3/3/3 | 0 |
+| L2 | **pass** | 28 | 10/9/9 | 0 |
+| L3 | **pass** | 11 | 3/4/4 | 0 |
+| L4 | **pass** | 10 | 4/3/3 | 0 |
+| L5 | **pass** | 10 | 4/3/3 | 0 |
+| L6 | **pass** | 10 | 4/3/3 | 0 |
 
-## Reduction
+**Overall: pass**
 
-Stack levels → overall = fail if any level fail; warn if any warn; else pass.
+Bank: 81 items total (quarantine still present in file; active matrix above).
 
-## Last run snapshot (default policy)
-
-| Level | Verdict | Active | V/G/R | Notes |
-|---|---|---:|---|---|
-| L1 | **fail** | 0 | 0/0/0 | LEVEL_EMPTY |
-| L2 | **pass** | 28 | 10/9/9 | quality clean |
-| L3 | **pass** | 11 | 3/4/4 | quality clean |
-| L4 | **fail** | 0 | 0/0/0 | LEVEL_EMPTY |
-| L5 | **fail** | 0 | 0/0/0 | LEVEL_EMPTY |
-| L6 | **fail** | 0 | 0/0/0 | LEVEL_EMPTY |
-
-**Overall: fail** — coverage gap outside L2–L3 (not stem quality on existing items).
+Fill tooling: `scripts/fill-levels-for-qc.mjs`
 
 Report: `workspace/reports/LEVEL_QC_REPORT.md`
 
 ## Open exceptions
 
-| Item | Trigger | Status |
-|---|---|---|
-| L1, L4, L5, L6 | LEVEL_EMPTY under default policy | open — generate fills or policy allow_empty |
-| L2–L3 quality | — | clear (0 error codes on active set) |
+| Item | Status |
+|---|---|
+| _(none)_ | — |
 
 ## Change log
 
 | Date | Change | Classification |
 |---|---|---|
-| 2026-08-05 | initial harness + first QC run | new |
+| 2026-08-05 | initial harness + first QC run (fail empty levels) | new |
+| 2026-08-05 | fill L1/L4–L6 + vocab top-up; overall pass | remediation |

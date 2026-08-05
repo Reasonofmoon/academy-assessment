@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-05T09:53:19.861860+00:00",
-  "overall": "fail",
+  "generated_at": "2026-08-05T10:00:28.468178+00:00",
+  "overall": "pass",
   "masks": {
     "lane-L1": {
       "schema_valid": true,
@@ -37,24 +37,24 @@
   "levels": [
     {
       "level": 1,
-      "verdict": "fail",
+      "verdict": "pass",
       "counts": {
-        "active_total": 0,
-        "approved": 0,
+        "active_total": 9,
+        "approved": 9,
         "pending": 0,
-        "domain_vocabulary": 0,
-        "domain_grammar": 0,
-        "domain_reading": 0,
-        "errors": 1,
+        "domain_vocabulary": 3,
+        "domain_grammar": 3,
+        "domain_reading": 3,
+        "errors": 0,
         "warnings": 0,
         "min_total": 9,
         "min_per_domain": 3
       },
       "quality": {
-        "error_rate": 1.0,
+        "error_rate": 0.0,
         "warning_rate": 0.0
       },
-      "defect_n": 1,
+      "defect_n": 0,
       "lane_id": "lane-L1"
     },
     {
@@ -103,103 +103,70 @@
     },
     {
       "level": 4,
-      "verdict": "fail",
+      "verdict": "pass",
       "counts": {
-        "active_total": 0,
-        "approved": 0,
+        "active_total": 10,
+        "approved": 10,
         "pending": 0,
-        "domain_vocabulary": 0,
-        "domain_grammar": 0,
-        "domain_reading": 0,
-        "errors": 1,
+        "domain_vocabulary": 4,
+        "domain_grammar": 3,
+        "domain_reading": 3,
+        "errors": 0,
         "warnings": 0,
         "min_total": 9,
         "min_per_domain": 3
       },
       "quality": {
-        "error_rate": 1.0,
+        "error_rate": 0.0,
         "warning_rate": 0.0
       },
-      "defect_n": 1,
+      "defect_n": 0,
       "lane_id": "lane-L4"
     },
     {
       "level": 5,
-      "verdict": "fail",
+      "verdict": "pass",
       "counts": {
-        "active_total": 0,
-        "approved": 0,
+        "active_total": 10,
+        "approved": 10,
         "pending": 0,
-        "domain_vocabulary": 0,
-        "domain_grammar": 0,
-        "domain_reading": 0,
-        "errors": 1,
+        "domain_vocabulary": 4,
+        "domain_grammar": 3,
+        "domain_reading": 3,
+        "errors": 0,
         "warnings": 0,
         "min_total": 9,
         "min_per_domain": 3
       },
       "quality": {
-        "error_rate": 1.0,
+        "error_rate": 0.0,
         "warning_rate": 0.0
       },
-      "defect_n": 1,
+      "defect_n": 0,
       "lane_id": "lane-L5"
     },
     {
       "level": 6,
-      "verdict": "fail",
+      "verdict": "pass",
       "counts": {
-        "active_total": 0,
-        "approved": 0,
+        "active_total": 10,
+        "approved": 10,
         "pending": 0,
-        "domain_vocabulary": 0,
-        "domain_grammar": 0,
-        "domain_reading": 0,
-        "errors": 1,
+        "domain_vocabulary": 4,
+        "domain_grammar": 3,
+        "domain_reading": 3,
+        "errors": 0,
         "warnings": 0,
         "min_total": 9,
         "min_per_domain": 3
       },
       "quality": {
-        "error_rate": 1.0,
+        "error_rate": 0.0,
         "warning_rate": 0.0
       },
-      "defect_n": 1,
+      "defect_n": 0,
       "lane_id": "lane-L6"
     }
   ],
-  "defects": [
-    {
-      "code": "LEVEL_EMPTY",
-      "severity": "error",
-      "path": "level:1",
-      "message": "no active items at this level",
-      "level": 1,
-      "lane_id": "lane-L1"
-    },
-    {
-      "code": "LEVEL_EMPTY",
-      "severity": "error",
-      "path": "level:4",
-      "message": "no active items at this level",
-      "level": 4,
-      "lane_id": "lane-L4"
-    },
-    {
-      "code": "LEVEL_EMPTY",
-      "severity": "error",
-      "path": "level:5",
-      "message": "no active items at this level",
-      "level": 5,
-      "lane_id": "lane-L5"
-    },
-    {
-      "code": "LEVEL_EMPTY",
-      "severity": "error",
-      "path": "level:6",
-      "message": "no active items at this level",
-      "level": 6,
-      "lane_id": "lane-L6"
-    }
-  ]
+  "defects": []
 }

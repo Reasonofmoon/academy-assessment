@@ -3,39 +3,32 @@
   "item_id": "level:6",
   "result": {
     "level": 6,
-    "verdict": "fail",
+    "verdict": "pass",
     "counts": {
-      "active_total": 0,
-      "approved": 0,
+      "active_total": 10,
+      "approved": 10,
       "pending": 0,
-      "domain_vocabulary": 0,
-      "domain_grammar": 0,
-      "domain_reading": 0,
-      "errors": 1,
+      "domain_vocabulary": 4,
+      "domain_grammar": 3,
+      "domain_reading": 3,
+      "errors": 0,
       "warnings": 0,
       "min_total": 9,
       "min_per_domain": 3
     },
     "quality": {
-      "error_rate": 1.0,
+      "error_rate": 0.0,
       "warning_rate": 0.0
     },
-    "defects": [
-      {
-        "code": "LEVEL_EMPTY",
-        "severity": "error",
-        "path": "level:6",
-        "message": "no active items at this level"
-      }
-    ],
-    "hard_fail": true
+    "defects": [],
+    "hard_fail": false
   },
-  "confidence": 0.99,
+  "confidence": 0.95,
   "evidence": [
     "level=6",
-    "active_total=0",
-    "by_domain={}",
-    "by_status={}"
+    "active_total=10",
+    "by_domain={'vocabulary': 4, 'grammar': 3, 'reading': 3}",
+    "by_status={'approved': 10}"
   ],
   "unresolved": []
 }

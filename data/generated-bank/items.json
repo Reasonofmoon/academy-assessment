@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-05T09:17:39.445Z",
+  "updatedAt": "2026-08-05T10:00:28.273Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -1726,6 +1726,1611 @@
       "reviewedAt": "2026-08-05T09:17:39.445Z",
       "reviewedBy": "teacher",
       "reviewNote": "Stage V2 extras approved by operator"
+    },
+    {
+      "id": "vocabulary-L1-fill-msfwxxgr-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 행복한",
+      "options": [
+        "Sad",
+        "Happy",
+        "Big",
+        "Drink"
+      ],
+      "answer": "1",
+      "explanation": "'행복한'은 영어로 'Happy'입니다. 'Sad'는 슬픈, 'Big'은 큰, 'Drink'는 마시다라는 뜻입니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.1,
+        "b": -2.3,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Happy",
+      "exemplarIds": [
+        "L1-00752-D2_Meaning-regenerated",
+        "L1-00096-D2_Meaning-regenerated",
+        "L1-00299-D3_Context-3",
+        "L1-00621-D3_Context-3",
+        "L1-00010-D4_Network-5",
+        "L1-00298-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초5",
+      "batchId": "level-fill-L1-1785923838891"
+    },
+    {
+      "id": "vocabulary-L1-fill-msfwxxgr-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 run의 뜻으로 가장 알맞은 것은?\nThe boy can run very fast.",
+      "options": [
+        "달리다",
+        "읽다",
+        "자다",
+        "앉다"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 'run'은 '달리다'라는 뜻으로, 소년이 매우 빠르게 달릴 수 있다는 의미입니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1,
+        "b": -2.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "Run",
+      "exemplarIds": [
+        "L1-00752-D2_Meaning-regenerated",
+        "L1-00096-D2_Meaning-regenerated",
+        "L1-00299-D3_Context-3",
+        "L1-00621-D3_Context-3",
+        "L1-00010-D4_Network-5",
+        "L1-00298-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초5",
+      "batchId": "level-fill-L1-1785923838891"
+    },
+    {
+      "id": "vocabulary-L1-fill-msfwxxgr-2",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nI want to _____ an apple.",
+      "options": [
+        "Eat",
+        "Play",
+        "Jump",
+        "Sleep"
+      ],
+      "answer": "0",
+      "explanation": "사과를 먹는다는 문맥이므로 'Eat(먹다)'이 가장 적절합니다. 'Play'는 놀다, 'Jump'는 뛰다, 'Sleep'은 자다입니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D4_Network",
+      "headword": "Eat",
+      "exemplarIds": [
+        "L1-00752-D2_Meaning-regenerated",
+        "L1-00096-D2_Meaning-regenerated",
+        "L1-00299-D3_Context-3",
+        "L1-00621-D3_Context-3",
+        "L1-00010-D4_Network-5",
+        "L1-00298-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초5",
+      "batchId": "level-fill-L1-1785923838891"
+    },
+    {
+      "id": "grammar-L1-fill-msfwxxgr-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장의 빈칸에 알맞은 단어를 고르시오.\nShe ____ a student.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": "1",
+      "explanation": "주어가 3인칭 단수 'She'이므로 동사 'is'가 와야 합니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L1-00114-D5_Usage-regenerated",
+        "L1-00199-D5_Usage-regenerated",
+        "L1-00157-D5_Usage-regenerated",
+        "L1-00652-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초5",
+      "batchId": "level-fill-L1-1785923838891"
+    },
+    {
+      "id": "grammar-L1-fill-msfwxxgr-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장의 빈칸에 알맞은 단어를 고르시오.\nHe often ____ books.",
+      "options": [
+        "read",
+        "reads",
+        "reading",
+        "to read"
+      ],
+      "answer": "1",
+      "explanation": "주어가 3인칭 단수 'He'이고 현재 시제이므로 동사에 '-s'를 붙여 'reads'가 되어야 합니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L1-00114-D5_Usage-regenerated",
+        "L1-00199-D5_Usage-regenerated",
+        "L1-00157-D5_Usage-regenerated",
+        "L1-00652-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초5",
+      "batchId": "level-fill-L1-1785923838891"
+    },
+    {
+      "id": "grammar-L1-fill-msfwxxgr-5",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장의 빈칸에 알맞은 단어를 고르시오.\nThe book is ____ the table.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "to"
+      ],
+      "answer": "1",
+      "explanation": "책이 탁자 '위에' 있다는 의미이므로 전치사 'on'이 가장 적절합니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L1-00114-D5_Usage-regenerated",
+        "L1-00199-D5_Usage-regenerated",
+        "L1-00157-D5_Usage-regenerated",
+        "L1-00652-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초5",
+      "batchId": "level-fill-L1-1785923838891"
+    },
+    {
+      "id": "reading-L1-fill-msfwxxgr-6",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main idea of the passage?",
+      "options": [
+        "The musical journey of Nathaniel Adams Cole.",
+        "Nathaniel Adams Cole's family background.",
+        "The history of jazz piano players.",
+        "The importance of “race music” in America."
+      ],
+      "answer": "0",
+      "explanation": "이 글은 나타니엘 아담스 콜의 어린 시절부터 피아니스트, 그리고 솔로 보컬리스트로서의 음악적 여정과 그의 업적을 전반적으로 다루고 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "Nathaniel Adams Cole was born in Alabama on March 17, 1919. Cole learned piano from his mother, and both he and his older brother Eddie became professional musicians by their teens. As a teenager Cole organized two musical groups, the Rogues of Rhythm and the Royal Dukes. At 15, he dropped out of school to become a full-time jazz piano player. After he found a job as a pianist at the Century Club in Santa Monica, he formed a trio with Oscar Moore and Wesley Prince in 1939. In 1951, however, the trio officially broke up. After that, Cole emerged as a popular solo vocalist. He released more than forty albums and contributed to the introduction of “race music” to the larger American musical scene.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초5",
+      "batchId": "level-fill-L1-1785923838891"
+    },
+    {
+      "id": "reading-L1-fill-msfwxxgr-7",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "According to the passage, which of the following is NOT a good place to study?",
+      "options": [
+        "The living room",
+        "The bedroom",
+        "A quiet place",
+        "A place with enough light"
+      ],
+      "answer": "0",
+      "explanation": "지문에서 거실은 보통 너무 시끄러워서 공부하기에 좋은 장소가 아니라고 명시되어 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "All students need to have good study habits. When you have good study habits, you learn things quickly. You also remember them easily.\nDo you like to study in the living room? This is not a good place because it is usually too noisy. You need to study in a quiet place, like your bedroom. A quiet place will help you only think about one thing, and you will learn better. Before you begin to study, do not forget to clean your desk. A good desk light is important, too. It's good for your eyes if there is enough light.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초5",
+      "batchId": "level-fill-L1-1785923838891"
+    },
+    {
+      "id": "reading-L1-fill-msfwxxgr-8",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What can be inferred about Nathaniel Adams Cole?",
+      "options": [
+        "He was very dedicated to his musical career from a young age.",
+        "He only performed as a solo artist throughout his career.",
+        "He preferred playing the piano over singing.",
+        "He always worked with the same musical group."
+      ],
+      "answer": "0",
+      "explanation": "콜은 어린 나이에 피아노를 배웠고, 10대에 전문 음악인이 되었으며, 15세에 학교를 중퇴하고 전업 재즈 피아니스트가 되는 등 어릴 때부터 음악 경력에 매우 헌신적이었음을 추론할 수 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Nathaniel Adams Cole was born in Alabama on March 17, 1919. Cole learned piano from his mother, and both he and his older brother Eddie became professional musicians by their teens. As a teenager Cole organized two musical groups, the Rogues of Rhythm and the Royal Dukes. At 15, he dropped out of school to become a full-time jazz piano player. After he found a job as a pianist at the Century Club in Santa Monica, he formed a trio with Oscar Moore and Wesley Prince in 1939. In 1951, however, the trio officially broke up. After that, Cole emerged as a popular solo vocalist. He released more than forty albums and contributed to the introduction of “race music” to the larger American musical scene.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초5",
+      "batchId": "level-fill-L1-1785923838891"
+    },
+    {
+      "id": "vocabulary-L4-fill-msfwz4fx-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 근면한, 성실한",
+      "options": [
+        "Diligent",
+        "Cautious",
+        "Hasty",
+        "Indolent"
+      ],
+      "answer": "0",
+      "explanation": "Diligent는 '근면한, 성실한'이라는 뜻으로, 주어진 한글 뜻과 일치합니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Diligent",
+      "exemplarIds": [
+        "L4-04801-D2_Meaning-regenerated",
+        "L4-04680-D2_Meaning-regenerated",
+        "L4-06411-D3_Context-3",
+        "L4-03844-D3_Context-3",
+        "L4-03566-D4_Network-5",
+        "L4-04110-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785923894589"
+    },
+    {
+      "id": "vocabulary-L4-fill-msfwz4fx-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 foster의 뜻으로 가장 알맞은 것은?\nThe school aims to foster a love of learning in its students.",
+      "options": [
+        "육성하다",
+        "비판하다",
+        "억제하다",
+        "방해하다"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 foster는 '육성하다, 촉진하다'의 의미로, 학교가 학생들이 학습에 대한 사랑을 키우도록 돕는다는 뜻입니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "Foster",
+      "exemplarIds": [
+        "L4-04801-D2_Meaning-regenerated",
+        "L4-04680-D2_Meaning-regenerated",
+        "L4-06411-D3_Context-3",
+        "L4-03844-D3_Context-3",
+        "L4-03566-D4_Network-5",
+        "L4-04110-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785923894589"
+    },
+    {
+      "id": "grammar-L4-fill-msfwz4fx-2",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 문법적으로 올바른 것을 고르시오.\nIf I had more time, I (___) learn to play the piano.",
+      "options": [
+        "would",
+        "will",
+        "have",
+        "had"
+      ],
+      "answer": "0",
+      "explanation": "'If I had more time'은 가정법 과거로, 주절에는 'would + 동사원형'이 와야 합니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L4-03694-D5_Usage-7",
+        "L4-01820-D5_Usage-regenerated",
+        "L4-03767-D5_Usage-7",
+        "L4-02501-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785923894589"
+    },
+    {
+      "id": "grammar-L4-fill-msfwz4fx-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 빈칸에 들어갈 가장 적절한 것을 고르시오.\nThe person (___) I met yesterday was a famous author.",
+      "options": [
+        "who",
+        "whom",
+        "whose",
+        "which"
+      ],
+      "answer": "1",
+      "explanation": "빈칸은 관계대명사절 'I met yesterday'의 목적어이므로 목적격 관계대명사 'whom'이 가장 적절합니다. 현대 영어에서는 'who'도 목적격으로 사용되기도 하지만, 문법적 정확성을 위해서는 'whom'이 더 적합합니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.3,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L4-03694-D5_Usage-7",
+        "L4-01820-D5_Usage-regenerated",
+        "L4-03767-D5_Usage-7",
+        "L4-02501-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785923894589"
+    },
+    {
+      "id": "grammar-L4-fill-msfwz4fx-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 문법적으로 올바른 것을 고르시오.\nShe enjoys (___) in the park every morning.",
+      "options": [
+        "walking",
+        "to walk",
+        "walk",
+        "walked"
+      ],
+      "answer": "0",
+      "explanation": "'enjoy'는 동명사(gerund)를 목적어로 취하는 동사이므로, 'walking'이 올바른 형태입니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.1,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L4-03694-D5_Usage-7",
+        "L4-01820-D5_Usage-regenerated",
+        "L4-03767-D5_Usage-7",
+        "L4-02501-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785923894589"
+    },
+    {
+      "id": "reading-L4-fill-msfwz4fx-5",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 주된 내용으로 가장 적절한 것은?",
+      "options": [
+        "인간 뇌의 미완성에서 비롯된 독특한 적응력",
+        "다양한 동물 종의 빠른 발달이 주는 진화적 이점",
+        "미리 프로그램된 뇌를 가지고 태어난 포유류가 겪는 어려움",
+        "인간 생존과 학습을 위한 장기간 의존의 필요성"
+      ],
+      "answer": "0",
+      "explanation": "인간은 태어날 때 무력하지만, 미완성된 뇌 덕분에 다양한 환경에 적응할 수 있는 유연성을 갖게 된다는 것이 글의 핵심 내용이다. 동물과 대조하여 인간 뇌의 'livewired' 특성이 주는 이점을 설명하고 있다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "Although we humans are equipped with reflexive responses for survival, at birth we are (a) helpless . We spend about a year unable to walk, about two more before we can articulate full thoughts, and many more years unable to provide for ourselves. We are totally dependent on those around us for our survival. Now compare this to many other mammals. Dolphins, for instance,are born swimming; giraffes learn to stand within hours; a baby zebra can run within forty-five minutes of birth. Across the animal kingdom, our cousins are strikingly (b) independent soon after they’re born.\r\n\n  On the face of it, that seems like a great advantage for other species ― but in fact it signifies a limitation. Baby animals develop quickly because their brains are wiring up according to a largely preprogrammed routine. But that (c) preparedness trades off with flexibility. Imagine if some unfortunate rhinoceros found itself on the Arctic tundra, or on top of a mountain in the Himalayas, or in the middle of a metropolis. It would have no capacity to adapt (which is why we don’t find rhinos in those areas). This strategy of arriving with a pre-arranged brain works inside a particular niche in the ecosystem ― but put an animal outside of that niche, and its chances of thriving are (d) low .\r\n\n  In contrast, humans are able to thrive in many different environments, from the frozen tundra to the high mountains to crowded urban centers. This is possible because the human brain is born remarkably incomplete. Instead of arriving with everything wired up ― let’s call it “hardwired” ― a human brain (e) forbids itself to be shaped by the details of life experience. This leads to long periods of helplessness as the young brain slowly molds to its environment. It’s “livewired.”\r\n\n* niche: 적합한 장소",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785923894589"
+    },
+    {
+      "id": "reading-L4-fill-msfwz4fx-6",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 내용에 근거하여 추론할 수 있는 것은?",
+      "options": [
+        "커플의 공유된 기억은 종종 주관적이며 각자의 가족 배경에 의해 형성된다.",
+        "파트너들은 이점을 얻기 위해 서로의 가족 이야기를 의도적으로 왜곡한다.",
+        "커플의 새로운 구성 체계는 주로 객관적인 역사적 사실에 기반한다.",
+        "가족 구성 체계의 영향은 커플 관계가 성숙함에 따라 줄어든다."
+      ],
+      "answer": "0",
+      "explanation": "커플의 기억은 각자의 가족 구성 체계에 의해 '선택적'이고 '색칠되며', '해석'된다고 언급되어 있다. 또한 '재구성된 기억'이 매우 강력해져 '사실적인 세부 사항'조차 혼란스러워질 수 있다는 점에서, 공유된 기억이 주관적이라는 것을 추론할 수 있다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "As a couple start to form a relationship, they can be seen to develop a set of constructs about their own relationship and, in particular, how it is similar or different to their parents’ relationship. The couple’s initial disclosures involve them forming constructs about how much similarity there is between them and each other’s families. What each of them will remember is selective and (a) coloured by their family’s constructs system. In turn it is likely that as they tell each other their already edited stories, there is a second process of editing whereby what they both hear from each other is again (b) interpreted within their respective family of origin’s construct systems. The two sets of memories ― the person talking about his or her family and the partner’s edited version of this story ― go into the ‘cooking-pot’ of the couple’s new construct system. Subsequently, one partner may (c) randomly recall a part of the other’s story as a tactic in negotiations: for example, Harry may say to Doris that she is being ‘bossy ― just like her mother’. Since this is probably based on what Doris has told Harry, this is likely to be a very powerful tactic. She may protest or attempt to rewrite this version of her story, thereby possibly adding further material that Harry could use in this way. These exchanges of stories need not always be (d) employed in such malevolent ways. These reconstructed memories can become very powerful, to a point where each partner may become confused even about the simple (e) factual details of what actually did happen in their past.\r\n\n* malevolent: 악의 있는",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785923894589"
+    },
+    {
+      "id": "reading-L4-fill-msfwz4fx-7",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글에 따르면, 인간의 뇌가 다른 동물들의 뇌와 다른 점은 무엇인가?",
+      "options": [
+        "태어날 때 현저히 미완성되어 더 큰 적응력을 허용한다.",
+        "태어난 후 빠르게 발달하여 즉각적인 독립을 가능하게 한다.",
+        "주로 미리 프로그램된 루틴에 따라 작동하여 유연성이 제한된다.",
+        "태어날 때부터 하드웨어적으로 고정되어 삶의 경험에 의해 형성되는 것을 막는다."
+      ],
+      "answer": "0",
+      "explanation": "인간의 뇌는 태어날 때 '현저히 미완성(remarkably incomplete)' 상태로, 삶의 경험에 따라 '환경에 맞춰 천천히 형성(slowly molds to its environment)'되는 'livewired' 특성을 가지고 있어 다른 동물보다 더 큰 적응력을 가진다고 설명한다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Although we humans are equipped with reflexive responses for survival, at birth we are (a) helpless . We spend about a year unable to walk, about two more before we can articulate full thoughts, and many more years unable to provide for ourselves. We are totally dependent on those around us for our survival. Now compare this to many other mammals. Dolphins, for instance,are born swimming; giraffes learn to stand within hours; a baby zebra can run within forty-five minutes of birth. Across the animal kingdom, our cousins are strikingly (b) independent soon after they’re born.\r\n\n  On the face of it, that seems like a great advantage for other species ― but in fact it signifies a limitation. Baby animals develop quickly because their brains are wiring up according to a largely preprogrammed routine. But that (c) preparedness trades off with flexibility. Imagine if some unfortunate rhinoceros found itself on the Arctic tundra, or on top of a mountain in the Himalayas, or in the middle of a metropolis. It would have no capacity to adapt (which is why we don’t find rhinos in those areas). This strategy of arriving with a pre-arranged brain works inside a particular niche in the ecosystem ― but put an animal outside of that niche, and its chances of thriving are (d) low .\r\n\n  In contrast, humans are able to thrive in many different environments, from the frozen tundra to the high mountains to crowded urban centers. This is possible because the human brain is born remarkably incomplete. Instead of arriving with everything wired up ― let’s call it “hardwired” ― a human brain (e) forbids itself to be shaped by the details of life experience. This leads to long periods of helplessness as the young brain slowly molds to its environment. It’s “livewired.”\r\n\n* niche: 적합한 장소",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785923894589"
+    },
+    {
+      "id": "vocabulary-L5-fill-msfx02ht-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 어디에나 있는, 아주 흔한",
+      "options": [
+        "ubiquitous",
+        "ephemeral",
+        "clandestine",
+        "capricious"
+      ],
+      "answer": "0",
+      "explanation": "'Ubiquitous'는 '어디에나 있는, 아주 흔한'이라는 뜻으로, 주어진 한글 뜻과 일치합니다. 다른 보기들은 각각 '단명하는', '비밀리에 하는', '변덕스러운'이라는 뜻입니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "ubiquitous",
+      "exemplarIds": [
+        "L5-05240-D2_Meaning-regenerated",
+        "L5-06170-D2_Meaning-0",
+        "L4-07187-D3_Context-3",
+        "L5-06914-D3_Context-3",
+        "L5-06620-D4_Network-5",
+        "L4-07567-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785923938722"
+    },
+    {
+      "id": "vocabulary-L5-fill-msfx02ht-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 sanction의 뜻으로 가장 알맞은 것은?\nThe international community imposed economic sanctions on the rogue nation.",
+      "options": [
+        "경제적 승인",
+        "국제적 협력",
+        "경제적 제재",
+        "외교적 지원"
+      ],
+      "answer": "2",
+      "explanation": "문맥상 'sanctions'는 '불량 국가에 부과된 경제적 제재'를 의미합니다. '승인'이라는 다른 뜻도 있지만, 이 문장에서는 적합하지 않습니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.1,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "sanction",
+      "exemplarIds": [
+        "L5-05240-D2_Meaning-regenerated",
+        "L5-06170-D2_Meaning-0",
+        "L4-07187-D3_Context-3",
+        "L5-06914-D3_Context-3",
+        "L5-06620-D4_Network-5",
+        "L4-07567-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785923938722"
+    },
+    {
+      "id": "grammar-L5-fill-msfx02ht-2",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\nShe insisted on _________ to the concert.",
+      "options": [
+        "going",
+        "go",
+        "to go",
+        "gone"
+      ],
+      "answer": "0",
+      "explanation": "'insist on'은 'on'이라는 전치사를 포함하므로, 뒤에는 동명사 형태가 와야 합니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.85,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L5-06824-D5_Usage-7",
+        "L6-07301-D5_Usage-regenerated",
+        "L4-07332-D5_Usage-regenerated",
+        "L6-07326-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785923938722"
+    },
+    {
+      "id": "grammar-L5-fill-msfx02ht-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장의 빈칸에 들어갈 가장 적절한 것을 고르시오.\nThis is the house _________ I grew up.",
+      "options": [
+        "which",
+        "where",
+        "that",
+        "what"
+      ],
+      "answer": "1",
+      "explanation": "선행사 'the house'가 장소를 나타내고 뒤에 완전한 절(I grew up)이 오므로 관계부사 'where'가 적절합니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1,
+        "b": 1.95,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L5-06824-D5_Usage-7",
+        "L6-07301-D5_Usage-regenerated",
+        "L4-07332-D5_Usage-regenerated",
+        "L6-07326-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785923938722"
+    },
+    {
+      "id": "grammar-L5-fill-msfx02ht-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\nIf I _________ you, I would take that opportunity.",
+      "options": [
+        "was",
+        "were",
+        "am",
+        "had been"
+      ],
+      "answer": "1",
+      "explanation": "가정법 과거에서 be동사는 인칭에 관계없이 'were'를 사용하며, 주절의 'would take'와 호응합니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.5,
+        "b": 2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L5-06824-D5_Usage-7",
+        "L6-07301-D5_Usage-regenerated",
+        "L4-07332-D5_Usage-regenerated",
+        "L6-07326-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785923938722"
+    },
+    {
+      "id": "reading-L5-fill-msfx02ht-5",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main idea of the passage?",
+      "options": [
+        "To illustrate the diverse meanings of idioms containing the word \"hand\".",
+        "To warn against the misuse of common English idioms related to \"hand\".",
+        "To provide a historical overview of the word \"hand\" in English expressions.",
+        "To encourage readers to learn more English vocabulary and its origins."
+      ],
+      "answer": "0",
+      "explanation": "지문은 'hand'를 사용한 여러 영어 표현들을 소개하고 각각의 의미를 자세히 설명하고 있으므로, 이러한 표현들의 다양한 의미를 보여주는 것이 글의 주된 내용입니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "There are hundreds of expressions of words using \"hand\" in the English language. Let us examine some of the expressions that use \"hand\".\nWe will get a hand in this way. \"To get a hand in\" is to begin a job, to begin to know something about it. When we learn completely, we will be able to do it hands down. If we do the job well, we may end up with the upper hand. On the other hand, if the situation gets out of hand, it is out of control.\nWe must consider another way of expressing phrase---- to hand it to someone. For example, I must hand it to you for understanding what we have discussed this far. You can also lend a hand to someone but without really giving up your hand. You lend a hand when you help someone. If someone is kind enough to lend us a hand then we surely do not want to bite the hand that feeds us. We do not want to repay his kindness by treating him badly.\nNow, we have a free hand to continue examining other \"hand\" expressions. It means you are free to act without getting permission from someone else.\nMaybe you can find a friend who wants to take a hand in our project. It would have to be someone who was interested in these expressions. Your friend may want to work hand in glove with us. That is good because that means he wants to work as closely with us as a glove covers the hand. Of course, there is a danger that he may look at our project and decide to take it in hand. That means he wants to tale it over. If that happens, we may throw up our hands because the situation seams hopeless. In fact, we may decide that it is time for us to end this project to wash our hands of \" hand\" expressions.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785923938722"
+    },
+    {
+      "id": "reading-L5-fill-msfx02ht-6",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What can be inferred about the narrator's primary motivation for establishing Pontinha as his own country?",
+      "options": [
+        "A deep desire for absolute personal freedom and autonomy.",
+        "A goal to avoid paying taxes in Portugal and other obligations.",
+        "An ambition to create a profitable tourist attraction for financial gain.",
+        "A wish to prove his family and friends wrong about his sanity."
+      ],
+      "answer": "0",
+      "explanation": "화자는 '무엇이든 될 수 있고', '국기를 언제든 바꿀 수 있으며', '절대적인 권력을 가진다'고 말하며, 수영 금지 구역에서도 자유롭게 수영할 수 있음을 언급합니다. 이는 그가 개인적인 자유와 자율성을 매우 중요하게 생각했음을 추론하게 합니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "My father wasn't a king, he was a taxi driver, but I am a prince-Prince Renato II, of the country Pontinha, an island fort on Funchal harbour. It's in Madeira,Portugal, where I grew up. It was discovered in 1419.\nIn 1903, the king of Portugal sold the land to a wealthy British family, the Blandys, who make Madeira wine. Fourteen years ago the family decided to sell it forjust EUR25,000, but nobody wanted to buy it either. I met Blandy at a party. and he asked if I'd like to buy the island. Of course I said yes,but I had no money-I was just an art teacher.I tried to find some business partners, who all thought I was crazy.So I sold some of my possessions,put my savings together and bought it.Of course, my family. my friends-all thought I was mad.\nWhen the King originally sold the island,he signed a document, selling all the \"possessions and the dominions\"of the island.It means I can do what I want with it-I could start a restaurant, or a cinema but nobody thought someone would start a country.So that's what I did:I decided it would be my island, about the size of a one-bedroom house.\nI have both a Portuguese passport and one for Pontinha (where my passport number is 0001).There are four citizens: me, my wife, my son and my daughter.I am the police, the gardener,everything.I am whatever I want to be-that's the dream,isn't it?If l want to have a national flag,it could be blue today,red tomorrow.I can change it any time.Of course,my power is only absolute here, where I am the true sovereign.\nI don't live in my country full time, but I am often there.My family sometimes drops by, and other people come every day because the country is free for tourists to visit; I never close for bad weather.Sometimes I come here when I'm feeling lively,after a few drinks.\nMadeira is surrounded by water,but for some reason we all have to pay to swim in the ocean now,at the swimming spots.However.I have my island,which means I can come swimming whenever I want-it's as if someone has given me the key to the waters.\nOur lives are gone in a flash.All change in the world begins with something very small, and this is my country-just a small island.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785923938722"
+    },
+    {
+      "id": "reading-L5-fill-msfx02ht-7",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "According to the passage, what is the difference between \"to take a hand in\" something and \"to take it in hand\"?",
+      "options": [
+        "\"To take a hand in\" means to get involved, while \"to take it in hand\" means to take control.",
+        "\"To take a hand in\" means to offer help, while \"to take it in hand\" means to finish a task quickly.",
+        "\"To take a hand in\" means to express interest, while \"to take it in hand\" means to give up hope.",
+        "\"To take a hand in\" means to start a job, while \"to take it in hand\" means to work closely with someone."
+      ],
+      "answer": "0",
+      "explanation": "지문 마지막 단락에서 \"take a hand in our project\"는 프로젝트에 '관심을 갖고 참여하는 것(interested in these expressions)'을 의미하며, \"take it in hand\"는 프로젝트를 '장악하다(take it over)'는 의미로 설명되어 있습니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "There are hundreds of expressions of words using \"hand\" in the English language. Let us examine some of the expressions that use \"hand\".\nWe will get a hand in this way. \"To get a hand in\" is to begin a job, to begin to know something about it. When we learn completely, we will be able to do it hands down. If we do the job well, we may end up with the upper hand. On the other hand, if the situation gets out of hand, it is out of control.\nWe must consider another way of expressing phrase---- to hand it to someone. For example, I must hand it to you for understanding what we have discussed this far. You can also lend a hand to someone but without really giving up your hand. You lend a hand when you help someone. If someone is kind enough to lend us a hand then we surely do not want to bite the hand that feeds us. We do not want to repay his kindness by treating him badly.\nNow, we have a free hand to continue examining other \"hand\" expressions. It means you are free to act without getting permission from someone else.\nMaybe you can find a friend who wants to take a hand in our project. It would have to be someone who was interested in these expressions. Your friend may want to work hand in glove with us. That is good because that means he wants to work as closely with us as a glove covers the hand. Of course, there is a danger that he may look at our project and decide to take it in hand. That means he wants to tale it over. If that happens, we may throw up our hands because the situation seams hopeless. In fact, we may decide that it is time for us to end this project to wash our hands of \" hand\" expressions.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785923938722"
+    },
+    {
+      "id": "vocabulary-L6-fill-msfx10co-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 어디에나 있는, 아주 흔한",
+      "options": [
+        "Ubiquitous",
+        "Ephemeral",
+        "Scarcity",
+        "Pervasive"
+      ],
+      "answer": "0",
+      "explanation": "Ubiquitous는 '어디에나 있는, 아주 흔한'이라는 뜻으로, 주어진 한글 뜻과 일치합니다. Ephemeral은 '수명이 짧은, 덧없는', Scarcity는 '부족, 희귀', Pervasive는 '만연하는, 스며드는' 이라는 뜻으로 문맥에 맞지 않습니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.2,
+        "b": 2.6,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Ubiquitous",
+      "exemplarIds": [
+        "L6-07738-D2_Meaning-regenerated",
+        "L4-07857-D2_Meaning-regenerated",
+        "L6-08319-D3_Context-3",
+        "L6-08257-D3_Context-3",
+        "L6-08299-D4_Network-5",
+        "L4-08107-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785923982600"
+    },
+    {
+      "id": "vocabulary-L6-fill-msfx10co-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 mitigate의 뜻으로 가장 알맞은 것은?\nThe new policies aim to mitigate the effects of climate change.",
+      "options": [
+        "악화시키다",
+        "완화하다, 경감하다",
+        "증폭시키다",
+        "야기하다"
+      ],
+      "answer": "1",
+      "explanation": "Mitigate는 '완화시키다, 경감하다'라는 뜻으로, 문맥상 '새로운 정책들은 기후 변화의 영향을 완화하는 것을 목표로 한다'가 가장 자연스럽습니다. 악화시키다, 증폭시키다, 야기하다는 문맥에 맞지 않습니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1,
+        "b": 2.7,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "mitigate",
+      "exemplarIds": [
+        "L6-07738-D2_Meaning-regenerated",
+        "L4-07857-D2_Meaning-regenerated",
+        "L6-08319-D3_Context-3",
+        "L6-08257-D3_Context-3",
+        "L6-08299-D4_Network-5",
+        "L4-08107-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785923982600"
+    },
+    {
+      "id": "grammar-L6-fill-msfx10co-2",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 어법상 올바른 것을 고르시오.\nNot until the last minute ___ the importance of the deadline.",
+      "options": [
+        "did he realize",
+        "he realized",
+        "he did realize",
+        "realized he"
+      ],
+      "answer": "0",
+      "explanation": "부정어구(Not until the last minute)가 문두로 오면 주어와 동사가 도치됩니다. 과거 시제이므로 'did + 주어 + 동사원형' 형태가 올바릅니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.2,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L6-07772-D5_Usage-regenerated",
+        "L4-08271-D5_Usage-7",
+        "L4-07785-D5_Usage-regenerated",
+        "L6-07740-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785923982600"
+    },
+    {
+      "id": "grammar-L6-fill-msfx10co-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 어법상 올바른 것을 고르시오.\nThe decision, ___ by the committee, was met with mixed reactions.",
+      "options": [
+        "which made",
+        "making",
+        "made",
+        "to make"
+      ],
+      "answer": "2",
+      "explanation": "주어 'the decision'은 위원회에 의해 '만들어지는' 것이므로 수동의 의미를 가지는 과거분사 'made'가 와야 합니다. 이는 관계대명사절 'which was made'가 축약된 형태입니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.2,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L6-07772-D5_Usage-regenerated",
+        "L4-08271-D5_Usage-7",
+        "L4-07785-D5_Usage-regenerated",
+        "L6-07740-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785923982600"
+    },
+    {
+      "id": "grammar-L6-fill-msfx10co-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 어법상 올바른 것을 고르시오.\nHad I known about the party, ___ .",
+      "options": [
+        "I would have attended",
+        "I would attend",
+        "I will attend",
+        "I had attended"
+      ],
+      "answer": "0",
+      "explanation": "가정법 과거완료 문장에서 If가 생략되면 주어와 동사가 도치되어 'Had + 주어 + 과거분사' 형태가 됩니다. 주절은 '주어 + would have + 과거분사' 형태로 과거 사실에 대한 반대를 나타냅니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.2,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L6-07772-D5_Usage-regenerated",
+        "L4-08271-D5_Usage-7",
+        "L4-07785-D5_Usage-regenerated",
+        "L6-07740-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785923982600"
+    },
+    {
+      "id": "reading-L6-fill-msfx10co-5",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main topic of the passage?",
+      "options": [
+        "The introduction of RFID tracking nametags in Texas schools and the debate surrounding them.",
+        "How Texas schools are losing state funding due to inaccurate student attendance records.",
+        "The privacy concerns raised by civil liberties groups regarding student tracking technology.",
+        "The practical advantages of using advanced technology like nametags in school environments."
+      ],
+      "answer": "0",
+      "explanation": "이 지문은 텍사스 학교에서 주 정부 지원금을 확보하기 위해 RFID 추적 명찰을 도입한 것과, 이에 대한 사생활 침해 우려 및 실질적인 이점 등 찬반 논란을 주로 다루고 있습니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.2,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "SAN ANTONIO -- For Tira Starr, an eighth grader at Anson Jones Middle School, the plastic nametag hanging around her neck that she has decorated with a smiley face and a purple bat sticker offers a way to reflect her personal interest. For administrators, it is something else entirely: a device that lets them use radio frequency technology--with scanners tucked behind walls and ceilings--to track her whereabouts. \nAnson Jones is the first school in San Antonio's Northside Independent School District to roll out the new nametags, which are part of a pilot program intended to ensure that the district receives all of the state dollars. \nIn Texas, school finance is a numbers game: schools receive money based on the number of students counted in their homeroom classes each morning. At Anson Jones, as at other schools, many students were in school but not in homeroom, so they were not counted and the district lost money, said Pascual Gonzalez, a spokesman for the district. \n\"We were leaving money on the table,\" he said, adding that the district expects a $2 million return on an initial investment of $261,000 in the technology at two pilot schools. \nBut the radio frequency identification nametags have prompted concerns from civil liberties groups and electronic privacy watchdogs, which fear a Big Brother atmosphere in Texas public schools. \nMatthew Simpson, a policy strategist for the American Civil Liberties Union of Texas, said the technology was easy to acquire, meaning people outside a school might be able to monitor a student if they obtained the student's unique tracking number. \nMr. Simpson said the technology was originally designed for shipping goods and for cattle. \"It was never intended for people,\" he said. \nBut students and educators at Anson Jones say they are excited about the practical advantages -- getting to eat lunch faster by scanning their bar codes in the lunch line, or being able to locate a child quickly in an emergency. \nNorthside is not the first district to use the tracking devices. Two Houston-area districts began the program several years ago. The Spring district, for example, started using the technology in 2004 as a way to track elementary students getting on and off buses. It expanded the program to high school students three years ago and has so far recovered $400,000, said Karen Garrison, a spokeswoman for the district. \n\"Our system still focuses on safety but has the added benefit of recovering average daily attendance funding,\" Ms. Garrison said. \nWendy Reyes, the principal of Anson Jones, said only one parent had complained about the program at her school. On the first day of classes at Jay High School, home to the other pilot program school in Northside, several parents staged a protest across the street from the school, though most did not have students in the district. \nMany students, teachers and parents at the middle school feel the technology's benefits outweigh privacy concerns, Ms. Reyes said.",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785923982600"
+    },
+    {
+      "id": "reading-L6-fill-msfx10co-6",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What can be inferred about the primary reason for the author's arrest and subsequent legal charges?",
+      "options": [
+        "The author's refusal to take the breathalyzer test directly led to the arrest and charges.",
+        "The author was definitively proven to be driving under the influence of alcohol.",
+        "The author failed all of the field sobriety tests administered by the police officer.",
+        "The police officer had clear evidence of the author drinking from the bottle in the car."
+      ],
+      "answer": "0",
+      "explanation": "지문에서 필자는 음주 측정기 검사를 거부한 것이 '실수'였다고 명시하며, 이후 '경찰관의 명령 불복종'으로 기소되었다고 밝히고 있습니다. 이를 통해 음주 측정 거부가 체포와 법적 기소의 주된 원인이었음을 추론할 수 있습니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.2,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "It was the end of my junior year, the weekend before prom . I was riding with some friends, and a bottle was passed around the car. Everyone was taking swigs . When the bottle got to me, I thought:\"What should I do?\"I took a swig. It was the biggest mistake of my life. I had to drive home later that night.\nI went back to my car, got in and drove off. At a stop sign I saw a policeman sitting in the parking lot across the street. His headlights were turned on, and I knew he was going to follow me. Then he flashed his lights at me. All I could think was: \"Oh no, that swig!\"\nI pulled over and waited for him to come to my door. It felt like forever. \"Can I see your license and registration, please, Miss?\" I gave them to him. He took them and went back to his car for a while. When he returned, he asked if I had been drinking.\n\"No,\" I said. He asked me to step out of my car.\n\"Walk heel to toe down the white line, please.\" I passed the test. Next he had me stand on my left foot, lift my right foot and hold it for 30 seconds. I'm not the most coordinated person and I can't even walk and chew gum at the same time, so, needless to say, I didn't pass. Then he asked me to take a breathalyzer test.\nThat was where I messed up. I told him I didn't want to and didn't understand why I had to. The officer asked me three more times, and I continued to refuse. He told me to turn around and place my hands behind my back. He arrested me right then and there.\nThe policeman drove me to a police station 20 minutes from my home. He called my parents and told them where I was.\nI went to court two months after that, charged with refusing to obey an officer. I got a $700 (4,340 yuan) fine and 40 hours of community service. I'll be on probation for a year, and I'll have to take the driving test again. I lost my license for a whole year.\nThis was a huge learning experience for me. It opened my eyes to how easy it is to make a stupid decision. I want everyone reading this to know that it's not right to drink and drive. It definitely isn't worth losing your license over.",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785923982600"
+    },
+    {
+      "id": "reading-L6-fill-msfx10co-7",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "According to the passage, what was the initial investment for the tracking technology at the two pilot schools?",
+      "options": [
+        "$261,000",
+        "$2 million",
+        "$400,000",
+        "$700"
+      ],
+      "answer": "0",
+      "explanation": "지문에 따르면, Northside Independent School District는 두 개의 시범 학교에 기술을 도입하기 위해 261,000달러를 초기 투자했다고 명시되어 있습니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.2,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "SAN ANTONIO -- For Tira Starr, an eighth grader at Anson Jones Middle School, the plastic nametag hanging around her neck that she has decorated with a smiley face and a purple bat sticker offers a way to reflect her personal interest. For administrators, it is something else entirely: a device that lets them use radio frequency technology--with scanners tucked behind walls and ceilings--to track her whereabouts. \nAnson Jones is the first school in San Antonio's Northside Independent School District to roll out the new nametags, which are part of a pilot program intended to ensure that the district receives all of the state dollars. \nIn Texas, school finance is a numbers game: schools receive money based on the number of students counted in their homeroom classes each morning. At Anson Jones, as at other schools, many students were in school but not in homeroom, so they were not counted and the district lost money, said Pascual Gonzalez, a spokesman for the district. \n\"We were leaving money on the table,\" he said, adding that the district expects a $2 million return on an initial investment of $261,000 in the technology at two pilot schools. \nBut the radio frequency identification nametags have prompted concerns from civil liberties groups and electronic privacy watchdogs, which fear a Big Brother atmosphere in Texas public schools. \nMatthew Simpson, a policy strategist for the American Civil Liberties Union of Texas, said the technology was easy to acquire, meaning people outside a school might be able to monitor a student if they obtained the student's unique tracking number. \nMr. Simpson said the technology was originally designed for shipping goods and for cattle. \"It was never intended for people,\" he said. \nBut students and educators at Anson Jones say they are excited about the practical advantages -- getting to eat lunch faster by scanning their bar codes in the lunch line, or being able to locate a child quickly in an emergency. \nNorthside is not the first district to use the tracking devices. Two Houston-area districts began the program several years ago. The Spring district, for example, started using the technology in 2004 as a way to track elementary students getting on and off buses. It expanded the program to high school students three years ago and has so far recovered $400,000, said Karen Garrison, a spokeswoman for the district. \n\"Our system still focuses on safety but has the added benefit of recovering average daily attendance funding,\" Ms. Garrison said. \nWendy Reyes, the principal of Anson Jones, said only one parent had complained about the program at her school. On the first day of classes at Jay High School, home to the other pilot program school in Northside, several parents staged a protest across the street from the school, though most did not have students in the district. \nMany students, teachers and parents at the middle school feel the technology's benefits outweigh privacy concerns, Ms. Reyes said.",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785923982600"
+    },
+    {
+      "id": "vocabulary-L4-fill-msfx1nfr-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 성실한, 부지런한",
+      "options": [
+        "Diligent",
+        "Lazy",
+        "Careless",
+        "Arrogant"
+      ],
+      "answer": "0",
+      "explanation": "Diligent는 '성실한, 부지런한'이라는 뜻의 형용사입니다. Lazy는 '게으른', Careless는 '부주의한', Arrogant는 '오만한'이라는 뜻입니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Diligent",
+      "exemplarIds": [
+        "L4-04801-D2_Meaning-regenerated",
+        "L4-04680-D2_Meaning-regenerated",
+        "L4-06411-D3_Context-3",
+        "L4-03844-D3_Context-3"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:00:12.537Z",
+      "updatedAt": "2026-08-05T10:00:12.537Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785924012520"
+    },
+    {
+      "id": "vocabulary-L4-fill-msfx1nfr-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nThe severe drought had a devastating _____ on the region's agriculture.",
+      "options": [
+        "consequence",
+        "advantage",
+        "opportunity",
+        "foundation"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 '심각한 가뭄이 지역 농업에 파괴적인 ______를 미쳤다'는 의미이므로, '결과'를 뜻하는 consequence가 가장 적절합니다. advantage는 '이점', opportunity는 '기회', foundation은 '기초'라는 뜻입니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "consequence",
+      "exemplarIds": [
+        "L4-04801-D2_Meaning-regenerated",
+        "L4-04680-D2_Meaning-regenerated",
+        "L4-06411-D3_Context-3",
+        "L4-03844-D3_Context-3"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:00:12.537Z",
+      "updatedAt": "2026-08-05T10:00:12.537Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785924012520"
+    },
+    {
+      "id": "vocabulary-L5-fill-msfx1sv9-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 덧없는, 단명하는",
+      "options": [
+        "ephemeral",
+        "eternal",
+        "elaborate",
+        "eloquent"
+      ],
+      "answer": "0",
+      "explanation": "Ephemeral은 '덧없는, 단명하는'이라는 뜻으로, 주어진 한글 뜻과 일치합니다. 다른 단어들은 유사한 발음이나 반대 의미를 가진 오답입니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "ephemeral",
+      "exemplarIds": [
+        "L5-05240-D2_Meaning-regenerated",
+        "L5-06170-D2_Meaning-0",
+        "L4-07187-D3_Context-3",
+        "L5-06914-D3_Context-3"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:00:19.576Z",
+      "updatedAt": "2026-08-05T10:00:19.576Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785924019557"
+    },
+    {
+      "id": "vocabulary-L5-fill-msfx1sv9-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 meticulous의 뜻으로 가장 알맞은 것은?\nThe architect was known for his meticulous attention to detail in every project.",
+      "options": [
+        "세심한, 꼼꼼한",
+        "대담한, 용감한",
+        "무관심한, 냉담한",
+        "충동적인, 즉흥적인"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 건축가가 '세부 사항에 대한 세심한 주의'로 알려졌다는 내용이 자연스러우므로, meticulous는 '세심한, 꼼꼼한'이라는 의미가 가장 적절합니다. 다른 선택지들은 문맥과 반대되거나 어울리지 않는 의미입니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.1,
+        "b": 1.85,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "meticulous",
+      "exemplarIds": [
+        "L5-05240-D2_Meaning-regenerated",
+        "L5-06170-D2_Meaning-0",
+        "L4-07187-D3_Context-3",
+        "L5-06914-D3_Context-3"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:00:19.576Z",
+      "updatedAt": "2026-08-05T10:00:19.576Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785924019557"
+    },
+    {
+      "id": "vocabulary-L6-fill-msfx1zkz-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 어디에나 있는, 아주 흔한",
+      "options": [
+        "ubiquitous",
+        "ephemeral",
+        "obsolete",
+        "arduous"
+      ],
+      "answer": "0",
+      "explanation": "Ubiquitous는 '어디에나 있는, 아주 흔한'이라는 의미로, 주어진 한국어 뜻과 정확히 일치합니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.2,
+        "b": 2.75,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "ubiquitous",
+      "exemplarIds": [
+        "L6-07738-D2_Meaning-regenerated",
+        "L4-07857-D2_Meaning-regenerated",
+        "L6-08319-D3_Context-3",
+        "L6-08257-D3_Context-3"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:00:28.273Z",
+      "updatedAt": "2026-08-05T10:00:28.273Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785924028259"
+    },
+    {
+      "id": "vocabulary-L6-fill-msfx1zkz-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 meticulous의 뜻으로 가장 알맞은 것은?\nThe artisan was meticulous in his work, ensuring every detail was perfect.",
+      "options": [
+        "세심한, 꼼꼼한",
+        "게으른, 나태한",
+        "거친, 투박한",
+        "빠른, 신속한"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 '모든 세부 사항이 완벽하도록 보장했다'는 내용으로 보아, artisan(장인)이 자신의 일에 '세심하고 꼼꼼했다'는 의미가 가장 적절합니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "meticulous",
+      "exemplarIds": [
+        "L6-07738-D2_Meaning-regenerated",
+        "L4-07857-D2_Meaning-regenerated",
+        "L6-08319-D3_Context-3",
+        "L6-08257-D3_Context-3"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:00:28.273Z",
+      "updatedAt": "2026-08-05T10:00:28.273Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785924028259"
     }
   ]
 }

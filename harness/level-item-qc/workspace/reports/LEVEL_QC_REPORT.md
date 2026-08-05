@@ -1,8 +1,8 @@
 # Level item QC report
 
-- **Generated:** 2026-08-05T09:53:19.861860+00:00
+- **Generated:** 2026-08-05T10:00:28.468178+00:00
 - **Harness:** level-item-qc
-- **Overall:** `fail`
+- **Overall:** `pass`
 - **Policy:** min_per_domain=3 · min_total=9 · allow_empty=False
 - **Execution:** logical (L1–L6 sequential)
 
@@ -10,12 +10,12 @@
 
 | Level | Verdict | Active | Appr | Pend | Vocab | Gram | Read | Err | Warn |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| L1 | **fail** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| L1 | **pass** | 9 | 9 | 0 | 3 | 3 | 3 | 0 | 0 |
 | L2 | **pass** | 28 | 28 | 0 | 10 | 9 | 9 | 0 | 0 |
 | L3 | **pass** | 11 | 11 | 0 | 3 | 4 | 4 | 0 | 0 |
-| L4 | **fail** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
-| L5 | **fail** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
-| L6 | **fail** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| L4 | **pass** | 10 | 10 | 0 | 4 | 3 | 3 | 0 | 0 |
+| L5 | **pass** | 10 | 10 | 0 | 4 | 3 | 3 | 0 | 0 |
+| L6 | **pass** | 10 | 10 | 0 | 4 | 3 | 3 | 0 | 0 |
 
 ## Masks
 
@@ -30,16 +30,9 @@
 
 ## Defect summary
 
-- errors: **4**
+- errors: **0**
 - warnings: **0**
 - info: **0**
-
-## ERRORs (4)
-
-- L1 · `LEVEL_EMPTY` · `level:1` · no active items at this level
-- L4 · `LEVEL_EMPTY` · `level:4` · no active items at this level
-- L5 · `LEVEL_EMPTY` · `level:5` · no active items at this level
-- L6 · `LEVEL_EMPTY` · `level:6` · no active items at this level
 
 ## Remediation hints
 
