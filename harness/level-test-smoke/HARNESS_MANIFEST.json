@@ -1,0 +1,156 @@
+{
+  "harness_version": "1.0",
+  "harness_id": "level-test-smoke",
+  "domain": "Agent-solved level-test smoke: sample items per GLEAS level, answer then score",
+  "target": "portable",
+  "generated_by": "build-vectorized-harness",
+
+  "broadcast": {
+    "goal": "Smoke-test the level-test bank by solving a stratified sample of items level-by-level and reporting accuracy plus item flags.",
+    "constraints": [
+      "Solver must not see gold answer or answerIndex before choosing.",
+      "Only approved (non-quarantine) items are sampled.",
+      "Sample up to 1 item per domain per level (smoke budget).",
+      "Report accuracy and flags; do not rewrite bank during smoke.",
+      "Lane verdict: fail if accuracy < 0.34 or any KEY_MISMATCH with high solver confidence; warn if accuracy < 0.67; else pass."
+    ],
+    "source_refs": [
+      "../../data/generated-bank/items.json",
+      "references/smoke-policy.md"
+    ],
+    "lane_output_schema": "schemas/lane_output.schema.json",
+    "acceptance_tests": [
+      "Levels 1-6 each produce a lane output.",
+      "Every attempted item has chosen vs gold comparison.",
+      "workspace/reports/SMOKE_REPORT.md exists after run."
+    ]
+  },
+
+  "vector_width": 6,
+
+  "lanes": {
+    "lane_id": [
+      "lane-solve-L1",
+      "lane-solve-L2",
+      "lane-solve-L3",
+      "lane-solve-L4",
+      "lane-solve-L5",
+      "lane-solve-L6"
+    ],
+    "role": [
+      "Solve stratified sample at GLEAS L1 as a competent L1 examinee.",
+      "Solve stratified sample at GLEAS L2 as a competent L2 examinee.",
+      "Solve stratified sample at GLEAS L3 as a competent L3 examinee.",
+      "Solve stratified sample at GLEAS L4 as a competent L4 examinee.",
+      "Solve stratified sample at GLEAS L5 as a competent L5 examinee.",
+      "Solve stratified sample at GLEAS L6 as a competent L6 examinee."
+    ],
+    "input_slice": [
+      "sample(items[level==1], domains)",
+      "sample(items[level==2], domains)",
+      "sample(items[level==3], domains)",
+      "sample(items[level==4], domains)",
+      "sample(items[level==5], domains)",
+      "sample(items[level==6], domains)"
+    ],
+    "output_artifact": [
+      "workspace/lanes/L1.json",
+      "workspace/lanes/L2.json",
+      "workspace/lanes/L3.json",
+      "workspace/lanes/L4.json",
+      "workspace/lanes/L5.json",
+      "workspace/lanes/L6.json"
+    ],
+    "definition_path": [
+      "lanes/lane-solve-L1.md",
+      "lanes/lane-solve-L2.md",
+      "lanes/lane-solve-L3.md",
+      "lanes/lane-solve-L4.md",
+      "lanes/lane-solve-L5.md",
+      "lanes/lane-solve-L6.md"
+    ],
+    "review_mask": [
+      ["schema_valid", "constraint_satisfied", "provenance_present"],
+      ["schema_valid", "constraint_satisfied", "provenance_present"],
+      ["schema_valid", "constraint_satisfied", "provenance_present"],
+      ["schema_valid", "constraint_satisfied", "provenance_present"],
+      ["schema_valid", "constraint_satisfied", "provenance_present"],
+      ["schema_valid", "constraint_satisfied", "provenance_present"]
+    ],
+    "depends_on": [[], [], [], [], [], []]
+  },
+
+  "masks": {
+    "required": [
+      "schema_valid",
+      "constraint_satisfied",
+      "provenance_present"
+    ],
+    "definitions": {
+      "schema_valid": {
+        "description": "Lane output matches schema.",
+        "checked_by": "scripts/run_level_test_smoke.py"
+      },
+      "constraint_satisfied": {
+        "description": "verdict consistent with accuracy thresholds.",
+        "checked_by": "reducer"
+      },
+      "provenance_present": {
+        "description": "evidence lists item ids attempted.",
+        "checked_by": "reducer"
+      }
+    }
+  },
+
+  "reduction": {
+    "operator": "stack_level_scores -> overall_accuracy -> flag_items -> report",
+    "precedence": [
+      "hard_constraints",
+      "masks",
+      "confidence",
+      "lane_order"
+    ],
+    "tie_break": ["level_asc", "item_id_asc"],
+    "deterministic": true,
+    "provenance_required": true
+  },
+
+  "scalar_tail": {
+    "triggers": ["mask_false", "incomplete_output", "solver_api_error"],
+    "max_passes": 2,
+    "budget_note": "Retry failed Gemini solves once; then record exception.",
+    "unresolved_policy": "record_exception"
+  },
+
+  "orchestrator": {
+    "path": "skills/level-test-smoke/SKILL.md",
+    "stages": [
+      "broadcast",
+      "vector_step",
+      "parallel_compute",
+      "reduce",
+      "scalar_tail"
+    ]
+  },
+
+  "concurrency": {
+    "mode": "logical",
+    "authorized": false,
+    "note": "Lanes run sequentially; each item solved via Gemini then scored against gold."
+  },
+
+  "artifacts": [
+    { "path": "HARNESS_STATE.md", "kind": "registry" },
+    { "path": "HARNESS_MANIFEST.json", "kind": "manifest" },
+    { "path": "schemas/lane_output.schema.json", "kind": "schema" },
+    { "path": "skills/level-test-smoke/SKILL.md", "kind": "orchestrator" },
+    { "path": "lanes/lane-solve-L1.md", "kind": "lane" },
+    { "path": "lanes/lane-solve-L2.md", "kind": "lane" },
+    { "path": "lanes/lane-solve-L3.md", "kind": "lane" },
+    { "path": "lanes/lane-solve-L4.md", "kind": "lane" },
+    { "path": "lanes/lane-solve-L5.md", "kind": "lane" },
+    { "path": "lanes/lane-solve-L6.md", "kind": "lane" },
+    { "path": "scripts/run_level_test_smoke.py", "kind": "script" },
+    { "path": "references/smoke-policy.md", "kind": "reference" }
+  ]
+}

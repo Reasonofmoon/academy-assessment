@@ -1,0 +1,418 @@
+{
+  "generated_at": "2026-08-05T11:45:03.317267+00:00",
+  "overall": "pass",
+  "overall_accuracy": 1.0,
+  "correct": 18,
+  "total": 18,
+  "levels": [
+    {
+      "level": 1,
+      "verdict": "pass",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    {
+      "level": 2,
+      "verdict": "pass",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    {
+      "level": 3,
+      "verdict": "pass",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    {
+      "level": 4,
+      "verdict": "pass",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    {
+      "level": 5,
+      "verdict": "pass",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    {
+      "level": 6,
+      "verdict": "pass",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    }
+  ],
+  "mismatches": [],
+  "lanes": [
+    {
+      "lane_id": "lane-solve-L1",
+      "item_id": "level:1",
+      "result": {
+        "level": 1,
+        "attempts": 3,
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0,
+        "item_results": [
+          {
+            "item_id": "vocabulary-L1-fill-msfwxxgr-0",
+            "domain": "vocabulary",
+            "chosen": "1",
+            "gold": "1",
+            "is_correct": true,
+            "solver_note": "The Korean word '행복한' directly translates to 'Happy' in English.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "grammar-L1-fill-msfwxxgr-3",
+            "domain": "grammar",
+            "chosen": "1",
+            "gold": "1",
+            "is_correct": true,
+            "solver_note": "The subject 'She' is third-person singular, which requires the verb 'is' in the simple present tense.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "reading-L1-fill-msfwxxgr-6",
+            "domain": "reading",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The passage details Nathaniel Adams Cole's life from learning piano and forming groups to becoming a solo vocalist and releasing albums, which comprehensively describes his musical journey.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          }
+        ],
+        "verdict": "pass"
+      },
+      "confidence": 0.8,
+      "evidence": [
+        "attempted=3",
+        "correct=3",
+        "pool_approved=18",
+        "vocabulary-L1-fill-msfwxxgr-0",
+        "grammar-L1-fill-msfwxxgr-3",
+        "reading-L1-fill-msfwxxgr-6"
+      ],
+      "unresolved": []
+    },
+    {
+      "lane_id": "lane-solve-L2",
+      "item_id": "level:2",
+      "result": {
+        "level": 2,
+        "attempts": 3,
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0,
+        "item_results": [
+          {
+            "item_id": "vocabulary-1",
+            "domain": "vocabulary",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The Korean words '도착하다' and '도달하다' both mean 'to arrive' or 'to reach'.",
+            "flags": [
+              "OK",
+              "AMBIGUOUS"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "grammar-1",
+            "domain": "grammar",
+            "chosen": "1",
+            "gold": "1",
+            "is_correct": true,
+            "solver_note": "The subject \"My brother\" is third-person singular, and the adverb \"often\" indicates a habitual action, requiring the simple present tense form \"plays\".",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "reading-1",
+            "domain": "reading",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The letter's main purpose is for Michael's mother to request an extension for his homework deadline from Ms. White.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          }
+        ],
+        "verdict": "pass"
+      },
+      "confidence": 0.8,
+      "evidence": [
+        "attempted=3",
+        "correct=3",
+        "pool_approved=37",
+        "vocabulary-1",
+        "grammar-1",
+        "reading-1"
+      ],
+      "unresolved": []
+    },
+    {
+      "lane_id": "lane-solve-L3",
+      "item_id": "level:3",
+      "result": {
+        "level": 3,
+        "attempts": 3,
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0,
+        "item_results": [
+          {
+            "item_id": "vocabulary-1-3",
+            "domain": "vocabulary",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The Korean words '달성하다' and '성취하다' both directly translate to 'achieve' in English.",
+            "flags": [
+              "OK",
+              "AMBIGUOUS"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "grammar-1-3",
+            "domain": "grammar",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The subject of the sentence is 'One', which is singular, requiring a singular verb 'is' for subject-verb agreement.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "reading-1-3",
+            "domain": "reading",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The passage consistently argues that having too many choices, or a wide range of options, can lead to unhappiness, stress, and regret, rather than satisfaction.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          }
+        ],
+        "verdict": "pass"
+      },
+      "confidence": 0.8,
+      "evidence": [
+        "attempted=3",
+        "correct=3",
+        "pool_approved=20",
+        "vocabulary-1-3",
+        "grammar-1-3",
+        "reading-1-3"
+      ],
+      "unresolved": []
+    },
+    {
+      "lane_id": "lane-solve-L4",
+      "item_id": "level:4",
+      "result": {
+        "level": 4,
+        "attempts": 3,
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0,
+        "item_results": [
+          {
+            "item_id": "vocabulary-L4-fill-msfwz4fx-0",
+            "domain": "vocabulary",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The Korean words '근면한' and '성실한' both translate to 'diligent' in English, meaning hardworking and conscientious.",
+            "flags": [
+              "OK",
+              "AMBIGUOUS"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "grammar-L4-fill-msfwz4fx-2",
+            "domain": "grammar",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "This is a Type 2 conditional sentence, which uses 'If + past simple' in the condition clause and 'would + base form' in the main clause to express an unreal or hypothetical situation in the present or future.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "reading-L4-fill-msfwz4fx-5",
+            "domain": "reading",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The passage contrasts the quick, pre-programmed development of other mammals (which limits their adaptability) with the long period of helplessness in humans due to an incomplete, 'livewired' brain. It argues that this incompleteness is pre",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          }
+        ],
+        "verdict": "pass"
+      },
+      "confidence": 0.8,
+      "evidence": [
+        "attempted=3",
+        "correct=3",
+        "pool_approved=18",
+        "vocabulary-L4-fill-msfwz4fx-0",
+        "grammar-L4-fill-msfwz4fx-2",
+        "reading-L4-fill-msfwz4fx-5"
+      ],
+      "unresolved": []
+    },
+    {
+      "lane_id": "lane-solve-L5",
+      "item_id": "level:5",
+      "result": {
+        "level": 5,
+        "attempts": 3,
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0,
+        "item_results": [
+          {
+            "item_id": "vocabulary-L5-fill-msfx02ht-0",
+            "domain": "vocabulary",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The word 'ubiquitous' means present, appearing, or found everywhere, which perfectly matches the Korean meaning '어디에나 있는, 아주 흔한'.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "grammar-L5-fill-msfx02ht-2",
+            "domain": "grammar",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "After a preposition ('on'), the verb must be in its gerund (-ing) form.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "reading-L5-fill-msfx02ht-5",
+            "domain": "reading",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The passage's primary purpose is to explain the meanings of various idiomatic expressions that include the word 'hand'.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          }
+        ],
+        "verdict": "pass"
+      },
+      "confidence": 0.8,
+      "evidence": [
+        "attempted=3",
+        "correct=3",
+        "pool_approved=19",
+        "vocabulary-L5-fill-msfx02ht-0",
+        "grammar-L5-fill-msfx02ht-2",
+        "reading-L5-fill-msfx02ht-5"
+      ],
+      "unresolved": []
+    },
+    {
+      "lane_id": "lane-solve-L6",
+      "item_id": "level:6",
+      "result": {
+        "level": 6,
+        "attempts": 3,
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0,
+        "item_results": [
+          {
+            "item_id": "vocabulary-L6-fill-msfx10co-0",
+            "domain": "vocabulary",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The Korean phrase '어디에나 있는, 아주 흔한' translates to 'present everywhere, very common,' which perfectly matches the definition of 'ubiquitous.'",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "grammar-L6-fill-msfx10co-2",
+            "domain": "grammar",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "When a negative adverbial phrase like 'Not until' begins a sentence, it requires subject-auxiliary inversion. For simple past tense, this means using 'did' + subject + base form of the verb.",
+            "flags": [
+              "OK"
+            ],
+            "model": "gemini-2.5-flash"
+          },
+          {
+            "item_id": "reading-L6-fill-msfx10co-5",
+            "domain": "reading",
+            "chosen": "0",
+            "gold": "0",
+            "is_correct": true,
+            "solver_note": "The passage introduces the RFID tracking nametags in Texas schools, explains the reasons for their implementation (financial benefits), and then delves into the various perspectives and controversies surrounding them, including privacy conc",
+            "flags": [
+              "OK",
+              "AMBIGUOUS"
+            ],
+            "model": "gemini-2.5-flash"
+          }
+        ],
+        "verdict": "pass"
+      },
+      "confidence": 0.8,
+      "evidence": [
+        "attempted=3",
+        "correct=3",
+        "pool_approved=18",
+        "vocabulary-L6-fill-msfx10co-0",
+        "grammar-L6-fill-msfx10co-2",
+        "reading-L6-fill-msfx10co-5"
+      ],
+      "unresolved": []
+    }
+  ]
+}

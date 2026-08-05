@@ -1,0 +1,61 @@
+{
+  "lane_id": "lane-solve-L2",
+  "item_id": "level:2",
+  "result": {
+    "level": 2,
+    "attempts": 3,
+    "correct": 3,
+    "total": 3,
+    "accuracy": 1.0,
+    "item_results": [
+      {
+        "item_id": "vocabulary-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean words '도착하다' and '도달하다' both mean 'to arrive' or 'to reach'.",
+        "flags": [
+          "OK",
+          "AMBIGUOUS"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-1",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The subject \"My brother\" is third-person singular, and the adverb \"often\" indicates a habitual action, requiring the simple present tense form \"plays\".",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-1",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The letter's main purpose is for Michael's mother to request an extension for his homework deadline from Ms. White.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      }
+    ],
+    "verdict": "pass"
+  },
+  "confidence": 0.8,
+  "evidence": [
+    "attempted=3",
+    "correct=3",
+    "pool_approved=37",
+    "vocabulary-1",
+    "grammar-1",
+    "reading-1"
+  ],
+  "unresolved": []
+}

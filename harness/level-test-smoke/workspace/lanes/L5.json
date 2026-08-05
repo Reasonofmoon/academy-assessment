@@ -1,0 +1,60 @@
+{
+  "lane_id": "lane-solve-L5",
+  "item_id": "level:5",
+  "result": {
+    "level": 5,
+    "attempts": 3,
+    "correct": 3,
+    "total": 3,
+    "accuracy": 1.0,
+    "item_results": [
+      {
+        "item_id": "vocabulary-L5-fill-msfx02ht-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The word 'ubiquitous' means present, appearing, or found everywhere, which perfectly matches the Korean meaning '어디에나 있는, 아주 흔한'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L5-fill-msfx02ht-2",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "After a preposition ('on'), the verb must be in its gerund (-ing) form.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L5-fill-msfx02ht-5",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage's primary purpose is to explain the meanings of various idiomatic expressions that include the word 'hand'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      }
+    ],
+    "verdict": "pass"
+  },
+  "confidence": 0.8,
+  "evidence": [
+    "attempted=3",
+    "correct=3",
+    "pool_approved=19",
+    "vocabulary-L5-fill-msfx02ht-0",
+    "grammar-L5-fill-msfx02ht-2",
+    "reading-L5-fill-msfx02ht-5"
+  ],
+  "unresolved": []
+}

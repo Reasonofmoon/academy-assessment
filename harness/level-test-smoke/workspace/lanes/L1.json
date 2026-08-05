@@ -1,0 +1,60 @@
+{
+  "lane_id": "lane-solve-L1",
+  "item_id": "level:1",
+  "result": {
+    "level": 1,
+    "attempts": 3,
+    "correct": 3,
+    "total": 3,
+    "accuracy": 1.0,
+    "item_results": [
+      {
+        "item_id": "vocabulary-L1-fill-msfwxxgr-0",
+        "domain": "vocabulary",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The Korean word '행복한' directly translates to 'Happy' in English.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L1-fill-msfwxxgr-3",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The subject 'She' is third-person singular, which requires the verb 'is' in the simple present tense.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L1-fill-msfwxxgr-6",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage details Nathaniel Adams Cole's life from learning piano and forming groups to becoming a solo vocalist and releasing albums, which comprehensively describes his musical journey.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      }
+    ],
+    "verdict": "pass"
+  },
+  "confidence": 0.8,
+  "evidence": [
+    "attempted=3",
+    "correct=3",
+    "pool_approved=18",
+    "vocabulary-L1-fill-msfwxxgr-0",
+    "grammar-L1-fill-msfwxxgr-3",
+    "reading-L1-fill-msfwxxgr-6"
+  ],
+  "unresolved": []
+}

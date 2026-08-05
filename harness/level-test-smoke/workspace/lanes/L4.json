@@ -1,0 +1,61 @@
+{
+  "lane_id": "lane-solve-L4",
+  "item_id": "level:4",
+  "result": {
+    "level": 4,
+    "attempts": 3,
+    "correct": 3,
+    "total": 3,
+    "accuracy": 1.0,
+    "item_results": [
+      {
+        "item_id": "vocabulary-L4-fill-msfwz4fx-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean words '근면한' and '성실한' both translate to 'diligent' in English, meaning hardworking and conscientious.",
+        "flags": [
+          "OK",
+          "AMBIGUOUS"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L4-fill-msfwz4fx-2",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "This is a Type 2 conditional sentence, which uses 'If + past simple' in the condition clause and 'would + base form' in the main clause to express an unreal or hypothetical situation in the present or future.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L4-fill-msfwz4fx-5",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage contrasts the quick, pre-programmed development of other mammals (which limits their adaptability) with the long period of helplessness in humans due to an incomplete, 'livewired' brain. It argues that this incompleteness is pre",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      }
+    ],
+    "verdict": "pass"
+  },
+  "confidence": 0.8,
+  "evidence": [
+    "attempted=3",
+    "correct=3",
+    "pool_approved=18",
+    "vocabulary-L4-fill-msfwz4fx-0",
+    "grammar-L4-fill-msfwz4fx-2",
+    "reading-L4-fill-msfwz4fx-5"
+  ],
+  "unresolved": []
+}

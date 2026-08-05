@@ -1,0 +1,61 @@
+{
+  "lane_id": "lane-solve-L6",
+  "item_id": "level:6",
+  "result": {
+    "level": 6,
+    "attempts": 3,
+    "correct": 3,
+    "total": 3,
+    "accuracy": 1.0,
+    "item_results": [
+      {
+        "item_id": "vocabulary-L6-fill-msfx10co-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean phrase '어디에나 있는, 아주 흔한' translates to 'present everywhere, very common,' which perfectly matches the definition of 'ubiquitous.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L6-fill-msfx10co-2",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "When a negative adverbial phrase like 'Not until' begins a sentence, it requires subject-auxiliary inversion. For simple past tense, this means using 'did' + subject + base form of the verb.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L6-fill-msfx10co-5",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage introduces the RFID tracking nametags in Texas schools, explains the reasons for their implementation (financial benefits), and then delves into the various perspectives and controversies surrounding them, including privacy conc",
+        "flags": [
+          "OK",
+          "AMBIGUOUS"
+        ],
+        "model": "gemini-2.5-flash"
+      }
+    ],
+    "verdict": "pass"
+  },
+  "confidence": 0.8,
+  "evidence": [
+    "attempted=3",
+    "correct=3",
+    "pool_approved=18",
+    "vocabulary-L6-fill-msfx10co-0",
+    "grammar-L6-fill-msfx10co-2",
+    "reading-L6-fill-msfx10co-5"
+  ],
+  "unresolved": []
+}
