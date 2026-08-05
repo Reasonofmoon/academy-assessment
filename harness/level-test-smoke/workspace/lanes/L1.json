@@ -14,7 +14,7 @@
         "chosen": "1",
         "gold": "1",
         "is_correct": true,
-        "solver_note": "The Korean word '행복한' directly translates to 'Happy' in English.",
+        "solver_note": "The Korean word '행복한' translates directly to 'Happy' in English.",
         "flags": [
           "OK"
         ],
@@ -26,19 +26,19 @@
         "chosen": "1",
         "gold": "1",
         "is_correct": true,
-        "solver_note": "The subject 'She' is third-person singular, which requires the verb 'is' in the simple present tense.",
+        "solver_note": "The subject 'She' is third-person singular, which requires the verb 'is' for the present tense of 'to be'.",
         "flags": [
           "OK"
         ],
         "model": "gemini-2.5-flash"
       },
       {
-        "item_id": "reading-L1-fill-msfwxxgr-6",
+        "item_id": "reading-L1-elem-msg0um01-0",
         "domain": "reading",
         "chosen": "0",
         "gold": "0",
         "is_correct": true,
-        "solver_note": "The passage details Nathaniel Adams Cole's life from learning piano and forming groups to becoming a solo vocalist and releasing albums, which comprehensively describes his musical journey.",
+        "solver_note": "The passage introduces Max, describes him, talks about daily activities with him, and expresses love for him. All these details revolve around 'My pet dog, Max', making it the main topic.",
         "flags": [
           "OK"
         ],
@@ -51,10 +51,10 @@
   "evidence": [
     "attempted=3",
     "correct=3",
-    "pool_approved=18",
+    "pool_approved=20",
     "vocabulary-L1-fill-msfwxxgr-0",
     "grammar-L1-fill-msfwxxgr-3",
-    "reading-L1-fill-msfwxxgr-6"
+    "reading-L1-elem-msg0um01-0"
   ],
   "unresolved": []
 }

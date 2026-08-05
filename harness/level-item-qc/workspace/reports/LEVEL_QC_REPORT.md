@@ -1,6 +1,6 @@
 # Level item QC report
 
-- **Generated:** 2026-08-05T11:26:09.954488+00:00
+- **Generated:** 2026-08-05T11:46:50.239459+00:00
 - **Harness:** level-item-qc
 - **Overall:** `pass`
 - **Policy:** min_per_domain=3 · min_total=9 · allow_empty=False
@@ -10,7 +10,7 @@
 
 | Level | Verdict | Active | Appr | Pend | Vocab | Gram | Read | Err | Warn |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| L1 | **pass** | 18 | 18 | 0 | 6 | 6 | 6 | 0 | 0 |
+| L1 | **pass** | 20 | 20 | 0 | 6 | 6 | 8 | 0 | 0 |
 | L2 | **pass** | 37 | 37 | 0 | 13 | 12 | 12 | 0 | 0 |
 | L3 | **pass** | 20 | 20 | 0 | 6 | 7 | 7 | 0 | 0 |
 | L4 | **pass** | 18 | 18 | 0 | 6 | 6 | 6 | 0 | 0 |

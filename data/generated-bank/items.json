@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-05T11:26:09.717Z",
+  "updatedAt": "2026-08-05T11:46:42.544Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -2010,12 +2010,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:57:18.914Z",
-      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T11:46:26.628Z",
       "createdBy": "level-fill-qc",
       "grade": "초5",
-      "batchId": "level-fill-L1-1785923838891"
+      "batchId": "level-fill-L1-1785923838891",
+      "reviewedAt": "2026-08-05T11:46:26.628Z",
+      "reviewedBy": "l1-reading-refresh",
+      "reviewNote": "Pre-curation L1 passage; replaced by elementary preset pack"
     },
     {
       "id": "reading-L1-fill-msfwxxgr-7",
@@ -2052,12 +2055,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:57:18.914Z",
-      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T11:46:26.660Z",
       "createdBy": "level-fill-qc",
       "grade": "초5",
-      "batchId": "level-fill-L1-1785923838891"
+      "batchId": "level-fill-L1-1785923838891",
+      "reviewedAt": "2026-08-05T11:46:26.660Z",
+      "reviewedBy": "l1-reading-refresh",
+      "reviewNote": "Pre-curation L1 passage; replaced by elementary preset pack"
     },
     {
       "id": "reading-L1-fill-msfwxxgr-8",
@@ -2094,12 +2100,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:57:18.914Z",
-      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-05T11:46:26.685Z",
       "createdBy": "level-fill-qc",
       "grade": "초5",
-      "batchId": "level-fill-L1-1785923838891"
+      "batchId": "level-fill-L1-1785923838891",
+      "reviewedAt": "2026-08-05T11:46:26.685Z",
+      "reviewedBy": "l1-reading-refresh",
+      "reviewNote": "Pre-curation L1 passage; replaced by elementary preset pack"
     },
     {
       "id": "vocabulary-L4-fill-msfwz4fx-0",
@@ -5482,6 +5491,231 @@
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785925924788"
+    },
+    {
+      "id": "reading-L1-elem-msg0um01-0",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the passage mostly about?",
+      "options": [
+        "My pet dog, Max.",
+        "How to feed a dog.",
+        "Playing in the park.",
+        "Where Max sleeps."
+      ],
+      "answer": "0",
+      "explanation": "이 글은 화자가 키우는 강아지 Max에 대한 전반적인 이야기를 다루고 있습니다. Max의 이름, 생김새, 함께하는 활동 등 강아지에 대한 내용이 주를 이룹니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "I have a small dog. His name is Max. Max is brown and white. Every morning, I give Max food and water. After school, I walk with Max in the park. Max likes to run and play with a ball. On rainy days, we stay home. Max sleeps next to my bed. I love my dog very much.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T11:46:42.543Z",
+      "updatedAt": "2026-08-05T11:46:42.543Z",
+      "createdBy": "l1-reading-refresh",
+      "grade": "초1",
+      "batchId": "l1-elem-reading-1785930402529"
+    },
+    {
+      "id": "reading-L1-elem-msg0um01-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What class does Mina like the most?",
+      "options": [
+        "Art",
+        "English",
+        "Math",
+        "Soccer"
+      ],
+      "answer": "0",
+      "explanation": "지문에 \"Mina likes art class the most.\"라고 명시되어 있어, Mina가 가장 좋아하는 과목은 미술임을 알 수 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Mina goes to school at eight o'clock. She has English, math, and art. At lunch, she eats rice and soup with her friends. After lunch, they play soccer outside. Mina likes art class the most. She draws animals and flowers. At three o'clock, she goes home. She does her homework and helps her mother.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T11:46:42.543Z",
+      "updatedAt": "2026-08-05T11:46:42.543Z",
+      "createdBy": "l1-reading-refresh",
+      "grade": "초1",
+      "batchId": "l1-elem-reading-1785930402529"
+    },
+    {
+      "id": "reading-L1-elem-msg0um01-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "How does the family feel about their day at the park?",
+      "options": [
+        "They feel happy.",
+        "They feel tired.",
+        "They feel hungry.",
+        "They feel bored."
+      ],
+      "answer": "0",
+      "explanation": "지문에 \"It is a happy day. We want to come again next weekend.\"라고 언급되어 가족들이 공원에서 즐거운 시간을 보냈음을 알 수 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "On Saturday, our family goes to the park for a picnic. Father carries a big basket. Mother makes sandwiches and fruit. My sister and I bring a ball and a kite. We eat under a big tree. Then we fly the kite high in the sky. It is a happy day. We want to come again next weekend.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T11:46:42.543Z",
+      "updatedAt": "2026-08-05T11:46:42.543Z",
+      "createdBy": "l1-reading-refresh",
+      "grade": "초1",
+      "batchId": "l1-elem-reading-1785930402529"
+    },
+    {
+      "id": "reading-L1-elem-msg0um01-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "Why did the writer write this passage?",
+      "options": [
+        "To describe his best friend, Tom.",
+        "To tell about rainy days.",
+        "To explain how to ride a bike.",
+        "To ask for help with English."
+      ],
+      "answer": "0",
+      "explanation": "이 글은 화자가 가장 친한 친구인 Tom이 어떤 사람인지, 그리고 Tom과 함께 무엇을 하는지 소개하며 우정에 대해 이야기하는 것이 주된 목적입니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -1.95,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "Tom is my best friend. We are in the same class. Tom is kind and funny. He always helps me with English words. After school, we ride our bikes together. Sometimes we read comic books. Tom does not like rainy days because we cannot play outside. I am happy to have a good friend like Tom.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T11:46:42.543Z",
+      "updatedAt": "2026-08-05T11:46:42.543Z",
+      "createdBy": "l1-reading-refresh",
+      "grade": "초1",
+      "batchId": "l1-elem-reading-1785930402529"
+    },
+    {
+      "id": "reading-L1-elem-msg0um01-4",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "How many books can the writer borrow at one time?",
+      "options": [
+        "Two books",
+        "One book",
+        "Three books",
+        "Many books"
+      ],
+      "answer": "0",
+      "explanation": "지문에 \"I can borrow two books for one week.\"라고 명시되어 있어, 한 번에 두 권의 책을 빌릴 수 있음을 알 수 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -1.85,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Our class visits the library every Friday. The library is quiet and clean. I look for animal books on the big shelf. The librarian smiles and helps me. I can borrow two books for one week. At home, I read before bed. Books teach me new things. I want to read more next week.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T11:46:42.543Z",
+      "updatedAt": "2026-08-05T11:46:42.543Z",
+      "createdBy": "l1-reading-refresh",
+      "grade": "초1",
+      "batchId": "l1-elem-reading-1785930402529"
     }
   ]
 }
