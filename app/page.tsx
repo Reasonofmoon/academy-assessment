@@ -7,7 +7,7 @@ import DomainSelector from "@/components/DomainSelector";
 import QuestionList from "@/components/QuestionList";
 import ResultReport from "@/components/ResultReport";
 import LevelPassagePanel from "@/components/LevelPassagePanel";
-import SlotQaReport, { type SlotQaReportData } from "@/components/SlotQaReport";
+import { type SlotQaReportData } from "@/components/SlotQaReport";
 import {
   type StudentInfo,
   type Domain,
@@ -345,70 +345,32 @@ export default function HomePage() {
             ← 정보/영역 다시 설정
           </button>
 
-          {irtMeta && (
-            <div className="no-print rounded-md border border-amber-200 bg-amber-50 p-3 text-xs text-amber-950">
-              <p className="font-semibold">
-                IRT 생성 메타 · L{irtMeta.level} · 목표 θ=
-                {irtMeta.targetTheta.toFixed(2)} · CEFR {irtMeta.cefr}
-              </p>
-              {irtMeta.bank && (
-                <p className="mt-1 text-amber-900/80">
-                  예시은행 v{irtMeta.bank.version}: 어휘 {irtMeta.bank.vocab} · 독해{" "}
-                  {irtMeta.bank.reading} (echobridge curated sample)
-                </p>
-              )}
-              {irtMeta.readingMode === "preset_passages" &&
-                irtMeta.passagesUsed &&
-                irtMeta.passagesUsed.length > 0 && (
-                  <p className="mt-1 text-indigo-900/90">
-                    고정 지문:{" "}
-                    {irtMeta.passagesUsed
-                      .map((p) => `${p.title} (b=${p.targetB})`)
-                      .join(" · ")}
-                  </p>
-                )}
-              {irtMeta.slotPlan && irtMeta.slotPlan.length > 0 && (
-                <p className="mt-1 font-mono text-[11px] text-indigo-900/70">
-                  slots:{" "}
-                  {irtMeta.slotPlan
-                    .map((s) => `#${s.slot}:${s.questionType}`)
-                    .join(" · ")}
-                </p>
-              )}
-              {irtMeta.items && irtMeta.items.length > 0 && (
-                <p className="mt-1 font-mono text-[11px] text-amber-900/70">
-                  b=[{irtMeta.items.map((i) => i.irt.b.toFixed(2)).join(", ")}]
-                </p>
-              )}
-              {irtMeta.slotQa && (
-                <div className="mt-3">
-                  <SlotQaReport report={irtMeta.slotQa} />
-                </div>
-              )}
-              <p className="mt-2 text-amber-800/90">
-                {irtMeta.disclaimer ??
-                  "a/b/c는 예비 추정값입니다. 절대 등급 인증용 아님."}
-              </p>
-              <div className="mt-3 flex flex-wrap items-center gap-2">
+          {/* Teacher-only: collapsed by default — no IRT/slot QA chrome for students */}
+          {irtMeta?.items && irtMeta.items.length > 0 && (
+            <details className="no-print group rounded-md border border-stone-200 bg-white text-xs text-stone-600">
+              <summary className="cursor-pointer select-none px-3 py-2 text-stone-500 hover:text-stone-700">
+                교사 도구
+              </summary>
+              <div className="flex flex-wrap items-center gap-2 border-t border-stone-100 px-3 py-2">
                 <button
                   type="button"
                   onClick={() => void handleSaveToBank()}
-                  disabled={isSavingBank || !irtMeta.items?.length}
+                  disabled={isSavingBank}
                   className="rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-white disabled:opacity-40"
                 >
                   {isSavingBank ? "저장 중…" : "bank에 저장 (검수 대기)"}
                 </button>
                 <Link
                   href="/review"
-                  className="rounded-md border border-amber-300 bg-white px-3 py-1.5 text-xs font-medium text-amber-950"
+                  className="rounded-md border border-stone-300 bg-white px-3 py-1.5 text-xs font-medium text-stone-700"
                 >
-                  검수 화면 열기
+                  검수 화면
                 </Link>
+                {bankSaveMsg && (
+                  <span className="text-emerald-700">{bankSaveMsg}</span>
+                )}
               </div>
-              {bankSaveMsg && (
-                <p className="mt-2 text-emerald-800">{bankSaveMsg}</p>
-              )}
-            </div>
+            </details>
           )}
 
           <QuestionList
