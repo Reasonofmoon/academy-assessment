@@ -241,7 +241,12 @@ export function selectSessionPassages(opts: {
 
 /**
  * Assign question types across items.
- * Prefer explicit slot list (from config or request); else round-robin.
+ *
+ * Level-test policy:
+ * - Prefer **unique passages** first (one item per passage while stock lasts).
+ * - When a passage must be reused, rotate questionTypes and avoid stacking
+ *   main_idea on the same passage.
+ * - Prefer explicit slot list (from config or request) for type order only.
  */
 export function planReadingItemSlots(
   passages: PresetPassage[],
@@ -259,17 +264,54 @@ export function planReadingItemSlots(
     slot: number;
   }> = [];
 
+  /** How many times each passage id has already been used in this plan. */
+  const useCount = new Map<string, number>();
+  /** Types already used per passage id. */
+  const usedTypes = new Map<string, Set<ReadingQuestionType>>();
+
   for (let i = 0; i < totalItems; i++) {
-    const passage = passages[i % passages.length];
+    // Unique-first: assign each passage once before any reuse.
+    let passage: PresetPassage;
+    if (i < passages.length) {
+      passage = passages[i];
+    } else {
+      // Prefer least-used passage to spread load.
+      passage = [...passages].sort((a, b) => {
+        const ca = useCount.get(a.id) ?? 0;
+        const cb = useCount.get(b.id) ?? 0;
+        return ca - cb || a.order - b.order;
+      })[0];
+    }
+
+    const prev = usedTypes.get(passage.id) ?? new Set<ReadingQuestionType>();
     let questionType: ReadingQuestionType;
-    if (questionTypeSlots && questionTypeSlots.length > 0) {
+    if (questionTypeSlots && questionTypeSlots.length > 0 && i < passages.length) {
+      // First pass: honor configured slots when each item has its own passage.
       questionType = questionTypeSlots[i % questionTypeSlots.length];
     } else {
-      const preferred = passage.suggestedQuestionTypes?.length
-        ? passage.suggestedQuestionTypes
-        : types;
-      questionType = preferred[i % preferred.length] as ReadingQuestionType;
+      const preferred = (
+        passage.suggestedQuestionTypes?.length
+          ? passage.suggestedQuestionTypes
+          : types
+      ) as ReadingQuestionType[];
+      // Pick first preferred type not yet used on this passage.
+      questionType =
+        preferred.find((t) => !prev.has(t)) ??
+        types.find((t) => !prev.has(t)) ??
+        preferred[prev.size % preferred.length] ??
+        "detail";
+      // Avoid second main_idea on same passage when alternatives exist.
+      if (prev.has("main_idea") && questionType === "main_idea") {
+        questionType =
+          preferred.find((t) => t !== "main_idea" && !prev.has(t)) ??
+          types.find((t) => t !== "main_idea") ??
+          "detail";
+      }
     }
+
+    useCount.set(passage.id, (useCount.get(passage.id) ?? 0) + 1);
+    prev.add(questionType);
+    usedTypes.set(passage.id, prev);
     slots.push({ passage, questionType, slot: i + 1 });
   }
   return slots;

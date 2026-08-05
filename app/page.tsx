@@ -106,16 +106,24 @@ export default function HomePage() {
           mcqOnly: true,
           includeIrtMeta: true,
           ...(readingSelected
-            ? {
-                countsByDomain: { reading: readingItemCount },
-                questionTypeSlots: questionTypeSlots.slice(0, readingItemCount),
-                ...(passageIds.length > 0
-                  ? {
-                      passageIds,
-                      passagesPerSession: Math.min(3, passageIds.length),
-                    }
-                  : {}),
-              }
+            ? (() => {
+                // Level-test: prefer ≤1 item per selected passage (no same-passage spam).
+                const nPass = Math.max(1, passageIds.length);
+                const readingCount = Math.min(readingItemCount, nPass);
+                return {
+                  countsByDomain: { reading: readingCount },
+                  questionTypeSlots: questionTypeSlots.slice(0, readingCount),
+                  ...(passageIds.length > 0
+                    ? {
+                        passageIds,
+                        // Load as many unique presets as items when possible.
+                        passagesPerSession: Math.min(5, Math.max(nPass, readingCount)),
+                      }
+                    : {
+                        passagesPerSession: Math.min(5, readingCount),
+                      }),
+                };
+              })()
             : {}),
         }),
       });

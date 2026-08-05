@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-05T11:46:42.544Z",
+  "updatedAt": "2026-08-05T23:20:01.039Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -3627,12 +3627,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:28:35.373Z",
-      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T23:18:56.745Z",
       "createdBy": "level-fill-qc",
       "grade": "초1",
-      "batchId": "level-fill-L1-1785925715358"
+      "batchId": "level-fill-L1-1785925715358",
+      "reviewedAt": "2026-08-05T23:18:56.745Z",
+      "reviewedBy": "level-test-reading-dedupe",
+      "reviewNote": "Duplicate main-idea style item on same passage (level-test uniqueness)"
     },
     {
       "id": "reading-L1-fill-msfy25cu-7",
@@ -3669,12 +3672,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:28:35.373Z",
-      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T23:19:41.408Z",
       "createdBy": "level-fill-qc",
       "grade": "초1",
-      "batchId": "level-fill-L1-1785925715358"
+      "batchId": "level-fill-L1-1785925715358",
+      "reviewedAt": "2026-08-05T23:19:41.408Z",
+      "reviewedBy": "level-test-reading-dedupe",
+      "reviewNote": "Same passage + same type/stem as another L1 item"
     },
     {
       "id": "reading-L1-fill-msfy25cu-8",
@@ -3711,12 +3717,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:28:35.373Z",
-      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T23:20:01.039Z",
       "createdBy": "level-fill-qc",
       "grade": "초1",
-      "batchId": "level-fill-L1-1785925715358"
+      "batchId": "level-fill-L1-1785925715358",
+      "reviewedAt": "2026-08-05T23:20:01.039Z",
+      "reviewedBy": "level-test-reading-dedupe",
+      "reviewNote": "Level-test: one item per passage only"
     },
     {
       "id": "vocabulary-L2-fill-msfy2rbz-0",
@@ -5716,6 +5725,246 @@
       "createdBy": "l1-reading-refresh",
       "grade": "초1",
       "batchId": "l1-elem-reading-1785930402529"
+    },
+    {
+      "id": "reading-L1-unique-msgpl4lq-0",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main idea of the passage?",
+      "options": [
+        "The writer's pet dog",
+        "Max's favorite toys",
+        "Where Max sleeps",
+        "Walking in the park"
+      ],
+      "answer": "0",
+      "explanation": "이 글은 '나'의 애완견 Max에 대한 전반적인 내용을 소개하고 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "I have a small dog. His name is Max. Max is brown and white. Every morning, I give Max food and water. After school, I walk with Max in the park. Max likes to run and play with a ball. On rainy days, we stay home. Max sleeps next to my bed. I love my dog very much.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "quarantine",
+      "createdAt": "2026-08-05T23:19:10.498Z",
+      "updatedAt": "2026-08-05T23:19:41.487Z",
+      "createdBy": "level-test-reading-dedupe",
+      "grade": "초1",
+      "batchId": "l1-unique-1785971950478",
+      "reviewedAt": "2026-08-05T23:19:41.487Z",
+      "reviewedBy": "level-test-reading-dedupe",
+      "reviewNote": "Same passage + same type/stem as another L1 item"
+    },
+    {
+      "id": "reading-L1-unique-msgpl4lq-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What does Mina do after lunch?",
+      "options": [
+        "She plays soccer.",
+        "She goes home.",
+        "She eats rice and soup.",
+        "She draws animals."
+      ],
+      "answer": "0",
+      "explanation": "지문에 따르면 Mina는 점심 식사 후에 친구들과 축구를 합니다. (\"After lunch, they play soccer outside.\" 부분에서 점심 식사 후 활동을 알 수 있습니다.)",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.3,
+        "b": -2.1,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Mina goes to school at eight o'clock. She has English, math, and art. At lunch, she eats rice and soup with her friends. After lunch, they play soccer outside. Mina likes art class the most. She draws animals and flowers. At three o'clock, she goes home. She does her homework and helps her mother.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "quarantine",
+      "createdAt": "2026-08-05T23:19:10.498Z",
+      "updatedAt": "2026-08-05T23:19:41.451Z",
+      "createdBy": "level-test-reading-dedupe",
+      "grade": "초1",
+      "batchId": "l1-unique-1785971950478",
+      "reviewedAt": "2026-08-05T23:19:41.451Z",
+      "reviewedBy": "level-test-reading-dedupe",
+      "reviewNote": "Same passage + same type/stem as another L1 item"
+    },
+    {
+      "id": "reading-L1-unique-msgpl4lq-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "How does the family feel about their picnic?",
+      "options": [
+        "They are happy.",
+        "They are tired.",
+        "They are bored.",
+        "They are hungry."
+      ],
+      "answer": "0",
+      "explanation": "지문에서 \"It is a happy day. We want to come again next weekend.\"라고 언급되어 가족들이 소풍에 대해 행복하게 느낀다는 것을 추론할 수 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.4,
+        "b": -2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "On Saturday, our family goes to the park for a picnic. Father carries a big basket. Mother makes sandwiches and fruit. My sister and I bring a ball and a kite. We eat under a big tree. Then we fly the kite high in the sky. It is a happy day. We want to come again next weekend.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "quarantine",
+      "createdAt": "2026-08-05T23:19:10.498Z",
+      "updatedAt": "2026-08-05T23:19:41.526Z",
+      "createdBy": "level-test-reading-dedupe",
+      "grade": "초1",
+      "batchId": "l1-unique-1785971950478",
+      "reviewedAt": "2026-08-05T23:19:41.526Z",
+      "reviewedBy": "level-test-reading-dedupe",
+      "reviewNote": "Same passage + same type/stem as another L1 item"
+    },
+    {
+      "id": "reading-L1-unique-msgpl4lq-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "Why does the writer like Tom?",
+      "options": [
+        "Tom is kind and helps with English words.",
+        "Tom rides bikes after school.",
+        "Tom does not like rainy days.",
+        "Tom reads comic books."
+      ],
+      "answer": "0",
+      "explanation": "글쓴이는 Tom이 친절하고 영어 단어를 도와주기 때문에 그를 좋아한다고 언급했습니다. (\"Tom is kind and funny. He always helps me with English words.\" 부분에서 이유를 찾을 수 있습니다.)",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.5,
+        "b": -1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "Tom is my best friend. We are in the same class. Tom is kind and funny. He always helps me with English words. After school, we ride our bikes together. Sometimes we read comic books. Tom does not like rainy days because we cannot play outside. I am happy to have a good friend like Tom.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "quarantine",
+      "createdAt": "2026-08-05T23:19:10.498Z",
+      "updatedAt": "2026-08-05T23:19:41.563Z",
+      "createdBy": "level-test-reading-dedupe",
+      "grade": "초1",
+      "batchId": "l1-unique-1785971950478",
+      "reviewedAt": "2026-08-05T23:19:41.563Z",
+      "reviewedBy": "level-test-reading-dedupe",
+      "reviewNote": "Same passage + same type/stem as another L1 item"
+    },
+    {
+      "id": "reading-L1-unique-msgpl4lq-4",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "How many books can the writer borrow at one time?",
+      "options": [
+        "Two books",
+        "One book",
+        "Three books",
+        "Many books"
+      ],
+      "answer": "0",
+      "explanation": "지문에서 \"I can borrow two books for one week.\"라고 명확하게 언급되어, 글쓴이가 한 번에 두 권의 책을 빌릴 수 있음을 알 수 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.6,
+        "b": -1.85,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Our class visits the library every Friday. The library is quiet and clean. I look for animal books on the big shelf. The librarian smiles and helps me. I can borrow two books for one week. At home, I read before bed. Books teach me new things. I want to read more next week.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "quarantine",
+      "createdAt": "2026-08-05T23:19:10.498Z",
+      "updatedAt": "2026-08-05T23:19:41.600Z",
+      "createdBy": "level-test-reading-dedupe",
+      "grade": "초1",
+      "batchId": "l1-unique-1785971950478",
+      "reviewedAt": "2026-08-05T23:19:41.600Z",
+      "reviewedBy": "level-test-reading-dedupe",
+      "reviewNote": "Same passage + same type/stem as another L1 item"
     }
   ]
 }

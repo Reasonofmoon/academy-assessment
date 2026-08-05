@@ -76,7 +76,7 @@ export default function LevelPassagePanel({
   const [showSlots, setShowSlots] = useState(false);
   const [pickHint, setPickHint] = useState<string | null>(null);
   /** Max simultaneous preset passages (generation-config maxPassagesPerSession). */
-  const [maxPassages, setMaxPassages] = useState(3);
+  const [maxPassages, setMaxPassages] = useState(5);
 
   const recommendedLevel = GRADE_TO_LEVEL[grade];
   const effectiveLevel = lockLevelToGrade ? recommendedLevel : level;
@@ -113,19 +113,24 @@ export default function LevelPassagePanel({
           typeof (data as { maxPassagesPerSession?: number })
             .maxPassagesPerSession === "number"
             ? (data as { maxPassagesPerSession: number }).maxPassagesPerSession
-            : 3;
+            : 5;
         setMaxPassages(Math.min(5, Math.max(1, maxCap)));
         if (gen) {
-          onItemsPerReadingChange(gen.itemsPerReading);
-          onQuestionTypeSlotsChange(gen.questionTypeSlots ?? []);
-          const n = Math.min(
-            gen.passagesPerSession ?? 2,
+          // Level-test default: select enough unique passages for item count (1:1).
+          const want = Math.min(
+            list.length || 1,
             maxCap,
-            list.length || 1
+            Math.max(gen.passagesPerSession ?? 3, gen.itemsPerReading ?? 3)
           );
-          onPassageIdsChange(list.slice(0, n).map((p) => p.id));
+          onItemsPerReadingChange(Math.min(gen.itemsPerReading, want));
+          onQuestionTypeSlotsChange(
+            (gen.questionTypeSlots ?? []).slice(0, Math.min(gen.itemsPerReading, want))
+          );
+          onPassageIdsChange(list.slice(0, want).map((p) => p.id));
         } else if (list.length > 0) {
-          onPassageIdsChange(list.slice(0, Math.min(2, list.length)).map((p) => p.id));
+          const n = Math.min(5, list.length);
+          onPassageIdsChange(list.slice(0, n).map((p) => p.id));
+          onItemsPerReadingChange(n);
         } else {
           onPassageIdsChange([]);
         }
@@ -303,9 +308,9 @@ export default function LevelPassagePanel({
         </p>
       )}
       <p className="mb-2 text-xs text-stone-500">
-        세션당 지문 <strong>최대 {maxPassages}개</strong>입니다. 기본으로 앞쪽{" "}
-        {Math.min(2, passages.length)}개가 선택되어 있어, 아래 지문을 쓰려면 위 체크를
-        해제하거나 <strong>이 지문만</strong>을 누르세요.
+        레벨테스트: 선택한 지문마다 <strong>문항 1개</strong> (지문 재사용 없음). 지문
+        최대 {maxPassages}개 · 문항 수는 선택 지문 수에 맞춰 생성됩니다. 다른 지문을
+        쓰려면 체크를 바꾸거나 <strong>이 지문만</strong>을 누르세요.
       </p>
 
       <ul className="space-y-2">

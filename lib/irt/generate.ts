@@ -294,7 +294,7 @@ function buildDomainPrompt(args: {
     : `Use mostly multiple_choice (4 options); at most 1 short_answer per domain.`;
 
   return `You are an IRT (Item Response Theory) item writer for a Korean English academy.
-You generate diagnostic items that are psychometrically purposeful — not random quiz trivia.
+You generate LEVEL-PLACEMENT diagnostic items that are psychometrically purposeful — not random quiz trivia.
 
 ## IRT principles you MUST follow
 1. 3PL model: P(θ) = c + (1-c) / (1 + exp(-1.7·a·(θ-b)))
@@ -326,10 +326,13 @@ ${
 - Pattern C (cloze): blank sentence on its own line:
   "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\\nLet's _____ outside."
 - Always set "headword" to the target English word (correct answer lemma).
-- NEVER output only "한글 뜻에 맞는 단어를 고르시오." without the 한글 뜻 line.`
+- NEVER output only "한글 뜻에 맞는 단어를 고르시오." without the 한글 뜻 line.
+- **UNIQUE ANSWER:** distractors must NOT also fit the blank (e.g. avoid She is very _____ today with sad/angry/happy/tired — all can fit). Context must force one best answer.`
     : domain === "grammar"
       ? `GRAMMAR: put any example sentence on a new line after the Korean instruction.
-Use \\n between prompt and example. Keep options short parallel forms.`
+Use \\n between prompt and example. Keep options short parallel forms.
+- If testing 3rd-person -s / be-verbs, the stem MUST state the tense condition in Korean, e.g. "(현재시제)" or "다음 중 현재시제에서 동사 형태가 올바른 문장은?".
+- Do not ask "동사에 -s가 올바르게 쓰인 문장" without tense/context constraints.`
       : `READING: "question" is stem ONLY (no pasted passage). Use clear Korean or English stems.`
 }
 
@@ -459,7 +462,7 @@ ${p.text}
     .map((e, i) => exemplarToPromptBlock(e, i))
     .join("\n\n");
 
-  return `You are an IRT reading-item writer for a Korean English academy.
+  return `You are an IRT reading-item writer for a Korean English academy (LEVEL PLACEMENT TEST).
 
 ## HARD CONSTRAINTS (reading)
 1. You MUST write questions ONLY about the FIXED PASSAGES below.
@@ -473,6 +476,11 @@ ${p.text}
    Set irt.b near θ (±0.5); irt.a in 0.8–2.0; irt.c ≈ 0.25.
 9. explanation in Korean (1–2 sentences).
 10. Do NOT copy style exemplars verbatim.
+11. **LEVEL-TEST UNIQUENESS (critical):**
+    - Each slot has its own passageId — write ONLY about that passage.
+    - Do NOT write near-duplicate stems across items (no repeated "main idea of the passage" with same options pattern).
+    - If questionType is detail/inference/purpose, ask about a **specific fact, reason, or purpose** — not another paraphrase of main idea.
+    - Different passages must produce clearly different questions and option sets.
 
 ## FIXED PASSAGES
 ${passageBlocks}
@@ -570,9 +578,17 @@ async function generateDomainItemsOnce(opts: {
 
   // ── Reading: preset passages ──
   if (opts.domain === "reading") {
+    // Prefer enough unique passages for level-test (one item ↔ one passage when stock allows).
+    const desiredPassages = Math.min(
+      Math.max(
+        opts.passagesPerSession ?? levelCfg.passagesPerSession ?? 2,
+        opts.count
+      ),
+      5
+    );
     const passages = selectSessionPassages({
       level: opts.level,
-      count: opts.passagesPerSession ?? levelCfg.passagesPerSession ?? 2,
+      count: desiredPassages,
       passageIds: opts.passageIds,
     });
     if (passages.length === 0) {

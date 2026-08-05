@@ -65,6 +65,33 @@ export function validateIrtItem(item: IrtGeneratedItem): ValidationResult {
     }
   }
 
+  // Weak cloze: very short blank sentence + all single adjectives/adverbs (often multi-key)
+  if (
+    item.domain === "vocabulary" &&
+    item.type === "multiple_choice" &&
+    item.options?.length === 4 &&
+    /_{2,}|_____/.test(item.question)
+  ) {
+    const lines = item.question.split("\n").map((l) => l.trim()).filter(Boolean);
+    const blankLine = lines.find((l) => /_{2,}|_____/.test(l)) ?? "";
+    const opts = item.options.map((o) => o.trim());
+    const allShortAdj =
+      opts.every((o) => /^[A-Za-z]+$/.test(o) && o.length <= 12) &&
+      blankLine.split(/\s+/).length <= 6;
+    if (allShortAdj && /very\s+_{2,}|very\s+_____|is\s+_{2,}|is\s+_____/i.test(blankLine)) {
+      warnings.push("CLOZE_MULTIKEY_RISK");
+    }
+  }
+
+  // Grammar -s / agreement without tense stated
+  if (
+    item.domain === "grammar" &&
+    /동사에\s*-?s|3인칭|-s가\s*올바/i.test(item.question) &&
+    !/현재시제|과거시제|present\s*tense|past\s*tense/i.test(item.question)
+  ) {
+    warnings.push("GRAMMAR_TENSE_UNSPECIFIED");
+  }
+
   if (SENSITIVE.test(item.question) || item.options?.some((o) => SENSITIVE.test(o))) {
     errors.push("SENSITIVE_CONTENT");
   }
