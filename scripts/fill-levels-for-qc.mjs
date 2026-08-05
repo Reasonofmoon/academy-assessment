@@ -25,7 +25,7 @@ const LEVELS = (arg("--levels", "1,4,5,6") || "")
   .filter((n) => n >= 1 && n <= 6);
 
 const LEVEL_TO_GRADE = {
-  1: "초5",
+  1: "초1",
   2: "중1",
   3: "중3",
   4: "고2",

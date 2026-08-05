@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Grade } from "@/lib/types";
+import { GRADE_TO_LEVEL, LEVEL_GRADE_HINT } from "@/lib/irt/types";
 
 export interface PassagePreview {
   id: string;
@@ -32,13 +33,15 @@ interface LevelPassagePanelProps {
   questionTypeSlots: string[];
   onQuestionTypeSlotsChange: (slots: string[]) => void;
   visible: boolean;
+  /** When true, grade always drives the GLEAS level (recommended for placement). */
+  lockLevelToGrade?: boolean;
 }
 
 const LEVEL_LABELS: Record<number, string> = {
   1: "L1 초등",
   2: "L2 중학",
-  3: "L3 고등",
-  4: "L4 수능",
+  3: "L3 중3·고1",
+  4: "L4 고2–고3",
   5: "L5 토플",
   6: "L6 유학",
 };
@@ -64,12 +67,25 @@ export default function LevelPassagePanel({
   questionTypeSlots,
   onQuestionTypeSlotsChange,
   visible,
+  lockLevelToGrade = false,
 }: LevelPassagePanelProps) {
   const [passages, setPassages] = useState<PassagePreview[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [expanded, setExpanded] = useState<string | null>(null);
   const [showSlots, setShowSlots] = useState(false);
+
+  const recommendedLevel = GRADE_TO_LEVEL[grade];
+  const effectiveLevel = lockLevelToGrade ? recommendedLevel : level;
+
+  // Grade lock: force level to grade mapping whenever grade or lock mode changes.
+  useEffect(() => {
+    if (!visible || !lockLevelToGrade) return;
+    if (level !== recommendedLevel) {
+      onLevelChange(recommendedLevel);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [grade, lockLevelToGrade, visible, recommendedLevel]);
 
   useEffect(() => {
     if (!visible) return;
@@ -78,11 +94,14 @@ export default function LevelPassagePanel({
       setLoading(true);
       setError(null);
       try {
-        const res = await fetch(`/api/passages?level=${level}&full=1`);
+        const res = await fetch(`/api/passages?level=${effectiveLevel}&full=1`);
         const data = await res.json();
         if (!res.ok) throw new Error(data.error ?? "지문 로드 실패");
         if (cancelled) return;
-        const list = (data.passages ?? []) as PassagePreview[];
+        // Defense: only keep passages whose level field matches the requested pack.
+        const list = ((data.passages ?? []) as PassagePreview[]).filter(
+          (p) => !p.level || p.level === effectiveLevel
+        );
         setPassages(list);
         const gen = data.generation as LevelGenConfig | undefined;
         if (gen) {
@@ -95,6 +114,8 @@ export default function LevelPassagePanel({
           onPassageIdsChange(list.slice(0, n).map((p) => p.id));
         } else if (list.length > 0) {
           onPassageIdsChange(list.slice(0, 2).map((p) => p.id));
+        } else {
+          onPassageIdsChange([]);
         }
       } catch (e) {
         if (!cancelled) {
@@ -108,7 +129,7 @@ export default function LevelPassagePanel({
       cancelled = true;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [level, visible, grade]);
+  }, [effectiveLevel, visible, grade]);
 
   if (!visible) return null;
 
@@ -144,26 +165,50 @@ export default function LevelPassagePanel({
         </a>
       </div>
       <p className="mb-3 text-sm text-stone-600">
-        레벨을 고르면 <strong>미리 지정된 지문</strong>이 고정됩니다. AI는 이 지문
+        학년 <strong>{grade}</strong> → 권장 레벨{" "}
+        <strong>
+          L{recommendedLevel} ({LEVEL_GRADE_HINT[recommendedLevel]})
+        </strong>
+        . 해당 레벨의 <strong>큐레이션 지문</strong>만 사용하며, AI는 이 지문
         위에서만 IRT 문항을 생성합니다.
       </p>
 
       <div className="mb-4 flex flex-wrap gap-2">
-        {[1, 2, 3, 4, 5, 6].map((lv) => (
-          <button
-            key={lv}
-            type="button"
-            onClick={() => onLevelChange(lv)}
-            className={`rounded-md px-3 py-1.5 text-sm font-medium transition ${
-              level === lv
-                ? "bg-indigo-700 text-white"
-                : "border border-stone-300 bg-white text-stone-700 hover:border-indigo-400"
-            }`}
-          >
-            {LEVEL_LABELS[lv]}
-          </button>
-        ))}
+        {[1, 2, 3, 4, 5, 6].map((lv) => {
+          const lockedOut = lockLevelToGrade && lv !== recommendedLevel;
+          return (
+            <button
+              key={lv}
+              type="button"
+              disabled={lockedOut}
+              title={
+                lockedOut
+                  ? `${grade}는 L${recommendedLevel} 지문 팩을 사용합니다`
+                  : LEVEL_GRADE_HINT[lv as 1 | 2 | 3 | 4 | 5 | 6]
+              }
+              onClick={() => {
+                if (!lockedOut) onLevelChange(lv);
+              }}
+              className={`rounded-md px-3 py-1.5 text-sm font-medium transition ${
+                effectiveLevel === lv
+                  ? "bg-indigo-700 text-white"
+                  : lockedOut
+                    ? "cursor-not-allowed border border-stone-200 bg-stone-100 text-stone-400"
+                    : "border border-stone-300 bg-white text-stone-700 hover:border-indigo-400"
+              }`}
+            >
+              {LEVEL_LABELS[lv]}
+              {lv === recommendedLevel ? " · 권장" : ""}
+            </button>
+          );
+        })}
       </div>
+      {lockLevelToGrade && (
+        <p className="mb-3 text-xs text-indigo-900/80">
+          학년 연동 모드: 레벨은 학년 매핑으로 고정됩니다. 다른 레벨 지문은 선택할 수
+          없습니다.
+        </p>
+      )}
 
       {/* Item count + slots */}
       <div className="mb-4 rounded-md border border-indigo-100 bg-white/80 p-3 text-sm">

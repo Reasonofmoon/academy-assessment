@@ -17,9 +17,9 @@ export const DOMAIN_LABELS: Record<Domain, string> = {
   reading: "독해",
 };
 
-// 학년 옵션 (초3 ~ 고3)
+// 학년 옵션 (초1 ~ 고3) — 초1·초2는 GLEAS L1(초등) 배치
 export const GRADES = [
-  "초3", "초4", "초5", "초6",
+  "초1", "초2", "초3", "초4", "초5", "초6",
   "중1", "중2", "중3",
   "고1", "고2", "고3",
 ] as const;

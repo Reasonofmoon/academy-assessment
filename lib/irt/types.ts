@@ -98,7 +98,10 @@ export const GenerateIrtRequestSchema = z.object({
 });
 export type GenerateIrtRequest = z.infer<typeof GenerateIrtRequestSchema>;
 
+/** Grade → default GLEAS placement level (also locks reading preset pack). */
 export const GRADE_TO_LEVEL: Record<(typeof GRADES)[number], IrtLevel> = {
+  초1: 1,
+  초2: 1,
   초3: 1,
   초4: 1,
   초5: 1,
@@ -109,6 +112,16 @@ export const GRADE_TO_LEVEL: Record<(typeof GRADES)[number], IrtLevel> = {
   고1: 3,
   고2: 4,
   고3: 4,
+};
+
+/** Short Korean label for UI (grade-aligned level names). */
+export const LEVEL_GRADE_HINT: Record<IrtLevel, string> = {
+  1: "초등 (초1–초6)",
+  2: "중학 (중1–중2)",
+  3: "중3·고1",
+  4: "고2–고3",
+  5: "고급(토플)",
+  6: "고급(유학)",
 };
 
 /** Dimension mix targets (aligned with echobridge DEFAULT_CAT_CONFIG). */

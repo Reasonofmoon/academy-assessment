@@ -44,7 +44,7 @@ export default function HomePage() {
   const [step, setStep] = useState<Step>("setup");
   const [studentInfo, setStudentInfo] = useState<StudentInfo>({
     name: "",
-    grade: "초3",
+    grade: "초1",
     date: todayString(),
     teacher: "",
   });
@@ -276,10 +276,13 @@ export default function HomePage() {
           <StudentForm
             value={studentInfo}
             onChange={(info) => {
+              const prevGrade = studentInfo.grade;
               setStudentInfo(info);
-              // grade → default level when reading not customized yet
-              if (!readingSelected) {
+              // Always re-lock GLEAS level + clear passage picks when grade changes
+              // so elementary grades never keep middle/high preset packs.
+              if (info.grade !== prevGrade) {
                 setIrtLevel(GRADE_TO_LEVEL[info.grade]);
+                setPassageIds([]);
               }
             }}
           />
@@ -297,6 +300,7 @@ export default function HomePage() {
             visible={readingSelected}
             grade={studentInfo.grade}
             level={irtLevel}
+            lockLevelToGrade
             onLevelChange={(lv) => {
               setIrtLevel(lv);
               setPassageIds([]);

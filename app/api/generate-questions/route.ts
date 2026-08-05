@@ -67,6 +67,8 @@ const RequestSchema = z.object({
 });
 
 const GRADE_TO_CEFR: Record<Grade, string> = {
+  초1: "A1",
+  초2: "A1",
   초3: "A1",
   초4: "A1",
   초5: "A2",
