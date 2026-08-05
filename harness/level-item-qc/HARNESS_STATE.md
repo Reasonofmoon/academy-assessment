@@ -7,7 +7,7 @@
 - **Execution mode:** logical (sequential)
 - **Location:** `harness/level-item-qc/`
 - **Last validated:** 2026-08-05 — `validate_harness.py` **PASS**
-- **Last run:** 2026-08-05 — overall **pass** (after L1/L4–L6 fill)
+- **Last run:** 2026-08-05 — overall **pass** (130 active; repair cleared)
 
 ## Broadcast packet
 

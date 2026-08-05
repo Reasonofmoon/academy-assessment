@@ -7,7 +7,7 @@
 - **Execution mode:** logical (sequential Python runner)
 - **Location:** `harness/level-test-item-replace/` (does not replace root `academy-data-audit`)
 - **Last validated:** 2026-08-05 — `validate_harness.py` **PASS**
-- **Last run:** 2026-08-05 — Stage V2 applied; fitness items=42 · keep=38 · repair=1 · replace=0 · quarantine=3
+- **Last run:** 2026-08-05 — fitness items=133 · keep=130 · repair=0 · replace=0 · quarantine=3
 
 ## Broadcast packet
 
@@ -57,8 +57,8 @@
 
 | disposition | count | notes |
 |---|---:|---|
-| keep | 38 | active level-test pool |
-| repair | 1 | `grammar-3-2` LEVEL_LEXIS (reviewNote only) |
+| keep | 130 | active level-test pool |
+| repair | 0 | LEVEL_LEXIS false positive fixed (grammar options excluded) |
 | replace | 0 | none remaining |
 | quarantine | 3 | seeds + replaced `vocabulary-3` |
 
@@ -88,3 +88,4 @@ Artifacts:
 | 2026-08-05 | validate PASS; first fitness run on 39-item bank | run |
 | 2026-08-05 | fix reduce: hard error codes beat keep votes | remediation |
 | 2026-08-05 | Stage V2 apply_replace_plan + BANK_QUARANTINE status short-circuit | run |
+| 2026-08-05 | clear grammar-3-2 false LEVEL_LEXIS; relax lexis heuristic | remediation |

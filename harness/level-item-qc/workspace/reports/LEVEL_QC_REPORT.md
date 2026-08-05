@@ -1,6 +1,6 @@
 # Level item QC report
 
-- **Generated:** 2026-08-05T10:32:11.360785+00:00
+- **Generated:** 2026-08-05T11:26:09.954488+00:00
 - **Harness:** level-item-qc
 - **Overall:** `pass`
 - **Policy:** min_per_domain=3 · min_total=9 · allow_empty=False

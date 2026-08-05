@@ -14,7 +14,8 @@ YOUR SLICE
   Rules:
     - irtSource == "test" OR id starts with seed-export- → SEED_DEMO (error) → quarantine
     - stem matches /closest in meaning to/i or bare EN synonym quiz without Korean scaffold → GENERIC_SYNONYM (error)
-    - optional heuristic: very long rare tokens for L1-L2 → LEVEL_LEXIS (warning)
+    - optional heuristic: L1–L2 non-grammar items with 3+ uncommon long tokens (len≥11) → LEVEL_LEXIS (warning)
+    - grammar options are excluded (comparative/superlative distractors often look “long”)
   This lane owns level-test product fitness, not pure schema.
 
 OUTPUT SHAPE

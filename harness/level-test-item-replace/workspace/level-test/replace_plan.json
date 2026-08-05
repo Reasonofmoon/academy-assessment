@@ -7,6 +7,7 @@
     "grammar-2-2",
     "grammar-2-3",
     "grammar-3",
+    "grammar-3-2",
     "grammar-3-3",
     "grammar-4",
     "grammar-4-2",
@@ -130,17 +131,7 @@
     "vocabulary-L6-fill-msfy6myc-0",
     "vocabulary-L6-fill-msfy6myc-1"
   ],
-  "repair": [
-    {
-      "item_id": "grammar-3-2",
-      "ops": [
-        "review_lexis"
-      ],
-      "codes": [
-        "LEVEL_LEXIS"
-      ]
-    }
-  ],
+  "repair": [],
   "replace": [],
   "quarantine": [
     "seed-export-reading-1",

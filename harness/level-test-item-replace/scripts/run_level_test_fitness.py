@@ -366,13 +366,40 @@ def lane_level_fit(item: dict[str, Any]) -> dict[str, Any]:
             codes.append("GENERIC_SYNONYM")
             evidence.append("EN-only MCQ shell")
 
-    # crude level lexis: L1-L2 with many long tokens
+    # Crude level lexis: L1–L2 stems with many long tokens.
+    # Skip option strings for grammar (comparative/superlative distractors like
+    # "interestinger" / "more interesting" are intentional, not off-level lexis).
     level = item.get("level")
-    if isinstance(level, int) and level <= 2:
-        tokens = re.findall(r"[A-Za-z]{10,}", q + " " + " ".join(item.get("options") or []))
-        if len(tokens) >= 3:
+    domain = item.get("domain")
+    if isinstance(level, int) and level <= 2 and domain != "grammar":
+        # Common school-English long words that should not trip the heuristic.
+        common_long = {
+            "interesting",
+            "interestinger",
+            "beautiful",
+            "important",
+            "different",
+            "something",
+            "everything",
+            "understanding",
+            "information",
+            "environment",
+            "comfortable",
+            "especially",
+            "immediately",
+            "dictionary",
+            "vocabulary",
+        }
+        blob = q if domain == "reading" else (q + " " + " ".join(item.get("options") or []))
+        tokens = [
+            t.lower()
+            for t in re.findall(r"[A-Za-z]{11,}", blob)
+            if t.lower() not in common_long
+        ]
+        # Need several distinct uncommon long tokens
+        if len(set(tokens)) >= 3:
             codes.append("LEVEL_LEXIS")
-            evidence.append(f"long_tokens={tokens[:5]}")
+            evidence.append(f"long_tokens={list(set(tokens))[:5]}")
 
     if "SEED_DEMO" in codes:
         return out(

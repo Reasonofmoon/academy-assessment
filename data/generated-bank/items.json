@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-05T10:32:04.808Z",
+  "updatedAt": "2026-08-05T11:26:09.717Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -845,11 +845,13 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T09:15:28.039Z",
+      "updatedAt": "2026-08-05T11:26:09.717Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
       "batchId": "seed-fill-1785917936979-approved",
-      "reviewNote": "level-test repair pending: review_lexis codes=LEVEL_LEXIS"
+      "reviewNote": "LEVEL_LEXIS false positive cleared — comparative grammar item is on-level for L2",
+      "reviewedAt": "2026-08-05T11:26:09.717Z",
+      "reviewedBy": "level-test-qc"
     },
     {
       "id": "grammar-4-2",

@@ -24,7 +24,7 @@ Catalog used by `level-test-item-replace` lanes. Codes are stable IDs for reduce
 | `DISTRACTOR_WEAK` | error | options | duplicate options, empty, non-parallel, answer not unique | replace |
 | `ANSWER_INVALID` | error | options | answer index out of range | replace |
 | `CONSTRUCT_MISS` | error | construct | domain task mismatch (e.g. reading without passage) | replace |
-| `LEVEL_LEXIS` | warning | level-fit | lexis/task form likely off GLEAS level (heuristic) | repair / replace if stacked |
+| `LEVEL_LEXIS` | warning | level-fit | L1–L2 stem has 3+ uncommon long tokens (grammar options excluded) | repair / replace if stacked |
 | `SLOT_DRIFT` | warning | construct | reading questionType not in planned set | repair |
 | `FORMAT_NEWLINE` | warning | construct | missing display newlines between KO stem and EN example | repair |
 | `PASS` | pass | any | no defect | keep |

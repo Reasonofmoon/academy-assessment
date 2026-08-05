@@ -380,19 +380,18 @@
     "lane_id": "lane-level-fit",
     "item_id": "grammar-3-2",
     "result": {
-      "disposition_vote": "repair",
+      "disposition_vote": "keep",
       "codes": [
-        "LEVEL_LEXIS"
+        "PASS"
       ],
-      "severity": "warning",
-      "notes": "level-fit warnings",
-      "span": "question"
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
     },
-    "confidence": 0.7,
+    "confidence": 0.85,
     "evidence": [
       "irtSource=ai_prior",
-      "level=2",
-      "long_tokens=['interestinger', 'interesting', 'interesting', 'interesting']"
+      "level=2"
     ],
     "unresolved": []
   },

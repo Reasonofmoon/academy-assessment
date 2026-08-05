@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T10:32:11.461171+00:00",
+  "generated_at": "2026-08-05T11:26:09.854968+00:00",
   "item_count": 133,
   "masks": {
     "lane-psychometric::seed-export-vocab-1": {
@@ -3472,10 +3472,8 @@
     },
     {
       "item_id": "grammar-3-2",
-      "disposition": "repair",
-      "codes": [
-        "LEVEL_LEXIS"
-      ],
+      "disposition": "keep",
+      "codes": [],
       "lanes": [
         {
           "lane_id": "lane-psychometric",
@@ -3503,15 +3501,12 @@
         },
         {
           "lane_id": "lane-level-fit",
-          "vote": "repair",
+          "vote": "keep",
           "codes": [
-            "LEVEL_LEXIS"
+            "PASS"
           ],
-          "severity": "warning"
+          "severity": "pass"
         }
-      ],
-      "ops": [
-        "review_lexis"
       ]
     },
     {
@@ -8405,6 +8400,7 @@
       "grammar-2-2",
       "grammar-2-3",
       "grammar-3",
+      "grammar-3-2",
       "grammar-3-3",
       "grammar-4",
       "grammar-4-2",
@@ -8528,17 +8524,7 @@
       "vocabulary-L6-fill-msfy6myc-0",
       "vocabulary-L6-fill-msfy6myc-1"
     ],
-    "repair": [
-      {
-        "item_id": "grammar-3-2",
-        "ops": [
-          "review_lexis"
-        ],
-        "codes": [
-          "LEVEL_LEXIS"
-        ]
-      }
-    ],
+    "repair": [],
     "replace": [],
     "quarantine": [
       "seed-export-reading-1",
@@ -8548,8 +8534,8 @@
     "exceptions": []
   },
   "counts": {
-    "keep": 129,
-    "repair": 1,
+    "keep": 130,
+    "repair": 0,
     "replace": 0,
     "quarantine": 3,
     "exceptions": 0
