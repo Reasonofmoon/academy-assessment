@@ -16,7 +16,11 @@ description: >-
 5. Scalar tail: retry API failures (max 2)
 
 ```bash
+# stratified smoke (1 item / domain / level = 18)
 python harness/level-test-smoke/scripts/run_level_test_smoke.py
+
+# full-bank smoke (every approved MCQ)
+python harness/level-test-smoke/scripts/run_level_test_smoke.py --all
 ```
 
 Requires `GEMINI_API_KEY` in repo `.env.local`.

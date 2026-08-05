@@ -82,7 +82,16 @@ def parse_json_loose(raw: str) -> dict[str, Any]:
         raise
 
 
-def sample_items(items: list[dict[str, Any]], level: int, per_domain: int) -> list[dict[str, Any]]:
+def sample_items(
+    items: list[dict[str, Any]],
+    level: int,
+    per_domain: int,
+    all_items: bool = False,
+) -> list[dict[str, Any]]:
+    """Stratified sample, or every approved MCQ at this level when all_items=True.
+
+    per_domain <= 0 also means take all items in each domain.
+    """
     pool = [
         it
         for it in items
@@ -90,7 +99,9 @@ def sample_items(items: list[dict[str, Any]], level: int, per_domain: int) -> li
         and str(it.get("status") or "") == "approved"
         and it.get("type") == "multiple_choice"
     ]
-    pool.sort(key=lambda x: str(x.get("id") or ""))
+    pool.sort(key=lambda x: (str(x.get("domain") or ""), str(x.get("id") or "")))
+    if all_items or per_domain <= 0:
+        return pool
     out: list[dict[str, Any]] = []
     for d in DOMAINS:
         dom = [it for it in pool if it.get("domain") == d]
@@ -196,9 +207,16 @@ def run_lane(
     per_domain: int,
     api_key: str,
     models: list[str],
+    all_items: bool = False,
 ) -> dict[str, Any]:
-    sample = sample_items(items, level, per_domain)
-    results = [solve_item(it, level, api_key, models) for it in sample]
+    sample = sample_items(items, level, per_domain, all_items=all_items)
+    results: list[dict[str, Any]] = []
+    for idx, it in enumerate(sample, start=1):
+        print(
+            f"  [{idx}/{len(sample)}] {it.get('id')} ({it.get('domain')}) …",
+            flush=True,
+        )
+        results.append(solve_item(it, level, api_key, models))
     correct = sum(1 for r in results if r["is_correct"])
     total = len(results)
     acc = (correct / total) if total else 0.0
@@ -327,7 +345,17 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--bank", type=Path, default=REPO / "data" / "generated-bank" / "items.json")
     ap.add_argument("--root", type=Path, default=HARNESS)
-    ap.add_argument("--per-domain", type=int, default=1)
+    ap.add_argument(
+        "--per-domain",
+        type=int,
+        default=1,
+        help="Items per domain per level. Use 0 with --all, or alone for all in each domain.",
+    )
+    ap.add_argument(
+        "--all",
+        action="store_true",
+        help="Solve every approved MCQ (full-bank smoke). Ignores --per-domain cap.",
+    )
     ap.add_argument("--levels", type=str, default="1,2,3,4,5,6")
     args = ap.parse_args()
 
@@ -352,20 +380,41 @@ def main() -> int:
     (root / "workspace" / "lanes").mkdir(parents=True, exist_ok=True)
     (root / "workspace" / "reports").mkdir(parents=True, exist_ok=True)
 
+    # Count approved MCQs for progress estimate
+    approved_mcq = [
+        it
+        for it in items
+        if str(it.get("status")) == "approved" and it.get("type") == "multiple_choice"
+    ]
     ownership = {
         "recorded_at": datetime.now(timezone.utc).isoformat(),
+        "mode": "full_bank" if args.all else "stratified",
         "per_domain": args.per_domain,
+        "all_items": bool(args.all),
         "levels": levels,
         "models": models,
+        "approved_mcq_count": len(approved_mcq),
     }
     (root / "workspace" / "ownership.json").write_text(
         json.dumps(ownership, indent=2) + "\n", encoding="utf-8"
+    )
+    print(
+        f"mode={'full_bank' if args.all else 'stratified'} "
+        f"approved_mcq={len(approved_mcq)} levels={levels}",
+        flush=True,
     )
 
     lanes: list[dict[str, Any]] = []
     for lv in levels:
         print(f"=== solve L{lv} ===", flush=True)
-        row = run_lane(lv, items, args.per_domain, api_key, models)
+        row = run_lane(
+            lv,
+            items,
+            args.per_domain,
+            api_key,
+            models,
+            all_items=bool(args.all),
+        )
         lanes.append(row)
         (root / "workspace" / "lanes" / f"L{lv}.json").write_text(
             json.dumps(row, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"

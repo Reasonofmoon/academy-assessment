@@ -1,11 +1,19 @@
 {
-  "recorded_at": "2026-08-05T11:46:42.750998+00:00",
+  "recorded_at": "2026-08-05T14:14:12.966264+00:00",
+  "mode": "full_bank",
   "per_domain": 1,
+  "all_items": true,
   "levels": [
-    1
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
   ],
   "models": [
     "gemini-2.5-flash",
     "gemini-2.0-flash"
-  ]
+  ],
+  "approved_mcq_count": 132
 }

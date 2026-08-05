@@ -3,11 +3,155 @@
   "item_id": "level:5",
   "result": {
     "level": 5,
-    "attempts": 3,
-    "correct": 3,
-    "total": 3,
+    "attempts": 19,
+    "correct": 19,
+    "total": 19,
     "accuracy": 1.0,
     "item_results": [
+      {
+        "item_id": "grammar-L5-fill-msfx02ht-2",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The preposition 'on' must be followed by a gerund (the -ing form of a verb). Therefore, 'going' is the correct choice.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L5-fill-msfx02ht-3",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The clause 'I grew up' describes the place (the house) where the action occurred. 'Where' is a relative adverb used to introduce a relative clause that modifies a place noun, making it the most appropriate choice. 'Which' and 'that' would r",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L5-fill-msfx02ht-4",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "This is a second conditional sentence expressing a hypothetical situation. In such 'if' clauses, the subjunctive mood 'were' is used for all subjects, including 'I', especially in the common idiom 'If I were you'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L5-fill-msfy5oes-3",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The phrase 'by extensive research' indicates that the research is the agent performing the action of supporting. Therefore, the findings are the recipient of this action, requiring a passive form. 'Supported' (past participle) correctly con",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L5-fill-msfy5oes-4",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The sentence uses a parallel structure with gerunds ('managing', 'coordinating'), so the final item must also be a gerund ('overseeing') to maintain consistency.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L5-fill-msfy5oes-5",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The main clause 'the proposal would have been implemented immediately' indicates a past unreal consequence. This requires a past unreal condition. Option 0, 'Had it not been', is the inverted form of a third conditional ('If it had not been",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L5-fill-msfx02ht-5",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage provides numerous examples and explanations of different idioms that use the word 'hand', showcasing their varied meanings.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L5-fill-msfx02ht-6",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The narrator explicitly states, \"I am whatever I want to be-that's the dream,isn't it?\" and \"my power is only absolute here, where I am the true sovereign,\" highlighting his desire for complete personal freedom and control.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L5-fill-msfx02ht-7",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states, \"'To get a hand in' is to begin a job, to begin to know something about it,\" which implies getting involved. It also says, \"he may look at our project and decide to take it in hand. That means he wants to tale it over,\" ",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L5-fill-msfy5oes-6",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage introduces and explains numerous expressions that use the word 'hand,' detailing their meanings and how they are used. This directly corresponds to 'the various meanings and uses of expressions with “hand” in English.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L5-fill-msfy5oes-7",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage explicitly states, 'It means I can do what I want with it... I am whatever I want to be-that's the dream, isn't it?' and 'my power is only absolute here, where I am the true sovereign,' directly indicating his value for freedom ",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L5-fill-msfy5oes-8",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage explicitly states: 'Your friend may want to work hand in glove with us. That is good because that means he wants to work as closely with us as a glove covers the hand.' Option 0 directly reflects this definition.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
       {
         "item_id": "vocabulary-L5-fill-msfx02ht-0",
         "domain": "vocabulary",
@@ -21,24 +165,72 @@
         "model": "gemini-2.5-flash"
       },
       {
-        "item_id": "grammar-L5-fill-msfx02ht-2",
-        "domain": "grammar",
-        "chosen": "0",
-        "gold": "0",
+        "item_id": "vocabulary-L5-fill-msfx02ht-1",
+        "domain": "vocabulary",
+        "chosen": "2",
+        "gold": "2",
         "is_correct": true,
-        "solver_note": "After a preposition ('on'), the verb must be in its gerund (-ing) form.",
+        "solver_note": "In the context of 'imposed economic sanctions on the rogue nation,' 'sanctions' refers to penalties or restrictions, which is best translated as '경제적 제재' (economic sanctions/penalties).",
         "flags": [
           "OK"
         ],
         "model": "gemini-2.5-flash"
       },
       {
-        "item_id": "reading-L5-fill-msfx02ht-5",
-        "domain": "reading",
+        "item_id": "vocabulary-L5-fill-msfx1sv9-0",
+        "domain": "vocabulary",
         "chosen": "0",
         "gold": "0",
         "is_correct": true,
-        "solver_note": "The passage's primary purpose is to explain the meanings of various idiomatic expressions that include the word 'hand'.",
+        "solver_note": "The Korean words '덧없는, 단명하는' mean fleeting or short-lived, which perfectly matches the definition of 'ephemeral'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L5-fill-msfx1sv9-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "Meticulous means showing great attention to detail; very careful and precise.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L5-fill-msfy5oes-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean phrase '어디에나 있는, 아주 흔한' translates to 'present everywhere, very common,' which is the definition of 'ubiquitous.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L5-fill-msfy5oes-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The word 'underscore' in this context is used figuratively to mean 'to emphasize' or 'to highlight'. A report doesn't physically draw a line; it brings attention to the urgency. Option 0, '강조하다' (to emphasize), perfectly captures this meani",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L5-fill-msfy5oes-2",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "Meticulous means showing great attention to detail, which perfectly describes an artist's careful work.",
         "flags": [
           "OK"
         ],
@@ -49,12 +241,28 @@
   },
   "confidence": 0.8,
   "evidence": [
-    "attempted=3",
-    "correct=3",
+    "attempted=19",
+    "correct=19",
     "pool_approved=19",
-    "vocabulary-L5-fill-msfx02ht-0",
     "grammar-L5-fill-msfx02ht-2",
-    "reading-L5-fill-msfx02ht-5"
+    "grammar-L5-fill-msfx02ht-3",
+    "grammar-L5-fill-msfx02ht-4",
+    "grammar-L5-fill-msfy5oes-3",
+    "grammar-L5-fill-msfy5oes-4",
+    "grammar-L5-fill-msfy5oes-5",
+    "reading-L5-fill-msfx02ht-5",
+    "reading-L5-fill-msfx02ht-6",
+    "reading-L5-fill-msfx02ht-7",
+    "reading-L5-fill-msfy5oes-6",
+    "reading-L5-fill-msfy5oes-7",
+    "reading-L5-fill-msfy5oes-8",
+    "vocabulary-L5-fill-msfx02ht-0",
+    "vocabulary-L5-fill-msfx02ht-1",
+    "vocabulary-L5-fill-msfx1sv9-0",
+    "vocabulary-L5-fill-msfx1sv9-1",
+    "vocabulary-L5-fill-msfy5oes-0",
+    "vocabulary-L5-fill-msfy5oes-1",
+    "vocabulary-L5-fill-msfy5oes-2"
   ],
   "unresolved": []
 }

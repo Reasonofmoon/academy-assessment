@@ -3,23 +3,11 @@
   "item_id": "level:1",
   "result": {
     "level": 1,
-    "attempts": 3,
-    "correct": 3,
-    "total": 3,
+    "attempts": 20,
+    "correct": 20,
+    "total": 20,
     "accuracy": 1.0,
     "item_results": [
-      {
-        "item_id": "vocabulary-L1-fill-msfwxxgr-0",
-        "domain": "vocabulary",
-        "chosen": "1",
-        "gold": "1",
-        "is_correct": true,
-        "solver_note": "The Korean word '행복한' translates directly to 'Happy' in English.",
-        "flags": [
-          "OK"
-        ],
-        "model": "gemini-2.5-flash"
-      },
       {
         "item_id": "grammar-L1-fill-msfwxxgr-3",
         "domain": "grammar",
@@ -33,12 +21,228 @@
         "model": "gemini-2.5-flash"
       },
       {
+        "item_id": "grammar-L1-fill-msfwxxgr-4",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The subject 'He' is third-person singular, and the adverb 'often' indicates a habitual action, requiring the simple present tense. For third-person singular subjects in the simple present, the verb takes an '-s' ending.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L1-fill-msfwxxgr-5",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The preposition 'on' is used to indicate that an object is resting on the surface of another object. In this case, the book is resting on the surface of the table.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L1-fill-msfy25cu-3",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The subject 'My dog' is singular (third person), which requires the present tense form 'is' for the verb 'to be'. Options 1, 2, and 3 use incorrect forms ('are', 'am', 'be') for a singular third-person subject.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L1-fill-msfy25cu-4",
+        "domain": "grammar",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "Option 2 uses the correct subjective pronoun 'She' as the subject and the correct objective pronoun 'him' as the object of the verb 'likes'. Options 0, 1, and 3 use incorrect pronoun cases for either the subject or the object.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L1-fill-msfy25cu-5",
+        "domain": "grammar",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "Option 2 correctly applies subject-verb agreement for the third-person singular subject 'He' with the present tense verb 'eats'. Options 0, 1, and 3 contain subject-verb agreement errors.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
         "item_id": "reading-L1-elem-msg0um01-0",
         "domain": "reading",
         "chosen": "0",
         "gold": "0",
         "is_correct": true,
-        "solver_note": "The passage introduces Max, describes him, talks about daily activities with him, and expresses love for him. All these details revolve around 'My pet dog, Max', making it the main topic.",
+        "solver_note": "The passage introduces Max, describes him, talks about daily activities with him, and expresses love for him. All these details revolve around 'My pet dog, Max,' making it the main topic.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L1-elem-msg0um01-1",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage explicitly states, \"Mina likes art class the most.\"",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L1-elem-msg0um01-2",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage explicitly states, 'It is a happy day.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L1-elem-msg0um01-3",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage introduces Tom, describes his characteristics, actions, and the writer's feelings about him, all of which serve to describe Tom.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L1-elem-msg0um01-4",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states, 'I can borrow two books for one week.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L1-fill-msfy25cu-6",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage introduces the writer's dog, Max, describes his appearance, daily activities with him, and the writer's affection for him. All details revolve around Max.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L1-fill-msfy25cu-7",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage explicitly states, 'Mina likes art class the most.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L1-fill-msfy25cu-8",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states, 'On rainy days, we stay home.' It also mentions, 'After school, I walk with Max in the park.' If they stay home on rainy days, they do not walk in the park.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L1-fill-msfwxxgr-0",
+        "domain": "vocabulary",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The Korean word '행복한' translates directly to 'happy' in English.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L1-fill-msfwxxgr-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "In the sentence 'The boy can run very fast,' 'run' refers to the physical act of moving quickly on foot, which is '달리다' in Korean.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L1-fill-msfwxxgr-2",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "Apples are typically eaten, making 'Eat' the most appropriate verb for the sentence.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L1-fill-msfy25cu-0",
+        "domain": "vocabulary",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The Korean word '먹다' translates to 'eat' in English.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L1-fill-msfy25cu-1",
+        "domain": "vocabulary",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The word 'happy' directly translates to '행복한' in Korean. The sentence 'I feel very happy today' expresses a feeling of happiness.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L1-fill-msfy25cu-2",
+        "domain": "vocabulary",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "Dogs are known for their ability to run, and 'fast' is an appropriate adverb to describe how a dog runs.",
         "flags": [
           "OK"
         ],
@@ -49,12 +253,29 @@
   },
   "confidence": 0.8,
   "evidence": [
-    "attempted=3",
-    "correct=3",
+    "attempted=20",
+    "correct=20",
     "pool_approved=20",
-    "vocabulary-L1-fill-msfwxxgr-0",
     "grammar-L1-fill-msfwxxgr-3",
-    "reading-L1-elem-msg0um01-0"
+    "grammar-L1-fill-msfwxxgr-4",
+    "grammar-L1-fill-msfwxxgr-5",
+    "grammar-L1-fill-msfy25cu-3",
+    "grammar-L1-fill-msfy25cu-4",
+    "grammar-L1-fill-msfy25cu-5",
+    "reading-L1-elem-msg0um01-0",
+    "reading-L1-elem-msg0um01-1",
+    "reading-L1-elem-msg0um01-2",
+    "reading-L1-elem-msg0um01-3",
+    "reading-L1-elem-msg0um01-4",
+    "reading-L1-fill-msfy25cu-6",
+    "reading-L1-fill-msfy25cu-7",
+    "reading-L1-fill-msfy25cu-8",
+    "vocabulary-L1-fill-msfwxxgr-0",
+    "vocabulary-L1-fill-msfwxxgr-1",
+    "vocabulary-L1-fill-msfwxxgr-2",
+    "vocabulary-L1-fill-msfy25cu-0",
+    "vocabulary-L1-fill-msfy25cu-1",
+    "vocabulary-L1-fill-msfy25cu-2"
   ],
   "unresolved": []
 }

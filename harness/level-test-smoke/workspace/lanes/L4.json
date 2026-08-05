@@ -3,31 +3,78 @@
   "item_id": "level:4",
   "result": {
     "level": 4,
-    "attempts": 3,
-    "correct": 3,
-    "total": 3,
+    "attempts": 18,
+    "correct": 18,
+    "total": 18,
     "accuracy": 1.0,
     "item_results": [
-      {
-        "item_id": "vocabulary-L4-fill-msfwz4fx-0",
-        "domain": "vocabulary",
-        "chosen": "0",
-        "gold": "0",
-        "is_correct": true,
-        "solver_note": "The Korean words '근면한' and '성실한' both translate to 'diligent' in English, meaning hardworking and conscientious.",
-        "flags": [
-          "OK",
-          "AMBIGUOUS"
-        ],
-        "model": "gemini-2.5-flash"
-      },
       {
         "item_id": "grammar-L4-fill-msfwz4fx-2",
         "domain": "grammar",
         "chosen": "0",
         "gold": "0",
         "is_correct": true,
-        "solver_note": "This is a Type 2 conditional sentence, which uses 'If + past simple' in the condition clause and 'would + base form' in the main clause to express an unreal or hypothetical situation in the present or future.",
+        "solver_note": "This is a Type 2 conditional sentence (unreal present/future). The structure is 'If + Simple Past, would + Base Verb'. 'If I had more time' uses the simple past, so the main clause requires 'would' followed by the base form of the verb ('le",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L4-fill-msfwz4fx-3",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The relative pronoun functions as the object of the verb 'met' in the clause 'I met yesterday'. For people, the objective case of the relative pronoun is 'whom'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L4-fill-msfwz4fx-4",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The verb 'enjoy' is typically followed by a gerund (the -ing form of a verb).",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L4-fill-msfy4u5x-2",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The sentence 'I would travel the world' uses 'would + base verb', indicating a second conditional (unreal present/future). In a second conditional, the 'if' clause requires the simple past tense. 'Had' is the simple past tense of 'have'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L4-fill-msfy4u5x-3",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The relative pronoun needs to refer to 'The student' (a person) and act as the subject of the verb 'won' in the relative clause. 'Who' is the correct subject pronoun for people.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L4-fill-msfy4u5x-4",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The verb 'enjoy' is typically followed by a gerund (the -ing form of a verb). Therefore, 'learning' is the correct form.",
         "flags": [
           "OK"
         ],
@@ -39,7 +86,140 @@
         "chosen": "0",
         "gold": "0",
         "is_correct": true,
-        "solver_note": "The passage contrasts the quick, pre-programmed development of other mammals (which limits their adaptability) with the long period of helplessness in humans due to an incomplete, 'livewired' brain. It argues that this incompleteness is pre",
+        "solver_note": "The passage contrasts the pre-programmed brains of other mammals (leading to quick independence but limited adaptability) with the 'remarkably incomplete' and 'livewired' human brain. This incompleteness, despite initial helplessness, allow",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L4-fill-msfwz4fx-6",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states that memories are 'coloured by their family’s constructs system' and 'interpreted within their respective family of origin’s construct systems,' leading to confusion about 'factual details,' indicating subjectivity and in",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L4-fill-msfwz4fx-7",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states, 'This is possible because the human brain is born remarkably incomplete.' It then contrasts this with 'hardwired' animal brains, explaining that the human brain 'slowly molds to its environment. It’s “livewired.”' This i",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L4-fill-msfy4u5x-5",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage explains that human's long period of helplessness (long infancy) is not a weakness but an evolutionary strategy that allows the brain to be 'livewired' and adapt flexibly to diverse environments, unlike other animals with 'hardw",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L4-fill-msfy4u5x-6",
+        "domain": "reading",
+        "chosen": "3",
+        "gold": "3",
+        "is_correct": true,
+        "solver_note": "The passage states that memories are 'selective and coloured by their family’s constructs system' and that stories are 'interpreted within their respective family of origin’s construct systems,' indicating that reconstructed memories are fo",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L4-fill-msfy4u5x-7",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states that a 'preprogrammed brain' 'trades off with flexibility' and that an animal with such a brain 'would have no capacity to adapt' if placed 'outside of that niche'. This directly supports option 0, which says it's difficu",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L4-fill-msfwz4fx-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean words '근면한, 성실한' mean diligent and sincere, and 'Diligent' is the best match among the options.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L4-fill-msfwz4fx-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The word 'foster' in the context of 'foster a love of learning' means to encourage the development or growth of something. '육성하다' (yuksseonghada) directly translates to nurture, cultivate, or foster, which perfectly matches this meaning. Th",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L4-fill-msfx1nfr-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean words '성실한' and '부지런한' both mean diligent or hardworking, which directly corresponds to the English word 'Diligent'.",
+        "flags": [
+          "OK",
+          "AMBIGUOUS"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L4-fill-msfx1nfr-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "A severe drought would naturally have a negative 'consequence' or effect on agriculture, making 'devastating consequence' the most fitting phrase.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L4-fill-msfy4u5x-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean words '회복력' and '탄력성' directly translate to 'resilience' in English, meaning the ability to recover quickly from difficulties.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L4-fill-msfy4u5x-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The word 'underscore' means to emphasize or highlight. In the given sentence, the economic downturn serves to emphasize the importance of financial prudence. Option 0, '강조하다', means to emphasize.",
         "flags": [
           "OK"
         ],
@@ -50,12 +230,27 @@
   },
   "confidence": 0.8,
   "evidence": [
-    "attempted=3",
-    "correct=3",
+    "attempted=18",
+    "correct=18",
     "pool_approved=18",
-    "vocabulary-L4-fill-msfwz4fx-0",
     "grammar-L4-fill-msfwz4fx-2",
-    "reading-L4-fill-msfwz4fx-5"
+    "grammar-L4-fill-msfwz4fx-3",
+    "grammar-L4-fill-msfwz4fx-4",
+    "grammar-L4-fill-msfy4u5x-2",
+    "grammar-L4-fill-msfy4u5x-3",
+    "grammar-L4-fill-msfy4u5x-4",
+    "reading-L4-fill-msfwz4fx-5",
+    "reading-L4-fill-msfwz4fx-6",
+    "reading-L4-fill-msfwz4fx-7",
+    "reading-L4-fill-msfy4u5x-5",
+    "reading-L4-fill-msfy4u5x-6",
+    "reading-L4-fill-msfy4u5x-7",
+    "vocabulary-L4-fill-msfwz4fx-0",
+    "vocabulary-L4-fill-msfwz4fx-1",
+    "vocabulary-L4-fill-msfx1nfr-0",
+    "vocabulary-L4-fill-msfx1nfr-1",
+    "vocabulary-L4-fill-msfy4u5x-0",
+    "vocabulary-L4-fill-msfy4u5x-1"
   ],
   "unresolved": []
 }

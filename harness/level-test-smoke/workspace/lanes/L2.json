@@ -3,31 +3,150 @@
   "item_id": "level:2",
   "result": {
     "level": 2,
-    "attempts": 3,
-    "correct": 3,
-    "total": 3,
-    "accuracy": 1.0,
+    "attempts": 37,
+    "correct": 35,
+    "total": 37,
+    "accuracy": 0.9459,
     "item_results": [
-      {
-        "item_id": "vocabulary-1",
-        "domain": "vocabulary",
-        "chosen": "0",
-        "gold": "0",
-        "is_correct": true,
-        "solver_note": "The Korean words '도착하다' and '도달하다' both mean 'to arrive' or 'to reach'.",
-        "flags": [
-          "OK",
-          "AMBIGUOUS"
-        ],
-        "model": "gemini-2.5-flash"
-      },
       {
         "item_id": "grammar-1",
         "domain": "grammar",
         "chosen": "1",
         "gold": "1",
         "is_correct": true,
-        "solver_note": "The subject \"My brother\" is third-person singular, and the adverb \"often\" indicates a habitual action, requiring the simple present tense form \"plays\".",
+        "solver_note": "The subject 'My brother' is third-person singular, and the adverb 'often' indicates a habitual action, requiring the simple present tense verb form 'plays'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-1-2",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The word 'now' indicates an action happening at the present moment, which requires the present continuous tense (is/am/are + -ing).",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-2",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "2",
+        "is_correct": false,
+        "solver_note": "Wearing a helmet is a critical safety measure, often a legal requirement or a strong necessity, which 'must' conveys more strongly than 'should'.",
+        "flags": [
+          "KEY_MISMATCH"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-2-2",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "Water is an uncountable noun, and 'much' is used to quantify uncountable nouns in questions.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-3",
+        "domain": "grammar",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "For specific times like '7 p.m.', we use 'at'. For specific days of the week like 'Friday', we use 'on'. Thus, 'at 7 p.m. on Friday' is correct.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-3-2",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "For multi-syllable adjectives like 'interesting', the comparative form is created by using 'more' before the adjective, not by adding '-er'. The word 'than' indicates a comparative structure.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-4",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The blank requires an adverb to modify the verb 'speaks'. 'Well' is the adverbial form of 'good', while 'good' is an adjective.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-4-2",
+        "domain": "grammar",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "The preposition 'at' is used for specific times, such as 'at 7 o'clock'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-5",
+        "domain": "grammar",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "The question asks to choose the sentence where 'should' is used naturally. 'You should go to bed early' is a common way to give advice or make a recommendation, which is the primary function of 'should'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L2-fill-msfy2rbz-3",
+        "domain": "grammar",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "The first blank describes a habitual action ('usually'), requiring the simple present tense ('walks'). The second blank describes a temporary action happening 'today', requiring the present continuous tense ('is taking').",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L2-fill-msfy2rbz-4",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "For specific dates like 'July 20th', we use the preposition 'on'. For specific times like '7 PM', we use the preposition 'at'. Therefore, 'on / at' is the correct combination.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L2-fill-msfy2rbz-5",
+        "domain": "grammar",
+        "chosen": "3",
+        "gold": "3",
+        "is_correct": true,
+        "solver_note": "The singular subject 'The dog' correctly agrees with the singular verb 'is sleeping'.",
         "flags": [
           "OK"
         ],
@@ -39,7 +158,296 @@
         "chosen": "0",
         "gold": "0",
         "is_correct": true,
-        "solver_note": "The letter's main purpose is for Michael's mother to request an extension for his homework deadline from Ms. White.",
+        "solver_note": "The letter's primary purpose is for Michael's mother to explain why he couldn't complete Ms. White's homework and to request an extension for its submission.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-1-2",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The letter explicitly asks for an extension for Michael's homework submission until next Monday.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-2",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states, 'when I received my bank statement, I discovered that you charged my card twice.' Option 0 accurately reflects this problem.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-2-2",
+        "domain": "reading",
+        "chosen": "2",
+        "gold": "0",
+        "is_correct": false,
+        "solver_note": "The passage states that the initial cost for two tickets was $44, but the writer's card was charged twice. Therefore, the total amount paid was $44 * 2 = $88.",
+        "flags": [
+          "KEY_MISMATCH",
+          "HIGH_CONF_WRONG"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-3",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The letter asks Ms. White for an extension on 'your homework,' indicating she is Michael's teacher.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-3-2",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The letter mentions \"your homework,\" indicating Ms. White is the teacher who assigned Michael's homework.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-4",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The letter states the customer was charged twice for a single purchase and asks for the matter to be resolved, which implies a request for a refund for the overcharge.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-4-2",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The letter explicitly states that the writer was charged twice and requests that the matter be resolved quickly, indicating a request for a refund.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-5",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states Michael completed science, math, and English, but not history.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L2-fill-msfy2rbz-6",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "편지는 Michael이 숙제를 제시간에 끝내지 못한 이유를 설명하고, 숙제 제출 기한을 다음 월요일로 연장해 줄 것을 요청하고 있습니다.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L2-fill-msfy2rbz-7",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage explicitly states, 'when I received my bank statement, I discovered that you charged my card twice.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L2-fill-msfy2rbz-8",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states Michael 'worked hard all evening' and was 'anxious to finish your homework,' indicating his usual effort to complete assignments.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean meaning '도착하다, 도달하다' translates to 'to arrive' or 'to reach', which directly matches the English word 'Arrive'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-1-2",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean word '여정' (yeojeong) specifically translates to 'journey', which also encompasses the broader meaning of '여행' (travel).",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-2",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "In the context of 'board game', 'board' refers to the flat surface or '판' on which the game is played.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-2-2",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "In the context of a restaurant, 'serve' means to provide or offer food.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-4",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The phrase 'collect stamps' is the standard and most appropriate term for the hobby of gathering stamps from various countries.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-4-2",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The adverb 'suddenly' best describes an unexpected or quick emergence from behind an object.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-5",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "Option 0 uses 'practice' correctly as a verb meaning to repeatedly perform an activity to improve skill, and the sentence is grammatically sound. Option 1 has a grammatical error ('she practice' should be 'she practices'). Option 2's phrasi",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L2-extra-msfvg41p-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "In the context of 'paying a large fine for parking illegally,' 'fine' refers to a monetary penalty. '벌금' (beolgeum) means 'fine' as in a penalty.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L2-extra-msfvg41p-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "To safeguard the environment from the harmful effects of pollution, we must protect it.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L2-fill-msfy2rbz-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean word '도착하다' directly translates to 'Arrive' in English.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L2-fill-msfy2rbz-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "In the sentence 'The project will last for a long period of time,' 'period' refers to a duration or stretch of time. Option 0, '기간, 시기' (duration, time/period), is the most fitting translation. Options 1 and 2 are other meanings of 'period'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L2-fill-msfy2rbz-2",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The phrase 'before I can play' indicates that the homework must be completed first. 'Finish' means to complete something, making it the most logical choice.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L2-replace-msfvg3on",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean words '제안하다', '제의하다', and '암시하다' all translate directly to 'suggest' in English.",
         "flags": [
           "OK"
         ],
@@ -50,12 +458,46 @@
   },
   "confidence": 0.8,
   "evidence": [
-    "attempted=3",
-    "correct=3",
+    "attempted=37",
+    "correct=35",
     "pool_approved=37",
-    "vocabulary-1",
     "grammar-1",
-    "reading-1"
+    "grammar-1-2",
+    "grammar-2",
+    "grammar-2-2",
+    "grammar-3",
+    "grammar-3-2",
+    "grammar-4",
+    "grammar-4-2",
+    "grammar-5",
+    "grammar-L2-fill-msfy2rbz-3",
+    "grammar-L2-fill-msfy2rbz-4",
+    "grammar-L2-fill-msfy2rbz-5",
+    "reading-1",
+    "reading-1-2",
+    "reading-2",
+    "reading-2-2",
+    "reading-3",
+    "reading-3-2",
+    "reading-4",
+    "reading-4-2",
+    "reading-5",
+    "reading-L2-fill-msfy2rbz-6",
+    "reading-L2-fill-msfy2rbz-7",
+    "reading-L2-fill-msfy2rbz-8",
+    "vocabulary-1",
+    "vocabulary-1-2",
+    "vocabulary-2",
+    "vocabulary-2-2",
+    "vocabulary-4",
+    "vocabulary-4-2",
+    "vocabulary-5",
+    "vocabulary-L2-extra-msfvg41p-0",
+    "vocabulary-L2-extra-msfvg41p-1",
+    "vocabulary-L2-fill-msfy2rbz-0",
+    "vocabulary-L2-fill-msfy2rbz-1",
+    "vocabulary-L2-fill-msfy2rbz-2",
+    "vocabulary-L2-replace-msfvg3on"
   ],
   "unresolved": []
 }

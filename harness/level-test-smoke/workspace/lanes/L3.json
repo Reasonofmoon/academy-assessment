@@ -3,31 +3,90 @@
   "item_id": "level:3",
   "result": {
     "level": 3,
-    "attempts": 3,
-    "correct": 3,
-    "total": 3,
+    "attempts": 20,
+    "correct": 20,
+    "total": 20,
     "accuracy": 1.0,
     "item_results": [
-      {
-        "item_id": "vocabulary-1-3",
-        "domain": "vocabulary",
-        "chosen": "0",
-        "gold": "0",
-        "is_correct": true,
-        "solver_note": "The Korean words '달성하다' and '성취하다' both directly translate to 'achieve' in English.",
-        "flags": [
-          "OK",
-          "AMBIGUOUS"
-        ],
-        "model": "gemini-2.5-flash"
-      },
       {
         "item_id": "grammar-1-3",
         "domain": "grammar",
         "chosen": "0",
         "gold": "0",
         "is_correct": true,
-        "solver_note": "The subject of the sentence is 'One', which is singular, requiring a singular verb 'is' for subject-verb agreement.",
+        "solver_note": "The subject of the sentence is 'One', which is singular, therefore requiring the singular verb form 'is'. The phrase 'of the students' is a prepositional phrase modifying 'One' and does not determine the verb's number.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-2-3",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The antecedent 'My brother' is a person, and the clause '___ lives in London' is a non-restrictive clause (set off by commas). 'Who' is the correct relative pronoun for a person in a non-restrictive clause, functioning as the subject of the",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-3-3",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The sentence is a second conditional, which uses the past simple in the 'if' clause and 'would + base verb' in the main clause to express an unreal or hypothetical situation in the present or future.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-4-3",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The phrase 'next year' indicates a future event, and 'The new bridge' is the recipient of the action 'build', requiring a passive voice. 'will be built' correctly forms the future passive tense.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L3-fill-msfy3v8j-3",
+        "domain": "grammar",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "This is a second conditional sentence expressing an unreal or hypothetical situation. In such cases, the subjunctive mood 'were' is used for all persons in the 'if' clause, even for 'I'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L3-fill-msfy3v8j-4",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The blank requires a subject pronoun to introduce a relative clause modifying 'The woman'. 'Who' is the correct subject pronoun for people.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L3-fill-msfy3v8j-5",
+        "domain": "grammar",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "The phrase 'for five years' indicates a duration that started in the past and continues up to the present. The present perfect tense ('has lived') is the correct tense to express an action or state that began in the past and is still ongoin",
         "flags": [
           "OK"
         ],
@@ -39,7 +98,153 @@
         "chosen": "0",
         "gold": "0",
         "is_correct": true,
-        "solver_note": "The passage consistently argues that having too many choices, or a wide range of options, can lead to unhappiness, stress, and regret, rather than satisfaction.",
+        "solver_note": "The passage provides multiple examples (chocolates, trips) and introduces the concept of 'tyranny of choice' to illustrate that a wider range of choices can lead to unhappiness, stress, and regret, rather than satisfaction.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-2-3",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states, 'the apple butter forced me to make several stops during the marathon.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-3-3",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage explicitly states that 'tyranny of choice' means it 'constrains our decision-making' rather than providing freedom, and leads to increased fear of making the wrong choice and regret.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-4-3",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The author uses a personal anecdote to provide direct advice on what foods to eat and avoid before a race.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L3-fill-msfy3v8j-6",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage explains how an abundance of choices, contrary to intuition, often leads to dissatisfaction and regret, which is the core idea of 'the paradox of choice'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L3-fill-msfy3v8j-7",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The author explicitly states, 'I concentrate on foods that are part of my normal diet' and advises, 'These foods are the ones you should concentrate on before a race.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L3-fill-msfy3v8j-8",
+        "domain": "reading",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The passage explicitly states that choice forces comparisons, highlights disadvantages, and leads to regret, ultimately making people less happy.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-1-3",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean words '달성하다' and '성취하다' both mean 'to achieve' or 'to accomplish' in English.",
+        "flags": [
+          "OK",
+          "AMBIGUOUS"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-2-3",
+        "domain": "vocabulary",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "In the context of a smartphone, 'features' refers to its distinctive attributes, characteristics, or functions. Option 1, '주요 특징 또는 기능' (main characteristic or function), best matches this meaning. Options 0, 2, and 3 are irrelevant or inco",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-4-3",
+        "domain": "vocabulary",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "Exploring an old castle is a common and logical activity to learn about its history and architecture.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L3-fill-msfy3v8j-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean words '성취하다' and '달성하다' both mean 'to achieve' or 'to accomplish' in English.",
+        "flags": [
+          "OK",
+          "AMBIGUOUS"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L3-fill-msfy3v8j-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "In the sentence 'The main issue in the debate was climate change,' 'issue' refers to the primary topic or problem being discussed. Option 0, '문제점이나 논쟁의 주제' (problem or topic of debate), accurately captures this meaning. Options 1, 2, and 3 ",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L3-fill-msfy3v8j-2",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "Water is absolutely necessary for the survival of all living things, making 'essential' the most fitting word.",
         "flags": [
           "OK"
         ],
@@ -50,12 +255,29 @@
   },
   "confidence": 0.8,
   "evidence": [
-    "attempted=3",
-    "correct=3",
+    "attempted=20",
+    "correct=20",
     "pool_approved=20",
-    "vocabulary-1-3",
     "grammar-1-3",
-    "reading-1-3"
+    "grammar-2-3",
+    "grammar-3-3",
+    "grammar-4-3",
+    "grammar-L3-fill-msfy3v8j-3",
+    "grammar-L3-fill-msfy3v8j-4",
+    "grammar-L3-fill-msfy3v8j-5",
+    "reading-1-3",
+    "reading-2-3",
+    "reading-3-3",
+    "reading-4-3",
+    "reading-L3-fill-msfy3v8j-6",
+    "reading-L3-fill-msfy3v8j-7",
+    "reading-L3-fill-msfy3v8j-8",
+    "vocabulary-1-3",
+    "vocabulary-2-3",
+    "vocabulary-4-3",
+    "vocabulary-L3-fill-msfy3v8j-0",
+    "vocabulary-L3-fill-msfy3v8j-1",
+    "vocabulary-L3-fill-msfy3v8j-2"
   ],
   "unresolved": []
 }

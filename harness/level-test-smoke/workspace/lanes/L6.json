@@ -3,30 +3,78 @@
   "item_id": "level:6",
   "result": {
     "level": 6,
-    "attempts": 3,
-    "correct": 3,
-    "total": 3,
+    "attempts": 18,
+    "correct": 18,
+    "total": 18,
     "accuracy": 1.0,
     "item_results": [
-      {
-        "item_id": "vocabulary-L6-fill-msfx10co-0",
-        "domain": "vocabulary",
-        "chosen": "0",
-        "gold": "0",
-        "is_correct": true,
-        "solver_note": "The Korean phrase '어디에나 있는, 아주 흔한' translates to 'present everywhere, very common,' which perfectly matches the definition of 'ubiquitous.'",
-        "flags": [
-          "OK"
-        ],
-        "model": "gemini-2.5-flash"
-      },
       {
         "item_id": "grammar-L6-fill-msfx10co-2",
         "domain": "grammar",
         "chosen": "0",
         "gold": "0",
         "is_correct": true,
-        "solver_note": "When a negative adverbial phrase like 'Not until' begins a sentence, it requires subject-auxiliary inversion. For simple past tense, this means using 'did' + subject + base form of the verb.",
+        "solver_note": "When a negative adverbial phrase like 'Not until' begins a sentence, it requires inversion of the subject and auxiliary verb. The correct structure for past simple tense is 'auxiliary verb (did) + subject + base form of the main verb'. Opti",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L6-fill-msfx10co-3",
+        "domain": "grammar",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "The past participle 'made' correctly forms a reduced relative clause (originally 'which was made') that passively modifies 'The decision'. The decision was acted upon by the committee.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L6-fill-msfx10co-4",
+        "domain": "grammar",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The sentence 'Had I known about the party' is an inverted third conditional clause (equivalent to 'If I had known about the party'). The main clause for a third conditional requires the structure 'would have + past participle'. Option 0, 'I",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L6-fill-msfy6myc-2",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The phrase 'It is imperative that' requires the subjunctive mood in the 'that' clause, which means the base form of the verb (submit) should be used regardless of the subject's person or number.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L6-fill-msfy6myc-3",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "The past participle 'surprised' correctly describes the student's state of being affected by the announcement. Options 0, 2, and 3 use incorrect forms or structures.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "grammar-L6-fill-msfy6myc-4",
+        "domain": "grammar",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "When a negative adverb like 'Seldom' begins a sentence, it requires inversion of the subject and auxiliary verb. The correct structure is 'Negative Adverb + Auxiliary Verb + Subject + Main Verb'. Option 1 follows this rule: 'Seldom + has (a",
         "flags": [
           "OK"
         ],
@@ -38,10 +86,143 @@
         "chosen": "0",
         "gold": "0",
         "is_correct": true,
-        "solver_note": "The passage introduces the RFID tracking nametags in Texas schools, explains the reasons for their implementation (financial benefits), and then delves into the various perspectives and controversies surrounding them, including privacy conc",
+        "solver_note": "The passage introduces the RFID tracking nametags in Texas schools, explains the reasons for their implementation (financial benefits), details the concerns raised by civil liberties groups (privacy), and also presents the practical advanta",
         "flags": [
           "OK",
           "AMBIGUOUS"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L6-fill-msfx10co-6",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage explicitly states the author was arrested after refusing the breathalyzer test and was charged with 'refusing to obey an officer.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L6-fill-msfx10co-7",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states: 'the district expects a $2 million return on an initial investment of $261,000 in the technology at two pilot schools.' This directly answers the question about the initial investment.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L6-fill-msfy6myc-5",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage details the introduction of student tracking technology (RFID nametags) in Texas schools, explaining the reasons for its implementation (primarily financial, related to attendance funding) and the various reactions to it, includ",
+        "flags": [
+          "OK",
+          "AMBIGUOUS"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L6-fill-msfy6myc-6",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The author explicitly states the initial decision was 'the biggest mistake of my life' and concludes by wanting 'everyone reading this to know that it's not right to drink and drive'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "reading-L6-fill-msfy6myc-7",
+        "domain": "reading",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The passage states, 'Anson Jones is the first school in San Antonio's Northside Independent School District to roll out the new nametags, which are part of a pilot program intended to ensure that the district receives all of the state dolla",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L6-fill-msfx10co-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean phrase '어디에나 있는, 아주 흔한' translates to 'existing everywhere, very common,' which perfectly matches the definition of 'ubiquitous.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L6-fill-msfx10co-1",
+        "domain": "vocabulary",
+        "chosen": "1",
+        "gold": "1",
+        "is_correct": true,
+        "solver_note": "To mitigate means to make something less severe, serious, or painful. In the context of climate change, policies aim to lessen or reduce its negative effects.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L6-fill-msfx1zkz-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean phrase '어디에나 있는, 아주 흔한' translates to 'present everywhere, very common,' which is the definition of 'ubiquitous.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L6-fill-msfx1zkz-1",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The context 'ensuring every detail was perfect' indicates that 'meticulous' means careful and precise, which aligns with '세심한, 꼼꼼한'.",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L6-fill-msfy6myc-0",
+        "domain": "vocabulary",
+        "chosen": "0",
+        "gold": "0",
+        "is_correct": true,
+        "solver_note": "The Korean phrase '어디에나 있는, 아주 흔한' translates to 'present, appearing, or found everywhere,' which is the definition of 'ubiquitous.'",
+        "flags": [
+          "OK"
+        ],
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "item_id": "vocabulary-L6-fill-msfy6myc-1",
+        "domain": "vocabulary",
+        "chosen": "2",
+        "gold": "2",
+        "is_correct": true,
+        "solver_note": "In the context of an economic downturn, governments implement policies to lessen or reduce its negative effects, which is the meaning of 'mitigate'.",
+        "flags": [
+          "OK"
         ],
         "model": "gemini-2.5-flash"
       }
@@ -50,12 +231,27 @@
   },
   "confidence": 0.8,
   "evidence": [
-    "attempted=3",
-    "correct=3",
+    "attempted=18",
+    "correct=18",
     "pool_approved=18",
-    "vocabulary-L6-fill-msfx10co-0",
     "grammar-L6-fill-msfx10co-2",
-    "reading-L6-fill-msfx10co-5"
+    "grammar-L6-fill-msfx10co-3",
+    "grammar-L6-fill-msfx10co-4",
+    "grammar-L6-fill-msfy6myc-2",
+    "grammar-L6-fill-msfy6myc-3",
+    "grammar-L6-fill-msfy6myc-4",
+    "reading-L6-fill-msfx10co-5",
+    "reading-L6-fill-msfx10co-6",
+    "reading-L6-fill-msfx10co-7",
+    "reading-L6-fill-msfy6myc-5",
+    "reading-L6-fill-msfy6myc-6",
+    "reading-L6-fill-msfy6myc-7",
+    "vocabulary-L6-fill-msfx10co-0",
+    "vocabulary-L6-fill-msfx10co-1",
+    "vocabulary-L6-fill-msfx1zkz-0",
+    "vocabulary-L6-fill-msfx1zkz-1",
+    "vocabulary-L6-fill-msfy6myc-0",
+    "vocabulary-L6-fill-msfy6myc-1"
   ],
   "unresolved": []
 }

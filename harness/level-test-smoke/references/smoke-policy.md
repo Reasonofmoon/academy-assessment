@@ -2,9 +2,17 @@
 
 ## Sample
 
+### Stratified (default)
+
 - Per level L1–L6: up to **1 approved item per domain** (vocabulary, grammar, reading).
 - Prefer items with `status=approved`, skip `quarantine`.
 - Deterministic pick: sort by id, take first per domain.
+
+### Full bank (`--all`)
+
+- Every **approved** `multiple_choice` item at each level.
+- Still lane-partitioned by level (L1–L6).
+- Expect longer wall time (API per item).
 
 ## Solver
 
