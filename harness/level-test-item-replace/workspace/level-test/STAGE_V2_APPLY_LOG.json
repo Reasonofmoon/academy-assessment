@@ -1,0 +1,53 @@
+{
+  "startedAt": "2026-08-05T09:15:16.320Z",
+  "quarantine": [
+    {
+      "ids": [
+        "seed-export-reading-1",
+        "seed-export-vocab-1"
+      ],
+      "result": {
+        "updated": 2,
+        "stats": {
+          "total": 39,
+          "counts": {
+            "pending": 0,
+            "approved": 37,
+            "quarantine": 2
+          },
+          "path": "C:\\Users\\sound\\academy-assessment\\data\\generated-bank\\items.json"
+        }
+      }
+    }
+  ],
+  "replaced": [
+    {
+      "oldId": "vocabulary-3",
+      "newId": "vocabulary-L2-replace-msfvg3on"
+    }
+  ],
+  "saved": [
+    {
+      "oldId": "vocabulary-3",
+      "newId": "vocabulary-L2-replace-msfvg3on",
+      "batchId": "replace-v2-1785921327527",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 제안하다, 제의하다, 암시하다"
+    },
+    {
+      "extras": [
+        "vocabulary-L2-extra-msfvg41p-0",
+        "vocabulary-L2-extra-msfvg41p-1"
+      ],
+      "batchId": "replace-v2-extra-1785921327997"
+    },
+    {
+      "repairNote": "grammar-3-2",
+      "ops": [
+        "review_lexis"
+      ]
+    }
+  ],
+  "skipped": [],
+  "errors": [],
+  "finishedAt": "2026-08-05T09:15:28.056Z"
+}

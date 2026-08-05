@@ -1,0 +1,164 @@
+{
+  "harness_version": "1.0",
+  "harness_id": "level-test-item-replace",
+  "domain": "Level-test fitness audit and replacement planning for academy-assessment item bank",
+  "target": "portable",
+  "generated_by": "build-vectorized-harness",
+
+  "broadcast": {
+    "goal": "Judge every generated-bank item for GLEAS level-test fitness and emit a deterministic replace_plan with per-slot replacement specs.",
+    "constraints": [
+      "Replacement preserves domain, level, and dimension/questionType slot.",
+      "Reading passages are never rewritten; items sit on preset text only.",
+      "New irtSource must remain ai_prior until empirical calibration.",
+      "Factual lane conflicts are never averaged; escalate to scalar tail.",
+      "Every defect cites item_id, code, span, and lane_id provenance.",
+      "SEED_DEMO items quarantine; they are not rewritten into production stems."
+    ],
+    "source_refs": [
+      "../../data/generated-bank/items.json",
+      "../../data/irt-exemplars/manifest.json",
+      "../../data/reading-passages/passages-by-level.json",
+      "../../lib/irt/types.ts",
+      "../../lib/irt/validate.ts",
+      "../../docs/IRT_ITEM_GENERATION.md",
+      "references/level-test-codes.md"
+    ],
+    "lane_output_schema": "schemas/lane_output.schema.json",
+    "acceptance_tests": [
+      "Every item_id in the bank appears in replace_plan with one disposition.",
+      "Every replace entry has replacement_spec with domain, level, targetTheta.",
+      "Conflicts appear only under exceptions, not as blended dispositions.",
+      "workspace/level-test/FITNESS_REPORT.md and replace_plan.json exist after a successful run."
+    ]
+  },
+
+  "vector_width": 4,
+
+  "lanes": {
+    "lane_id": [
+      "lane-psychometric",
+      "lane-construct",
+      "lane-options",
+      "lane-level-fit"
+    ],
+    "role": [
+      "Score IRT a/b/c alignment to targetTheta and MCQ guessing band.",
+      "Check domain construct, stem completeness, passage dependency, slot type.",
+      "Audit option sets for uniqueness, parallelism, and valid answer index.",
+      "Flag seed/demo items, generic synonym patterns, and level-lexis heuristics."
+    ],
+    "input_slice": [
+      "items[*].{irt,targetTheta,type,level}",
+      "items[*].{domain,dimension,questionType,passage,question,headword}",
+      "items[*].{options,answer,question,type}",
+      "items[*].{irtSource,question,level,domain,options}"
+    ],
+    "output_artifact": [
+      "workspace/lanes/psychometric.json",
+      "workspace/lanes/construct.json",
+      "workspace/lanes/options.json",
+      "workspace/lanes/level-fit.json"
+    ],
+    "definition_path": [
+      "lanes/lane-psychometric.md",
+      "lanes/lane-construct.md",
+      "lanes/lane-options.md",
+      "lanes/lane-level-fit.md"
+    ],
+    "review_mask": [
+      ["schema_valid", "constraint_satisfied", "provenance_present", "code_from_catalog"],
+      ["schema_valid", "constraint_satisfied", "provenance_present", "code_from_catalog"],
+      ["schema_valid", "constraint_satisfied", "provenance_present", "code_from_catalog"],
+      ["schema_valid", "constraint_satisfied", "provenance_present", "code_from_catalog"]
+    ],
+    "depends_on": [[], [], [], []]
+  },
+
+  "masks": {
+    "required": [
+      "schema_valid",
+      "constraint_satisfied",
+      "provenance_present",
+      "code_from_catalog"
+    ],
+    "definitions": {
+      "schema_valid": {
+        "description": "Lane output matches lane_output_schema with no missing or extra keys.",
+        "checked_by": "scripts/run_level_test_fitness.py"
+      },
+      "constraint_satisfied": {
+        "description": "disposition_vote consistent with codes severity (error cannot vote keep).",
+        "checked_by": "reducer"
+      },
+      "provenance_present": {
+        "description": "lane_id present and evidence non-empty when severity is not pass.",
+        "checked_by": "reducer"
+      },
+      "code_from_catalog": {
+        "description": "Every code is listed in references/level-test-codes.md catalog (or PASS).",
+        "checked_by": "scripts/run_level_test_fitness.py"
+      }
+    }
+  },
+
+  "reduction": {
+    "operator": "collect_codes -> severity_max -> disposition_rule -> build_replacement_spec -> report",
+    "precedence": [
+      "hard_constraints",
+      "masks",
+      "confidence",
+      "lane_order"
+    ],
+    "tie_break": [
+      "severity_error_first",
+      "confidence_desc",
+      "lane_index_asc",
+      "item_id_asc"
+    ],
+    "deterministic": true,
+    "provenance_required": true
+  },
+
+  "scalar_tail": {
+    "triggers": [
+      "mask_false",
+      "lane_conflict",
+      "incomplete_output",
+      "inherently_sequential"
+    ],
+    "max_passes": 2,
+    "budget_note": "Pass 1 re-runs failed lanes; pass 2 records human exceptions. Generation of replacements is a separate Stage V2 run, not unbounded tail.",
+    "unresolved_policy": "record_exception"
+  },
+
+  "orchestrator": {
+    "path": "skills/level-test-item-replace/SKILL.md",
+    "stages": [
+      "broadcast",
+      "vector_step",
+      "parallel_compute",
+      "reduce",
+      "scalar_tail"
+    ]
+  },
+
+  "concurrency": {
+    "mode": "logical",
+    "authorized": false,
+    "note": "Default runner is sequential Python. Set actual_subagents only with explicit multi-agent authorization."
+  },
+
+  "artifacts": [
+    { "path": "HARNESS_STATE.md", "kind": "registry" },
+    { "path": "HARNESS_MANIFEST.json", "kind": "manifest" },
+    { "path": "schemas/lane_output.schema.json", "kind": "schema" },
+    { "path": "skills/level-test-item-replace/SKILL.md", "kind": "orchestrator" },
+    { "path": "lanes/lane-psychometric.md", "kind": "lane" },
+    { "path": "lanes/lane-construct.md", "kind": "lane" },
+    { "path": "lanes/lane-options.md", "kind": "lane" },
+    { "path": "lanes/lane-level-fit.md", "kind": "lane" },
+    { "path": "scripts/run_level_test_fitness.py", "kind": "script" },
+    { "path": "references/level-test-codes.md", "kind": "reference" }
+  ]
+}

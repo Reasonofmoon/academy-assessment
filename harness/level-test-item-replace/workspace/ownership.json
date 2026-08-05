@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-08-05T09:16:20.773767+00:00",
+  "bank": "C:\\Users\\sound\\academy-assessment\\data\\generated-bank\\items.json",
+  "item_count": 42,
+  "lanes": {
+    "lane-psychometric": "workspace/lanes/psychometric.json",
+    "lane-construct": "workspace/lanes/construct.json",
+    "lane-options": "workspace/lanes/options.json",
+    "lane-level-fit": "workspace/lanes/level-fit.json"
+  }
+}

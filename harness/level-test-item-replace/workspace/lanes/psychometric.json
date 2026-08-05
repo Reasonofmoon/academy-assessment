@@ -1,0 +1,797 @@
+[
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "seed-export-vocab-1",
+    "result": {
+      "disposition_vote": "quarantine",
+      "codes": [
+        "SEED_DEMO"
+      ],
+      "severity": "error",
+      "notes": "bank status quarantine — skip replace planning (level-test Stage V2: SEED_DEMO / plan quarantine)",
+      "span": "item"
+    },
+    "confidence": 0.99,
+    "evidence": [
+      "status=quarantine"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "seed-export-reading-1",
+    "result": {
+      "disposition_vote": "quarantine",
+      "codes": [
+        "SEED_DEMO"
+      ],
+      "severity": "error",
+      "notes": "bank status quarantine — skip replace planning (level-test Stage V2: SEED_DEMO / plan quarantine)",
+      "span": "item"
+    },
+    "confidence": 0.99,
+    "evidence": [
+      "status=quarantine"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-3",
+    "result": {
+      "disposition_vote": "quarantine",
+      "codes": [
+        "BANK_QUARANTINE"
+      ],
+      "severity": "error",
+      "notes": "bank status quarantine — skip replace planning (replaced by vocabulary-L2-replace-msfvg3on codes=GENERIC_SYNONYM)",
+      "span": "item"
+    },
+    "confidence": 0.99,
+    "evidence": [
+      "status=quarantine"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.1 b=-0.95 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.0 b=-0.85 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-1-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-2-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-4-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-1-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-2-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-3-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-4-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-1-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-2-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-3-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-4-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-1-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=0.25 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-2-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=0.25 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-4-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=0.25 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-1-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=0.25 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-2-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.3 b=0.35 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-3-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.1 b=0.2 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "grammar-4-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=0.3 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-1-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=0.3 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-2-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.0 b=0.2 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-3-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.5 b=0.35 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "reading-4-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.1 b=0.2 c=0.25",
+      "targetTheta=0.25"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-L2-replace-msfvg3on",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-L2-extra-msfvg41p-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-psychometric",
+    "item_id": "vocabulary-L2-extra-msfvg41p-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "irt within soft bands",
+      "span": "irt"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irt a=1.2 b=-0.9 c=0.25",
+      "targetTheta=-0.9"
+    ],
+    "unresolved": []
+  }
+]

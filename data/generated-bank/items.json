@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-05T08:19:43.322Z",
+  "updatedAt": "2026-08-05T09:15:28.039Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -25,11 +25,12 @@
       "irtSource": "test",
       "dimension": "D2_Meaning",
       "headword": "diligent",
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-07-12T23:44:09.642Z",
-      "updatedAt": "2026-07-12T23:44:09.642Z",
-      "reviewedAt": "2026-07-12T23:44:09.642Z",
-      "reviewedBy": "seed"
+      "updatedAt": "2026-08-05T09:15:16.468Z",
+      "reviewedAt": "2026-08-05T09:15:16.468Z",
+      "reviewedBy": "level-test-replace-v2",
+      "reviewNote": "level-test Stage V2: SEED_DEMO / plan quarantine"
     },
     {
       "id": "seed-export-reading-1",
@@ -54,11 +55,12 @@
       "irtSource": "test",
       "questionType": "main_idea",
       "passage": "Many students find that writing a short study plan each week helps them finish homework on time. A plan also reduces stress because tasks feel smaller and clearer.",
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-07-12T23:44:09.642Z",
-      "updatedAt": "2026-07-12T23:44:09.642Z",
-      "reviewedAt": "2026-07-12T23:44:09.642Z",
-      "reviewedBy": "seed"
+      "updatedAt": "2026-08-05T09:15:16.468Z",
+      "reviewedAt": "2026-08-05T09:15:16.468Z",
+      "reviewedBy": "level-test-replace-v2",
+      "reviewNote": "level-test Stage V2: SEED_DEMO / plan quarantine"
     },
     {
       "id": "vocabulary-1",
@@ -182,12 +184,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T06:41:19.688Z",
-      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T09:15:27.983Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785912079673-approved"
+      "batchId": "seed-fill-1785912079673-approved",
+      "reviewedAt": "2026-08-05T09:15:27.983Z",
+      "reviewedBy": "level-test-replace-v2",
+      "reviewNote": "replaced by vocabulary-L2-replace-msfvg3on codes=GENERIC_SYNONYM"
     },
     {
       "id": "vocabulary-4",
@@ -840,10 +845,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T09:15:28.039Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewNote": "level-test repair pending: review_lexis codes=LEVEL_LEXIS"
     },
     {
       "id": "grammar-4-2",
@@ -1585,6 +1591,135 @@
       "createdBy": "seed-generated-bank",
       "grade": "고1",
       "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "vocabulary-L2-replace-msfvg3on",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 제안하다, 제의하다, 암시하다",
+      "options": [
+        "Suggest",
+        "Follow",
+        "Decide",
+        "Imagine"
+      ],
+      "answer": "0",
+      "explanation": "'Suggest'는 '제안하다, 제의하다' 또는 '암시하다'라는 뜻을 가지고 있습니다. 나머지 단어들은 주어진 한국어 뜻과 관련이 없습니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Suggest",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T09:15:27.543Z",
+      "updatedAt": "2026-08-05T09:15:27.543Z",
+      "createdBy": "level-test-replace-v2",
+      "grade": "중1",
+      "batchId": "replace-v2-1785921327527"
+    },
+    {
+      "id": "vocabulary-L2-extra-msfvg41p-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 fine의 뜻으로 가장 알맞은 것은?\nHe had to pay a large fine for parking illegally.",
+      "options": [
+        "벌금",
+        "괜찮은",
+        "미세한",
+        "좋은"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 'illegally(불법적으로)' 주차한 것에 대해 'pay(지불하다)'하는 것은 '벌금'이 가장 적절합니다. 'fine'은 '좋은, 괜찮은, 미세한' 등의 다른 뜻도 있지만 여기서는 해당되지 않습니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "Fine",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "pending",
+      "createdAt": "2026-08-05T09:15:28.007Z",
+      "updatedAt": "2026-08-05T09:15:28.007Z",
+      "createdBy": "level-test-replace-v2",
+      "grade": "중1",
+      "batchId": "replace-v2-extra-1785921327997"
+    },
+    {
+      "id": "vocabulary-L2-extra-msfvg41p-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nWe must _____ our environment from pollution.",
+      "options": [
+        "protect",
+        "destroy",
+        "ignore",
+        "build"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 'pollution(오염)'으로부터 'our environment(우리의 환경)'을 '지켜야 한다'는 의미가 가장 자연스럽습니다. 따라서 'protect(보호하다)'가 정답입니다. 'destroy(파괴하다)', 'ignore(무시하다)', 'build(짓다)'는 문맥에 맞지 않습니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D6_Cloze",
+      "headword": "Protect",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "pending",
+      "createdAt": "2026-08-05T09:15:28.007Z",
+      "updatedAt": "2026-08-05T09:15:28.007Z",
+      "createdBy": "level-test-replace-v2",
+      "grade": "중1",
+      "batchId": "replace-v2-extra-1785921327997"
     }
   ]
 }
