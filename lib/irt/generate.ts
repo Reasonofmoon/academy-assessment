@@ -314,6 +314,25 @@ ${dimPlan}
 ${typeRule}
 Generate EXACTLY ${count} items for this domain only.
 
+## Domain-specific stem rules (CRITICAL)
+${
+  domain === "vocabulary"
+    ? `VOCABULARY stems MUST be complete — never instruction-only.
+- Pattern A (meaning→word): use NEWLINES exactly like this:
+  "한글 뜻에 맞는 단어를 고르시오.\\n한글 뜻: <Korean gloss>"
+  Example: "한글 뜻에 맞는 단어를 고르시오.\\n한글 뜻: 여행하다"
+- Pattern B (context): put the English sentence on the NEXT line after the Korean prompt:
+  "다음 문장에서 book의 뜻으로 가장 알맞은 것은?\\nI like to read a new book every week."
+- Pattern C (cloze): blank sentence on its own line:
+  "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\\nLet's _____ outside."
+- Always set "headword" to the target English word (correct answer lemma).
+- NEVER output only "한글 뜻에 맞는 단어를 고르시오." without the 한글 뜻 line.`
+    : domain === "grammar"
+      ? `GRAMMAR: put any example sentence on a new line after the Korean instruction.
+Use \\n between prompt and example. Keep options short parallel forms.`
+      : `READING: "question" is stem ONLY (no pasted passage). Use clear Korean or English stems.`
+}
+
 ## Refined exemplars (few-shot, do not copy)
 ${exemplarBlocks || "(no exemplars — still follow IRT rules)"}
 
@@ -343,8 +362,20 @@ Rules for fields:
 - short_answer: options=[], answer=model English text
 - explanation in Korean
 - reading: include "passage" (80–220 words for L1-L2, 120–280 for L3+) when the item depends on a text
-- vocabulary: set dimension from the plan when provided
+- vocabulary: set dimension from the plan when provided; question MUST include \\n line breaks as shown above
 `;
+}
+
+/** Ensure stems keep display-friendly newlines before validation. */
+function normalizeStemNewlines(question: string, domain: Domain): string {
+  let q = question.replace(/\r\n/g, "\n").trim();
+  if (domain === "vocabulary") {
+    q = q.replace(/(고르시오\.?)\s*(한글\s*뜻\s*:)/g, "$1\n$2");
+    q = q.replace(/(고르시오\.?)\s+(?=[A-Za-z"'“])/g, "$1\n");
+    q = q.replace(/([?？])\s+(?=[A-Za-z"'“])/g, "$1\n");
+    q = q.replace(/(것은\?)\s*(?=[A-Za-z])/g, "$1\n");
+  }
+  return q;
 }
 
 function toGenerated(
@@ -357,7 +388,7 @@ function toGenerated(
     id: raw.id,
     domain: raw.domain,
     type: raw.type,
-    question: raw.question,
+    question: normalizeStemNewlines(raw.question, raw.domain),
     options: raw.options ?? [],
     answer: raw.answer,
     explanation: raw.explanation,

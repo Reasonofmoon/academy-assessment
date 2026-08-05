@@ -3,6 +3,7 @@
  * Mirrors the spirit of echobridge item-validator (fail-safe).
  */
 import type { IrtGeneratedItem } from "@/lib/irt/types";
+import { isIncompleteVocabStem } from "@/lib/format-question";
 
 export interface ValidationResult {
   ok: boolean;
@@ -19,6 +20,11 @@ export function validateIrtItem(item: IrtGeneratedItem): ValidationResult {
 
   if (!item.question?.trim()) errors.push("EMPTY_QUESTION");
   if (item.question && item.question.length < 10) errors.push("QUESTION_TOO_SHORT");
+
+  // Incomplete stems (e.g. "한글 뜻에 맞는 단어를 고르시오." with no meaning line)
+  if (item.domain === "vocabulary" && item.question && isIncompleteVocabStem(item.question)) {
+    errors.push("INCOMPLETE_VOCAB_STEM");
+  }
 
   if (item.type === "multiple_choice") {
     if (!item.options || item.options.length !== 4) {

@@ -6,6 +6,7 @@ import {
   type Answers,
   type Domain,
 } from "@/lib/types";
+import { formatQuestionForDisplay } from "@/lib/format-question";
 
 // ───────────────────────────────────────────────────────────
 // 학생 답안 입력 폼
@@ -49,50 +50,71 @@ export default function QuestionList({
               </h3>
 
               <ol className="space-y-5">
-                {domainQuestions.map((q, idx) => (
-                  <li key={q.id} className="rounded-md bg-stone-50 p-4">
-                    {/* 문제 지문 */}
-                    <p className="mb-3 font-medium text-stone-800">
-                      <span className="mr-2 text-accent">Q{idx + 1}.</span>
-                      {q.question}
-                    </p>
-
-                    {/* 객관식: 라디오 / 단답형: 텍스트 */}
-                    {q.type === "multiple_choice" ? (
-                      <div className="space-y-2">
-                        {q.options.map((opt, optIdx) => (
-                          <label
-                            key={optIdx}
-                            className="flex cursor-pointer items-center gap-2 text-sm text-stone-700"
-                          >
-                            <input
-                              type="radio"
-                              name={q.id}
-                              className="h-4 w-4 accent-primary"
-                              // 라디오 값은 보기 인덱스 문자열 ("0"~"3")
-                              checked={answers[q.id] === String(optIdx)}
-                              onChange={() => onAnswerChange(q.id, String(optIdx))}
-                            />
-                            <span>
-                              <span className="mr-1 font-semibold">
-                                {String.fromCharCode(65 + optIdx)}.
-                              </span>
-                              {opt}
-                            </span>
-                          </label>
-                        ))}
+                {domainQuestions.map((q, idx) => {
+                  const { passage, stem } = formatQuestionForDisplay(q.question);
+                  return (
+                    <li key={q.id} className="rounded-md bg-stone-50 p-4">
+                      <div className="mb-3">
+                        <div className="mb-2 flex items-start gap-2">
+                          <span className="shrink-0 font-semibold text-accent">
+                            Q{idx + 1}.
+                          </span>
+                          <div className="min-w-0 flex-1">
+                            {passage && (
+                              <div className="mb-3 rounded-md border border-stone-200 bg-white p-3 text-sm leading-relaxed text-stone-700">
+                                <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                                  지문
+                                </p>
+                                <p className="whitespace-pre-wrap">{passage}</p>
+                              </div>
+                            )}
+                            <p className="whitespace-pre-wrap font-medium leading-relaxed text-stone-800">
+                              {stem}
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                    ) : (
-                      <input
-                        type="text"
-                        className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-                        placeholder="답을 입력하세요"
-                        value={answers[q.id] ?? ""}
-                        onChange={(e) => onAnswerChange(q.id, e.target.value)}
-                      />
-                    )}
-                  </li>
-                ))}
+
+                      {/* 객관식: 라디오 / 단답형: 텍스트 */}
+                      {q.type === "multiple_choice" ? (
+                        <div className="space-y-2 pl-0 sm:pl-7">
+                          {q.options.map((opt, optIdx) => (
+                            <label
+                              key={optIdx}
+                              className="flex cursor-pointer items-start gap-2 text-sm text-stone-700"
+                            >
+                              <input
+                                type="radio"
+                                name={q.id}
+                                className="mt-0.5 h-4 w-4 shrink-0 accent-primary"
+                                checked={answers[q.id] === String(optIdx)}
+                                onChange={() =>
+                                  onAnswerChange(q.id, String(optIdx))
+                                }
+                              />
+                              <span className="whitespace-pre-wrap">
+                                <span className="mr-1 font-semibold">
+                                  {String.fromCharCode(65 + optIdx)}.
+                                </span>
+                                {opt}
+                              </span>
+                            </label>
+                          ))}
+                        </div>
+                      ) : (
+                        <input
+                          type="text"
+                          className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:ml-7 sm:w-[calc(100%-1.75rem)]"
+                          placeholder="답을 입력하세요"
+                          value={answers[q.id] ?? ""}
+                          onChange={(e) =>
+                            onAnswerChange(q.id, e.target.value)
+                          }
+                        />
+                      )}
+                    </li>
+                  );
+                })}
               </ol>
             </div>
           );
