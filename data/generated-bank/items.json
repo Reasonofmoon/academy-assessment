@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-07-12T23:44:09.642Z",
+  "updatedAt": "2026-08-05T08:19:43.322Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -59,6 +59,1532 @@
       "updatedAt": "2026-07-12T23:44:09.642Z",
       "reviewedAt": "2026-07-12T23:44:09.642Z",
       "reviewedBy": "seed"
+    },
+    {
+      "id": "vocabulary-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 도착하다, 도달하다",
+      "options": [
+        "Arrive",
+        "Depart",
+        "Follow",
+        "Forget"
+      ],
+      "answer": "0",
+      "explanation": "'arrive'는 어떤 장소나 목적지에 '도착하다'는 의미입니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Arrive",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "vocabulary-2",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 'board'의 뜻으로 가장 알맞은 것은?\nLet's play a board game.",
+      "options": [
+        "판, 널빤지",
+        "탑승하다",
+        "식사",
+        "게시판"
+      ],
+      "answer": "0",
+      "explanation": "문맥에서 'board game'은 '보드 게임'을 의미하며, 여기서 'board'는 '판'이나 '널빤지'를 뜻합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "Board",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "vocabulary-3",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "Choose the word closest in meaning to careful.",
+      "options": [
+        "cautious",
+        "careless",
+        "quick",
+        "brave"
+      ],
+      "answer": "0",
+      "explanation": "'careful'은 '조심하는, 주의 깊은'이라는 뜻으로, 'cautious'와 가장 유사한 의미를 가집니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D4_Network",
+      "headword": "Careful",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "vocabulary-4",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 빈칸에 들어갈 가장 알맞은 단어는?\nMy hobby is to _______ stamps from different countries.",
+      "options": [
+        "collect",
+        "keep",
+        "find",
+        "spread"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 '다른 나라의 우표를 모으는 것'이 취미라는 내용이므로, '모으다'라는 의미의 'collect'가 가장 적절합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D6_Cloze",
+      "headword": "Collect",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "grammar-1",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 빈칸에 들어갈 가장 적절한 단어를 고르시오.\n\"My brother often _____ video games after school.\"",
+      "options": [
+        "play",
+        "plays",
+        "played",
+        "playing"
+      ],
+      "answer": "1",
+      "explanation": "주어가 3인칭 단수 (My brother)이고, 'often'이 현재 습관을 나타내므로 현재 시제 동사에 -s를 붙인 'plays'가 적절합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "grammar-2",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 빈칸에 들어갈 가장 적절한 단어를 고르시오.\n\"You _____ wear a helmet when you ride a bicycle.\"",
+      "options": [
+        "must",
+        "can",
+        "should",
+        "will"
+      ],
+      "answer": "2",
+      "explanation": "자전거를 탈 때 헬멧을 착용하는 것이 좋다는 권유나 충고의 의미이므로 'should'가 가장 적절합니다. 'must'는 의무, 'can'은 능력, 'will'은 미래를 나타냅니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.1,
+        "b": -0.95,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "grammar-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 빈칸에 들어갈 가장 적절한 단어를 고르시오.\n\"The concert starts _____ 7 p.m. _____ Friday.\"",
+      "options": [
+        "at - in",
+        "on - at",
+        "at - on",
+        "in - on"
+      ],
+      "answer": "2",
+      "explanation": "특정 시각 앞에는 'at'을 사용하고, 요일 앞에는 'on'을 사용합니다. 따라서 'at 7 p.m. on Friday'가 올바른 표현입니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1,
+        "b": -0.85,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "grammar-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 빈칸에 들어갈 가장 적절한 단어를 고르시오.\n\"She speaks English very _____.\"",
+      "options": [
+        "good",
+        "well",
+        "better",
+        "best"
+      ],
+      "answer": "1",
+      "explanation": "동사 'speaks'를 수식하는 것은 부사이므로, 형용사 'good'의 부사형인 'well'이 적절합니다. 'better'와 'best'는 비교급과 최상급입니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "reading-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 요지로 가장 적절한 것은?",
+      "options": [
+        "마이클의 어머니는 아들의 숙제 기한 연장을 요청한다.",
+        "마이클은 학교에서 종종 늦게 집에 온다.",
+        "화이트 선생님은 마이클의 농구 코치이다.",
+        "마이클은 과학 숙제에 도움이 필요하다."
+      ],
+      "answer": "0",
+      "explanation": "이 글은 마이클의 어머니가 아들이 너무 피곤해서 숙제를 끝내지 못했으니 주말에 숙제를 해서 다음 주 월요일에 제출할 수 있도록 허락해 달라고 선생님께 요청하는 내용이다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. after the basketball match, with four homework assignments. By 11 p.m., he had completed only three: science, math and English. He worked hard all evening. When he was about to start your homework, I decided to stop him. He looked exhausted, so I made him pack up his books and go to bed. I promised him that I would write to you and explain the situation. Michael is anxious to finish your homework. Would it be possible to allow him to do it over the weekend and hand it in next Monday? We would be very grateful if you could agree to this. Yours sincerely, Dorothy Williams",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "reading-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "글에 따르면, 필자는 은행 명세서에서 어떤 문제를 발견했는가?",
+      "options": [
+        "신용 카드가 두 번 청구되었다.",
+        "영화관에서 신용 카드를 받지 않았다.",
+        "티켓 가격이 예상보다 비쌌다.",
+        "결제 문제로 티켓을 구매할 수 없었다."
+      ],
+      "answer": "0",
+      "explanation": "필자는 은행 명세서를 확인했을 때 자신의 신용 카드가 두 번 청구된 것을 발견했다고 명시되어 있다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "My wife and I visited your cinema last month. We purchased two tickets which came to a total of $44. At the time of purchase, the attendant at the information desk told us they were having some problems accepting credit card payments. At that time, I was anxious about my credit card payment, but the attendant told me that there was no problem with my payment. However, when I received my bank statement, I discovered that you charged my card twice. I would be grateful if you could resolve this matter quickly.",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "reading-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글을 바탕으로 화이트 선생님에 대해 추론할 수 있는 것은 무엇인가?",
+      "options": [
+        "그녀는 마이클의 선생님이다.",
+        "그녀는 마이클의 농구 코치이다.",
+        "그녀는 도로시 윌리엄스의 친한 친구이다.",
+        "그녀는 학교 행정실에서 일한다."
+      ],
+      "answer": "0",
+      "explanation": "편지의 내용이 마이클의 숙제에 대한 요청이며, '당신의 숙제(your homework)'라는 표현을 사용한 것으로 보아 화이트 선생님은 마이클의 선생님임을 추론할 수 있다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. after the basketball match, with four homework assignments. By 11 p.m., he had completed only three: science, math and English. He worked hard all evening. When he was about to start your homework, I decided to stop him. He looked exhausted, so I made him pack up his books and go to bed. I promised him that I would write to you and explain the situation. Michael is anxious to finish your homework. Would it be possible to allow him to do it over the weekend and hand it in next Monday? We would be very grateful if you could agree to this. Yours sincerely, Dorothy Williams",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "reading-4",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "이 편지의 주된 목적은 무엇인가?",
+      "options": [
+        "과다 청구에 대한 환불을 요청하기 위해.",
+        "영화관의 형편없는 서비스에 대해 불평하기 위해.",
+        "신용 카드 결제 옵션에 대해 문의하기 위해.",
+        "영화관의 다음 방문을 위해 티켓을 예약하기 위해."
+      ],
+      "answer": "0",
+      "explanation": "필자는 신용 카드가 두 번 청구된 문제에 대해 언급하며 \"이 문제를 빨리 해결해 주시면 감사하겠습니다\"라고 요청하고 있으므로, 과다 청구에 대한 환불 또는 문제 해결을 요청하는 것이 이 편지의 주된 목적이다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "My wife and I visited your cinema last month. We purchased two tickets which came to a total of $44. At the time of purchase, the attendant at the information desk told us they were having some problems accepting credit card payments. At that time, I was anxious about my credit card payment, but the attendant told me that there was no problem with my payment. However, when I received my bank statement, I discovered that you charged my card twice. I would be grateful if you could resolve this matter quickly.",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785912079673-approved"
+    },
+    {
+      "id": "vocabulary-1-2",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 여행, 여정",
+      "options": [
+        "Journey",
+        "Holiday",
+        "Vacation",
+        "Trip"
+      ],
+      "answer": "0",
+      "explanation": "'Journey'는 길고 중요한 여행이나 여정을 의미하는 단어입니다. 'Trip'은 짧은 여행을, 'Holiday'나 'Vacation'은 휴가 기간을 의미할 수 있습니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Journey",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "vocabulary-2-2",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 serve의 뜻으로 가장 알맞은 것은?\nThe restaurant will serve delicious food.",
+      "options": [
+        "제공하다",
+        "봉사하다",
+        "섬기다",
+        "근무하다"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 'serve'는 레스토랑에서 음식을 '제공하다'라는 의미로 사용되었습니다. 다른 보기들은 'serve'의 다른 의미들입니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "Serve",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "vocabulary-4-2",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nThe dog _____ appeared from behind the tree.",
+      "options": [
+        "suddenly",
+        "slowly",
+        "quietly",
+        "happily"
+      ],
+      "answer": "0",
+      "explanation": "개가 나무 뒤에서 '갑자기' 나타났다는 문맥이 가장 자연스럽습니다. 'suddenly'는 '갑자기'라는 뜻의 부사입니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D6_Cloze",
+      "headword": "Suddenly",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "vocabulary-5",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 중 practice의 올바른 쓰임을 고르시오.",
+      "options": [
+        "I need to practice my English every day.",
+        "She practice to play the piano.",
+        "He has a good practice to wake up early.",
+        "We saw a practice of birds flying south."
+      ],
+      "answer": "0",
+      "explanation": "'practice'는 '연습하다'라는 동사로, 동명사나 명사 형태로 쓰일 수 있습니다. 첫 번째 문장이 '영어를 매일 연습해야 한다'는 의미로 가장 자연스럽게 사용되었습니다. 두 번째 문장은 동사 형태가 틀렸고, 세 번째와 네 번째 문장은 문맥상 어색합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D5_Usage",
+      "headword": "Practice",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "grammar-1-2",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "현재진행형이 자연스러운 문장을 고르시오.\nHe ____ a book now.",
+      "options": [
+        "reads",
+        "is reading",
+        "read",
+        "will read"
+      ],
+      "answer": "1",
+      "explanation": "'now'는 지금 진행 중인 동작을 나타내므로 현재진행형 'is reading'이 가장 적절합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "grammar-2-2",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "빈칸에 들어갈 알맞은 단어를 고르시오.\nHow ____ water do you drink every day?",
+      "options": [
+        "many",
+        "much",
+        "a few",
+        "some"
+      ],
+      "answer": "1",
+      "explanation": "'water'는 셀 수 없는 명사이므로 양을 물을 때는 'much'를 사용합니다. 'many'는 셀 수 있는 명사에 사용합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "grammar-3-2",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "비교급 표현이 올바른 문장을 고르시오.\nThis book is ____ than that one.",
+      "options": [
+        "interestinger",
+        "more interesting",
+        "most interesting",
+        "much interesting"
+      ],
+      "answer": "1",
+      "explanation": "3음절 이상의 형용사 'interesting'의 비교급은 'more interesting'입니다. 'interestinger'는 잘못된 형태이며, 'most interesting'은 최상급입니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "grammar-4-2",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "빈칸에 들어갈 알맞은 전치사를 고르시오.\nI usually wake up ____ 7 o'clock.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "for"
+      ],
+      "answer": "2",
+      "explanation": "정확한 시각 앞에는 전치사 'at'을 사용합니다. 'in'은 월, 계절, 연도, 오전/오후 등에, 'on'은 요일이나 특정 날짜에 사용합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "grammar-5",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "조동사 should가 자연스럽게 쓰인 문장을 고르시오.\nYou ____ go to bed early.",
+      "options": [
+        "can",
+        "must",
+        "should",
+        "will"
+      ],
+      "answer": "2",
+      "explanation": "일찍 자라는 것은 조언이나 권유에 해당하므로 'should'가 가장 적절합니다. 'can'은 능력, 'must'는 강한 의무, 'will'은 미래를 나타냅니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "reading-1-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 목적으로 가장 적절한 것은?",
+      "options": [
+        "마이클의 숙제 제출 기한 연장을 요청하려고",
+        "마이클의 농구 시합 결과를 알려주려고",
+        "마이클의 과도한 학업량에 대해 항의하려고",
+        "마이클의 성실한 태도를 칭찬하려고"
+      ],
+      "answer": "0",
+      "explanation": "이 글은 마이클의 어머니가 선생님께 아들이 숙제를 끝내지 못한 이유를 설명하고, 숙제 제출 기한을 연장해 달라고 요청하는 내용입니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. after the basketball match, with four homework assignments. By 11 p.m., he had completed only three: science, math and English. He worked hard all evening. When he was about to start your homework, I decided to stop him. He looked exhausted, so I made him pack up his books and go to bed. I promised him that I would write to you and explain the situation. Michael is anxious to finish your homework. Would it be possible to allow him to do it over the weekend and hand it in next Monday? We would be very grateful if you could agree to this. Yours sincerely, Dorothy Williams",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "reading-2-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "글쓴이가 영화관에서 지불한 총 금액은 얼마인가?",
+      "options": [
+        "$44",
+        "$22",
+        "$88",
+        "$11"
+      ],
+      "answer": "0",
+      "explanation": "글쓴이는 아내와 함께 영화관에서 두 장의 티켓을 구매했고, 총 44달러를 지불했다고 명시되어 있습니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "My wife and I visited your cinema last month. We purchased two tickets which came to a total of $44. At the time of purchase, the attendant at the information desk told us they were having some problems accepting credit card payments. At that time, I was anxious about my credit card payment, but the attendant told me that there was no problem with my payment. However, when I received my bank statement, I discovered that you charged my card twice. I would be grateful if you could resolve this matter quickly.",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "reading-3-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글을 통해 Ms. White에 대해 추론할 수 있는 것은?",
+      "options": [
+        "마이클의 선생님이다.",
+        "마이클의 농구 코치이다.",
+        "마이클의 어머니와 친한 친구이다.",
+        "마이클에게 숙제를 내주지 않았다."
+      ],
+      "answer": "0",
+      "explanation": "마이클의 어머니가 Ms. White에게 '선생님의 숙제(your homework)'에 대해 언급하며 제출 기한 연장을 요청하는 것으로 보아, Ms. White는 마이클의 선생님임을 추론할 수 있습니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. after the basketball match, with four homework assignments. By 11 p.m., he had completed only three: science, math and English. He worked hard all evening. When he was about to start your homework, I decided to stop him. He looked exhausted, so I made him pack up his books and go to bed. I promised him that I would write to you and explain the situation. Michael is anxious to finish your homework. Would it be possible to allow him to do it over the weekend and hand it in next Monday? We would be very grateful if you could agree to this. Yours sincerely, Dorothy Williams",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "reading-4-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 목적으로 가장 적절한 것은?",
+      "options": [
+        "이중으로 청구된 금액에 대한 환불을 요청하려고",
+        "영화관 직원의 불친절에 대해 항의하려고",
+        "신용카드 결제 시스템의 문제를 알리려고",
+        "지난달 영화 관람에 대한 만족감을 표현하려고"
+      ],
+      "answer": "0",
+      "explanation": "글쓴이는 영화관에서 신용카드로 결제한 금액이 두 번 청구된 것을 발견하고, 이 문제를 해결해 달라고 요청하고 있으므로, 이중 청구된 금액에 대한 환불을 요청하는 것이 목적입니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "My wife and I visited your cinema last month. We purchased two tickets which came to a total of $44. At the time of purchase, the attendant at the information desk told us they were having some problems accepting credit card payments. At that time, I was anxious about my credit card payment, but the attendant told me that there was no problem with my payment. However, when I received my bank statement, I discovered that you charged my card twice. I would be grateful if you could resolve this matter quickly.",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "reading-5",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "마이클이 어제 끝낸 숙제 과목이 아닌 것은?",
+      "options": [
+        "역사",
+        "과학",
+        "수학",
+        "영어"
+      ],
+      "answer": "0",
+      "explanation": "마이클은 밤 11시까지 과학, 수학, 영어 숙제 세 가지를 마쳤다고 언급되어 있으므로, 역사는 끝내지 않은 숙제 과목입니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. after the basketball match, with four homework assignments. By 11 p.m., he had completed only three: science, math and English. He worked hard all evening. When he was about to start your homework, I decided to stop him. He looked exhausted, so I made him pack up his books and go to bed. I promised him that I would write to you and explain the situation. Michael is anxious to finish your homework. Would it be possible to allow him to do it over the weekend and hand it in next Monday? We would be very grateful if you could agree to this. Yours sincerely, Dorothy Williams",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "중1",
+      "batchId": "seed-fill-1785917936979-approved"
+    },
+    {
+      "id": "vocabulary-1-3",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 달성하다, 성취하다",
+      "options": [
+        "Achieve",
+        "Suggest",
+        "Predict",
+        "Observe"
+      ],
+      "answer": "0",
+      "explanation": "주어진 한글 뜻 '달성하다, 성취하다'에 가장 적합한 영어 단어는 'Achieve'입니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Achieve",
+      "exemplarIds": [
+        "L3-02067-D2_Meaning-regenerated",
+        "L3-01763-D2_Meaning-regenerated",
+        "L3-05008-D3_Context-4",
+        "L3-04631-D3_Context-3",
+        "L3-02570-D4_Network-5",
+        "L3-04557-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "vocabulary-2-3",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 feature의 뜻으로 가장 알맞은 것은?\nThe new smartphone has many exciting features.",
+      "options": [
+        "재정적 지원",
+        "주요 특징 또는 기능",
+        "과거의 경험",
+        "예상치 못한 문제"
+      ],
+      "answer": "1",
+      "explanation": "문맥상 '새 스마트폰에는 많은 흥미로운 feature가 있다'는 '새 스마트폰에는 많은 흥미로운 주요 특징 또는 기능이 있다'는 의미이므로, '주요 특징 또는 기능'이 가장 적절합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "feature",
+      "exemplarIds": [
+        "L3-02067-D2_Meaning-regenerated",
+        "L3-01763-D2_Meaning-regenerated",
+        "L3-05008-D3_Context-4",
+        "L3-04631-D3_Context-3",
+        "L3-02570-D4_Network-5",
+        "L3-04557-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "vocabulary-4-3",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nWe decided to _____ the old castle.",
+      "options": [
+        "ignore",
+        "explore",
+        "destroy",
+        "prevent"
+      ],
+      "answer": "1",
+      "explanation": "'우리는 오래된 성을 _____하기로 결정했다'는 문맥에서, '탐험하다'라는 뜻의 'explore'가 가장 자연스럽게 빈칸에 들어갈 수 있습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D6_Cloze",
+      "headword": "explore",
+      "exemplarIds": [
+        "L3-02067-D2_Meaning-regenerated",
+        "L3-01763-D2_Meaning-regenerated",
+        "L3-05008-D3_Context-4",
+        "L3-04631-D3_Context-3",
+        "L3-02570-D4_Network-5",
+        "L3-04557-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "grammar-1-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 어법상 올바른 동사 형태를 고르시오.\nOne of the students ___ excellent at math.",
+      "options": [
+        "is",
+        "are",
+        "be",
+        "being"
+      ],
+      "answer": "0",
+      "explanation": "주어는 'One'이므로 단수 동사 'is'가 올바릅니다. 'students'는 전치사구의 목적어입니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L3-01955-D5_Usage-7",
+        "L3-02300-D5_Usage-regenerated",
+        "L3-02385-D5_Usage-7",
+        "L3-02551-D5_Usage-7"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "grammar-2-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장의 빈칸에 들어갈 가장 적절한 관계대명사를 고르시오.\nMy brother, ___ lives in London, is a doctor.",
+      "options": [
+        "who",
+        "which",
+        "that",
+        "where"
+      ],
+      "answer": "0",
+      "explanation": "콤마 뒤에 사람을 설명하는 관계대명사이므로 'who'가 적절합니다. 'that'은 계속적 용법(콤마 뒤)에 올 수 없습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.3,
+        "b": 0.35,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L3-01955-D5_Usage-7",
+        "L3-02300-D5_Usage-regenerated",
+        "L3-02385-D5_Usage-7",
+        "L3-02551-D5_Usage-7"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "grammar-3-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장의 빈칸에 들어갈 가장 적절한 동사 형태를 고르시오.\nIf I ___ more time, I would travel around the world.",
+      "options": [
+        "had",
+        "have",
+        "will have",
+        "would have"
+      ],
+      "answer": "0",
+      "explanation": "'would travel'을 통해 가정법 과거임을 알 수 있습니다. 따라서 if절에는 과거 시제 동사 'had'가 와야 합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.1,
+        "b": 0.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L3-01955-D5_Usage-7",
+        "L3-02300-D5_Usage-regenerated",
+        "L3-02385-D5_Usage-7",
+        "L3-02551-D5_Usage-7"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "grammar-4-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 어법상 올바른 수동태 동사 형태를 고르시오.\nThe new bridge ___ next year.",
+      "options": [
+        "will be built",
+        "is built",
+        "builds",
+        "built"
+      ],
+      "answer": "0",
+      "explanation": "'next year'는 미래 시점을 나타내고, 다리는 '지어지는' 것이므로 미래 수동태 'will be built'가 적절합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L3-01955-D5_Usage-7",
+        "L3-02300-D5_Usage-regenerated",
+        "L3-02385-D5_Usage-7",
+        "L3-02551-D5_Usage-7"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "reading-1-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 요지로 가장 적절한 것은?",
+      "options": [
+        "선택의 폭이 넓을수록 오히려 불행과 후회를 야기할 수 있다.",
+        "비교를 통해 최선의 선택을 하는 것이 중요하다.",
+        "사람들은 항상 더 많은 선택권을 가지기를 원한다.",
+        "선택의 자유는 언제나 개인의 만족도를 높인다."
+      ],
+      "answer": "0",
+      "explanation": "이 글은 선택의 폭이 넓어질수록 사람들이 오히려 결정을 내리지 못하거나, 내린 결정에 대해 후회하며 불행감을 느낄 수 있다는 점을 설명하고 있습니다. '선택의 폭정'이라는 개념을 통해 이러한 역설적인 상황을 강조합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "Shoppers confronted with the choice of thirty different varieties of gourmet chocolates are more likely to walk away without buying any, compared with when they are presented with only half a dozen choices. If employees are given a free trip to Paris, they are happy. If you give them a free trip to Hawaii, they are happy. But if you offer them the choice between the two destinations, they are less happy, no matter what they choose. Why might choice be so (a) disruptive ? The reason is that choice forces us to make comparisons and acknowledge relative (b) disadvantages . People who choose Paris complain that it doesn’t have the ocean and those who choose Hawaii regret that it doesn’t have the museums. Psychologist Barry Schwartz calls this the ‘tyranny of choice’ because rather than providing freedom, it actually (c) constrains our decision-making. He argues that (d) narrower choice increases unhappiness because we worry that we are going to make the wrong decision and so we get stressed about trying to process all the comparisons in an effort to get it right. This both increases our fear of making the wrong choice and raises expectations that we should be able to get the best choice. Having made the choice, we then (e) start to regret, wondering whether it was the right one.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "reading-2-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "필자가 마라톤 전에 사과 버터를 먹었을 때 어떤 일이 일어났는가?",
+      "options": [
+        "마라톤 도중 여러 번 멈춰야 했다.",
+        "경주에 필요한 추가 에너지를 얻었다.",
+        "경주 내내 포만감과 만족감을 느꼈다.",
+        "다음 경주에도 다시 먹기로 결심했다."
+      ],
+      "answer": "0",
+      "explanation": "필자는 마라톤 전날 사과 버터를 먹고 다음 날 'the apple butter forced me to make several stops during the marathon'이라고 언급하며, 이로 인해 경주 중 여러 번 멈춰야 했다고 설명합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1,
+        "b": 0.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "One of the most important things to remember before a race is to eat the right foods. Here is my lesson for you. The night before one of my marathons, I was struck by an uncontrollable need for apple butter. I satisfied the hunger that evening but paid a heavy price the next day; the apple butter forced me to make several stops during the marathon. You can bet that I never ate apple butter again before a race. Instead, I concentrate on foods that are part of my normal diet such as pasta and rice: foods that fuel my muscles. You must certainly have similar foods that you eat every day. These foods are the ones you should concentrate on before a race.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "reading-3-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 내용으로 미루어 볼 때, '선택의 폭정(tyranny of choice)'이 시사하는 바는 무엇인가?",
+      "options": [
+        "선택은 자유를 주기보다는 심리적 부담과 후회를 야기할 수 있다.",
+        "사람들은 항상 더 많은 선택권을 원하며, 이는 만족으로 이어진다.",
+        "완벽한 선택을 하는 것은 불가능하므로, 선택은 무의미하다.",
+        "선택의 어려움은 주로 물질적인 것에 국한된다."
+      ],
+      "answer": "0",
+      "explanation": "글에 따르면 '선택의 폭정'은 선택이 자유를 제공하기보다 의사 결정을 제약하고, 비교와 후회를 불러일으키며, 잘못된 선택에 대한 두려움과 최선에 대한 기대를 증가시켜 불행을 초래한다고 설명합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.5,
+        "b": 0.35,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Shoppers confronted with the choice of thirty different varieties of gourmet chocolates are more likely to walk away without buying any, compared with when they are presented with only half a dozen choices. If employees are given a free trip to Paris, they are happy. If you give them a free trip to Hawaii, they are happy. But if you offer them the choice between the two destinations, they are less happy, no matter what they choose. Why might choice be so (a) disruptive ? The reason is that choice forces us to make comparisons and acknowledge relative (b) disadvantages . People who choose Paris complain that it doesn’t have the ocean and those who choose Hawaii regret that it doesn’t have the museums. Psychologist Barry Schwartz calls this the ‘tyranny of choice’ because rather than providing freedom, it actually (c) constrains our decision-making. He argues that (d) narrower choice increases unhappiness because we worry that we are going to make the wrong decision and so we get stressed about trying to process all the comparisons in an effort to get it right. This both increases our fear of making the wrong choice and raises expectations that we should be able to get the best choice. Having made the choice, we then (e) start to regret, wondering whether it was the right one.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
+    },
+    {
+      "id": "reading-4-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 필자가 이 글을 쓴 주된 목적은 무엇인가?",
+      "options": [
+        "경주 전 식단에 대한 조언을 제공하기 위해.",
+        "특정 음식의 위험성을 경고하기 위해.",
+        "자신의 마라톤 경험을 공유하기 위해.",
+        "건강한 식습관의 중요성을 강조하기 위해."
+      ],
+      "answer": "0",
+      "explanation": "필자는 자신의 경험을 예시로 들며, '경기 전에 기억해야 할 가장 중요한 것 중 하나는 올바른 음식을 먹는 것'이라고 말하고, 평소 먹던 음식을 섭취해야 한다고 조언함으로써 경주 전 식단에 대한 정보를 제공하는 것이 주된 목적입니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.1,
+        "b": 0.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "One of the most important things to remember before a race is to eat the right foods. Here is my lesson for you. The night before one of my marathons, I was struck by an uncontrollable need for apple butter. I satisfied the hunger that evening but paid a heavy price the next day; the apple butter forced me to make several stops during the marathon. You can bet that I never ate apple butter again before a race. Instead, I concentrate on foods that are part of my normal diet such as pasta and rice: foods that fuel my muscles. You must certainly have similar foods that you eat every day. These foods are the ones you should concentrate on before a race.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "createdBy": "seed-generated-bank",
+      "grade": "고1",
+      "batchId": "seed-fill-1785917983307-approved"
     }
   ]
 }
