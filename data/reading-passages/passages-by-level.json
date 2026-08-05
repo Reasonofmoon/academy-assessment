@@ -1,11 +1,22 @@
 {
-  "version": "1.1.0",
-  "description": "Level-preset reading passages curated by GLEAS level. L1 = elementary-appropriate A1 texts; higher levels increase difficulty.",
+  "version": "2.3.0",
+  "description": "Original GLEAS level-preset reading passages calibrated by CEFR band. Local graded readers calibrate L1–L3 only (Pre-A1 … A2–B1). L4–L6 are academy original only (B1 / B1–B2 / B2). Commercial book text is NOT included.",
   "policy": {
     "doNotRewritePassage": true,
     "generateItemsFromPassageOnly": true,
     "irtAlignBToLevelTheta": true,
-    "gradeLocksDefaultLevel": true
+    "gradeLocksDefaultLevel": true,
+    "oneItemPerPassageInLevelTest": true,
+    "organizeBy": "CEFR first",
+    "copyright": "Original academy text only; local reader files are CEFR difficulty references."
+  },
+  "cefrLadder": {
+    "1": "Pre-A1/A1",
+    "2": "A2",
+    "3": "A2-B1",
+    "4": "B1",
+    "5": "B1-B2",
+    "6": "B2"
   },
   "levels": {
     "1": {
@@ -15,12 +26,12 @@
         {
           "id": "preset-L1-P01",
           "level": 1,
-          "cefr": "A1",
-          "wordCount": 58,
-          "targetB": -2.2,
-          "source": "academy-curated/elementary",
-          "title": "My Pet Dog",
-          "text": "I have a small dog. His name is Max. Max is brown and white. Every morning, I give Max food and water. After school, I walk with Max in the park. Max likes to run and play with a ball. On rainy days, we stay home. Max sleeps next to my bed. I love my dog very much.",
+          "cefr": "Pre-A1/A1",
+          "wordCount": 69,
+          "targetB": -2.3,
+          "source": "academy-original/CEFR Pre-A1–A1 (Little Critter / Fly Guy band)",
+          "title": "A Red Ball",
+          "text": "Sam has a small red ball. Every afternoon he kicks the ball in the yard. One day the ball rolls under a big tree. Sam looks left and right. He cannot see it at first. Then he looks behind the tree and smiles. He picks up the ball and kicks it again. His little sister claps her hands. Playing outside with the red ball makes Sam happy every day.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -32,12 +43,12 @@
         {
           "id": "preset-L1-P02",
           "level": 1,
-          "cefr": "A1",
-          "wordCount": 54,
-          "targetB": -2.1,
-          "source": "academy-curated/elementary",
-          "title": "A School Day",
-          "text": "Mina goes to school at eight o'clock. She has English, math, and art. At lunch, she eats rice and soup with her friends. After lunch, they play soccer outside. Mina likes art class the most. She draws animals and flowers. At three o'clock, she goes home. She does her homework and helps her mother.",
+          "cefr": "Pre-A1/A1",
+          "wordCount": 66,
+          "targetB": -2.25,
+          "source": "academy-original/CEFR Pre-A1–A1 (Little Critter / Fly Guy band)",
+          "title": "Rainy Morning",
+          "text": "It is raining hard this morning. Mia cannot ride her bike outside. She sits by the window with a picture book. Her gray cat sits beside her. They listen to the soft sound of rain on the glass. Mia drinks warm milk and turns the pages slowly. Her mother brings a blanket, and Mia shares it with the cat. She likes quiet rainy days at home.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -49,12 +60,12 @@
         {
           "id": "preset-L1-P03",
           "level": 1,
-          "cefr": "A1",
-          "wordCount": 58,
-          "targetB": -2.0,
-          "source": "academy-curated/elementary",
-          "title": "Weekend Picnic",
-          "text": "On Saturday, our family goes to the park for a picnic. Father carries a big basket. Mother makes sandwiches and fruit. My sister and I bring a ball and a kite. We eat under a big tree. Then we fly the kite high in the sky. It is a happy day. We want to come again next weekend.",
+          "cefr": "Pre-A1/A1",
+          "wordCount": 73,
+          "targetB": -2.2,
+          "source": "academy-original/CEFR Pre-A1–A1 (Little Critter / Fly Guy band)",
+          "title": "Bus to School",
+          "text": "Every school day Jin waits for the yellow bus at the corner. The bus comes at seven o'clock. He sits with his friend Hana near the window. They talk about games, snacks, and their pet dogs. Sometimes they count red cars on the road. When the bus stops at school, they wave goodbye and run to class with their bags. Jin likes the bus ride because he starts the day with a friend.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -66,12 +77,12 @@
         {
           "id": "preset-L1-P04",
           "level": 1,
-          "cefr": "A1-A2",
-          "wordCount": 56,
-          "targetB": -1.9,
-          "source": "academy-curated/elementary",
-          "title": "My Best Friend",
-          "text": "Tom is my best friend. We are in the same class. Tom is kind and funny. He always helps me with English words. After school, we ride our bikes together. Sometimes we read comic books. Tom does not like rainy days because we cannot play outside. I am happy to have a good friend like Tom.",
+          "cefr": "Pre-A1/A1",
+          "wordCount": 60,
+          "targetB": -2.15,
+          "source": "academy-original/CEFR Pre-A1–A1 (Little Critter / Fly Guy band)",
+          "title": "Grandma's Soup",
+          "text": "On cold evenings Grandma makes warm vegetable soup for dinner. The kitchen smells good. I help set the bowls and spoons on the table. Dad brings bread, and we all sit down together. We talk about school and the garden. After dinner I wash the bowls carefully. Grandma says thank you and smiles at me. Helping at home feels good.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -83,12 +94,12 @@
         {
           "id": "preset-L1-P05",
           "level": 1,
-          "cefr": "A1-A2",
-          "wordCount": 54,
-          "targetB": -1.85,
-          "source": "academy-curated/elementary",
-          "title": "At the Library",
-          "text": "Our class visits the library every Friday. The library is quiet and clean. I look for animal books on the big shelf. The librarian smiles and helps me. I can borrow two books for one week. At home, I read before bed. Books teach me new things. I want to read more next week.",
+          "cefr": "Pre-A1/A1",
+          "wordCount": 67,
+          "targetB": -2.1,
+          "source": "academy-original/CEFR Pre-A1–A1 (Little Critter / Fly Guy band)",
+          "title": "New Shoes",
+          "text": "Today I wear my new blue shoes for the first time. They feel soft and light. On the playground I run and jump with my friends. One friend says, \"Nice shoes!\" I feel proud and a little shy. We play tag until the bell rings. After school I clean the shoes and put them by the door for tomorrow. I want to keep them clean and bright.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -97,7 +108,18 @@
           ],
           "order": 5
         }
-      ]
+      ],
+      "meta": {
+        "cefr": "Pre-A1/A1",
+        "cefrPrimary": "A1",
+        "theta": -2.2,
+        "grades": "초1–초6",
+        "refSeries": [
+          "Little Critter",
+          "Fly Guy"
+        ],
+        "ref": "CEFR Pre-A1–A1 (Little Critter / Fly Guy band)"
+      }
     },
     "2": {
       "level": 2,
@@ -107,11 +129,11 @@
           "id": "preset-L2-P01",
           "level": 2,
           "cefr": "A2",
-          "wordCount": 121,
-          "targetB": -0.93,
-          "source": "echobridge-web/reading-curated",
-          "title": "L2 Reading Passage 1",
-          "text": "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. after the basketball match, with four homework assignments. By 11 p.m., he had completed only three: science, math and English. He worked hard all evening. When he was about to start your homework, I decided to stop him. He looked exhausted, so I made him pack up his books and go to bed. I promised him that I would write to you and explain the situation. Michael is anxious to finish your homework. Would it be possible to allow him to do it over the weekend and hand it in next Monday? We would be very grateful if you could agree to this. Yours sincerely, Dorothy Williams",
+          "wordCount": 81,
+          "targetB": -1.05,
+          "source": "academy-original/CEFR A2 (Dragon Masters / Horrid Henry / Magic Tree House band)",
+          "title": "The Missing Pencil Case",
+          "text": "After math class, Sora could not find her pencil case. She looked under her desk, inside her bag, and even in her coat pocket. Her friend Min said he saw a blue case near the art room door. They walked there together and checked each chair carefully. The case was on a chair under a drawing apron. Sora thanked Min and promised to help him next time he lost something. She also decided to put her name clearly on the case.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -124,11 +146,11 @@
           "id": "preset-L2-P02",
           "level": 2,
           "cefr": "A2",
-          "wordCount": 91,
-          "targetB": -0.8,
-          "source": "echobridge-web/reading-curated",
-          "title": "L2 Reading Passage 2",
-          "text": "My wife and I visited your cinema last month. We purchased two tickets which came to a total of $44. At the time of purchase, the attendant at the information desk told us they were having some problems accepting credit card payments. At that time, I was anxious about my credit card payment, but the attendant told me that there was no problem with my payment. However, when I received my bank statement, I discovered that you charged my card twice. I would be grateful if you could resolve this matter quickly.",
+          "wordCount": 78,
+          "targetB": -1.0,
+          "source": "academy-original/CEFR A2 (Dragon Masters / Horrid Henry / Magic Tree House band)",
+          "title": "Science Fair Plan",
+          "text": "Our class is preparing for the science fair next month. Joon wants to show how plants grow toward light. He will put two plants in boxes, one dark and one bright. Every day he will write notes, measure the stems, and take photos. His partner will make a poster with labels and a short explanation. Joon hopes the judges will like his careful work and clear data. If the plants grow differently, he will explain why light matters.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -141,11 +163,11 @@
           "id": "preset-L2-P03",
           "level": 2,
           "cefr": "A2",
-          "wordCount": 68,
+          "wordCount": 77,
           "targetB": -0.95,
-          "source": "academy-curated/middle",
-          "title": "Club Fair Day",
-          "text": "Last Friday, our school held a club fair in the gym. Many tables showed different clubs: science, music, cooking, and soccer. I talked with the science club teacher. She said they make small robots. My friend joined the music club because she likes to sing. I chose the cooking club. We will learn how to make simple healthy snacks. The fair helped students find interesting activities after school.",
+          "source": "academy-original/CEFR A2 (Dragon Masters / Horrid Henry / Magic Tree House band)",
+          "title": "Library Detective",
+          "text": "Someone left a note in the library: \"Meet me by the big globe.\" Yuna likes small mysteries, so she went to the globe after school. She found another note under a map book. It said, \"Look outside.\" Near the door she saw her little brother laughing with a red marker. He only wanted to play a game and leave a trail of clues. Yuna laughed too and helped him put the notes away before the librarian came.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -158,11 +180,11 @@
           "id": "preset-L2-P04",
           "level": 2,
           "cefr": "A2",
-          "wordCount": 59,
+          "wordCount": 80,
           "targetB": -0.9,
-          "source": "academy-curated/middle",
-          "title": "A Letter About Late Homework",
-          "text": "Dear Mr. Kim, I am writing about my science homework. Yesterday I was sick and stayed home from school. I finished math and English, but I could not finish the science project. I feel better today and I can work on it this evening. May I submit the project tomorrow morning? Thank you for your understanding. Sincerely, Jisoo Park",
+          "source": "academy-original/CEFR A2 (Dragon Masters / Horrid Henry / Magic Tree House band)",
+          "title": "Soccer Tryouts",
+          "text": "Tae practiced soccer every evening for the school team tryouts. He was not the fastest runner, but he passed the ball well and listened to coaches. On tryout day he felt nervous, but his coach smiled and said, \"Show your best pass.\" After the game, the coach said, \"You help the team more than you know.\" Tae made the team and felt proud of his hard work. That night he told his parents the news and cleaned his muddy shoes.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -175,11 +197,11 @@
           "id": "preset-L2-P05",
           "level": 2,
           "cefr": "A2",
-          "wordCount": 96,
-          "targetB": -0.8,
-          "source": "echobridge-web/reading-curated",
-          "title": "L2 Reading Passage 5",
-          "text": "Breathing is something you do without thinking, but it can be consciously controlled. Correct breathing comes from the deepest area of the lungs, and benefits both your body and mind. But years of stress and poor lifestyle have left us with shallow, rapid breathing, whereby we use only the top third of our lungs. Learn to breathe properly and you will benefit from a lower heart-rate, reduced blood pressure, and lower levels of stress hormones. Plus breathing properly is essential when you’re exercising. It will make you feel relaxed and keep you in shape.",
+          "wordCount": 63,
+          "targetB": -0.85,
+          "source": "academy-original/CEFR A2 (Dragon Masters / Horrid Henry / Magic Tree House band)",
+          "title": "A Letter to My Teacher",
+          "text": "Dear Ms. Park, I am writing about yesterday's homework. I finished English and science, but I could not finish history. My little sister was sick, and I helped my mother take her to the clinic. We came home late, and I was too tired to write the full paragraph. May I bring the history homework tomorrow morning? Thank you for understanding. Sincerely, Hyejin.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -188,7 +210,19 @@
           ],
           "order": 5
         }
-      ]
+      ],
+      "meta": {
+        "cefr": "A2",
+        "cefrPrimary": "A2",
+        "theta": -0.95,
+        "grades": "중1–중2",
+        "refSeries": [
+          "Dragon Masters",
+          "Horrid Henry",
+          "Magic Treehouse Merlin Mission"
+        ],
+        "ref": "CEFR A2 (Dragon Masters / Horrid Henry / Magic Tree House band)"
+      }
     },
     "3": {
       "level": 3,
@@ -197,12 +231,12 @@
         {
           "id": "preset-L3-P01",
           "level": 3,
-          "cefr": "B1-B2",
-          "wordCount": 223,
-          "targetB": -0.41,
-          "source": "echobridge-web/reading-curated",
-          "title": "L3 Reading Passage 1",
-          "text": "Shoppers confronted with the choice of thirty different varieties of gourmet chocolates are more likely to walk away without buying any, compared with when they are presented with only half a dozen choices. If employees are given a free trip to Paris, they are happy. If you give them a free trip to Hawaii, they are happy. But if you offer them the choice between the two destinations, they are less happy, no matter what they choose. Why might choice be so (a) disruptive ? The reason is that choice forces us to make comparisons and acknowledge relative (b) disadvantages . People who choose Paris complain that it doesn’t have the ocean and those who choose Hawaii regret that it doesn’t have the museums. Psychologist Barry Schwartz calls this the ‘tyranny of choice’ because rather than providing freedom, it actually (c) constrains our decision-making. He argues that (d) narrower choice increases unhappiness because we worry that we are going to make the wrong decision and so we get stressed about trying to process all the comparisons in an effort to get it right. This both increases our fear of making the wrong choice and raises expectations that we should be able to get the best choice. Having made the choice, we then (e) start to regret, wondering whether it was the right one.",
+          "cefr": "A2-B1",
+          "wordCount": 85,
+          "targetB": 0.15,
+          "source": "academy-original/CEFR A2–B1 bridge (Nate the Great / My Weird School)",
+          "title": "The School Play Argument",
+          "text": "The class was choosing a play for the festival. Some students wanted a funny story. Others wanted a serious drama. Voices grew loud in the classroom. Ms. Lee raised her hand and asked everyone to write one reason on a sticky note. When they read the notes, they found a shared idea: a short comedy with a kind message. Two students who had argued offered to write the first scene together. The argument ended, and practice began the next week with clearer roles for everyone.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -214,12 +248,12 @@
         {
           "id": "preset-L3-P02",
           "level": 3,
-          "cefr": "B1",
-          "wordCount": 124,
-          "targetB": -0.09,
-          "source": "echobridge-web/reading-curated",
-          "title": "L3 Reading Passage 2",
-          "text": "One of the most important things to remember before a race is to eat the right foods. Here is my lesson for you. The night before one of my marathons, I was struck by an uncontrollable need for apple butter. I satisfied the hunger that evening but paid a heavy price the next day; the apple butter forced me to make several stops during the marathon. You can bet that I never ate apple butter again before a race. Instead, I concentrate on foods that are part of my normal diet such as pasta and rice: foods that fuel my muscles. You must certainly have similar foods that you eat every day. These foods are the ones you should concentrate on before a race.",
+          "cefr": "A2-B1",
+          "wordCount": 78,
+          "targetB": 0.2,
+          "source": "academy-original/CEFR A2–B1 bridge (Nate the Great / My Weird School)",
+          "title": "Lost on the Field Trip",
+          "text": "During the museum field trip, Dae left his group to look at a robot exhibit. When he turned around, his class was gone. He felt his face grow hot. He remembered the rule: stay near a staff member if you are lost. A guard walked him to the meeting point by the main stairs. His teacher was relieved, and Dae promised to stay with the group. Later he wrote a short reflection about why museum rules protect students.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -231,12 +265,12 @@
         {
           "id": "preset-L3-P03",
           "level": 3,
-          "cefr": "B1-B2",
-          "wordCount": 266,
-          "targetB": 0.23,
-          "source": "echobridge-web/reading-curated",
-          "title": "L3 Reading Passage 3",
-          "text": "In each round of genome copying in our body, there is still about a 70 percent chance that at least one pair of chromosomes will have an error. With each round of genome copying, errors (a) accumulate . This is similar to alterations in medieval books. Each time a copy was made by hand, some changes were introduced accidentally; as changes stacked up, the copies may have acquired meanings at (b) variance with the original. Similarly, genomes that have undergone more copying processes will have gathered more mistakes. To make things worse, mutations may damage genes responsible for error checking and repair of genomes, further (c) accelerating the introduction of mutations.\r\n\n  Most genome mutations do not have any noticeable effects. It is just like changing the i for a y in “kingdom” would not (d) guarantee the word’s readability. But sometimes a mutation to a human gene results in, for example, an eye whose iris is of two different colors. Similarly, almost everyone has birthmarks, which are due to mutations that occurred as our body’s cells multiplied to form skin. If mutations are changes to the genome of one particular cell, how can a patch of cells in an iris or a whole patch of skin, consisting of many individual cells, be affected simultaneously? The answer lies in the cell lineage, the developmental history of a tissue from particular cells through to their fully differentiated state. If the mutation occurred early on in the lineage of the developing iris, then all cells in that patch have (e) inherited that change.\r\n\n* chromosome: 염색체  ** iris: 홍채",
+          "cefr": "A2-B1",
+          "wordCount": 79,
+          "targetB": 0.25,
+          "source": "academy-original/CEFR A2–B1 bridge (Nate the Great / My Weird School)",
+          "title": "Phone Rules at Home",
+          "text": "Our family made new phone rules last Sunday. No phones at dinner. No phones after ten o'clock on school nights. At first I was angry. I thought the rules were unfair because my friends stayed online later. After a week, I slept better and finished homework faster. Now I keep my phone in the living room after dinner and read for twenty minutes. The rules still feel strict, but they help me focus and talk more with my family.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -248,12 +282,12 @@
         {
           "id": "preset-L3-P04",
           "level": 3,
-          "cefr": "B1-B2",
-          "wordCount": 220,
-          "targetB": -0.5,
-          "source": "echobridge-web/reading-curated",
-          "title": "L3 Reading Passage 4",
-          "text": "As an expert in the area of neuroeconomics, Baba Shiv carried out a fantastic experiment. He thought that ‘cognitive load’ (having lots to hold in your head―a situation most professionals find themselves in) might influence self-control. He gave half his volunteers a two-digit number to remember (representing a low cognitive load) and gave the other half a seven-digit number (a high load). The volunteers were then told to walk to another room in the building and in so doing pass a table where they had to choose between chocolate cake (high fat and sugary food) or fruit salad (low fat and nutritious food). Of the people with the high load, 59 percent opted for cake whereas only 37 percent of the people with the low load did. \r\n\n  Shiv thinks that remembering seven numbers required cognitive resources that had to come from somewhere, and in this case were taken from our ability to control our urges! Anatomically this is reasonable because working memory (where we ‘store’ the seven or two numbers) and self-control are both located in the same part of our brain. The brain cells that would normally be helping us make    　　　　　　　      　    were otherwise engaged in remembering seven numbers. In those instances we have to rely on our more impulsive emotions, such as ‘Mmmm yummy! Chocolate cake please.’\r\n\n                                                                                                    *anatomically: 해부학적으로",
+          "cefr": "A2-B1",
+          "wordCount": 77,
+          "targetB": 0.3,
+          "source": "academy-original/CEFR A2–B1 bridge (Nate the Great / My Weird School)",
+          "title": "The Group Project",
+          "text": "Four students had to build a model bridge for history class. One member did almost nothing at first, and the others felt frustrated. They met after school and divided the work into clear tasks with deadlines. The quiet member agreed to paint and write labels after they asked calmly. On presentation day the bridge stood strong, and every name was on the poster. The teacher praised both the model and the way the team solved its conflict.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -265,12 +299,12 @@
         {
           "id": "preset-L3-P05",
           "level": 3,
-          "cefr": "B1",
-          "wordCount": 134,
-          "targetB": -0.03,
-          "source": "echobridge-web/reading-curated",
-          "title": "L3 Reading Passage 5",
-          "text": "In the airplane, the woman sitting next to me had both arms in casts. She reminded me of my friend Kathy who was suffering after a car accident. When the snack of nuts and juice arrived, I considered offering to feed the woman next to me, but it seemed too intimate a service to offer to a stranger. In spite of such a consideration, I decided to help her eat, and she accepted my kindness. The experience was fantastic, and she and I grew close in a short time. By the end of the five­hour trip, my heart was fully alive. I was very glad with my courage. Love always flows beyond human borders and dissolves the fears that keep us separate. When I give love to another, I feed my own soul.",
+          "cefr": "A2-B1",
+          "wordCount": 73,
+          "targetB": 0.35,
+          "source": "academy-original/CEFR A2–B1 bridge (Nate the Great / My Weird School)",
+          "title": "A Rainy Championship",
+          "text": "The final basketball game started under heavy rain. The court was wet and slippery. Our team almost gave up in the first quarter. Then our captain said, \"Play safe, pass more.\" We scored carefully and made fewer mistakes. In the last minute we won by two points. Wet uniforms never felt so good. Parents cheered under umbrellas by the fence. We learned that patience and teamwork can beat speed on a difficult day.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -279,7 +313,18 @@
           ],
           "order": 5
         }
-      ]
+      ],
+      "meta": {
+        "cefr": "A2-B1",
+        "cefrPrimary": "A2-B1",
+        "theta": 0.25,
+        "grades": "중3–고1",
+        "refSeries": [
+          "Nate the Great",
+          "My Weird School"
+        ],
+        "ref": "CEFR A2–B1 bridge (Nate the Great / My Weird School)"
+      }
     },
     "4": {
       "level": 4,
@@ -288,12 +333,12 @@
         {
           "id": "preset-L4-P01",
           "level": 4,
-          "cefr": "B1-B2",
-          "wordCount": 304,
-          "targetB": -0.3,
-          "source": "echobridge-web/reading-curated",
-          "title": "L4 Reading Passage 1",
-          "text": "Although we humans are equipped with reflexive responses for survival, at birth we are (a) helpless . We spend about a year unable to walk, about two more before we can articulate full thoughts, and many more years unable to provide for ourselves. We are totally dependent on those around us for our survival. Now compare this to many other mammals. Dolphins, for instance,are born swimming; giraffes learn to stand within hours; a baby zebra can run within forty-five minutes of birth. Across the animal kingdom, our cousins are strikingly (b) independent soon after they’re born.\r\n\n  On the face of it, that seems like a great advantage for other species ― but in fact it signifies a limitation. Baby animals develop quickly because their brains are wiring up according to a largely preprogrammed routine. But that (c) preparedness trades off with flexibility. Imagine if some unfortunate rhinoceros found itself on the Arctic tundra, or on top of a mountain in the Himalayas, or in the middle of a metropolis. It would have no capacity to adapt (which is why we don’t find rhinos in those areas). This strategy of arriving with a pre-arranged brain works inside a particular niche in the ecosystem ― but put an animal outside of that niche, and its chances of thriving are (d) low .\r\n\n  In contrast, humans are able to thrive in many different environments, from the frozen tundra to the high mountains to crowded urban centers. This is possible because the human brain is born remarkably incomplete. Instead of arriving with everything wired up ― let’s call it “hardwired” ― a human brain (e) forbids itself to be shaped by the details of life experience. This leads to long periods of helplessness as the young brain slowly molds to its environment. It’s “livewired.”\r\n\n* niche: 적합한 장소",
+          "cefr": "B1",
+          "wordCount": 138,
+          "targetB": 0.9,
+          "source": "academy-original/CEFR B1 (academy original only — no commercial series)",
+          "title": "The Map in the Attic",
+          "text": "While cleaning the attic, Nari found a folded map inside a wooden box sealed with dusty tape. Red ink marked a trail from the old school to the river cave, with notes in a handwriting she almost recognized. Her brother insisted it was only a childhood game of their grandfather's, yet neither of them could ignore the careful detail. On Saturday they followed the trail with flashlights, water, and a charged phone in case the path disappeared. Near the cave entrance they discovered initials carved in stone—the same as their grandfather's—and a metal badge stamped 1958. The walk itself was short, but it connected them to a family story that had never been told at dinner. That night, when they finally asked, their grandfather smiled and began to speak as if he had waited decades for the question.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -305,12 +350,12 @@
         {
           "id": "preset-L4-P02",
           "level": 4,
-          "cefr": "B1-B2",
-          "wordCount": 274,
-          "targetB": -0.14,
-          "source": "echobridge-web/reading-curated",
-          "title": "L4 Reading Passage 2",
-          "text": "As a couple start to form a relationship, they can be seen to develop a set of constructs about their own relationship and, in particular, how it is similar or different to their parents’ relationship. The couple’s initial disclosures involve them forming constructs about how much similarity there is between them and each other’s families. What each of them will remember is selective and (a) coloured by their family’s constructs system. In turn it is likely that as they tell each other their already edited stories, there is a second process of editing whereby what they both hear from each other is again (b) interpreted within their respective family of origin’s construct systems. The two sets of memories ― the person talking about his or her family and the partner’s edited version of this story ― go into the ‘cooking-pot’ of the couple’s new construct system. Subsequently, one partner may (c) randomly recall a part of the other’s story as a tactic in negotiations: for example, Harry may say to Doris that she is being ‘bossy ― just like her mother’. Since this is probably based on what Doris has told Harry, this is likely to be a very powerful tactic. She may protest or attempt to rewrite this version of her story, thereby possibly adding further material that Harry could use in this way. These exchanges of stories need not always be (d) employed in such malevolent ways. These reconstructed memories can become very powerful, to a point where each partner may become confused even about the simple (e) factual details of what actually did happen in their past.\r\n\n* malevolent: 악의 있는",
+          "cefr": "B1",
+          "wordCount": 134,
+          "targetB": 0.95,
+          "source": "academy-original/CEFR B1 (academy original only — no commercial series)",
+          "title": "Guarding the Bridge",
+          "text": "The village needed volunteers to watch the wooden bridge during storm season, when wind loosened boards without warning. Night travelers depended on that crossing, so a broken rail could turn an ordinary walk into a serious accident. Hoon signed up for the late shift even though he preferred mornings and disliked walking alone in heavy rain. Every hour he checked the boards with a lantern and recorded wind, water level, and any sound that seemed wrong. One night he found a broken rail and repaired it before dawn with spare rope and nails from the tool shed. Nobody celebrated loudly, but the mayor later sent a quiet letter thanking him for preventing harm no one saw. Hoon kept the letter in his toolkit as proof that careful work is often invisible until it fails.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -322,12 +367,12 @@
         {
           "id": "preset-L4-P03",
           "level": 4,
-          "cefr": "B1-B2",
-          "wordCount": 234,
-          "targetB": -0.42,
-          "source": "echobridge-web/reading-curated",
-          "title": "L4 Reading Passage 3",
-          "text": "Culture is a uniquely human form of adaptation. Some theorists view it as a body of knowledge that developed to provide accurate information to people that helps them (a) adjust to the many demands of life, whether that means obtaining food and shelter, defending against rival outgroups, and so on. Culture also tells us how groups of people work together to achieve mutually beneficial goals, and how to live our lives so that others will like and accept us ―and maybe even fall in love with us. So if adaptation to physical and social environments were all that cultures were designed to (b) facilitate , perhaps cultures would always strive toward an accurate understanding of the world. \r\n\n  However, adaptation to the metaphysical environment suggests that people do not live by truth and accuracy alone. Sometimes it is more adaptive for cultural worldviews to (c) reveal the truth about life and our role in it. Some things about life are too emotionally (d) devastating to face head on, such as the inevitability of death. Because overwhelming fear can get in the way of many types of adaptive action, it sometimes is adaptive for cultures to provide “rose­colored glasses” with which to understand reality and our place in it. From the existential perspective, the adaptive utility of accurate worldviews is tempered by the adaptive value of anxiety­buffering (e) illusions .\r\n\n* temper: 경감하다 ** buffering: 완화하는",
+          "cefr": "B1",
+          "wordCount": 129,
+          "targetB": 1.0,
+          "source": "academy-original/CEFR B1 (academy original only — no commercial series)",
+          "title": "Signal from the Hill",
+          "text": "Every evening the lighthouse on the hill flashed three times so fishing boats could judge their distance from the rocks. One winter the light failed during thick fog, and sailors lost the only reliable mark along that stretch of coast. Engineers climbed the hill with tools and spare glass while cold air burned their faces and slowed every step. After hours of work the beam returned, cutting a white path through the fog and giving the boats a direction again. They turned safely toward the harbor, and the hill grew quiet once more. The town later installed a backup generator so a single equipment failure would not hide the entire coastline. The engineers argued that maintenance is less dramatic than rescue, yet it prevents the emergencies that fill newspapers.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -339,12 +384,12 @@
         {
           "id": "preset-L4-P04",
           "level": 4,
-          "cefr": "B1-B2",
-          "wordCount": 302,
-          "targetB": 0.34,
-          "source": "echobridge-web/reading-curated",
-          "title": "L4 Reading Passage 4",
-          "text": "By the turn of the twentieth century, the permanent repertoire of musical classics dominated almost every field of concert music, from piano, song, or chamber music recitals to operas and orchestral concerts. The (a) change from a century before was enormous. In the eighteenth century, performers and listeners demanded new music all the time, and “ancient music” included anything written more than twenty years earlier. But musicians and audiences in the early 1900s (b) expected that most concert music they performed or heard would be at least a generation old, and they judged new music by the standards of the classics already enshrined in the repertoire. In essence, concert halls and opera houses had become museums for displaying the musical artworks of the past two hundred years. The repertoire varied according to the performing medium and from region to region, but the core was largely the (c) same throughout most of Europe and the Americas, including operas and operatic excerpts from Mozart through Verdi, Wagner, and Bizet; orchestral and chamber music from Haydn through the late Romantics; and keyboard music by J. S. Bach, Haydn, Mozart, Beethoven, and prominent nineteenth-century composers.\r\n\n  Living composers increasingly found themselves in competition with the music of the past. This is the great theme of modern music in the classical tradition, especially in the first half of the century: in competing with past composers for the attention of performers and listeners who (d) disregarded the classical masterworks, living composers sought to secure a place for themselves by offering something new and distinctive while continuing the tradition. They combined individuality and innovation with emulation of the past, seeking to write music that would be considered original and worthy of performance alongside the masterworks of (e) earlier times.\r\n\n* enshrine: 소중히 하다  ** excerpt: 발췌곡  \r\n\n*** emulation: 경쟁, 모방",
+          "cefr": "B1",
+          "wordCount": 119,
+          "targetB": 1.05,
+          "source": "academy-original/CEFR B1 (academy original only — no commercial series)",
+          "title": "The Shared Notebook",
+          "text": "Two rival classes shared one science notebook for a year-long experiment on local birds and migration patterns. At first they filled the pages with sharp comments about missing dates, weak evidence, and each other's mistakes. Their teacher required every entry to include a measurement, a short explanation, and one polite question for the other class. Slowly the tone changed; students began answering with photographs, counts, and clearer hypotheses instead of insults. By spring the notebook held a continuous record that no single class could have produced alone. The final report listed both class names, and the rivalry felt smaller than the shared result. They learned that cooperation does not erase competition, but it can turn competition into better evidence.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -356,12 +401,12 @@
         {
           "id": "preset-L4-P05",
           "level": 4,
-          "cefr": "B1-B2",
-          "wordCount": 240,
-          "targetB": 0.06,
-          "source": "echobridge-web/reading-curated",
-          "title": "L4 Reading Passage 5",
-          "text": "Climate change experts and environmental humanists alike agree that the climate crisis is, at its core, a crisis of the imagination and much of the popular imagination is shaped by fiction. In his 2016 book The Great Derangement, anthropologist and novelist Amitav Ghosh takes on this relationship between imagination and environmental management, arguing that humans have failed to respond to climate change at least in part because fiction (a) fails to believably represent it. Ghosh explains that climate change is largely absent from contemporary fiction because the cyclones, floods, and other catastrophes it brings to mind simply seem too “improbable” to belong in stories about everyday life. But climate change does not only reveal itself as a series of (b) extraordinary events. In fact, as environmentalists and ecocritics from Rachel Carson to Rob Nixon have pointed out, environmental change can be “imperceptible”; it proceeds (c) rapidly , only occasionally producing “explosive and spectacular” events. Most climate change impacts cannot be observed day-to-day, but they become (d) visible when we are confronted with their accumulated impacts.\r\n\n  Climate change evades our imagination because it poses significant representational challenges. It cannot be observed in “human time,” which is why documentary filmmaker Jeff Orlowski, who tracks climate change effects on glaciers and coral reefs, uses “before and after” photographs taken several months apart in the same place to (e) highlight changes that occurred gradually.\r\n\n* anthropologist: 인류학자 ** catastrophe: 큰 재해 *** evade: 피하다",
+          "cefr": "B1",
+          "wordCount": 142,
+          "targetB": 1.1,
+          "source": "academy-original/CEFR B1 (academy original only — no commercial series)",
+          "title": "Escape from the Flooded Path",
+          "text": "After three days of rain, the mountain path became a stream that cut off the usual route to the parking lot. A group of hikers found themselves trapped between rising water and a steep wall of rock with no safe footholds. A ranger radioed for ropes and guided them along a higher ridge, insisting that speed mattered less than steady footing. No one was injured, yet everyone moved slowly and kept a hand on the person ahead when the wind rose. Later the ranger said, \"Weather changes faster than plans,\" and asked them to review their forecasts before the next climb. The hikers donated spare gear to the ranger station and allowed the local paper to print their story as a warning, not a hero tale. The experience left them with a simple rule: respect the mountain's schedule more than your own.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -370,7 +415,15 @@
           ],
           "order": 5
         }
-      ]
+      ],
+      "meta": {
+        "cefr": "B1",
+        "cefrPrimary": "B1",
+        "theta": 1.0,
+        "grades": "고2–고3",
+        "refSeries": [],
+        "ref": "CEFR B1 (academy original only — no commercial series)"
+      }
     },
     "5": {
       "level": 5,
@@ -379,12 +432,12 @@
         {
           "id": "preset-L5-P01",
           "level": 5,
-          "cefr": "B2",
-          "wordCount": 326,
-          "targetB": 0.36,
-          "source": "echobridge-web/reading-curated",
-          "title": "L5 Reading Passage 1",
-          "text": "There are hundreds of expressions of words using \"hand\" in the English language. Let us examine some of the expressions that use \"hand\".\nWe will get a hand in this way. \"To get a hand in\" is to begin a job, to begin to know something about it. When we learn completely, we will be able to do it hands down. If we do the job well, we may end up with the upper hand. On the other hand, if the situation gets out of hand, it is out of control.\nWe must consider another way of expressing phrase---- to hand it to someone. For example, I must hand it to you for understanding what we have discussed this far. You can also lend a hand to someone but without really giving up your hand. You lend a hand when you help someone. If someone is kind enough to lend us a hand then we surely do not want to bite the hand that feeds us. We do not want to repay his kindness by treating him badly.\nNow, we have a free hand to continue examining other \"hand\" expressions. It means you are free to act without getting permission from someone else.\nMaybe you can find a friend who wants to take a hand in our project. It would have to be someone who was interested in these expressions. Your friend may want to work hand in glove with us. That is good because that means he wants to work as closely with us as a glove covers the hand. Of course, there is a danger that he may look at our project and decide to take it in hand. That means he wants to tale it over. If that happens, we may throw up our hands because the situation seams hopeless. In fact, we may decide that it is time for us to end this project to wash our hands of \" hand\" expressions.",
+          "cefr": "B1-B2",
+          "wordCount": 156,
+          "targetB": 1.6,
+          "source": "academy-original/CEFR B1–B2 (academy original only — no commercial series)",
+          "title": "Season of Dust Storms",
+          "text": "Traders usually crossed the desert only in the cooler months, but this year the storms arrived early and without the usual warning signs. Sand rose like walls and erased footprints within minutes, forcing the caravan to abandon landmarks they had trusted for years. Mira ordered a stop at a stone outpost and sealed every tent with heavy cloth so children and animals could breathe more easily. Inside, people counted the hours by the sound of wind rather than by sunlight, and arguments grew quieter as water supplies became the main concern. When the sky finally cleared, the dunes had shifted enough that the old trail no longer matched any map in the group. Using the stars and a small brass compass, they located the next well after two extra days of careful travel. Every person and camel arrived safely, and Mira recorded the new route so later groups would not depend on last year's path alone.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -396,12 +449,12 @@
         {
           "id": "preset-L5-P02",
           "level": 5,
-          "cefr": "B2",
-          "wordCount": 386,
-          "targetB": 0.52,
-          "source": "echobridge-web/reading-curated",
-          "title": "L5 Reading Passage 2",
-          "text": "My father wasn't a king, he was a taxi driver, but I am a prince-Prince Renato II, of the country Pontinha, an island fort on Funchal harbour. It's in Madeira,Portugal, where I grew up. It was discovered in 1419.\nIn 1903, the king of Portugal sold the land to a wealthy British family, the Blandys, who make Madeira wine. Fourteen years ago the family decided to sell it forjust EUR25,000, but nobody wanted to buy it either. I met Blandy at a party. and he asked if I'd like to buy the island. Of course I said yes,but I had no money-I was just an art teacher.I tried to find some business partners, who all thought I was crazy.So I sold some of my possessions,put my savings together and bought it.Of course, my family. my friends-all thought I was mad.\nWhen the King originally sold the island,he signed a document, selling all the \"possessions and the dominions\"of the island.It means I can do what I want with it-I could start a restaurant, or a cinema but nobody thought someone would start a country.So that's what I did:I decided it would be my island, about the size of a one-bedroom house.\nI have both a Portuguese passport and one for Pontinha (where my passport number is 0001).There are four citizens: me, my wife, my son and my daughter.I am the police, the gardener,everything.I am whatever I want to be-that's the dream,isn't it?If l want to have a national flag,it could be blue today,red tomorrow.I can change it any time.Of course,my power is only absolute here, where I am the true sovereign.\nI don't live in my country full time, but I am often there.My family sometimes drops by, and other people come every day because the country is free for tourists to visit; I never close for bad weather.Sometimes I come here when I'm feeling lively,after a few drinks.\nMadeira is surrounded by water,but for some reason we all have to pay to swim in the ocean now,at the swimming spots.However.I have my island,which means I can come swimming whenever I want-it's as if someone has given me the key to the waters.\nOur lives are gone in a flash.All change in the world begins with something very small, and this is my country-just a small island.",
+          "cefr": "B1-B2",
+          "wordCount": 163,
+          "targetB": 1.65,
+          "source": "academy-original/CEFR B1–B2 (academy original only — no commercial series)",
+          "title": "The Hidden Garden Door",
+          "text": "Behind the museum library, Jack noticed a door half covered by ivy and almost flush with the brick wall. A faded sign read, \"Staff only—plant records,\" yet the lock was loose and the air that escaped smelled of dry leaves rather than dust alone. Inside, shelves held pressed specimens, seed packets, and journals written by gardeners from a century earlier. One journal described a flower that bloomed only after rare night rain and warned that ordinary watering would never wake it. Jack reported the room to the curator, who admitted she had never been given a key or an inventory for that storage space. Together they found a living sample still surviving in a cracked pot by a narrow window, pale but not dead. The discovery became a quiet exhibit about patience and care, and visitors began leaving notes about plants their grandparents once grew. The room stayed open as a reminder that institutions sometimes forget the knowledge they were built to protect.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -413,12 +466,12 @@
         {
           "id": "preset-L5-P03",
           "level": 5,
-          "cefr": "B2",
-          "wordCount": 341,
-          "targetB": 0.4,
-          "source": "echobridge-web/reading-curated",
-          "title": "L5 Reading Passage 3",
-          "text": "I serve coffee at a diner in Texas. I often see a look of isolation in my customers' eyes. They come in the front door, wander to the counter, pick up the menu, and look around the diner for something they can't short-order: a connection.\nIn an age of online chat, online shopping and even online school, it's no wonder people come into the diner starving for human connection. Most of my customers ask me about the happenings in my life when I serve up their eggs and meat.\nOne day, I walked back to the smoking section to pass around a fresh pot of coffee. There was a woman who had been sitting in a corner booth for at least three hours. She asked me, \"How much is just one breakfast taco ?\" I told her I'd never served just one by itself. Going back to the kitchen I thought about her tired eyes. I offered her a free pancake breakfast. She asked to borrow the money for bus and promised to return and pay me back. I handed over tip money from my pocket. She smiled on her way out the front door.\nThree weeks later she returned my two dollars. She had gotten a job and a friend's bed to sleep on. She offered to buy me breakfast on my break!\nThis kind of thing gets me wondering if something as simple as a breakfast can bring about a small change in society, then why not take it even further and see if one act of friendliness can start to make peace? I believe it can. Peace begins with one person but spreads. When I connect with my neighbors, they return it in kind.\nSo I believe in friendliness and an open ear. For me, it starts with making eye contact when I pour coffee and ask my customers, \"How are you doing?\" and then listen to their answer. My job is to take care of customers, but I also believe we're to take care of each other.",
+          "cefr": "B1-B2",
+          "wordCount": 143,
+          "targetB": 1.7,
+          "source": "academy-original/CEFR B1–B2 (academy original only — no commercial series)",
+          "title": "Message in the Tide",
+          "text": "Coastal students measured the tide twice a day for a climate project that their town had approved mainly as a classroom exercise. They expected small seasonal changes, but the spring records showed a clear rise that matched neither memory nor older tourist photos. At first town leaders doubted the data because the numbers threatened expensive plans for new shops near the waterfront. The students invited officials to stand on the pier at high tide and compare the waterline with marks painted years earlier. Water covered steps that used to stay dry, and the conversation shifted from skepticism to practical risk. Within a month the town began designing higher barriers and better drains, using the student tables as a starting baseline. The project showed that careful observation can change public decisions when evidence is presented calmly and adults are asked to see it themselves.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -430,12 +483,12 @@
         {
           "id": "preset-L5-P04",
           "level": 5,
-          "cefr": "B2",
-          "wordCount": 335,
-          "targetB": 0.09,
-          "source": "echobridge-web/reading-curated",
-          "title": "L5 Reading Passage 4",
-          "text": "Between their crazy schedules and upside-down circadian rhythms, teens have always been somewhat sleep-deprived .Now technology is making it worse.\nTeens are not just texting, instant-messaging and surfing Facebook all day; they're sleeping with their cell phones or laptops, too.Or rather, not sleeping.And doctors and parents, many of whom raised in an era when phones were attached to walls, are concerned.\n\"So many teens are having sleep issues, and parents aren't necessarily regulating the use of the electronic devices enough,\" says Margie Ryerson, a therapist.\"It's impossible to wind down and relax the body, the mind, the senses and be ready to fall asleep.\"\n\"We all know teens don't get enough sleep in general,\" says San Francisco.\"As long as parents allow teens to have these devices in their bedrooms at night, teens will be tempted to use them.\"... Teens would socialize 24/7 if they could.\nRyerson calls it _ -- round-the-clock reports on breaking news about everything, from homework to wardrobe choices to ice-cream cravings.\nSleep deprivation is linked to memory and concentration problems, anxiety and depression, and moodiness.\"Many people assume these problems arise directly from adolescence, which is not really true,\" he says.\"The real issue is sleep deprivation.Late-night texting can certainly make the situation worse.\"\n\"The psychology behind this constant contact is certainly understandable,\" Ryerson says.\"It comes from wanting to avoid being left out.They won't be considered important and significant in their peer group, if they don't know what's going on.If they're on top of everything, they belong,\" she says.\n\"What helps, at least for younger kids,\" says Ryerson, \"is parental involvement.If all of their friends are all able to text into the early hours of the night, it is hard for a middle or high schooler to set the limit themselves.Often they appreciate parents stepping in.\"\n\"As parents, we want our kids to be happy, healthy and responsible,\" she says, \"and the most necessary requirement for achieving balance is to first take care of ourselves physically -- eating well, exercising and getting enough sleep.\"",
+          "cefr": "B1-B2",
+          "wordCount": 144,
+          "targetB": 1.75,
+          "source": "academy-original/CEFR B1–B2 (academy original only — no commercial series)",
+          "title": "The Clockmaker's Apprentice",
+          "text": "In a narrow street workshop, an apprentice spent years learning to repair clocks that cities still treated as public symbols. His master insisted that every gear be cleaned as if the reliability of an entire square depended on one unnoticed screw. Days before a national ceremony, a rare tower clock stopped, and officials demanded a repair that would not look hurried from the street. The apprentice worked through the night, matching tiny parts by candlelight and testing each stage before the next. At dawn the clock struck the hour, clear and steady above the square, while few people knew how close it had come to silence. The master offered little praise—only a nod and a better set of tools placed on the apprentice's bench. Years later the apprentice told students that pride should stay quiet when accuracy is the real product of the work.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -447,12 +500,12 @@
         {
           "id": "preset-L5-P05",
           "level": 5,
-          "cefr": "B2",
-          "wordCount": 398,
-          "targetB": 0.54,
-          "source": "echobridge-web/reading-curated",
-          "title": "L5 Reading Passage 5",
-          "text": "Last week I did something that scared me. I stood in front of nearly 200 financial planners and I talked to them about why financial blogs are a good thing.\nI'm a confident writer. I've been doing this long enough that I know my strength and my limitations. I'm less confident as a speaker. I don't have time to pause to collect my thoughts. I'm not able to edit. I'm afraid of being trapped in a corner without being able to talk my way out. Basically, I'm scared to speak.\nIt would be easy to simply refuse the chances that come my way. When somebody asks me to speak in front of a group, I could say \"no\". When radio and television stations call for an interview, I could say \"no\". But for the past two years, I've been following _ to say \"yes\" to new chances.\nTo say \"yes\" is to live in fear. My goal is to continually improve myself to become better than I am today. One way to do that is to do the things that scare me, to take them on as challenges, and to learn from them -- even if I fail.\nIn mid-November, a local station asked me to appear on live television. \"I realize it's short notice,\" the producer wrote, \"but we'd love to have you on the show if you're available tonight.\" I was frightened. I thought about recent taped television interviews that I had hated. I was afraid of what might happen.\nBut I also thought about the things that had gone right. I thought of how my speaking skills had improved over the past year. And then I thought of the book I was reading, a book that I had bought for $1.29 at the local store. The Magic of Thinking Big was a huge bestseller during the 1960s. Written by Dr. David Schwartz, a professor at Georgia State University, the book contains dozens of practical tips on how to take risks to achieve big goals. Schwartz argues that nobody will believe in you until you believe in yourself.\nSo when the television producer asked if I wanted to appear on his show, I thought big. \"Sure,\" I said. \"I'll do it.\" I acted confidently, but on the inside I was frightened. What I needed was techniques to build up my confidence and to overcome my fear.",
+          "cefr": "B1-B2",
+          "wordCount": 137,
+          "targetB": 1.8,
+          "source": "academy-original/CEFR B1–B2 (academy original only — no commercial series)",
+          "title": "Flight Across the Canyon",
+          "text": "Engineers tested a lightweight drone designed to carry emergency medicine across a canyon that blocked ordinary road transport for hours. Early flights failed when sudden wind pushed the craft toward the cliffs and forced hard landings that damaged the payload case. The team redesigned the wings, added sensors, and trained pilots with simulations that repeated the worst local wind patterns. On the final trial the drone crossed in four minutes, landed softly, and delivered antibiotics to a clinic the same afternoon. Nurses confirmed the shipment, and the engineers allowed themselves only a short celebration before writing the full failure log. Their report listed successful steps beside abandoned designs so later teams would not repeat the same expensive mistakes. Winter storms remained the next unsolved problem, but the canyon no longer meant automatic delay for every medical delivery.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -461,7 +514,15 @@
           ],
           "order": 5
         }
-      ]
+      ],
+      "meta": {
+        "cefr": "B1-B2",
+        "cefrPrimary": "B1-B2",
+        "theta": 1.7,
+        "grades": "advanced",
+        "refSeries": [],
+        "ref": "CEFR B1–B2 (academy original only — no commercial series)"
+      }
     },
     "6": {
       "level": 6,
@@ -470,12 +531,12 @@
         {
           "id": "preset-L6-P01",
           "level": 6,
-          "cefr": "C1",
-          "wordCount": 489,
-          "targetB": 0.77,
-          "source": "echobridge-web/reading-curated",
-          "title": "L6 Reading Passage 1",
-          "text": "SAN ANTONIO -- For Tira Starr, an eighth grader at Anson Jones Middle School, the plastic nametag hanging around her neck that she has decorated with a smiley face and a purple bat sticker offers a way to reflect her personal interest. For administrators, it is something else entirely: a device that lets them use radio frequency technology--with scanners tucked behind walls and ceilings--to track her whereabouts. \nAnson Jones is the first school in San Antonio's Northside Independent School District to roll out the new nametags, which are part of a pilot program intended to ensure that the district receives all of the state dollars. \nIn Texas, school finance is a numbers game: schools receive money based on the number of students counted in their homeroom classes each morning. At Anson Jones, as at other schools, many students were in school but not in homeroom, so they were not counted and the district lost money, said Pascual Gonzalez, a spokesman for the district. \n\"We were leaving money on the table,\" he said, adding that the district expects a $2 million return on an initial investment of $261,000 in the technology at two pilot schools. \nBut the radio frequency identification nametags have prompted concerns from civil liberties groups and electronic privacy watchdogs, which fear a Big Brother atmosphere in Texas public schools. \nMatthew Simpson, a policy strategist for the American Civil Liberties Union of Texas, said the technology was easy to acquire, meaning people outside a school might be able to monitor a student if they obtained the student's unique tracking number. \nMr. Simpson said the technology was originally designed for shipping goods and for cattle. \"It was never intended for people,\" he said. \nBut students and educators at Anson Jones say they are excited about the practical advantages -- getting to eat lunch faster by scanning their bar codes in the lunch line, or being able to locate a child quickly in an emergency. \nNorthside is not the first district to use the tracking devices. Two Houston-area districts began the program several years ago. The Spring district, for example, started using the technology in 2004 as a way to track elementary students getting on and off buses. It expanded the program to high school students three years ago and has so far recovered $400,000, said Karen Garrison, a spokeswoman for the district. \n\"Our system still focuses on safety but has the added benefit of recovering average daily attendance funding,\" Ms. Garrison said. \nWendy Reyes, the principal of Anson Jones, said only one parent had complained about the program at her school. On the first day of classes at Jay High School, home to the other pilot program school in Northside, several parents staged a protest across the street from the school, though most did not have students in the district. \nMany students, teachers and parents at the middle school feel the technology's benefits outweigh privacy concerns, Ms. Reyes said.",
+          "cefr": "B2",
+          "wordCount": 144,
+          "targetB": 2.3,
+          "source": "academy-original/CEFR B2 (academy original only — dense / academic-adjacent)",
+          "title": "The Ethics of Tracking",
+          "text": "A city proposed digital nametags for students, claiming the system would improve attendance records and make lost children easier to locate. Supporters argued that accurate counts would also unlock funding formulas that currently reward schools for incomplete data. Critics warned that constant tracking trains young people to treat surveillance as ordinary care rather than as a power that needs limits. Public meetings grew tense because both sides used the language of protection while disagreeing about what protection should cost. Parents asked who would store the data, how long it would remain online, and which agencies could request access without a warrant. The city delayed the plan and ordered an independent privacy review before any pilot could begin in classrooms. The debate left a sharper question open: how much freedom may be traded for security, and who has the authority to call that trade fair?",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -487,12 +548,12 @@
         {
           "id": "preset-L6-P02",
           "level": 6,
-          "cefr": "C1",
-          "wordCount": 421,
-          "targetB": 0.8,
-          "source": "echobridge-web/reading-curated",
-          "title": "L6 Reading Passage 2",
-          "text": "It was the end of my junior year, the weekend before prom . I was riding with some friends, and a bottle was passed around the car. Everyone was taking swigs . When the bottle got to me, I thought:\"What should I do?\"I took a swig. It was the biggest mistake of my life. I had to drive home later that night.\nI went back to my car, got in and drove off. At a stop sign I saw a policeman sitting in the parking lot across the street. His headlights were turned on, and I knew he was going to follow me. Then he flashed his lights at me. All I could think was: \"Oh no, that swig!\"\nI pulled over and waited for him to come to my door. It felt like forever. \"Can I see your license and registration, please, Miss?\" I gave them to him. He took them and went back to his car for a while. When he returned, he asked if I had been drinking.\n\"No,\" I said. He asked me to step out of my car.\n\"Walk heel to toe down the white line, please.\" I passed the test. Next he had me stand on my left foot, lift my right foot and hold it for 30 seconds. I'm not the most coordinated person and I can't even walk and chew gum at the same time, so, needless to say, I didn't pass. Then he asked me to take a breathalyzer test.\nThat was where I messed up. I told him I didn't want to and didn't understand why I had to. The officer asked me three more times, and I continued to refuse. He told me to turn around and place my hands behind my back. He arrested me right then and there.\nThe policeman drove me to a police station 20 minutes from my home. He called my parents and told them where I was.\nI went to court two months after that, charged with refusing to obey an officer. I got a $700 (4,340 yuan) fine and 40 hours of community service. I'll be on probation for a year, and I'll have to take the driving test again. I lost my license for a whole year.\nThis was a huge learning experience for me. It opened my eyes to how easy it is to make a stupid decision. I want everyone reading this to know that it's not right to drink and drive. It definitely isn't worth losing your license over.",
+          "cefr": "B2",
+          "wordCount": 142,
+          "targetB": 2.35,
+          "source": "academy-original/CEFR B2 (academy original only — dense / academic-adjacent)",
+          "title": "Language That Shapes Choice",
+          "text": "Behavioral researchers showed that the wording of a choice can change decisions even when the underlying numbers remain identical. When a medical option was framed as \"90 percent survival,\" more patients accepted treatment than when the same option was framed as \"10 percent mortality.\" Advertisers and policymakers already exploit framing, sometimes to encourage healthy habits and sometimes to hide trade-offs. The study concluded that clear presentation is not merely a communication skill but an ethical responsibility toward people under pressure. Readers who notice framing can interrupt automatic agreement and demand a second description of the same facts. Teachers began pairing opposite frames in class so students could practice identifying bias before they meet it in real forms and ballots. The larger lesson was simple: language does not only report a choice; it can manufacture the feeling that one option is already correct.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -504,12 +565,12 @@
         {
           "id": "preset-L6-P03",
           "level": 6,
-          "cefr": "C1",
-          "wordCount": 419,
-          "targetB": 0.6,
-          "source": "echobridge-web/reading-curated",
-          "title": "L6 Reading Passage 3",
-          "text": "Humankind has tried to improve its standard of living since the very beginning of civilization. Back then, as well as today, providing food and security was the basic task for a person. However, nowadays the range of required goods has expanded significantly. People feel the need for not only some primary things, such as a piece of bread and a roof over their heads, but also for various facilities and luxuries. Providing humanity with these things is connected to the use of natural resources, which requires energy. In turn, the common sources of energy we use today cause pollution, so economic growth is almost unavoidably associated with environmental damage.\nEconomic growth is the increase in numbers of goods and services produced over time by an economy, and it is calculated in terms of real Gross Domestic Product (GDP). Before growth is calculated, inflation is adjusted in order to take into account its misleading effect on the price of goods and services. Economic growth can also be explained as the increase in expected output, which results from an increase in actual output, or total demand.\nThere are certain aspects of economic growth which affect the environment. The first of these is the fact that in order to produce more goods and products, at a faster rate, the construction of large industrial plants is required. These plants produce a lot of waste, leading to the pollution of water and the atmosphere, which may cause negative long term health effects to nearby populations of animals, or people. _ also lead to global warming.\nIndustrial manufacturing leads to the constantly increasing energy consumption. The traditional energy sources, which are commonly used nowadays, are considered to be the greatest polluters to the environment. There also exist so-called eco-friendly sources of energy. They are sometimes preferred but replacing the traditional sources with them also requires time, during which people have to make some sacrifices to support these undertakings.\nIn order to produce economically practical energy, a sometimes significant transformation of the natural site is often inevitable. This is expensive and, has harmful effects on the environment. Application of wind energy would block airflows' natural speed which is the reason for their decrease in strength, after crossing the windmill. Consequently, the pressure balance that is brought about by this current will be affected, and it is important to remember that the environment and weather conditions are directly affected by atmospheric pressure.\nFor these reasons, bringing about economic growth without any resulting environmental damage, whatsoever, is impossible.",
+          "cefr": "B2",
+          "wordCount": 147,
+          "targetB": 2.4,
+          "source": "academy-original/CEFR B2 (academy original only — dense / academic-adjacent)",
+          "title": "Restoring a River",
+          "text": "For decades factories released waste into the Gray River until fish populations collapsed and local fishing families lost seasonal income. A coalition of scientists, fishers, and students measured pollution at dozens of points and published results the factories could not easily dismiss. Their reports forced older plants to install filters and change waste schedules, though enforcement remained uneven and politically contested. Storms occasionally washed stored chemicals into the water, reminding residents that one clean season does not equal recovery. Still, within ten years several fish species returned to stretches once labeled dead, and schools treated the river as a long-term field site. The project demonstrated that environmental repair is slow, public, and incomplete by design: each generation must re-measure what the last generation claimed to fix. Progress, in this case, looked less like a victory parade and more like a shared habit of refusing to look away.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -521,12 +582,12 @@
         {
           "id": "preset-L6-P04",
           "level": 6,
-          "cefr": "C1",
-          "wordCount": 556,
-          "targetB": 1.3,
-          "source": "echobridge-web/reading-curated",
-          "title": "L6 Reading Passage 4",
-          "text": "I belong to that classification of people known as wives. I am a wife. And, not altogether incidentally, I am a mother.\nNot too long ago a male friend of mine appeared on the scene fresh from a recent divorce. He had one child, who is, of course, with his ex-wife. He is obviously looking for another wife. As I thought about him while I was ironing one evening, it suddenly occurred to me that I, too, would like to have a wife. Why do I want a wife?\nI would like to go back to school so that I can become economically independent, support myself, and if needed, support those dependent upon me. I want a wife who will work and send me to school. And while I am going to school, I want a wife to take care of my children. I want a wife to keep track of the children's doctor. And to keep track of mine, too. I want a wife to make sure my children eat properly and are kept clean. I want a wife who will wash the children's clothes and keep them mended. I want a wife who takes care of the children when they are sick, a wife who arranges to be around when the children need special care, because, of course, I cannot miss classes at school. My wife must arrange to lose time at work and not lose the job. It may mean a small cut in my wife's income from time to time, but I guess I can tolerate that. Needless to say, my wife will arrange and pay for the care of the children while my wife is working.\nI want a wife who will take care of my physical needs. I want a wife who will keep my house clean. I want a wife who will keep my clothes cleaned, ironed, mended, replaced and who cooks the meals, does the necessary grocery shopping, prepares the meals, serves them pleasantly, and then does the cleaning up while I do my studying. I want a wife who will care for me when I am sick and sympathize with my pain and loss of time from school.\nI want a wife who will take care of the details of my social life. When my wife and I are invited out by my friends, I want a wife who will take care of the babysitting arrangements. When I meet people at school that I like and want to entertain, I want a wife who will have the house cleaned and prepare a special meal and serve it to me and my friends and will not interrupt when I talk about the things that interest me and my friends.\nIf, by chance, I find another person more suitable as a wife than the wife I already have, I want the liberty to replace my present wife with another one. Naturally, I will expect a fresh, new life: My wife will take the children and be only responsible for them so that I am left free.\nWhen I am through with school and have a job, I want my wife to stop working and remain at home so that my wife can more fully and completely take care of a wife's duties.\nMy God, who wouldn't want a wife?",
+          "cefr": "B2",
+          "wordCount": 135,
+          "targetB": 2.45,
+          "source": "academy-original/CEFR B2 (academy original only — dense / academic-adjacent)",
+          "title": "The Archive of Voices",
+          "text": "A university archive collected oral histories from immigrants who arrived after the war, many of whom had never written their experiences for official files. Volunteers transcribed hours of recordings, preserving accents, jokes, interruptions, and the silences that followed difficult questions. Historians cautioned that memory is selective, yet the recordings still corrected documents that had reduced daily life to dates and border stamps. Students who listened often changed research topics after hearing details no policy paper had bothered to record. The archive refused to force the material into one neat national story; it presented many unfinished accounts side by side. Directors argued that this incompleteness is closer to historical truth than a single polished narrative designed for comfort. Families later donated photographs that linked private rooms to public events, tightening the connection between memory and evidence.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -538,12 +599,12 @@
         {
           "id": "preset-L6-P05",
           "level": 6,
-          "cefr": "C1",
-          "wordCount": 588,
-          "targetB": 0.9,
-          "source": "echobridge-web/reading-curated",
-          "title": "L6 Reading Passage 5",
-          "text": "Emily Post was an American writer who became famous for writing the book on correct etiquette for social behavior in the United States. Before that, she wrote several novels and short stories which sold moderately well in the early 1900s. Then a publisher asked Ms. Post to write a book on suggested etiquette. Many people during this time had _ through the boom in the American economy just after World War I, but these people were not raised in \"polite society\"; therefore, they did not necessarily have the proper manners. Ms. Post's book was planned to help these new upper-middle class people pass smoothly into their new social circle. She wrote the book, and it became a great success. In fact, it continued to sell well for the next 20 years. Ms. Post began writing a weekly advice column for newspapers, and the column was published in papers across the country. She even had her own radio show for several years. Ms. Post died in 1960, but her book on etiquette is still published with occasional updates under the title \"The Emily Post Book of Etiquette\". Americans continue to turn to this book for advice on the proper behaviour in a variety of social situations.\nOne area in which people in the United States can count on words of wisdom from Ms. Post is in giving gifts. Everyone has to give gifts at some time or another, and Ms. Post explains just what to do in each situation. Whether the occasion is a birthday party for a friend, , or coworker, there are some basic rules the gift-giver and the receiver should follow.\nGiving money is a common concern among gift-givers. \"When is it proper? When is it rude? Some people see a gift of money as a sign of a gift-giver who is too lazy to go out and find a proper gift. However, this is not always the case. Sometimes money is more appreciated than a gift that the receiver does not need or cannot use. For example, elderly people who must live on a limited income may find a small gift of money as a wonderful present. For those who are uncomfortable giving cash, gift certificates to popular stores may serve as an equally acceptable gift.\nGiving flowers can be a wonderful gift for both men and women. For occasions such as funerals and dinner parties, flowers are often required. When attending a dinner party, a host or hostess may not have the time to run off and find a vase for fresh-cut flowers brought by a thoughtful guest. Bringing the flowers in a prepared vase can save the host or hostess the trouble. Flowers may also be sent ahead of time in order to give the hostess or host time to arrange and display the flowers before the party begins. If a gift of flowers seems too feminine for a man to receive, a plant is another option the gift-giver may consider.\nIn some cases, the person throwing the party may specify that no gift is needed or wanted. It is common sense that guests should abide by the wishes of the host or hostess. Guests who ignore the host or hostess and bring a gift may appear rude. The giving of a gift in these situations will only embarrass the host or hostess and the other guests who honored the request of no gifts. Make sure that you are not one of the rule-breakers. Be sure to follow the host's or hostess's suggestion.",
+          "cefr": "B2",
+          "wordCount": 149,
+          "targetB": 2.5,
+          "source": "academy-original/CEFR B2 (academy original only — dense / academic-adjacent)",
+          "title": "When Markets Amplify Hits",
+          "text": "Cultural products such as books and songs can become hits partly because people copy one another's attention rather than judge each work in isolation. In connected markets, a small early advantage in visibility may grow into a large gap in sales even when quality differences remain modest. Quality still matters, but so does the belief that \"everyone else is already reading this,\" which turns social proof into a ranking engine. As a result, predicting success becomes harder for creators, and many carefully made works stay little known despite strong craft. Understanding the pattern does not remove chance; it explains why popularity is an unreliable pure measure of merit. Critics who teach media literacy often ask students to separate craft, luck, and platform design before they treat a chart position as proof of excellence. The market amplifies signals; it does not automatically reward the work that most deserves to last.",
           "suggestedQuestionTypes": [
             "main_idea",
             "detail",
@@ -552,7 +613,15 @@
           ],
           "order": 5
         }
-      ]
+      ],
+      "meta": {
+        "cefr": "B2",
+        "cefrPrimary": "B2",
+        "theta": 2.4,
+        "grades": "advanced+",
+        "refSeries": [],
+        "ref": "CEFR B2 (academy original only — dense / academic-adjacent)"
+      }
     }
   }
 }

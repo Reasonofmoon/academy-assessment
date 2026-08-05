@@ -1,0 +1,863 @@
+{
+  "indexedAt": "2026-08-05T23:57:19.108400+00:00",
+  "sourceRoot": "C:\\Users\\sound\\Downloads\\영어원서 원문 모음-20260805T230734Z-1-001",
+  "policy": {
+    "copyCommercialTextIntoRepo": false,
+    "useSeriesAsDifficultyReferenceOnly": true,
+    "organizeBy": "CEFR first, then GLEAS placement ladder",
+    "originalPassagesWrittenFor": "GLEAS L1–L6 / CEFR Pre-A1–B2 placement reading"
+  },
+  "cefrToGleas": {
+    "Pre-A1": 1,
+    "A1": 1,
+    "A2": 2,
+    "A2-B1": 3,
+    "B1": 4,
+    "B1-B2": 5,
+    "B2": 6
+  },
+  "seriesMeta": {
+    "Little Critter": {
+      "cefrPrimary": "Pre-A1",
+      "cefrMin": "Pre-A1",
+      "cefrMax": "Pre-A1",
+      "cefrNote": "Below A1: very short sentences, high picture dependence, basic daily vocab.",
+      "gleasLevelReference": 1,
+      "gleasRole": "L1 lower (early elementary)"
+    },
+    "Fly Guy": {
+      "cefrPrimary": "A1",
+      "cefrMin": "Pre-A1",
+      "cefrMax": "A1",
+      "cefrNote": "A1 or below: short repeated structures, simple narrative.",
+      "gleasLevelReference": 1,
+      "gleasRole": "L1 core (elementary)"
+    },
+    "Dragon Masters": {
+      "cefrPrimary": "A2",
+      "cefrMin": "A1",
+      "cefrMax": "A2",
+      "cefrNote": "Chapter adventure; reaches solid A2, not B1.",
+      "gleasLevelReference": 2,
+      "gleasRole": "L2 A2 adventure reference"
+    },
+    "Horrid Henry": {
+      "cefrPrimary": "A2",
+      "cefrMin": "A2",
+      "cefrMax": "A2",
+      "cefrNote": "School/home humour; A2 range (not B1).",
+      "gleasLevelReference": 2,
+      "gleasRole": "L2 A2 school-story reference"
+    },
+    "Magic Treehouse Merlin Mission": {
+      "cefrPrimary": "A2",
+      "cefrMin": "A2",
+      "cefrMax": "A2",
+      "cefrNote": "Extended adventure chapters around A2.",
+      "gleasLevelReference": 2,
+      "gleasRole": "L2–L3 A2 extended narrative reference"
+    },
+    "Nate the Great": {
+      "cefrPrimary": "A2-B1",
+      "cefrMin": "A2",
+      "cefrMax": "B1",
+      "cefrNote": "Mystery chapter books; higher than pure A2, up to early B1. Calibrates L3 only.",
+      "gleasLevelReference": 3,
+      "gleasRole": "L3 A2–B1 bridge (not used for L4 pack)"
+    },
+    "My Weird School": {
+      "cefrPrimary": "A2-B1",
+      "cefrMin": "A2",
+      "cefrMax": "B1",
+      "cefrNote": "Funny school chapters; denser than early A2, up to B1 possible. Calibrates L3 only.",
+      "gleasLevelReference": 3,
+      "gleasRole": "L3 A2–B1 bridge (not used for L4 pack)"
+    }
+  },
+  "byCefr": {
+    "Pre-A1": [
+      "Little Critter"
+    ],
+    "A1": [
+      "Fly Guy"
+    ],
+    "A2": [
+      "Dragon Masters",
+      "Horrid Henry",
+      "Magic Treehouse Merlin Mission"
+    ],
+    "A2-B1": [
+      "My Weird School",
+      "Nate the Great"
+    ]
+  },
+  "series": [
+    {
+      "series": "Little Critter",
+      "cefrPrimary": "Pre-A1",
+      "cefrMin": "Pre-A1",
+      "cefrMax": "Pre-A1",
+      "cefrNote": "Below A1: very short sentences, high picture dependence, basic daily vocab.",
+      "gleasLevelReference": 1,
+      "gleasRole": "L1 lower (early elementary)",
+      "fileCount": 1,
+      "files": [
+        {
+          "name": "Little Critter_ I Can Read_.docx",
+          "relativePath": "영어원서 원문 모음\\Little Critter\\Little Critter_ I Can Read_.docx",
+          "bytes": 22095
+        }
+      ],
+      "copyrightNote": "Local index only. Do not copy commercial book text into the repo."
+    },
+    {
+      "series": "Fly Guy",
+      "cefrPrimary": "A1",
+      "cefrMin": "Pre-A1",
+      "cefrMax": "A1",
+      "cefrNote": "A1 or below: short repeated structures, simple narrative.",
+      "gleasLevelReference": 1,
+      "gleasRole": "L1 core (elementary)",
+      "fileCount": 16,
+      "files": [
+        {
+          "name": "1. Hi! Fly Guy.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\1. Hi! Fly Guy.docx",
+          "bytes": 7482
+        },
+        {
+          "name": "10. Fly Guy vs. the Flyswatter!.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\10. Fly Guy vs. the Flyswatter!.docx",
+          "bytes": 7427
+        },
+        {
+          "name": "11. Ride, Fly Guy, Ride!.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\11. Ride, Fly Guy, Ride!.docx",
+          "bytes": 7227
+        },
+        {
+          "name": "12. There_s a Fly Guy in My Soup.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\12. There_s a Fly Guy in My Soup.docx",
+          "bytes": 7405
+        },
+        {
+          "name": "13. Fly Guy and Frankenfly.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\13. Fly Guy and Frankenfly.docx",
+          "bytes": 7257
+        },
+        {
+          "name": "14. Fly Guy_s Amazing Tricks.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\14. Fly Guy_s Amazing Tricks.docx",
+          "bytes": 7297
+        },
+        {
+          "name": "15. Prince Fly Guy.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\15. Prince Fly Guy.docx",
+          "bytes": 7283
+        },
+        {
+          "name": "2. Super Fly Guy.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\2. Super Fly Guy.docx",
+          "bytes": 7432
+        },
+        {
+          "name": "3. Shoo, Fly Guy!.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\3. Shoo, Fly Guy!.docx",
+          "bytes": 7275
+        },
+        {
+          "name": "4. There Was an Old Lady Who Swallowed Fly Guy.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\4. There Was an Old Lady Who Swallowed Fly Guy.docx",
+          "bytes": 7110
+        },
+        {
+          "name": "5. Fly High, Fly Guy!.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\5. Fly High, Fly Guy!.docx",
+          "bytes": 7188
+        },
+        {
+          "name": "6. Hooray for Fly Guy!.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\6. Hooray for Fly Guy!.docx",
+          "bytes": 7286
+        },
+        {
+          "name": "7. I Spy Fly Guy!.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\7. I Spy Fly Guy!.docx",
+          "bytes": 7298
+        },
+        {
+          "name": "8. Fly Guy Meets Fly Girl!.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\8. Fly Guy Meets Fly Girl!.docx",
+          "bytes": 7210
+        },
+        {
+          "name": "9. Buzz Boy and Fly Guy.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\9. Buzz Boy and Fly Guy.docx",
+          "bytes": 7332
+        },
+        {
+          "name": "Fly Guy Book List.docx",
+          "relativePath": "영어원서 원문 모음\\Fly Guy\\Fly Guy Book List.docx",
+          "bytes": 6782
+        }
+      ],
+      "copyrightNote": "Local index only. Do not copy commercial book text into the repo."
+    },
+    {
+      "series": "Dragon Masters",
+      "cefrPrimary": "A2",
+      "cefrMin": "A1",
+      "cefrMax": "A2",
+      "cefrNote": "Chapter adventure; reaches solid A2, not B1.",
+      "gleasLevelReference": 2,
+      "gleasRole": "L2 A2 adventure reference",
+      "fileCount": 27,
+      "files": [
+        {
+          "name": "10_Waking the Rainbow Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\10_Waking the Rainbow Dragon.docx",
+          "bytes": 41078
+        },
+        {
+          "name": "11_Shine of the Silver Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\11_Shine of the Silver Dragon.docx",
+          "bytes": 45224
+        },
+        {
+          "name": "12_Treasure of the Gold Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\12_Treasure of the Gold Dragon.docx",
+          "bytes": 39077
+        },
+        {
+          "name": "13 Eye of the Earthquake Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\13 Eye of the Earthquake Dragon.docx",
+          "bytes": 36728
+        },
+        {
+          "name": "14_Land of the Spring Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\14_Land of the Spring Dragon.docx",
+          "bytes": 39630
+        },
+        {
+          "name": "15. Future of the Ttme Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\15. Future of the Ttme Dragon.docx",
+          "bytes": 38969
+        },
+        {
+          "name": "16_Call of the Sound Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\16_Call of the Sound Dragon.docx",
+          "bytes": 43998
+        },
+        {
+          "name": "17_Fortress of the Stone Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\17_Fortress of the Stone Dragon.docx",
+          "bytes": 43050
+        },
+        {
+          "name": "18_Heat of the Lava Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\18_Heat of the Lava Dragon.docx",
+          "bytes": 41810
+        },
+        {
+          "name": "19_Wave of the Sea Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\19_Wave of the Sea Dragon.docx",
+          "bytes": 44672
+        },
+        {
+          "name": "1_Rise of the Earth Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\1_Rise of the Earth Dragon.docx",
+          "bytes": 35517
+        },
+        {
+          "name": "20_Howl of the Wind Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\20_Howl of the Wind Dragon.docx",
+          "bytes": 42820
+        },
+        {
+          "name": "21_Bloom of the Flower Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\21_Bloom of the Flower Dragon.docx",
+          "bytes": 39819
+        },
+        {
+          "name": "22_Guarding the Invisible Dragons.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\22_Guarding the Invisible Dragons.docx",
+          "bytes": 39438
+        },
+        {
+          "name": "23_Curse of the Shadow Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\23_Curse of the Shadow Dragon.docx",
+          "bytes": 39707
+        },
+        {
+          "name": "24_Dawn of the Light Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\24_Dawn of the Light Dragon.docx",
+          "bytes": 39829
+        },
+        {
+          "name": "25_Legend of the Star Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\25_Legend of the Star Dragon.docx",
+          "bytes": 39868
+        },
+        {
+          "name": "26_Cave of the Crystal Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\26_Cave of the Crystal Dragon.docx",
+          "bytes": 42158
+        },
+        {
+          "name": "2_Saving the Sun Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\2_Saving the Sun Dragon.docx",
+          "bytes": 36894
+        },
+        {
+          "name": "3. Secret of the Water Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\3. Secret of the Water Dragon.docx",
+          "bytes": 32486
+        },
+        {
+          "name": "4_Power of the Fire Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\4_Power of the Fire Dragon.docx",
+          "bytes": 37598
+        },
+        {
+          "name": "5. Song of the Poison Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\5. Song of the Poison Dragon.docx",
+          "bytes": 37550
+        },
+        {
+          "name": "6. Flight of the Moon Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\6. Flight of the Moon Dragon.docx",
+          "bytes": 40398
+        },
+        {
+          "name": "7_Search for the Lightning Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\7_Search for the Lightning Dragon.docx",
+          "bytes": 39473
+        },
+        {
+          "name": "8_Roar of the Thunder Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\8_Roar of the Thunder Dragon.docx",
+          "bytes": 42268
+        },
+        {
+          "name": "9. Chill of the Ice Dragon.docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\9. Chill of the Ice Dragon.docx",
+          "bytes": 43153
+        },
+        {
+          "name": "list (dragon masters).docx",
+          "relativePath": "영어원서 원문 모음\\Dragon Masters\\list (dragon masters).docx",
+          "bytes": 7321
+        }
+      ],
+      "copyrightNote": "Local index only. Do not copy commercial book text into the repo."
+    },
+    {
+      "series": "Horrid Henry",
+      "cefrPrimary": "A2",
+      "cefrMin": "A2",
+      "cefrMax": "A2",
+      "cefrNote": "School/home humour; A2 range (not B1).",
+      "gleasLevelReference": 2,
+      "gleasRole": "L2 A2 school-story reference",
+      "fileCount": 24,
+      "files": [
+        {
+          "name": "1)_Don_t Be Horrid Henry!.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\1)_Don_t Be Horrid Henry!.docx",
+          "bytes": 8157
+        },
+        {
+          "name": "10)_Horrid Henry_s Reads A Book.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\10)_Horrid Henry_s Reads A Book.docx",
+          "bytes": 10623
+        },
+        {
+          "name": "11)_Horrid Henry_s Car Journey.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\11)_Horrid Henry_s Car Journey.docx",
+          "bytes": 10206
+        },
+        {
+          "name": "12)_Moody Margaret_s School.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\12)_Moody Margaret_s School.docx",
+          "bytes": 10690
+        },
+        {
+          "name": "13)_Horrid Henry_s Rainy Day.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\13)_Horrid Henry_s Rainy Day.docx",
+          "bytes": 10485
+        },
+        {
+          "name": "14)_Horrid Henry_s Author Visit.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\14)_Horrid Henry_s Author Visit.docx",
+          "bytes": 10359
+        },
+        {
+          "name": "15)_Horrid Henry_s Meets The Queen.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\15)_Horrid Henry_s Meets The Queen.docx",
+          "bytes": 10135
+        },
+        {
+          "name": "16)_Horrid Henry_s Sports Day.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\16)_Horrid Henry_s Sports Day.docx",
+          "bytes": 10915
+        },
+        {
+          "name": "17)_Moody Margaret_s Casts A Spell.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\17)_Moody Margaret_s Casts A Spell.docx",
+          "bytes": 10286
+        },
+        {
+          "name": "18)_Horrid Henry_s Christmas Presents.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\18)_Horrid Henry_s Christmas Presents.docx",
+          "bytes": 10456
+        },
+        {
+          "name": "19)_Horrid Henry_s Makeover.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\19)_Horrid Henry_s Makeover.docx",
+          "bytes": 10965
+        },
+        {
+          "name": "2)_Horrid Henry_s Underpants.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\2)_Horrid Henry_s Underpants.docx",
+          "bytes": 11774
+        },
+        {
+          "name": "20)_Horrid Henry_s And The Bogey Babysitter.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\20)_Horrid Henry_s And The Bogey Babysitter.docx",
+          "bytes": 11028
+        },
+        {
+          "name": "21)_Horrid Henry_s Christmas Party.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\21)_Horrid Henry_s Christmas Party.docx",
+          "bytes": 11354
+        },
+        {
+          "name": "22)_Horrid Henry_s Sleepover.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\22)_Horrid Henry_s Sleepover.docx",
+          "bytes": 9346
+        },
+        {
+          "name": "23)_Horrid Henry_s Wedding.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\23)_Horrid Henry_s Wedding.docx",
+          "bytes": 10350
+        },
+        {
+          "name": "24)_Horrid Henry_s Haunted House.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\24)_Horrid Henry_s Haunted House.docx",
+          "bytes": 10251
+        },
+        {
+          "name": "25)_Horrid Henry_s Christmas Lunch.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\25)_Horrid Henry_s Christmas Lunch.docx",
+          "bytes": 10608
+        },
+        {
+          "name": "3)_Horrid Henry_s Birthday Party.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\3)_Horrid Henry_s Birthday Party.docx",
+          "bytes": 11209
+        },
+        {
+          "name": "4)_Horrid Henry_s Holiday.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\4)_Horrid Henry_s Holiday.docx",
+          "bytes": 10058
+        },
+        {
+          "name": "5)_Horrid Henry_s Gets Rich Quick.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\5)_Horrid Henry_s Gets Rich Quick.docx",
+          "bytes": 10401
+        },
+        {
+          "name": "6)_Horrid Henry_s And The Football Fiend.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\6)_Horrid Henry_s And The Football Fiend.docx",
+          "bytes": 10989
+        },
+        {
+          "name": "7)_Horrid Henry_s Nits.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\7)_Horrid Henry_s Nits.docx",
+          "bytes": 10351
+        },
+        {
+          "name": "Horrid Henry Book List.docx",
+          "relativePath": "영어원서 원문 모음\\Horrid Henry\\Horrid Henry Book List.docx",
+          "bytes": 7198
+        }
+      ],
+      "copyrightNote": "Local index only. Do not copy commercial book text into the repo."
+    },
+    {
+      "series": "Magic Treehouse Merlin Mission",
+      "cefrPrimary": "A2",
+      "cefrMin": "A2",
+      "cefrMax": "A2",
+      "cefrNote": "Extended adventure chapters around A2.",
+      "gleasLevelReference": 2,
+      "gleasRole": "L2–L3 A2 extended narrative reference",
+      "fileCount": 20,
+      "files": [
+        {
+          "name": "1. Christmas in Camelot _ by Mary Pope Osborne_ illustrated by Sal Murdocca.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\1. Christmas in Camelot _ by Mary Pope Osborne_ illustrated by Sal Murdocca.docx",
+          "bytes": 48596
+        },
+        {
+          "name": "10. Monday with a Mad Genius.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\10. Monday with a Mad Genius.docx",
+          "bytes": 55565
+        },
+        {
+          "name": "11. Dark Day in the Deep Sea.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\11. Dark Day in the Deep Sea.docx",
+          "bytes": 53171
+        },
+        {
+          "name": "12. Eve of the Emperor Penguin.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\12. Eve of the Emperor Penguin.docx",
+          "bytes": 52696
+        },
+        {
+          "name": "13. Moonlight on the Magic Flute.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\13. Moonlight on the Magic Flute.docx",
+          "bytes": 52158
+        },
+        {
+          "name": "14. A Good Night for Ghosts.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\14. A Good Night for Ghosts.docx",
+          "bytes": 58560
+        },
+        {
+          "name": "15. Leprechaun in Late Winter.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\15. Leprechaun in Late Winter.docx",
+          "bytes": 54727
+        },
+        {
+          "name": "16. A Ghost Tale for Christmas Time.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\16. A Ghost Tale for Christmas Time.docx",
+          "bytes": 56244
+        },
+        {
+          "name": "17. A Crazy Day with Cobras.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\17. A Crazy Day with Cobras.docx",
+          "bytes": 53202
+        },
+        {
+          "name": "18. Dogs in the Dead of Night.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\18. Dogs in the Dead of Night.docx",
+          "bytes": 48262
+        },
+        {
+          "name": "2. Haunted Castle on Hallows Eve _ by Mary Pope Osborne_.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\2. Haunted Castle on Hallows Eve _ by Mary Pope Osborne_.docx",
+          "bytes": 49002
+        },
+        {
+          "name": "3. Summer of the Sea Serpent.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\3. Summer of the Sea Serpent.docx",
+          "bytes": 27680
+        },
+        {
+          "name": "4. Winter of the Ice Wizard.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\4. Winter of the Ice Wizard.docx",
+          "bytes": 49706
+        },
+        {
+          "name": "5. Carnival at Candlelight.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\5. Carnival at Candlelight.docx",
+          "bytes": 48330
+        },
+        {
+          "name": "6. Season of the Sandstorms.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\6. Season of the Sandstorms.docx",
+          "bytes": 350200
+        },
+        {
+          "name": "7. Night of the New Magicians.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\7. Night of the New Magicians.docx",
+          "bytes": 49138
+        },
+        {
+          "name": "8. Blizzard of the Blue Moon.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\8. Blizzard of the Blue Moon.docx",
+          "bytes": 349316
+        },
+        {
+          "name": "9. Dragon of the Red Dawn.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\9. Dragon of the Red Dawn.docx",
+          "bytes": 46927
+        },
+        {
+          "name": "Merlin Mission 6. Season of the Sandstorm.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\Merlin Mission 6. Season of the Sandstorm.docx",
+          "bytes": 29795
+        },
+        {
+          "name": "Merlin Mission Book List.docx",
+          "relativePath": "영어원서 원문 모음\\Magic Treehouse Merlin Mission\\Merlin Mission Book List.docx",
+          "bytes": 7188
+        }
+      ],
+      "copyrightNote": "Local index only. Do not copy commercial book text into the repo."
+    },
+    {
+      "series": "My Weird School",
+      "cefrPrimary": "A2-B1",
+      "cefrMin": "A2",
+      "cefrMax": "B1",
+      "cefrNote": "Funny school chapters; denser than early A2, up to B1 possible. Calibrates L3 only.",
+      "gleasLevelReference": 3,
+      "gleasRole": "L3 A2–B1 bridge (not used for L4 pack)",
+      "fileCount": 21,
+      "files": [
+        {
+          "name": "1. Miss Daisy is Crazy.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\1. Miss Daisy is Crazy.docx",
+          "bytes": 26907
+        },
+        {
+          "name": "10. Mr. Docker Is Off His Rocker.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\10. Mr. Docker Is Off His Rocker.docx",
+          "bytes": 33804
+        },
+        {
+          "name": "11. Mrs. Kormel Is Not Normal.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\11. Mrs. Kormel Is Not Normal.docx",
+          "bytes": 30332
+        },
+        {
+          "name": "12. Ms.Todd Is Odd.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\12. Ms.Todd Is Odd.docx",
+          "bytes": 32270
+        },
+        {
+          "name": "13. Mrs. Patty Is Batty.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\13. Mrs. Patty Is Batty.docx",
+          "bytes": 31695
+        },
+        {
+          "name": "14. Miss Holly Is Too Jolly.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\14. Miss Holly Is Too Jolly.docx",
+          "bytes": 33021
+        },
+        {
+          "name": "15. Mr. Macky Is Wacky.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\15. Mr. Macky Is Wacky.docx",
+          "bytes": 31313
+        },
+        {
+          "name": "16. Ms. Coco Is Loco.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\16. Ms. Coco Is Loco.docx",
+          "bytes": 34728
+        },
+        {
+          "name": "17. Miss Suki Is Kooky.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\17. Miss Suki Is Kooky.docx",
+          "bytes": 33976
+        },
+        {
+          "name": "18. Mrs. Yonkers Is Bonkers.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\18. Mrs. Yonkers Is Bonkers.docx",
+          "bytes": 34052
+        },
+        {
+          "name": "19. Dr. Carbles Is Losing His Marbles.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\19. Dr. Carbles Is Losing His Marbles.docx",
+          "bytes": 33083
+        },
+        {
+          "name": "2. Mr. Klutz Is Nuts.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\2. Mr. Klutz Is Nuts.docx",
+          "bytes": 30573
+        },
+        {
+          "name": "20. Mr. Louie Is Screwy.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\20. Mr. Louie Is Screwy.docx",
+          "bytes": 34416
+        },
+        {
+          "name": "3. Mrs. Roopy Is Loopy.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\3. Mrs. Roopy Is Loopy.docx",
+          "bytes": 28450
+        },
+        {
+          "name": "4. Ms. Hannah is Bananas.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\4. Ms. Hannah is Bananas.docx",
+          "bytes": 29185
+        },
+        {
+          "name": "5. Miss Small Is Off the Wall.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\5. Miss Small Is Off the Wall.docx",
+          "bytes": 30985
+        },
+        {
+          "name": "6. Mr. Hynde Is Out of His Mind.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\6. Mr. Hynde Is Out of His Mind.docx",
+          "bytes": 31720
+        },
+        {
+          "name": "7. Mrs. Cooney Is Loony.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\7. Mrs. Cooney Is Loony.docx",
+          "bytes": 32450
+        },
+        {
+          "name": "8. Ms. LaGrange Is Strange.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\8. Ms. LaGrange Is Strange.docx",
+          "bytes": 33722
+        },
+        {
+          "name": "9. Miss Lazar Is Bizarre.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\9. Miss Lazar Is Bizarre.docx",
+          "bytes": 29312
+        },
+        {
+          "name": "My Weird School Book List.docx",
+          "relativePath": "영어원서 원문 모음\\My Weird School\\My Weird School Book List.docx",
+          "bytes": 6953
+        }
+      ],
+      "copyrightNote": "Local index only. Do not copy commercial book text into the repo."
+    },
+    {
+      "series": "Nate the Great",
+      "cefrPrimary": "A2-B1",
+      "cefrMin": "A2",
+      "cefrMax": "B1",
+      "cefrNote": "Mystery chapter books; higher than pure A2, up to early B1. Calibrates L3 only.",
+      "gleasLevelReference": 3,
+      "gleasRole": "L3 A2–B1 bridge (not used for L4 pack)",
+      "fileCount": 26,
+      "files": [
+        {
+          "name": "1. Nate The Great Big Sniff.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\1. Nate The Great Big Sniff.docx",
+          "bytes": 15310
+        },
+        {
+          "name": "10. Nate The Great Missing Key.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\10. Nate The Great Missing Key.docx",
+          "bytes": 22281
+        },
+        {
+          "name": "11. Nate The Great Monster Mess.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\11. Nate The Great Monster Mess.docx",
+          "bytes": 21345
+        },
+        {
+          "name": "12. Nate The Great Mushy Valentine.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\12. Nate The Great Mushy Valentine.docx",
+          "bytes": 17455
+        },
+        {
+          "name": "13. Nate The Great Musical Note.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\13. Nate The Great Musical Note.docx",
+          "bytes": 16640
+        },
+        {
+          "name": "14. Nate The Great Nate the Great.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\14. Nate The Great Nate the Great.docx",
+          "bytes": 13617
+        },
+        {
+          "name": "15. Nate The Great Owl Express.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\15. Nate The Great Owl Express.docx",
+          "bytes": 17749
+        },
+        {
+          "name": "16. Nate The Great Phony Clue.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\16. Nate The Great Phony Clue.docx",
+          "bytes": 11932
+        },
+        {
+          "name": "17. Nate The Great Pillowcase.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\17. Nate The Great Pillowcase.docx",
+          "bytes": 16531
+        },
+        {
+          "name": "18. Nate The Great San Francisco Detective(1).docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\18. Nate The Great San Francisco Detective(1).docx",
+          "bytes": 6480
+        },
+        {
+          "name": "18. Nate The Great San Francisco Detective.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\18. Nate The Great San Francisco Detective.docx",
+          "bytes": 324593
+        },
+        {
+          "name": "19. Nate The Great Saves the King of Sweden.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\19. Nate The Great Saves the King of Sweden.docx",
+          "bytes": 323923
+        },
+        {
+          "name": "2. Nate The Great Boring Beach Bag.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\2. Nate The Great Boring Beach Bag.docx",
+          "bytes": 15074
+        },
+        {
+          "name": "20. Nate The Great Snowy Trail.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\20. Nate The Great Snowy Trail.docx",
+          "bytes": 15032
+        },
+        {
+          "name": "21. Nate The Great Stalks Stupidweed.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\21. Nate The Great Stalks Stupidweed.docx",
+          "bytes": 16292
+        },
+        {
+          "name": "22. Nate The Great Sticky Case.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\22. Nate The Great Sticky Case.docx",
+          "bytes": 322148
+        },
+        {
+          "name": "23. Nate The Great Stolen Base.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\23. Nate The Great Stolen Base.docx",
+          "bytes": 16613
+        },
+        {
+          "name": "24. Nate The Great Tardy Tortoise.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\24. Nate The Great Tardy Tortoise.docx",
+          "bytes": 324118
+        },
+        {
+          "name": "3. Nate The Great Case of the Fleeing Fang.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\3. Nate The Great Case of the Fleeing Fang.docx",
+          "bytes": 16628
+        },
+        {
+          "name": "4. Nate The Great Crunchy Christmas.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\4. Nate The Great Crunchy Christmas.docx",
+          "bytes": 16819
+        },
+        {
+          "name": "5. Nate The Great Fishy Prize.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\5. Nate The Great Fishy Prize.docx",
+          "bytes": 18504
+        },
+        {
+          "name": "6. Nate The Great Goes Down in the Dumps.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\6. Nate The Great Goes Down in the Dumps.docx",
+          "bytes": 15825
+        },
+        {
+          "name": "7. Nate The Great Goes Undercover.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\7. Nate The Great Goes Undercover.docx",
+          "bytes": 13538
+        },
+        {
+          "name": "8. Nate The Great Halloween Hunt.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\8. Nate The Great Halloween Hunt.docx",
+          "bytes": 15519
+        },
+        {
+          "name": "9. Nate The Great Lost List.docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\9. Nate The Great Lost List.docx",
+          "bytes": 15385
+        },
+        {
+          "name": "list (nate the great).docx",
+          "relativePath": "영어원서 원문 모음\\Nate the Great\\list (nate the great).docx",
+          "bytes": 7166
+        }
+      ],
+      "copyrightNote": "Local index only. Do not copy commercial book text into the repo."
+    }
+  ],
+  "foundSeries": true
+}
