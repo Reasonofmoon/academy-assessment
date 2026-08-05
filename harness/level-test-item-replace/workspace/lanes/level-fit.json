@@ -794,5 +794,1734 @@
       "level=2"
     ],
     "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L1-fill-msfwxxgr-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L1-fill-msfwxxgr-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L1-fill-msfwxxgr-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L1-fill-msfwxxgr-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L1-fill-msfwxxgr-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L1-fill-msfwxxgr-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L1-fill-msfwxxgr-6",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L1-fill-msfwxxgr-7",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L1-fill-msfwxxgr-8",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L4-fill-msfwz4fx-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L4-fill-msfwz4fx-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L4-fill-msfwz4fx-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L4-fill-msfwz4fx-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L4-fill-msfwz4fx-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L4-fill-msfwz4fx-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L4-fill-msfwz4fx-6",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L4-fill-msfwz4fx-7",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L5-fill-msfx02ht-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L5-fill-msfx02ht-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L5-fill-msfx02ht-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L5-fill-msfx02ht-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L5-fill-msfx02ht-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L5-fill-msfx02ht-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L5-fill-msfx02ht-6",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L5-fill-msfx02ht-7",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L6-fill-msfx10co-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L6-fill-msfx10co-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L6-fill-msfx10co-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L6-fill-msfx10co-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L6-fill-msfx10co-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L6-fill-msfx10co-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L6-fill-msfx10co-6",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L6-fill-msfx10co-7",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L4-fill-msfx1nfr-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L4-fill-msfx1nfr-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L5-fill-msfx1sv9-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L5-fill-msfx1sv9-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L6-fill-msfx1zkz-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L6-fill-msfx1zkz-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L1-fill-msfy25cu-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L1-fill-msfy25cu-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L1-fill-msfy25cu-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L1-fill-msfy25cu-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L1-fill-msfy25cu-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L1-fill-msfy25cu-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L1-fill-msfy25cu-6",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L1-fill-msfy25cu-7",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L1-fill-msfy25cu-8",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=1"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L2-fill-msfy2rbz-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=2"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L2-fill-msfy2rbz-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=2"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L2-fill-msfy2rbz-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=2"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L2-fill-msfy2rbz-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=2"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L2-fill-msfy2rbz-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=2"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L2-fill-msfy2rbz-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=2"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L2-fill-msfy2rbz-6",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=2"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L2-fill-msfy2rbz-7",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=2"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L2-fill-msfy2rbz-8",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=2"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L3-fill-msfy3v8j-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=3"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L3-fill-msfy3v8j-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=3"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L3-fill-msfy3v8j-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=3"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L3-fill-msfy3v8j-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=3"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L3-fill-msfy3v8j-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=3"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L3-fill-msfy3v8j-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=3"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L3-fill-msfy3v8j-6",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=3"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L3-fill-msfy3v8j-7",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=3"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L3-fill-msfy3v8j-8",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=3"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L4-fill-msfy4u5x-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L4-fill-msfy4u5x-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L4-fill-msfy4u5x-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L4-fill-msfy4u5x-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L4-fill-msfy4u5x-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L4-fill-msfy4u5x-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L4-fill-msfy4u5x-6",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L4-fill-msfy4u5x-7",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=4"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L5-fill-msfy5oes-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L5-fill-msfy5oes-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L5-fill-msfy5oes-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L5-fill-msfy5oes-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L5-fill-msfy5oes-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L5-fill-msfy5oes-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L5-fill-msfy5oes-6",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L5-fill-msfy5oes-7",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L5-fill-msfy5oes-8",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=5"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L6-fill-msfy6myc-0",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "vocabulary-L6-fill-msfy6myc-1",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L6-fill-msfy6myc-2",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L6-fill-msfy6myc-3",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "grammar-L6-fill-msfy6myc-4",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L6-fill-msfy6myc-5",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L6-fill-msfy6myc-6",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=6"
+    ],
+    "unresolved": []
+  },
+  {
+    "lane_id": "lane-level-fit",
+    "item_id": "reading-L6-fill-msfy6myc-7",
+    "result": {
+      "disposition_vote": "keep",
+      "codes": [
+        "PASS"
+      ],
+      "severity": "pass",
+      "notes": "level-fit ok",
+      "span": "item"
+    },
+    "confidence": 0.85,
+    "evidence": [
+      "irtSource=ai_prior_on_preset_passage",
+      "level=6"
+    ],
+    "unresolved": []
   }
 ]

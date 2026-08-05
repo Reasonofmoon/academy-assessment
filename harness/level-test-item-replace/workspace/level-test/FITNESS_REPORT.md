@@ -1,15 +1,15 @@
 # Level-test fitness report
 
-- **Generated:** 2026-08-05T09:17:45.175926+00:00
+- **Generated:** 2026-08-05T10:32:11.461171+00:00
 - **Harness:** level-test-item-replace
-- **Items:** 42
+- **Items:** 133
 - **Execution:** logical (sequential lanes)
 
 ## Disposition counts
 
 | keep | repair | replace | quarantine | exceptions |
 |---:|---:|---:|---:|---:|
-| 38 | 1 | 0 | 3 | 0 |
+| 129 | 1 | 0 | 3 | 0 |
 
 ## Quarantine
 
@@ -27,7 +27,8 @@ _None_
 
 ## Keep (ids)
 
-`grammar-1`, `grammar-1-2`, `grammar-1-3`, `grammar-2`, `grammar-2-2`, `grammar-2-3`, `grammar-3`, `grammar-3-3`, `grammar-4`, `grammar-4-2`, `grammar-4-3`, `grammar-5`, `reading-1`, `reading-1-2`, `reading-1-3`, `reading-2`, `reading-2-2`, `reading-2-3`, `reading-3`, `reading-3-2`, `reading-3-3`, `reading-4`, `reading-4-2`, `reading-4-3`, `reading-5`, `vocabulary-1`, `vocabulary-1-2`, `vocabulary-1-3`, `vocabulary-2`, `vocabulary-2-2`, `vocabulary-2-3`, `vocabulary-4`, `vocabulary-4-2`, `vocabulary-4-3`, `vocabulary-5`, `vocabulary-L2-extra-msfvg41p-0`, `vocabulary-L2-extra-msfvg41p-1`, `vocabulary-L2-replace-msfvg3on`
+`grammar-1`, `grammar-1-2`, `grammar-1-3`, `grammar-2`, `grammar-2-2`, `grammar-2-3`, `grammar-3`, `grammar-3-3`, `grammar-4`, `grammar-4-2`, `grammar-4-3`, `grammar-5`, `grammar-L1-fill-msfwxxgr-3`, `grammar-L1-fill-msfwxxgr-4`, `grammar-L1-fill-msfwxxgr-5`, `grammar-L1-fill-msfy25cu-3`, `grammar-L1-fill-msfy25cu-4`, `grammar-L1-fill-msfy25cu-5`, `grammar-L2-fill-msfy2rbz-3`, `grammar-L2-fill-msfy2rbz-4`, `grammar-L2-fill-msfy2rbz-5`, `grammar-L3-fill-msfy3v8j-3`, `grammar-L3-fill-msfy3v8j-4`, `grammar-L3-fill-msfy3v8j-5`, `grammar-L4-fill-msfwz4fx-2`, `grammar-L4-fill-msfwz4fx-3`, `grammar-L4-fill-msfwz4fx-4`, `grammar-L4-fill-msfy4u5x-2`, `grammar-L4-fill-msfy4u5x-3`, `grammar-L4-fill-msfy4u5x-4`, `grammar-L5-fill-msfx02ht-2`, `grammar-L5-fill-msfx02ht-3`, `grammar-L5-fill-msfx02ht-4`, `grammar-L5-fill-msfy5oes-3`, `grammar-L5-fill-msfy5oes-4`, `grammar-L5-fill-msfy5oes-5`, `grammar-L6-fill-msfx10co-2`, `grammar-L6-fill-msfx10co-3`, `grammar-L6-fill-msfx10co-4`, `grammar-L6-fill-msfy6myc-2`
+… +89 more
 
 ## Exceptions
 

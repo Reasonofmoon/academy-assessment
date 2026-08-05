@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-05T10:00:28.273Z",
+  "updatedAt": "2026-08-05T10:32:04.808Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -3331,6 +3331,2155 @@
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785924028259"
+    },
+    {
+      "id": "vocabulary-L1-fill-msfy25cu-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 먹다",
+      "options": [
+        "Play",
+        "Eat",
+        "Sleep",
+        "Talk"
+      ],
+      "answer": "1",
+      "explanation": "먹다는 'eat'으로 표현합니다. 다른 단어들은 각각 '놀다', '자다', '말하다'라는 뜻입니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.3,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Eat",
+      "exemplarIds": [
+        "L1-00752-D2_Meaning-regenerated",
+        "L1-00096-D2_Meaning-regenerated",
+        "L1-00299-D3_Context-3",
+        "L1-00621-D3_Context-3",
+        "L1-00010-D4_Network-5",
+        "L1-00298-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초1",
+      "batchId": "level-fill-L1-1785925715358"
+    },
+    {
+      "id": "vocabulary-L1-fill-msfy25cu-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 happy의 뜻으로 가장 알맞은 것은?\nI feel very happy today.",
+      "options": [
+        "슬픈",
+        "행복한",
+        "화난",
+        "피곤한"
+      ],
+      "answer": "1",
+      "explanation": "문장 'I feel very happy today.'에서 happy는 '행복한'이라는 뜻입니다. '슬픈', '화난', '피곤한'은 문맥에 맞지 않습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1,
+        "b": -2.1,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "Happy",
+      "exemplarIds": [
+        "L1-00752-D2_Meaning-regenerated",
+        "L1-00096-D2_Meaning-regenerated",
+        "L1-00299-D3_Context-3",
+        "L1-00621-D3_Context-3",
+        "L1-00010-D4_Network-5",
+        "L1-00298-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초1",
+      "batchId": "level-fill-L1-1785925715358"
+    },
+    {
+      "id": "vocabulary-L1-fill-msfy25cu-2",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nThe dog can _____ fast.",
+      "options": [
+        "Sleep",
+        "Fly",
+        "Run",
+        "Read"
+      ],
+      "answer": "2",
+      "explanation": "개는 '빨리 달릴' 수 있으므로 'run'이 가장 적절합니다. 'sleep(자다)', 'fly(날다)', 'read(읽다)'는 문맥상 어색합니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.1,
+        "b": -2.4,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D4_Network",
+      "headword": "Run",
+      "exemplarIds": [
+        "L1-00752-D2_Meaning-regenerated",
+        "L1-00096-D2_Meaning-regenerated",
+        "L1-00299-D3_Context-3",
+        "L1-00621-D3_Context-3",
+        "L1-00010-D4_Network-5",
+        "L1-00298-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초1",
+      "batchId": "level-fill-L1-1785925715358"
+    },
+    {
+      "id": "grammar-L1-fill-msfy25cu-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "be동사가 자연스럽게 쓰인 문장을 고르시오.",
+      "options": [
+        "My dog is big.",
+        "My dog are big.",
+        "My dog am big.",
+        "My dog be big."
+      ],
+      "answer": "0",
+      "explanation": "주어가 단수 명사일 때 현재 시제의 be동사는 'is'를 사용합니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "headword": "be verb (is)",
+      "exemplarIds": [
+        "L1-00114-D5_Usage-regenerated",
+        "L1-00199-D5_Usage-regenerated",
+        "L1-00157-D5_Usage-regenerated",
+        "L1-00652-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초1",
+      "batchId": "level-fill-L1-1785925715358"
+    },
+    {
+      "id": "grammar-L1-fill-msfy25cu-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "올바른 대명사가 쓰인 문장을 고르시오.",
+      "options": [
+        "I like she.",
+        "He likes I.",
+        "She likes him.",
+        "Me likes her."
+      ],
+      "answer": "2",
+      "explanation": "동사 뒤에 오는 대명사는 목적격 형태를 사용해야 합니다. 'him'은 'he'의 목적격입니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "headword": "pronoun (object)",
+      "exemplarIds": [
+        "L1-00114-D5_Usage-regenerated",
+        "L1-00199-D5_Usage-regenerated",
+        "L1-00157-D5_Usage-regenerated",
+        "L1-00652-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초1",
+      "batchId": "level-fill-L1-1785925715358"
+    },
+    {
+      "id": "grammar-L1-fill-msfy25cu-5",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "현재 시제 동사의 형태가 자연스럽게 쓰인 문장을 고르시오.",
+      "options": [
+        "They eats apples.",
+        "She eat apples.",
+        "He eats apples.",
+        "We eats apples."
+      ],
+      "answer": "2",
+      "explanation": "주어가 3인칭 단수(He, She, It)일 때 현재 시제 동사에는 '-s'를 붙입니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "headword": "simple present tense",
+      "exemplarIds": [
+        "L1-00114-D5_Usage-regenerated",
+        "L1-00199-D5_Usage-regenerated",
+        "L1-00157-D5_Usage-regenerated",
+        "L1-00652-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초1",
+      "batchId": "level-fill-L1-1785925715358"
+    },
+    {
+      "id": "reading-L1-fill-msfy25cu-6",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main idea of the passage?",
+      "options": [
+        "The writer's pet dog Max.",
+        "What the writer does in the park.",
+        "Max's favorite food and water.",
+        "How to take care of a dog."
+      ],
+      "answer": "0",
+      "explanation": "이 글은 화자가 자신의 애완견 Max에 대해 소개하고 Max와 함께하는 일상을 이야기하며 Max를 매우 사랑한다고 말하는 것이 주된 내용입니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.2,
+        "b": -2.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "I have a small dog. His name is Max. Max is brown and white. Every morning, I give Max food and water. After school, I walk with Max in the park. Max likes to run and play with a ball. On rainy days, we stay home. Max sleeps next to my bed. I love my dog very much.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초1",
+      "batchId": "level-fill-L1-1785925715358"
+    },
+    {
+      "id": "reading-L1-fill-msfy25cu-7",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "Which class does Mina like the most?",
+      "options": [
+        "Art",
+        "English",
+        "Math",
+        "Soccer"
+      ],
+      "answer": "0",
+      "explanation": "지문에서 Mina가 가장 좋아하는 수업은 미술 수업이라고 명시되어 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1,
+        "b": -2.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Mina goes to school at eight o'clock. She has English, math, and art. At lunch, she eats rice and soup with her friends. After lunch, they play soccer outside. Mina likes art class the most. She draws animals and flowers. At three o'clock, she goes home. She does her homework and helps her mother.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초1",
+      "batchId": "level-fill-L1-1785925715358"
+    },
+    {
+      "id": "reading-L1-fill-msfy25cu-8",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What do the writer and Max NOT do on rainy days?",
+      "options": [
+        "Walk in the park.",
+        "Stay home.",
+        "Sleep next to the bed.",
+        "Eat food and water."
+      ],
+      "answer": "0",
+      "explanation": "지문에서 비 오는 날에는 집에 머문다고 했으므로, 비 오는 날에는 공원에서 산책하지 않는다는 것을 추론할 수 있습니다.",
+      "level": 1,
+      "targetTheta": -2.25,
+      "irt": {
+        "a": 1.5,
+        "b": -2.3,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "I have a small dog. His name is Max. Max is brown and white. Every morning, I give Max food and water. After school, I walk with Max in the park. Max likes to run and play with a ball. On rainy days, we stay home. Max sleeps next to my bed. I love my dog very much.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "createdBy": "level-fill-qc",
+      "grade": "초1",
+      "batchId": "level-fill-L1-1785925715358"
+    },
+    {
+      "id": "vocabulary-L2-fill-msfy2rbz-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 도착하다",
+      "options": [
+        "Arrive",
+        "Depart",
+        "Leave",
+        "Walk"
+      ],
+      "answer": "0",
+      "explanation": "Arrive는 '도착하다'라는 뜻입니다. 다른 선택지들은 각각 '출발하다', '떠나다', '걷다'를 의미합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Arrive",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중1",
+      "batchId": "level-fill-L2-1785925743839"
+    },
+    {
+      "id": "vocabulary-L2-fill-msfy2rbz-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 period의 뜻으로 가장 알맞은 것은?\nThe project will last for a long period of time.",
+      "options": [
+        "기간, 시기",
+        "점",
+        "학기",
+        "규칙적인"
+      ],
+      "answer": "0",
+      "explanation": "문맥에서 period는 '기간'이라는 뜻으로 사용되었습니다. '점', '학기', '규칙적인'은 문맥에 맞지 않습니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "Period",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중1",
+      "batchId": "level-fill-L2-1785925743839"
+    },
+    {
+      "id": "vocabulary-L2-fill-msfy2rbz-2",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nI need to _____ my homework before I can play.",
+      "options": [
+        "finish",
+        "start",
+        "begin",
+        "ignore"
+      ],
+      "answer": "0",
+      "explanation": "숙제를 마쳐야 놀 수 있다는 문맥이므로, '끝내다'라는 뜻의 finish가 가장 적절합니다. start와 begin은 반대 의미이고, ignore는 문맥상 어색합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D4_Network",
+      "headword": "Finish",
+      "exemplarIds": [
+        "L2-00357-D2_Meaning-regenerated",
+        "L2-01684-D2_Meaning-regenerated",
+        "L2-01650-D3_Context-3",
+        "L2-02045-D3_Context-3",
+        "L2-00612-D4_Network-5",
+        "L2-01899-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중1",
+      "batchId": "level-fill-L2-1785925743839"
+    },
+    {
+      "id": "grammar-L2-fill-msfy2rbz-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nShe usually _____ to school, but today she _____ the bus.",
+      "options": [
+        "walks / takes",
+        "is walking / takes",
+        "walks / is taking",
+        "is walking / is taking"
+      ],
+      "answer": "2",
+      "explanation": "'usually'는 반복되는 습관을 나타내므로 현재 시제(walks)를 사용하며, 'today'는 일시적으로 진행되는 행동을 나타내므로 현재 진행 시제(is taking)를 사용합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중1",
+      "batchId": "level-fill-L2-1785925743839"
+    },
+    {
+      "id": "grammar-L2-fill-msfy2rbz-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 빈칸에 들어갈 가장 알맞은 전치사를 고르시오.\nMy birthday is _____ July 20th, and the party starts _____ 7 PM.",
+      "options": [
+        "in / in",
+        "on / at",
+        "at / on",
+        "on / in"
+      ],
+      "answer": "1",
+      "explanation": "특정 날짜(July 20th) 앞에는 전치사 'on'을 사용하고, 특정 시간(7 PM) 앞에는 전치사 'at'을 사용합니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.1,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중1",
+      "batchId": "level-fill-L2-1785925743839"
+    },
+    {
+      "id": "grammar-L2-fill-msfy2rbz-5",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 어법상 올바른 것을 고르시오.",
+      "options": [
+        "The students in the classroom is reading books.",
+        "One of my friends live in Seoul.",
+        "Each of the boys have a new toy.",
+        "The dog with its puppies is sleeping peacefully."
+      ],
+      "answer": "3",
+      "explanation": "주어 'The dog'은 단수이므로 단수 동사 'is'가 올바릅니다. 다른 보기들은 주어와 동사의 수가 일치하지 않습니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.3,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L2-01714-D5_Usage-regenerated",
+        "L2-01887-D5_Usage-7",
+        "L2-02017-D5_Usage-7",
+        "L2-01707-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중1",
+      "batchId": "level-fill-L2-1785925743839"
+    },
+    {
+      "id": "reading-L2-fill-msfy2rbz-6",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "이 편지의 주된 목적은 무엇입니까?",
+      "options": [
+        "Michael의 숙제 제출 기한을 연장하기 위해",
+        "Michael이 숙제를 너무 많이 받았다고 불평하기 위해",
+        "Michael의 농구 경기 결과에 대해 알리기 위해",
+        "Michael이 학교에 결석해야 한다고 알리기 위해"
+      ],
+      "answer": "0",
+      "explanation": "편지는 Michael이 너무 피곤해서 숙제를 끝내지 못했으니, 주말 동안 숙제를 마치고 월요일에 제출할 수 있도록 허락해 달라는 요청이 주된 내용입니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. after the basketball match, with four homework assignments. By 11 p.m., he had completed only three: science, math and English. He worked hard all evening. When he was about to start your homework, I decided to stop him. He looked exhausted, so I made him pack up his books and go to bed. I promised him that I would write to you and explain the situation. Michael is anxious to finish your homework. Would it be possible to allow him to do it over the weekend and hand it in next Monday? We would be very grateful if you could agree to this. Yours sincerely, Dorothy Williams",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중1",
+      "batchId": "level-fill-L2-1785925743839"
+    },
+    {
+      "id": "reading-L2-fill-msfy2rbz-7",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "편지에 따르면, 글쓴이는 은행 명세서에서 어떤 문제를 발견했습니까?",
+      "options": [
+        "티켓 비용이 신용카드로 두 번 청구되었습니다.",
+        "영화관 직원이 불친절했습니다.",
+        "티켓 가격이 44달러보다 비쌌습니다.",
+        "신용카드 결제가 거부되었습니다."
+      ],
+      "answer": "0",
+      "explanation": "편지에는 '그러나 은행 명세서를 받았을 때, 귀하가 제 카드에 두 번 청구한 것을 발견했습니다.'라고 명시되어 있습니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "My wife and I visited your cinema last month. We purchased two tickets which came to a total of $44. At the time of purchase, the attendant at the information desk told us they were having some problems accepting credit card payments. At that time, I was anxious about my credit card payment, but the attendant told me that there was no problem with my payment. However, when I received my bank statement, I discovered that you charged my card twice. I would be grateful if you could resolve this matter quickly.",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중1",
+      "batchId": "level-fill-L2-1785925743839"
+    },
+    {
+      "id": "reading-L2-fill-msfy2rbz-8",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "Michael의 숙제 상황에 대해 추론할 수 있는 것은 무엇입니까?",
+      "options": [
+        "Michael은 평소에 숙제를 마치려고 노력합니다.",
+        "Michael은 종종 숙제를 끝내기 위해 늦게까지 깨어 있습니다.",
+        "Michael은 과학, 수학, 영어 숙제를 싫어합니다.",
+        "Michael의 농구 경기는 자주 숙제 마감일을 놓치게 합니다."
+      ],
+      "answer": "0",
+      "explanation": "편지에서 'Michael은 선생님의 숙제를 끝내고 싶어 합니다(anxious to finish)'라고 언급되어 있으며, 그가 저녁 내내 열심히 일했다고 했으므로, 평소 숙제를 책임감 있게 하려는 태도를 추론할 수 있습니다.",
+      "level": 2,
+      "targetTheta": -0.9,
+      "irt": {
+        "a": 1.2,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. after the basketball match, with four homework assignments. By 11 p.m., he had completed only three: science, math and English. He worked hard all evening. When he was about to start your homework, I decided to stop him. He looked exhausted, so I made him pack up his books and go to bed. I promised him that I would write to you and explain the situation. Michael is anxious to finish your homework. Would it be possible to allow him to do it over the weekend and hand it in next Monday? We would be very grateful if you could agree to this. Yours sincerely, Dorothy Williams",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중1",
+      "batchId": "level-fill-L2-1785925743839"
+    },
+    {
+      "id": "vocabulary-L3-fill-msfy3v8j-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 성취하다, 달성하다",
+      "options": [
+        "Achieve",
+        "Imagine",
+        "Prevent",
+        "Require"
+      ],
+      "answer": "0",
+      "explanation": "Achieve는 '성취하다, 달성하다'라는 뜻으로, 주어진 한글 뜻과 일치합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Achieve",
+      "exemplarIds": [
+        "L3-02067-D2_Meaning-regenerated",
+        "L3-01763-D2_Meaning-regenerated",
+        "L3-05008-D3_Context-4",
+        "L3-04631-D3_Context-3",
+        "L3-02570-D4_Network-5",
+        "L3-04557-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중3",
+      "batchId": "level-fill-L3-1785925795555"
+    },
+    {
+      "id": "vocabulary-L3-fill-msfy3v8j-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 issue의 뜻으로 가장 알맞은 것은?\nThe main issue in the debate was climate change.",
+      "options": [
+        "문제점이나 논쟁의 주제",
+        "잡지나 신문의 호",
+        "발행하다, 내다",
+        "결과나 결론"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 'issue'는 토론의 '주요 문제점'을 의미합니다. 다른 보기는 'issue'의 다른 의미이거나 문맥에 맞지 않습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "Issue",
+      "exemplarIds": [
+        "L3-02067-D2_Meaning-regenerated",
+        "L3-01763-D2_Meaning-regenerated",
+        "L3-05008-D3_Context-4",
+        "L3-04631-D3_Context-3",
+        "L3-02570-D4_Network-5",
+        "L3-04557-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중3",
+      "batchId": "level-fill-L3-1785925795555"
+    },
+    {
+      "id": "vocabulary-L3-fill-msfy3v8j-2",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nWater is _____ for all living things.",
+      "options": [
+        "essential",
+        "optional",
+        "difficult",
+        "common"
+      ],
+      "answer": "0",
+      "explanation": "'essential'은 '필수적인, 본질적인'이라는 뜻으로, 문맥상 '물은 모든 생명체에게 필수적이다'가 자연스럽습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D4_Network",
+      "headword": "Essential",
+      "exemplarIds": [
+        "L3-02067-D2_Meaning-regenerated",
+        "L3-01763-D2_Meaning-regenerated",
+        "L3-05008-D3_Context-4",
+        "L3-04631-D3_Context-3",
+        "L3-02570-D4_Network-5",
+        "L3-04557-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중3",
+      "batchId": "level-fill-L3-1785925795555"
+    },
+    {
+      "id": "grammar-L3-fill-msfy3v8j-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\nIf I ______ a bird, I would fly to you.",
+      "options": [
+        "am",
+        "was",
+        "were",
+        "will be"
+      ],
+      "answer": "2",
+      "explanation": "가정법 과거 문장으로, 'If I were ~' 형태가 되어야 합니다. 주어의 인칭에 상관없이 be동사는 'were'를 사용합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.35,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L3-01955-D5_Usage-7",
+        "L3-02300-D5_Usage-regenerated",
+        "L3-02385-D5_Usage-7",
+        "L3-02551-D5_Usage-7"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중3",
+      "batchId": "level-fill-L3-1785925795555"
+    },
+    {
+      "id": "grammar-L3-fill-msfy3v8j-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 빈칸에 들어갈 가장 적절한 단어를 고르시오.\nThe woman ______ answered the phone was very helpful.",
+      "options": [
+        "whom",
+        "who",
+        "whose",
+        "which"
+      ],
+      "answer": "1",
+      "explanation": "빈칸은 관계대명사로, 뒤에 오는 동사 'answered'의 주어 역할을 해야 하므로 주격 관계대명사 'who'가 적절합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.3,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L3-01955-D5_Usage-7",
+        "L3-02300-D5_Usage-regenerated",
+        "L3-02385-D5_Usage-7",
+        "L3-02551-D5_Usage-7"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중3",
+      "batchId": "level-fill-L3-1785925795555"
+    },
+    {
+      "id": "grammar-L3-fill-msfy3v8j-5",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\nShe ______ in Seoul for five years.",
+      "options": [
+        "lives",
+        "lived",
+        "has lived",
+        "is living"
+      ],
+      "answer": "2",
+      "explanation": "'for five years'는 5년 동안이라는 기간을 나타내므로, 과거에 시작하여 현재까지 계속되는 동작이나 상태를 표현하는 현재완료 시제 'has lived'가 가장 적절합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.1,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L3-01955-D5_Usage-7",
+        "L3-02300-D5_Usage-regenerated",
+        "L3-02385-D5_Usage-7",
+        "L3-02551-D5_Usage-7"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중3",
+      "batchId": "level-fill-L3-1785925795555"
+    },
+    {
+      "id": "reading-L3-fill-msfy3v8j-6",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "options": [
+        "선택의 역설: 더 많은 선택이 더 적은 만족감을 준다",
+        "자유의 기쁨: 무한한 가능성을 포용하기",
+        "매번 최선의 결정을 내리는 방법",
+        "모든 선택지를 비교하는 것의 중요성"
+      ],
+      "answer": "0",
+      "explanation": "이 글은 선택지가 많을수록 만족감이 줄어들고 후회와 스트레스가 늘어난다는 '선택의 폭정'에 대해 설명하고 있으므로, 선택의 역설을 제목으로 하는 것이 가장 적절하다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "Shoppers confronted with the choice of thirty different varieties of gourmet chocolates are more likely to walk away without buying any, compared with when they are presented with only half a dozen choices. If employees are given a free trip to Paris, they are happy. If you give them a free trip to Hawaii, they are happy. But if you offer them the choice between the two destinations, they are less happy, no matter what they choose. Why might choice be so (a) disruptive ? The reason is that choice forces us to make comparisons and acknowledge relative (b) disadvantages . People who choose Paris complain that it doesn’t have the ocean and those who choose Hawaii regret that it doesn’t have the museums. Psychologist Barry Schwartz calls this the ‘tyranny of choice’ because rather than providing freedom, it actually (c) constrains our decision-making. He argues that (d) narrower choice increases unhappiness because we worry that we are going to make the wrong decision and so we get stressed about trying to process all the comparisons in an effort to get it right. This both increases our fear of making the wrong choice and raises expectations that we should be able to get the best choice. Having made the choice, we then (e) start to regret, wondering whether it was the right one.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중3",
+      "batchId": "level-fill-L3-1785925795555"
+    },
+    {
+      "id": "reading-L3-fill-msfy3v8j-7",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글에 따르면, 필자가 마라톤 전에 먹는 것을 권장하는 음식은 무엇인가?",
+      "options": [
+        "평소 식단의 일부인 음식",
+        "사과 버터",
+        "근육을 빠르게 키우는 음식",
+        "새로운 종류의 에너지 바"
+      ],
+      "answer": "0",
+      "explanation": "필자는 마라톤 전 사과 버터를 먹고 고생한 경험을 이야기하며, 대신 평소 식단의 일부인 파스타나 쌀과 같은 음식을 먹으라고 권장하고 있다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "One of the most important things to remember before a race is to eat the right foods. Here is my lesson for you. The night before one of my marathons, I was struck by an uncontrollable need for apple butter. I satisfied the hunger that evening but paid a heavy price the next day; the apple butter forced me to make several stops during the marathon. You can bet that I never ate apple butter again before a race. Instead, I concentrate on foods that are part of my normal diet such as pasta and rice: foods that fuel my muscles. You must certainly have similar foods that you eat every day. These foods are the ones you should concentrate on before a race.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중3",
+      "batchId": "level-fill-L3-1785925795555"
+    },
+    {
+      "id": "reading-L3-fill-msfy3v8j-8",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글을 통해 추론할 수 있는 것은?",
+      "options": [
+        "사람들은 선택의 폭이 좁을 때보다 넓을 때 더 행복함을 느낀다.",
+        "선택은 비교와 후회를 유발하여 만족감을 떨어뜨릴 수 있다.",
+        "가장 좋은 선택을 할 수 있다는 기대감은 항상 긍정적인 결과를 가져온다.",
+        "선택의 자유는 언제나 인간의 행복을 증진시키는 필수 요소이다."
+      ],
+      "answer": "1",
+      "explanation": "글의 내용은 선택이 비교와 상대적 단점을 인식하게 하고, 잘못된 선택에 대한 두려움과 후회를 증가시켜 만족감을 떨어뜨린다는 점을 일관되게 보여준다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Shoppers confronted with the choice of thirty different varieties of gourmet chocolates are more likely to walk away without buying any, compared with when they are presented with only half a dozen choices. If employees are given a free trip to Paris, they are happy. If you give them a free trip to Hawaii, they are happy. But if you offer them the choice between the two destinations, they are less happy, no matter what they choose. Why might choice be so (a) disruptive ? The reason is that choice forces us to make comparisons and acknowledge relative (b) disadvantages . People who choose Paris complain that it doesn’t have the ocean and those who choose Hawaii regret that it doesn’t have the museums. Psychologist Barry Schwartz calls this the ‘tyranny of choice’ because rather than providing freedom, it actually (c) constrains our decision-making. He argues that (d) narrower choice increases unhappiness because we worry that we are going to make the wrong decision and so we get stressed about trying to process all the comparisons in an effort to get it right. This both increases our fear of making the wrong choice and raises expectations that we should be able to get the best choice. Having made the choice, we then (e) start to regret, wondering whether it was the right one.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "createdBy": "level-fill-qc",
+      "grade": "중3",
+      "batchId": "level-fill-L3-1785925795555"
+    },
+    {
+      "id": "vocabulary-L4-fill-msfy4u5x-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 회복력, 탄력성",
+      "options": [
+        "resilience",
+        "fragility",
+        "rigidity",
+        "vulnerability"
+      ],
+      "answer": "0",
+      "explanation": "'회복력' 또는 '탄력성'을 의미하는 단어는 resilience입니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "resilience",
+      "exemplarIds": [
+        "L4-04801-D2_Meaning-regenerated",
+        "L4-04680-D2_Meaning-regenerated",
+        "L4-06411-D3_Context-3",
+        "L4-03844-D3_Context-3",
+        "L4-03566-D4_Network-5",
+        "L4-04110-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785925840821"
+    },
+    {
+      "id": "vocabulary-L4-fill-msfy4u5x-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 underscore의 뜻으로 가장 알맞은 것은?\nThe recent economic downturn serves to underscore the need for financial prudence.",
+      "options": [
+        "강조하다",
+        "감소시키다",
+        "무시하다",
+        "숨기다"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 'underscore'는 '강조하다'라는 의미로 사용되어, 최근 경제 침체가 재정적 신중함의 필요성을 강조한다는 뜻입니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "underscore",
+      "exemplarIds": [
+        "L4-04801-D2_Meaning-regenerated",
+        "L4-04680-D2_Meaning-regenerated",
+        "L4-06411-D3_Context-3",
+        "L4-03844-D3_Context-3",
+        "L4-03566-D4_Network-5",
+        "L4-04110-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785925840821"
+    },
+    {
+      "id": "grammar-L4-fill-msfy4u5x-2",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장의 빈칸에 들어갈 가장 적절한 형태를 고르시오.\nIf I ______ more time, I would travel the world.",
+      "options": [
+        "had",
+        "have",
+        "will have",
+        "would have"
+      ],
+      "answer": "0",
+      "explanation": "가정법 과거 문장으로, 'If + 주어 + 동사의 과거형, 주어 + would/could/might + 동사원형' 형태를 따릅니다. 따라서 'had'가 적절합니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L4-03694-D5_Usage-7",
+        "L4-01820-D5_Usage-regenerated",
+        "L4-03767-D5_Usage-7",
+        "L4-02501-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785925840821"
+    },
+    {
+      "id": "grammar-L4-fill-msfy4u5x-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장의 빈칸에 들어갈 가장 적절한 관계대명사를 고르시오.\nThe student ______ won the competition received a scholarship.",
+      "options": [
+        "who",
+        "whom",
+        "which",
+        "whose"
+      ],
+      "answer": "0",
+      "explanation": "선행사 'The student'는 사람이고, 빈칸은 관계사절 'won the competition'에서 주어 역할을 하므로 주격 관계대명사 'who'가 적절합니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L4-03694-D5_Usage-7",
+        "L4-01820-D5_Usage-regenerated",
+        "L4-03767-D5_Usage-7",
+        "L4-02501-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785925840821"
+    },
+    {
+      "id": "grammar-L4-fill-msfy4u5x-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장의 빈칸에 들어갈 가장 적절한 형태를 고르시오.\nShe enjoys ______ new languages.",
+      "options": [
+        "learning",
+        "to learn",
+        "learn",
+        "learned"
+      ],
+      "answer": "0",
+      "explanation": "'enjoy'는 동명사(gerund)를 목적어로 취하는 동사이므로, 'learning'이 올바른 형태입니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L4-03694-D5_Usage-7",
+        "L4-01820-D5_Usage-regenerated",
+        "L4-03767-D5_Usage-7",
+        "L4-02501-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785925840821"
+    },
+    {
+      "id": "reading-L4-fill-msfy4u5x-5",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "options": [
+        "인간의 긴 유아기: 유연한 적응을 위한 진화적 전략",
+        "동물과 인간의 생존 방식 비교: 본능 대 학습",
+        "뇌의 발달 과정: 선천적 능력과 후천적 경험의 조화",
+        "현대 사회에서 인간의 적응력이 직면한 도전"
+      ],
+      "answer": "0",
+      "explanation": "이 글은 인간이 다른 동물에 비해 유아기가 길고 무력하지만, 이는 뇌가 환경에 맞게 유연하게 형성될 수 있도록 하는 진화적 이점임을 설명합니다. 따라서 인간의 긴 유아기가 유연한 적응을 위한 전략이라는 제목이 가장 적절합니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "Although we humans are equipped with reflexive responses for survival, at birth we are (a) helpless . We spend about a year unable to walk, about two more before we can articulate full thoughts, and many more years unable to provide for ourselves. We are totally dependent on those around us for our survival. Now compare this to many other mammals. Dolphins, for instance,are born swimming; giraffes learn to stand within hours; a baby zebra can run within forty-five minutes of birth. Across the animal kingdom, our cousins are strikingly (b) independent soon after they’re born.\r\n\n  On the face of it, that seems like a great advantage for other species ― but in fact it signifies a limitation. Baby animals develop quickly because their brains are wiring up according to a largely preprogrammed routine. But that (c) preparedness trades off with flexibility. Imagine if some unfortunate rhinoceros found itself on the Arctic tundra, or on top of a mountain in the Himalayas, or in the middle of a metropolis. It would have no capacity to adapt (which is why we don’t find rhinos in those areas). This strategy of arriving with a pre-arranged brain works inside a particular niche in the ecosystem ― but put an animal outside of that niche, and its chances of thriving are (d) low .\r\n\n  In contrast, humans are able to thrive in many different environments, from the frozen tundra to the high mountains to crowded urban centers. This is possible because the human brain is born remarkably incomplete. Instead of arriving with everything wired up ― let’s call it “hardwired” ― a human brain (e) forbids itself to be shaped by the details of life experience. This leads to long periods of helplessness as the young brain slowly molds to its environment. It’s “livewired.”\r\n\n* niche: 적합한 장소",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785925840821"
+    },
+    {
+      "id": "reading-L4-fill-msfy4u5x-6",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 내용으로 미루어 볼 때, 부부 관계에서 ‘재구성된 기억(reconstructed memories)’에 대해 추론할 수 있는 것은?",
+      "options": [
+        "배우자 간의 갈등을 해결하는 데 항상 긍정적인 역할을 한다.",
+        "각자의 가족 배경에 대한 객관적인 사실만을 포함한다.",
+        "시간이 지남에 따라 점차 사라지며 관계에 영향을 미치지 않는다.",
+        "서로의 이야기가 각자의 관점으로 재해석되어 형성된 것이다."
+      ],
+      "answer": "3",
+      "explanation": "부부 관계에서 '재구성된 기억'은 각 배우자가 자신의 가족 구성 체계 안에서 상대방의 이야기를 선택적으로 기억하고 해석하며 형성됩니다. 이는 객관적인 사실이 아닌, 개인의 관점이 반영된 재해석된 정보임을 추론할 수 있습니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "As a couple start to form a relationship, they can be seen to develop a set of constructs about their own relationship and, in particular, how it is similar or different to their parents’ relationship. The couple’s initial disclosures involve them forming constructs about how much similarity there is between them and each other’s families. What each of them will remember is selective and (a) coloured by their family’s constructs system. In turn it is likely that as they tell each other their already edited stories, there is a second process of editing whereby what they both hear from each other is again (b) interpreted within their respective family of origin’s construct systems. The two sets of memories ― the person talking about his or her family and the partner’s edited version of this story ― go into the ‘cooking-pot’ of the couple’s new construct system. Subsequently, one partner may (c) randomly recall a part of the other’s story as a tactic in negotiations: for example, Harry may say to Doris that she is being ‘bossy ― just like her mother’. Since this is probably based on what Doris has told Harry, this is likely to be a very powerful tactic. She may protest or attempt to rewrite this version of her story, thereby possibly adding further material that Harry could use in this way. These exchanges of stories need not always be (d) employed in such malevolent ways. These reconstructed memories can become very powerful, to a point where each partner may become confused even about the simple (e) factual details of what actually did happen in their past.\r\n\n* malevolent: 악의 있는",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785925840821"
+    },
+    {
+      "id": "reading-L4-fill-msfy4u5x-7",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글에 따르면, 다른 동물들이 태어날 때부터 '미리 프로그램된 뇌(preprogrammed brain)'를 가지고 태어나는 것이 제한점으로 작용하는 이유는 무엇인가?",
+      "options": [
+        "특정 환경을 벗어나면 적응하기 어렵기 때문이다.",
+        "생존을 위한 본능적인 반응이 부족하기 때문이다.",
+        "다른 종과의 경쟁에서 불리하게 작용하기 때문이다.",
+        "복잡한 사회적 상호작용을 배우기 어렵기 때문이다."
+      ],
+      "answer": "0",
+      "explanation": "이 글에 따르면, 다른 동물들의 '미리 프로그램된 뇌'는 특정 생태계 내에서는 잘 작동하지만, 그 환경을 벗어나면 적응할 능력이 없어 생존 가능성이 낮아진다고 설명합니다.",
+      "level": 4,
+      "targetTheta": 1.15,
+      "irt": {
+        "a": 1.2,
+        "b": 1.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Although we humans are equipped with reflexive responses for survival, at birth we are (a) helpless . We spend about a year unable to walk, about two more before we can articulate full thoughts, and many more years unable to provide for ourselves. We are totally dependent on those around us for our survival. Now compare this to many other mammals. Dolphins, for instance,are born swimming; giraffes learn to stand within hours; a baby zebra can run within forty-five minutes of birth. Across the animal kingdom, our cousins are strikingly (b) independent soon after they’re born.\r\n\n  On the face of it, that seems like a great advantage for other species ― but in fact it signifies a limitation. Baby animals develop quickly because their brains are wiring up according to a largely preprogrammed routine. But that (c) preparedness trades off with flexibility. Imagine if some unfortunate rhinoceros found itself on the Arctic tundra, or on top of a mountain in the Himalayas, or in the middle of a metropolis. It would have no capacity to adapt (which is why we don’t find rhinos in those areas). This strategy of arriving with a pre-arranged brain works inside a particular niche in the ecosystem ― but put an animal outside of that niche, and its chances of thriving are (d) low .\r\n\n  In contrast, humans are able to thrive in many different environments, from the frozen tundra to the high mountains to crowded urban centers. This is possible because the human brain is born remarkably incomplete. Instead of arriving with everything wired up ― let’s call it “hardwired” ― a human brain (e) forbids itself to be shaped by the details of life experience. This leads to long periods of helplessness as the young brain slowly molds to its environment. It’s “livewired.”\r\n\n* niche: 적합한 장소",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고2",
+      "batchId": "level-fill-L4-1785925840821"
+    },
+    {
+      "id": "vocabulary-L5-fill-msfy5oes-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 어디에나 있는, 아주 흔한",
+      "options": [
+        "ubiquitous",
+        "ephemeral",
+        "superfluous",
+        "benevolent"
+      ],
+      "answer": "0",
+      "explanation": "'ubiquitous'는 '어디에나 있는, 아주 흔한'이라는 뜻으로, 주어진 한글 뜻과 일치합니다. 다른 단어들은 각각 '수명이 짧은', '불필요한', '자비로운'이라는 뜻입니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "ubiquitous",
+      "exemplarIds": [
+        "L5-05240-D2_Meaning-regenerated",
+        "L5-06170-D2_Meaning-0",
+        "L4-07187-D3_Context-3",
+        "L5-06914-D3_Context-3",
+        "L5-06620-D4_Network-5",
+        "L4-07567-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785925880020"
+    },
+    {
+      "id": "vocabulary-L5-fill-msfy5oes-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 underscore의 뜻으로 가장 알맞은 것은?\nThe report serves to underscore the urgency of climate action.",
+      "options": [
+        "강조하다",
+        "밑줄을 긋다",
+        "조사하다",
+        "요약하다"
+      ],
+      "answer": "0",
+      "explanation": "문맥에서 'underscore'는 '강조하다'라는 의미로 사용되었습니다. '기후 행동의 시급성을 강조하는 역할을 한다'로 해석됩니다. '밑줄을 긋다'는 단어의 문자적인 의미이지만 문맥에는 적합하지 않습니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.3,
+        "b": 1.95,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "underscore",
+      "exemplarIds": [
+        "L5-05240-D2_Meaning-regenerated",
+        "L5-06170-D2_Meaning-0",
+        "L4-07187-D3_Context-3",
+        "L5-06914-D3_Context-3",
+        "L5-06620-D4_Network-5",
+        "L4-07567-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785925880020"
+    },
+    {
+      "id": "vocabulary-L5-fill-msfy5oes-2",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nThe artist was known for her _____ attention to detail in every painting.",
+      "options": [
+        "meticulous",
+        "cursory",
+        "sporadic",
+        "negligent"
+      ],
+      "answer": "0",
+      "explanation": "문맥상 화가가 그림의 세부 사항에 대해 '꼼꼼한, 세심한' 주의를 기울였다는 내용이 자연스럽습니다. 'meticulous'는 '꼼꼼한, 세심한'이라는 뜻으로 빈칸에 가장 적절합니다. 'cursory'는 '대충 하는', 'sporadic'은 '간헐적인', 'negligent'는 '태만한'이라는 뜻으로 문맥에 맞지 않습니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.1,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D4_Network",
+      "headword": "meticulous",
+      "exemplarIds": [
+        "L5-05240-D2_Meaning-regenerated",
+        "L5-06170-D2_Meaning-0",
+        "L4-07187-D3_Context-3",
+        "L5-06914-D3_Context-3",
+        "L5-06620-D4_Network-5",
+        "L4-07567-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785925880020"
+    },
+    {
+      "id": "grammar-L5-fill-msfy5oes-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\nThe scientist presented his findings, _____ by extensive research.",
+      "options": [
+        "supporting",
+        "supported",
+        "to support",
+        "having supported"
+      ],
+      "answer": "1",
+      "explanation": "문맥상 'findings(연구 결과)'가 'extensive research(광범위한 연구)'에 의해 '뒷받침되는' 수동의 의미이므로 과거분사 supported가 적절합니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L5-06824-D5_Usage-7",
+        "L6-07301-D5_Usage-regenerated",
+        "L4-07332-D5_Usage-regenerated",
+        "L6-07326-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785925880020"
+    },
+    {
+      "id": "grammar-L5-fill-msfy5oes-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 문법적으로 올바른 것을 고르시오.\nHer responsibilities include managing staff, coordinating projects, and _____ budgets.",
+      "options": [
+        "to oversee",
+        "overseeing",
+        "she oversees",
+        "to be overseeing"
+      ],
+      "answer": "1",
+      "explanation": "include 동사의 목적어로 동명사 managing과 coordinating이 병렬 구조를 이루고 있으므로, 빈칸에도 동명사 overseeing이 와야 합니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.3,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L5-06824-D5_Usage-7",
+        "L6-07301-D5_Usage-regenerated",
+        "L4-07332-D5_Usage-regenerated",
+        "L6-07326-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785925880020"
+    },
+    {
+      "id": "grammar-L5-fill-msfy5oes-5",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\n_____ for the manager's approval, the proposal would have been implemented immediately.",
+      "options": [
+        "Had it not been",
+        "If it not had been",
+        "Were it not",
+        "Should it not be"
+      ],
+      "answer": "0",
+      "explanation": "주절의 'would have been implemented'는 가정법 과거완료이므로, 종속절 또한 가정법 과거완료 형태가 되어야 합니다. If가 생략된 도치 구문으로 'Had it not been for'가 올바른 형태입니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.4,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L5-06824-D5_Usage-7",
+        "L6-07301-D5_Usage-regenerated",
+        "L4-07332-D5_Usage-regenerated",
+        "L6-07326-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785925880020"
+    },
+    {
+      "id": "reading-L5-fill-msfy5oes-6",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main idea of the passage?",
+      "options": [
+        "The various meanings and uses of expressions with “hand” in English.",
+        "How to effectively use “hand” expressions in daily conversation.",
+        "The origin and historical development of “hand” idioms.",
+        "Difficulties non-native speakers face when learning “hand” expressions."
+      ],
+      "answer": "0",
+      "explanation": "이 글은 영어에서 'hand'를 사용하는 다양한 표현들을 소개하고 그 의미를 설명하고 있으므로, 글의 주된 내용은 'hand' 표현의 다양한 의미와 용례를 다루는 것입니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "There are hundreds of expressions of words using \"hand\" in the English language. Let us examine some of the expressions that use \"hand\".\nWe will get a hand in this way. \"To get a hand in\" is to begin a job, to begin to know something about it. When we learn completely, we will be able to do it hands down. If we do the job well, we may end up with the upper hand. On the other hand, if the situation gets out of hand, it is out of control.\nWe must consider another way of expressing phrase---- to hand it to someone. For example, I must hand it to you for understanding what we have discussed this far. You can also lend a hand to someone but without really giving up your hand. You lend a hand when you help someone. If someone is kind enough to lend us a hand then we surely do not want to bite the hand that feeds us. We do not want to repay his kindness by treating him badly.\nNow, we have a free hand to continue examining other \"hand\" expressions. It means you are free to act without getting permission from someone else.\nMaybe you can find a friend who wants to take a hand in our project. It would have to be someone who was interested in these expressions. Your friend may want to work hand in glove with us. That is good because that means he wants to work as closely with us as a glove covers the hand. Of course, there is a danger that he may look at our project and decide to take it in hand. That means he wants to tale it over. If that happens, we may throw up our hands because the situation seams hopeless. In fact, we may decide that it is time for us to end this project to wash our hands of \" hand\" expressions.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785925880020"
+    },
+    {
+      "id": "reading-L5-fill-msfy5oes-7",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "Which of the following can be inferred about Prince Renato II and his country Pontinha?",
+      "options": [
+        "He values the freedom and autonomy that comes with being the sovereign of his own country.",
+        "He purchased Pontinha primarily to establish a profitable tourist attraction.",
+        "His family fully supported his decision to buy the island and declare it a country.",
+        "He spends most of his time living permanently on Pontinha with his family."
+      ],
+      "answer": "0",
+      "explanation": "Renato II가 '나는 내가 원하는 무엇이든 될 수 있다', '나의 권력은 이곳에서만 절대적이다'라고 말하는 부분에서 그가 자신의 나라를 통해 얻은 자유와 자율성을 중요하게 생각함을 추론할 수 있습니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "My father wasn't a king, he was a taxi driver, but I am a prince-Prince Renato II, of the country Pontinha, an island fort on Funchal harbour. It's in Madeira,Portugal, where I grew up. It was discovered in 1419.\nIn 1903, the king of Portugal sold the land to a wealthy British family, the Blandys, who make Madeira wine. Fourteen years ago the family decided to sell it forjust EUR25,000, but nobody wanted to buy it either. I met Blandy at a party. and he asked if I'd like to buy the island. Of course I said yes,but I had no money-I was just an art teacher.I tried to find some business partners, who all thought I was crazy.So I sold some of my possessions,put my savings together and bought it.Of course, my family. my friends-all thought I was mad.\nWhen the King originally sold the island,he signed a document, selling all the \"possessions and the dominions\"of the island.It means I can do what I want with it-I could start a restaurant, or a cinema but nobody thought someone would start a country.So that's what I did:I decided it would be my island, about the size of a one-bedroom house.\nI have both a Portuguese passport and one for Pontinha (where my passport number is 0001).There are four citizens: me, my wife, my son and my daughter.I am the police, the gardener,everything.I am whatever I want to be-that's the dream,isn't it?If l want to have a national flag,it could be blue today,red tomorrow.I can change it any time.Of course,my power is only absolute here, where I am the true sovereign.\nI don't live in my country full time, but I am often there.My family sometimes drops by, and other people come every day because the country is free for tourists to visit; I never close for bad weather.Sometimes I come here when I'm feeling lively,after a few drinks.\nMadeira is surrounded by water,but for some reason we all have to pay to swim in the ocean now,at the swimming spots.However.I have my island,which means I can come swimming whenever I want-it's as if someone has given me the key to the waters.\nOur lives are gone in a flash.All change in the world begins with something very small, and this is my country-just a small island.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785925880020"
+    },
+    {
+      "id": "reading-L5-fill-msfy5oes-8",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "According to the passage, what does it mean to \"work hand in glove with us\"?",
+      "options": [
+        "To work very closely and cooperatively with someone.",
+        "To take over a project and assume control of it.",
+        "To be free to act without needing permission from others.",
+        "To help someone without giving up one's own resources."
+      ],
+      "answer": "0",
+      "explanation": "지문에서 'Your friend may want to work hand in glove with us. That is good because that means he wants to work as closely with us as a glove covers the hand.'라고 명시되어 있으므로, 이는 매우 긴밀하게 협력하여 일하는 것을 의미합니다.",
+      "level": 5,
+      "targetTheta": 1.9,
+      "irt": {
+        "a": 1.2,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "There are hundreds of expressions of words using \"hand\" in the English language. Let us examine some of the expressions that use \"hand\".\nWe will get a hand in this way. \"To get a hand in\" is to begin a job, to begin to know something about it. When we learn completely, we will be able to do it hands down. If we do the job well, we may end up with the upper hand. On the other hand, if the situation gets out of hand, it is out of control.\nWe must consider another way of expressing phrase---- to hand it to someone. For example, I must hand it to you for understanding what we have discussed this far. You can also lend a hand to someone but without really giving up your hand. You lend a hand when you help someone. If someone is kind enough to lend us a hand then we surely do not want to bite the hand that feeds us. We do not want to repay his kindness by treating him badly.\nNow, we have a free hand to continue examining other \"hand\" expressions. It means you are free to act without getting permission from someone else.\nMaybe you can find a friend who wants to take a hand in our project. It would have to be someone who was interested in these expressions. Your friend may want to work hand in glove with us. That is good because that means he wants to work as closely with us as a glove covers the hand. Of course, there is a danger that he may look at our project and decide to take it in hand. That means he wants to tale it over. If that happens, we may throw up our hands because the situation seams hopeless. In fact, we may decide that it is time for us to end this project to wash our hands of \" hand\" expressions.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L5-1785925880020"
+    },
+    {
+      "id": "vocabulary-L6-fill-msfy6myc-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 어디에나 있는, 아주 흔한",
+      "options": [
+        "Ubiquitous",
+        "Unanimous",
+        "Ephemeral",
+        "Obsolete"
+      ],
+      "answer": "0",
+      "explanation": "Ubiquitous는 '어디에나 있는, 아주 흔한'이라는 뜻으로, 주어진 한글 뜻과 일치합니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.2,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "Ubiquitous",
+      "exemplarIds": [
+        "L6-07738-D2_Meaning-regenerated",
+        "L4-07857-D2_Meaning-regenerated",
+        "L6-08319-D3_Context-3",
+        "L6-08257-D3_Context-3",
+        "L6-08299-D4_Network-5",
+        "L4-08107-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785925924788"
+    },
+    {
+      "id": "vocabulary-L6-fill-msfy6myc-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 mitigate의 뜻으로 가장 알맞은 것은?\nThe government implemented new policies to mitigate the effects of the economic downturn.",
+      "options": [
+        "악화시키다",
+        "강화하다",
+        "완화하다, 경감하다",
+        "무시하다"
+      ],
+      "answer": "2",
+      "explanation": "Mitigate는 '완화하다, 경감하다'라는 뜻으로, 문맥상 경제 침체의 영향을 줄이는 정책을 의미합니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "mitigate",
+      "exemplarIds": [
+        "L6-07738-D2_Meaning-regenerated",
+        "L4-07857-D2_Meaning-regenerated",
+        "L6-08319-D3_Context-3",
+        "L6-08257-D3_Context-3",
+        "L6-08299-D4_Network-5",
+        "L4-08107-D4_Network-5"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785925924788"
+    },
+    {
+      "id": "grammar-L6-fill-msfy6myc-2",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장 중 문법적으로 올바른 것을 고르시오.",
+      "options": [
+        "It is imperative that he submits his report by noon.",
+        "It is imperative that he submit his report by noon.",
+        "It is imperative that he submitted his report by noon.",
+        "It is imperative that he submitting his report by noon."
+      ],
+      "answer": "1",
+      "explanation": "'It is imperative that' 구문 뒤에는 동사원형을 사용하는 가정법 현재가 와야 합니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.2,
+        "b": 2.7,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L6-07772-D5_Usage-regenerated",
+        "L4-08271-D5_Usage-7",
+        "L4-07785-D5_Usage-regenerated",
+        "L6-07740-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785925924788"
+    },
+    {
+      "id": "grammar-L6-fill-msfy6myc-3",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장 중 문법적으로 올바른 것을 고르시오.",
+      "options": [
+        "The student, surprising by the sudden announcement, dropped his pen.",
+        "The student, surprised by the sudden announcement, dropped his pen.",
+        "The student, who surprising by the sudden announcement, dropped his pen.",
+        "The student, to surprise by the sudden announcement, dropped his pen."
+      ],
+      "answer": "1",
+      "explanation": "주어(the student)가 발표에 의해 놀라게 된 것이므로, 수동의 의미를 나타내는 과거분사 'surprised'가 와야 합니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1,
+        "b": 2.6,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L6-07772-D5_Usage-regenerated",
+        "L4-08271-D5_Usage-7",
+        "L4-07785-D5_Usage-regenerated",
+        "L6-07740-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785925924788"
+    },
+    {
+      "id": "grammar-L6-fill-msfy6myc-4",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 문장 중 문법적으로 올바른 것을 고르시오.",
+      "options": [
+        "Seldom he has seen such a magnificent view.",
+        "Seldom has he seen such a magnificent view.",
+        "Seldom he seen such a magnificent view.",
+        "Seldom has seen he such a magnificent view."
+      ],
+      "answer": "1",
+      "explanation": "'Seldom'과 같은 부정 부사가 문두에 올 때는 주어와 조동사가 도치되어야 합니다. (Seldom + 조동사 + 주어 + 본동사)",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.5,
+        "b": 2.75,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "exemplarIds": [
+        "L6-07772-D5_Usage-regenerated",
+        "L4-08271-D5_Usage-7",
+        "L4-07785-D5_Usage-regenerated",
+        "L6-07740-D5_Usage-regenerated"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785925924788"
+    },
+    {
+      "id": "reading-L6-fill-msfy6myc-5",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main topic of the passage?",
+      "options": [
+        "The implementation and controversy surrounding student tracking technology in Texas schools.",
+        "How Texas schools are using new technology to improve student safety.",
+        "The financial benefits of RFID nametags for school districts in Texas.",
+        "Civil liberties groups' efforts to protect student privacy from technological surveillance."
+      ],
+      "answer": "0",
+      "explanation": "이 지문은 텍사스 학교에서 도입된 학생 추적 기술(RFID 명찰)의 목적(주 정부 지원금 확보, 안전)과 이로 인해 발생하는 논란(사생활 침해 우려)을 주로 다루고 있습니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.5,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "SAN ANTONIO -- For Tira Starr, an eighth grader at Anson Jones Middle School, the plastic nametag hanging around her neck that she has decorated with a smiley face and a purple bat sticker offers a way to reflect her personal interest. For administrators, it is something else entirely: a device that lets them use radio frequency technology--with scanners tucked behind walls and ceilings--to track her whereabouts. \nAnson Jones is the first school in San Antonio's Northside Independent School District to roll out the new nametags, which are part of a pilot program intended to ensure that the district receives all of the state dollars. \nIn Texas, school finance is a numbers game: schools receive money based on the number of students counted in their homeroom classes each morning. At Anson Jones, as at other schools, many students were in school but not in homeroom, so they were not counted and the district lost money, said Pascual Gonzalez, a spokesman for the district. \n\"We were leaving money on the table,\" he said, adding that the district expects a $2 million return on an initial investment of $261,000 in the technology at two pilot schools. \nBut the radio frequency identification nametags have prompted concerns from civil liberties groups and electronic privacy watchdogs, which fear a Big Brother atmosphere in Texas public schools. \nMatthew Simpson, a policy strategist for the American Civil Liberties Union of Texas, said the technology was easy to acquire, meaning people outside a school might be able to monitor a student if they obtained the student's unique tracking number. \nMr. Simpson said the technology was originally designed for shipping goods and for cattle. \"It was never intended for people,\" he said. \nBut students and educators at Anson Jones say they are excited about the practical advantages -- getting to eat lunch faster by scanning their bar codes in the lunch line, or being able to locate a child quickly in an emergency. \nNorthside is not the first district to use the tracking devices. Two Houston-area districts began the program several years ago. The Spring district, for example, started using the technology in 2004 as a way to track elementary students getting on and off buses. It expanded the program to high school students three years ago and has so far recovered $400,000, said Karen Garrison, a spokeswoman for the district. \n\"Our system still focuses on safety but has the added benefit of recovering average daily attendance funding,\" Ms. Garrison said. \nWendy Reyes, the principal of Anson Jones, said only one parent had complained about the program at her school. On the first day of classes at Jay High School, home to the other pilot program school in Northside, several parents staged a protest across the street from the school, though most did not have students in the district. \nMany students, teachers and parents at the middle school feel the technology's benefits outweigh privacy concerns, Ms. Reyes said.",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785925924788"
+    },
+    {
+      "id": "reading-L6-fill-msfy6myc-6",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What can be inferred about the author's feelings after the incident?",
+      "options": [
+        "The author deeply regrets the decision to drink and drive, and wants to prevent others from making the same mistake.",
+        "The author believes the punishment received was overly harsh for a first-time offense.",
+        "The author feels betrayed by friends who encouraged drinking in the car.",
+        "The author now understands the importance of obeying police officers without question."
+      ],
+      "answer": "0",
+      "explanation": "글의 마지막 부분에서 저자는 이번 사건이 큰 교훈이었고, 음주 운전이 얼마나 어리석은 결정인지 깨달았으며, 다른 사람들이 같은 실수를 저지르지 않기를 바란다고 명확히 밝히고 있습니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.5,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "It was the end of my junior year, the weekend before prom . I was riding with some friends, and a bottle was passed around the car. Everyone was taking swigs . When the bottle got to me, I thought:\"What should I do?\"I took a swig. It was the biggest mistake of my life. I had to drive home later that night.\nI went back to my car, got in and drove off. At a stop sign I saw a policeman sitting in the parking lot across the street. His headlights were turned on, and I knew he was going to follow me. Then he flashed his lights at me. All I could think was: \"Oh no, that swig!\"\nI pulled over and waited for him to come to my door. It felt like forever. \"Can I see your license and registration, please, Miss?\" I gave them to him. He took them and went back to his car for a while. When he returned, he asked if I had been drinking.\n\"No,\" I said. He asked me to step out of my car.\n\"Walk heel to toe down the white line, please.\" I passed the test. Next he had me stand on my left foot, lift my right foot and hold it for 30 seconds. I'm not the most coordinated person and I can't even walk and chew gum at the same time, so, needless to say, I didn't pass. Then he asked me to take a breathalyzer test.\nThat was where I messed up. I told him I didn't want to and didn't understand why I had to. The officer asked me three more times, and I continued to refuse. He told me to turn around and place my hands behind my back. He arrested me right then and there.\nThe policeman drove me to a police station 20 minutes from my home. He called my parents and told them where I was.\nI went to court two months after that, charged with refusing to obey an officer. I got a $700 (4,340 yuan) fine and 40 hours of community service. I'll be on probation for a year, and I'll have to take the driving test again. I lost my license for a whole year.\nThis was a huge learning experience for me. It opened my eyes to how easy it is to make a stupid decision. I want everyone reading this to know that it's not right to drink and drive. It definitely isn't worth losing your license over.",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785925924788"
+    },
+    {
+      "id": "reading-L6-fill-msfy6myc-7",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "According to the passage, what was the primary financial motivation for the Northside Independent School District to implement the RFID nametag program?",
+      "options": [
+        "To ensure the district receives its full allocation of state funding by accurately counting student attendance.",
+        "To project a $2 million return on investment for the technology at pilot schools.",
+        "To reduce the time students spend in lunch lines and improve emergency response times.",
+        "To track students' whereabouts throughout the school day for security purposes."
+      ],
+      "answer": "0",
+      "explanation": "지문에서 RFID 명찰 프로그램은 \"the district receives all of the state dollars\"를 보장하기 위한 것이라고 명시되어 있으며, 텍사스 학교 재정은 매일 아침 홈룸 학생 수에 따라 결정된다고 설명합니다. 따라서 정확한 학생 출결을 통해 주 정부 지원금을 온전히 받는 것이 주된 재정적 동기입니다.",
+      "level": 6,
+      "targetTheta": 2.65,
+      "irt": {
+        "a": 1.5,
+        "b": 2.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "SAN ANTONIO -- For Tira Starr, an eighth grader at Anson Jones Middle School, the plastic nametag hanging around her neck that she has decorated with a smiley face and a purple bat sticker offers a way to reflect her personal interest. For administrators, it is something else entirely: a device that lets them use radio frequency technology--with scanners tucked behind walls and ceilings--to track her whereabouts. \nAnson Jones is the first school in San Antonio's Northside Independent School District to roll out the new nametags, which are part of a pilot program intended to ensure that the district receives all of the state dollars. \nIn Texas, school finance is a numbers game: schools receive money based on the number of students counted in their homeroom classes each morning. At Anson Jones, as at other schools, many students were in school but not in homeroom, so they were not counted and the district lost money, said Pascual Gonzalez, a spokesman for the district. \n\"We were leaving money on the table,\" he said, adding that the district expects a $2 million return on an initial investment of $261,000 in the technology at two pilot schools. \nBut the radio frequency identification nametags have prompted concerns from civil liberties groups and electronic privacy watchdogs, which fear a Big Brother atmosphere in Texas public schools. \nMatthew Simpson, a policy strategist for the American Civil Liberties Union of Texas, said the technology was easy to acquire, meaning people outside a school might be able to monitor a student if they obtained the student's unique tracking number. \nMr. Simpson said the technology was originally designed for shipping goods and for cattle. \"It was never intended for people,\" he said. \nBut students and educators at Anson Jones say they are excited about the practical advantages -- getting to eat lunch faster by scanning their bar codes in the lunch line, or being able to locate a child quickly in an emergency. \nNorthside is not the first district to use the tracking devices. Two Houston-area districts began the program several years ago. The Spring district, for example, started using the technology in 2004 as a way to track elementary students getting on and off buses. It expanded the program to high school students three years ago and has so far recovered $400,000, said Karen Garrison, a spokeswoman for the district. \n\"Our system still focuses on safety but has the added benefit of recovering average daily attendance funding,\" Ms. Garrison said. \nWendy Reyes, the principal of Anson Jones, said only one parent had complained about the program at her school. On the first day of classes at Jay High School, home to the other pilot program school in Northside, several parents staged a protest across the street from the school, though most did not have students in the district. \nMany students, teachers and parents at the middle school feel the technology's benefits outweigh privacy concerns, Ms. Reyes said.",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "createdBy": "level-fill-qc",
+      "grade": "고3",
+      "batchId": "level-fill-L6-1785925924788"
     }
   ]
 }

@@ -5,12 +5,12 @@
     "level": 5,
     "verdict": "pass",
     "counts": {
-      "active_total": 10,
-      "approved": 10,
+      "active_total": 19,
+      "approved": 19,
       "pending": 0,
-      "domain_vocabulary": 4,
-      "domain_grammar": 3,
-      "domain_reading": 3,
+      "domain_vocabulary": 7,
+      "domain_grammar": 6,
+      "domain_reading": 6,
       "errors": 0,
       "warnings": 0,
       "min_total": 9,
@@ -26,9 +26,9 @@
   "confidence": 0.95,
   "evidence": [
     "level=5",
-    "active_total=10",
-    "by_domain={'vocabulary': 4, 'grammar': 3, 'reading': 3}",
-    "by_status={'approved': 10}"
+    "active_total=19",
+    "by_domain={'vocabulary': 7, 'grammar': 6, 'reading': 6}",
+    "by_status={'approved': 19}"
   ],
   "unresolved": []
 }
