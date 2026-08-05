@@ -1,0 +1,167 @@
+{
+  "harness_version": "1.0",
+  "harness_id": "level-item-qc",
+  "domain": "Per-GLEAS-level item count and quality QC for generated-bank",
+  "target": "portable",
+  "generated_by": "build-vectorized-harness",
+
+  "broadcast": {
+    "goal": "Audit active bank items per GLEAS level (L1–L6) for count coverage and quality, emit one level matrix report.",
+    "constraints": [
+      "Only active items (approved|pending) count toward coverage; quarantine is excluded.",
+      "Every defect cites level and path (item id or level aggregate).",
+      "Empty levels fail unless operator sets allow_empty_levels.",
+      "Hard count shortfalls outrank soft quality warnings at reduction.",
+      "Do not rewrite bank items during QC; report only."
+    ],
+    "source_refs": [
+      "../../data/generated-bank/items.json",
+      "../../data/irt-exemplars/manifest.json",
+      "../../lib/irt/types.ts",
+      "references/level-qc-policy.md"
+    ],
+    "lane_output_schema": "schemas/lane_output.schema.json",
+    "acceptance_tests": [
+      "Report covers levels 1 through 6.",
+      "Each level has a verdict in {pass,warn,fail}.",
+      "workspace/reports/LEVEL_QC_REPORT.md exists after a successful run."
+    ]
+  },
+
+  "vector_width": 6,
+
+  "lanes": {
+    "lane_id": [
+      "lane-L1",
+      "lane-L2",
+      "lane-L3",
+      "lane-L4",
+      "lane-L5",
+      "lane-L6"
+    ],
+    "role": [
+      "QC count and quality for GLEAS level 1 items.",
+      "QC count and quality for GLEAS level 2 items.",
+      "QC count and quality for GLEAS level 3 items.",
+      "QC count and quality for GLEAS level 4 items.",
+      "QC count and quality for GLEAS level 5 items.",
+      "QC count and quality for GLEAS level 6 items."
+    ],
+    "input_slice": [
+      "items[level==1]",
+      "items[level==2]",
+      "items[level==3]",
+      "items[level==4]",
+      "items[level==5]",
+      "items[level==6]"
+    ],
+    "output_artifact": [
+      "workspace/lanes/L1.json",
+      "workspace/lanes/L2.json",
+      "workspace/lanes/L3.json",
+      "workspace/lanes/L4.json",
+      "workspace/lanes/L5.json",
+      "workspace/lanes/L6.json"
+    ],
+    "definition_path": [
+      "lanes/lane-L1.md",
+      "lanes/lane-L2.md",
+      "lanes/lane-L3.md",
+      "lanes/lane-L4.md",
+      "lanes/lane-L5.md",
+      "lanes/lane-L6.md"
+    ],
+    "review_mask": [
+      ["schema_valid", "constraint_satisfied", "provenance_present"],
+      ["schema_valid", "constraint_satisfied", "provenance_present"],
+      ["schema_valid", "constraint_satisfied", "provenance_present"],
+      ["schema_valid", "constraint_satisfied", "provenance_present"],
+      ["schema_valid", "constraint_satisfied", "provenance_present"],
+      ["schema_valid", "constraint_satisfied", "provenance_present"]
+    ],
+    "depends_on": [[], [], [], [], [], []]
+  },
+
+  "masks": {
+    "required": [
+      "schema_valid",
+      "constraint_satisfied",
+      "provenance_present"
+    ],
+    "definitions": {
+      "schema_valid": {
+        "description": "Lane output matches lane_output_schema.",
+        "checked_by": "scripts/run_level_item_qc.py"
+      },
+      "constraint_satisfied": {
+        "description": "pass implies zero error defects; fail implies hard_fail true.",
+        "checked_by": "reducer"
+      },
+      "provenance_present": {
+        "description": "lane_id and evidence present.",
+        "checked_by": "reducer"
+      }
+    }
+  },
+
+  "reduction": {
+    "operator": "mask_and -> stack_levels -> overall_verdict -> report",
+    "precedence": [
+      "hard_constraints",
+      "masks",
+      "confidence",
+      "lane_order"
+    ],
+    "tie_break": [
+      "level_asc",
+      "severity_error_first",
+      "code_asc"
+    ],
+    "deterministic": true,
+    "provenance_required": true
+  },
+
+  "scalar_tail": {
+    "triggers": [
+      "mask_false",
+      "lane_conflict",
+      "incomplete_output",
+      "inherently_sequential"
+    ],
+    "max_passes": 2,
+    "budget_note": "Remediation is fill/regenerate under level-test-item-replace Stage V2, not inside this QC loop.",
+    "unresolved_policy": "record_exception"
+  },
+
+  "orchestrator": {
+    "path": "skills/level-item-qc/SKILL.md",
+    "stages": [
+      "broadcast",
+      "vector_step",
+      "parallel_compute",
+      "reduce",
+      "scalar_tail"
+    ]
+  },
+
+  "concurrency": {
+    "mode": "logical",
+    "authorized": false,
+    "note": "Six level lanes run sequentially in the Python runner."
+  },
+
+  "artifacts": [
+    { "path": "HARNESS_STATE.md", "kind": "registry" },
+    { "path": "HARNESS_MANIFEST.json", "kind": "manifest" },
+    { "path": "schemas/lane_output.schema.json", "kind": "schema" },
+    { "path": "skills/level-item-qc/SKILL.md", "kind": "orchestrator" },
+    { "path": "lanes/lane-L1.md", "kind": "lane" },
+    { "path": "lanes/lane-L2.md", "kind": "lane" },
+    { "path": "lanes/lane-L3.md", "kind": "lane" },
+    { "path": "lanes/lane-L4.md", "kind": "lane" },
+    { "path": "lanes/lane-L5.md", "kind": "lane" },
+    { "path": "lanes/lane-L6.md", "kind": "lane" },
+    { "path": "scripts/run_level_item_qc.py", "kind": "script" },
+    { "path": "references/level-qc-policy.md", "kind": "reference" }
+  ]
+}

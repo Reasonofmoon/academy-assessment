@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-08-05T09:53:19.861860+00:00",
+  "overall": "fail",
+  "masks": {
+    "lane-L1": {
+      "schema_valid": true,
+      "provenance_present": true,
+      "constraint_satisfied": true
+    },
+    "lane-L2": {
+      "schema_valid": true,
+      "provenance_present": true,
+      "constraint_satisfied": true
+    },
+    "lane-L3": {
+      "schema_valid": true,
+      "provenance_present": true,
+      "constraint_satisfied": true
+    },
+    "lane-L4": {
+      "schema_valid": true,
+      "provenance_present": true,
+      "constraint_satisfied": true
+    },
+    "lane-L5": {
+      "schema_valid": true,
+      "provenance_present": true,
+      "constraint_satisfied": true
+    },
+    "lane-L6": {
+      "schema_valid": true,
+      "provenance_present": true,
+      "constraint_satisfied": true
+    }
+  },
+  "exceptions": [],
+  "levels": [
+    {
+      "level": 1,
+      "verdict": "fail",
+      "counts": {
+        "active_total": 0,
+        "approved": 0,
+        "pending": 0,
+        "domain_vocabulary": 0,
+        "domain_grammar": 0,
+        "domain_reading": 0,
+        "errors": 1,
+        "warnings": 0,
+        "min_total": 9,
+        "min_per_domain": 3
+      },
+      "quality": {
+        "error_rate": 1.0,
+        "warning_rate": 0.0
+      },
+      "defect_n": 1,
+      "lane_id": "lane-L1"
+    },
+    {
+      "level": 2,
+      "verdict": "pass",
+      "counts": {
+        "active_total": 28,
+        "approved": 28,
+        "pending": 0,
+        "domain_vocabulary": 10,
+        "domain_grammar": 9,
+        "domain_reading": 9,
+        "errors": 0,
+        "warnings": 0,
+        "min_total": 9,
+        "min_per_domain": 3
+      },
+      "quality": {
+        "error_rate": 0.0,
+        "warning_rate": 0.0
+      },
+      "defect_n": 0,
+      "lane_id": "lane-L2"
+    },
+    {
+      "level": 3,
+      "verdict": "pass",
+      "counts": {
+        "active_total": 11,
+        "approved": 11,
+        "pending": 0,
+        "domain_vocabulary": 3,
+        "domain_grammar": 4,
+        "domain_reading": 4,
+        "errors": 0,
+        "warnings": 0,
+        "min_total": 9,
+        "min_per_domain": 3
+      },
+      "quality": {
+        "error_rate": 0.0,
+        "warning_rate": 0.0
+      },
+      "defect_n": 0,
+      "lane_id": "lane-L3"
+    },
+    {
+      "level": 4,
+      "verdict": "fail",
+      "counts": {
+        "active_total": 0,
+        "approved": 0,
+        "pending": 0,
+        "domain_vocabulary": 0,
+        "domain_grammar": 0,
+        "domain_reading": 0,
+        "errors": 1,
+        "warnings": 0,
+        "min_total": 9,
+        "min_per_domain": 3
+      },
+      "quality": {
+        "error_rate": 1.0,
+        "warning_rate": 0.0
+      },
+      "defect_n": 1,
+      "lane_id": "lane-L4"
+    },
+    {
+      "level": 5,
+      "verdict": "fail",
+      "counts": {
+        "active_total": 0,
+        "approved": 0,
+        "pending": 0,
+        "domain_vocabulary": 0,
+        "domain_grammar": 0,
+        "domain_reading": 0,
+        "errors": 1,
+        "warnings": 0,
+        "min_total": 9,
+        "min_per_domain": 3
+      },
+      "quality": {
+        "error_rate": 1.0,
+        "warning_rate": 0.0
+      },
+      "defect_n": 1,
+      "lane_id": "lane-L5"
+    },
+    {
+      "level": 6,
+      "verdict": "fail",
+      "counts": {
+        "active_total": 0,
+        "approved": 0,
+        "pending": 0,
+        "domain_vocabulary": 0,
+        "domain_grammar": 0,
+        "domain_reading": 0,
+        "errors": 1,
+        "warnings": 0,
+        "min_total": 9,
+        "min_per_domain": 3
+      },
+      "quality": {
+        "error_rate": 1.0,
+        "warning_rate": 0.0
+      },
+      "defect_n": 1,
+      "lane_id": "lane-L6"
+    }
+  ],
+  "defects": [
+    {
+      "code": "LEVEL_EMPTY",
+      "severity": "error",
+      "path": "level:1",
+      "message": "no active items at this level",
+      "level": 1,
+      "lane_id": "lane-L1"
+    },
+    {
+      "code": "LEVEL_EMPTY",
+      "severity": "error",
+      "path": "level:4",
+      "message": "no active items at this level",
+      "level": 4,
+      "lane_id": "lane-L4"
+    },
+    {
+      "code": "LEVEL_EMPTY",
+      "severity": "error",
+      "path": "level:5",
+      "message": "no active items at this level",
+      "level": 5,
+      "lane_id": "lane-L5"
+    },
+    {
+      "code": "LEVEL_EMPTY",
+      "severity": "error",
+      "path": "level:6",
+      "message": "no active items at this level",
+      "level": 6,
+      "lane_id": "lane-L6"
+    }
+  ]
+}

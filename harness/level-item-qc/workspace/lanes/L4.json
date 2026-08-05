@@ -1,0 +1,41 @@
+{
+  "lane_id": "lane-L4",
+  "item_id": "level:4",
+  "result": {
+    "level": 4,
+    "verdict": "fail",
+    "counts": {
+      "active_total": 0,
+      "approved": 0,
+      "pending": 0,
+      "domain_vocabulary": 0,
+      "domain_grammar": 0,
+      "domain_reading": 0,
+      "errors": 1,
+      "warnings": 0,
+      "min_total": 9,
+      "min_per_domain": 3
+    },
+    "quality": {
+      "error_rate": 1.0,
+      "warning_rate": 0.0
+    },
+    "defects": [
+      {
+        "code": "LEVEL_EMPTY",
+        "severity": "error",
+        "path": "level:4",
+        "message": "no active items at this level"
+      }
+    ],
+    "hard_fail": true
+  },
+  "confidence": 0.99,
+  "evidence": [
+    "level=4",
+    "active_total=0",
+    "by_domain={}",
+    "by_status={}"
+  ],
+  "unresolved": []
+}

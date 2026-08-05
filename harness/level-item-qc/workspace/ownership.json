@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-08-05T09:53:19.856316+00:00",
+  "bank": "C:\\Users\\sound\\academy-assessment\\data\\generated-bank\\items.json",
+  "policy": {
+    "min_per_domain": 3,
+    "min_total": 9,
+    "allow_empty": false
+  },
+  "lanes": {
+    "lane-L1": "workspace/lanes/L1.json",
+    "lane-L2": "workspace/lanes/L2.json",
+    "lane-L3": "workspace/lanes/L3.json",
+    "lane-L4": "workspace/lanes/L4.json",
+    "lane-L5": "workspace/lanes/L5.json",
+    "lane-L6": "workspace/lanes/L6.json"
+  }
+}

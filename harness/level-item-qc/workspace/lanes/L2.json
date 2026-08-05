@@ -1,0 +1,34 @@
+{
+  "lane_id": "lane-L2",
+  "item_id": "level:2",
+  "result": {
+    "level": 2,
+    "verdict": "pass",
+    "counts": {
+      "active_total": 28,
+      "approved": 28,
+      "pending": 0,
+      "domain_vocabulary": 10,
+      "domain_grammar": 9,
+      "domain_reading": 9,
+      "errors": 0,
+      "warnings": 0,
+      "min_total": 9,
+      "min_per_domain": 3
+    },
+    "quality": {
+      "error_rate": 0.0,
+      "warning_rate": 0.0
+    },
+    "defects": [],
+    "hard_fail": false
+  },
+  "confidence": 0.95,
+  "evidence": [
+    "level=2",
+    "active_total=28",
+    "by_domain={'vocabulary': 10, 'grammar': 9, 'reading': 9}",
+    "by_status={'approved': 28}"
+  ],
+  "unresolved": []
+}
