@@ -74,9 +74,13 @@ export default function LevelPassagePanel({
   const [error, setError] = useState<string | null>(null);
   const [expanded, setExpanded] = useState<string | null>(null);
   const [showSlots, setShowSlots] = useState(false);
+  const [pickHint, setPickHint] = useState<string | null>(null);
+  /** Max simultaneous preset passages (generation-config maxPassagesPerSession). */
+  const [maxPassages, setMaxPassages] = useState(3);
 
   const recommendedLevel = GRADE_TO_LEVEL[grade];
   const effectiveLevel = lockLevelToGrade ? recommendedLevel : level;
+  const atMax = selectedPassageIds.length >= maxPassages;
 
   // Grade lock: force level to grade mapping whenever grade or lock mode changes.
   useEffect(() => {
@@ -103,17 +107,25 @@ export default function LevelPassagePanel({
           (p) => !p.level || p.level === effectiveLevel
         );
         setPassages(list);
+        setPickHint(null);
         const gen = data.generation as LevelGenConfig | undefined;
+        const maxCap =
+          typeof (data as { maxPassagesPerSession?: number })
+            .maxPassagesPerSession === "number"
+            ? (data as { maxPassagesPerSession: number }).maxPassagesPerSession
+            : 3;
+        setMaxPassages(Math.min(5, Math.max(1, maxCap)));
         if (gen) {
           onItemsPerReadingChange(gen.itemsPerReading);
           onQuestionTypeSlotsChange(gen.questionTypeSlots ?? []);
           const n = Math.min(
             gen.passagesPerSession ?? 2,
+            maxCap,
             list.length || 1
           );
           onPassageIdsChange(list.slice(0, n).map((p) => p.id));
         } else if (list.length > 0) {
-          onPassageIdsChange(list.slice(0, 2).map((p) => p.id));
+          onPassageIdsChange(list.slice(0, Math.min(2, list.length)).map((p) => p.id));
         } else {
           onPassageIdsChange([]);
         }
@@ -135,12 +147,28 @@ export default function LevelPassagePanel({
 
   function toggle(id: string) {
     if (selectedPassageIds.includes(id)) {
-      if (selectedPassageIds.length <= 1) return;
+      if (selectedPassageIds.length <= 1) {
+        setPickHint("최소 1개 지문은 선택해야 합니다.");
+        return;
+      }
+      setPickHint(null);
       onPassageIdsChange(selectedPassageIds.filter((x) => x !== id));
-    } else {
-      if (selectedPassageIds.length >= 3) return;
-      onPassageIdsChange([...selectedPassageIds, id]);
+      return;
     }
+    if (selectedPassageIds.length >= maxPassages) {
+      setPickHint(
+        `지문은 최대 ${maxPassages}개까지 선택 가능합니다. 「My Best Friend」「At the Library」 등을 쓰려면 위쪽 지문 체크를 먼저 해제한 뒤 선택하세요.`
+      );
+      return;
+    }
+    setPickHint(null);
+    onPassageIdsChange([...selectedPassageIds, id]);
+  }
+
+  /** Replace current selection with only this passage (always allowed). */
+  function selectOnly(id: string) {
+    setPickHint(null);
+    onPassageIdsChange([id]);
   }
 
   function resizeItems(n: number) {
@@ -225,7 +253,7 @@ export default function LevelPassagePanel({
             />
           </label>
           <span className="text-xs text-stone-500">
-            선택 지문 {selectedPassageIds.length}개 · 학년 {grade}
+            선택 지문 {selectedPassageIds.length}/{maxPassages}개 · 학년 {grade}
           </span>
           <button
             type="button"
@@ -269,18 +297,31 @@ export default function LevelPassagePanel({
 
       {loading && <p className="text-sm text-stone-500">지문 불러오는 중…</p>}
       {error && <p className="text-sm text-red-600">{error}</p>}
+      {pickHint && (
+        <p className="mb-2 rounded border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-950">
+          {pickHint}
+        </p>
+      )}
+      <p className="mb-2 text-xs text-stone-500">
+        세션당 지문 <strong>최대 {maxPassages}개</strong>입니다. 기본으로 앞쪽{" "}
+        {Math.min(2, passages.length)}개가 선택되어 있어, 아래 지문을 쓰려면 위 체크를
+        해제하거나 <strong>이 지문만</strong>을 누르세요.
+      </p>
 
       <ul className="space-y-2">
         {passages.map((p) => {
           const checked = selectedPassageIds.includes(p.id);
           const open = expanded === p.id;
+          const blocked = atMax && !checked;
           return (
             <li
               key={p.id}
               className={`rounded-md border bg-white p-3 text-sm ${
                 checked
                   ? "border-indigo-400 ring-1 ring-indigo-200"
-                  : "border-stone-200"
+                  : blocked
+                    ? "border-stone-200 opacity-70"
+                    : "border-stone-200"
               }`}
             >
               <div className="flex items-start gap-2">
@@ -288,6 +329,12 @@ export default function LevelPassagePanel({
                   type="checkbox"
                   className="mt-1"
                   checked={checked}
+                  disabled={blocked}
+                  title={
+                    blocked
+                      ? `최대 ${maxPassages}개까지 선택 가능. 다른 지문을 먼저 해제하세요.`
+                      : undefined
+                  }
                   onChange={() => toggle(p.id)}
                 />
                 <div className="min-w-0 flex-1">
@@ -304,19 +351,33 @@ export default function LevelPassagePanel({
                     <span className="font-mono text-xs text-stone-500">
                       b={p.targetB}
                     </span>
+                    {blocked && (
+                      <span className="rounded bg-amber-100 px-1.5 text-[10px] text-amber-900">
+                        최대 {maxPassages}개 · 다른 체크 해제 필요
+                      </span>
+                    )}
                   </div>
                   <p className="mt-1 whitespace-pre-wrap text-xs text-stone-600">
                     {open
                       ? p.text
                       : p.text.slice(0, 160) + (p.text.length > 160 ? "…" : "")}
                   </p>
-                  <button
-                    type="button"
-                    className="mt-1 text-xs text-indigo-700 underline"
-                    onClick={() => setExpanded(open ? null : p.id)}
-                  >
-                    {open ? "접기" : "전문 보기"}
-                  </button>
+                  <div className="mt-1 flex flex-wrap gap-3">
+                    <button
+                      type="button"
+                      className="text-xs text-indigo-700 underline"
+                      onClick={() => setExpanded(open ? null : p.id)}
+                    >
+                      {open ? "접기" : "전문 보기"}
+                    </button>
+                    <button
+                      type="button"
+                      className="text-xs font-medium text-primary underline"
+                      onClick={() => selectOnly(p.id)}
+                    >
+                      이 지문만
+                    </button>
+                  </div>
                 </div>
               </div>
             </li>

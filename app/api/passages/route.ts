@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   getLevelGenConfig,
   getPassagesForLevel,
+  loadGenerationConfig,
   passageBankMeta,
   selectSessionPassages,
 } from "@/lib/irt/passages";
@@ -54,6 +55,11 @@ export async function GET(req: NextRequest) {
     });
 
     const gen = getLevelGenConfig(level as IrtLevel);
+    const cfg = loadGenerationConfig();
+    const maxPassagesPerSession = Math.min(
+      5,
+      Math.max(1, cfg.defaults.maxPassagesPerSession ?? 3)
+    );
 
     return NextResponse.json({
       level,
@@ -61,6 +67,7 @@ export async function GET(req: NextRequest) {
       passages: all.map(mapP),
       sessionDefault: session.map(mapP),
       generation: gen,
+      maxPassagesPerSession,
       policy: {
         doNotRewritePassage: true,
         generateItemsFromPassageOnly: true,
