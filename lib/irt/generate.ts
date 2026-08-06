@@ -7,6 +7,7 @@ import { DOMAIN_LABELS } from "@/lib/types";
 import { selectExemplars, getLevelAnchor, bankSummary } from "@/lib/irt/bank";
 import { filterValidItems, validateIrtItem } from "@/lib/irt/validate";
 import { rebalanceIrtItems } from "@/lib/irt/answer-balance";
+import { buildConstructPromptSection } from "@/lib/irt/construct-guide";
 import {
   DIMENSION_TARGETS,
   GRADE_TO_LEVEL,
@@ -294,6 +295,35 @@ function buildDomainPrompt(args: {
     ? `All items MUST be multiple_choice with exactly 4 options (or 5 if specified).`
     : `Use mostly multiple_choice (4 options); at most 1 short_answer per domain.`;
 
+  const constructSection = buildConstructPromptSection(level, domain);
+
+  const vocabRules =
+    level <= 2
+      ? `VOCABULARY stems MUST be complete — never instruction-only.
+- Pattern A (meaning→word): use NEWLINES exactly like this:
+  "한글 뜻에 맞는 단어를 고르시오.\\n한글 뜻: <Korean gloss>"
+- Pattern B (context): English sentence on the NEXT line after Korean prompt.
+- Pattern C (cloze): blank sentence on its own line.
+- Always set "headword" to the target English word (correct answer lemma).
+- **UNIQUE ANSWER:** distractors must NOT also fit the blank.`
+      : `VOCABULARY for mid/high placement (L${level}) — match Korean high-school exam RIGOR (옥길/부천 일반고 내신 어휘 유형 참고), but write ORIGINAL items only.
+- Prefer context: "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?" with 2–4 original English sentences and four underlined candidates as options (or mark candidates clearly in the stem).
+- Or: cloze / best word in a multi-sentence original context (social/science/school topics).
+- Bare "한글 뜻에 맞는 단어를 고르시오" is allowed at most once in the batch for L3+; for L4+ avoid it unless the headword is truly advanced.
+- Always set "headword". UNIQUE ANSWER — near-synonym distractors must be wrong in THIS context.`;
+
+  const grammarRules =
+    level <= 2
+      ? `GRAMMAR: put any example sentence on a new line after the Korean instruction.
+Use \\n between prompt and example. Keep options short parallel forms.
+- If testing 3rd-person -s / be-verbs, the stem MUST state the tense condition in Korean.
+- Do not ask agreement without tense/context constraints.`
+      : `GRAMMAR for mid/high placement (L${level}) — match Korean high-school 어법 내신 style (밑줄 오류 찾기 / 어법상 옳은 것), ORIGINAL short paragraphs only (do NOT copy school exams).
+- Preferred: "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?" + 2–4 sentence original paragraph; options are the four underlined snippets (or ①–④ forms).
+- Or multi-clause form choice (relative clauses, conditionals, participles, inversion, subjunctive, parallel structure).
+- FORBIDDEN at L3+: isolated elementary drills like "She ____ a student" / bare is-are without multi-clause context.
+- State conditions in Korean when needed. Options must be parallel forms.`;
+
   return `You are an IRT (Item Response Theory) item writer for a Korean English academy.
 You generate LEVEL-PLACEMENT diagnostic items that are psychometrically purposeful — not random quiz trivia.
 
@@ -309,6 +339,7 @@ You generate LEVEL-PLACEMENT diagnostic items that are psychometrically purposef
 8. Match the STYLE and RIGOR of the refined exemplars below (from a calibrated service bank).
 9. Do NOT copy exemplars verbatim — create NEW items.
 10. Mark irt.b honestly relative to target; if unsure, set b = ${targetTheta.toFixed(2)}.
+11. **LEVEL FIT is mandatory:** items that look elementary while grade is high school MUST be rewritten harder (and vice versa).
 
 ## Domain
 ${domain} (${DOMAIN_LABELS[domain]})
@@ -316,25 +347,14 @@ ${dimPlan}
 ${typeRule}
 Generate EXACTLY ${count} items for this domain only.
 
+${constructSection}
+
 ## Domain-specific stem rules (CRITICAL)
 ${
   domain === "vocabulary"
-    ? `VOCABULARY stems MUST be complete — never instruction-only.
-- Pattern A (meaning→word): use NEWLINES exactly like this:
-  "한글 뜻에 맞는 단어를 고르시오.\\n한글 뜻: <Korean gloss>"
-  Example: "한글 뜻에 맞는 단어를 고르시오.\\n한글 뜻: 여행하다"
-- Pattern B (context): put the English sentence on the NEXT line after the Korean prompt:
-  "다음 문장에서 book의 뜻으로 가장 알맞은 것은?\\nI like to read a new book every week."
-- Pattern C (cloze): blank sentence on its own line:
-  "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\\nLet's _____ outside."
-- Always set "headword" to the target English word (correct answer lemma).
-- NEVER output only "한글 뜻에 맞는 단어를 고르시오." without the 한글 뜻 line.
-- **UNIQUE ANSWER:** distractors must NOT also fit the blank (e.g. avoid She is very _____ today with sad/angry/happy/tired — all can fit). Context must force one best answer.`
+    ? vocabRules
     : domain === "grammar"
-      ? `GRAMMAR: put any example sentence on a new line after the Korean instruction.
-Use \\n between prompt and example. Keep options short parallel forms.
-- If testing 3rd-person -s / be-verbs, the stem MUST state the tense condition in Korean, e.g. "(현재시제)" or "다음 중 현재시제에서 동사 형태가 올바른 문장은?".
-- Do not ask "동사에 -s가 올바르게 쓰인 문장" without tense/context constraints.`
+      ? grammarRules
       : `READING: "question" is stem ONLY (no pasted passage). Use clear Korean or English stems.`
 }
 

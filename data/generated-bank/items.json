@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-06T03:33:31.242Z",
+  "updatedAt": "2026-08-06T06:46:42.371914Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -1216,12 +1216,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "vocabulary-2-3",
@@ -1259,12 +1262,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "vocabulary-4-3",
@@ -1302,13 +1308,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
       "batchId": "seed-fill-1785917983307-approved",
-      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-1-3",
@@ -1342,13 +1350,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
       "batchId": "seed-fill-1785917983307-approved",
-      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-2-3",
@@ -1382,12 +1392,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "grammar-3-3",
@@ -1421,13 +1434,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
       "batchId": "seed-fill-1785917983307-approved",
-      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-4-3",
@@ -1461,13 +1476,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
       "batchId": "seed-fill-1785917983307-approved",
-      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "reading-1-3",
@@ -2207,12 +2224,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:14.610Z",
-      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785923894589"
+      "batchId": "level-fill-L4-1785923894589",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "vocabulary-L4-fill-msfwz4fx-1",
@@ -2250,13 +2270,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:14.610Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
       "batchId": "level-fill-L4-1785923894589",
-      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L4-fill-msfwz4fx-2",
@@ -2290,12 +2312,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:14.610Z",
-      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785923894589"
+      "batchId": "level-fill-L4-1785923894589",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "grammar-L4-fill-msfwz4fx-3",
@@ -2329,12 +2354,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:14.610Z",
-      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785923894589"
+      "batchId": "level-fill-L4-1785923894589",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "grammar-L4-fill-msfwz4fx-4",
@@ -2368,12 +2396,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:14.610Z",
-      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785923894589"
+      "batchId": "level-fill-L4-1785923894589",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "reading-L4-fill-msfwz4fx-5",
@@ -2546,12 +2577,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785923938722"
+      "batchId": "level-fill-L5-1785923938722",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "vocabulary-L5-fill-msfx02ht-1",
@@ -2589,13 +2623,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785923938722",
-      "reviewNote": "answer-key rebalanced 2→3 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L5-fill-msfx02ht-2",
@@ -2629,13 +2665,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785923938722",
-      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L5-fill-msfx02ht-3",
@@ -2669,12 +2707,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785923938722"
+      "batchId": "level-fill-L5-1785923938722",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "grammar-L5-fill-msfx02ht-4",
@@ -2708,13 +2749,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785923938722",
-      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "reading-L5-fill-msfx02ht-5",
@@ -2887,13 +2930,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785923982600",
-      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "vocabulary-L6-fill-msfx10co-1",
@@ -2931,13 +2976,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785923982600",
-      "reviewNote": "answer-key rebalanced 1→2 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L6-fill-msfx10co-2",
@@ -2971,13 +3018,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785923982600",
-      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L6-fill-msfx10co-3",
@@ -3011,13 +3060,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785923982600",
-      "reviewNote": "answer-key rebalanced 2→3 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L6-fill-msfx10co-4",
@@ -3051,13 +3102,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785923982600",
-      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "reading-L6-fill-msfx10co-5",
@@ -3228,13 +3281,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:00:12.537Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
       "batchId": "level-fill-L4-1785924012520",
-      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "vocabulary-L4-fill-msfx1nfr-1",
@@ -3270,12 +3325,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:00:12.537Z",
-      "updatedAt": "2026-08-05T10:00:12.537Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785924012520"
+      "batchId": "level-fill-L4-1785924012520",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "vocabulary-L5-fill-msfx1sv9-0",
@@ -3311,13 +3369,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:00:19.576Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785924019557",
-      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "vocabulary-L5-fill-msfx1sv9-1",
@@ -3353,13 +3413,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:00:19.576Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785924019557",
-      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "vocabulary-L6-fill-msfx1zkz-0",
@@ -3395,12 +3457,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:00:28.273Z",
-      "updatedAt": "2026-08-05T10:00:28.273Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785924028259"
+      "batchId": "level-fill-L6-1785924028259",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "vocabulary-L6-fill-msfx1zkz-1",
@@ -3436,12 +3501,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:00:28.273Z",
-      "updatedAt": "2026-08-05T10:00:28.273Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785924028259"
+      "batchId": "level-fill-L6-1785924028259",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "vocabulary-L1-fill-msfy25cu-0",
@@ -4256,12 +4324,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
-      "batchId": "level-fill-L3-1785925795555"
+      "batchId": "level-fill-L3-1785925795555",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "vocabulary-L3-fill-msfy3v8j-1",
@@ -4299,13 +4370,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
       "batchId": "level-fill-L3-1785925795555",
-      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "vocabulary-L3-fill-msfy3v8j-2",
@@ -4343,13 +4416,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
       "batchId": "level-fill-L3-1785925795555",
-      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L3-fill-msfy3v8j-3",
@@ -4383,13 +4458,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
       "batchId": "level-fill-L3-1785925795555",
-      "reviewNote": "answer-key rebalanced 2→1 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L3-fill-msfy3v8j-4",
@@ -4423,12 +4500,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
-      "batchId": "level-fill-L3-1785925795555"
+      "batchId": "level-fill-L3-1785925795555",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "grammar-L3-fill-msfy3v8j-5",
@@ -4462,13 +4542,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
       "batchId": "level-fill-L3-1785925795555",
-      "reviewNote": "answer-key rebalanced 2→1 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "reading-L3-fill-msfy3v8j-6",
@@ -4641,13 +4723,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
       "batchId": "level-fill-L4-1785925840821",
-      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "vocabulary-L4-fill-msfy4u5x-1",
@@ -4685,13 +4769,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
       "batchId": "level-fill-L4-1785925840821",
-      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L4-fill-msfy4u5x-2",
@@ -4725,12 +4811,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785925840821"
+      "batchId": "level-fill-L4-1785925840821",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil",
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)"
     },
     {
       "id": "grammar-L4-fill-msfy4u5x-3",
@@ -4764,13 +4853,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
       "batchId": "level-fill-L4-1785925840821",
-      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L4-fill-msfy4u5x-4",
@@ -4804,13 +4895,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
       "batchId": "level-fill-L4-1785925840821",
-      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "reading-L4-fill-msfy4u5x-5",
@@ -4983,13 +5076,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785925880020",
-      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "vocabulary-L5-fill-msfy5oes-1",
@@ -5027,13 +5122,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785925880020",
-      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "vocabulary-L5-fill-msfy5oes-2",
@@ -5071,13 +5168,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785925880020",
-      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L5-fill-msfy5oes-3",
@@ -5111,13 +5210,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785925880020",
-      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L5-fill-msfy5oes-4",
@@ -5151,13 +5252,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785925880020",
-      "reviewNote": "answer-key rebalanced 1→2 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L5-fill-msfy5oes-5",
@@ -5191,13 +5294,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L5-1785925880020",
-      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "reading-L5-fill-msfy5oes-6",
@@ -5370,13 +5475,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785925924788",
-      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "vocabulary-L6-fill-msfy6myc-1",
@@ -5414,13 +5521,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785925924788",
-      "reviewNote": "answer-key rebalanced 2→0 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L6-fill-msfy6myc-2",
@@ -5454,13 +5563,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785925924788",
-      "reviewNote": "answer-key rebalanced 1→3 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L6-fill-msfy6myc-3",
@@ -5494,13 +5605,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785925924788",
-      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "grammar-L6-fill-msfy6myc-4",
@@ -5534,13 +5647,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-06T03:33:31.187Z",
+      "updatedAt": "2026-08-06T06:41:56.441Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
       "batchId": "level-fill-L6-1785925924788",
-      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
+      "reviewNote": "Replaced for high-school construct fit (옥길 일반고 내신 난이도 정렬)",
+      "reviewedAt": "2026-08-06T06:41:56.441Z",
+      "reviewedBy": "refresh-vocab-grammar-okgil"
     },
     {
       "id": "reading-L6-fill-msfy6myc-5",
@@ -7535,6 +7650,1494 @@
       "grade": "고3",
       "batchId": "reading-preset-L6-1785975899951",
       "reviewNote": "answer-key rebalanced 0→3 (4-option); answer-key rebalanced 3→1 (4-option)"
+    },
+    {
+      "id": "vocabulary-L3-hs-seed-2608060646-0",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nAfter months of practice, the team finally managed to _____ its goal of reaching the finals.",
+      "options": [
+        "achieve",
+        "arrive",
+        "borrow",
+        "forget"
+      ],
+      "answer": "0",
+      "explanation": "목표를 '달성하다'는 achieve가 문맥에 맞습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "achieve",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369759Z",
+      "updatedAt": "2026-08-06T06:46:42.369765Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369768Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L3-hs-seed-2608060646-1",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 문장에서 feature의 의미로 가장 알맞은 것은?\nThe new phone has several useful features, including a longer battery life.",
+      "options": [
+        "얼굴",
+        "특징, 기능",
+        "미래",
+        "실패"
+      ],
+      "answer": "1",
+      "explanation": "제품의 유용한 기능/특징을 가리킵니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "feature",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369776Z",
+      "updatedAt": "2026-08-06T06:46:42.369778Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369779Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L3-hs-seed-2608060646-2",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nParents often _____ children to read every day because it builds vocabulary.",
+      "options": [
+        "prevent",
+        "ignore",
+        "encourage",
+        "punish"
+      ],
+      "answer": "2",
+      "explanation": "독서하도록 '격려하다'가 자연스럽습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "encourage",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369783Z",
+      "updatedAt": "2026-08-06T06:46:42.369784Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369786Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L3-hs-seed-2608060646-3",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nIf you do not understand the rule, please _____ the teacher for help.",
+      "options": [
+        "compare",
+        "confuse",
+        "cancel",
+        "consult"
+      ],
+      "answer": "3",
+      "explanation": "도움을 구하기 위해 선생님께 '상담하다/문의하다' consult.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "consult",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369789Z",
+      "updatedAt": "2026-08-06T06:46:42.369790Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369791Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L3-hs-seed-2608060646-4",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 단어 중 문맥상 쓰임이 어색한 것은?\nMany students join clubs to (A) expand their interests. Clubs also help them (B) build friendships. However, joining too many clubs can (C) improve their free time until they feel tired. Wise students (D) balance activities and rest.",
+      "options": [
+        "improve",
+        "build",
+        "expand",
+        "balance"
+      ],
+      "answer": "0",
+      "explanation": "free time을 줄이는 상황이면 reduce/limit이 맞고 improve는 부적절합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.35,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "reduce",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369795Z",
+      "updatedAt": "2026-08-06T06:46:42.369796Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369797Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L3-hs-seed-2608060646-5",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nThe museum will _____ a special exhibition on local history next month.",
+      "options": [
+        "hide",
+        "host",
+        "harm",
+        "hesitate"
+      ],
+      "answer": "1",
+      "explanation": "전시회를 '개최하다' host가 적절합니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.4,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "host",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369800Z",
+      "updatedAt": "2026-08-06T06:46:42.369801Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369802Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L3-hs-seed-2608060646-6",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 어법상 알맞은 것은?\nOne of the students _____ already finished the assignment.",
+      "options": [
+        "having",
+        "have",
+        "has",
+        "are"
+      ],
+      "answer": "2",
+      "explanation": "one of + 복수명사 뒤 동사는 단수 has.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.45,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369806Z",
+      "updatedAt": "2026-08-06T06:46:42.369807Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369808Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L3-hs-seed-2608060646-7",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 관계대명사는?\nThis is the teacher _____ class I enjoyed the most last year.",
+      "options": [
+        "where",
+        "who",
+        "which",
+        "whose"
+      ],
+      "answer": "3",
+      "explanation": "소유 관계 whose class.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369811Z",
+      "updatedAt": "2026-08-06T06:46:42.369812Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369813Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L3-hs-seed-2608060646-8",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nIf it _____ tomorrow, we will cancel the picnic.",
+      "options": [
+        "rains",
+        "rained",
+        "will rain",
+        "would rain"
+      ],
+      "answer": "0",
+      "explanation": "1조건문 if + 현재, will.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.55,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369815Z",
+      "updatedAt": "2026-08-06T06:46:42.369816Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369817Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L3-hs-seed-2608060646-9",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nShe enjoys _____ novels before going to bed.",
+      "options": [
+        "read",
+        "reading",
+        "to reading",
+        "reads"
+      ],
+      "answer": "1",
+      "explanation": "enjoy + V-ing.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.6000000000000001,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369820Z",
+      "updatedAt": "2026-08-06T06:46:42.369821Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369822Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L3-hs-seed-2608060646-10",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nThe windows _____ by the students every Friday.",
+      "options": [
+        "cleaned",
+        "clean",
+        "are cleaned",
+        "are cleaning"
+      ],
+      "answer": "2",
+      "explanation": "수동태 are cleaned.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369825Z",
+      "updatedAt": "2026-08-06T06:46:42.369826Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369827Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L3-hs-seed-2608060646-11",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nThe book (A) that I borrowed yesterday (B) were on the desk, but now it (C) is missing. I (D) need to find it before class.",
+      "options": [
+        "that I borrowed yesterday",
+        "need",
+        "is",
+        "were"
+      ],
+      "answer": "3",
+      "explanation": "주어 the book은 단수이므로 was가 맞습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.25,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369830Z",
+      "updatedAt": "2026-08-06T06:46:42.369831Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369832Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L4-hs-seed-2608060646-12",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\nCities introduce shared bikes to (A) ease traffic and pollution. Riders can (B) unlock a bike with an app and leave it at another station. This system (C) weakens convenience for short trips across downtown. Still, some people (D) hesitate because of safety concerns.",
+      "options": [
+        "weakens",
+        "unlock",
+        "ease",
+        "hesitate"
+      ],
+      "answer": "0",
+      "explanation": "편의성을 높이는 맥락이므로 weakens가 아니라 increases/improves 등이 맞습니다.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 1.5,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "improve",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369835Z",
+      "updatedAt": "2026-08-06T06:46:42.369836Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369837Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L4-hs-seed-2608060646-13",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nOnline platforms collect vast amounts of data about users. Without clear rules, this practice may _____ privacy.\nThat is why lawmakers debate new regulations.",
+      "options": [
+        "decorate",
+        "threaten",
+        "celebrate",
+        "translate"
+      ],
+      "answer": "1",
+      "explanation": "사생활 보호를 '위협할 수 있다' threaten.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 1.55,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "threaten",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369840Z",
+      "updatedAt": "2026-08-06T06:46:42.369841Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369842Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L4-hs-seed-2608060646-14",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 쓰임이 적절하지 않은 것은?\nRegular sleep helps the brain (A) consolidate memories. Students who stay up late often (B) struggle the next day. Surprisingly, short naps can (C) impair attention after long study sessions. Teachers therefore (D) recommend consistent bedtimes.",
+      "options": [
+        "consolidate",
+        "struggle",
+        "impair",
+        "recommend"
+      ],
+      "answer": "2",
+      "explanation": "짧은 낮잠이 주의력을 해친다는 것은 문맥상 어색하고, 오히려 improve/restore가 자연스럽습니다.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 1.6,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "improve",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369844Z",
+      "updatedAt": "2026-08-06T06:46:42.369845Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369846Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L4-hs-seed-2608060646-15",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nThe charity's campaign aims to _____ public awareness of food waste.\nPosters, school talks, and short videos all support that goal.",
+      "options": [
+        "rose",
+        "raise up",
+        "arise",
+        "raise"
+      ],
+      "answer": "3",
+      "explanation": "awareness를 raise. arise/rose는 비문 또는 의미 불일치.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 1.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D5_Usage",
+      "headword": "raise",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369849Z",
+      "updatedAt": "2026-08-06T06:46:42.369850Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369851Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L4-hs-seed-2608060646-16",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nAlthough the plan looked simple, putting it into practice proved more _____ than expected.\nTeams needed extra training and tools.",
+      "options": [
+        "demanding",
+        "decorative",
+        "identical",
+        "optional"
+      ],
+      "answer": "0",
+      "explanation": "실행이 예상보다 '까다로운/힘든' demanding.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 1.7000000000000002,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "demanding",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369854Z",
+      "updatedAt": "2026-08-06T06:46:42.369855Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369856Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L4-hs-seed-2608060646-17",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\nLocal shops (A) benefit when more people walk downtown. Clean sidewalks (B) attract visitors and support small businesses. Closing the main street to cars may (C) discourage noise and accidents. Residents hope the change will (D) revitalize the area.",
+      "options": [
+        "benefit",
+        "discourage",
+        "attract",
+        "revitalize"
+      ],
+      "answer": "1",
+      "explanation": "소음·사고를 줄인다는 맥락이면 reduce가 맞고 discourage noise는 어색합니다.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 1.75,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "reduce",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369859Z",
+      "updatedAt": "2026-08-06T06:46:42.369860Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369861Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L4-hs-seed-2608060646-18",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nThe committee (A) has announced its decision, which (B) surprise many teachers. The policy (C) adopted last week (D) will take effect in March.",
+      "options": [
+        "has announced",
+        "adopted",
+        "surprise",
+        "will take"
+      ],
+      "answer": "2",
+      "explanation": "which의 선행사가 decision이므로 surprises가 맞습니다.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369864Z",
+      "updatedAt": "2026-08-06T06:46:42.369864Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369865Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L4-hs-seed-2608060646-19",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 어법상 알맞은 것은?\nNot until the final whistle _____ the fans leave their seats.",
+      "options": [
+        "were",
+        "do",
+        "had",
+        "did"
+      ],
+      "answer": "3",
+      "explanation": "Not until 도치: Not until ... did + S + V.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 1.85,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369868Z",
+      "updatedAt": "2026-08-06T06:46:42.369869Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369870Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L4-hs-seed-2608060646-20",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nIf I _____ more careful, I would not have lost the file.",
+      "options": [
+        "had been",
+        "was",
+        "have been",
+        "would be"
+      ],
+      "answer": "0",
+      "explanation": "가정법 과거완료: If + had p.p., would have p.p.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 1.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369873Z",
+      "updatedAt": "2026-08-06T06:46:42.369873Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369874Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L4-hs-seed-2608060646-21",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nWalking through the park, (A) a strange noise was heard by Mina. She (B) stopped and (C) looked around, but nothing (D) seemed unusual.",
+      "options": [
+        "stopped",
+        "a strange noise was heard by Mina",
+        "looked",
+        "seemed"
+      ],
+      "answer": "1",
+      "explanation": "분사구문의 의미상 주어가 Mina여야 하므로 Hearing a strange noise, Mina... 형태가 맞습니다.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 1.9500000000000002,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369877Z",
+      "updatedAt": "2026-08-06T06:46:42.369878Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369880Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L4-hs-seed-2608060646-22",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nShe insisted on _____ the document before the meeting.",
+      "options": [
+        "to review",
+        "review",
+        "reviewing",
+        "reviewed"
+      ],
+      "answer": "2",
+      "explanation": "insist on + V-ing.",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369882Z",
+      "updatedAt": "2026-08-06T06:46:42.369884Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369885Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L4-hs-seed-2608060646-23",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nThe data collected last year _____ still useful for our research.",
+      "options": [
+        "have",
+        "are",
+        "were",
+        "is"
+      ],
+      "answer": "3",
+      "explanation": "주어 data를 단수 취급하는 학술 문맥(집합) 또는 The data ... is; 여기선 collected가 수식. 실제 정답은 주어 'The data collected last year'를 단수로 보는 is (현대 학술 영어에서 data 단수 빈번).",
+      "level": 4,
+      "targetTheta": 1.0,
+      "irt": {
+        "a": 1.25,
+        "b": 2.05,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369887Z",
+      "updatedAt": "2026-08-06T06:46:42.369888Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369890Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L5-hs-seed-2608060646-24",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nNew taxes may _____ investment if companies expect lower profits.\nPolicymakers must weigh short-term revenue against long-term growth.",
+      "options": [
+        "discourage",
+        "decorate",
+        "illustrate",
+        "memorize"
+      ],
+      "answer": "0",
+      "explanation": "투자를 위축/저해하다 discourage.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 2.8,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "discourage",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369892Z",
+      "updatedAt": "2026-08-06T06:46:42.369894Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369895Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L5-hs-seed-2608060646-25",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 쓰임이 적절하지 않은 것은?\nTransparent rules can (A) foster trust between citizens and government. Hidden procedures often (B) fuel suspicion. When officials (C) obscure key documents, public debate becomes healthier. Open data portals (D) enable independent checks.",
+      "options": [
+        "foster",
+        "obscure",
+        "fuel",
+        "enable"
+      ],
+      "answer": "1",
+      "explanation": "문서를 숨기면 토론이 건강해진다는 흐름이 모순이므로 obscure가 아니라 release/share 등이 맞습니다.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 2.85,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "release",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369897Z",
+      "updatedAt": "2026-08-06T06:46:42.369898Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369899Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L5-hs-seed-2608060646-26",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nThe study tries to _____ the gap between laboratory results and real-world behavior.\nField experiments provide one possible bridge.",
+      "options": [
+        "bury",
+        "break",
+        "bridge",
+        "borrow"
+      ],
+      "answer": "2",
+      "explanation": "간극을 '메우다/연결하다' bridge the gap.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 2.9000000000000004,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "bridge",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369902Z",
+      "updatedAt": "2026-08-06T06:46:42.369903Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369904Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L5-hs-seed-2608060646-27",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nCritics argue that the advertisement _____ consumers by hiding important costs.",
+      "options": [
+        "mentions",
+        "motivates",
+        "measures",
+        "misleads"
+      ],
+      "answer": "3",
+      "explanation": "중요한 비용을 숨겨 소비자를 '오도한다' misleads.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 2.95,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "mislead",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369907Z",
+      "updatedAt": "2026-08-06T06:46:42.369908Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369909Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L5-hs-seed-2608060646-28",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\nUrban farms can (A) supplement local food supplies. They also (B) strengthen community ties. However, without training, volunteers may (C) enhance crops through poor watering. Workshops help participants (D) avoid such mistakes.",
+      "options": [
+        "enhance",
+        "strengthen",
+        "supplement",
+        "avoid"
+      ],
+      "answer": "0",
+      "explanation": "잘못된 물주기로 작물을 해치는 맥락이면 damage/harm이지 enhance가 아닙니다.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 3.0,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "damage",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369911Z",
+      "updatedAt": "2026-08-06T06:46:42.369912Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369913Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L5-hs-seed-2608060646-29",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nThe committee refused to _____ the proposal until more evidence was provided.",
+      "options": [
+        "endure",
+        "endorse",
+        "enroll",
+        "enlarge"
+      ],
+      "answer": "1",
+      "explanation": "제안(안)을 '지지/승인하다' endorse.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 3.05,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "endorse",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369916Z",
+      "updatedAt": "2026-08-06T06:46:42.369917Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369918Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L5-hs-seed-2608060646-30",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 어법상 알맞은 것은?\nHad the warning been issued earlier, many accidents _____.",
+      "options": [
+        "can prevent",
+        "could be prevented",
+        "could have been prevented",
+        "were prevented"
+      ],
+      "answer": "2",
+      "explanation": "가정법 과거완료 수동: could have been prevented.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 3.1,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369920Z",
+      "updatedAt": "2026-08-06T06:46:42.369921Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369922Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L5-hs-seed-2608060646-31",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nOnly after the report (A) was published (B) did the public (C) understanding the scale of the problem, which (D) had been hidden for years.",
+      "options": [
+        "was published",
+        "did",
+        "had been hidden",
+        "understanding"
+      ],
+      "answer": "3",
+      "explanation": "did 뒤 동사원형 understand.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 3.1500000000000004,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369925Z",
+      "updatedAt": "2026-08-06T06:46:42.369926Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369927Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L5-hs-seed-2608060646-32",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nShe speaks as if she _____ the country for decades, though she moved here last year.",
+      "options": [
+        "had known",
+        "knows",
+        "has been knowing",
+        "will know"
+      ],
+      "answer": "0",
+      "explanation": "as if + 가정법(실제와 반대) had known.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 3.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369930Z",
+      "updatedAt": "2026-08-06T06:46:42.369931Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369932Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L5-hs-seed-2608060646-33",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nThe proposal _____ by experts last month is now under review.",
+      "options": [
+        "examining",
+        "examined",
+        "was examined",
+        "has examined"
+      ],
+      "answer": "1",
+      "explanation": "과거분사 형용사적 용법 the proposal examined by experts.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 3.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369935Z",
+      "updatedAt": "2026-08-06T06:46:42.369936Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369937Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L5-hs-seed-2608060646-34",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nWhat (A) makes the plan unique (B) are its focus on prevention rather than punishment, and the way it (C) involves local schools. Many cities (D) have adopted similar models.",
+      "options": [
+        "makes",
+        "involves",
+        "are",
+        "have adopted"
+      ],
+      "answer": "2",
+      "explanation": "What makes ... 는 단수 취급 → is.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 3.3,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369939Z",
+      "updatedAt": "2026-08-06T06:46:42.369940Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369941Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L5-hs-seed-2608060646-35",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nNever before _____ such detailed maps of the ocean floor been available to students.",
+      "options": [
+        "having",
+        "has",
+        "had",
+        "have"
+      ],
+      "answer": "3",
+      "explanation": "Never before 도치 + 복수 maps → have ... been.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.25,
+        "b": 3.35,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369944Z",
+      "updatedAt": "2026-08-06T06:46:42.369945Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369946Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L6-hs-seed-2608060646-36",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nThe author argues that popularity can _____ genuine merit in cultural markets.\nEarly attention snowballs, so weaker works may outsell stronger ones.",
+      "options": [
+        "overshadow",
+        "outline",
+        "overflow",
+        "overlooked"
+      ],
+      "answer": "0",
+      "explanation": "진정한 가치를 '가릴 수 있다' overshadow.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.1,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "overshadow",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369949Z",
+      "updatedAt": "2026-08-06T06:46:42.369950Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369951Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L6-hs-seed-2608060646-37",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 쓰임이 적절하지 않은 것은?\nIndependent archives (A) preserve voices that official records ignore. Volunteers (B) transcribe interviews carefully. Yet memory is selective, so historians must (C) discard every personal story as absolute fact. Cross-checking with documents (D) remains essential.",
+      "options": [
+        "preserve",
+        "discard",
+        "transcribe",
+        "remains"
+      ],
+      "answer": "1",
+      "explanation": "개인 서사를 절대 사실로 '채택'하면 안 된다는 맥락이면 treat/accept with caution이지 discard every story가 아닙니다. 문장 의미가 '모든 개인 서사를 절대 사실로 받아들여서는 안 된다'여야 하므로 discard는 부적절하고 treat 등이 맞습니다.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.15,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "treat",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369954Z",
+      "updatedAt": "2026-08-06T06:46:42.369955Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369956Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L6-hs-seed-2608060646-38",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nFraming a medical risk as '90 percent survival' rather than '10 percent mortality' can _____ patient choices even when the numbers are identical.",
+      "options": [
+        "sow only seeds",
+        "sew",
+        "sway",
+        "swipe"
+      ],
+      "answer": "2",
+      "explanation": "선택의 방향을 '좌우하다' sway.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "sway",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369958Z",
+      "updatedAt": "2026-08-06T06:46:42.369959Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369960Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L6-hs-seed-2608060646-39",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nEnvironmental repair is slow; each generation must _____ what the previous generation claimed to fix.",
+      "options": [
+        "relocate",
+        "reassure",
+        "reassign",
+        "reassess"
+      ],
+      "answer": "3",
+      "explanation": "이전 세대의 성과를 다시 '평가/점검하다' reassess.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "reassess",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369963Z",
+      "updatedAt": "2026-08-06T06:46:42.369964Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369965Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L6-hs-seed-2608060646-40",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?\nDigital tracking of students may (A) improve attendance records. Supporters say lost children can be found faster. Critics warn that constant monitoring can (B) normalize surveillance. A delayed pilot and privacy review can (C) eliminate the need for any public debate. Parents still ask who stores the data and for how long (D) it remains accessible.",
+      "options": [
+        "eliminate",
+        "normalize",
+        "improve",
+        "remains"
+      ],
+      "answer": "0",
+      "explanation": "지연·검토는 토론을 없애는 것이 아니라 오히려 신중 논의를 전제로 하므로 eliminate the need for debate가 부적절합니다.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.3,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D3_Context",
+      "headword": "prompt",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369968Z",
+      "updatedAt": "2026-08-06T06:46:42.369969Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369970Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "vocabulary-L6-hs-seed-2608060646-41",
+      "domain": "vocabulary",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nBecause early attention can grow into a large sales gap, predicting cultural hits remains highly _____.",
+      "options": [
+        "uniform",
+        "uncertain",
+        "unlocked",
+        "unpaid"
+      ],
+      "answer": "1",
+      "explanation": "예측이 '불확실하다' uncertain.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.35,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "dimension": "D2_Meaning",
+      "headword": "uncertain",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369973Z",
+      "updatedAt": "2026-08-06T06:46:42.369974Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369975Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L6-hs-seed-2608060646-42",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 어법상 알맞은 것은?\nNot until the privacy report was released _____ the city postpone the tracking pilot.",
+      "options": [
+        "had",
+        "does",
+        "did",
+        "was"
+      ],
+      "answer": "2",
+      "explanation": "Not until ... did + S + V.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.4,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369977Z",
+      "updatedAt": "2026-08-06T06:46:42.369978Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369979Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L6-hs-seed-2608060646-43",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nThe findings, (A) published after three years of fieldwork, (B) suggests that small framing changes (C) can alter decisions. Researchers (D) urge clearer communication standards.",
+      "options": [
+        "published",
+        "urge",
+        "can alter",
+        "suggests"
+      ],
+      "answer": "3",
+      "explanation": "주어 The findings는 복수 → suggest.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.45,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369982Z",
+      "updatedAt": "2026-08-06T06:46:42.369983Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369984Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L6-hs-seed-2608060646-44",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\n_____ the risks fully, the council would not have approved the project so quickly.",
+      "options": [
+        "Had they understood",
+        "If they understand",
+        "Did they understand",
+        "Understanding they had"
+      ],
+      "answer": "0",
+      "explanation": "가정법 과거완료 도치: Had they understood = If they had understood.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.5,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369986Z",
+      "updatedAt": "2026-08-06T06:46:42.369987Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369988Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L6-hs-seed-2608060646-45",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nThe archive offers many unfinished accounts, which, the directors argue, _____ closer to historical truth than a single polished narrative.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "has been"
+      ],
+      "answer": "1",
+      "explanation": "선행사 accounts 복수 → are.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.55,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369991Z",
+      "updatedAt": "2026-08-06T06:46:42.369992Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369993Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L6-hs-seed-2608060646-46",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nWhat the market amplifies (A) is attention, not necessarily merit, and this pattern (B) help explain why strong works may remain little known. Critics (C) therefore separate craft from visibility when they (D) teach media literacy.",
+      "options": [
+        "is",
+        "therefore separate",
+        "help",
+        "teach"
+      ],
+      "answer": "2",
+      "explanation": "주어 this pattern 단수 → helps.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.6,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369995Z",
+      "updatedAt": "2026-08-06T06:46:42.369996Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.369997Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
+    },
+    {
+      "id": "grammar-L6-hs-seed-2608060646-47",
+      "domain": "grammar",
+      "type": "multiple_choice",
+      "question": "다음 빈칸에 알맞은 것은?\nThe volunteers spent months transcribing interviews, _____ accents and painful silences alike.",
+      "options": [
+        "to preserving",
+        "preserve",
+        "preserved",
+        "preserving"
+      ],
+      "answer": "3",
+      "explanation": "분사구문(동시/부대 상황) preserving.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.25,
+        "b": 4.65,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior",
+      "status": "approved",
+      "createdAt": "2026-08-06T06:46:42.369999Z",
+      "updatedAt": "2026-08-06T06:46:42.370001Z",
+      "createdBy": "seed-hs-okgil-style",
+      "reviewedAt": "2026-08-06T06:46:42.370002Z",
+      "reviewedBy": "seed-hs-okgil-style",
+      "reviewNote": "Original HS-style item; 옥길 일반고 내신 유형 참고 (본문 미복사)",
+      "batchId": "hs-seed-2608060646"
     }
   ]
 }
