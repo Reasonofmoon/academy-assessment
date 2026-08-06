@@ -324,11 +324,10 @@ def main() -> None:
         norm = re.sub(r"\s+", " ", passage.strip())
         by_status[status] += 1
         bl = by_level[level]
-        if status in bl:
-            bl[status] += 1
+        if status in ("approved", "quarantine", "pending"):
+            bl[status] = bl.get(status, 0) + 1
         if status != "approved":
             continue
-        bl["approved"] += 1
         if norm and norm in text_to_id:
             match_exact += 1
             bl["exact"] += 1
@@ -479,15 +478,14 @@ def main() -> None:
     report.append("")
     report.append("### Recommended actions")
     report.append(
-        "1. Regenerate/replace orphan approved reading items so bank passages "
-        f"equal preset pack v{passages.get('version')}."
+        "1. Keep L4–L6 as original-only while commercial series peak at A2–B1."
     )
     report.append(
-        "2. Keep L4–L6 as original-only while commercial series peak at A2–B1."
+        "2. Optional: expand L6 length slightly if monotonic wordCount is desired."
     )
     report.append(
-        "3. Re-run this script after bank regeneration: "
-        "python scripts/verify_level_test_passage_intent.py"
+        "3. Re-run: python scripts/verify_level_test_passage_intent.py "
+        "after future pack edits."
     )
 
     OUT.parent.mkdir(parents=True, exist_ok=True)

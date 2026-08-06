@@ -1,7 +1,7 @@
 # Level-test intent vs CEFR passage pack verification
 
 - passages version: `2.3.0`
-- bank items loaded: 143
+- bank items loaded: 173
 - catalog series: 7
 
 ## 1. Product intent checklist (docs + policy)
@@ -78,34 +78,19 @@
 
 ## 6. Approved bank reading items vs current preset texts
 
-- [INFO] Reading items total=54 by status={'quarantine': 12, 'approved': 42}
-- [INFO] Approved reading with exact preset text match: 0; mismatch/orphan: 42
-- [FAIL] No approved reading items match current presets (42 orphans) — bank out of sync with pack v2.3.0
-- [INFO]   L1: approved=10 exact=0 miss=5 quarantine=11 pending=0
-- [INFO]   L2: approved=24 exact=0 miss=12 quarantine=1 pending=0
-- [INFO]   L3: approved=14 exact=0 miss=7 quarantine=0 pending=0
-- [INFO]   L4: approved=12 exact=0 miss=6 quarantine=0 pending=0
-- [INFO]   L5: approved=12 exact=0 miss=6 quarantine=0 pending=0
-- [INFO]   L6: approved=12 exact=0 miss=6 quarantine=0 pending=0
-
-Orphan approved reading samples (passage no longer in pack):
-  - reading-1 L2: "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. af…"
-  - reading-2 L2: "My wife and I visited your cinema last month. We purchased two tickets which cam…"
-  - reading-3 L2: "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. af…"
-  - reading-4 L2: "My wife and I visited your cinema last month. We purchased two tickets which cam…"
-  - reading-1-2 L2: "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. af…"
-  - reading-2-2 L2: "My wife and I visited your cinema last month. We purchased two tickets which cam…"
-  - reading-3-2 L2: "Dear Ms. White, My son, Michael, got home from school yesterday around 6 p.m. af…"
-  - reading-4-2 L2: "My wife and I visited your cinema last month. We purchased two tickets which cam…"
+- [INFO] Reading items total=84 by status={'quarantine': 54, 'approved': 30}
+- [INFO] Approved reading with exact preset text match: 30; mismatch/orphan: 0
+- [PASS] All approved reading passages match current presets
+- [INFO]   L1: approved=5 exact=5 miss=0 quarantine=16 pending=0
+- [INFO]   L2: approved=5 exact=5 miss=0 quarantine=13 pending=0
+- [INFO]   L3: approved=5 exact=5 miss=0 quarantine=7 pending=0
+- [INFO]   L4: approved=5 exact=5 miss=0 quarantine=6 pending=0
+- [INFO]   L5: approved=5 exact=5 miss=0 quarantine=6 pending=0
+- [INFO]   L6: approved=5 exact=5 miss=0 quarantine=6 pending=0
 
 ## 7. Level-test uniqueness (approved reading)
 
-- [WARN] 10 passage texts used by multiple approved items (spam risk if served together)
-- [INFO]   x7: Dear Ms. White, My son, Michael, got home from sch…
-- [INFO]   x5: My wife and I visited your cinema last month. We p…
-- [INFO]   x4: Shoppers confronted with the choice of thirty diff…
-- [INFO]   x3: One of the most important things to remember befor…
-- [INFO]   x4: Although we humans are equipped with reflexive res…
+- [PASS] No approved reading multi-items sharing identical passage text
 
 ## 8. L1 elementary fitness (초1–초6 lock)
 
@@ -138,10 +123,10 @@ Orphan approved reading samples (passage no longer in pack):
 
 ## 11. Overall verdict
 
-- Passes: 64 · Warnings: 2 · Fails: 1
-- **Verdict: FAIL — fix before treating bank/pack as level-test ready**
+- Passes: 66 · Warnings: 1 · Fails: 0
+- **Verdict: PASS WITH NOTES**
 
 ### Recommended actions
-1. Regenerate/replace orphan approved reading items so bank passages equal preset pack v2.3.0.
-2. Keep L4–L6 as original-only while commercial series peak at A2–B1.
-3. Re-run this script after bank regeneration: python scripts/verify_level_test_passage_intent.py
+1. Keep L4–L6 as original-only while commercial series peak at A2–B1.
+2. Optional: expand L6 length slightly if monotonic wordCount is desired.
+3. Re-run: python scripts/verify_level_test_passage_intent.py after future pack edits.

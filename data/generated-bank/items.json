@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-05T23:20:01.039Z",
+  "updatedAt": "2026-08-06T00:24:59.966Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -428,12 +428,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T06:41:19.688Z",
-      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785912079673-approved"
+      "batchId": "seed-fill-1785912079673-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-2",
@@ -470,12 +473,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T06:41:19.688Z",
-      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785912079673-approved"
+      "batchId": "seed-fill-1785912079673-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-3",
@@ -512,12 +518,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T06:41:19.688Z",
-      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785912079673-approved"
+      "batchId": "seed-fill-1785912079673-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-4",
@@ -554,12 +563,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T06:41:19.688Z",
-      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785912079673-approved"
+      "batchId": "seed-fill-1785912079673-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "vocabulary-1-2",
@@ -966,12 +978,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-2-2",
@@ -1008,12 +1023,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-3-2",
@@ -1050,12 +1068,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-4-2",
@@ -1092,12 +1113,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-5",
@@ -1134,12 +1158,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "vocabulary-1-3",
@@ -1461,12 +1488,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-2-3",
@@ -1503,12 +1533,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-3-3",
@@ -1545,12 +1578,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-4-3",
@@ -1587,12 +1623,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "vocabulary-L2-replace-msfvg3on",
@@ -2348,12 +2387,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:14.610Z",
-      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785923894589"
+      "batchId": "level-fill-L4-1785923894589",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L4-fill-msfwz4fx-6",
@@ -2390,12 +2432,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:14.610Z",
-      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785923894589"
+      "batchId": "level-fill-L4-1785923894589",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L4-fill-msfwz4fx-7",
@@ -2432,12 +2477,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:14.610Z",
-      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785923894589"
+      "batchId": "level-fill-L4-1785923894589",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "vocabulary-L5-fill-msfx02ht-0",
@@ -2677,12 +2725,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785923938722"
+      "batchId": "level-fill-L5-1785923938722",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L5-fill-msfx02ht-6",
@@ -2719,12 +2770,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785923938722"
+      "batchId": "level-fill-L5-1785923938722",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L5-fill-msfx02ht-7",
@@ -2761,12 +2815,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785923938722"
+      "batchId": "level-fill-L5-1785923938722",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "vocabulary-L6-fill-msfx10co-0",
@@ -3006,12 +3063,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785923982600"
+      "batchId": "level-fill-L6-1785923982600",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L6-fill-msfx10co-6",
@@ -3048,12 +3108,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785923982600"
+      "batchId": "level-fill-L6-1785923982600",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L6-fill-msfx10co-7",
@@ -3090,12 +3153,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785923982600"
+      "batchId": "level-fill-L6-1785923982600",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "vocabulary-L4-fill-msfx1nfr-0",
@@ -4008,12 +4074,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:03.857Z",
-      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "중1",
-      "batchId": "level-fill-L2-1785925743839"
+      "batchId": "level-fill-L2-1785925743839",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L2-fill-msfy2rbz-7",
@@ -4050,12 +4119,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:03.857Z",
-      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "중1",
-      "batchId": "level-fill-L2-1785925743839"
+      "batchId": "level-fill-L2-1785925743839",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L2-fill-msfy2rbz-8",
@@ -4092,12 +4164,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:03.857Z",
-      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "중1",
-      "batchId": "level-fill-L2-1785925743839"
+      "batchId": "level-fill-L2-1785925743839",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "vocabulary-L3-fill-msfy3v8j-0",
@@ -4380,12 +4455,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
-      "batchId": "level-fill-L3-1785925795555"
+      "batchId": "level-fill-L3-1785925795555",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L3-fill-msfy3v8j-7",
@@ -4422,12 +4500,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
-      "batchId": "level-fill-L3-1785925795555"
+      "batchId": "level-fill-L3-1785925795555",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L3-fill-msfy3v8j-8",
@@ -4464,12 +4545,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
-      "batchId": "level-fill-L3-1785925795555"
+      "batchId": "level-fill-L3-1785925795555",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "vocabulary-L4-fill-msfy4u5x-0",
@@ -4709,12 +4793,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785925840821"
+      "batchId": "level-fill-L4-1785925840821",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L4-fill-msfy4u5x-6",
@@ -4751,12 +4838,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785925840821"
+      "batchId": "level-fill-L4-1785925840821",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L4-fill-msfy4u5x-7",
@@ -4793,12 +4883,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785925840821"
+      "batchId": "level-fill-L4-1785925840821",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "vocabulary-L5-fill-msfy5oes-0",
@@ -5081,12 +5174,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785925880020"
+      "batchId": "level-fill-L5-1785925880020",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L5-fill-msfy5oes-7",
@@ -5123,12 +5219,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785925880020"
+      "batchId": "level-fill-L5-1785925880020",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L5-fill-msfy5oes-8",
@@ -5165,12 +5264,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785925880020"
+      "batchId": "level-fill-L5-1785925880020",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "vocabulary-L6-fill-msfy6myc-0",
@@ -5410,12 +5512,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785925924788"
+      "batchId": "level-fill-L6-1785925924788",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L6-fill-msfy6myc-6",
@@ -5452,12 +5557,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785925924788"
+      "batchId": "level-fill-L6-1785925924788",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L6-fill-msfy6myc-7",
@@ -5494,12 +5602,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785925924788"
+      "batchId": "level-fill-L6-1785925924788",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L1-elem-msg0um01-0",
@@ -5539,12 +5650,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T11:46:42.543Z",
-      "updatedAt": "2026-08-05T11:46:42.543Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "l1-reading-refresh",
       "grade": "초1",
-      "batchId": "l1-elem-reading-1785930402529"
+      "batchId": "l1-elem-reading-1785930402529",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L1-elem-msg0um01-1",
@@ -5584,12 +5698,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T11:46:42.543Z",
-      "updatedAt": "2026-08-05T11:46:42.543Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "l1-reading-refresh",
       "grade": "초1",
-      "batchId": "l1-elem-reading-1785930402529"
+      "batchId": "l1-elem-reading-1785930402529",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L1-elem-msg0um01-2",
@@ -5629,12 +5746,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T11:46:42.543Z",
-      "updatedAt": "2026-08-05T11:46:42.543Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "l1-reading-refresh",
       "grade": "초1",
-      "batchId": "l1-elem-reading-1785930402529"
+      "batchId": "l1-elem-reading-1785930402529",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L1-elem-msg0um01-3",
@@ -5674,12 +5794,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T11:46:42.543Z",
-      "updatedAt": "2026-08-05T11:46:42.543Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "l1-reading-refresh",
       "grade": "초1",
-      "batchId": "l1-elem-reading-1785930402529"
+      "batchId": "l1-elem-reading-1785930402529",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L1-elem-msg0um01-4",
@@ -5719,12 +5842,15 @@
         "warnings": [],
         "errors": []
       },
-      "status": "approved",
+      "status": "quarantine",
       "createdAt": "2026-08-05T11:46:42.543Z",
-      "updatedAt": "2026-08-05T11:46:42.543Z",
+      "updatedAt": "2026-08-06T00:20:46.527Z",
       "createdBy": "l1-reading-refresh",
       "grade": "초1",
-      "batchId": "l1-elem-reading-1785930402529"
+      "batchId": "l1-elem-reading-1785930402529",
+      "reviewedAt": "2026-08-06T00:20:46.527Z",
+      "reviewedBy": "refresh-reading-presets",
+      "reviewNote": "Orphan passage vs pack v2.3.0; replaced by preset regeneration"
     },
     {
       "id": "reading-L1-unique-msgpl4lq-0",
@@ -5965,6 +6091,1356 @@
       "reviewedAt": "2026-08-05T23:19:41.600Z",
       "reviewedBy": "level-test-reading-dedupe",
       "reviewNote": "Same passage + same type/stem as another L1 item"
+    },
+    {
+      "id": "reading-L1-preset-msgrvhki-0",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the story mostly about?",
+      "options": [
+        "Sam playing with his red ball.",
+        "Sam looking for a lost ball.",
+        "Sam's sister clapping her hands.",
+        "A big tree in the yard."
+      ],
+      "answer": "0",
+      "explanation": "이 이야기는 Sam이 빨간 공으로 노는 것에 대한 내용입니다. Sam이 공을 가지고 노는 일상과 공을 찾고 기뻐하는 모습이 주를 이룹니다.",
+      "level": 1,
+      "targetTheta": -2.2,
+      "irt": {
+        "a": 1.2,
+        "b": -2.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "Sam has a small red ball. Every afternoon he kicks the ball in the yard. One day the ball rolls under a big tree. Sam looks left and right. He cannot see it at first. Then he looks behind the tree and smiles. He picks up the ball and kicks it again. His little sister claps her hands. Playing outside with the red ball makes Sam happy every day.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:13.100Z",
+      "updatedAt": "2026-08-06T00:23:13.100Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "초3",
+      "batchId": "reading-preset-L1-1785975793075"
+    },
+    {
+      "id": "reading-L1-preset-msgrvhki-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What does Mia drink on the rainy morning?",
+      "options": [
+        "Warm milk.",
+        "Cold juice.",
+        "Hot tea.",
+        "Plain water."
+      ],
+      "answer": "0",
+      "explanation": "본문에서 Mia는 'Mia drinks warm milk'라고 명확하게 언급되어 있습니다. 따라서 Mia는 따뜻한 우유를 마십니다.",
+      "level": 1,
+      "targetTheta": -2.2,
+      "irt": {
+        "a": 1.2,
+        "b": -2.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "It is raining hard this morning. Mia cannot ride her bike outside. She sits by the window with a picture book. Her gray cat sits beside her. They listen to the soft sound of rain on the glass. Mia drinks warm milk and turns the pages slowly. Her mother brings a blanket, and Mia shares it with the cat. She likes quiet rainy days at home.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:13.100Z",
+      "updatedAt": "2026-08-06T00:23:13.100Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "초3",
+      "batchId": "reading-preset-L1-1785975793075"
+    },
+    {
+      "id": "reading-L1-preset-msgrvhki-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "How does Jin feel about riding the bus to school?",
+      "options": [
+        "He enjoys it.",
+        "He feels lonely.",
+        "He feels tired.",
+        "He feels scared."
+      ],
+      "answer": "0",
+      "explanation": "본문 마지막 문장에서 'Jin likes the bus ride because he starts the day with a friend'라고 언급되어 있습니다. 이는 Jin이 버스 타는 것을 즐긴다는 것을 의미합니다.",
+      "level": 1,
+      "targetTheta": -2.2,
+      "irt": {
+        "a": 1.2,
+        "b": -2.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Every school day Jin waits for the yellow bus at the corner. The bus comes at seven o'clock. He sits with his friend Hana near the window. They talk about games, snacks, and their pet dogs. Sometimes they count red cars on the road. When the bus stops at school, they wave goodbye and run to class with their bags. Jin likes the bus ride because he starts the day with a friend.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:13.100Z",
+      "updatedAt": "2026-08-06T00:23:13.100Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "초3",
+      "batchId": "reading-preset-L1-1785975793075"
+    },
+    {
+      "id": "reading-L1-preset-msgrvhki-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "Why does the narrator help Grandma?",
+      "options": [
+        "Because helping at home feels good.",
+        "Because Grandma asks for help.",
+        "Because Dad tells them to.",
+        "Because they want more soup."
+      ],
+      "answer": "0",
+      "explanation": "본문 마지막 문장에서 'Helping at home feels good'라고 언급되어 있습니다. 즉, 화자는 집안일을 돕는 것이 기분 좋기 때문에 할머니를 돕습니다.",
+      "level": 1,
+      "targetTheta": -2.2,
+      "irt": {
+        "a": 1.2,
+        "b": -2.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "On cold evenings Grandma makes warm vegetable soup for dinner. The kitchen smells good. I help set the bowls and spoons on the table. Dad brings bread, and we all sit down together. We talk about school and the garden. After dinner I wash the bowls carefully. Grandma says thank you and smiles at me. Helping at home feels good.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:13.100Z",
+      "updatedAt": "2026-08-06T00:23:13.100Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "초3",
+      "batchId": "reading-preset-L1-1785975793075"
+    },
+    {
+      "id": "reading-L1-preset-msgrvhki-4",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What color are the narrator's new shoes?",
+      "options": [
+        "Blue.",
+        "Red.",
+        "Green.",
+        "Yellow."
+      ],
+      "answer": "0",
+      "explanation": "본문 첫 문장에서 'Today I wear my new blue shoes'라고 명확하게 언급되어 있습니다. 화자의 새 신발은 파란색입니다.",
+      "level": 1,
+      "targetTheta": -2.2,
+      "irt": {
+        "a": 1.2,
+        "b": -2.2,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Today I wear my new blue shoes for the first time. They feel soft and light. On the playground I run and jump with my friends. One friend says, \"Nice shoes!\" I feel proud and a little shy. We play tag until the bell rings. After school I clean the shoes and put them by the door for tomorrow. I want to keep them clean and bright.",
+      "exemplarIds": [
+        "race-middle-65c488436af5-4",
+        "race-middle-fdca9fd41abe-1",
+        "data-final-cnsa-en-25571-q1",
+        "preset-L1-P01",
+        "preset-L1-P02",
+        "preset-L1-P03",
+        "preset-L1-P04",
+        "preset-L1-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:13.100Z",
+      "updatedAt": "2026-08-06T00:23:13.100Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "초3",
+      "batchId": "reading-preset-L1-1785975793075"
+    },
+    {
+      "id": "reading-L2-preset-msgrvwln-0",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "윗글의 내용으로 가장 적절한 것은?",
+      "options": [
+        "소라가 연필통을 잃어버렸다가 친구의 도움으로 찾았다.",
+        "소라가 친구 민이 잃어버린 앞치마를 찾는 것을 도왔다.",
+        "소라가 새 파란색 연필통을 사기로 결정했다.",
+        "소라가 미술 수업에서 그림 그리는 법을 배웠다."
+      ],
+      "answer": "0",
+      "explanation": "소라가 연필통을 잃어버렸다가 친구 민의 도움으로 찾았다는 내용이므로, 이 글의 핵심 내용을 잘 요약하고 있습니다.",
+      "level": 2,
+      "targetTheta": -0.95,
+      "irt": {
+        "a": 1.2,
+        "b": -1,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "After math class, Sora could not find her pencil case. She looked under her desk, inside her bag, and even in her coat pocket. Her friend Min said he saw a blue case near the art room door. They walked there together and checked each chair carefully. The case was on a chair under a drawing apron. Sora thanked Min and promised to help him next time he lost something. She also decided to put her name clearly on the case.",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02",
+        "preset-L2-P03",
+        "preset-L2-P04",
+        "preset-L2-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:32.573Z",
+      "updatedAt": "2026-08-06T00:23:32.573Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "중1",
+      "batchId": "reading-preset-L2-1785975812555"
+    },
+    {
+      "id": "reading-L2-preset-msgrvwln-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "준은 과학 박람회 프로젝트를 위해 매일 무엇을 할 것인가?",
+      "options": [
+        "노트를 쓰고, 줄기를 측정하고, 사진을 찍을 것이다.",
+        "두 식물을 어둡고 밝은 상자에 넣을 것이다.",
+        "라벨과 짧은 설명이 있는 포스터를 만들 것이다.",
+        "심사위원들에게 빛이 중요한 이유를 설명할 것이다."
+      ],
+      "answer": "0",
+      "explanation": "지문에 'Every day he will write notes, measure the stems, and take photos.'라고 명시되어 있으므로, 준이 매일 할 일은 노트 작성, 줄기 측정, 사진 촬영입니다.",
+      "level": 2,
+      "targetTheta": -0.95,
+      "irt": {
+        "a": 1,
+        "b": -0.9,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Our class is preparing for the science fair next month. Joon wants to show how plants grow toward light. He will put two plants in boxes, one dark and one bright. Every day he will write notes, measure the stems, and take photos. His partner will make a poster with labels and a short explanation. Joon hopes the judges will like his careful work and clear data. If the plants grow differently, he will explain why light matters.",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02",
+        "preset-L2-P03",
+        "preset-L2-P04",
+        "preset-L2-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:32.573Z",
+      "updatedAt": "2026-08-06T00:23:32.573Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "중1",
+      "batchId": "reading-preset-L2-1785975812555"
+    },
+    {
+      "id": "reading-L2-preset-msgrvwln-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "유나의 남동생이 웃고 있었던 가장 큰 이유는 무엇인가?",
+      "options": [
+        "그가 유나를 재미있는 게임으로 성공적으로 이끌었기 때문이다.",
+        "그가 도서관에서 빨간색 마커를 찾았기 때문이다.",
+        "그가 사서에게 숨어 있었기 때문이다.",
+        "그가 재미있는 지도책을 읽고 있었기 때문이다."
+      ],
+      "answer": "0",
+      "explanation": "남동생은 유나에게 단서를 남겨 게임을 하고 싶어 했고, 유나가 그 단서들을 따라왔기 때문에 성공적으로 게임을 이끌어 웃고 있었음을 추론할 수 있습니다.",
+      "level": 2,
+      "targetTheta": -0.95,
+      "irt": {
+        "a": 1.1,
+        "b": -0.95,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Someone left a note in the library: \"Meet me by the big globe.\" Yuna likes small mysteries, so she went to the globe after school. She found another note under a map book. It said, \"Look outside.\" Near the door she saw her little brother laughing with a red marker. He only wanted to play a game and leave a trail of clues. Yuna laughed too and helped him put the notes away before the librarian came.",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02",
+        "preset-L2-P03",
+        "preset-L2-P04",
+        "preset-L2-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:32.573Z",
+      "updatedAt": "2026-08-06T00:23:32.573Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "중1",
+      "batchId": "reading-preset-L2-1785975812555"
+    },
+    {
+      "id": "reading-L2-preset-msgrvwln-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "태는 왜 매일 저녁 축구 연습을 했는가?",
+      "options": [
+        "학교 팀 선발전을 준비하기 위해서.",
+        "팀에서 가장 빠른 선수가 되기 위해서.",
+        "연습 후 진흙 묻은 신발을 닦기 위해서.",
+        "부모님께 좋은 소식을 전하기 위해서."
+      ],
+      "answer": "0",
+      "explanation": "지문의 첫 문장에서 태가 'school team tryouts(학교 팀 선발전)'을 위해 매일 저녁 축구 연습을 했다고 명확히 언급하고 있습니다.",
+      "level": 2,
+      "targetTheta": -0.95,
+      "irt": {
+        "a": 1.2,
+        "b": -0.85,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "Tae practiced soccer every evening for the school team tryouts. He was not the fastest runner, but he passed the ball well and listened to coaches. On tryout day he felt nervous, but his coach smiled and said, \"Show your best pass.\" After the game, the coach said, \"You help the team more than you know.\" Tae made the team and felt proud of his hard work. That night he told his parents the news and cleaned his muddy shoes.",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02",
+        "preset-L2-P03",
+        "preset-L2-P04",
+        "preset-L2-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:32.573Z",
+      "updatedAt": "2026-08-06T00:23:32.573Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "중1",
+      "batchId": "reading-preset-L2-1785975812555"
+    },
+    {
+      "id": "reading-L2-preset-msgrvwln-4",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "혜진이가 끝내지 못한 숙제는 어느 과목인가?",
+      "options": [
+        "역사",
+        "영어",
+        "과학",
+        "수학"
+      ],
+      "answer": "0",
+      "explanation": "지문에 'I finished English and science, but I could not finish history.'라고 명시되어 있으므로, 혜진이가 끝내지 못한 숙제는 역사입니다.",
+      "level": 2,
+      "targetTheta": -0.95,
+      "irt": {
+        "a": 1,
+        "b": -0.8,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Dear Ms. Park, I am writing about yesterday's homework. I finished English and science, but I could not finish history. My little sister was sick, and I helped my mother take her to the clinic. We came home late, and I was too tired to write the full paragraph. May I bring the history homework tomorrow morning? Thank you for understanding. Sincerely, Hyejin.",
+      "exemplarIds": [
+        "csat-b360386c01d4-0",
+        "csat-7b4fad2c9f81-0",
+        "data-final-cnsa-en-26280-q1",
+        "preset-L2-P01",
+        "preset-L2-P02",
+        "preset-L2-P03",
+        "preset-L2-P04",
+        "preset-L2-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:32.573Z",
+      "updatedAt": "2026-08-06T00:23:32.573Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "중1",
+      "batchId": "reading-preset-L2-1785975812555"
+    },
+    {
+      "id": "reading-L3-preset-msgrwbvx-0",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "이 글의 중심 내용은 무엇인가?",
+      "options": [
+        "학급에서 연극 선택에 대한 논쟁이 어떻게 해결되었는가",
+        "축제를 위한 재미있는 연극을 선택하는 것의 중요성",
+        "이 선생님이 학생들에게 쪽지를 쓰게 한 방법",
+        "학생들이 학급 프로젝트 중 자주 논쟁하는 이유"
+      ],
+      "answer": "0",
+      "explanation": "이 글은 학급에서 연극 선택을 두고 발생한 갈등이 어떻게 해결되었는지 그 과정을 설명하고 있습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.2,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "The class was choosing a play for the festival. Some students wanted a funny story. Others wanted a serious drama. Voices grew loud in the classroom. Ms. Lee raised her hand and asked everyone to write one reason on a sticky note. When they read the notes, they found a shared idea: a short comedy with a kind message. Two students who had argued offered to write the first scene together. The argument ended, and practice began the next week with clearer roles for everyone.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02",
+        "preset-L3-P03",
+        "preset-L3-P04",
+        "preset-L3-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:52.381Z",
+      "updatedAt": "2026-08-06T00:23:52.381Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "중3",
+      "batchId": "reading-preset-L3-1785975832365"
+    },
+    {
+      "id": "reading-L3-preset-msgrwbvx-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "대이는 학급 친구들이 사라진 것을 깨달은 후 무엇을 했는가?",
+      "options": [
+        "직원 근처에 머물라는 규칙을 기억했다.",
+        "로봇 전시장으로 다시 돌아갔다.",
+        "즉시 선생님을 찾았다.",
+        "박물관 규칙에 대한 반성문을 쓰기 시작했다."
+      ],
+      "answer": "0",
+      "explanation": "대이는 친구들이 사라진 것을 알게 된 후, 길을 잃었을 때 직원 근처에 머물라는 규칙을 기억했습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.5,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "During the museum field trip, Dae left his group to look at a robot exhibit. When he turned around, his class was gone. He felt his face grow hot. He remembered the rule: stay near a staff member if you are lost. A guard walked him to the meeting point by the main stairs. His teacher was relieved, and Dae promised to stay with the group. Later he wrote a short reflection about why museum rules protect students.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02",
+        "preset-L3-P03",
+        "preset-L3-P04",
+        "preset-L3-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:52.381Z",
+      "updatedAt": "2026-08-06T00:23:52.381Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "중3",
+      "batchId": "reading-preset-L3-1785975832365"
+    },
+    {
+      "id": "reading-L3-preset-msgrwbvx-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "새로운 휴대폰 규칙이 생기기 전, 글쓴이의 습관에 대해 추론할 수 있는 것은 무엇인가?",
+      "options": [
+        "글쓴이는 늦게까지 온라인 활동을 하여 수면과 숙제에 영향을 받았을 가능성이 높다.",
+        "글쓴이는 매일 밤 20분씩 꾸준히 책을 읽었다.",
+        "글쓴이는 이전에도 숙제에 집중하는 데 문제가 없었다.",
+        "글쓴이는 저녁 식사 시간에 가족들과 많은 이야기를 나누었다."
+      ],
+      "answer": "0",
+      "explanation": "글쓴이가 규칙 시행 후 잠을 더 잘 자고 숙제를 더 빨리 끝냈다는 점에서, 이전에는 늦게까지 온라인 활동을 하여 수면과 숙제에 영향을 받았음을 추론할 수 있습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Our family made new phone rules last Sunday. No phones at dinner. No phones after ten o'clock on school nights. At first I was angry. I thought the rules were unfair because my friends stayed online later. After a week, I slept better and finished homework faster. Now I keep my phone in the living room after dinner and read for twenty minutes. The rules still feel strict, but they help me focus and talk more with my family.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02",
+        "preset-L3-P03",
+        "preset-L3-P04",
+        "preset-L3-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:52.381Z",
+      "updatedAt": "2026-08-06T00:23:52.381Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "중3",
+      "batchId": "reading-preset-L3-1785975832365"
+    },
+    {
+      "id": "reading-L3-preset-msgrwbvx-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "이 글을 쓴 작가의 주된 목적은 무엇인가?",
+      "options": [
+        "팀이 프로젝트 중 갈등을 성공적으로 해결하는 방법을 보여주기 위해",
+        "튼튼한 모형 다리를 만드는 단계를 설명하기 위해",
+        "일부 학생들이 모둠 활동에 기여하지 않는 이유를 설명하기 위해",
+        "학교 프로젝트에서 명확한 마감 기한을 정하는 것의 중요성을 강조하기 위해"
+      ],
+      "answer": "0",
+      "explanation": "이 글은 팀원 간의 갈등을 겪던 모둠이 어떻게 문제를 해결하고 성공적으로 프로젝트를 완수했는지를 보여주는 것이 주된 목적입니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.3,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "Four students had to build a model bridge for history class. One member did almost nothing at first, and the others felt frustrated. They met after school and divided the work into clear tasks with deadlines. The quiet member agreed to paint and write labels after they asked calmly. On presentation day the bridge stood strong, and every name was on the poster. The teacher praised both the model and the way the team solved its conflict.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02",
+        "preset-L3-P03",
+        "preset-L3-P04",
+        "preset-L3-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:52.381Z",
+      "updatedAt": "2026-08-06T00:23:52.381Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "중3",
+      "batchId": "reading-preset-L3-1785975832365"
+    },
+    {
+      "id": "reading-L3-preset-msgrwbvx-4",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "경기를 이긴 것에 대한 글쓴이의 태도는 어떠한가?",
+      "options": [
+        "어려움에도 불구하고 승리감과 만족감을 느낀다.",
+        "힘든 경기가 드디어 끝나서 안도감을 느낀다.",
+        "경기 중 좋지 않은 날씨에 대해 실망감을 느낀다.",
+        "더 강한 상대에게 예상치 못한 승리를 거둔 것에 놀라워한다."
+      ],
+      "answer": "0",
+      "explanation": "글쓴이는 어려운 상황 속에서도 팀워크와 인내심으로 경기를 이긴 것에 대해 큰 만족감과 승리감을 느끼고 있습니다. '젖은 유니폼이 그렇게 기분 좋을 수 없었다'는 표현에서 이를 알 수 있습니다.",
+      "level": 3,
+      "targetTheta": 0.25,
+      "irt": {
+        "a": 1.1,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "attitude",
+      "passage": "The final basketball game started under heavy rain. The court was wet and slippery. Our team almost gave up in the first quarter. Then our captain said, \"Play safe, pass more.\" We scored carefully and made fewer mistakes. In the last minute we won by two points. Wet uniforms never felt so good. Parents cheered under umbrellas by the fence. We learned that patience and teamwork can beat speed on a difficult day.",
+      "exemplarIds": [
+        "csat-333a802bb121-0",
+        "data-final-cnsa-en-21821-q1",
+        "csat-d4fdb88d1f92-0",
+        "preset-L3-P01",
+        "preset-L3-P02",
+        "preset-L3-P03",
+        "preset-L3-P04",
+        "preset-L3-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:23:52.381Z",
+      "updatedAt": "2026-08-06T00:23:52.381Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "중3",
+      "batchId": "reading-preset-L3-1785975832365"
+    },
+    {
+      "id": "reading-L4-preset-msgrwty6-0",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main idea of the passage?",
+      "options": [
+        "A hidden family secret revealed through an old map.",
+        "The importance of cleaning attics to find valuable items.",
+        "Siblings exploring a dangerous cave with a mysterious map.",
+        "Grandparents often keep interesting stories from their grandchildren."
+      ],
+      "answer": "0",
+      "explanation": "이 글은 나리와 그녀의 오빠가 다락방에서 발견한 지도를 통해 할아버지의 숨겨진 가족 이야기를 알게 되는 과정을 다룹니다. 지도를 따라가며 할아버지의 흔적을 발견하고, 결국 할아버지로부터 그 이야기를 듣게 되는 것이 글의 핵심 내용입니다.",
+      "level": 4,
+      "targetTheta": 1,
+      "irt": {
+        "a": 1.2,
+        "b": 1,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "While cleaning the attic, Nari found a folded map inside a wooden box sealed with dusty tape. Red ink marked a trail from the old school to the river cave, with notes in a handwriting she almost recognized. Her brother insisted it was only a childhood game of their grandfather's, yet neither of them could ignore the careful detail. On Saturday they followed the trail with flashlights, water, and a charged phone in case the path disappeared. Near the cave entrance they discovered initials carved in stone—the same as their grandfather's—and a metal badge stamped 1958. The walk itself was short, but it connected them to a family story that had never been told at dinner. That night, when they finally asked, their grandfather smiled and began to speak as if he had waited decades for the question.",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02",
+        "preset-L4-P03",
+        "preset-L4-P04",
+        "preset-L4-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:15.791Z",
+      "updatedAt": "2026-08-06T00:24:15.791Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고2",
+      "batchId": "reading-preset-L4-1785975855774"
+    },
+    {
+      "id": "reading-L4-preset-msgrwty6-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What can be inferred about Hoon's work as a bridge volunteer?",
+      "options": [
+        "His efforts were essential for safety but often went unnoticed by the public.",
+        "He enjoyed the challenge of working alone in difficult weather conditions.",
+        "The village mayor publicly praised Hoon for his quick response.",
+        "He was hoping to receive a reward for his dedication to the community."
+      ],
+      "answer": "0",
+      "explanation": "훈은 폭풍우 속에서 아무도 모르게 다리의 난간을 수리했지만, 그의 노력은 즉시 눈에 띄게 칭찬받지 못했습니다. 시장의 조용한 편지와 '세심한 작업은 실패하기 전까지는 종종 보이지 않는다'는 훈의 생각은 그의 노력이 중요했음에도 불구하고 대중에게는 잘 알려지지 않았음을 시사합니다.",
+      "level": 4,
+      "targetTheta": 1,
+      "irt": {
+        "a": 1.2,
+        "b": 1,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "The village needed volunteers to watch the wooden bridge during storm season, when wind loosened boards without warning. Night travelers depended on that crossing, so a broken rail could turn an ordinary walk into a serious accident. Hoon signed up for the late shift even though he preferred mornings and disliked walking alone in heavy rain. Every hour he checked the boards with a lantern and recorded wind, water level, and any sound that seemed wrong. One night he found a broken rail and repaired it before dawn with spare rope and nails from the tool shed. Nobody celebrated loudly, but the mayor later sent a quiet letter thanking him for preventing harm no one saw. Hoon kept the letter in his toolkit as proof that careful work is often invisible until it fails.",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02",
+        "preset-L4-P03",
+        "preset-L4-P04",
+        "preset-L4-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:15.791Z",
+      "updatedAt": "2026-08-06T00:24:15.791Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고2",
+      "batchId": "reading-preset-L4-1785975855774"
+    },
+    {
+      "id": "reading-L4-preset-msgrwty6-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What action did the town take after the lighthouse light failed?",
+      "options": [
+        "They installed a backup generator to prevent future failures.",
+        "They hired more engineers to maintain the lighthouse daily.",
+        "They warned fishing boats to avoid the coast during foggy weather.",
+        "They built a new, more powerful lighthouse on a different hill."
+      ],
+      "answer": "0",
+      "explanation": "등대 불빛이 고장 난 후, 마을은 유사한 사고를 방지하기 위해 예비 발전기를 설치했습니다. 이는 본문에 \"The town later installed a backup generator so a single equipment failure would not hide the entire coastline\"에서 직접적으로 언급됩니다.",
+      "level": 4,
+      "targetTheta": 1,
+      "irt": {
+        "a": 1.2,
+        "b": 1,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Every evening the lighthouse on the hill flashed three times so fishing boats could judge their distance from the rocks. One winter the light failed during thick fog, and sailors lost the only reliable mark along that stretch of coast. Engineers climbed the hill with tools and spare glass while cold air burned their faces and slowed every step. After hours of work the beam returned, cutting a white path through the fog and giving the boats a direction again. They turned safely toward the harbor, and the hill grew quiet once more. The town later installed a backup generator so a single equipment failure would not hide the entire coastline. The engineers argued that maintenance is less dramatic than rescue, yet it prevents the emergencies that fill newspapers.",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02",
+        "preset-L4-P03",
+        "preset-L4-P04",
+        "preset-L4-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:15.791Z",
+      "updatedAt": "2026-08-06T00:24:15.791Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고2",
+      "batchId": "reading-preset-L4-1785975855774"
+    },
+    {
+      "id": "reading-L4-preset-msgrwty6-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What was the teacher's purpose in requiring a polite question for the other class in every notebook entry?",
+      "options": [
+        "To encourage respectful communication and collaboration between the rival classes.",
+        "To ensure that all data collected was thoroughly reviewed by both classes.",
+        "To make the students more critical of each other's research methods.",
+        "To test the students' ability to formulate scientific inquiries."
+      ],
+      "answer": "0",
+      "explanation": "교사는 처음에는 서로에게 날카로운 비판을 하던 두 경쟁 반 학생들이 정중한 질문을 통해 점차 협력적인 태도로 바뀌도록 유도했습니다. 이는 '정중한 질문'을 통해 상호 존중하는 소통을 장려하고, 경쟁을 더 나은 결과로 이끄는 협력으로 전환시키려는 목적이었습니다.",
+      "level": 4,
+      "targetTheta": 1,
+      "irt": {
+        "a": 1.2,
+        "b": 1,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "Two rival classes shared one science notebook for a year-long experiment on local birds and migration patterns. At first they filled the pages with sharp comments about missing dates, weak evidence, and each other's mistakes. Their teacher required every entry to include a measurement, a short explanation, and one polite question for the other class. Slowly the tone changed; students began answering with photographs, counts, and clearer hypotheses instead of insults. By spring the notebook held a continuous record that no single class could have produced alone. The final report listed both class names, and the rivalry felt smaller than the shared result. They learned that cooperation does not erase competition, but it can turn competition into better evidence.",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02",
+        "preset-L4-P03",
+        "preset-L4-P04",
+        "preset-L4-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:15.791Z",
+      "updatedAt": "2026-08-06T00:24:15.791Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고2",
+      "batchId": "reading-preset-L4-1785975855774"
+    },
+    {
+      "id": "reading-L4-preset-msgrwty6-4",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What was the hikers' attitude after their experience on the flooded mountain path?",
+      "options": [
+        "They adopted a more humble and cautious approach to mountain climbing.",
+        "They felt proud of their survival skills and shared their heroic story.",
+        "They were angry at the ranger for not providing clearer warnings beforehand.",
+        "They decided to avoid mountain climbing altogether due to the danger."
+      ],
+      "answer": "0",
+      "explanation": "등산객들은 구조된 후 자신들의 이야기를 '영웅담이 아닌 경고'로 실어 달라고 요청하고, '자신들의 일정보다 산의 일정을 존중하라'는 교훈을 얻었습니다. 이는 그들이 겸손하고 신중한 태도로 산행에 임하게 되었음을 보여줍니다.",
+      "level": 4,
+      "targetTheta": 1,
+      "irt": {
+        "a": 1.2,
+        "b": 1,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "attitude",
+      "passage": "After three days of rain, the mountain path became a stream that cut off the usual route to the parking lot. A group of hikers found themselves trapped between rising water and a steep wall of rock with no safe footholds. A ranger radioed for ropes and guided them along a higher ridge, insisting that speed mattered less than steady footing. No one was injured, yet everyone moved slowly and kept a hand on the person ahead when the wind rose. Later the ranger said, \"Weather changes faster than plans,\" and asked them to review their forecasts before the next climb. The hikers donated spare gear to the ranger station and allowed the local paper to print their story as a warning, not a hero tale. The experience left them with a simple rule: respect the mountain's schedule more than your own.",
+      "exemplarIds": [
+        "csat-7556b13392ff-0",
+        "csat-dbadaa916c0b-0",
+        "csat-42f91d4240d1-0",
+        "preset-L4-P01",
+        "preset-L4-P02",
+        "preset-L4-P03",
+        "preset-L4-P04",
+        "preset-L4-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:15.791Z",
+      "updatedAt": "2026-08-06T00:24:15.791Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고2",
+      "batchId": "reading-preset-L4-1785975855774"
+    },
+    {
+      "id": "reading-L5-preset-msgrx8bl-0",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main idea of the passage?",
+      "options": [
+        "A caravan successfully adapted to unexpected and severe desert challenges.",
+        "Mira was an exceptional leader who knew how to navigate any desert condition.",
+        "Desert sandstorms are becoming more frequent and unpredictable, making travel dangerous.",
+        "Old maps are no longer reliable for desert travel due to shifting dunes."
+      ],
+      "answer": "0",
+      "explanation": "이 글은 사막 횡단 중 예상치 못한 모래폭풍과 지도에 없는 길이라는 심각한 도전에 직면했지만, 결국 새로운 방법을 찾아 안전하게 목적지에 도착한 상인들의 이야기를 다루고 있습니다. 따라서 '예상치 못한 심각한 사막의 도전에 성공적으로 적응한 대상'이 가장 적절한 주제입니다.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.2,
+        "b": 1.7,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "Traders usually crossed the desert only in the cooler months, but this year the storms arrived early and without the usual warning signs. Sand rose like walls and erased footprints within minutes, forcing the caravan to abandon landmarks they had trusted for years. Mira ordered a stop at a stone outpost and sealed every tent with heavy cloth so children and animals could breathe more easily. Inside, people counted the hours by the sound of wind rather than by sunlight, and arguments grew quieter as water supplies became the main concern. When the sky finally cleared, the dunes had shifted enough that the old trail no longer matched any map in the group. Using the stars and a small brass compass, they located the next well after two extra days of careful travel. Every person and camel arrived safely, and Mira recorded the new route so later groups would not depend on last year's path alone.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02",
+        "preset-L5-P03",
+        "preset-L5-P04",
+        "preset-L5-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:34.420Z",
+      "updatedAt": "2026-08-06T00:24:34.420Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고3",
+      "batchId": "reading-preset-L5-1785975874402"
+    },
+    {
+      "id": "reading-L5-preset-msgrx8bl-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What can be inferred about the hidden garden room before Jack discovered it?",
+      "options": [
+        "It had been largely forgotten or neglected by the museum staff.",
+        "The museum curator intentionally kept the room a secret from visitors.",
+        "It was actively used by staff for daily plant record keeping and research.",
+        "All the plants and specimens inside had died due to lack of care."
+      ],
+      "answer": "0",
+      "explanation": "잭이 방을 발견하기 전, 문이 담쟁이덩굴로 반쯤 덮여 있고, 큐레이터가 열쇠나 재고 목록을 받은 적이 없다고 언급한 점에서 이 방이 박물관 직원들에게 거의 잊히거나 방치되었음을 추론할 수 있습니다.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.2,
+        "b": 1.7,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Behind the museum library, Jack noticed a door half covered by ivy and almost flush with the brick wall. A faded sign read, \"Staff only—plant records,\" yet the lock was loose and the air that escaped smelled of dry leaves rather than dust alone. Inside, shelves held pressed specimens, seed packets, and journals written by gardeners from a century earlier. One journal described a flower that bloomed only after rare night rain and warned that ordinary watering would never wake it. Jack reported the room to the curator, who admitted she had never been given a key or an inventory for that storage space. Together they found a living sample still surviving in a cracked pot by a narrow window, pale but not dead. The discovery became a quiet exhibit about patience and care, and visitors began leaving notes about plants their grandparents once grew. The room stayed open as a reminder that institutions sometimes forget the knowledge they were built to protect.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02",
+        "preset-L5-P03",
+        "preset-L5-P04",
+        "preset-L5-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:34.420Z",
+      "updatedAt": "2026-08-06T00:24:34.420Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고3",
+      "batchId": "reading-preset-L5-1785975874402"
+    },
+    {
+      "id": "reading-L5-preset-msgrx8bl-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What specific action did the students take to convince the town officials about the rising tide?",
+      "options": [
+        "They invited officials to observe the high tide at the pier and compare it to old marks.",
+        "They presented a detailed scientific report with complex graphs and statistical analysis.",
+        "They showed the officials old tourist photos that clearly depicted lower water levels.",
+        "They organized a public forum to explain the seasonal changes in ocean levels."
+      ],
+      "answer": "0",
+      "explanation": "학생들은 마을 지도자들에게 밀물 때 부두에 서서 몇 년 전 표시된 수위와 실제 수위를 비교해 보라고 요청했습니다. 이는 'The students invited officials to stand on the pier at high tide and compare the waterline with marks painted years earlier'라는 문장에서 명확히 언급되어 있습니다.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.2,
+        "b": 1.7,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "Coastal students measured the tide twice a day for a climate project that their town had approved mainly as a classroom exercise. They expected small seasonal changes, but the spring records showed a clear rise that matched neither memory nor older tourist photos. At first town leaders doubted the data because the numbers threatened expensive plans for new shops near the waterfront. The students invited officials to stand on the pier at high tide and compare the waterline with marks painted years earlier. Water covered steps that used to stay dry, and the conversation shifted from skepticism to practical risk. Within a month the town began designing higher barriers and better drains, using the student tables as a starting baseline. The project showed that careful observation can change public decisions when evidence is presented calmly and adults are asked to see it themselves.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02",
+        "preset-L5-P03",
+        "preset-L5-P04",
+        "preset-L5-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:34.420Z",
+      "updatedAt": "2026-08-06T00:24:34.420Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고3",
+      "batchId": "reading-preset-L5-1785975874402"
+    },
+    {
+      "id": "reading-L5-preset-msgrx8bl-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What was the most likely purpose of the master giving the apprentice a better set of tools?",
+      "options": [
+        "To acknowledge the apprentice's successful and accurate repair work.",
+        "To encourage the apprentice to work faster on future repairs.",
+        "To replace the old, worn-out tools the apprentice was currently using.",
+        "To signal that the apprentice was ready to open his own workshop."
+      ],
+      "answer": "0",
+      "explanation": "스승은 제자가 밤새도록 노력하여 멈췄던 시계를 정확하게 고치자 '칭찬은 거의 하지 않고 고개만 끄덕이며 더 좋은 도구 한 세트를 제자의 작업대에 놓아주었다'고 합니다. 이는 제자의 성공적인 수리 작업과 정확성을 인정하는 조용한 방식의 보상으로 해석될 수 있습니다.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.2,
+        "b": 1.7,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "In a narrow street workshop, an apprentice spent years learning to repair clocks that cities still treated as public symbols. His master insisted that every gear be cleaned as if the reliability of an entire square depended on one unnoticed screw. Days before a national ceremony, a rare tower clock stopped, and officials demanded a repair that would not look hurried from the street. The apprentice worked through the night, matching tiny parts by candlelight and testing each stage before the next. At dawn the clock struck the hour, clear and steady above the square, while few people knew how close it had come to silence. The master offered little praise—only a nod and a better set of tools placed on the apprentice's bench. Years later the apprentice told students that pride should stay quiet when accuracy is the real product of the work.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02",
+        "preset-L5-P03",
+        "preset-L5-P04",
+        "preset-L5-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:34.420Z",
+      "updatedAt": "2026-08-06T00:24:34.420Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고3",
+      "batchId": "reading-preset-L5-1785975874402"
+    },
+    {
+      "id": "reading-L5-preset-msgrx8bl-4",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "Which of the following best describes the engineers' attitude after the successful drone trial?",
+      "options": [
+        "Practical and focused on continuous improvement.",
+        "Overly confident in their current design and abilities.",
+        "Relieved that all major problems were finally solved.",
+        "Disappointed that the celebration was cut short."
+      ],
+      "answer": "0",
+      "explanation": "엔지니어들은 드론 시험 비행 성공 후 '짧은 축하'만 하고 '전체 실패 기록'을 작성했으며, '성공적인 단계와 함께 폐기된 설계'를 보고서에 기록하여 '나중에 다른 팀이 같은 값비싼 실수를 반복하지 않도록' 했습니다. 또한 '겨울 폭풍이 다음 미해결 문제로 남아 있었다'고 언급하며 지속적인 개선과 미래의 도전에 초점을 맞추는 실용적인 태도를 보여줍니다.",
+      "level": 5,
+      "targetTheta": 1.7,
+      "irt": {
+        "a": 1.2,
+        "b": 1.7,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "attitude",
+      "passage": "Engineers tested a lightweight drone designed to carry emergency medicine across a canyon that blocked ordinary road transport for hours. Early flights failed when sudden wind pushed the craft toward the cliffs and forced hard landings that damaged the payload case. The team redesigned the wings, added sensors, and trained pilots with simulations that repeated the worst local wind patterns. On the final trial the drone crossed in four minutes, landed softly, and delivered antibiotics to a clinic the same afternoon. Nurses confirmed the shipment, and the engineers allowed themselves only a short celebration before writing the full failure log. Their report listed successful steps beside abandoned designs so later teams would not repeat the same expensive mistakes. Winter storms remained the next unsolved problem, but the canyon no longer meant automatic delay for every medical delivery.",
+      "exemplarIds": [
+        "race-high-32567dcfa705-3",
+        "race-high-9ea328cef064-3",
+        "race-high-f11c3f52e501-0",
+        "preset-L5-P01",
+        "preset-L5-P02",
+        "preset-L5-P03",
+        "preset-L5-P04",
+        "preset-L5-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:34.420Z",
+      "updatedAt": "2026-08-06T00:24:34.420Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고3",
+      "batchId": "reading-preset-L5-1785975874402"
+    },
+    {
+      "id": "reading-L6-preset-msgrxs1b-0",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the main topic discussed in the passage?",
+      "options": [
+        "The ethical debate surrounding student tracking technology.",
+        "The financial benefits of accurate attendance records for schools.",
+        "The city's decision to delay a new educational program.",
+        "The importance of parental involvement in school policy."
+      ],
+      "answer": "0",
+      "explanation": "이 글은 학생들을 위한 디지털 명찰 도입을 둘러싼 찬반 논쟁, 특히 보안과 사생활 보호 사이의 윤리적 갈등을 주로 다루고 있습니다.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.2,
+        "b": 2.4,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "main_idea",
+      "passage": "A city proposed digital nametags for students, claiming the system would improve attendance records and make lost children easier to locate. Supporters argued that accurate counts would also unlock funding formulas that currently reward schools for incomplete data. Critics warned that constant tracking trains young people to treat surveillance as ordinary care rather than as a power that needs limits. Public meetings grew tense because both sides used the language of protection while disagreeing about what protection should cost. Parents asked who would store the data, how long it would remain online, and which agencies could request access without a warrant. The city delayed the plan and ordered an independent privacy review before any pilot could begin in classrooms. The debate left a sharper question open: how much freedom may be traded for security, and who has the authority to call that trade fair?",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02",
+        "preset-L6-P03",
+        "preset-L6-P04",
+        "preset-L6-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:59.965Z",
+      "updatedAt": "2026-08-06T00:24:59.965Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고3",
+      "batchId": "reading-preset-L6-1785975899951"
+    },
+    {
+      "id": "reading-L6-preset-msgrxs1b-1",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What can be inferred about the impact of \"framing\" from the passage?",
+      "options": [
+        "It can subtly manipulate individuals' perceptions and choices.",
+        "It primarily affects individuals who are highly educated.",
+        "Its influence is limited to medical and advertising contexts.",
+        "It is always used with the intention of deceiving the public."
+      ],
+      "answer": "0",
+      "explanation": "문단의 여러 예시와 결론(\"language does not only report a choice; it can manufacture the feeling that one option is already correct\")을 통해, 프레이밍이 사람들의 인식과 선택을 미묘하게 조작할 수 있음을 추론할 수 있습니다.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.3,
+        "b": 2.4,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "inference",
+      "passage": "Behavioral researchers showed that the wording of a choice can change decisions even when the underlying numbers remain identical. When a medical option was framed as \"90 percent survival,\" more patients accepted treatment than when the same option was framed as \"10 percent mortality.\" Advertisers and policymakers already exploit framing, sometimes to encourage healthy habits and sometimes to hide trade-offs. The study concluded that clear presentation is not merely a communication skill but an ethical responsibility toward people under pressure. Readers who notice framing can interrupt automatic agreement and demand a second description of the same facts. Teachers began pairing opposite frames in class so students could practice identifying bias before they meet it in real forms and ballots. The larger lesson was simple: language does not only report a choice; it can manufacture the feeling that one option is already correct.",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02",
+        "preset-L6-P03",
+        "preset-L6-P04",
+        "preset-L6-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:59.965Z",
+      "updatedAt": "2026-08-06T00:24:59.965Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고3",
+      "batchId": "reading-preset-L6-1785975899951"
+    },
+    {
+      "id": "reading-L6-preset-msgrxs1b-2",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "According to the passage, what was one immediate consequence of factories releasing waste into the Gray River?",
+      "options": [
+        "Fish populations in the river declined significantly.",
+        "Local residents immediately formed an environmental coalition.",
+        "The factories were forced to close down permanently.",
+        "The city declared the river a protected natural reserve."
+      ],
+      "answer": "0",
+      "explanation": "글에 따르면, 공장들이 Gray River에 폐기물을 방출한 결과로 \"fish populations collapsed\" (물고기 개체수가 붕괴)했다고 명시되어 있습니다.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.1,
+        "b": 2.4,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "detail",
+      "passage": "For decades factories released waste into the Gray River until fish populations collapsed and local fishing families lost seasonal income. A coalition of scientists, fishers, and students measured pollution at dozens of points and published results the factories could not easily dismiss. Their reports forced older plants to install filters and change waste schedules, though enforcement remained uneven and politically contested. Storms occasionally washed stored chemicals into the water, reminding residents that one clean season does not equal recovery. Still, within ten years several fish species returned to stretches once labeled dead, and schools treated the river as a long-term field site. The project demonstrated that environmental repair is slow, public, and incomplete by design: each generation must re-measure what the last generation claimed to fix. Progress, in this case, looked less like a victory parade and more like a shared habit of refusing to look away.",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02",
+        "preset-L6-P03",
+        "preset-L6-P04",
+        "preset-L6-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:59.965Z",
+      "updatedAt": "2026-08-06T00:24:59.965Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고3",
+      "batchId": "reading-preset-L6-1785975899951"
+    },
+    {
+      "id": "reading-L6-preset-msgrxs1b-3",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the primary purpose of the university archive described in the passage?",
+      "options": [
+        "To preserve diverse, personal immigrant experiences that official records often miss.",
+        "To train students in historical research methods and transcription skills.",
+        "To create a single, definitive national narrative of post-war immigration.",
+        "To challenge the reliability of all historical documents and evidence."
+      ],
+      "answer": "0",
+      "explanation": "이 대학 기록 보관소는 공식 기록에 담기지 않은 이민자들의 다양하고 개인적인 경험을 보존하고, 이를 통해 더 풍부하고 진실에 가까운 역사를 제공하는 것을 주된 목적으로 합니다.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.4,
+        "b": 2.4,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "purpose",
+      "passage": "A university archive collected oral histories from immigrants who arrived after the war, many of whom had never written their experiences for official files. Volunteers transcribed hours of recordings, preserving accents, jokes, interruptions, and the silences that followed difficult questions. Historians cautioned that memory is selective, yet the recordings still corrected documents that had reduced daily life to dates and border stamps. Students who listened often changed research topics after hearing details no policy paper had bothered to record. The archive refused to force the material into one neat national story; it presented many unfinished accounts side by side. Directors argued that this incompleteness is closer to historical truth than a single polished narrative designed for comfort. Families later donated photographs that linked private rooms to public events, tightening the connection between memory and evidence.",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02",
+        "preset-L6-P03",
+        "preset-L6-P04",
+        "preset-L6-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:59.965Z",
+      "updatedAt": "2026-08-06T00:24:59.965Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고3",
+      "batchId": "reading-preset-L6-1785975899951"
+    },
+    {
+      "id": "reading-L6-preset-msgrxs1b-4",
+      "domain": "reading",
+      "type": "multiple_choice",
+      "question": "What is the author's attitude towards the way cultural products become \"hits\" in connected markets?",
+      "options": [
+        "Skeptical of popularity as a sole indicator of a work's true merit.",
+        "Enthusiastic about the efficiency of market mechanisms in identifying quality.",
+        "Neutral, merely presenting facts about consumer behavior without judgment.",
+        "Optimistic that social proof ultimately helps the best works rise to the top."
+      ],
+      "answer": "0",
+      "explanation": "글은 인기가 작품의 진정한 가치를 측정하는 신뢰할 수 없는 척도이며, 시장이 항상 가장 가치 있는 작품에 보상하는 것은 아니라고 명시하며, 대중적 성공이 반드시 작품의 질을 의미하지 않는다는 회의적인 태도를 보입니다.",
+      "level": 6,
+      "targetTheta": 2.4,
+      "irt": {
+        "a": 1.5,
+        "b": 2.4,
+        "c": 0.25
+      },
+      "irtSource": "ai_prior_on_preset_passage",
+      "questionType": "attitude",
+      "passage": "Cultural products such as books and songs can become hits partly because people copy one another's attention rather than judge each work in isolation. In connected markets, a small early advantage in visibility may grow into a large gap in sales even when quality differences remain modest. Quality still matters, but so does the belief that \"everyone else is already reading this,\" which turns social proof into a ranking engine. As a result, predicting success becomes harder for creators, and many carefully made works stay little known despite strong craft. Understanding the pattern does not remove chance; it explains why popularity is an unreliable pure measure of merit. Critics who teach media literacy often ask students to separate craft, luck, and platform design before they treat a chart position as proof of excellence. The market amplifies signals; it does not automatically reward the work that most deserves to last.",
+      "exemplarIds": [
+        "race-high-76e8461d60c2-0",
+        "race-high-f5af718565df-1",
+        "race-high-f9bb18b0a062-0",
+        "preset-L6-P01",
+        "preset-L6-P02",
+        "preset-L6-P03",
+        "preset-L6-P04",
+        "preset-L6-P05"
+      ],
+      "validation": {
+        "ok": true,
+        "warnings": [],
+        "errors": []
+      },
+      "status": "approved",
+      "createdAt": "2026-08-06T00:24:59.965Z",
+      "updatedAt": "2026-08-06T00:24:59.965Z",
+      "createdBy": "refresh-reading-presets",
+      "grade": "고3",
+      "batchId": "reading-preset-L6-1785975899951"
     }
   ]
 }
