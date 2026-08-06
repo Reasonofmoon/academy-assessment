@@ -28,8 +28,9 @@ node scripts/import-irt-exemplars.mjs --src path/to/echobridge-web
 | 데이터 | `data/reading-passages/passages-by-level.json` (L1–L6 각 5지문) |
 | 로더 | `lib/irt/passages.ts` |
 | API | `GET /api/passages?level=2&full=1` |
-| UI | `LevelPassagePanel` — 레벨 선택 시 지문 체크 (1~3개) |
+| UI | `LevelPassagePanel` — 레벨 선택 시 지문 체크 (최대 5개, 1지문 1문항) |
 | 생성 | reading 도메인은 **고정 지문 원문** 위에서만 문항 생성 (`preset_passages`) |
+| CEFR 정렬 | L1 Pre-A1/A1 · L2 A2 · L3 A2–B1 · L4 B1 · L5 B1–B2 · L6 B2 → `manifest.levelAnchors` |
 
 흐름: 학년/레벨 선택 → 지문 프리셋 로드 → AI는 stem·선지만 생성 → 서버가 `passage` 필드를 원문으로 강제 부착.
 
@@ -63,7 +64,8 @@ P(θ) = c + (1-c) / (1 + exp(-1.7 · a · (θ - b)))
 
 | 규칙 | 구현 |
 |------|------|
-| 목표 θ | 학년 → GLEAS L1–L6 → `thetaCenter` |
+| 목표 θ | 학년 → GLEAS L1–L6 → `thetaCenter` (`data/irt-exemplars/manifest.json`) |
+| CEFR | **지문 팩 CEFR 사다리와 동일** (Pre-A1/A1 … B2). 예전 토플/C1 라벨 폐기 |
 | b ≈ θ | 프롬프트 강제 + `B_FAR_FROM_TARGET_THETA` 경고 |
 | a ∈ [0.5, 2.5+] | 검증 경고 |
 | c ≈ 0.25 (4지) | 검증 경고 |

@@ -38,12 +38,12 @@ interface LevelPassagePanelProps {
 }
 
 const LEVEL_LABELS: Record<number, string> = {
-  1: "L1 초등",
-  2: "L2 중학",
-  3: "L3 중3·고1",
-  4: "L4 고2–고3",
-  5: "L5 토플",
-  6: "L6 유학",
+  1: "L1 초등 · Pre-A1/A1",
+  2: "L2 중학 · A2",
+  3: "L3 중3·고1 · A2–B1",
+  4: "L4 고2–고3 · B1",
+  5: "L5 고급 · B1–B2",
+  6: "L6 고급 · B2",
 };
 
 const QTYPES = [

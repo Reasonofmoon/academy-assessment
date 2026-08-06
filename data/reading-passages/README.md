@@ -51,6 +51,10 @@ then map into the app’s GLEAS placement ladder.
 | B1–B2 | **L5** | 고급 |
 | B2 | **L6** | 고급+ |
 
+**IRT `levelAnchors` follow this ladder** (`data/irt-exemplars/manifest.json`).
+Generation uses `getLevelAnchor(level).cefr` / `thetaCenter` aligned to the passage pack
+(not the older echobridge TOEFL / C1–C2 labels).
+
 `source-catalog.json` fields:
 
 - `byCefr` — series names grouped by CEFR primary  

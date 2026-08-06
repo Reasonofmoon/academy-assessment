@@ -16,13 +16,14 @@ import * as path from "path";
 import { loadBank, type BankItem } from "@/lib/irt/bank-store";
 import { getLevelAnchor } from "@/lib/irt/bank";
 
+/** Level display names aligned to CEFR-first anchors (manifest.levelAnchors). */
 export const LEVEL_NAMES: Record<number, string> = {
-  1: "초등",
-  2: "중학교",
-  3: "고등학교",
-  4: "수능어휘",
-  5: "토플수준",
-  6: "유학수준",
+  1: "초등 Pre-A1/A1",
+  2: "중학 A2",
+  3: "중3·고1 A2-B1",
+  4: "고2–고3 B1",
+  5: "고급 B1-B2",
+  6: "고급 B2",
 };
 
 const OPTION_LETTERS = ["A", "B", "C", "D", "E", "F"] as const;

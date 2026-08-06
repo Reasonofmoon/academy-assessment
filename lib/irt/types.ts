@@ -114,14 +114,14 @@ export const GRADE_TO_LEVEL: Record<(typeof GRADES)[number], IrtLevel> = {
   고3: 4,
 };
 
-/** Short Korean label for UI (grade-aligned level names). */
+/** Short Korean label for UI (grade-aligned + CEFR from levelAnchors). */
 export const LEVEL_GRADE_HINT: Record<IrtLevel, string> = {
-  1: "초등 (초1–초6)",
-  2: "중학 (중1–중2)",
-  3: "중3·고1",
-  4: "고2–고3",
-  5: "고급(토플)",
-  6: "고급(유학)",
+  1: "초등 · Pre-A1/A1",
+  2: "중1–중2 · A2",
+  3: "중3·고1 · A2–B1",
+  4: "고2–고3 · B1",
+  5: "고급 · B1–B2",
+  6: "고급 · B2",
 };
 
 /** Dimension mix targets (aligned with echobridge DEFAULT_CAT_CONFIG). */

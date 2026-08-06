@@ -8,54 +8,67 @@
   "levelAnchors": {
     "1": {
       "name": "초등",
-      "thetaCenter": -2.25,
-      "cefr": "A1-A2",
+      "thetaCenter": -2.2,
+      "cefr": "Pre-A1/A1",
       "grades": [
+        "초1",
+        "초2",
         "초3",
         "초4",
         "초5",
         "초6"
-      ]
+      ],
+      "refSeries": ["Little Critter", "Fly Guy"]
     },
     "2": {
-      "name": "중학교",
-      "thetaCenter": -0.9,
-      "cefr": "A2-B1",
+      "name": "중학",
+      "thetaCenter": -0.95,
+      "cefr": "A2",
       "grades": [
         "중1",
         "중2"
-      ]
+      ],
+      "refSeries": ["Dragon Masters", "Horrid Henry", "Magic Treehouse Merlin Mission"]
     },
     "3": {
-      "name": "고등학교",
+      "name": "중3·고1",
       "thetaCenter": 0.25,
-      "cefr": "B1-B2",
+      "cefr": "A2-B1",
       "grades": [
         "중3",
         "고1"
-      ]
+      ],
+      "refSeries": ["Nate the Great", "My Weird School"]
     },
     "4": {
-      "name": "수능어휘",
-      "thetaCenter": 1.15,
-      "cefr": "B1-B2",
+      "name": "고2–고3",
+      "thetaCenter": 1.0,
+      "cefr": "B1",
       "grades": [
         "고2",
         "고3"
-      ]
+      ],
+      "refSeries": []
     },
     "5": {
-      "name": "토플수준",
-      "thetaCenter": 1.9,
-      "cefr": "B2-C1",
-      "grades": []
+      "name": "고급 B1–B2",
+      "thetaCenter": 1.7,
+      "cefr": "B1-B2",
+      "grades": [],
+      "refSeries": []
     },
     "6": {
-      "name": "유학수준",
-      "thetaCenter": 2.65,
-      "cefr": "C1-C2",
-      "grades": []
+      "name": "고급 B2",
+      "thetaCenter": 2.4,
+      "cefr": "B2",
+      "grades": [],
+      "refSeries": []
     }
+  },
+  "levelAnchorPolicy": {
+    "organizeBy": "CEFR first (aligned to reading-passages pack)",
+    "passagePackVersion": "2.3.0",
+    "note": "GLEAS L1–L6 CEFR/theta track data/reading-passages (reader-calibrated). Not the older echobridge TOEFL/C1 ladder."
   },
   "vocabStats": {
     "1": {

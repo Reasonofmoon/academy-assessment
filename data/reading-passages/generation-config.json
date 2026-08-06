@@ -24,7 +24,7 @@
     },
     "2": {
       "itemsPerReading": 5,
-      "passagesPerSession": 2,
+      "passagesPerSession": 5,
       "questionTypeSlots": [
         "main_idea",
         "detail",
@@ -35,7 +35,7 @@
     },
     "3": {
       "itemsPerReading": 5,
-      "passagesPerSession": 2,
+      "passagesPerSession": 5,
       "questionTypeSlots": [
         "main_idea",
         "detail",
@@ -46,7 +46,7 @@
     },
     "4": {
       "itemsPerReading": 5,
-      "passagesPerSession": 2,
+      "passagesPerSession": 5,
       "questionTypeSlots": [
         "main_idea",
         "inference",
@@ -57,7 +57,7 @@
     },
     "5": {
       "itemsPerReading": 5,
-      "passagesPerSession": 2,
+      "passagesPerSession": 5,
       "questionTypeSlots": [
         "main_idea",
         "inference",
@@ -68,7 +68,7 @@
     },
     "6": {
       "itemsPerReading": 5,
-      "passagesPerSession": 2,
+      "passagesPerSession": 5,
       "questionTypeSlots": [
         "main_idea",
         "inference",
