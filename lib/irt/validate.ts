@@ -27,16 +27,18 @@ export function validateIrtItem(item: IrtGeneratedItem): ValidationResult {
   }
 
   if (item.type === "multiple_choice") {
-    if (!item.options || item.options.length !== 4) {
-      errors.push("MCQ_NEEDS_4_OPTIONS");
+    const n = item.options?.length ?? 0;
+    // Placement tests use 4-choice by default; allow 5-choice (≈c=0.20).
+    if (n < 4 || n > 5) {
+      errors.push("MCQ_NEEDS_4_OR_5_OPTIONS");
     } else {
       const trimmed = item.options.map((o) => o.trim());
       if (trimmed.some((o) => !o)) errors.push("EMPTY_OPTION");
-      if (new Set(trimmed.map((o) => o.toLowerCase())).size < 4) {
+      if (new Set(trimmed.map((o) => o.toLowerCase())).size < n) {
         errors.push("DUPLICATE_OPTIONS");
       }
       const idx = Number(item.answer);
-      if (!Number.isInteger(idx) || idx < 0 || idx > 3) {
+      if (!Number.isInteger(idx) || idx < 0 || idx >= n) {
         errors.push("INVALID_ANSWER_INDEX");
       }
     }
@@ -48,8 +50,13 @@ export function validateIrtItem(item: IrtGeneratedItem): ValidationResult {
   if (a < 0.5) warnings.push("LOW_DISCRIMINATION_A");
   if (a > 2.8) warnings.push("VERY_HIGH_DISCRIMINATION_A");
   if (b < -3.2 || b > 3.2) warnings.push("B_OUT_OF_TYPICAL_RANGE");
-  if (item.type === "multiple_choice" && (c < 0.15 || c > 0.35)) {
-    warnings.push("C_UNUSUAL_FOR_MCQ");
+  if (item.type === "multiple_choice") {
+    const nOpt = item.options?.length ?? 4;
+    const cLo = nOpt >= 5 ? 0.12 : 0.15;
+    const cHi = nOpt >= 5 ? 0.28 : 0.35;
+    if (c < cLo || c > cHi) {
+      warnings.push("C_UNUSUAL_FOR_MCQ");
+    }
   }
 
   if (item.domain === "reading" && !item.passage?.trim()) {

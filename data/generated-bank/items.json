@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-08-06T00:24:59.966Z",
+  "updatedAt": "2026-08-06T03:33:31.242Z",
   "items": [
     {
       "id": "seed-export-vocab-1",
@@ -68,12 +68,12 @@
       "type": "multiple_choice",
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 도착하다, 도달하다",
       "options": [
-        "Arrive",
         "Depart",
+        "Arrive",
         "Follow",
         "Forget"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "'arrive'는 어떤 장소나 목적지에 '도착하다'는 의미입니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -100,10 +100,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T06:41:19.688Z",
-      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785912079673-approved"
+      "batchId": "seed-fill-1785912079673-approved",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "vocabulary-2",
@@ -111,12 +112,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 'board'의 뜻으로 가장 알맞은 것은?\nLet's play a board game.",
       "options": [
-        "판, 널빤지",
-        "탑승하다",
         "식사",
+        "탑승하다",
+        "판, 널빤지",
         "게시판"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "문맥에서 'board game'은 '보드 게임'을 의미하며, 여기서 'board'는 '판'이나 '널빤지'를 뜻합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -143,10 +144,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T06:41:19.688Z",
-      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785912079673-approved"
+      "batchId": "seed-fill-1785912079673-approved",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "vocabulary-3",
@@ -200,12 +202,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 빈칸에 들어갈 가장 알맞은 단어는?\nMy hobby is to _______ stamps from different countries.",
       "options": [
-        "collect",
+        "spread",
         "keep",
         "find",
-        "spread"
+        "collect"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "문맥상 '다른 나라의 우표를 모으는 것'이 취미라는 내용이므로, '모으다'라는 의미의 'collect'가 가장 적절합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -232,10 +234,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T06:41:19.688Z",
-      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785912079673-approved"
+      "batchId": "seed-fill-1785912079673-approved",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "grammar-1",
@@ -244,11 +247,11 @@
       "question": "다음 문장에서 빈칸에 들어갈 가장 적절한 단어를 고르시오.\n\"My brother often _____ video games after school.\"",
       "options": [
         "play",
-        "plays",
+        "playing",
         "played",
-        "playing"
+        "plays"
       ],
-      "answer": "1",
+      "answer": "3",
       "explanation": "주어가 3인칭 단수 (My brother)이고, 'often'이 현재 습관을 나타내므로 현재 시제 동사에 -s를 붙인 'plays'가 적절합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -271,10 +274,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T06:41:19.688Z",
-      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785912079673-approved"
+      "batchId": "seed-fill-1785912079673-approved",
+      "reviewNote": "answer-key rebalanced 1→3 (4-option)"
     },
     {
       "id": "grammar-2",
@@ -323,10 +327,10 @@
       "options": [
         "at - in",
         "on - at",
-        "at - on",
-        "in - on"
+        "in - on",
+        "at - on"
       ],
-      "answer": "2",
+      "answer": "3",
       "explanation": "특정 시각 앞에는 'at'을 사용하고, 요일 앞에는 'on'을 사용합니다. 따라서 'at 7 p.m. on Friday'가 올바른 표현입니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -349,10 +353,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T06:41:19.688Z",
-      "updatedAt": "2026-08-05T06:41:19.688Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785912079673-approved"
+      "batchId": "seed-fill-1785912079673-approved",
+      "reviewNote": "answer-key rebalanced 2→3 (4-option)"
     },
     {
       "id": "grammar-4",
@@ -579,12 +584,12 @@
       "type": "multiple_choice",
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 여행, 여정",
       "options": [
-        "Journey",
         "Holiday",
+        "Journey",
         "Vacation",
         "Trip"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "'Journey'는 길고 중요한 여행이나 여정을 의미하는 단어입니다. 'Trip'은 짧은 여행을, 'Holiday'나 'Vacation'은 휴가 기간을 의미할 수 있습니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -611,10 +616,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "vocabulary-2-2",
@@ -622,12 +628,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 serve의 뜻으로 가장 알맞은 것은?\nThe restaurant will serve delicious food.",
       "options": [
-        "제공하다",
-        "봉사하다",
         "섬기다",
+        "봉사하다",
+        "제공하다",
         "근무하다"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "문맥상 'serve'는 레스토랑에서 음식을 '제공하다'라는 의미로 사용되었습니다. 다른 보기들은 'serve'의 다른 의미들입니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -654,10 +660,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "vocabulary-4-2",
@@ -665,12 +672,12 @@
       "type": "multiple_choice",
       "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nThe dog _____ appeared from behind the tree.",
       "options": [
-        "suddenly",
-        "slowly",
         "quietly",
+        "slowly",
+        "suddenly",
         "happily"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "개가 나무 뒤에서 '갑자기' 나타났다는 문맥이 가장 자연스럽습니다. 'suddenly'는 '갑자기'라는 뜻의 부사입니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -697,10 +704,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "vocabulary-5",
@@ -708,12 +716,12 @@
       "type": "multiple_choice",
       "question": "다음 중 practice의 올바른 쓰임을 고르시오.",
       "options": [
-        "I need to practice my English every day.",
         "She practice to play the piano.",
+        "I need to practice my English every day.",
         "He has a good practice to wake up early.",
         "We saw a practice of birds flying south."
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "'practice'는 '연습하다'라는 동사로, 동명사나 명사 형태로 쓰일 수 있습니다. 첫 번째 문장이 '영어를 매일 연습해야 한다'는 의미로 가장 자연스럽게 사용되었습니다. 두 번째 문장은 동사 형태가 틀렸고, 세 번째와 네 번째 문장은 문맥상 어색합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -740,10 +748,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "grammar-1-2",
@@ -752,11 +761,11 @@
       "question": "현재진행형이 자연스러운 문장을 고르시오.\nHe ____ a book now.",
       "options": [
         "reads",
-        "is reading",
         "read",
+        "is reading",
         "will read"
       ],
-      "answer": "1",
+      "answer": "2",
       "explanation": "'now'는 지금 진행 중인 동작을 나타내므로 현재진행형 'is reading'이 가장 적절합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -779,10 +788,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewNote": "answer-key rebalanced 1→2 (4-option)"
     },
     {
       "id": "grammar-2-2",
@@ -791,11 +801,11 @@
       "question": "빈칸에 들어갈 알맞은 단어를 고르시오.\nHow ____ water do you drink every day?",
       "options": [
         "many",
-        "much",
         "a few",
+        "much",
         "some"
       ],
-      "answer": "1",
+      "answer": "2",
       "explanation": "'water'는 셀 수 없는 명사이므로 양을 물을 때는 'much'를 사용합니다. 'many'는 셀 수 있는 명사에 사용합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -818,10 +828,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewNote": "answer-key rebalanced 1→2 (4-option)"
     },
     {
       "id": "grammar-3-2",
@@ -873,10 +884,10 @@
       "options": [
         "in",
         "on",
-        "at",
-        "for"
+        "for",
+        "at"
       ],
-      "answer": "2",
+      "answer": "3",
       "explanation": "정확한 시각 앞에는 전치사 'at'을 사용합니다. 'in'은 월, 계절, 연도, 오전/오후 등에, 'on'은 요일이나 특정 날짜에 사용합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -899,10 +910,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:18:56.992Z",
-      "updatedAt": "2026-08-05T08:18:56.992Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "중1",
-      "batchId": "seed-fill-1785917936979-approved"
+      "batchId": "seed-fill-1785917936979-approved",
+      "reviewNote": "answer-key rebalanced 2→3 (4-option)"
     },
     {
       "id": "grammar-5",
@@ -1260,12 +1272,12 @@
       "type": "multiple_choice",
       "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nWe decided to _____ the old castle.",
       "options": [
-        "ignore",
         "explore",
+        "ignore",
         "destroy",
         "prevent"
       ],
-      "answer": "1",
+      "answer": "0",
       "explanation": "'우리는 오래된 성을 _____하기로 결정했다'는 문맥에서, '탐험하다'라는 뜻의 'explore'가 가장 자연스럽게 빈칸에 들어갈 수 있습니다.",
       "level": 3,
       "targetTheta": 0.25,
@@ -1292,10 +1304,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
     },
     {
       "id": "grammar-1-3",
@@ -1303,12 +1316,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 어법상 올바른 동사 형태를 고르시오.\nOne of the students ___ excellent at math.",
       "options": [
-        "is",
-        "are",
         "be",
+        "are",
+        "is",
         "being"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "주어는 'One'이므로 단수 동사 'is'가 올바릅니다. 'students'는 전치사구의 목적어입니다.",
       "level": 3,
       "targetTheta": 0.25,
@@ -1331,10 +1344,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "grammar-2-3",
@@ -1381,12 +1395,12 @@
       "type": "multiple_choice",
       "question": "다음 문장의 빈칸에 들어갈 가장 적절한 동사 형태를 고르시오.\nIf I ___ more time, I would travel around the world.",
       "options": [
-        "had",
         "have",
+        "had",
         "will have",
         "would have"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "'would travel'을 통해 가정법 과거임을 알 수 있습니다. 따라서 if절에는 과거 시제 동사 'had'가 와야 합니다.",
       "level": 3,
       "targetTheta": 0.25,
@@ -1409,10 +1423,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "grammar-4-3",
@@ -1420,12 +1435,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 어법상 올바른 수동태 동사 형태를 고르시오.\nThe new bridge ___ next year.",
       "options": [
-        "will be built",
+        "built",
         "is built",
         "builds",
-        "built"
+        "will be built"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "'next year'는 미래 시점을 나타내고, 다리는 '지어지는' 것이므로 미래 수동태 'will be built'가 적절합니다.",
       "level": 3,
       "targetTheta": 0.25,
@@ -1448,10 +1463,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T08:19:43.321Z",
-      "updatedAt": "2026-08-05T08:19:43.321Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "seed-generated-bank",
       "grade": "고1",
-      "batchId": "seed-fill-1785917983307-approved"
+      "batchId": "seed-fill-1785917983307-approved",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "reading-1-3",
@@ -1639,12 +1655,12 @@
       "type": "multiple_choice",
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 제안하다, 제의하다, 암시하다",
       "options": [
-        "Suggest",
+        "Imagine",
         "Follow",
         "Decide",
-        "Imagine"
+        "Suggest"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "'Suggest'는 '제안하다, 제의하다' 또는 '암시하다'라는 뜻을 가지고 있습니다. 나머지 단어들은 주어진 한국어 뜻과 관련이 없습니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -1671,10 +1687,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:15:27.543Z",
-      "updatedAt": "2026-08-05T09:15:27.543Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-test-replace-v2",
       "grade": "중1",
-      "batchId": "replace-v2-1785921327527"
+      "batchId": "replace-v2-1785921327527",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "vocabulary-L2-extra-msfvg41p-0",
@@ -1682,12 +1699,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 fine의 뜻으로 가장 알맞은 것은?\nHe had to pay a large fine for parking illegally.",
       "options": [
-        "벌금",
         "괜찮은",
+        "벌금",
         "미세한",
         "좋은"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "문맥상 'illegally(불법적으로)' 주차한 것에 대해 'pay(지불하다)'하는 것은 '벌금'이 가장 적절합니다. 'fine'은 '좋은, 괜찮은, 미세한' 등의 다른 뜻도 있지만 여기서는 해당되지 않습니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -1714,13 +1731,13 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:15:28.007Z",
-      "updatedAt": "2026-08-05T09:17:39.445Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-test-replace-v2",
       "grade": "중1",
       "batchId": "replace-v2-extra-1785921327997",
       "reviewedAt": "2026-08-05T09:17:39.445Z",
       "reviewedBy": "teacher",
-      "reviewNote": "Stage V2 extras approved by operator"
+      "reviewNote": "Stage V2 extras approved by operator; answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "vocabulary-L2-extra-msfvg41p-1",
@@ -1728,12 +1745,12 @@
       "type": "multiple_choice",
       "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nWe must _____ our environment from pollution.",
       "options": [
-        "protect",
-        "destroy",
         "ignore",
+        "destroy",
+        "protect",
         "build"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "문맥상 'pollution(오염)'으로부터 'our environment(우리의 환경)'을 '지켜야 한다'는 의미가 가장 자연스럽습니다. 따라서 'protect(보호하다)'가 정답입니다. 'destroy(파괴하다)', 'ignore(무시하다)', 'build(짓다)'는 문맥에 맞지 않습니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -1760,13 +1777,13 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:15:28.007Z",
-      "updatedAt": "2026-08-05T09:17:39.445Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-test-replace-v2",
       "grade": "중1",
       "batchId": "replace-v2-extra-1785921327997",
       "reviewedAt": "2026-08-05T09:17:39.445Z",
       "reviewedBy": "teacher",
-      "reviewNote": "Stage V2 extras approved by operator"
+      "reviewNote": "Stage V2 extras approved by operator; answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "vocabulary-L1-fill-msfwxxgr-0",
@@ -1775,11 +1792,11 @@
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 행복한",
       "options": [
         "Sad",
-        "Happy",
         "Big",
+        "Happy",
         "Drink"
       ],
-      "answer": "1",
+      "answer": "2",
       "explanation": "'행복한'은 영어로 'Happy'입니다. 'Sad'는 슬픈, 'Big'은 큰, 'Drink'는 마시다라는 뜻입니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -1806,10 +1823,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:57:18.914Z",
-      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초5",
-      "batchId": "level-fill-L1-1785923838891"
+      "batchId": "level-fill-L1-1785923838891",
+      "reviewNote": "answer-key rebalanced 1→2 (4-option)"
     },
     {
       "id": "vocabulary-L1-fill-msfwxxgr-1",
@@ -1817,12 +1835,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 run의 뜻으로 가장 알맞은 것은?\nThe boy can run very fast.",
       "options": [
-        "달리다",
+        "앉다",
         "읽다",
         "자다",
-        "앉다"
+        "달리다"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "문맥상 'run'은 '달리다'라는 뜻으로, 소년이 매우 빠르게 달릴 수 있다는 의미입니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -1849,10 +1867,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:57:18.914Z",
-      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초5",
-      "batchId": "level-fill-L1-1785923838891"
+      "batchId": "level-fill-L1-1785923838891",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "vocabulary-L1-fill-msfwxxgr-2",
@@ -1903,12 +1922,12 @@
       "type": "multiple_choice",
       "question": "다음 문장의 빈칸에 알맞은 단어를 고르시오.\nShe ____ a student.",
       "options": [
-        "am",
         "is",
+        "am",
         "are",
         "be"
       ],
-      "answer": "1",
+      "answer": "0",
       "explanation": "주어가 3인칭 단수 'She'이므로 동사 'is'가 와야 합니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -1931,10 +1950,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:57:18.914Z",
-      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초5",
-      "batchId": "level-fill-L1-1785923838891"
+      "batchId": "level-fill-L1-1785923838891",
+      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
     },
     {
       "id": "grammar-L1-fill-msfwxxgr-4",
@@ -1943,11 +1963,11 @@
       "question": "다음 문장의 빈칸에 알맞은 단어를 고르시오.\nHe often ____ books.",
       "options": [
         "read",
-        "reads",
         "reading",
+        "reads",
         "to read"
       ],
-      "answer": "1",
+      "answer": "2",
       "explanation": "주어가 3인칭 단수 'He'이고 현재 시제이므로 동사에 '-s'를 붙여 'reads'가 되어야 합니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -1970,10 +1990,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:57:18.914Z",
-      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초5",
-      "batchId": "level-fill-L1-1785923838891"
+      "batchId": "level-fill-L1-1785923838891",
+      "reviewNote": "answer-key rebalanced 1→2 (4-option)"
     },
     {
       "id": "grammar-L1-fill-msfwxxgr-5",
@@ -1982,11 +2003,11 @@
       "question": "다음 문장의 빈칸에 알맞은 단어를 고르시오.\nThe book is ____ the table.",
       "options": [
         "in",
-        "on",
+        "to",
         "at",
-        "to"
+        "on"
       ],
-      "answer": "1",
+      "answer": "3",
       "explanation": "책이 탁자 '위에' 있다는 의미이므로 전치사 'on'이 가장 적절합니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -2009,10 +2030,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:57:18.914Z",
-      "updatedAt": "2026-08-05T09:57:18.914Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초5",
-      "batchId": "level-fill-L1-1785923838891"
+      "batchId": "level-fill-L1-1785923838891",
+      "reviewNote": "answer-key rebalanced 1→3 (4-option)"
     },
     {
       "id": "reading-L1-fill-msfwxxgr-6",
@@ -2198,12 +2220,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 foster의 뜻으로 가장 알맞은 것은?\nThe school aims to foster a love of learning in its students.",
       "options": [
-        "육성하다",
-        "비판하다",
         "억제하다",
+        "비판하다",
+        "육성하다",
         "방해하다"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "문맥상 foster는 '육성하다, 촉진하다'의 의미로, 학교가 학생들이 학습에 대한 사랑을 키우도록 돕는다는 뜻입니다.",
       "level": 4,
       "targetTheta": 1.15,
@@ -2230,10 +2252,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:58:14.610Z",
-      "updatedAt": "2026-08-05T09:58:14.610Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785923894589"
+      "batchId": "level-fill-L4-1785923894589",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "grammar-L4-fill-msfwz4fx-2",
@@ -2538,10 +2561,10 @@
       "options": [
         "경제적 승인",
         "국제적 협력",
-        "경제적 제재",
-        "외교적 지원"
+        "외교적 지원",
+        "경제적 제재"
       ],
-      "answer": "2",
+      "answer": "3",
       "explanation": "문맥상 'sanctions'는 '불량 국가에 부과된 경제적 제재'를 의미합니다. '승인'이라는 다른 뜻도 있지만, 이 문장에서는 적합하지 않습니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -2568,10 +2591,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785923938722"
+      "batchId": "level-fill-L5-1785923938722",
+      "reviewNote": "answer-key rebalanced 2→3 (4-option)"
     },
     {
       "id": "grammar-L5-fill-msfx02ht-2",
@@ -2579,12 +2603,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\nShe insisted on _________ to the concert.",
       "options": [
-        "going",
         "go",
+        "going",
         "to go",
         "gone"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "'insist on'은 'on'이라는 전치사를 포함하므로, 뒤에는 동명사 형태가 와야 합니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -2607,10 +2631,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785923938722"
+      "batchId": "level-fill-L5-1785923938722",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "grammar-L5-fill-msfx02ht-3",
@@ -2657,12 +2682,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\nIf I _________ you, I would take that opportunity.",
       "options": [
-        "was",
         "were",
+        "was",
         "am",
         "had been"
       ],
-      "answer": "1",
+      "answer": "0",
       "explanation": "가정법 과거에서 be동사는 인칭에 관계없이 'were'를 사용하며, 주절의 'would take'와 호응합니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -2685,10 +2710,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:58:58.739Z",
-      "updatedAt": "2026-08-05T09:58:58.739Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785923938722"
+      "batchId": "level-fill-L5-1785923938722",
+      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
     },
     {
       "id": "reading-L5-fill-msfx02ht-5",
@@ -2831,12 +2857,12 @@
       "type": "multiple_choice",
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 어디에나 있는, 아주 흔한",
       "options": [
-        "Ubiquitous",
-        "Ephemeral",
         "Scarcity",
+        "Ephemeral",
+        "Ubiquitous",
         "Pervasive"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "Ubiquitous는 '어디에나 있는, 아주 흔한'이라는 뜻으로, 주어진 한글 뜻과 일치합니다. Ephemeral은 '수명이 짧은, 덧없는', Scarcity는 '부족, 희귀', Pervasive는 '만연하는, 스며드는' 이라는 뜻으로 문맥에 맞지 않습니다.",
       "level": 6,
       "targetTheta": 2.65,
@@ -2863,10 +2889,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785923982600"
+      "batchId": "level-fill-L6-1785923982600",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "vocabulary-L6-fill-msfx10co-1",
@@ -2875,11 +2902,11 @@
       "question": "다음 문장에서 mitigate의 뜻으로 가장 알맞은 것은?\nThe new policies aim to mitigate the effects of climate change.",
       "options": [
         "악화시키다",
-        "완화하다, 경감하다",
         "증폭시키다",
+        "완화하다, 경감하다",
         "야기하다"
       ],
-      "answer": "1",
+      "answer": "2",
       "explanation": "Mitigate는 '완화시키다, 경감하다'라는 뜻으로, 문맥상 '새로운 정책들은 기후 변화의 영향을 완화하는 것을 목표로 한다'가 가장 자연스럽습니다. 악화시키다, 증폭시키다, 야기하다는 문맥에 맞지 않습니다.",
       "level": 6,
       "targetTheta": 2.65,
@@ -2906,10 +2933,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785923982600"
+      "batchId": "level-fill-L6-1785923982600",
+      "reviewNote": "answer-key rebalanced 1→2 (4-option)"
     },
     {
       "id": "grammar-L6-fill-msfx10co-2",
@@ -2917,12 +2945,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 어법상 올바른 것을 고르시오.\nNot until the last minute ___ the importance of the deadline.",
       "options": [
-        "did he realize",
-        "he realized",
         "he did realize",
+        "he realized",
+        "did he realize",
         "realized he"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "부정어구(Not until the last minute)가 문두로 오면 주어와 동사가 도치됩니다. 과거 시제이므로 'did + 주어 + 동사원형' 형태가 올바릅니다.",
       "level": 6,
       "targetTheta": 2.65,
@@ -2945,10 +2973,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785923982600"
+      "batchId": "level-fill-L6-1785923982600",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "grammar-L6-fill-msfx10co-3",
@@ -2958,10 +2987,10 @@
       "options": [
         "which made",
         "making",
-        "made",
-        "to make"
+        "to make",
+        "made"
       ],
-      "answer": "2",
+      "answer": "3",
       "explanation": "주어 'the decision'은 위원회에 의해 '만들어지는' 것이므로 수동의 의미를 가지는 과거분사 'made'가 와야 합니다. 이는 관계대명사절 'which was made'가 축약된 형태입니다.",
       "level": 6,
       "targetTheta": 2.65,
@@ -2984,10 +3013,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785923982600"
+      "batchId": "level-fill-L6-1785923982600",
+      "reviewNote": "answer-key rebalanced 2→3 (4-option)"
     },
     {
       "id": "grammar-L6-fill-msfx10co-4",
@@ -2995,12 +3025,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 어법상 올바른 것을 고르시오.\nHad I known about the party, ___ .",
       "options": [
-        "I would have attended",
-        "I would attend",
         "I will attend",
+        "I would attend",
+        "I would have attended",
         "I had attended"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "가정법 과거완료 문장에서 If가 생략되면 주어와 동사가 도치되어 'Had + 주어 + 과거분사' 형태가 됩니다. 주절은 '주어 + would have + 과거분사' 형태로 과거 사실에 대한 반대를 나타냅니다.",
       "level": 6,
       "targetTheta": 2.65,
@@ -3023,10 +3053,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T09:59:42.616Z",
-      "updatedAt": "2026-08-05T09:59:42.616Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785923982600"
+      "batchId": "level-fill-L6-1785923982600",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "reading-L6-fill-msfx10co-5",
@@ -3169,12 +3200,12 @@
       "type": "multiple_choice",
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 성실한, 부지런한",
       "options": [
-        "Diligent",
+        "Arrogant",
         "Lazy",
         "Careless",
-        "Arrogant"
+        "Diligent"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "Diligent는 '성실한, 부지런한'이라는 뜻의 형용사입니다. Lazy는 '게으른', Careless는 '부주의한', Arrogant는 '오만한'이라는 뜻입니다.",
       "level": 4,
       "targetTheta": 1.15,
@@ -3199,10 +3230,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:00:12.537Z",
-      "updatedAt": "2026-08-05T10:00:12.537Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785924012520"
+      "batchId": "level-fill-L4-1785924012520",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "vocabulary-L4-fill-msfx1nfr-1",
@@ -3251,12 +3283,12 @@
       "type": "multiple_choice",
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 덧없는, 단명하는",
       "options": [
-        "ephemeral",
         "eternal",
+        "ephemeral",
         "elaborate",
         "eloquent"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "Ephemeral은 '덧없는, 단명하는'이라는 뜻으로, 주어진 한글 뜻과 일치합니다. 다른 단어들은 유사한 발음이나 반대 의미를 가진 오답입니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -3281,10 +3313,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:00:19.576Z",
-      "updatedAt": "2026-08-05T10:00:19.576Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785924019557"
+      "batchId": "level-fill-L5-1785924019557",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "vocabulary-L5-fill-msfx1sv9-1",
@@ -3292,12 +3325,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 meticulous의 뜻으로 가장 알맞은 것은?\nThe architect was known for his meticulous attention to detail in every project.",
       "options": [
-        "세심한, 꼼꼼한",
         "대담한, 용감한",
+        "세심한, 꼼꼼한",
         "무관심한, 냉담한",
         "충동적인, 즉흥적인"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "문맥상 건축가가 '세부 사항에 대한 세심한 주의'로 알려졌다는 내용이 자연스러우므로, meticulous는 '세심한, 꼼꼼한'이라는 의미가 가장 적절합니다. 다른 선택지들은 문맥과 반대되거나 어울리지 않는 의미입니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -3322,10 +3355,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:00:19.576Z",
-      "updatedAt": "2026-08-05T10:00:19.576Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785924019557"
+      "batchId": "level-fill-L5-1785924019557",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "vocabulary-L6-fill-msfx1zkz-0",
@@ -3416,11 +3450,11 @@
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 먹다",
       "options": [
         "Play",
-        "Eat",
         "Sleep",
+        "Eat",
         "Talk"
       ],
-      "answer": "1",
+      "answer": "2",
       "explanation": "먹다는 'eat'으로 표현합니다. 다른 단어들은 각각 '놀다', '자다', '말하다'라는 뜻입니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -3447,10 +3481,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:28:35.373Z",
-      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초1",
-      "batchId": "level-fill-L1-1785925715358"
+      "batchId": "level-fill-L1-1785925715358",
+      "reviewNote": "answer-key rebalanced 1→2 (4-option)"
     },
     {
       "id": "vocabulary-L1-fill-msfy25cu-1",
@@ -3458,12 +3493,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 happy의 뜻으로 가장 알맞은 것은?\nI feel very happy today.",
       "options": [
-        "슬픈",
         "행복한",
+        "슬픈",
         "화난",
         "피곤한"
       ],
-      "answer": "1",
+      "answer": "0",
       "explanation": "문장 'I feel very happy today.'에서 happy는 '행복한'이라는 뜻입니다. '슬픈', '화난', '피곤한'은 문맥에 맞지 않습니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -3490,10 +3525,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:28:35.373Z",
-      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초1",
-      "batchId": "level-fill-L1-1785925715358"
+      "batchId": "level-fill-L1-1785925715358",
+      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
     },
     {
       "id": "vocabulary-L1-fill-msfy25cu-2",
@@ -3502,11 +3538,11 @@
       "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nThe dog can _____ fast.",
       "options": [
         "Sleep",
-        "Fly",
         "Run",
+        "Fly",
         "Read"
       ],
-      "answer": "2",
+      "answer": "1",
       "explanation": "개는 '빨리 달릴' 수 있으므로 'run'이 가장 적절합니다. 'sleep(자다)', 'fly(날다)', 'read(읽다)'는 문맥상 어색합니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -3533,10 +3569,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:28:35.373Z",
-      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초1",
-      "batchId": "level-fill-L1-1785925715358"
+      "batchId": "level-fill-L1-1785925715358",
+      "reviewNote": "answer-key rebalanced 2→1 (4-option)"
     },
     {
       "id": "grammar-L1-fill-msfy25cu-3",
@@ -3544,12 +3581,12 @@
       "type": "multiple_choice",
       "question": "be동사가 자연스럽게 쓰인 문장을 고르시오.",
       "options": [
-        "My dog is big.",
+        "My dog be big.",
         "My dog are big.",
         "My dog am big.",
-        "My dog be big."
+        "My dog is big."
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "주어가 단수 명사일 때 현재 시제의 be동사는 'is'를 사용합니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -3573,10 +3610,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:28:35.373Z",
-      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초1",
-      "batchId": "level-fill-L1-1785925715358"
+      "batchId": "level-fill-L1-1785925715358",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "grammar-L1-fill-msfy25cu-4",
@@ -3584,12 +3622,12 @@
       "type": "multiple_choice",
       "question": "올바른 대명사가 쓰인 문장을 고르시오.",
       "options": [
-        "I like she.",
-        "He likes I.",
         "She likes him.",
+        "He likes I.",
+        "I like she.",
         "Me likes her."
       ],
-      "answer": "2",
+      "answer": "0",
       "explanation": "동사 뒤에 오는 대명사는 목적격 형태를 사용해야 합니다. 'him'은 'he'의 목적격입니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -3613,10 +3651,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:28:35.373Z",
-      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초1",
-      "batchId": "level-fill-L1-1785925715358"
+      "batchId": "level-fill-L1-1785925715358",
+      "reviewNote": "answer-key rebalanced 2→0 (4-option)"
     },
     {
       "id": "grammar-L1-fill-msfy25cu-5",
@@ -3624,12 +3663,12 @@
       "type": "multiple_choice",
       "question": "현재 시제 동사의 형태가 자연스럽게 쓰인 문장을 고르시오.",
       "options": [
-        "They eats apples.",
-        "She eat apples.",
         "He eats apples.",
+        "She eat apples.",
+        "They eats apples.",
         "We eats apples."
       ],
-      "answer": "2",
+      "answer": "0",
       "explanation": "주어가 3인칭 단수(He, She, It)일 때 현재 시제 동사에는 '-s'를 붙입니다.",
       "level": 1,
       "targetTheta": -2.25,
@@ -3653,10 +3692,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:28:35.373Z",
-      "updatedAt": "2026-08-05T10:28:35.373Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "초1",
-      "batchId": "level-fill-L1-1785925715358"
+      "batchId": "level-fill-L1-1785925715358",
+      "reviewNote": "answer-key rebalanced 2→0 (4-option)"
     },
     {
       "id": "reading-L1-fill-msfy25cu-6",
@@ -3799,12 +3839,12 @@
       "type": "multiple_choice",
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 도착하다",
       "options": [
-        "Arrive",
+        "Walk",
         "Depart",
         "Leave",
-        "Walk"
+        "Arrive"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "Arrive는 '도착하다'라는 뜻입니다. 다른 선택지들은 각각 '출발하다', '떠나다', '걷다'를 의미합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -3831,10 +3871,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:29:03.857Z",
-      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "중1",
-      "batchId": "level-fill-L2-1785925743839"
+      "batchId": "level-fill-L2-1785925743839",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "vocabulary-L2-fill-msfy2rbz-1",
@@ -3842,12 +3883,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 period의 뜻으로 가장 알맞은 것은?\nThe project will last for a long period of time.",
       "options": [
-        "기간, 시기",
+        "규칙적인",
         "점",
         "학기",
-        "규칙적인"
+        "기간, 시기"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "문맥에서 period는 '기간'이라는 뜻으로 사용되었습니다. '점', '학기', '규칙적인'은 문맥에 맞지 않습니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -3874,10 +3915,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:29:03.857Z",
-      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "중1",
-      "batchId": "level-fill-L2-1785925743839"
+      "batchId": "level-fill-L2-1785925743839",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "vocabulary-L2-fill-msfy2rbz-2",
@@ -3885,12 +3927,12 @@
       "type": "multiple_choice",
       "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nI need to _____ my homework before I can play.",
       "options": [
-        "finish",
         "start",
+        "finish",
         "begin",
         "ignore"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "숙제를 마쳐야 놀 수 있다는 문맥이므로, '끝내다'라는 뜻의 finish가 가장 적절합니다. start와 begin은 반대 의미이고, ignore는 문맥상 어색합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -3917,10 +3959,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:29:03.857Z",
-      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "중1",
-      "batchId": "level-fill-L2-1785925743839"
+      "batchId": "level-fill-L2-1785925743839",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "grammar-L2-fill-msfy2rbz-3",
@@ -3930,10 +3973,10 @@
       "options": [
         "walks / takes",
         "is walking / takes",
-        "walks / is taking",
-        "is walking / is taking"
+        "is walking / is taking",
+        "walks / is taking"
       ],
-      "answer": "2",
+      "answer": "3",
       "explanation": "'usually'는 반복되는 습관을 나타내므로 현재 시제(walks)를 사용하며, 'today'는 일시적으로 진행되는 행동을 나타내므로 현재 진행 시제(is taking)를 사용합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -3956,10 +3999,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:29:03.857Z",
-      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "중1",
-      "batchId": "level-fill-L2-1785925743839"
+      "batchId": "level-fill-L2-1785925743839",
+      "reviewNote": "answer-key rebalanced 2→3 (4-option)"
     },
     {
       "id": "grammar-L2-fill-msfy2rbz-4",
@@ -3968,11 +4012,11 @@
       "question": "다음 문장에서 빈칸에 들어갈 가장 알맞은 전치사를 고르시오.\nMy birthday is _____ July 20th, and the party starts _____ 7 PM.",
       "options": [
         "in / in",
-        "on / at",
         "at / on",
+        "on / at",
         "on / in"
       ],
-      "answer": "1",
+      "answer": "2",
       "explanation": "특정 날짜(July 20th) 앞에는 전치사 'on'을 사용하고, 특정 시간(7 PM) 앞에는 전치사 'at'을 사용합니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -3995,10 +4039,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:29:03.857Z",
-      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "중1",
-      "batchId": "level-fill-L2-1785925743839"
+      "batchId": "level-fill-L2-1785925743839",
+      "reviewNote": "answer-key rebalanced 1→2 (4-option)"
     },
     {
       "id": "grammar-L2-fill-msfy2rbz-5",
@@ -4008,10 +4053,10 @@
       "options": [
         "The students in the classroom is reading books.",
         "One of my friends live in Seoul.",
-        "Each of the boys have a new toy.",
-        "The dog with its puppies is sleeping peacefully."
+        "The dog with its puppies is sleeping peacefully.",
+        "Each of the boys have a new toy."
       ],
-      "answer": "3",
+      "answer": "2",
       "explanation": "주어 'The dog'은 단수이므로 단수 동사 'is'가 올바릅니다. 다른 보기들은 주어와 동사의 수가 일치하지 않습니다.",
       "level": 2,
       "targetTheta": -0.9,
@@ -4034,10 +4079,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:29:03.857Z",
-      "updatedAt": "2026-08-05T10:29:03.857Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "중1",
-      "batchId": "level-fill-L2-1785925743839"
+      "batchId": "level-fill-L2-1785925743839",
+      "reviewNote": "answer-key rebalanced 3→2 (4-option)"
     },
     {
       "id": "reading-L2-fill-msfy2rbz-6",
@@ -4223,12 +4269,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 issue의 뜻으로 가장 알맞은 것은?\nThe main issue in the debate was climate change.",
       "options": [
-        "문제점이나 논쟁의 주제",
-        "잡지나 신문의 호",
         "발행하다, 내다",
+        "잡지나 신문의 호",
+        "문제점이나 논쟁의 주제",
         "결과나 결론"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "문맥상 'issue'는 토론의 '주요 문제점'을 의미합니다. 다른 보기는 'issue'의 다른 의미이거나 문맥에 맞지 않습니다.",
       "level": 3,
       "targetTheta": 0.25,
@@ -4255,10 +4301,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
-      "batchId": "level-fill-L3-1785925795555"
+      "batchId": "level-fill-L3-1785925795555",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "vocabulary-L3-fill-msfy3v8j-2",
@@ -4266,12 +4313,12 @@
       "type": "multiple_choice",
       "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nWater is _____ for all living things.",
       "options": [
-        "essential",
         "optional",
+        "essential",
         "difficult",
         "common"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "'essential'은 '필수적인, 본질적인'이라는 뜻으로, 문맥상 '물은 모든 생명체에게 필수적이다'가 자연스럽습니다.",
       "level": 3,
       "targetTheta": 0.25,
@@ -4298,10 +4345,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
-      "batchId": "level-fill-L3-1785925795555"
+      "batchId": "level-fill-L3-1785925795555",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "grammar-L3-fill-msfy3v8j-3",
@@ -4310,11 +4358,11 @@
       "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\nIf I ______ a bird, I would fly to you.",
       "options": [
         "am",
-        "was",
         "were",
+        "was",
         "will be"
       ],
-      "answer": "2",
+      "answer": "1",
       "explanation": "가정법 과거 문장으로, 'If I were ~' 형태가 되어야 합니다. 주어의 인칭에 상관없이 be동사는 'were'를 사용합니다.",
       "level": 3,
       "targetTheta": 0.25,
@@ -4337,10 +4385,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
-      "batchId": "level-fill-L3-1785925795555"
+      "batchId": "level-fill-L3-1785925795555",
+      "reviewNote": "answer-key rebalanced 2→1 (4-option)"
     },
     {
       "id": "grammar-L3-fill-msfy3v8j-4",
@@ -4388,11 +4437,11 @@
       "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\nShe ______ in Seoul for five years.",
       "options": [
         "lives",
-        "lived",
         "has lived",
+        "lived",
         "is living"
       ],
-      "answer": "2",
+      "answer": "1",
       "explanation": "'for five years'는 5년 동안이라는 기간을 나타내므로, 과거에 시작하여 현재까지 계속되는 동작이나 상태를 표현하는 현재완료 시제 'has lived'가 가장 적절합니다.",
       "level": 3,
       "targetTheta": 0.25,
@@ -4415,10 +4464,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:29:55.569Z",
-      "updatedAt": "2026-08-05T10:29:55.569Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "중3",
-      "batchId": "level-fill-L3-1785925795555"
+      "batchId": "level-fill-L3-1785925795555",
+      "reviewNote": "answer-key rebalanced 2→1 (4-option)"
     },
     {
       "id": "reading-L3-fill-msfy3v8j-6",
@@ -4561,12 +4611,12 @@
       "type": "multiple_choice",
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 회복력, 탄력성",
       "options": [
-        "resilience",
+        "vulnerability",
         "fragility",
         "rigidity",
-        "vulnerability"
+        "resilience"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "'회복력' 또는 '탄력성'을 의미하는 단어는 resilience입니다.",
       "level": 4,
       "targetTheta": 1.15,
@@ -4593,10 +4643,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785925840821"
+      "batchId": "level-fill-L4-1785925840821",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "vocabulary-L4-fill-msfy4u5x-1",
@@ -4604,12 +4655,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 underscore의 뜻으로 가장 알맞은 것은?\nThe recent economic downturn serves to underscore the need for financial prudence.",
       "options": [
-        "강조하다",
+        "숨기다",
         "감소시키다",
         "무시하다",
-        "숨기다"
+        "강조하다"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "문맥상 'underscore'는 '강조하다'라는 의미로 사용되어, 최근 경제 침체가 재정적 신중함의 필요성을 강조한다는 뜻입니다.",
       "level": 4,
       "targetTheta": 1.15,
@@ -4636,10 +4687,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785925840821"
+      "batchId": "level-fill-L4-1785925840821",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "grammar-L4-fill-msfy4u5x-2",
@@ -4686,12 +4738,12 @@
       "type": "multiple_choice",
       "question": "다음 문장의 빈칸에 들어갈 가장 적절한 관계대명사를 고르시오.\nThe student ______ won the competition received a scholarship.",
       "options": [
-        "who",
+        "whose",
         "whom",
         "which",
-        "whose"
+        "who"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "선행사 'The student'는 사람이고, 빈칸은 관계사절 'won the competition'에서 주어 역할을 하므로 주격 관계대명사 'who'가 적절합니다.",
       "level": 4,
       "targetTheta": 1.15,
@@ -4714,10 +4766,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785925840821"
+      "batchId": "level-fill-L4-1785925840821",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "grammar-L4-fill-msfy4u5x-4",
@@ -4725,12 +4778,12 @@
       "type": "multiple_choice",
       "question": "다음 문장의 빈칸에 들어갈 가장 적절한 형태를 고르시오.\nShe enjoys ______ new languages.",
       "options": [
-        "learning",
         "to learn",
+        "learning",
         "learn",
         "learned"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "'enjoy'는 동명사(gerund)를 목적어로 취하는 동사이므로, 'learning'이 올바른 형태입니다.",
       "level": 4,
       "targetTheta": 1.15,
@@ -4753,10 +4806,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:30:40.837Z",
-      "updatedAt": "2026-08-05T10:30:40.837Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고2",
-      "batchId": "level-fill-L4-1785925840821"
+      "batchId": "level-fill-L4-1785925840821",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "reading-L4-fill-msfy4u5x-5",
@@ -4899,12 +4953,12 @@
       "type": "multiple_choice",
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 어디에나 있는, 아주 흔한",
       "options": [
-        "ubiquitous",
+        "benevolent",
         "ephemeral",
         "superfluous",
-        "benevolent"
+        "ubiquitous"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "'ubiquitous'는 '어디에나 있는, 아주 흔한'이라는 뜻으로, 주어진 한글 뜻과 일치합니다. 다른 단어들은 각각 '수명이 짧은', '불필요한', '자비로운'이라는 뜻입니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -4931,10 +4985,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785925880020"
+      "batchId": "level-fill-L5-1785925880020",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "vocabulary-L5-fill-msfy5oes-1",
@@ -4942,12 +4997,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 underscore의 뜻으로 가장 알맞은 것은?\nThe report serves to underscore the urgency of climate action.",
       "options": [
-        "강조하다",
-        "밑줄을 긋다",
         "조사하다",
+        "밑줄을 긋다",
+        "강조하다",
         "요약하다"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "문맥에서 'underscore'는 '강조하다'라는 의미로 사용되었습니다. '기후 행동의 시급성을 강조하는 역할을 한다'로 해석됩니다. '밑줄을 긋다'는 단어의 문자적인 의미이지만 문맥에는 적합하지 않습니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -4974,10 +5029,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785925880020"
+      "batchId": "level-fill-L5-1785925880020",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "vocabulary-L5-fill-msfy5oes-2",
@@ -4985,12 +5041,12 @@
       "type": "multiple_choice",
       "question": "다음 빈칸에 들어갈 가장 알맞은 단어를 고르시오.\nThe artist was known for her _____ attention to detail in every painting.",
       "options": [
-        "meticulous",
+        "negligent",
         "cursory",
         "sporadic",
-        "negligent"
+        "meticulous"
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "문맥상 화가가 그림의 세부 사항에 대해 '꼼꼼한, 세심한' 주의를 기울였다는 내용이 자연스럽습니다. 'meticulous'는 '꼼꼼한, 세심한'이라는 뜻으로 빈칸에 가장 적절합니다. 'cursory'는 '대충 하는', 'sporadic'은 '간헐적인', 'negligent'는 '태만한'이라는 뜻으로 문맥에 맞지 않습니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -5017,10 +5073,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785925880020"
+      "batchId": "level-fill-L5-1785925880020",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "grammar-L5-fill-msfy5oes-3",
@@ -5028,12 +5085,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\nThe scientist presented his findings, _____ by extensive research.",
       "options": [
-        "supporting",
         "supported",
+        "supporting",
         "to support",
         "having supported"
       ],
-      "answer": "1",
+      "answer": "0",
       "explanation": "문맥상 'findings(연구 결과)'가 'extensive research(광범위한 연구)'에 의해 '뒷받침되는' 수동의 의미이므로 과거분사 supported가 적절합니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -5056,10 +5113,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785925880020"
+      "batchId": "level-fill-L5-1785925880020",
+      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
     },
     {
       "id": "grammar-L5-fill-msfy5oes-4",
@@ -5068,11 +5126,11 @@
       "question": "다음 문장에서 문법적으로 올바른 것을 고르시오.\nHer responsibilities include managing staff, coordinating projects, and _____ budgets.",
       "options": [
         "to oversee",
-        "overseeing",
         "she oversees",
+        "overseeing",
         "to be overseeing"
       ],
-      "answer": "1",
+      "answer": "2",
       "explanation": "include 동사의 목적어로 동명사 managing과 coordinating이 병렬 구조를 이루고 있으므로, 빈칸에도 동명사 overseeing이 와야 합니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -5095,10 +5153,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785925880020"
+      "batchId": "level-fill-L5-1785925880020",
+      "reviewNote": "answer-key rebalanced 1→2 (4-option)"
     },
     {
       "id": "grammar-L5-fill-msfy5oes-5",
@@ -5106,12 +5165,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 문법적으로 올바른 형태를 고르시오.\n_____ for the manager's approval, the proposal would have been implemented immediately.",
       "options": [
-        "Had it not been",
         "If it not had been",
+        "Had it not been",
         "Were it not",
         "Should it not be"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "주절의 'would have been implemented'는 가정법 과거완료이므로, 종속절 또한 가정법 과거완료 형태가 되어야 합니다. If가 생략된 도치 구문으로 'Had it not been for'가 올바른 형태입니다.",
       "level": 5,
       "targetTheta": 1.9,
@@ -5134,10 +5193,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:31:20.036Z",
-      "updatedAt": "2026-08-05T10:31:20.036Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L5-1785925880020"
+      "batchId": "level-fill-L5-1785925880020",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "reading-L5-fill-msfy5oes-6",
@@ -5280,12 +5340,12 @@
       "type": "multiple_choice",
       "question": "한글 뜻에 맞는 단어를 고르시오.\n한글 뜻: 어디에나 있는, 아주 흔한",
       "options": [
-        "Ubiquitous",
         "Unanimous",
+        "Ubiquitous",
         "Ephemeral",
         "Obsolete"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "Ubiquitous는 '어디에나 있는, 아주 흔한'이라는 뜻으로, 주어진 한글 뜻과 일치합니다.",
       "level": 6,
       "targetTheta": 2.65,
@@ -5312,10 +5372,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785925924788"
+      "batchId": "level-fill-L6-1785925924788",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "vocabulary-L6-fill-msfy6myc-1",
@@ -5323,12 +5384,12 @@
       "type": "multiple_choice",
       "question": "다음 문장에서 mitigate의 뜻으로 가장 알맞은 것은?\nThe government implemented new policies to mitigate the effects of the economic downturn.",
       "options": [
-        "악화시키다",
-        "강화하다",
         "완화하다, 경감하다",
+        "강화하다",
+        "악화시키다",
         "무시하다"
       ],
-      "answer": "2",
+      "answer": "0",
       "explanation": "Mitigate는 '완화하다, 경감하다'라는 뜻으로, 문맥상 경제 침체의 영향을 줄이는 정책을 의미합니다.",
       "level": 6,
       "targetTheta": 2.65,
@@ -5355,10 +5416,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785925924788"
+      "batchId": "level-fill-L6-1785925924788",
+      "reviewNote": "answer-key rebalanced 2→0 (4-option)"
     },
     {
       "id": "grammar-L6-fill-msfy6myc-2",
@@ -5367,11 +5429,11 @@
       "question": "다음 문장 중 문법적으로 올바른 것을 고르시오.",
       "options": [
         "It is imperative that he submits his report by noon.",
-        "It is imperative that he submit his report by noon.",
+        "It is imperative that he submitting his report by noon.",
         "It is imperative that he submitted his report by noon.",
-        "It is imperative that he submitting his report by noon."
+        "It is imperative that he submit his report by noon."
       ],
-      "answer": "1",
+      "answer": "3",
       "explanation": "'It is imperative that' 구문 뒤에는 동사원형을 사용하는 가정법 현재가 와야 합니다.",
       "level": 6,
       "targetTheta": 2.65,
@@ -5394,10 +5456,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785925924788"
+      "batchId": "level-fill-L6-1785925924788",
+      "reviewNote": "answer-key rebalanced 1→3 (4-option)"
     },
     {
       "id": "grammar-L6-fill-msfy6myc-3",
@@ -5405,12 +5468,12 @@
       "type": "multiple_choice",
       "question": "다음 문장 중 문법적으로 올바른 것을 고르시오.",
       "options": [
-        "The student, surprising by the sudden announcement, dropped his pen.",
         "The student, surprised by the sudden announcement, dropped his pen.",
+        "The student, surprising by the sudden announcement, dropped his pen.",
         "The student, who surprising by the sudden announcement, dropped his pen.",
         "The student, to surprise by the sudden announcement, dropped his pen."
       ],
-      "answer": "1",
+      "answer": "0",
       "explanation": "주어(the student)가 발표에 의해 놀라게 된 것이므로, 수동의 의미를 나타내는 과거분사 'surprised'가 와야 합니다.",
       "level": 6,
       "targetTheta": 2.65,
@@ -5433,10 +5496,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785925924788"
+      "batchId": "level-fill-L6-1785925924788",
+      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
     },
     {
       "id": "grammar-L6-fill-msfy6myc-4",
@@ -5444,12 +5508,12 @@
       "type": "multiple_choice",
       "question": "다음 문장 중 문법적으로 올바른 것을 고르시오.",
       "options": [
-        "Seldom he has seen such a magnificent view.",
         "Seldom has he seen such a magnificent view.",
+        "Seldom he has seen such a magnificent view.",
         "Seldom he seen such a magnificent view.",
         "Seldom has seen he such a magnificent view."
       ],
-      "answer": "1",
+      "answer": "0",
       "explanation": "'Seldom'과 같은 부정 부사가 문두에 올 때는 주어와 조동사가 도치되어야 합니다. (Seldom + 조동사 + 주어 + 본동사)",
       "level": 6,
       "targetTheta": 2.65,
@@ -5472,10 +5536,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-05T10:32:04.808Z",
-      "updatedAt": "2026-08-05T10:32:04.808Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "level-fill-qc",
       "grade": "고3",
-      "batchId": "level-fill-L6-1785925924788"
+      "batchId": "level-fill-L6-1785925924788",
+      "reviewNote": "answer-key rebalanced 1→0 (4-option)"
     },
     {
       "id": "reading-L6-fill-msfy6myc-5",
@@ -6098,12 +6163,12 @@
       "type": "multiple_choice",
       "question": "What is the story mostly about?",
       "options": [
-        "Sam playing with his red ball.",
-        "Sam looking for a lost ball.",
         "Sam's sister clapping her hands.",
-        "A big tree in the yard."
+        "Sam looking for a lost ball.",
+        "A big tree in the yard.",
+        "Sam playing with his red ball."
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "이 이야기는 Sam이 빨간 공으로 노는 것에 대한 내용입니다. Sam이 공을 가지고 노는 일상과 공을 찾고 기뻐하는 모습이 주를 이룹니다.",
       "level": 1,
       "targetTheta": -2.2,
@@ -6132,10 +6197,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:13.100Z",
-      "updatedAt": "2026-08-06T00:23:13.100Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "초3",
-      "batchId": "reading-preset-L1-1785975793075"
+      "batchId": "reading-preset-L1-1785975793075",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option); answer-key rebalanced 2→3 (4-option)"
     },
     {
       "id": "reading-L1-preset-msgrvhki-1",
@@ -6177,10 +6243,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:13.100Z",
-      "updatedAt": "2026-08-06T00:23:13.100Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "초3",
-      "batchId": "reading-preset-L1-1785975793075"
+      "batchId": "reading-preset-L1-1785975793075",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option); answer-key rebalanced 3→0 (4-option)"
     },
     {
       "id": "reading-L1-preset-msgrvhki-2",
@@ -6222,10 +6289,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:13.100Z",
-      "updatedAt": "2026-08-06T00:23:13.100Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "초3",
-      "batchId": "reading-preset-L1-1785975793075"
+      "batchId": "reading-preset-L1-1785975793075",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option); answer-key rebalanced 2→0 (4-option)"
     },
     {
       "id": "reading-L1-preset-msgrvhki-3",
@@ -6233,12 +6301,12 @@
       "type": "multiple_choice",
       "question": "Why does the narrator help Grandma?",
       "options": [
-        "Because helping at home feels good.",
         "Because Grandma asks for help.",
+        "Because helping at home feels good.",
         "Because Dad tells them to.",
         "Because they want more soup."
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "본문 마지막 문장에서 'Helping at home feels good'라고 언급되어 있습니다. 즉, 화자는 집안일을 돕는 것이 기분 좋기 때문에 할머니를 돕습니다.",
       "level": 1,
       "targetTheta": -2.2,
@@ -6267,10 +6335,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:13.100Z",
-      "updatedAt": "2026-08-06T00:23:13.100Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "refresh-reading-presets",
       "grade": "초3",
-      "batchId": "reading-preset-L1-1785975793075"
+      "batchId": "reading-preset-L1-1785975793075",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "reading-L1-preset-msgrvhki-4",
@@ -6278,12 +6347,12 @@
       "type": "multiple_choice",
       "question": "What color are the narrator's new shoes?",
       "options": [
-        "Blue.",
-        "Red.",
         "Green.",
+        "Red.",
+        "Blue.",
         "Yellow."
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "본문 첫 문장에서 'Today I wear my new blue shoes'라고 명확하게 언급되어 있습니다. 화자의 새 신발은 파란색입니다.",
       "level": 1,
       "targetTheta": -2.2,
@@ -6312,10 +6381,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:13.100Z",
-      "updatedAt": "2026-08-06T00:23:13.100Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "초3",
-      "batchId": "reading-preset-L1-1785975793075"
+      "batchId": "reading-preset-L1-1785975793075",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "reading-L2-preset-msgrvwln-0",
@@ -6323,12 +6393,12 @@
       "type": "multiple_choice",
       "question": "윗글의 내용으로 가장 적절한 것은?",
       "options": [
-        "소라가 연필통을 잃어버렸다가 친구의 도움으로 찾았다.",
         "소라가 친구 민이 잃어버린 앞치마를 찾는 것을 도왔다.",
         "소라가 새 파란색 연필통을 사기로 결정했다.",
+        "소라가 연필통을 잃어버렸다가 친구의 도움으로 찾았다.",
         "소라가 미술 수업에서 그림 그리는 법을 배웠다."
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "소라가 연필통을 잃어버렸다가 친구 민의 도움으로 찾았다는 내용이므로, 이 글의 핵심 내용을 잘 요약하고 있습니다.",
       "level": 2,
       "targetTheta": -0.95,
@@ -6357,10 +6427,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:32.573Z",
-      "updatedAt": "2026-08-06T00:23:32.573Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "중1",
-      "batchId": "reading-preset-L2-1785975812555"
+      "batchId": "reading-preset-L2-1785975812555",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option); answer-key rebalanced 1→2 (4-option)"
     },
     {
       "id": "reading-L2-preset-msgrvwln-1",
@@ -6368,12 +6439,12 @@
       "type": "multiple_choice",
       "question": "준은 과학 박람회 프로젝트를 위해 매일 무엇을 할 것인가?",
       "options": [
-        "노트를 쓰고, 줄기를 측정하고, 사진을 찍을 것이다.",
         "두 식물을 어둡고 밝은 상자에 넣을 것이다.",
+        "노트를 쓰고, 줄기를 측정하고, 사진을 찍을 것이다.",
         "라벨과 짧은 설명이 있는 포스터를 만들 것이다.",
         "심사위원들에게 빛이 중요한 이유를 설명할 것이다."
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "지문에 'Every day he will write notes, measure the stems, and take photos.'라고 명시되어 있으므로, 준이 매일 할 일은 노트 작성, 줄기 측정, 사진 촬영입니다.",
       "level": 2,
       "targetTheta": -0.95,
@@ -6402,10 +6473,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:32.573Z",
-      "updatedAt": "2026-08-06T00:23:32.573Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "refresh-reading-presets",
       "grade": "중1",
-      "batchId": "reading-preset-L2-1785975812555"
+      "batchId": "reading-preset-L2-1785975812555",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "reading-L2-preset-msgrvwln-2",
@@ -6447,10 +6519,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:32.573Z",
-      "updatedAt": "2026-08-06T00:23:32.573Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "중1",
-      "batchId": "reading-preset-L2-1785975812555"
+      "batchId": "reading-preset-L2-1785975812555",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option); answer-key rebalanced 2→0 (4-option)"
     },
     {
       "id": "reading-L2-preset-msgrvwln-3",
@@ -6458,12 +6531,12 @@
       "type": "multiple_choice",
       "question": "태는 왜 매일 저녁 축구 연습을 했는가?",
       "options": [
-        "학교 팀 선발전을 준비하기 위해서.",
+        "부모님께 좋은 소식을 전하기 위해서.",
         "팀에서 가장 빠른 선수가 되기 위해서.",
         "연습 후 진흙 묻은 신발을 닦기 위해서.",
-        "부모님께 좋은 소식을 전하기 위해서."
+        "학교 팀 선발전을 준비하기 위해서."
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "지문의 첫 문장에서 태가 'school team tryouts(학교 팀 선발전)'을 위해 매일 저녁 축구 연습을 했다고 명확히 언급하고 있습니다.",
       "level": 2,
       "targetTheta": -0.95,
@@ -6492,10 +6565,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:32.573Z",
-      "updatedAt": "2026-08-06T00:23:32.573Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "refresh-reading-presets",
       "grade": "중1",
-      "batchId": "reading-preset-L2-1785975812555"
+      "batchId": "reading-preset-L2-1785975812555",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "reading-L2-preset-msgrvwln-4",
@@ -6503,12 +6577,12 @@
       "type": "multiple_choice",
       "question": "혜진이가 끝내지 못한 숙제는 어느 과목인가?",
       "options": [
+        "수학",
         "역사",
-        "영어",
         "과학",
-        "수학"
+        "영어"
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "지문에 'I finished English and science, but I could not finish history.'라고 명시되어 있으므로, 혜진이가 끝내지 못한 숙제는 역사입니다.",
       "level": 2,
       "targetTheta": -0.95,
@@ -6537,10 +6611,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:32.573Z",
-      "updatedAt": "2026-08-06T00:23:32.573Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "중1",
-      "batchId": "reading-preset-L2-1785975812555"
+      "batchId": "reading-preset-L2-1785975812555",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option); answer-key rebalanced 3→1 (4-option)"
     },
     {
       "id": "reading-L3-preset-msgrwbvx-0",
@@ -6582,10 +6657,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:52.381Z",
-      "updatedAt": "2026-08-06T00:23:52.381Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "중3",
-      "batchId": "reading-preset-L3-1785975832365"
+      "batchId": "reading-preset-L3-1785975832365",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option); answer-key rebalanced 3→0 (4-option)"
     },
     {
       "id": "reading-L3-preset-msgrwbvx-1",
@@ -6627,10 +6703,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:52.381Z",
-      "updatedAt": "2026-08-06T00:23:52.381Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "중3",
-      "batchId": "reading-preset-L3-1785975832365"
+      "batchId": "reading-preset-L3-1785975832365",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option); answer-key rebalanced 1→0 (4-option)"
     },
     {
       "id": "reading-L3-preset-msgrwbvx-2",
@@ -6638,12 +6715,12 @@
       "type": "multiple_choice",
       "question": "새로운 휴대폰 규칙이 생기기 전, 글쓴이의 습관에 대해 추론할 수 있는 것은 무엇인가?",
       "options": [
-        "글쓴이는 늦게까지 온라인 활동을 하여 수면과 숙제에 영향을 받았을 가능성이 높다.",
+        "글쓴이는 저녁 식사 시간에 가족들과 많은 이야기를 나누었다.",
         "글쓴이는 매일 밤 20분씩 꾸준히 책을 읽었다.",
-        "글쓴이는 이전에도 숙제에 집중하는 데 문제가 없었다.",
-        "글쓴이는 저녁 식사 시간에 가족들과 많은 이야기를 나누었다."
+        "글쓴이는 늦게까지 온라인 활동을 하여 수면과 숙제에 영향을 받았을 가능성이 높다.",
+        "글쓴이는 이전에도 숙제에 집중하는 데 문제가 없었다."
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "글쓴이가 규칙 시행 후 잠을 더 잘 자고 숙제를 더 빨리 끝냈다는 점에서, 이전에는 늦게까지 온라인 활동을 하여 수면과 숙제에 영향을 받았음을 추론할 수 있습니다.",
       "level": 3,
       "targetTheta": 0.25,
@@ -6672,10 +6749,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:52.381Z",
-      "updatedAt": "2026-08-06T00:23:52.381Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "중3",
-      "batchId": "reading-preset-L3-1785975832365"
+      "batchId": "reading-preset-L3-1785975832365",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option); answer-key rebalanced 3→2 (4-option)"
     },
     {
       "id": "reading-L3-preset-msgrwbvx-3",
@@ -6683,12 +6761,12 @@
       "type": "multiple_choice",
       "question": "이 글을 쓴 작가의 주된 목적은 무엇인가?",
       "options": [
-        "팀이 프로젝트 중 갈등을 성공적으로 해결하는 방법을 보여주기 위해",
-        "튼튼한 모형 다리를 만드는 단계를 설명하기 위해",
         "일부 학생들이 모둠 활동에 기여하지 않는 이유를 설명하기 위해",
+        "튼튼한 모형 다리를 만드는 단계를 설명하기 위해",
+        "팀이 프로젝트 중 갈등을 성공적으로 해결하는 방법을 보여주기 위해",
         "학교 프로젝트에서 명확한 마감 기한을 정하는 것의 중요성을 강조하기 위해"
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "이 글은 팀원 간의 갈등을 겪던 모둠이 어떻게 문제를 해결하고 성공적으로 프로젝트를 완수했는지를 보여주는 것이 주된 목적입니다.",
       "level": 3,
       "targetTheta": 0.25,
@@ -6717,10 +6795,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:52.381Z",
-      "updatedAt": "2026-08-06T00:23:52.381Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "중3",
-      "batchId": "reading-preset-L3-1785975832365"
+      "batchId": "reading-preset-L3-1785975832365",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "reading-L3-preset-msgrwbvx-4",
@@ -6762,10 +6841,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:23:52.381Z",
-      "updatedAt": "2026-08-06T00:23:52.381Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "중3",
-      "batchId": "reading-preset-L3-1785975832365"
+      "batchId": "reading-preset-L3-1785975832365",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option); answer-key rebalanced 1→0 (4-option)"
     },
     {
       "id": "reading-L4-preset-msgrwty6-0",
@@ -6773,12 +6853,12 @@
       "type": "multiple_choice",
       "question": "What is the main idea of the passage?",
       "options": [
-        "A hidden family secret revealed through an old map.",
         "The importance of cleaning attics to find valuable items.",
+        "Grandparents often keep interesting stories from their grandchildren.",
         "Siblings exploring a dangerous cave with a mysterious map.",
-        "Grandparents often keep interesting stories from their grandchildren."
+        "A hidden family secret revealed through an old map."
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "이 글은 나리와 그녀의 오빠가 다락방에서 발견한 지도를 통해 할아버지의 숨겨진 가족 이야기를 알게 되는 과정을 다룹니다. 지도를 따라가며 할아버지의 흔적을 발견하고, 결국 할아버지로부터 그 이야기를 듣게 되는 것이 글의 핵심 내용입니다.",
       "level": 4,
       "targetTheta": 1,
@@ -6807,10 +6887,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:15.791Z",
-      "updatedAt": "2026-08-06T00:24:15.791Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고2",
-      "batchId": "reading-preset-L4-1785975855774"
+      "batchId": "reading-preset-L4-1785975855774",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option); answer-key rebalanced 1→3 (4-option)"
     },
     {
       "id": "reading-L4-preset-msgrwty6-1",
@@ -6818,12 +6899,12 @@
       "type": "multiple_choice",
       "question": "What can be inferred about Hoon's work as a bridge volunteer?",
       "options": [
-        "His efforts were essential for safety but often went unnoticed by the public.",
-        "He enjoyed the challenge of working alone in difficult weather conditions.",
         "The village mayor publicly praised Hoon for his quick response.",
+        "He enjoyed the challenge of working alone in difficult weather conditions.",
+        "His efforts were essential for safety but often went unnoticed by the public.",
         "He was hoping to receive a reward for his dedication to the community."
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "훈은 폭풍우 속에서 아무도 모르게 다리의 난간을 수리했지만, 그의 노력은 즉시 눈에 띄게 칭찬받지 못했습니다. 시장의 조용한 편지와 '세심한 작업은 실패하기 전까지는 종종 보이지 않는다'는 훈의 생각은 그의 노력이 중요했음에도 불구하고 대중에게는 잘 알려지지 않았음을 시사합니다.",
       "level": 4,
       "targetTheta": 1,
@@ -6852,10 +6933,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:15.791Z",
-      "updatedAt": "2026-08-06T00:24:15.791Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고2",
-      "batchId": "reading-preset-L4-1785975855774"
+      "batchId": "reading-preset-L4-1785975855774",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "reading-L4-preset-msgrwty6-2",
@@ -6863,12 +6945,12 @@
       "type": "multiple_choice",
       "question": "What action did the town take after the lighthouse light failed?",
       "options": [
+        "They built a new, more powerful lighthouse on a different hill.",
         "They installed a backup generator to prevent future failures.",
-        "They hired more engineers to maintain the lighthouse daily.",
         "They warned fishing boats to avoid the coast during foggy weather.",
-        "They built a new, more powerful lighthouse on a different hill."
+        "They hired more engineers to maintain the lighthouse daily."
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "등대 불빛이 고장 난 후, 마을은 유사한 사고를 방지하기 위해 예비 발전기를 설치했습니다. 이는 본문에 \"The town later installed a backup generator so a single equipment failure would not hide the entire coastline\"에서 직접적으로 언급됩니다.",
       "level": 4,
       "targetTheta": 1,
@@ -6897,10 +6979,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:15.791Z",
-      "updatedAt": "2026-08-06T00:24:15.791Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고2",
-      "batchId": "reading-preset-L4-1785975855774"
+      "batchId": "reading-preset-L4-1785975855774",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option); answer-key rebalanced 3→1 (4-option)"
     },
     {
       "id": "reading-L4-preset-msgrwty6-3",
@@ -6908,12 +6991,12 @@
       "type": "multiple_choice",
       "question": "What was the teacher's purpose in requiring a polite question for the other class in every notebook entry?",
       "options": [
-        "To encourage respectful communication and collaboration between the rival classes.",
+        "To test the students' ability to formulate scientific inquiries.",
         "To ensure that all data collected was thoroughly reviewed by both classes.",
         "To make the students more critical of each other's research methods.",
-        "To test the students' ability to formulate scientific inquiries."
+        "To encourage respectful communication and collaboration between the rival classes."
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "교사는 처음에는 서로에게 날카로운 비판을 하던 두 경쟁 반 학생들이 정중한 질문을 통해 점차 협력적인 태도로 바뀌도록 유도했습니다. 이는 '정중한 질문'을 통해 상호 존중하는 소통을 장려하고, 경쟁을 더 나은 결과로 이끄는 협력으로 전환시키려는 목적이었습니다.",
       "level": 4,
       "targetTheta": 1,
@@ -6942,10 +7025,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:15.791Z",
-      "updatedAt": "2026-08-06T00:24:15.791Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고2",
-      "batchId": "reading-preset-L4-1785975855774"
+      "batchId": "reading-preset-L4-1785975855774",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "reading-L4-preset-msgrwty6-4",
@@ -6953,12 +7037,12 @@
       "type": "multiple_choice",
       "question": "What was the hikers' attitude after their experience on the flooded mountain path?",
       "options": [
-        "They adopted a more humble and cautious approach to mountain climbing.",
         "They felt proud of their survival skills and shared their heroic story.",
+        "They adopted a more humble and cautious approach to mountain climbing.",
         "They were angry at the ranger for not providing clearer warnings beforehand.",
         "They decided to avoid mountain climbing altogether due to the danger."
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "등산객들은 구조된 후 자신들의 이야기를 '영웅담이 아닌 경고'로 실어 달라고 요청하고, '자신들의 일정보다 산의 일정을 존중하라'는 교훈을 얻었습니다. 이는 그들이 겸손하고 신중한 태도로 산행에 임하게 되었음을 보여줍니다.",
       "level": 4,
       "targetTheta": 1,
@@ -6987,10 +7071,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:15.791Z",
-      "updatedAt": "2026-08-06T00:24:15.791Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고2",
-      "batchId": "reading-preset-L4-1785975855774"
+      "batchId": "reading-preset-L4-1785975855774",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "reading-L5-preset-msgrx8bl-0",
@@ -6998,12 +7083,12 @@
       "type": "multiple_choice",
       "question": "What is the main idea of the passage?",
       "options": [
-        "A caravan successfully adapted to unexpected and severe desert challenges.",
+        "Old maps are no longer reliable for desert travel due to shifting dunes.",
         "Mira was an exceptional leader who knew how to navigate any desert condition.",
         "Desert sandstorms are becoming more frequent and unpredictable, making travel dangerous.",
-        "Old maps are no longer reliable for desert travel due to shifting dunes."
+        "A caravan successfully adapted to unexpected and severe desert challenges."
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "이 글은 사막 횡단 중 예상치 못한 모래폭풍과 지도에 없는 길이라는 심각한 도전에 직면했지만, 결국 새로운 방법을 찾아 안전하게 목적지에 도착한 상인들의 이야기를 다루고 있습니다. 따라서 '예상치 못한 심각한 사막의 도전에 성공적으로 적응한 대상'이 가장 적절한 주제입니다.",
       "level": 5,
       "targetTheta": 1.7,
@@ -7032,10 +7117,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:34.420Z",
-      "updatedAt": "2026-08-06T00:24:34.420Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고3",
-      "batchId": "reading-preset-L5-1785975874402"
+      "batchId": "reading-preset-L5-1785975874402",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "reading-L5-preset-msgrx8bl-1",
@@ -7043,12 +7129,12 @@
       "type": "multiple_choice",
       "question": "What can be inferred about the hidden garden room before Jack discovered it?",
       "options": [
-        "It had been largely forgotten or neglected by the museum staff.",
         "The museum curator intentionally kept the room a secret from visitors.",
         "It was actively used by staff for daily plant record keeping and research.",
+        "It had been largely forgotten or neglected by the museum staff.",
         "All the plants and specimens inside had died due to lack of care."
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "잭이 방을 발견하기 전, 문이 담쟁이덩굴로 반쯤 덮여 있고, 큐레이터가 열쇠나 재고 목록을 받은 적이 없다고 언급한 점에서 이 방이 박물관 직원들에게 거의 잊히거나 방치되었음을 추론할 수 있습니다.",
       "level": 5,
       "targetTheta": 1.7,
@@ -7077,10 +7163,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:34.420Z",
-      "updatedAt": "2026-08-06T00:24:34.420Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고3",
-      "batchId": "reading-preset-L5-1785975874402"
+      "batchId": "reading-preset-L5-1785975874402",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option); answer-key rebalanced 1→2 (4-option)"
     },
     {
       "id": "reading-L5-preset-msgrx8bl-2",
@@ -7088,12 +7175,12 @@
       "type": "multiple_choice",
       "question": "What specific action did the students take to convince the town officials about the rising tide?",
       "options": [
+        "They showed the officials old tourist photos that clearly depicted lower water levels.",
         "They invited officials to observe the high tide at the pier and compare it to old marks.",
         "They presented a detailed scientific report with complex graphs and statistical analysis.",
-        "They showed the officials old tourist photos that clearly depicted lower water levels.",
         "They organized a public forum to explain the seasonal changes in ocean levels."
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "학생들은 마을 지도자들에게 밀물 때 부두에 서서 몇 년 전 표시된 수위와 실제 수위를 비교해 보라고 요청했습니다. 이는 'The students invited officials to stand on the pier at high tide and compare the waterline with marks painted years earlier'라는 문장에서 명확히 언급되어 있습니다.",
       "level": 5,
       "targetTheta": 1.7,
@@ -7122,10 +7209,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:34.420Z",
-      "updatedAt": "2026-08-06T00:24:34.420Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고3",
-      "batchId": "reading-preset-L5-1785975874402"
+      "batchId": "reading-preset-L5-1785975874402",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option); answer-key rebalanced 2→1 (4-option)"
     },
     {
       "id": "reading-L5-preset-msgrx8bl-3",
@@ -7167,10 +7255,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:34.420Z",
-      "updatedAt": "2026-08-06T00:24:34.420Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고3",
-      "batchId": "reading-preset-L5-1785975874402"
+      "batchId": "reading-preset-L5-1785975874402",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option); answer-key rebalanced 2→0 (4-option)"
     },
     {
       "id": "reading-L5-preset-msgrx8bl-4",
@@ -7178,12 +7267,12 @@
       "type": "multiple_choice",
       "question": "Which of the following best describes the engineers' attitude after the successful drone trial?",
       "options": [
-        "Practical and focused on continuous improvement.",
-        "Overly confident in their current design and abilities.",
         "Relieved that all major problems were finally solved.",
+        "Overly confident in their current design and abilities.",
+        "Practical and focused on continuous improvement.",
         "Disappointed that the celebration was cut short."
       ],
-      "answer": "0",
+      "answer": "2",
       "explanation": "엔지니어들은 드론 시험 비행 성공 후 '짧은 축하'만 하고 '전체 실패 기록'을 작성했으며, '성공적인 단계와 함께 폐기된 설계'를 보고서에 기록하여 '나중에 다른 팀이 같은 값비싼 실수를 반복하지 않도록' 했습니다. 또한 '겨울 폭풍이 다음 미해결 문제로 남아 있었다'고 언급하며 지속적인 개선과 미래의 도전에 초점을 맞추는 실용적인 태도를 보여줍니다.",
       "level": 5,
       "targetTheta": 1.7,
@@ -7212,10 +7301,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:34.420Z",
-      "updatedAt": "2026-08-06T00:24:34.420Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고3",
-      "batchId": "reading-preset-L5-1785975874402"
+      "batchId": "reading-preset-L5-1785975874402",
+      "reviewNote": "answer-key rebalanced 0→2 (4-option)"
     },
     {
       "id": "reading-L6-preset-msgrxs1b-0",
@@ -7268,12 +7358,12 @@
       "type": "multiple_choice",
       "question": "What can be inferred about the impact of \"framing\" from the passage?",
       "options": [
-        "It can subtly manipulate individuals' perceptions and choices.",
+        "It is always used with the intention of deceiving the public.",
         "It primarily affects individuals who are highly educated.",
         "Its influence is limited to medical and advertising contexts.",
-        "It is always used with the intention of deceiving the public."
+        "It can subtly manipulate individuals' perceptions and choices."
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "문단의 여러 예시와 결론(\"language does not only report a choice; it can manufacture the feeling that one option is already correct\")을 통해, 프레이밍이 사람들의 인식과 선택을 미묘하게 조작할 수 있음을 추론할 수 있습니다.",
       "level": 6,
       "targetTheta": 2.4,
@@ -7302,10 +7392,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:59.965Z",
-      "updatedAt": "2026-08-06T00:24:59.965Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고3",
-      "batchId": "reading-preset-L6-1785975899951"
+      "batchId": "reading-preset-L6-1785975899951",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "reading-L6-preset-msgrxs1b-2",
@@ -7313,12 +7404,12 @@
       "type": "multiple_choice",
       "question": "According to the passage, what was one immediate consequence of factories releasing waste into the Gray River?",
       "options": [
-        "Fish populations in the river declined significantly.",
+        "The city declared the river a protected natural reserve.",
         "Local residents immediately formed an environmental coalition.",
         "The factories were forced to close down permanently.",
-        "The city declared the river a protected natural reserve."
+        "Fish populations in the river declined significantly."
       ],
-      "answer": "0",
+      "answer": "3",
       "explanation": "글에 따르면, 공장들이 Gray River에 폐기물을 방출한 결과로 \"fish populations collapsed\" (물고기 개체수가 붕괴)했다고 명시되어 있습니다.",
       "level": 6,
       "targetTheta": 2.4,
@@ -7347,10 +7438,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:59.965Z",
-      "updatedAt": "2026-08-06T00:24:59.965Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고3",
-      "batchId": "reading-preset-L6-1785975899951"
+      "batchId": "reading-preset-L6-1785975899951",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option)"
     },
     {
       "id": "reading-L6-preset-msgrxs1b-3",
@@ -7358,12 +7450,12 @@
       "type": "multiple_choice",
       "question": "What is the primary purpose of the university archive described in the passage?",
       "options": [
-        "To preserve diverse, personal immigrant experiences that official records often miss.",
         "To train students in historical research methods and transcription skills.",
+        "To preserve diverse, personal immigrant experiences that official records often miss.",
         "To create a single, definitive national narrative of post-war immigration.",
         "To challenge the reliability of all historical documents and evidence."
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "이 대학 기록 보관소는 공식 기록에 담기지 않은 이민자들의 다양하고 개인적인 경험을 보존하고, 이를 통해 더 풍부하고 진실에 가까운 역사를 제공하는 것을 주된 목적으로 합니다.",
       "level": 6,
       "targetTheta": 2.4,
@@ -7392,10 +7484,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:59.965Z",
-      "updatedAt": "2026-08-06T00:24:59.965Z",
+      "updatedAt": "2026-08-06T03:33:31.187Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고3",
-      "batchId": "reading-preset-L6-1785975899951"
+      "batchId": "reading-preset-L6-1785975899951",
+      "reviewNote": "answer-key rebalanced 0→1 (4-option)"
     },
     {
       "id": "reading-L6-preset-msgrxs1b-4",
@@ -7403,12 +7496,12 @@
       "type": "multiple_choice",
       "question": "What is the author's attitude towards the way cultural products become \"hits\" in connected markets?",
       "options": [
+        "Optimistic that social proof ultimately helps the best works rise to the top.",
         "Skeptical of popularity as a sole indicator of a work's true merit.",
-        "Enthusiastic about the efficiency of market mechanisms in identifying quality.",
         "Neutral, merely presenting facts about consumer behavior without judgment.",
-        "Optimistic that social proof ultimately helps the best works rise to the top."
+        "Enthusiastic about the efficiency of market mechanisms in identifying quality."
       ],
-      "answer": "0",
+      "answer": "1",
       "explanation": "글은 인기가 작품의 진정한 가치를 측정하는 신뢰할 수 없는 척도이며, 시장이 항상 가장 가치 있는 작품에 보상하는 것은 아니라고 명시하며, 대중적 성공이 반드시 작품의 질을 의미하지 않는다는 회의적인 태도를 보입니다.",
       "level": 6,
       "targetTheta": 2.4,
@@ -7437,10 +7530,11 @@
       },
       "status": "approved",
       "createdAt": "2026-08-06T00:24:59.965Z",
-      "updatedAt": "2026-08-06T00:24:59.965Z",
+      "updatedAt": "2026-08-06T03:33:31.242Z",
       "createdBy": "refresh-reading-presets",
       "grade": "고3",
-      "batchId": "reading-preset-L6-1785975899951"
+      "batchId": "reading-preset-L6-1785975899951",
+      "reviewNote": "answer-key rebalanced 0→3 (4-option); answer-key rebalanced 3→1 (4-option)"
     }
   ]
 }

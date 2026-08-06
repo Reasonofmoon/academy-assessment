@@ -6,6 +6,7 @@ import type { Domain, Grade, Question } from "@/lib/types";
 import { DOMAIN_LABELS } from "@/lib/types";
 import { selectExemplars, getLevelAnchor, bankSummary } from "@/lib/irt/bank";
 import { filterValidItems, validateIrtItem } from "@/lib/irt/validate";
+import { rebalanceIrtItems } from "@/lib/irt/answer-balance";
 import {
   DIMENSION_TARGETS,
   GRADE_TO_LEVEL,
@@ -290,7 +291,7 @@ function buildDomainPrompt(args: {
         : `Focus on grammar form/usage appropriate for CEFR ${cefr}.`;
 
   const typeRule = mcqOnly
-    ? `All items MUST be multiple_choice with exactly 4 options.`
+    ? `All items MUST be multiple_choice with exactly 4 options (or 5 if specified).`
     : `Use mostly multiple_choice (4 options); at most 1 short_answer per domain.`;
 
   return `You are an IRT (Item Response Theory) item writer for a Korean English academy.
@@ -304,6 +305,7 @@ You generate LEVEL-PLACEMENT diagnostic items that are psychometrically purposef
 5. Guessing c ≈ 0.25 for 4-option MCQ (≈0.20 for 5-option). Never invent c > 0.35 for MCQ.
 6. Distractors must be plausible for the same CEFR band (common confusions, not nonsense).
 7. One clear correct answer. No double keys. No "all of the above".
+7b. **ANSWER KEY BALANCE:** Do NOT put every correct answer at index "0". Across this batch, spread correct indices roughly evenly (4 options → about 25% each for "0","1","2","3"; 5 options → about 20% each).
 8. Match the STYLE and RIGOR of the refined exemplars below (from a calibrated service bank).
 9. Do NOT copy exemplars verbatim — create NEW items.
 10. Mark irt.b honestly relative to target; if unsure, set b = ${targetTheta.toFixed(2)}.
@@ -347,8 +349,8 @@ ${exemplarBlocks || "(no exemplars — still follow IRT rules)"}
       "domain": "${domain}",
       "type": "multiple_choice",
       "question": "...",
-      "options": ["A text", "B text", "C text", "D text"],
-      "answer": "0",
+      "options": ["option text", "option text", "option text", "option text"],
+      "answer": "2",
       "explanation": "한국어 해설 1-2문장",
       "dimension": "D2_Meaning",
       "questionType": "main_idea",
@@ -361,7 +363,7 @@ ${exemplarBlocks || "(no exemplars — still follow IRT rules)"}
 
 Rules for fields:
 - id format: "${domain}-1" .. "${domain}-${count}"
-- multiple_choice answer is the correct option INDEX as string "0"-"3"
+- multiple_choice answer is the correct option INDEX as string ("0".."n-1"); vary across items (not all "0")
 - short_answer: options=[], answer=model English text
 - explanation in Korean
 - reading: include "passage" (80–220 words for L1-L2, 120–280 for L3+) when the item depends on a text
@@ -470,6 +472,7 @@ ${p.text}
 3. For every item, set "passage" to the EXACT full text of the assigned passage (character-for-character).
 4. Set "question" to the stem ONLY (do not paste the passage into "question").
 5. All items: type=multiple_choice, exactly 4 options, answer is index "0"-"3".
+5b. **Spread correct keys:** across this batch, correct answers should use indices 0/1/2/3 roughly evenly (~25% each). Do NOT set every item's answer to "0".
 6. Answers must be uniquely determined by the passage; distractors plausible but wrong.
 7. Use the assigned questionType for each slot (main_idea, detail, inference, purpose, attitude).
 8. IRT 3PL: target θ ≈ ${targetTheta.toFixed(2)} (GLEAS L${level}, CEFR ~${cefr}, grade ${grade}).
@@ -499,8 +502,8 @@ ${styleBlocks || "(none)"}
       "domain": "reading",
       "type": "multiple_choice",
       "question": "stem only",
-      "options": ["A", "B", "C", "D"],
-      "answer": "0",
+      "options": ["...", "...", "...", "..."],
+      "answer": "1",
       "explanation": "한국어 해설",
       "questionType": "main_idea",
       "passage": "EXACT fixed passage text",
@@ -637,6 +640,7 @@ async function generateDomainItemsOnce(opts: {
       .slice(0, opts.count);
 
     items = attachPresetPassages(items, slots);
+    items = rebalanceIrtItems(items, (it) => validateIrtItem(it));
     const { valid } = filterValidItems(items);
     return {
       items: valid.length > 0 ? valid : items,
@@ -690,7 +694,7 @@ async function generateDomainItemsOnce(opts: {
 
   const exemplarIds = exemplars.map((e) => e.id);
   // If model mislabels domain, still accept items (force to requested domain).
-  const items = parsed.questions
+  let items = parsed.questions
     .slice(0, opts.count)
     .map((q) =>
       toGenerated(
@@ -701,6 +705,7 @@ async function generateDomainItemsOnce(opts: {
       )
     );
 
+  items = rebalanceIrtItems(items, (it) => validateIrtItem(it));
   const { valid } = filterValidItems(items);
   return {
     items: valid.length > 0 ? valid : items,
@@ -737,7 +742,7 @@ export async function generateIrtAssessment(opts: {
   const mcqOnly = opts.mcqOnly ?? true;
   const levelCfg = getLevelGenConfig(level);
 
-  const allItems: IrtGeneratedItem[] = [];
+  let allItems: IrtGeneratedItem[] = [];
   const exemplarsUsed: Exemplar[] = [];
   const passagesUsed: PresetPassage[] = [];
   const seenEx = new Set<string>();
@@ -814,6 +819,9 @@ export async function generateIrtAssessment(opts: {
       502
     );
   }
+
+  // Post-process: spread MCQ correct keys (~1/n each). Models often default to "0".
+  allItems = rebalanceIrtItems(allItems, (it) => validateIrtItem(it));
 
   for (const domain of opts.domains) {
     if (domain === "reading") continue;
