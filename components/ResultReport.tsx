@@ -154,11 +154,11 @@ export default function ResultReport({
           </ol>
         </section>
 
-        {/* 강사 사인 자리 */}
+        {/* 학원 서명 자리 */}
         <footer className="avoid-break flex items-end justify-end border-t border-stone-200 pt-6">
           <div className="text-center">
             <div className="mb-1 h-12 w-40 border-b border-stone-400" />
-            <p className="text-xs text-stone-500">강사 서명 ({studentInfo.teacher})</p>
+            <p className="text-xs text-stone-500">강사 서명 ({academyName})</p>
           </div>
         </footer>
       </div>

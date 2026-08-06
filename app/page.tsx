@@ -25,7 +25,7 @@ import { GRADE_TO_LEVEL, type IrtGeneratedItem } from "@/lib/irt/types";
 //
 //   ※ 학원명은 여기서 한 번만 바꾸면 전체에 반영됩니다.
 // ───────────────────────────────────────────────────────────
-const ACADEMY_NAME = "리드마스터학원";
+const ACADEMY_NAME = "리드마스터 학원";
 
 // 진행 단계 타입
 type Step = "setup" | "answering" | "result";
