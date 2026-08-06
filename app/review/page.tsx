@@ -3,6 +3,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { DOMAIN_LABELS, type Domain } from "@/lib/types";
+import { formatQuestionForDisplay } from "@/lib/format-question";
+import RichStem from "@/components/RichStem";
 
 type BankStatus = "pending" | "approved" | "quarantine";
 
@@ -406,11 +408,16 @@ export default function ReviewPage() {
                         </span>
                       ) : null}
                     </div>
-                    <p className="whitespace-pre-wrap text-sm font-medium text-stone-800">
-                      {item.question.length > 280 && !open
-                        ? `${item.question.slice(0, 280)}…`
-                        : item.question}
-                    </p>
+                    <RichStem
+                      text={
+                        formatQuestionForDisplay(
+                          item.question.length > 280 && !open
+                            ? `${item.question.slice(0, 280)}…`
+                            : item.question
+                        ).stem
+                      }
+                      className="text-sm font-medium text-stone-800"
+                    />
                     {item.passage && open && (
                       <div className="mt-2 rounded bg-stone-50 p-2 text-xs text-stone-600 whitespace-pre-wrap">
                         {item.passage}

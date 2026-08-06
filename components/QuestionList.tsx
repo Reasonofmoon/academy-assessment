@@ -7,6 +7,7 @@ import {
   type Domain,
 } from "@/lib/types";
 import { formatQuestionForDisplay } from "@/lib/format-question";
+import RichStem from "@/components/RichStem";
 
 // ───────────────────────────────────────────────────────────
 // 학생 답안 입력 폼
@@ -65,12 +66,13 @@ export default function QuestionList({
                                 <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-stone-500">
                                   지문
                                 </p>
-                                <p className="whitespace-pre-wrap">{passage}</p>
+                                <RichStem text={passage} className="text-sm text-stone-700" />
                               </div>
                             )}
-                            <p className="whitespace-pre-wrap font-medium leading-relaxed text-stone-800">
-                              {stem}
-                            </p>
+                            <RichStem
+                              text={stem}
+                              className="font-medium text-stone-800"
+                            />
                           </div>
                         </div>
                       </div>
